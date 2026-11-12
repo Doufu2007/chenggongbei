@@ -76,16 +76,50 @@ def _dispose(node, ros, reason, *, stage, pending_reports, diagnostic_errors):
         raise errors[0]
 
 
-def _spin_with_progress(node, ros, reporter, stage, spin, *, duration_s, wall_clock):
+def _emit_stage_observation(node, ros, reporter, stage, *, section, started,
+                            wall_clock, diagnostic_errors, spin_outcome=None,
+                            exception_type=None):
+    """Queue a compact observation before cleanup changes state; never send now."""
+    if reporter is None:
+        return
+    operation = 'stage_exit' if section == 'full_inspection_stage_exit' else 'first_stop'
+    try:
+        guard = node.guard
+        progress = {
+            'mode': 'full_inspection', 'section': section, 'stage': stage,
+            'session_id': guard.session_id, 'elapsed_wall_s': wall_clock()-started,
+            'state': str(getattr(guard, 'state', '')),
+            'reason': str(getattr(guard, 'reason', '')),
+            'phase': str(getattr(guard, 'phase', '')), 'ros_ok': ros.ok(),
+            'return_completed': getattr(guard, 'return_completed', False) is True,
+            'flight_completed': getattr(node, 'mission_completed', False) is True,
+            'target_id': getattr(guard, 'target_id', None),
+            'point_index': getattr(guard, 'point_index', None),
+            'completed_count': len(getattr(guard, 'completed_points', ())),
+            'spin_outcome': spin_outcome, 'exception_type': exception_type,
+            'official_score': None,
+        }
+        reporter.emit('probe_snapshot', progress)
+    except Exception as exc:
+        diagnostic_errors.append({'stage': stage, 'operation': operation,
+                                  'error_type': type(exc).__name__})
+
+
+def _spin_with_progress(node, ros, reporter, stage, spin, *, duration_s, wall_clock,
+                        diagnostic_errors):
     original = getattr(node, 'tick', None)
-    if reporter is None or not callable(original):
-        return spin(node, ros, duration_s=duration_s, wall_clock=wall_clock)
     started = wall_clock()
     last = -float('inf')
+    first_stop_reported = False
     def tick():
-        nonlocal last
+        nonlocal last, first_stop_reported
         decision = original()
         now = wall_clock()
+        if decision.state == 'STOP' and not first_stop_reported:
+            first_stop_reported = True
+            _emit_stage_observation(node, ros, reporter, stage,
+                section='full_inspection_first_stop', started=started,
+                wall_clock=wall_clock, diagnostic_errors=diagnostic_errors)
         if now-last >= 5.:
             last = now
             try:
@@ -106,11 +140,23 @@ def _spin_with_progress(node, ros, reporter, stage, spin, *, duration_s, wall_cl
             except Exception:
                 pass
         return decision
-    node.tick = tick
+    wrapped = reporter is not None and callable(original)
+    if wrapped:
+        node.tick = tick
+    outcome, exception_type = 'returned', None
     try:
         return spin(node, ros, duration_s=duration_s, wall_clock=wall_clock)
+    except BaseException as exc:
+        # Preserve interruptions exactly; only the exception class is observed.
+        outcome, exception_type = 'exception', type(exc).__name__
+        raise
     finally:
-        node.tick = original
+        if wrapped:
+            node.tick = original
+        _emit_stage_observation(node, ros, reporter, stage,
+            section='full_inspection_stage_exit', started=started,
+            wall_clock=wall_clock, diagnostic_errors=diagnostic_errors,
+            spin_outcome=outcome, exception_type=exception_type)
 
 
 def run_ground_and_flight(ros, reporter, *, worker, ground_factory=None, flight_factory=None,
@@ -138,7 +184,8 @@ def run_ground_and_flight(ros, reporter, *, worker, ground_factory=None, flight_
             ground.report_started(ground_duration)
             ground.arm_watchdog()
             _spin_with_progress(ground, ros, reporter, 'GROUND', spin,
-                                duration_s=ground_duration, wall_clock=wall_clock)
+                                duration_s=ground_duration, wall_clock=wall_clock,
+                                diagnostic_errors=diagnostic_errors)
             if ground.guard.return_completed:
                 proof = copy.deepcopy(ground.guard.return_completion)
                 result['ground_return_completed'] = isinstance(proof, dict) and bool(proof)
@@ -158,7 +205,8 @@ def run_ground_and_flight(ros, reporter, *, worker, ground_factory=None, flight_
             flight.report_started(flight_duration)
             flight.arm_watchdog()
             _spin_with_progress(flight, ros, reporter, 'FLIGHT', spin,
-                                duration_s=flight_duration, wall_clock=wall_clock)
+                                duration_s=flight_duration, wall_clock=wall_clock,
+                                diagnostic_errors=diagnostic_errors)
             result['flight_completed'] = flight.mission_completed is True
         finally:
             _dispose(flight, ros, 'full_pipeline_flight_stage_exit', stage='FLIGHT',

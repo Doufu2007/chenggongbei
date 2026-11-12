@@ -19,6 +19,9 @@ class Node:
 
 
 class Ros:
+    def ok(self):
+        return True
+
     def spin_once(self, *args, **kwargs):
         pass
 
@@ -128,8 +131,10 @@ def test_progress_is_bounded_and_never_changes_control_or_failure_result():
     result = run_ground_and_flight(Ros(), Reporter(), worker=object(),
         ground_factory=lambda *a, **kw: node, spin=spin, wall_clock=lambda: wall[0])
     assert result['completed'] is False
-    assert len(reports) == 4
-    assert all(e == 'heartbeat' and d['stage'] == 'GROUND' and d['state'] == 'DRIVE' for e, d in reports)
+    heartbeats = [(e, d) for e, d in reports if e == 'heartbeat']
+    assert len(heartbeats) == 4
+    assert all(d['stage'] == 'GROUND' and d['state'] == 'DRIVE' for e, d in heartbeats)
+    assert len([d for e, d in reports if d.get('section') == 'full_inspection_stage_exit']) == 1
     assert node.tick == original
 
 
@@ -230,10 +235,11 @@ def test_ground_progress_reports_only_compact_current_target_and_completion_coun
     run_ground_and_flight(Ros(), Reporter(), worker=object(),
         ground_factory=lambda *a, **kw: ground,
         spin=lambda node, *a, **kw: node.tick())
-    assert len(reports) == 1
-    assert reports[0]['target_id'] == 'ground_4'
-    assert reports[0]['point_index'] == 1 and reports[0]['completed_count'] == 1
-    assert 'completed_points' not in reports[0]
+    heartbeats = [d for d in reports if 'section' not in d]
+    assert len(heartbeats) == 1
+    assert heartbeats[0]['target_id'] == 'ground_4'
+    assert heartbeats[0]['point_index'] == 1 and heartbeats[0]['completed_count'] == 1
+    assert all('completed_points' not in d for d in reports)
     assert ground.guard.completed_points[0]['target_id'] == 'ground_2'
 
 
@@ -288,3 +294,124 @@ def test_stop_and_destroy_errors_still_fail_closed_before_flight():
                 ground_factory=lambda *a, **kw: node,
                 flight_factory=lambda *a, **kw: pytest.fail('unsafe handoff'), spin=lambda *a, **kw: None)
         assert events.count(('ground', 'publish_zero')) == 5
+
+
+def test_stage_exit_preserves_actual_context_and_original_state_before_cleanup():
+    from inspection_mission.full_inspection_runtime import run_ground_and_flight
+    events, reports = [], []
+    wall = [10.]
+    node = Node(events, 'ground', False)
+    node.guard.state, node.guard.reason, node.guard.phase = 'DRIVE', 'route_drive', 'DRIVE'
+    node.guard.target_id, node.guard.point_index = 'ground_4', 1
+    node.guard.completed_points = [{'raw_data_must_not_be_serialized': object()}]
+    def stop(reason):
+        events.append(('ground', 'stop'))
+        node.guard.state, node.guard.reason = 'STOP', reason
+    node.stop = stop
+    class ContextGone(Ros):
+        def ok(self):
+            return False
+    class Reporter:
+        def emit(self, event, data):
+            reports.append((event, data))
+            events.append(('ground', 'stage_exit'))
+        def send_now(self, *args, **kwargs):
+            raise AssertionError('stage diagnostics must not make synchronous network requests')
+    def spin(*args, **kwargs):
+        wall[0] = 402.
+    result = run_ground_and_flight(ContextGone(), Reporter(), worker=object(),
+        ground_factory=lambda *a, **kw: node, spin=spin, wall_clock=lambda: wall[0])
+    stage = [d for e, d in reports if d.get('section') == 'full_inspection_stage_exit']
+    assert len(stage) == 1
+    assert stage[0] == {
+        'mode': 'full_inspection', 'section': 'full_inspection_stage_exit', 'stage': 'GROUND',
+        'session_id': 'one-session', 'elapsed_wall_s': 392., 'state': 'DRIVE',
+        'reason': 'route_drive', 'phase': 'DRIVE', 'ros_ok': False,
+        'return_completed': False, 'flight_completed': False, 'target_id': 'ground_4',
+        'point_index': 1, 'completed_count': 1, 'spin_outcome': 'returned',
+        'exception_type': None, 'official_score': None,
+    }
+    assert events.index(('ground', 'stage_exit')) < events.index(('ground', 'stop'))
+    assert result['completed'] is False and result['official_score'] is None
+
+
+def test_spin_exception_records_type_before_cleanup_and_is_not_swallowed():
+    from inspection_mission.full_inspection_runtime import run_ground_and_flight
+    import pytest
+    events, reports = [], []
+    class Reporter:
+        def emit(self, event, data):
+            reports.append(data)
+    node = Node(events, 'ground', False)
+    node.guard.state, node.guard.reason, node.guard.phase = 'DRIVE', 'route_drive', 'DRIVE'
+    def spin(*args, **kwargs):
+        raise KeyboardInterrupt('PRIVATE_EXCEPTION_MUST_NOT_BE_TRANSMITTED')
+    with pytest.raises(KeyboardInterrupt):
+        run_ground_and_flight(Ros(), Reporter(), worker=object(),
+            ground_factory=lambda *a, **kw: node, spin=spin)
+    stage = [d for d in reports if d.get('section') == 'full_inspection_stage_exit']
+    assert len(stage) == 1
+    assert stage[0]['exception_type'] == 'KeyboardInterrupt'
+    assert stage[0]['spin_outcome'] == 'exception' and stage[0]['ros_ok'] is True
+    assert 'PRIVATE_EXCEPTION' not in str(stage)
+    assert events.count(('ground', 'publish_zero')) == 5
+    assert ('ground', 'destroy_node') in events
+
+
+def test_stage_emit_failure_cannot_skip_safety_cleanup_or_create_flight():
+    from inspection_mission.full_inspection_runtime import run_ground_and_flight
+    import pytest
+    events = []
+    class Reporter:
+        def emit(self, event, data):
+            raise RuntimeError('queue unavailable')
+    result = run_ground_and_flight(Ros(), Reporter(), worker=object(),
+        ground_factory=lambda *a, **kw: Node(events, 'ground', False),
+        flight_factory=lambda *a, **kw: pytest.fail('no completed ground return'),
+        spin=lambda *a, **kw: None)
+    assert result['completed'] is False
+    assert result['diagnostic_errors'] == [
+        {'stage': 'GROUND', 'operation': 'stage_exit', 'error_type': 'RuntimeError'}]
+    assert events.count(('ground', 'publish_zero')) == 5
+    assert ('ground', 'close_watchdog') in events and ('ground', 'destroy_node') in events
+
+
+def test_first_stop_is_recorded_once_before_later_reason_changes():
+    from inspection_mission.full_inspection_runtime import run_ground_and_flight
+    events, reports = [], []
+    class ProgressNode(Node):
+        calls = 0
+        def tick(self):
+            self.calls += 1
+            reason = 'sensor_stale' if self.calls == 1 else 'later_zero_publish_failed'
+            self.guard.state, self.guard.reason = 'STOP', reason
+            return types.SimpleNamespace(state='STOP', reason=reason)
+    class Reporter:
+        def emit(self, event, data):
+            reports.append(data)
+    def spin(node, *args, **kwargs):
+        node.tick()
+        node.tick()
+    run_ground_and_flight(Ros(), Reporter(), worker=object(),
+        ground_factory=lambda *a, **kw: ProgressNode(events, 'ground', False), spin=spin)
+    first = [d for d in reports if d.get('section') == 'full_inspection_first_stop']
+    stage = [d for d in reports if d.get('section') == 'full_inspection_stage_exit']
+    assert len(first) == 1 and first[0]['reason'] == 'sensor_stale'
+    assert first[0]['state'] == 'STOP' and first[0]['ros_ok'] is True
+    assert len(stage) == 1 and stage[0]['reason'] == 'later_zero_publish_failed'
+
+
+def test_ground_and_flight_stage_exit_do_not_promote_return_to_full_success():
+    from inspection_mission.full_inspection_runtime import run_ground_and_flight
+    events, reports = [], []
+    class Reporter:
+        def emit(self, event, data):
+            reports.append(data)
+    result = run_ground_and_flight(Ros(), Reporter(), worker=object(),
+        ground_factory=lambda *a, **kw: Node(events, 'ground', True),
+        flight_factory=lambda *a, **kw: Node(events, 'flight', False), spin=lambda *a, **kw: None)
+    stage = [d for d in reports if d.get('section') == 'full_inspection_stage_exit']
+    assert [d['stage'] for d in stage] == ['GROUND', 'FLIGHT']
+    assert stage[0]['return_completed'] is True
+    assert stage[1]['flight_completed'] is False
+    assert result['completed'] is False and result['failed_stage'] == 'FLIGHT'

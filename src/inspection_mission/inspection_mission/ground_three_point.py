@@ -390,7 +390,7 @@ class GroundThreePointGuard(GroundSinglePointGuard):
                     self._enter_phase("TURN_SETTLE")
                 else:
                     rate = math.copysign(min(self.approach_limits.maximum_yaw_rate,
-                        max(self.approach_limits.minimum_yaw_rate, .6*abs(error))), error)
+                        max(self.approach_limits.minimum_yaw_rate, 1.5*abs(error))), error)
                     return MotionDecision(0., self.state, self.reason, rate)
             if self.phase in ("TURN_SETTLE", "DRIVE_SETTLE", "CALIBRATION_SETTLE"):
                 if not self._stable_dwell(wall_s):

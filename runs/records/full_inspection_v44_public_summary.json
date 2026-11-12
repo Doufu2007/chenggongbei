@@ -1,0 +1,34 @@
+{
+  "kind": "sanitized_official_result_and_team_telemetry_summary",
+  "record_id": "9142b55c-dcc7-4919-87d1-c8041a551108",
+  "runId": "run_20261112_215023_dd733c31",
+  "submissionNo": "#91145386",
+  "official": {
+    "status": "success",
+    "score": 10,
+    "durationMs": 492622,
+    "startedAt": "2026-11-12T21:55:07+08:00",
+    "finishedAt": "2026-11-12T22:03:20+08:00",
+    "abnormalEnd": false
+  },
+  "referee_log_summary": "One ground arrival message; no flight scoring evidence in the stored referee tab. Ground identity is hidden in this referee message.",
+  "team_telemetry": {
+    "completed_ground_points": 1,
+    "completed_target": "ground_1",
+    "next_target": "ground_4",
+    "last_ground_elapsed_s": 391.4505842149956,
+    "last_state": "DRIVE",
+    "flight_started": false,
+    "full_result_received": false,
+    "cleanup_context_invalid": true,
+    "launcher_exit_code_observed": 0
+  },
+  "full_mission_verified": false,
+  "root_cause_status": "slow tail and turning identified; precise ROS context shutdown source not determined; no public platform deadline found",
+  "original_local_evidence": {
+    "detail_sha256": "35137c92a01ffe499bed3663c63ae2212ccfc33541fc433cb8df7328ca453d23",
+    "callback_sha256": "b9d849be79d8a6adc256ccb65af183770470140ae245bafe93d2934249b4fb3b",
+    "callback_bytes": 170926
+  },
+  "recorded_at": "2026-11-12T14:14:45.807093+00:00"
+}

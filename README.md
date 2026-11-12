@@ -2,7 +2,7 @@
 
 2026 年 iCAN 应急救援机器人挑战赛的 ROS 2 Humble 巡检项目，包含任务控制、视觉识别、传感器约束、诊断工具、测试、历史测评记录和材料草稿。
 
-**当前状态：完整任务尚未通过平台验收。** v42 已获官方 **10 分**，裁判仅确认 `ground_4`。完整 v43 复跑定位到4.673毫米微轴引起的转向追角超时。v44已修复规划问题及诊断阻塞飞行交接，完整本地回归 **1823 项通过**；已于21:50上传练习平台，ID `9142b55c-dcc7-4919-87d1-c8041a551108`，等待真实运行与计分。详见 [本轮实测诊断](docs/full_mission_v44_ground_fix_20261112.md)。
+**当前状态：完整任务尚未通过平台验收。** v44 已获官方 **10 分**，耗时492.622秒；本队记录完成首点 `ground_1`，随后在第二点途中结束，尚未开始飞行。v45已修复末段低速与转向增益的耗时问题，并补充信号退出诊断，完整回归 **1866项通过**，22:29已上传练习平台（ID `d2b812b5-a832-49b4-940c-99a4d9cdf716`），等待真实验证。参见 [本局实测概要](runs/records/full_inspection_v44_public_summary.json) 和 [v45候选说明](docs/full_mission_v45_timing_plan_20261112.md)。
 
 ## 任务流程
 
@@ -19,7 +19,7 @@
 ## 文件入口
 
 - `src/inspection_mission/`：ROS 包、控制器、识别器、配置和图像模板。
-- `scripts/run_full_inspection_v44.sh`：完整任务启动脚本；不启动平台的仿真或裁判。
+- `scripts/run_full_inspection_v45.sh`：完整任务启动脚本；不启动平台的仿真或裁判。
 - `tools/`：打包、诊断接收、日志分析、台账和材料生成工具。
 - `tests/`：控制、视觉、时序、回传和完成判定测试。
 - `docs/`：方案、接口核对、实现说明、失败诊断与历史进展。
@@ -31,7 +31,7 @@
 完整入口：
 
 ```bash
-bash scripts/run_full_inspection_v44.sh
+bash scripts/run_full_inspection_v45.sh
 ```
 
 依赖 ROS 2 Humble、`rclpy`、OpenCV、NumPy、PyYAML 及平台消息环境。平台已经启动仿真及裁判时，仅运行参赛程序；源码解压根目录应包含 `src/inspection_mission/`。
@@ -41,7 +41,7 @@ python -m pytest tests -q
 python tools/mission_scenario.py
 ```
 
-`mission_scenario.py` 使用人工地图和合成运动学模型；它不产生官方比赛成绩。v44完整本地回归 **1823 项通过**，报告在 `runs/review/full_v44_regression_20261112.xml`。首次公开归档的1811项测试和历史脚本脱敏后14项启动器检查保存在 `docs/github_snapshot_test_result.txt`。
+`mission_scenario.py` 使用人工地图和合成运动学模型；它不产生官方比赛成绩。v45完整本地回归 **1866 项通过**，报告在 `runs/review/full_v45_regression_20261112.xml`。首次公开归档的1811项测试和历史脚本脱敏后14项启动器检查保存在 `docs/github_snapshot_test_result.txt`。
 
 ## 公开副本与本机原始记录
 

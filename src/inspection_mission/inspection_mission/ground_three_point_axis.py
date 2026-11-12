@@ -195,7 +195,7 @@ class GroundThreePointAxisGuard(GroundThreePointGuard):
                 slow_continuous_wall_s=wall-self.initial_slow_anchor[0],
                 slow_continuous_sim_s=self.odom["stamp"]-self.initial_slow_anchor[1])
         final_drive = not any(op.kind in DRIVES for op in self.operations[self.operation_index+1:])
-        magnitude = min(.03 if final_drive and self.leg_target_distance_m-self.measured_forward() <= .10+1e-9 else .10,
+        magnitude = min(.03 if final_drive and self.leg_target_distance_m-self.measured_forward() <= .03+1e-9 else .10,
                         self.approach_limits.linear_command_mps)
         return -magnitude if self.reverse_segment else magnitude
 
