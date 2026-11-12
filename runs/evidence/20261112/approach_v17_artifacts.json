@@ -1,0 +1,24 @@
+{
+  "version": "ground-callback-v17",
+  "mode": "practice",
+  "official_task_success": false,
+  "revision": "v17_timing",
+  "changes": "bounded receive/spin/tick metrics only; same .20m/.03mps/90s, original QoS/freshness/motion guard",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_callback_timing.py": "eca410cbe4f66c243c2e60ef4641b2b725ab054bef1b47b63b29df18d8240b16",
+    "src/inspection_mission/inspection_mission/bounded_ground_probe.py": "ddebbbba13f34e62981202e22f31b214600e81d7e74dde017dfb219a0071c6b4",
+    "scripts/run_ground_callback_timing.sh": "f0b719720d48cc2badb2925087c24dcacc69cc17a41167e784413728b4b09675"
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_callback_v17_src.zip",
+      "bytes": 105838,
+      "sha256": "2b08c03d4b94a84da38acfe3f994fc9a9e9d159ac5a7f96b07f22409449c94e1"
+    },
+    {
+      "path": "dist/run_ground_callback_v17.sh",
+      "bytes": 2854,
+      "sha256": "7b8838728b33b27be048f30a52302edd73543e7edafaa7883d421302190d8bfc"
+    }
+  ]
+}

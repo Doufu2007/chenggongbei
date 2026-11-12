@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "record_id": "930a52f0-a4f6-4483-b88b-813e17dd3807",
+  "runId": "run_20261112_010055_0b9da786",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "bounded-ground-motion-v6",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_v6_src.zip",
+    "sha256": "4f170f3fbf74a68d76f0537cf9971966f342a0ad13bb3985645f1718dc2e79f4"
+  },
+  "script": {
+    "path": "dist/run_ground_control_v6.sh",
+    "sha256": "b0108f2a12f612bead325254aff30da630da4bb547b1aa3c4225a00af9953084"
+  },
+  "draw_order": [
+    "ground_1",
+    "ground_2",
+    "ground_0"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 52.948,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/ground_v6_submission.json",
+    "runs/evidence/20261112/ground_v6_artifacts.json",
+    "runs/evidence/20261112/ground_v6_detail_0103.json",
+    "runs/evidence/20261112/callback_ground_v6.jsonl"
+  ]
+}

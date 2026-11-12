@@ -1,0 +1,11 @@
+{
+  "repository": "ranmengjia/ICAN",
+  "commit": "82b041043849a5d86e085390bf0df787366d98cd",
+  "path": "src/ican_inspection_examples/ican_inspection_examples/minimal_user_node.py",
+  "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/f2199e4676080834c0c306cd12962719fc8d21c7",
+  "git_blob_sha": "f2199e4676080834c0c306cd12962719fc8d21c7",
+  "git_blob_sha_verified": true,
+  "sha256": "5e66f4ca6bd1fdc9d1dfe1606e27d1e187b662840f77e4d43f49da866189735e",
+  "bytes": 40969,
+  "executed": false
+}

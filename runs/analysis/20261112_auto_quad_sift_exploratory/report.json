@@ -1,0 +1,3945 @@
+{
+  "kind": "blind_fixed_document_scanner_quad_sift_exploratory",
+  "created_at": "2026-11-11T20:07:58.660592+00:00",
+  "opencv_version": "5.0.0",
+  "frozen_input_report_sha256": "8b18cd655733b41efac4dd37170c8c390173c8c00544959fa1225c1387673fd0",
+  "detector_protocol": {
+    "grayscale": true,
+    "gaussian_kernel": [
+      5,
+      5
+    ],
+    "gaussian_sigma": 0,
+    "canny_thresholds": [
+      50,
+      150
+    ],
+    "contour_mode": "RETR_LIST",
+    "contour_approximation": "CHAIN_APPROX_SIMPLE",
+    "approx_perimeter_fraction": 0.02,
+    "minimum_area_px2_exclusive": 1000,
+    "maximum_area_fraction_exclusive": 0.6,
+    "maximum_minAreaRect_long_short_ratio": 8.0,
+    "convex_four_points_required": true,
+    "image_bound_required": true,
+    "HSV_filter": false,
+    "morphology": false
+  },
+  "sift_protocol": {
+    "SIFT": "cv2.SIFT_create() default parameters",
+    "matcher": "BFMatcher(NORM_L2, crossCheck=False), reference descriptors -> query descriptors",
+    "knn_k": 2,
+    "ratio_threshold": 0.75,
+    "minimum_good_matches_for_homography": 8,
+    "homography": "cv2.findHomography(reference_xy, query_xy, cv2.RANSAC, 3.0)",
+    "ransac_reprojection_threshold_px": 3.0,
+    "seed": 20261112,
+    "threshold_tuning": false,
+    "extra_rotations": false,
+    "class_acceptance_rule": null
+  },
+  "geometry_gate": {
+    "minimum_inliers": 8,
+    "minimum_distinct_xy_each_side": 8,
+    "minimum_hull_area_fraction_each_side": 0.05,
+    "finite_convex_projection_required": true,
+    "projected_area_fraction_of_query_range": [
+      0.1,
+      2.0
+    ],
+    "calibrated": false,
+    "class_acceptance_rule": null
+  },
+  "manual_corners_used_by_detector_or_SIFT": false,
+  "manual_evaluation_is_development_only": true,
+  "sources": [
+    {
+      "name": "v16b",
+      "path": "runs/analysis/20261112_approach_v16b/native_L000020_a672e7739804717c.jpg",
+      "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "summary_sha256": "9159fc28f8c4318b2ae9db763245798a0e53f6c63410fb613efa5e1464ec5dec",
+      "metadata": {
+        "topic": "/uav/camera/image",
+        "frame_id": "uav/camera_link",
+        "width": 800,
+        "phase": "last",
+        "jpeg_sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+        "stamp_s": 89.11,
+        "height": 800,
+        "encoding": "jpeg",
+        "part_count": 2,
+        "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+        "bytes": 29365,
+        "file_name": "native_L000020_a672e7739804717c.jpg",
+        "parts": [
+          {
+            "line": 20,
+            "event": "probe_snapshot",
+            "payload_timestamp": "2026-11-11T19:30:53.792487+00:00",
+            "received_at": "2026-11-11T19:30:57.526015+00:00",
+            "source": "unverified_callback"
+          },
+          {
+            "line": 21,
+            "event": "probe_snapshot",
+            "payload_timestamp": "2026-11-11T19:30:54.869452+00:00",
+            "received_at": "2026-11-11T19:30:58.366819+00:00",
+            "source": "unverified_callback"
+          }
+        ],
+        "exposure": {
+          "topic": "/uav/camera/image",
+          "stamp_s": 89.11,
+          "frame_id": "uav/camera_link",
+          "wall_elapsed_s": 87.48622328300007,
+          "odom": null,
+          "association_error": "prior_odom_too_old",
+          "phase": "last"
+        },
+        "exposure_validation": "invalid_or_unverified_pose_association"
+      }
+    },
+    {
+      "name": "v17",
+      "path": "runs/analysis/20261112_approach_v17/native_L000017_46381698801c0842.jpg",
+      "sha256": "46381698801c0842ae13784f842bf5d774a94483efcd63f64863d3ccca88a2a3",
+      "summary_sha256": "2b4edb736a3bd4719f9eca31c9b6d01236f2ea554d8a5febd60c9a77f12fc7e2",
+      "metadata": {
+        "topic": "/uav/camera/image",
+        "part_count": 2,
+        "jpeg_sha256": "46381698801c0842ae13784f842bf5d774a94483efcd63f64863d3ccca88a2a3",
+        "height": 800,
+        "encoding": "jpeg",
+        "width": 800,
+        "stamp_s": 82.716,
+        "phase": "last_associated",
+        "frame_id": "uav/camera_link",
+        "sha256": "46381698801c0842ae13784f842bf5d774a94483efcd63f64863d3ccca88a2a3",
+        "bytes": 29454,
+        "file_name": "native_L000017_46381698801c0842.jpg",
+        "parts": [
+          {
+            "line": 17,
+            "event": "probe_snapshot",
+            "payload_timestamp": "2026-11-11T19:50:19.328482+00:00",
+            "received_at": "2026-11-11T19:50:23.092316+00:00",
+            "source": "unverified_callback"
+          },
+          {
+            "line": 18,
+            "event": "probe_snapshot",
+            "payload_timestamp": "2026-11-11T19:50:20.334327+00:00",
+            "received_at": "2026-11-11T19:50:24.024079+00:00",
+            "source": "unverified_callback"
+          }
+        ],
+        "exposure": {
+          "topic": "/uav/camera/image",
+          "stamp_s": 82.716,
+          "frame_id": "uav/camera_link",
+          "wall_elapsed_s": 81.5169542879994,
+          "odom": {
+            "stamp_s": 82.7,
+            "wall_elapsed_s": 81.32286131900037,
+            "source_topic": "/uav/odom",
+            "frame_id": "odom",
+            "child_frame_id": "uav/base_link",
+            "position": [
+              -0.004728745683788164,
+              -0.08300812178590154,
+              0.05500005058504762
+            ],
+            "quaternion": [
+              5.552483827817805e-08,
+              -5.0505641385576965e-08,
+              -0.6987254431625782,
+              0.71538993218891
+            ],
+            "yaw_rad": -1.5472286349765116,
+            "linear_speed": 8.985232646454269e-06,
+            "angular_speed": 3.6745051446018806e-10,
+            "association": "prior_uav_odom",
+            "image_minus_odom_s": 0.015999999999991132
+          },
+          "association_error": null,
+          "phase": "last_associated"
+        },
+        "exposure_validation": "valid_prior_pose_observation"
+      }
+    }
+  ],
+  "detection": [
+    {
+      "name": "v16b",
+      "contours": [
+        {
+          "contour_index": 0,
+          "contour_point_count": 314,
+          "perimeter_px": 733.1097331047058,
+          "approx_vertices": 7,
+          "approx_xy": [
+            [
+              207,
+              798
+            ],
+            [
+              344,
+              732
+            ],
+            [
+              436,
+              743
+            ],
+            [
+              516,
+              798
+            ],
+            [
+              457,
+              752
+            ],
+            [
+              384,
+              732
+            ],
+            [
+              289,
+              746
+            ]
+          ],
+          "convex": false,
+          "area_px2": 895.0,
+          "area_fraction": 0.0013984375,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 4.681818181818182,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 1,
+          "contour_point_count": 782,
+          "perimeter_px": 1711.5991886854172,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              0,
+              795
+            ],
+            [
+              201,
+              678
+            ],
+            [
+              394,
+              645
+            ],
+            [
+              727,
+              798
+            ],
+            [
+              394,
+              645
+            ],
+            [
+              198,
+              679
+            ]
+          ],
+          "convex": false,
+          "area_px2": 28.0,
+          "area_fraction": 4.375e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 4.794778072404512,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 2,
+          "contour_point_count": 11,
+          "perimeter_px": 20.727921724319458,
+          "approx_vertices": 11,
+          "approx_xy": [
+            [
+              581,
+              529
+            ],
+            [
+              582,
+              528
+            ],
+            [
+              584,
+              528
+            ],
+            [
+              585,
+              529
+            ],
+            [
+              586,
+              529
+            ],
+            [
+              589,
+              532
+            ],
+            [
+              588,
+              533
+            ],
+            [
+              587,
+              533
+            ],
+            [
+              585,
+              531
+            ],
+            [
+              582,
+              531
+            ],
+            [
+              581,
+              530
+            ]
+          ],
+          "convex": false,
+          "area_px2": 19.5,
+          "area_fraction": 3.046875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 2.4210526671446915,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 3,
+          "contour_point_count": 93,
+          "perimeter_px": 1148.7106767892838,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              206,
+              527
+            ],
+            [
+              596,
+              530
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 4,
+          "contour_point_count": 77,
+          "perimeter_px": 755.0538227558136,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              211,
+              519
+            ],
+            [
+              579,
+              521
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 5,
+          "contour_point_count": 80,
+          "perimeter_px": 760.2253956794739,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              211,
+              518
+            ],
+            [
+              579,
+              523
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 6,
+          "contour_point_count": 6,
+          "perimeter_px": 24.242640614509583,
+          "approx_vertices": 5,
+          "approx_xy": [
+            [
+              227,
+              510
+            ],
+            [
+              229,
+              508
+            ],
+            [
+              238,
+              508
+            ],
+            [
+              229,
+              508
+            ],
+            [
+              227,
+              509
+            ]
+          ],
+          "convex": false,
+          "area_px2": 1.0,
+          "area_fraction": 1.5625e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 6.94444474062227,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 7,
+          "contour_point_count": 6,
+          "perimeter_px": 68.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              392,
+              498
+            ],
+            [
+              426,
+              499
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 8,
+          "contour_point_count": 14,
+          "perimeter_px": 76.48528122901917,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              537,
+              495
+            ],
+            [
+              525,
+              497
+            ],
+            [
+              500,
+              496
+            ],
+            [
+              526,
+              497
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.5,
+          "area_fraction": 7.8125e-07,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 21.746031612627235,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 9,
+          "contour_point_count": 24,
+          "perimeter_px": 120.97056245803833,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              332,
+              495
+            ],
+            [
+              390,
+              497
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 10,
+          "contour_point_count": 10,
+          "perimeter_px": 65.65685415267944,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              496,
+              493
+            ],
+            [
+              528,
+              494
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 11,
+          "contour_point_count": 154,
+          "perimeter_px": 707.9655101299286,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              240,
+              503
+            ],
+            [
+              427,
+              502
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 12,
+          "contour_point_count": 158,
+          "perimeter_px": 516.4507913589478,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              347,
+              491
+            ],
+            [
+              564,
+              510
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 13,
+          "contour_point_count": 20,
+          "perimeter_px": 61.31370830535889,
+          "approx_vertices": 7,
+          "approx_xy": [
+            [
+              330,
+              492
+            ],
+            [
+              337,
+              491
+            ],
+            [
+              341,
+              488
+            ],
+            [
+              353,
+              488
+            ],
+            [
+              332,
+              488
+            ],
+            [
+              336,
+              488
+            ],
+            [
+              337,
+              490
+            ]
+          ],
+          "convex": false,
+          "area_px2": 10.5,
+          "area_fraction": 1.640625e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 6.346153192753077,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 14,
+          "contour_point_count": 8,
+          "perimeter_px": 21.656854152679443,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              485,
+              487
+            ],
+            [
+              486,
+              486
+            ],
+            [
+              489,
+              486
+            ],
+            [
+              490,
+              487
+            ],
+            [
+              495,
+              487
+            ],
+            [
+              490,
+              487
+            ],
+            [
+              489,
+              486
+            ],
+            [
+              486,
+              486
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 10.0,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 15,
+          "contour_point_count": 37,
+          "perimeter_px": 113.69848430156708,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              301,
+              490
+            ],
+            [
+              312,
+              486
+            ],
+            [
+              326,
+              488
+            ],
+            [
+              312,
+              486
+            ],
+            [
+              301,
+              490
+            ],
+            [
+              315,
+              492
+            ],
+            [
+              328,
+              489
+            ],
+            [
+              315,
+              492
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 4.820512882583126,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 16,
+          "contour_point_count": 26,
+          "perimeter_px": 89.79898953437805,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              460,
+              485
+            ],
+            [
+              502,
+              491
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 17,
+          "contour_point_count": 25,
+          "perimeter_px": 52.62741661071777,
+          "approx_vertices": 9,
+          "approx_xy": [
+            [
+              306,
+              484
+            ],
+            [
+              302,
+              487
+            ],
+            [
+              297,
+              487
+            ],
+            [
+              290,
+              491
+            ],
+            [
+              284,
+              491
+            ],
+            [
+              290,
+              491
+            ],
+            [
+              297,
+              487
+            ],
+            [
+              304,
+              487
+            ],
+            [
+              303,
+              486
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.5,
+          "area_fraction": 7.8125e-07,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 10.249999470738397,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 18,
+          "contour_point_count": 18,
+          "perimeter_px": 186.1421353816986,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              522,
+              482
+            ],
+            [
+              431,
+              483
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 19,
+          "contour_point_count": 70,
+          "perimeter_px": 395.154327750206,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              270,
+              486
+            ],
+            [
+              448,
+              487
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 20,
+          "contour_point_count": 26,
+          "perimeter_px": 178.97056245803833,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              427,
+              480
+            ],
+            [
+              340,
+              482
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 21,
+          "contour_point_count": 2,
+          "perimeter_px": 12.0,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              0,
+              480
+            ],
+            [
+              6,
+              480
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 22,
+          "contour_point_count": 102,
+          "perimeter_px": 643.4802280664444,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              260,
+              488
+            ],
+            [
+              499,
+              477
+            ],
+            [
+              546,
+              497
+            ],
+            [
+              499,
+              477
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 15.457240939745436,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 23,
+          "contour_point_count": 34,
+          "perimeter_px": 80.62741661071777,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              37,
+              476
+            ],
+            [
+              0,
+              484
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 24,
+          "contour_point_count": 16,
+          "perimeter_px": 61.31370830535889,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              29,
+              475
+            ],
+            [
+              0,
+              477
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 25,
+          "contour_point_count": 10,
+          "perimeter_px": 111.65685415267944,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              377,
+              458
+            ],
+            [
+              432,
+              458
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 26,
+          "contour_point_count": 6,
+          "perimeter_px": 7.656854152679443,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              349,
+              457
+            ],
+            [
+              350,
+              456
+            ],
+            [
+              351,
+              456
+            ],
+            [
+              352,
+              457
+            ],
+            [
+              351,
+              458
+            ],
+            [
+              350,
+              458
+            ]
+          ],
+          "convex": true,
+          "area_px2": 4.0,
+          "area_fraction": 6.25e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 1.0,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 27,
+          "contour_point_count": 18,
+          "perimeter_px": 109.31370830535889,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              378,
+              456
+            ],
+            [
+              431,
+              456
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 28,
+          "contour_point_count": 97,
+          "perimeter_px": 475.2964633703232,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              346,
+              457
+            ],
+            [
+              462,
+              456
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 29,
+          "contour_point_count": 44,
+          "perimeter_px": 135.11269783973694,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              141,
+              448
+            ],
+            [
+              79,
+              456
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 30,
+          "contour_point_count": 40,
+          "perimeter_px": 113.11269783973694,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              69,
+              449
+            ],
+            [
+              17,
+              454
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 31,
+          "contour_point_count": 134,
+          "perimeter_px": 543.5807341337204,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              200,
+              442
+            ],
+            [
+              0,
+              464
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 32,
+          "contour_point_count": 6,
+          "perimeter_px": 66.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              170,
+              442
+            ],
+            [
+              137,
+              443
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 33,
+          "contour_point_count": 19,
+          "perimeter_px": 202.1421353816986,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              369,
+              440
+            ],
+            [
+              468,
+              441
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 34,
+          "contour_point_count": 4,
+          "perimeter_px": 37.41421353816986,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              363,
+              439
+            ],
+            [
+              362,
+              440
+            ],
+            [
+              345,
+              440
+            ],
+            [
+              363,
+              440
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.5,
+          "area_fraction": 7.8125e-07,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 18.0,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 35,
+          "contour_point_count": 26,
+          "perimeter_px": 248.97056245803833,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              204,
+              439
+            ],
+            [
+              82,
+              443
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 36,
+          "contour_point_count": 38,
+          "perimeter_px": 259.4558436870575,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              126,
+              436
+            ],
+            [
+              0,
+              445
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 37,
+          "contour_point_count": 9,
+          "perimeter_px": 33.65685415267944,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              378,
+              437
+            ],
+            [
+              383,
+              435
+            ],
+            [
+              394,
+              435
+            ],
+            [
+              383,
+              435
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 11.818182294758374,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 38,
+          "contour_point_count": 4,
+          "perimeter_px": 240.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              261,
+              435
+            ],
+            [
+              141,
+              436
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 39,
+          "contour_point_count": 48,
+          "perimeter_px": 274.18376553058624,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              467,
+              438
+            ],
+            [
+              382,
+              438
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 40,
+          "contour_point_count": 46,
+          "perimeter_px": 140.7695518732071,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              301,
+              434
+            ],
+            [
+              353,
+              434
+            ],
+            [
+              344,
+              438
+            ],
+            [
+              355,
+              434
+            ]
+          ],
+          "convex": false,
+          "area_px2": 4.0,
+          "area_fraction": 6.25e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 13.5,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 41,
+          "contour_point_count": 6,
+          "perimeter_px": 252.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              135,
+              434
+            ],
+            [
+              261,
+              433
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 42,
+          "contour_point_count": 38,
+          "perimeter_px": 251.4558436870575,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              127,
+              433
+            ],
+            [
+              5,
+              442
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 43,
+          "contour_point_count": 89,
+          "perimeter_px": 374.2253956794739,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              0,
+              202
+            ],
+            [
+              19,
+              217
+            ],
+            [
+              18,
+              352
+            ],
+            [
+              0,
+              352
+            ],
+            [
+              18,
+              353
+            ],
+            [
+              19,
+              217
+            ]
+          ],
+          "convex": false,
+          "area_px2": 9.5,
+          "area_fraction": 1.484375e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 7.947368421052632,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 44,
+          "contour_point_count": 341,
+          "perimeter_px": 2229.6366449594498,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              0,
+              40
+            ],
+            [
+              77,
+              108
+            ],
+            [
+              77,
+              364
+            ],
+            [
+              539,
+              364
+            ],
+            [
+              799,
+              293
+            ],
+            [
+              539,
+              364
+            ],
+            [
+              78,
+              364
+            ],
+            [
+              77,
+              106
+            ]
+          ],
+          "convex": false,
+          "area_px2": 206.0,
+          "area_fraction": 0.000321875,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 2.9341045123824943,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        }
+      ],
+      "candidates": []
+    },
+    {
+      "name": "v17",
+      "contours": [
+        {
+          "contour_index": 0,
+          "contour_point_count": 1,
+          "perimeter_px": 0.0,
+          "approx_vertices": 1,
+          "approx_xy": [
+            [
+              0,
+              788
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 1,
+          "contour_point_count": 355,
+          "perimeter_px": 839.9625442028046,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              193,
+              798
+            ],
+            [
+              280,
+              729
+            ],
+            [
+              382,
+              710
+            ],
+            [
+              465,
+              735
+            ],
+            [
+              528,
+              799
+            ],
+            [
+              466,
+              735
+            ],
+            [
+              382,
+              710
+            ],
+            [
+              277,
+              730
+            ]
+          ],
+          "convex": false,
+          "area_px2": 82.0,
+          "area_fraction": 0.000128125,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 3.7826015567914983,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 2,
+          "contour_point_count": 748,
+          "perimeter_px": 1737.682453751564,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              1,
+              791
+            ],
+            [
+              192,
+              670
+            ],
+            [
+              396,
+              633
+            ],
+            [
+              573,
+              679
+            ],
+            [
+              731,
+              798
+            ],
+            [
+              580,
+              682
+            ],
+            [
+              396,
+              633
+            ],
+            [
+              202,
+              666
+            ]
+          ],
+          "convex": false,
+          "area_px2": 75.0,
+          "area_fraction": 0.0001171875,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 4.512501805010908,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 3,
+          "contour_point_count": 73,
+          "perimeter_px": 962.5685415267944,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              584,
+              526
+            ],
+            [
+              211,
+              524
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 4,
+          "contour_point_count": 30,
+          "perimeter_px": 313.79898953437805,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              421,
+              518
+            ],
+            [
+              575,
+              519
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 5,
+          "contour_point_count": 14,
+          "perimeter_px": 54.485281229019165,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              336,
+              518
+            ],
+            [
+              362,
+              519
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 6,
+          "contour_point_count": 2,
+          "perimeter_px": 2.0,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              385,
+              515
+            ],
+            [
+              385,
+              516
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 7,
+          "contour_point_count": 9,
+          "perimeter_px": 29.899494647979736,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              267,
+              515
+            ],
+            [
+              270,
+              512
+            ],
+            [
+              272,
+              512
+            ],
+            [
+              273,
+              511
+            ],
+            [
+              280,
+              511
+            ],
+            [
+              272,
+              511
+            ],
+            [
+              271,
+              512
+            ],
+            [
+              269,
+              512
+            ]
+          ],
+          "convex": false,
+          "area_px2": 2.5,
+          "area_fraction": 3.90625e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 5.78124978148813,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 8,
+          "contour_point_count": 21,
+          "perimeter_px": 88.14213538169861,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              343,
+              511
+            ],
+            [
+              370,
+              510
+            ],
+            [
+              384,
+              513
+            ],
+            [
+              370,
+              510
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 17.73684406262018,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 9,
+          "contour_point_count": 29,
+          "perimeter_px": 94.28427064418793,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              283,
+              510
+            ],
+            [
+              291,
+              516
+            ],
+            [
+              324,
+              510
+            ],
+            [
+              306,
+              512
+            ],
+            [
+              302,
+              515
+            ],
+            [
+              287,
+              514
+            ]
+          ],
+          "convex": false,
+          "area_px2": 15.5,
+          "area_fraction": 2.421875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 6.8333331478966315,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 10,
+          "contour_point_count": 36,
+          "perimeter_px": 146.28427076339722,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              477,
+              507
+            ],
+            [
+              546,
+              515
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 11,
+          "contour_point_count": 22,
+          "perimeter_px": 42.041629910469055,
+          "approx_vertices": 11,
+          "approx_xy": [
+            [
+              435,
+              507
+            ],
+            [
+              435,
+              510
+            ],
+            [
+              433,
+              512
+            ],
+            [
+              437,
+              515
+            ],
+            [
+              434,
+              512
+            ],
+            [
+              437,
+              509
+            ],
+            [
+              441,
+              512
+            ],
+            [
+              439,
+              514
+            ],
+            [
+              441,
+              514
+            ],
+            [
+              441,
+              511
+            ],
+            [
+              436,
+              509
+            ]
+          ],
+          "convex": false,
+          "area_px2": 9.0,
+          "area_fraction": 1.40625e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 1.6000000343852172,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 12,
+          "contour_point_count": 20,
+          "perimeter_px": 36.627416491508484,
+          "approx_vertices": 9,
+          "approx_xy": [
+            [
+              312,
+              508
+            ],
+            [
+              308,
+              508
+            ],
+            [
+              307,
+              507
+            ],
+            [
+              304,
+              508
+            ],
+            [
+              299,
+              512
+            ],
+            [
+              297,
+              512
+            ],
+            [
+              299,
+              513
+            ],
+            [
+              307,
+              507
+            ],
+            [
+              310,
+              509
+            ]
+          ],
+          "convex": false,
+          "area_px2": 10.0,
+          "area_fraction": 1.5625e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 5.171428471194123,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 13,
+          "contour_point_count": 65,
+          "perimeter_px": 185.49747383594513,
+          "approx_vertices": 5,
+          "approx_xy": [
+            [
+              281,
+              516
+            ],
+            [
+              258,
+              517
+            ],
+            [
+              265,
+              506
+            ],
+            [
+              255,
+              517
+            ],
+            [
+              212,
+              519
+            ]
+          ],
+          "convex": false,
+          "area_px2": 19.5,
+          "area_fraction": 3.046875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 6.463414418642883,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 14,
+          "contour_point_count": 43,
+          "perimeter_px": 133.35533845424652,
+          "approx_vertices": 5,
+          "approx_xy": [
+            [
+              363,
+              505
+            ],
+            [
+              402,
+              506
+            ],
+            [
+              393,
+              510
+            ],
+            [
+              381,
+              509
+            ],
+            [
+              403,
+              507
+            ]
+          ],
+          "convex": false,
+          "area_px2": 35.5,
+          "area_fraction": 5.546875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 9.46666785423688,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 15,
+          "contour_point_count": 56,
+          "perimeter_px": 141.01219260692596,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              359,
+              506
+            ],
+            [
+              315,
+              507
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 16,
+          "contour_point_count": 99,
+          "perimeter_px": 311.09545266628265,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              453,
+              515
+            ],
+            [
+              433,
+              503
+            ],
+            [
+              413,
+              518
+            ],
+            [
+              333,
+              512
+            ],
+            [
+              413,
+              518
+            ],
+            [
+              433,
+              503
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 8.87222137055675,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 17,
+          "contour_point_count": 32,
+          "perimeter_px": 72.62741661071777,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              267,
+              504
+            ],
+            [
+              255,
+              504
+            ],
+            [
+              234,
+              510
+            ],
+            [
+              261,
+              503
+            ]
+          ],
+          "convex": false,
+          "area_px2": 1.5,
+          "area_fraction": 2.34375e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 15.624999736216596,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 18,
+          "contour_point_count": 36,
+          "perimeter_px": 88.18376541137695,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              518,
+              501
+            ],
+            [
+              535,
+              501
+            ],
+            [
+              543,
+              504
+            ],
+            [
+              552,
+              515
+            ],
+            [
+              546,
+              505
+            ],
+            [
+              535,
+              501
+            ]
+          ],
+          "convex": false,
+          "area_px2": 12.5,
+          "area_fraction": 1.953125e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 5.28124947349374,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 19,
+          "contour_point_count": 81,
+          "perimeter_px": 189.39696860313416,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              256,
+              500
+            ],
+            [
+              218,
+              514
+            ],
+            [
+              253,
+              512
+            ],
+            [
+              220,
+              513
+            ]
+          ],
+          "convex": false,
+          "area_px2": 10.5,
+          "area_fraction": 1.640625e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 3.9440203193653485,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 20,
+          "contour_point_count": 20,
+          "perimeter_px": 70.14213538169861,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              460,
+              500
+            ],
+            [
+              468,
+              499
+            ],
+            [
+              493,
+              503
+            ],
+            [
+              468,
+              499
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 19.263155487456263,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 21,
+          "contour_point_count": 48,
+          "perimeter_px": 249.94112491607666,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              508,
+              500
+            ],
+            [
+              388,
+              502
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 22,
+          "contour_point_count": 21,
+          "perimeter_px": 89.55634891986847,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              493,
+              497
+            ],
+            [
+              495,
+              495
+            ],
+            [
+              535,
+              496
+            ],
+            [
+              495,
+              495
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 21.52438796324561,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 23,
+          "contour_point_count": 39,
+          "perimeter_px": 85.69848430156708,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              258,
+              498
+            ],
+            [
+              268,
+              500
+            ],
+            [
+              278,
+              495
+            ],
+            [
+              260,
+              495
+            ],
+            [
+              275,
+              495
+            ],
+            [
+              268,
+              500
+            ]
+          ],
+          "convex": false,
+          "area_px2": 7.5,
+          "area_fraction": 1.171875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 4.0,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 24,
+          "contour_point_count": 8,
+          "perimeter_px": 25.656854152679443,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              455,
+              494
+            ],
+            [
+              456,
+              495
+            ],
+            [
+              457,
+              494
+            ],
+            [
+              460,
+              494
+            ],
+            [
+              461,
+              493
+            ],
+            [
+              467,
+              493
+            ],
+            [
+              460,
+              493
+            ],
+            [
+              459,
+              494
+            ]
+          ],
+          "convex": false,
+          "area_px2": 2.0,
+          "area_fraction": 3.125e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 9.571426898628463,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 25,
+          "contour_point_count": 58,
+          "perimeter_px": 279.01219260692596,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              441,
+              494
+            ],
+            [
+              308,
+              500
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 26,
+          "contour_point_count": 69,
+          "perimeter_px": 165.154327750206,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              331,
+              494
+            ],
+            [
+              283,
+              498
+            ],
+            [
+              271,
+              506
+            ],
+            [
+              285,
+              507
+            ],
+            [
+              274,
+              507
+            ],
+            [
+              283,
+              498
+            ]
+          ],
+          "convex": false,
+          "area_px2": 12.5,
+          "area_fraction": 1.953125e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 6.654545245749834,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 27,
+          "contour_point_count": 22,
+          "perimeter_px": 90.14213538169861,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              325,
+              489
+            ],
+            [
+              304,
+              493
+            ],
+            [
+              282,
+              492
+            ],
+            [
+              304,
+              493
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 17.04586975353875,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 28,
+          "contour_point_count": 54,
+          "perimeter_px": 225.25483322143555,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              326,
+              491
+            ],
+            [
+              432,
+              488
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 29,
+          "contour_point_count": 6,
+          "perimeter_px": 90.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              288,
+              487
+            ],
+            [
+              333,
+              486
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 30,
+          "contour_point_count": 78,
+          "perimeter_px": 148.16652023792267,
+          "approx_vertices": 7,
+          "approx_xy": [
+            [
+              519,
+              484
+            ],
+            [
+              532,
+              489
+            ],
+            [
+              532,
+              493
+            ],
+            [
+              540,
+              493
+            ],
+            [
+              573,
+              517
+            ],
+            [
+              533,
+              491
+            ],
+            [
+              536,
+              490
+            ]
+          ],
+          "convex": false,
+          "area_px2": 34.0,
+          "area_fraction": 5.3125e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 13.726025946255486,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 31,
+          "contour_point_count": 32,
+          "perimeter_px": 90.04163014888763,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              424,
+              484
+            ],
+            [
+              434,
+              485
+            ],
+            [
+              443,
+              490
+            ],
+            [
+              465,
+              488
+            ],
+            [
+              443,
+              490
+            ],
+            [
+              434,
+              485
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 9.982353754769672,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 32,
+          "contour_point_count": 10,
+          "perimeter_px": 87.65685415267944,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              287,
+              484
+            ],
+            [
+              330,
+              484
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 33,
+          "contour_point_count": 91,
+          "perimeter_px": 309.0538227558136,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              386,
+              481
+            ],
+            [
+              494,
+              492
+            ],
+            [
+              484,
+              494
+            ],
+            [
+              519,
+              488
+            ]
+          ],
+          "convex": false,
+          "area_px2": 358.5,
+          "area_fraction": 0.00056015625,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 17.006711722422125,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 34,
+          "contour_point_count": 54,
+          "perimeter_px": 251.5979790687561,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              391,
+              478
+            ],
+            [
+              271,
+              486
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 35,
+          "contour_point_count": 28,
+          "perimeter_px": 49.6984840631485,
+          "approx_vertices": 7,
+          "approx_xy": [
+            [
+              514,
+              476
+            ],
+            [
+              514,
+              477
+            ],
+            [
+              517,
+              476
+            ],
+            [
+              528,
+              484
+            ],
+            [
+              534,
+              485
+            ],
+            [
+              531,
+              485
+            ],
+            [
+              521,
+              478
+            ]
+          ],
+          "convex": false,
+          "area_px2": 7.5,
+          "area_fraction": 1.171875e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 9.800001450086942,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 36,
+          "contour_point_count": 126,
+          "perimeter_px": 477.48022866249084,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              237,
+              501
+            ],
+            [
+              283,
+              476
+            ],
+            [
+              460,
+              475
+            ],
+            [
+              283,
+              476
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 11.510618660922384,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 37,
+          "contour_point_count": 33,
+          "perimeter_px": 86.62741661071777,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              40,
+              475
+            ],
+            [
+              0,
+              483
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 38,
+          "contour_point_count": 44,
+          "perimeter_px": 227.69848430156708,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              459,
+              457
+            ],
+            [
+              420,
+              463
+            ],
+            [
+              350,
+              458
+            ],
+            [
+              420,
+              463
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 19.32032640819144,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 39,
+          "contour_point_count": 15,
+          "perimeter_px": 97.55634891986847,
+          "approx_vertices": 5,
+          "approx_xy": [
+            [
+              381,
+              457
+            ],
+            [
+              383,
+              454
+            ],
+            [
+              401,
+              453
+            ],
+            [
+              427,
+              456
+            ],
+            [
+              414,
+              459
+            ]
+          ],
+          "convex": true,
+          "area_px2": 170.5,
+          "area_fraction": 0.00026640625,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 8.813953341299294,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 40,
+          "contour_point_count": 26,
+          "perimeter_px": 132.97056245803833,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              376,
+              455
+            ],
+            [
+              394,
+              459
+            ],
+            [
+              431,
+              457
+            ],
+            [
+              409,
+              453
+            ]
+          ],
+          "convex": true,
+          "area_px2": 180.0,
+          "area_fraction": 0.00028125,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 10.578124232169351,
+          "rejection_reasons": [
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 41,
+          "contour_point_count": 46,
+          "perimeter_px": 235.11269783973694,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              347,
+              456
+            ],
+            [
+              389,
+              450
+            ],
+            [
+              460,
+              455
+            ],
+            [
+              389,
+              450
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 20.078617114987175,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 42,
+          "contour_point_count": 16,
+          "perimeter_px": 52.72792184352875,
+          "approx_vertices": 4,
+          "approx_xy": [
+            [
+              77,
+              450
+            ],
+            [
+              75,
+              452
+            ],
+            [
+              53,
+              454
+            ],
+            [
+              75,
+              452
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 14.80000002900487,
+          "rejection_reasons": [
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 43,
+          "contour_point_count": 162,
+          "perimeter_px": 540.5512965917587,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              152,
+              448
+            ],
+            [
+              0,
+              468
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 44,
+          "contour_point_count": 13,
+          "perimeter_px": 39.899494767189026,
+          "approx_vertices": 10,
+          "approx_xy": [
+            [
+              122,
+              448
+            ],
+            [
+              125,
+              450
+            ],
+            [
+              123,
+              449
+            ],
+            [
+              124,
+              448
+            ],
+            [
+              128,
+              448
+            ],
+            [
+              129,
+              450
+            ],
+            [
+              130,
+              450
+            ],
+            [
+              129,
+              449
+            ],
+            [
+              130,
+              448
+            ],
+            [
+              137,
+              448
+            ]
+          ],
+          "convex": false,
+          "area_px2": 2.5,
+          "area_fraction": 3.90625e-06,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 7.5,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 45,
+          "contour_point_count": 64,
+          "perimeter_px": 241.25483322143555,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              119,
+              449
+            ],
+            [
+              5,
+              464
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 46,
+          "contour_point_count": 6,
+          "perimeter_px": 84.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              114,
+              447
+            ],
+            [
+              72,
+              448
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 47,
+          "contour_point_count": 6,
+          "perimeter_px": 88.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              107,
+              444
+            ],
+            [
+              151,
+              445
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 48,
+          "contour_point_count": 18,
+          "perimeter_px": 99.31370830535889,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              201,
+              442
+            ],
+            [
+              153,
+              446
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 49,
+          "contour_point_count": 30,
+          "perimeter_px": 199.79898953437805,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              364,
+              440
+            ],
+            [
+              461,
+              441
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 50,
+          "contour_point_count": 2,
+          "perimeter_px": 104.0,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              409,
+              438
+            ],
+            [
+              461,
+              438
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 51,
+          "contour_point_count": 34,
+          "perimeter_px": 238.62741661071777,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              88,
+              442
+            ],
+            [
+              204,
+              438
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 52,
+          "contour_point_count": 20,
+          "perimeter_px": 246.1421353816986,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              142,
+              436
+            ],
+            [
+              263,
+              435
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 53,
+          "contour_point_count": 42,
+          "perimeter_px": 264.2842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              129,
+              435
+            ],
+            [
+              1,
+              445
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 54,
+          "contour_point_count": 6,
+          "perimeter_px": 248.82842707633972,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              138,
+              434
+            ],
+            [
+              262,
+              433
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 55,
+          "contour_point_count": 38,
+          "perimeter_px": 245.4558436870575,
+          "approx_vertices": 2,
+          "approx_xy": [
+            [
+              129,
+              433
+            ],
+            [
+              10,
+              442
+            ]
+          ],
+          "convex": false,
+          "area_px2": 0.0,
+          "area_fraction": 0.0,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": null,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000",
+            "minAreaRect_aspect_above_8_or_degenerate"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 56,
+          "contour_point_count": 54,
+          "perimeter_px": 376.42640602588654,
+          "approx_vertices": 6,
+          "approx_xy": [
+            [
+              0,
+              202
+            ],
+            [
+              21,
+              213
+            ],
+            [
+              21,
+              352
+            ],
+            [
+              0,
+              352
+            ],
+            [
+              20,
+              354
+            ],
+            [
+              21,
+              213
+            ]
+          ],
+          "convex": false,
+          "area_px2": 48.5,
+          "area_fraction": 7.578125e-05,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 7.238095238095238,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        },
+        {
+          "contour_index": 57,
+          "contour_point_count": 391,
+          "perimeter_px": 2236.0630534887314,
+          "approx_vertices": 8,
+          "approx_xy": [
+            [
+              0,
+              40
+            ],
+            [
+              79,
+              112
+            ],
+            [
+              79,
+              364
+            ],
+            [
+              540,
+              364
+            ],
+            [
+              799,
+              293
+            ],
+            [
+              540,
+              364
+            ],
+            [
+              80,
+              364
+            ],
+            [
+              79,
+              112
+            ]
+          ],
+          "convex": false,
+          "area_px2": 126.0,
+          "area_fraction": 0.000196875,
+          "image_bound": true,
+          "minAreaRect_long_short_ratio": 2.9403194811009707,
+          "rejection_reasons": [
+            "not_four_vertices",
+            "not_convex",
+            "area_not_above_1000"
+          ],
+          "candidate_passed": false
+        }
+      ],
+      "candidates": []
+    }
+  ],
+  "queries": [],
+  "references": [
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/b992a20870a3aba5f14305374b0c0e6333305e7f",
+      "git_blob_sha": "b992a20870a3aba5f14305374b0c0e6333305e7f",
+      "sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+      "size_bytes": 252690,
+      "class_id": "collapsed_ruins",
+      "label": "坍塌废墟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\collapsed_ruins_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+      "git_blob_sha": "4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+      "sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+      "size_bytes": 3126947,
+      "class_id": "damaged_vehicle",
+      "label": "受损车辆",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\damaged_vehicle_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+      "git_blob_sha": "7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+      "sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+      "size_bytes": 335117,
+      "class_id": "landslide",
+      "label": "滑坡塌方",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\landslide_01.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/fdd40f739ab39a1be6d638c4b9216bf7f91dcb22",
+      "git_blob_sha": "fdd40f739ab39a1be6d638c4b9216bf7f91dcb22",
+      "sha256": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+      "size_bytes": 276459,
+      "class_id": "landslide",
+      "label": "滑坡塌方",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\landslide_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+      "git_blob_sha": "aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+      "sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+      "size_bytes": 2586531,
+      "class_id": "rescue_camp",
+      "label": "救援营地",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\rescue_camp_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/cf3f39cffcbef10cc27334eab1663bf047a910cd",
+      "git_blob_sha": "cf3f39cffcbef10cc27334eab1663bf047a910cd",
+      "sha256": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+      "size_bytes": 246274,
+      "class_id": "rescue_camp",
+      "label": "救援营地",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\rescue_camp_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/c741011c11b6a47dc67069fa9e025075ade15feb",
+      "git_blob_sha": "c741011c11b6a47dc67069fa9e025075ade15feb",
+      "sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "size_bytes": 2475363,
+      "class_id": "trapped_people",
+      "label": "被困人员",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\trapped_people_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/adc7032c09911331976793bbe506d4278a9379e6",
+      "git_blob_sha": "adc7032c09911331976793bbe506d4278a9379e6",
+      "sha256": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777",
+      "size_bytes": 177638,
+      "class_id": "trapped_people",
+      "label": "被困人员",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\trapped_people_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/a4db6edd86eb182c2381632855a0a23958d757d4",
+      "git_blob_sha": "a4db6edd86eb182c2381632855a0a23958d757d4",
+      "sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf",
+      "size_bytes": 34614,
+      "class_id": "window_bird",
+      "label": "飞鸟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_bird_01.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/b5c0310278917445eb169795a3e5679713c72e30",
+      "git_blob_sha": "b5c0310278917445eb169795a3e5679713c72e30",
+      "sha256": "8eb1b2ac13851cecaaada1602f4c20e7c993849db05b29aea612a1b4cbcb76f2",
+      "size_bytes": 24606,
+      "class_id": "window_bird",
+      "label": "飞鸟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_bird_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "git_blob_sha": "cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e",
+      "size_bytes": 57883,
+      "class_id": "window_target",
+      "label": "救援无人机",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_target_1.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_2.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_2.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "git_blob_sha": "a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6",
+      "size_bytes": 42160,
+      "class_id": "window_target",
+      "label": "救援无人机",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_target_2.jpg"
+    }
+  ],
+  "results": [],
+  "development_manual_quad_evaluations": [],
+  "class_ground_truth": null,
+  "recognized_class": null,
+  "deployed": false,
+  "status": "stopped_no_quad_candidates",
+  "limitations": [
+    "Only two previously inspected development images; no held-out estimate.",
+    "All contours/candidates retained; no tuning, candidate choice by class, HSV, morphology or extra rotations.",
+    "Geometry gate is an uncalibrated exploratory filter, not validated class acceptance.",
+    "Public references are not established as the current official simulator library."
+  ]
+}

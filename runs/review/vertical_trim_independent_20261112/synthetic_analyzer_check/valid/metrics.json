@@ -1,0 +1,330 @@
+{
+  "kind": "read_only_trim_response_analysis",
+  "platform_id": "synthetic-not-platform",
+  "state": "ASCEND",
+  "reason": "fixed_trim_response",
+  "official_score": null,
+  "full_mission_complete": false,
+  "protocol_complete": false,
+  "protocol_abort_reason": "",
+  "support_return_verified": false,
+  "origin": [
+    0.0,
+    0.0,
+    0.055
+  ],
+  "motion_start_elapsed_s": 1.0,
+  "permanent_motion_budget_s": 10.0,
+  "nonzero_requests_past_permanent_budget": [],
+  "nonzero_trim_requests_with_prior_arrival_height_at_or_below_035": [],
+  "reconstructed_path_m": 0.1,
+  "reported_path_m": 0.1,
+  "rise_m": {
+    "count": 64,
+    "min": 0.0,
+    "median": 0.1,
+    "max": 0.1
+  },
+  "max_command_gap_s": 0.050000000000000266,
+  "max_odom_source_gap_s": 0.05000000000000071,
+  "max_odom_arrival_gap_s": 0.050000000000000266,
+  "phase_metrics": [
+    {
+      "phase": "ASCEND_TO_010",
+      "entry": {
+        "wall_elapsed_s": 1.0,
+        "from": "WAIT",
+        "to": "ASCEND_TO_010",
+        "reason": "initial_pose_stable",
+        "odom_stamp": 11.0
+      },
+      "end_wall_elapsed_s": 1.15,
+      "phase_wall_span_s": 0.1499999999999999,
+      "samples": 3,
+      "actual_nonzero_requests": 3,
+      "request_values": [
+        0.05
+      ],
+      "first_nonzero_request": {
+        "wall_elapsed_s": 1.0,
+        "linear_z": 0.05,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "ASCEND_TO_010"
+      },
+      "last_nonzero_request": {
+        "wall_elapsed_s": 1.1,
+        "linear_z": 0.05,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "ASCEND_TO_010"
+      },
+      "relative_height_m": {
+        "count": 3,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_feedback_mps": {
+        "count": 3,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_by_source_stamp_mps": {
+        "count": 3,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_by_arrival_wall_mps": {
+        "count": 3,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "controller_reported_phase_samples": {
+        "entry_odom_stamp": 11.0,
+        "advancing_odom_count": 3,
+        "first_odom_stamp": 11.05,
+        "last_odom_stamp": 11.15,
+        "requested_command_count": 3
+      }
+    },
+    {
+      "phase": "TRIM_POS_025",
+      "entry": {
+        "wall_elapsed_s": 1.15,
+        "from": "ASCEND_TO_010",
+        "to": "TRIM_POS_025",
+        "reason": "measured_target_rise_reached",
+        "odom_stamp": 11.15
+      },
+      "end_wall_elapsed_s": 2.15,
+      "phase_wall_span_s": 1.0,
+      "samples": 20,
+      "actual_nonzero_requests": 20,
+      "request_values": [
+        0.025
+      ],
+      "first_nonzero_request": {
+        "wall_elapsed_s": 1.15,
+        "linear_z": 0.025,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_POS_025"
+      },
+      "last_nonzero_request": {
+        "wall_elapsed_s": 2.1,
+        "linear_z": 0.025,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_POS_025"
+      },
+      "relative_height_m": {
+        "count": 20,
+        "min": 0.1,
+        "median": 0.1,
+        "max": 0.1
+      },
+      "vz_feedback_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_by_source_stamp_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1.9999999999999718
+      },
+      "vz_by_arrival_wall_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 2.000000000000007
+      },
+      "controller_reported_phase_samples": {
+        "entry_odom_stamp": 11.15,
+        "advancing_odom_count": 20,
+        "first_odom_stamp": 11.2,
+        "last_odom_stamp": 12.15,
+        "requested_command_count": 20
+      }
+    },
+    {
+      "phase": "TRIM_POS_030",
+      "entry": {
+        "wall_elapsed_s": 2.15,
+        "from": "TRIM_POS_025",
+        "to": "TRIM_POS_030",
+        "reason": "phase_duration_and_feedback_verified",
+        "odom_stamp": 12.15
+      },
+      "end_wall_elapsed_s": 3.1500000000000004,
+      "phase_wall_span_s": 1.0000000000000004,
+      "samples": 20,
+      "actual_nonzero_requests": 20,
+      "request_values": [
+        0.03
+      ],
+      "first_nonzero_request": {
+        "wall_elapsed_s": 2.15,
+        "linear_z": 0.03,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_POS_030"
+      },
+      "last_nonzero_request": {
+        "wall_elapsed_s": 3.1,
+        "linear_z": 0.03,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_POS_030"
+      },
+      "relative_height_m": {
+        "count": 20,
+        "min": 0.1,
+        "median": 0.1,
+        "max": 0.1
+      },
+      "vz_feedback_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_by_source_stamp_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "vz_by_arrival_wall_mps": {
+        "count": 20,
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "controller_reported_phase_samples": {
+        "entry_odom_stamp": 12.15,
+        "advancing_odom_count": 20,
+        "first_odom_stamp": 12.2,
+        "last_odom_stamp": 13.15,
+        "requested_command_count": 20
+      }
+    },
+    {
+      "phase": "TRIM_NEG_010",
+      "entry": {
+        "wall_elapsed_s": 3.1500000000000004,
+        "from": "TRIM_POS_030",
+        "to": "TRIM_NEG_010",
+        "reason": "phase_duration_and_feedback_verified",
+        "odom_stamp": 13.15
+      },
+      "end_wall_elapsed_s": 3.1500000000000004,
+      "phase_wall_span_s": 0.0,
+      "samples": 0,
+      "actual_nonzero_requests": 1,
+      "request_values": [
+        -0.01
+      ],
+      "first_nonzero_request": {
+        "wall_elapsed_s": 3.1500000000000004,
+        "linear_z": -0.01,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_NEG_010"
+      },
+      "last_nonzero_request": {
+        "wall_elapsed_s": 3.1500000000000004,
+        "linear_z": -0.01,
+        "ground_linear_x": 0.0,
+        "ground_angular_z": 0.0,
+        "state": "ASCEND",
+        "phase": "TRIM_NEG_010"
+      },
+      "relative_height_m": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "vz_feedback_mps": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "vz_by_source_stamp_mps": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "vz_by_arrival_wall_mps": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "controller_reported_phase_samples": {
+        "entry_odom_stamp": 13.15,
+        "advancing_odom_count": 0,
+        "first_odom_stamp": null,
+        "last_odom_stamp": null,
+        "requested_command_count": 1
+      }
+    }
+  ],
+  "last_odom": {
+    "wall_elapsed_s": 3.1500000000000004,
+    "stamp": 13.15,
+    "xyz": [
+      0.0,
+      0.0,
+      0.155
+    ],
+    "q": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "angular": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "speed": 0.0,
+    "angular_speed": 0.0,
+    "tilt": 0.0,
+    "wall": 3.1500000000000004
+  },
+  "command_counts": {
+    "positive": 43,
+    "negative": 1,
+    "zero": 22
+  },
+  "interpretation_limits": [
+    "No official score is expected from this independent identification run.",
+    "Commands carry process wall time, not actuator application timestamps; prior-arrival association is descriptive.",
+    "Source-stamp finite differences and arrival-wall differences are separate; latter includes delivery jitter.",
+    "No linear global response model, hover PID or controlled landing is established by these measurements.",
+    "A missing final payload alone cannot establish whether user code started."
+  ]
+}

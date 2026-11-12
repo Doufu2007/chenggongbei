@@ -1,0 +1,36 @@
+{
+  "source": "runs\\evidence\\20261112\\callback_trim_v29.jsonl",
+  "source_sha256": "406456d8614d07be58ac3e07af749b4cd15640fb222d6e10fbf0ce540e89864c",
+  "source_bytes": 167222,
+  "event_count": 9,
+  "parts_verified": 4,
+  "metadata": {
+    "session_id": "ecf06e3d5bec4462a40a485a9a81e915",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 1102130,
+    "compressed_bytes": 120325,
+    "uncompressed_sha256": "cef9646d663cf00752fc2096a6085edbc8f2eeabbe85d740df09b4d4a770c9ba",
+    "compressed_sha256": "ee744aa3cd18d5e22026c59c52a0acd54f8d431243bdb9ebb74e5942fcdef588",
+    "part_count": 4
+  },
+  "compressed_length_and_sha_match": true,
+  "raw_length_and_sha_match": true,
+  "shared_core_fields_match": true,
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "sample_counts": {
+    "trajectory": 411,
+    "commands": 174,
+    "scans": 65,
+    "downscans": 164,
+    "tf_records": 821
+  },
+  "platform_id": "d9abe4ad-d514-4e69-9f3c-c90cab5ba875",
+  "callback_source": "unverified_callback",
+  "source_authenticated_independently": false
+}

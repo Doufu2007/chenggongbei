@@ -1,0 +1,41 @@
+{
+  "success": true,
+  "data": {
+    "id": "69f58da5-1669-4433-a15b-3adb4e3f2392",
+    "scenarioKey": "inspection",
+    "scenarioName": "城市应急全域巡检仿真",
+    "fileName": "inspection_full_mission_v41_src.zip",
+    "fileSize": 13378153,
+    "fileType": "zip",
+    "fileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794458274947_1zjnsemd43b_inspection_full_mission_v41_src_74a4425b.zip",
+    "scriptFileName": "run_full_mission_v42.sh",
+    "scriptFileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794458275709_1zjnsemd43b_run_full_mission_v42_995f1e5b.sh",
+    "note": "本队完整全域巡检v42启动诊断修复：完整v41源码与控制视觉参数不变，仍依当局图像完成三地面点并返航、窗1识别下降穿越、双空中点定位与照射、窗2下降穿越和返航降落。仅新增启动回传有限重试与ROS/source分阶段记录，保留真实退出码；不读取裁判私有或隐藏答案，不伪造完成/得分。相关联合检查103项通过，等待本局真实裁判结算。",
+    "status": "submitted",
+    "result": "",
+    "score": null,
+    "runId": "",
+    "durationMs": 0,
+    "scoreDetail": null,
+    "startedAt": null,
+    "finishedAt": null,
+    "failedReason": "",
+    "pendingResubmit": true,
+    "pendingResubmitHint": "将自动重新提交并继续测评，请稍候…",
+    "serverDown": true,
+    "serverStatus": "down",
+    "abnormalEnd": false,
+    "createdAt": "2026-11-12 12:37:55.965182+08",
+    "updatedAt": "2026-11-12 12:37:55.965182+08",
+    "hasLogs": true,
+    "tabLogs": [
+      {
+        "tab": "referee",
+        "label": "裁判",
+        "content": ""
+      }
+    ],
+    "terminalLogs": [],
+    "downloadEnabled": false
+  }
+}

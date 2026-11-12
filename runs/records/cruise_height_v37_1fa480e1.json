@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "record_id": "1fa480e1-6989-497d-bbd2-f59d481dbd08",
+  "runId": "run_20261112_094846_c41549bc",
+  "evaluation_number": "93288803",
+  "submitted_local": "2026-11-12T09:48:38+08:00",
+  "kind": "bounded_cruise_height_experiment",
+  "evaluation_mode": "practice",
+  "variant": "v37_cruise",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_cruise_height_v37_src.zip",
+    "sha256": "0ff78f3748f33937eaa899c2615a2ac5dd57dd803293ad647b0967c67493c3b9"
+  },
+  "script": {
+    "path": "dist/run_cruise_height_v37.sh",
+    "sha256": "cf7131ca66ac24c453d85cae03cc43c74c4a25e4490a969511ce348d58b405d8"
+  },
+  "scores": {"total": null, "extraction_status": "official_result_not_extracted"},
+  "durationMs": 95713,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": ["runs/evidence/20261112/callback_cruise_height_v37.jsonl", "runs/evidence/20261112/cruise_height_v37_official_page_final.json", "runs/analysis/20261112_cruise_height_v37_independent/evidence.json"],
+  "notes": "Bounded height experiment only. Actual max z=0.850264716; dual-clock 3s hold verified. Controlled descent interrupted by horizontal_scan_stale, descent_verified=false, protocol_complete=false; subsequent support_return_verified=true. Website displayed 0 as fallback while API score is null; never a full mission or scored flight success."
+}

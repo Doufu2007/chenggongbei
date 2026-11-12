@@ -1,0 +1,17 @@
+[
+  {
+    "phase": "point_0_capture_0",
+    "bytes": 40897,
+    "hash_ok": true
+  },
+  {
+    "phase": "point_0_capture_1",
+    "bytes": 40814,
+    "hash_ok": true
+  },
+  {
+    "phase": "point_0_capture_2",
+    "bytes": 40814,
+    "hash_ok": true
+  }
+]

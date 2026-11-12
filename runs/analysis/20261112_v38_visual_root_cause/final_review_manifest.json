@@ -1,0 +1,177 @@
+{
+  "schema": "local_review.v1",
+  "date": "2026-11-12",
+  "artifacts": [
+    {
+      "path": "src/inspection_mission/inspection_mission/full_inspection_runtime.py",
+      "size_bytes": 7826,
+      "sha256": "f8fe6bb1be6d43782d4f844ce65697ac36617d3cb7caa14ed54e218c87b1d5f5"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_match_result_recorder.py",
+      "size_bytes": 5064,
+      "sha256": "46871282184487d3ad859e65b3e93c0a74cc325a297b9ad0eb8808d2be1e6022"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_template_catalog.py",
+      "size_bytes": 3284,
+      "sha256": "3e1f4b5a2a989d9cbc5d948c4dfc055cbe3761339c19191aa72d2f71bcbec780"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_return.py",
+      "size_bytes": 14299,
+      "sha256": "b70cd5dde22054cae748cbb6bfcff7e26c5b40c5ba80f1760c8b2aac355d79dc"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/floor_plane_detector.py",
+      "size_bytes": 10185,
+      "sha256": "a0ae1f6eb8e9950e69eb0e4a7bceffef32abeb1809c51901b6266b2bdbcdafd9"
+    },
+    {
+      "path": "tests/test_ground_match_result_recorder.py",
+      "size_bytes": 5214,
+      "sha256": "10fd399754dbf324f870e1653f8b5d9c4b1e65a8a7dc0cde8b19ea7b01a18a78"
+    },
+    {
+      "path": "tests/test_full_inspection_runtime.py",
+      "size_bytes": 5927,
+      "sha256": "89b640905d60f9779b45c251e7e72755d4172992e931c718d513a0f538bf4db8"
+    },
+    {
+      "path": "tests/test_ground_template_catalog.py",
+      "size_bytes": 1641,
+      "sha256": "ca235ae2c668b0e12f5e497efa42643ba73c69dd3e3907431e3577493dbd7168"
+    },
+    {
+      "path": "tests/test_floor_plane_detector.py",
+      "size_bytes": 6479,
+      "sha256": "99c08e4f024c8795817c61b649961cbbc4e1494c407db409b5732781b95f7a1e"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/replay_ten_templates.py",
+      "size_bytes": 3123,
+      "sha256": "168e4ac1218a4d4f4cd6d5d9b4242a56c381266aa5c7283a58777e38884534ff"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/independent_integration_review.py",
+      "size_bytes": 4555,
+      "sha256": "44122141b622de6ee11e14e371edd0a83dc75fef5d952b428102fa8f2b5d8c94"
+    },
+    {
+      "path": "docs/v38_visual_root_cause_20261112.md",
+      "size_bytes": 2057,
+      "sha256": "bfbafddeb241e8f39f93e35d4a444b2d90cb7c6a2eb2deef6c7eea53b903d30a"
+    },
+    {
+      "path": "docs/full_inspection_integration_independent_review_20261112.md",
+      "size_bytes": 3018,
+      "sha256": "3b3cb9bd97d0390bc3447951cc149dd6f7721eec890a70bf0fb525f75ff9a242"
+    },
+    {
+      "path": "docs/floor_plane_detector_20261112.md",
+      "size_bytes": 5111,
+      "sha256": "1d3c605b1eb72aeb7070dc2b5f7abf256e1bad20ef271e2c00b9edc9fb9a4dd0"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/ten_template_replay.json",
+      "size_bytes": 1428914,
+      "sha256": "24ec49f78e5baa6d1b5491fd96def2631db4748fde4e041c08343b01a6a661b6"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/root_cause_summary.json",
+      "size_bytes": 2290,
+      "sha256": "a9a1a3b43525758d7f32116b85eead706dfe177b95d68d89548661415ad6cee3"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/integration_initial_review.txt",
+      "size_bytes": 3848,
+      "sha256": "f4cbd502cba961ac89555f7104f1dc2ebdf4f472c0a160e1084ee1c254f3717a"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/integration_recorder_green.txt",
+      "size_bytes": 204,
+      "sha256": "c045e82b34d1ea4ed02eb3d53878ec4ea01ebfb21b804adc9a808c4de221aa61"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/integration_latest_heartbeat_review.txt",
+      "size_bytes": 204,
+      "sha256": "130ff587e1d5ecc925bf95436a8969c2c4c5ba4d73dd8348a509b4016d31950f"
+    },
+    {
+      "path": "runs/analysis/20261112_v38_visual_root_cause/py_compile_final.txt",
+      "size_bytes": 41,
+      "sha256": "1b255425c3cacce1c0f8d1ce63d56e86ecbf6032b2c25d29e67a42381759ebda"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_detector_red.txt",
+      "size_bytes": 22920,
+      "sha256": "77cd3dbc82daa0ff49e5acee6e58107bed3349e8b812d68fef86cbb4d1bb50e9"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_detector_first_green.txt",
+      "size_bytes": 206,
+      "sha256": "7afa2fda27ca552560e965a4fc83b950bdee755b702083ef334972120ef504f5"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_detector_final_green.txt",
+      "size_bytes": 206,
+      "sha256": "64f1432610e25f381eabfe166fe249fde60e26deac48ed1d43a7d148687224d9"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_detector_single150_green.txt",
+      "size_bytes": 1450,
+      "sha256": "e4e579ed26d317290ce3cd1ccc8f3b9567a68932e40f8f7b02d616d5aabbca6b"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_detector_fast150_fallback300_green.txt",
+      "size_bytes": 206,
+      "sha256": "c06c28ab5634e840adb1f27fd61ece10da4c20b44987a7bc7d73decae45d4793"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_performance_probe.py",
+      "size_bytes": 1789,
+      "sha256": "ef6810b481876bf5bb4a8af423aa3e3117ca391f0db539483107df8e0f4f5606"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_performance_before.json",
+      "size_bytes": 977,
+      "sha256": "770677daa415b2236eb83cf2902e5d06bb0ecd2895b1e699711cdf9c6850a3ee"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_performance_single150.json",
+      "size_bytes": 985,
+      "sha256": "599b3759e61a35ab8b2848b94dc248d52acfdeba3aaff52c3fcd42dca446e09c"
+    },
+    {
+      "path": "runs/review/full_flight_independent_20261112/floor_performance_fast150_fallback300.json",
+      "size_bytes": 995,
+      "sha256": "ff1e6354ff60824bcdcfa2f2f624fabc6440a7ad17901ea173059355b79c9ca5"
+    }
+  ],
+  "checks": {
+    "integration_latest": {
+      "passed": 19,
+      "duration_s": 1.76
+    },
+    "floor_author_tests": {
+      "passed": 14,
+      "duration_s": 16.21
+    },
+    "py_compile": {
+      "passed": 11
+    }
+  },
+  "visual_replay": {
+    "real_jpegs": 3,
+    "accepted": 3,
+    "original_24_diagnostics_identical": true,
+    "threshold_changes": false
+  },
+  "limitations": [
+    "Three related static real JPEG exposures; stable-K assumption, not per-exposure K.",
+    "Floor detector tests are public-geometry synthetic inputs, not platform validation.",
+    "Recorder authored by height agent; parent root performed non-author review.",
+    "Flight-control full independent review is outside this integration review.",
+    "Public candidate camera extrinsics and small-board dimensions are not measured calibration."
+  ]
+}

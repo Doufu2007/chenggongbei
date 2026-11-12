@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="1.135" timestamp="2026-11-12T05:38:00.232411+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_actual_single_point_emitter_preserves_nullable_epoch_fault_reason[None]" time="0.456"><failure message="AssertionError: assert [{'line': 1, ...are invalid'}] == []&#10;  &#10;  Left contains 2 more items, first extra item: {'line': 1, 'error': 'single_point evidence binding or container types are invalid'}&#10;  Use -v to get more diff">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-741/test_actual_single_point_emitt0')
+fault = None
+
+    @pytest.mark.parametrize('fault',[None,'sensor_freshness_lost'])
+    def test_actual_single_point_emitter_preserves_nullable_epoch_fault_reason(tmp_path,fault):
+        from inspection_mission.ground_single_point import GroundSinglePointGuard
+        from inspection_mission.telemetry import DiagnosticReporter
+        guard=GroundSinglePointGuard(started_wall_s=0.,session_id='synthetic-emitter-review')
+        guard.epoch_invalid=fault
+        emitted=guard.additional_events()
+        for name,payload in emitted: DiagnosticReporter._encode(name,payload)
+        source=write_events(tmp_path/'emitted.jsonl',[event(name,payload,source='synthetic_guard_fixture_not_platform')for name,payload in emitted])
+        name='tools.analyze_ground_single_point_evidence'
+        result=importlib.import_module(name).analyze_file(source,tmp_path/'out_emitted')
+&gt;       assert result['parse_errors']==result['assembly_errors']==[]
+E       AssertionError: assert [{'line': 1, ...are invalid'}] == []
+E         
+E         Left contains 2 more items, first extra item: {'line': 1, 'error': 'single_point evidence binding or container types are invalid'}
+E         Use -v to get more diff
+
+tests\test_analyze_ground_single_point_evidence.py:143: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_actual_single_point_emitter_preserves_nullable_epoch_fault_reason[sensor_freshness_lost]" time="0.034"><failure message="AssertionError: assert [{'line': 1, ...are invalid'}] == []&#10;  &#10;  Left contains 2 more items, first extra item: {'line': 1, 'error': 'single_point evidence binding or container types are invalid'}&#10;  Use -v to get more diff">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-741/test_actual_single_point_emitt1')
+fault = 'sensor_freshness_lost'
+
+    @pytest.mark.parametrize('fault',[None,'sensor_freshness_lost'])
+    def test_actual_single_point_emitter_preserves_nullable_epoch_fault_reason(tmp_path,fault):
+        from inspection_mission.ground_single_point import GroundSinglePointGuard
+        from inspection_mission.telemetry import DiagnosticReporter
+        guard=GroundSinglePointGuard(started_wall_s=0.,session_id='synthetic-emitter-review')
+        guard.epoch_invalid=fault
+        emitted=guard.additional_events()
+        for name,payload in emitted: DiagnosticReporter._encode(name,payload)
+        source=write_events(tmp_path/'emitted.jsonl',[event(name,payload,source='synthetic_guard_fixture_not_platform')for name,payload in emitted])
+        name='tools.analyze_ground_single_point_evidence'
+        result=importlib.import_module(name).analyze_file(source,tmp_path/'out_emitted')
+&gt;       assert result['parse_errors']==result['assembly_errors']==[]
+E       AssertionError: assert [{'line': 1, ...are invalid'}] == []
+E         
+E         Left contains 2 more items, first extra item: {'line': 1, 'error': 'single_point evidence binding or container types are invalid'}
+E         Use -v to get more diff
+
+tests\test_analyze_ground_single_point_evidence.py:143: AssertionError</failure></testcase></testsuite></testsuites>

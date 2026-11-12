@@ -1,0 +1,171 @@
+{
+  "kind": "real_camera_roi_exploratory_classification",
+  "source": "runs\\analysis\\20261112_survey_v13\\ground4_candidate_rectified_world_axes.png",
+  "sha256": "11a974d44ad61daaa418bb2409fd8bd5f5ad4a2d70fabc60496f05e865895043",
+  "target_id_candidate": "ground_4",
+  "is_current_first_task": true,
+  "class_ground_truth": null,
+  "published_to_referee": false,
+  "results": [
+    {
+      "rotation_ccw_deg": 0,
+      "result": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.23486328125,
+        "top2_cosine": 0.2254638671875,
+        "margin": 0.0093994140625,
+        "cosines": {
+          "collapsed_ruins": 0.2237548828125,
+          "damaged_vehicle": 0.23486328125,
+          "landslide": 0.2039794921875,
+          "rescue_camp": 0.2071533203125,
+          "trapped_people": 0.2254638671875,
+          "window_bird": 0.2236328125,
+          "window_target": 0.2052001953125
+        }
+      }
+    },
+    {
+      "rotation_ccw_deg": 90,
+      "result": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.2469482421875,
+        "top2_cosine": 0.235595703125,
+        "margin": 0.0113525390625,
+        "cosines": {
+          "collapsed_ruins": 0.235595703125,
+          "damaged_vehicle": 0.2469482421875,
+          "landslide": 0.215576171875,
+          "rescue_camp": 0.2196044921875,
+          "trapped_people": 0.2301025390625,
+          "window_bird": 0.23046875,
+          "window_target": 0.2122802734375
+        }
+      }
+    },
+    {
+      "rotation_ccw_deg": 180,
+      "result": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.229248046875,
+        "top2_cosine": 0.2156982421875,
+        "margin": 0.0135498046875,
+        "cosines": {
+          "collapsed_ruins": 0.2156982421875,
+          "damaged_vehicle": 0.229248046875,
+          "landslide": 0.189208984375,
+          "rescue_camp": 0.205078125,
+          "trapped_people": 0.21337890625,
+          "window_bird": 0.2110595703125,
+          "window_target": 0.1861572265625
+        }
+      }
+    },
+    {
+      "rotation_ccw_deg": 270,
+      "result": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.244384765625,
+        "top2_cosine": 0.23046875,
+        "margin": 0.013916015625,
+        "cosines": {
+          "collapsed_ruins": 0.244384765625,
+          "damaged_vehicle": 0.23046875,
+          "landslide": 0.21923828125,
+          "rescue_camp": 0.22998046875,
+          "trapped_people": 0.2120361328125,
+          "window_bird": 0.22802734375,
+          "window_target": 0.2110595703125
+        }
+      }
+    }
+  ],
+  "model": {
+    "weight_source": {
+      "model": "ViT-B/32",
+      "source_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+      "expected_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "status": "verified",
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "size_bytes": 353976522,
+      "local_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\openai_CLIP\\weights\\ViT-B-32.pt"
+    },
+    "implementation": {
+      "repository": "https://github.com/openai/CLIP",
+      "commit_sha": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+      "files": [
+        {
+          "path": "clip/__init__.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/__init__.py",
+          "git_blob_sha": "dcc5619538c0f7c782508bdbd9587259d805e0d9",
+          "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+          "size_bytes": 20
+        },
+        {
+          "path": "clip/clip.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/clip.py",
+          "git_blob_sha": "398a6282cc243e449430d91c2562491fc799929d",
+          "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+          "size_bytes": 9644
+        },
+        {
+          "path": "clip/model.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/model.py",
+          "git_blob_sha": "232b7792eb97440642547bd462cf128df9243933",
+          "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+          "size_bytes": 17374
+        },
+        {
+          "path": "clip/simple_tokenizer.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/simple_tokenizer.py",
+          "git_blob_sha": "0a66286b7d5019c6e221932a813768038f839c91",
+          "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+          "size_bytes": 4632
+        },
+        {
+          "path": "clip/bpe_simple_vocab_16e6.txt.gz",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz",
+          "git_blob_sha": "7b5088a527f720063f044eb928eee315f63b2fc0",
+          "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+          "size_bytes": 1356917
+        },
+        {
+          "path": "LICENSE",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+          "git_blob_sha": "4e97f0b45803b7c04ae89548934af4f257a97501",
+          "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+          "size_bytes": 1064
+        }
+      ]
+    },
+    "device": "cuda",
+    "torch": "2.6.0+cu124",
+    "prompts": {
+      "collapsed_ruins": "a photo of collapsed buildings and earthquake rubble.",
+      "damaged_vehicle": "a photo of a damaged wrecked vehicle.",
+      "landslide": "a photo of a landslide with soil and rocks covering a road.",
+      "rescue_camp": "a photo of a rescue camp with emergency tents and supplies.",
+      "trapped_people": "a photo of people trapped under rubble being rescued.",
+      "window_bird": "a photo of a bird flying in the sky.",
+      "window_target": "a photo of a rescue drone, a quadcopter flying in the sky."
+    },
+    "rejection": {
+      "min_cosine": 0.2,
+      "min_margin": 0.02,
+      "calibrated": false
+    }
+  },
+  "limitations": [
+    "Single oblique real image and resampling; no new detail from rectification",
+    "Candidate extrinsics and target-ID mapping; no official truth label",
+    "Four fixed rotations preserved; no online declaration or measured accuracy"
+  ]
+}

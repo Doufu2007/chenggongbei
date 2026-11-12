@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="7" time="0.887" timestamp="2026-11-12T07:42:45.315455+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[phase_and_age]" time="0.040"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6AA1BE0&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB6A182B0&gt;
+fault = 'phase_and_age'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6AA1BE0&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[sensor_age]" time="0.022"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6AABAC0&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB6A18180&gt;
+fault = 'sensor_age'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6AABAC0&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[motion_budget]" time="0.021"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6969B10&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB69BC830&gt;
+fault = 'motion_budget'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6969B10&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[low_height]" time="0.021"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6867C60&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB674F570&gt;
+fault = 'low_height'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0), (0.0, 0.0, 0.0, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6867C60&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[dds_match]" time="0.021"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB694DF20&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB674F460&gt;
+fault = 'dds_match'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB694DF20&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[dds_query_failure]" time="0.032"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6777E00&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB69ABE50&gt;
+fault = 'dds_query_failure'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB6777E00&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request[dds_query_delay]" time="0.026"><failure message="assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)&#10; +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB68FA190&gt;)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000016FB690C450&gt;
+fault = 'dds_query_delay'
+
+    @pytest.mark.parametrize("fault", ["phase_and_age", "sensor_age", "motion_budget", "low_height", "dds_match", "dds_query_failure", "dds_query_delay"])
+    def test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request(monkeypatch, fault):
+        node, _, published, wall = negative_transport(monkeypatch)
+        before = len(published)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        wall[0] = 3.21
+        send_wall = {"phase_and_age": 3.56, "sensor_age": 3.41,
+                     "motion_budget": 11.11, "low_height": 3.22, "dds_match": 3.22,
+                     "dds_query_failure": 3.22, "dds_query_delay": 3.41}[fault]
+        def delayed(msg):
+            original(msg)
+            wall[0] = 3.22 if fault == "dds_query_delay" else send_wall
+            if fault == "low_height":
+                node.guard.update_odom(odom(10.+send_wall, z=.089), wall_s=send_wall)
+            elif fault == "dds_match":
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda: 0
+            elif fault == "dds_query_failure":
+                def failed_match_query(): raise RuntimeError("DDS match query failed after ground publish")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = failed_match_query
+            elif fault == "dds_query_delay":
+                def delayed_match_query():
+                    wall[0] = send_wall
+                    return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = delayed_match_query
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        decision = node.tick()
+        following = [values for topic, values in published[before:] if topic == "/uav/cmd_vel"]
+&gt;       assert following and all(values == (0.,)*6 for values in following)
+E       assert ([(0.0, 0.0, -0.01, 0.0, 0.0, 0.0)] and False)
+E        +  where False = all(&lt;generator object test_successful_delayed_ground_publish_cannot_send_a_now_invalid_nonzero_uav_request.&lt;locals&gt;.&lt;genexpr&gt; at 0x0000016FB68FA190&gt;)
+
+tests\test_bounded_vertical_trim.py:337: AssertionError</failure></testcase></testsuite></testsuites>

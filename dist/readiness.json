@@ -1,0 +1,7 @@
+{
+  "kind": "development_build",
+  "configuration_ready": false,
+  "platform_run_verified": false,
+  "reason": "interface profile must be verified against the actual platform",
+  "note": "Do not spend a formal upload attempt on this unbound development configuration."
+}

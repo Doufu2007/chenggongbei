@@ -1,0 +1,76 @@
+{
+  "schema": "ground_reverse_freeze_manifest_v1",
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_reverse_response.py",
+      "bytes": 4594,
+      "sha256": "7954b7e4a15c58e3416e9510fd88129f5632fd7f90a7d8c6ddfde553b2d59d83",
+      "crlf": 0
+    },
+    {
+      "path": "scripts/run_ground_reverse_response.sh",
+      "bytes": 2763,
+      "sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+      "crlf": 0
+    },
+    {
+      "path": "tests/test_ground_reverse_response.py",
+      "bytes": 9153,
+      "sha256": "7d7035c7d5ab4e4e0228f3989a1937d7539f5919ba35d3e5eeaac1fefa3eace6",
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_direction_response.py",
+      "bytes": 28604,
+      "sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+      "crlf": 0
+    },
+    {
+      "path": "scripts/run_ground_direction_response.sh",
+      "bytes": 2771,
+      "sha256": "2b464c13550fcf24d0e891ab19a49c48d09a28f90ed4b581c47ce4946c83bc10",
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "bytes": 22825,
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "bytes": 42543,
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "bytes": 33185,
+      "sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "bytes": 11401,
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "crlf": 0
+    }
+  ],
+  "tests": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "172",
+      "time": "21.303",
+      "timestamp": "2026-11-12T07:47:43.090412+08:00",
+      "hostname": "DESKTOP-9S2BM4P"
+    }
+  ],
+  "reverse_test_count": 33,
+  "bash_syntax_exit_code": 0,
+  "py_compile_exit_code": 0,
+  "independent_review": "pending",
+  "platform_test": "pending"
+}

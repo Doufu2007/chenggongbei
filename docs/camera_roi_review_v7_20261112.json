@@ -1,0 +1,44 @@
+{
+  "source_callback_sha256": "c3d6a9419f331ba0f1ace30aa19fc7254f9c8b57862d0de6aa812d8f1733575c",
+  "review_method": "Direct visual inspection of all four original received v7 diagnostic JPEGs before model inference; boxes select observed pixels and contain no target classes or referee answers.",
+  "images": [
+    {
+      "sha256": "7e8a2d30d4881eaa20979850a1fd3806ac0b7808a7d4dd901c93061a8e70a4dc",
+      "observation": "Ground camera is almost uniformly green; no complete target panel can be identified in this received frame.",
+      "panel_adequacy": "insufficient",
+      "regions": [
+        {"id": "full_green_frame", "bbox_xyxy": [0, 0, 360, 360], "observation": "Uniform green camera image; whole-frame negative/context control, not a target crop.", "panel_adequacy": "insufficient"}
+      ]
+    },
+    {
+      "sha256": "96c5fdbc85cb1dd3b3c2db99e9539a7260b5e1bed7c2f0d4555e663bb4c5b486",
+      "observation": "Ground camera remains almost uniformly green at the final recorded frame; no complete panel is visible.",
+      "panel_adequacy": "insufficient",
+      "regions": [
+        {"id": "full_green_frame", "bbox_xyxy": [0, 0, 360, 360], "observation": "Final green frame; no class label or target identity is supplied.", "panel_adequacy": "insufficient"}
+      ]
+    },
+    {
+      "sha256": "65c5bfbcd37b1d9e0ba86e2215d53d685ddc647b36a1a61be2863eb1609587e1",
+      "observation": "UAV image shows a window opening, ground landing marker and clipped surfaces. A possible image panel above the window is cut off by the top of the frame.",
+      "panel_adequacy": "insufficient",
+      "regions": [
+        {"id": "full_scene_context", "bbox_xyxy": [0, 0, 360, 360], "observation": "Whole scene context only; scene classification cannot locate or identify a task panel.", "panel_adequacy": "insufficient"},
+        {"id": "top_clipped_surface", "bbox_xyxy": [200, 0, 262, 18], "observation": "Only a narrow, upper-boundary-clipped piece of the surface above the window is present; content cannot be read reliably.", "panel_adequacy": "clipped_too_small"},
+        {"id": "window_opening_control", "bbox_xyxy": [158, 54, 288, 147], "observation": "Light background seen through the window opening; negative/control region, not an image panel.", "panel_adequacy": "not_a_panel"},
+        {"id": "right_clipped_oblique_surface", "bbox_xyxy": [303, 213, 360, 249], "observation": "Small oblique surface clipped by the right frame edge; a complete front-facing panel is unavailable and no class is assigned.", "panel_adequacy": "clipped_oblique"}
+      ]
+    },
+    {
+      "sha256": "881c2ca3078bd8e038232f052dd0cd3eaed54217f77a36479e4b94174328b229",
+      "observation": "Final UAV view has nearly the same window/landing scene and truncated potential surfaces; no complete clear task panel is available.",
+      "panel_adequacy": "insufficient",
+      "regions": [
+        {"id": "full_scene_context", "bbox_xyxy": [0, 0, 360, 360], "observation": "Final whole-scene context; not a localized task image.", "panel_adequacy": "insufficient"},
+        {"id": "top_clipped_surface", "bbox_xyxy": [200, 0, 262, 18], "observation": "Top-boundary-truncated surface above the window; complete panel pixels are missing.", "panel_adequacy": "clipped_too_small"},
+        {"id": "window_opening_control", "bbox_xyxy": [158, 54, 288, 147], "observation": "Blank/light window opening used only as a negative/control crop.", "panel_adequacy": "not_a_panel"},
+        {"id": "right_clipped_oblique_surface", "bbox_xyxy": [303, 213, 360, 249], "observation": "Right-edge clipped oblique surface; insufficient for a reliable class identity.", "panel_adequacy": "clipped_oblique"}
+      ]
+    }
+  ]
+}

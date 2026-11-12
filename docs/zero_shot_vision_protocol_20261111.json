@@ -1,0 +1,19 @@
+{
+  "frozen_at": "2026-11-11T07:35:01.336781+00:00",
+  "prompts": {
+    "collapsed_ruins": "a photo of collapsed buildings and earthquake rubble.",
+    "damaged_vehicle": "a photo of a damaged wrecked vehicle.",
+    "landslide": "a photo of a landslide with soil and rocks covering a road.",
+    "rescue_camp": "a photo of a rescue camp with emergency tents and supplies.",
+    "trapped_people": "a photo of people trapped under rubble being rescued.",
+    "window_bird": "a photo of a bird flying in the sky.",
+    "window_target": "a photo of a rescue drone, a quadcopter flying in the sky."
+  },
+  "rejection": {
+    "min_cosine": 0.2,
+    "min_margin": 0.02,
+    "calibrated": false,
+    "hold_out_tuning": false
+  },
+  "source_run": "First completed zero-shot run; before adding negative controls; no prompt or threshold changed after seeing results."
+}

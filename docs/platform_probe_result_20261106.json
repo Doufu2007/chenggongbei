@@ -1,0 +1,19 @@
+{
+  "id": "fc5b9c04-754c-44f3-8f51-74fa6f1b2ca5",
+  "scenarioKey": "inspection",
+  "status": "failed",
+  "score": null,
+  "runId": "run_20261106_005323_885f0a05",
+  "submissionNo": "#80236820",
+  "durationMs": 43072,
+  "failedReason": "流程未检测到完整结束标志（未提取到成绩）",
+  "tabLogs": [
+    {
+      "content": "[INFO] [1793897610.202020739] [inspection_referee]: 已加载贴图匹配表：/run/ican_referee_private/texture_assignment.json\n[INFO] [1793897610.208872379] [inspection_referee]: 本场巡航抽签顺序=<hidden>（随机化答案仅裁判内部可见）\n[INFO] [1793897610.209190140] [inspection_referee]: 城市应急全域巡检（巡航组）裁判系统已启动\n",
+      "label": "裁判",
+      "tab": "referee"
+    }
+  ],
+  "terminalLogs": [],
+  "source": "https://www.splenach.com/ros-simulation/evaluation/log/fc5b9c04-754c-44f3-8f51-74fa6f1b2ca5"
+}

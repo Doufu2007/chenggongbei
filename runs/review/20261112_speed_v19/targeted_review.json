@@ -1,0 +1,66 @@
+{
+  "kind": "independent_offline_code_review",
+  "platform_run": false,
+  "official_scoring": "unverified",
+  "score": null,
+  "source_sha256": {
+    "src/inspection_mission/inspection_mission/ground_speed_calibration.py": "98437fe45a1aaeee73a1ff6bf9976955acffeff99d135740109ffa27d220fc43",
+    "scripts/run_ground_speed_calibration.sh": "f1de21365073897c384c4428584cc537786da0e396d1a3145ad1de90b574f204",
+    "tests/test_ground_speed_calibration.py": "749a5557eb6947bb08a4aaccd3e5caa3a4f138a929677ba2b9a6a8b38ce3dae3"
+  },
+  "checks": [
+    {
+      "check": "unsafe_scan_latches_LOW_STOP",
+      "reason": "scan_invalid:scan_too_close",
+      "passed": true
+    },
+    {
+      "check": "unsafe_scan_latches_HIGH_PULSE",
+      "reason": "scan_invalid:scan_too_close",
+      "passed": true
+    },
+    {
+      "check": "unsafe_scan_latches_HIGH_STOP",
+      "reason": "scan_invalid:scan_too_close",
+      "passed": true
+    },
+    {
+      "check": "pre_zero_path_latches_LOW_STOP",
+      "reason": "calibration_low_stop_path_limit",
+      "path_increment_m": 0.012029452216855543,
+      "passed": true
+    },
+    {
+      "check": "pre_zero_path_latches_HIGH_STOP",
+      "reason": "calibration_high_stop_path_limit",
+      "path_increment_m": 0.01474875369170911,
+      "passed": true
+    },
+    {
+      "check": "high_deadline_while_remains_paused",
+      "reason": "calibration_high_wall_time_limit",
+      "anchor_unchanged": true,
+      "passed": true
+    },
+    {
+      "check": "low_unproven_duration_does_not_borrow_pause",
+      "post_resume_duration_s": 0.0,
+      "passed": true
+    },
+    {
+      "check": "actual_module_synthetic_run_metadata_preserved",
+      "score": null,
+      "task_completion": "unverified",
+      "passed": true
+    },
+    {
+      "check": "actual_adapter_high_and_zero_only_cmd_vel",
+      "sent_topics": [
+        "/cmd_vel",
+        "/cmd_vel"
+      ],
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

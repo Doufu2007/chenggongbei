@@ -1,0 +1,7 @@
+{
+  "source_url": "https://github.com/openai/CLIP/blob/main/LICENSE",
+  "api_url": "https://api.github.com/repos/openai/CLIP/contents/LICENSE",
+  "git_blob_sha": "4e97f0b45803b7c04ae89548934af4f257a97501",
+  "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+  "scope": "Official OpenAI CLIP source repository license; HF model metadata unavailable because request timed out."
+}

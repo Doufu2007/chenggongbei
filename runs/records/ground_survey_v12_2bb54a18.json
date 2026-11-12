@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_id": "2bb54a18-08ec-4d1f-a5f4-893600919dff",
+  "runId": "run_20261112_020204_e8d882d5",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-observation-survey-v12",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_survey_v12_src.zip",
+    "sha256": "f265d5e17518609ea955cddbf80fdee59b20129692406d140ea3bf0c9c2decf7"
+  },
+  "script": {
+    "path": "dist/run_ground_survey_v12.sh",
+    "sha256": "6126a5b30c74c6003f96d4ae87bf76160bd7dc96c2955792ce0313675315c377"
+  },
+  "draw_order": [
+    "ground_2",
+    "ground_3",
+    "ground_4"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 80.194,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/survey_v12_submission.json",
+    "runs/evidence/20261112/survey_v12_artifacts.json",
+    "runs/evidence/20261112/survey_v12_list_final.json",
+    "runs/evidence/20261112/survey_v12_final.json",
+    "runs/evidence/20261112/callback_survey_v12.jsonl",
+    "runs/analysis/20261112_survey_v12/summary.json",
+    "runs/analysis/20261112_survey_v12_response/response.json",
+    "runs/analysis/20261112_survey_v12/native_L000009_cb6cec12ad73d25a.jpg",
+    "runs/analysis/20261112_survey_v12/native_L000011_5514907183cfdd93.jpg",
+    "runs/analysis/20261112_survey_v12/native_L000012_e1b35668a97a8de7.jpg",
+    "runs/analysis/20261112_survey_v12/native_L000014_69bbc2a1c81d95c0.jpg"
+  ]
+}

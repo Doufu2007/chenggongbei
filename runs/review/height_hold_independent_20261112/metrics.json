@@ -1,0 +1,172 @@
+{
+  "actual_factory_protocol": {
+    "state": "FINISHED",
+    "reason": "support_return_verified_height_protocol_complete",
+    "commands": 269,
+    "end_wall": 13.35,
+    "hold_dwell": {
+      "started_wall_elapsed_s": 3.3,
+      "ended_wall_elapsed_s": 6.3,
+      "started_odom_stamp": 13.3,
+      "ended_odom_stamp": 16.3
+    },
+    "protocol_complete": true,
+    "support_return_verified": true,
+    "evidence_parts": 1
+  },
+  "transient_bad_frame": [
+    {
+      "kind": "z",
+      "reset": {
+        "wall_elapsed_s": 3.025,
+        "odom_stamp": 13.025,
+        "reason": "height_or_vz_outside_hold_band"
+      },
+      "new_anchor": [
+        3.05,
+        13.05
+      ]
+    },
+    {
+      "kind": "vz",
+      "reset": {
+        "wall_elapsed_s": 3.025,
+        "odom_stamp": 13.025,
+        "reason": "height_or_vz_outside_hold_band"
+      },
+      "new_anchor": [
+        3.05,
+        13.05
+      ]
+    }
+  ],
+  "descent_first_low": [
+    {
+      "initial_vz": -0.01,
+      "descent_verified": true,
+      "reason": "descent_height_and_speed_verified",
+      "nonzero_descent_count": 0
+    },
+    {
+      "initial_vz": -0.021,
+      "descent_verified": false,
+      "reason": "descent_low_height_speed_not_verified",
+      "nonzero_descent_count": 0
+    }
+  ],
+  "permanent_budget": [
+    {
+      "phase_at_injection": "HOLD_010",
+      "reason": "motion_wall_time_limit",
+      "start": 1.0,
+      "stop": 26.0
+    },
+    {
+      "phase_at_injection": "PHASE_GATE",
+      "reason": "motion_wall_time_limit",
+      "start": 1.0,
+      "stop": 26.0
+    },
+    {
+      "phase_at_injection": "ZERO_RETURN",
+      "reason": "motion_wall_time_limit",
+      "start": 1.0,
+      "stop": 26.0
+    }
+  ],
+  "post_ground_boundaries": [
+    {
+      "fault": "ground_delay",
+      "state": "OBSERVE",
+      "phase": "ZERO_RETURN",
+      "reason": "height_feedback_interrupted:clock_stale",
+      "after_wall": 1.41,
+      "queries_after_ground": 0,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "dds_delay",
+      "state": "OBSERVE",
+      "phase": "ZERO_RETURN",
+      "reason": "height_feedback_interrupted:clock_stale",
+      "after_wall": 1.41,
+      "queries_after_ground": 1,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "dds_error",
+      "state": "STOP",
+      "phase": "HOLD_010",
+      "reason": "uav_publish_match_query_failed:RuntimeError",
+      "after_wall": 1.41,
+      "queries_after_ground": 1,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "ground_failure",
+      "state": "STOP",
+      "phase": "HOLD_010",
+      "reason": "command_publish_failed:/cmd_vel:RuntimeError",
+      "after_wall": 1.21,
+      "queries_after_ground": 0,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "match_lost",
+      "state": "OBSERVE",
+      "phase": "ZERO_RETURN",
+      "reason": "height_feedback_interrupted:no_matching_external_uav_subscriber",
+      "after_wall": 1.21,
+      "queries_after_ground": 0,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "request_changed",
+      "state": "OBSERVE",
+      "phase": "ZERO_RETURN",
+      "reason": "height_feedback_interrupted:feedback_request_changed_after_ground",
+      "after_wall": 1.22,
+      "queries_after_ground": 0,
+      "uav_outputs": 1
+    },
+    {
+      "fault": "motion_budget",
+      "state": "STOP",
+      "phase": "HOLD_010",
+      "reason": "motion_wall_time_limit",
+      "after_wall": 26.0,
+      "queries_after_ground": 0,
+      "uav_outputs": 1
+    }
+  ],
+  "hold_deadline": {
+    "deadline": 9.2,
+    "returned_wall": 9.219999999999999,
+    "reason": "hold_wall_time_limit"
+  },
+  "watchdog": {
+    "phase": "ZERO_RETURN",
+    "reason": "height_feedback_interrupted:control_watchdog_stale"
+  },
+  "failed_uav": {
+    "reason": "command_publish_failed:/uav/cmd_vel:RuntimeError",
+    "positive_count": 4,
+    "last": {
+      "wall_elapsed_s": 1.21,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "STOP",
+      "phase": "HOLD_010",
+      "target_z": 0.155,
+      "measured_z": 0.155,
+      "measured_vz": 0.0,
+      "height_error_m": 0.0,
+      "odom_stamp": 11.2
+    }
+  },
+  "sha256": {
+    "src/inspection_mission/inspection_mission/bounded_height_hold.py": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+    "scripts/run_bounded_height_hold.sh": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7"
+  }
+}

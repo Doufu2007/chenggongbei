@@ -1,0 +1,108 @@
+[
+  {
+    "point_index": 0,
+    "target_id": "ground_3",
+    "completed_archive": false,
+    "retained_images": 3,
+    "accepted_matches": 0,
+    "independent_match_jobs": true,
+    "same_class_and_center_agreement": true,
+    "three_frame_recognition_bound": false,
+    "recognition": null,
+    "source_images": [
+      {
+        "phase": "point_0_capture_0",
+        "stamp_s": 104.195,
+        "jpeg_sha256": "54afd63dd473ee1e3a229d628c40789ef269102a4486c90d625d173125323e02",
+        "bytes": 40897,
+        "exposure_record_count": 1,
+        "priors": [
+          {
+            "prior_valid": true,
+            "image_minus_prior_s": 0.014999999999986358
+          }
+        ],
+        "sampled_stationarity": {
+          "observed": true,
+          "sample_count": 11,
+          "first_stamp_s": 103.18,
+          "last_stamp_s": 104.18,
+          "wall_span_s": 1.023868089003372,
+          "source_span_s": 1.0,
+          "returned_commands_all_zero": true,
+          "max_anchor_drift_m": 1.3041907679877364e-05,
+          "max_linear_speed_mps": 1.4305428474684272e-05,
+          "max_angular_speed_radps": 0.00010756867775407741,
+          "sampled_one_second_stable": true,
+          "interpretation": "10Hz retained samples only; does not reconstruct every high-frequency dwell check"
+        }
+      },
+      {
+        "phase": "point_0_capture_1",
+        "stamp_s": 104.529,
+        "jpeg_sha256": "c9a402376573089ef387ce7d6eb895319b510c1fe7b7db55a08b6dc332513855",
+        "bytes": 40814,
+        "exposure_record_count": 1,
+        "priors": [
+          {
+            "prior_valid": true,
+            "image_minus_prior_s": 0.009000000000000341
+          }
+        ],
+        "sampled_stationarity": {
+          "observed": true,
+          "sample_count": 14,
+          "first_stamp_s": 103.18,
+          "last_stamp_s": 104.48,
+          "wall_span_s": 1.3282720780043746,
+          "source_span_s": 1.2999999999999972,
+          "returned_commands_all_zero": true,
+          "max_anchor_drift_m": 1.6875102849741317e-05,
+          "max_linear_speed_mps": 1.4305428474684272e-05,
+          "max_angular_speed_radps": 0.00010756867775407741,
+          "sampled_one_second_stable": true,
+          "interpretation": "10Hz retained samples only; does not reconstruct every high-frequency dwell check"
+        }
+      },
+      {
+        "phase": "point_0_capture_2",
+        "stamp_s": 104.862,
+        "jpeg_sha256": "41bef8bcc49d5a95c1dc79f21bebda9b9da275eb4f3f8464ac14b1e9106b2515",
+        "bytes": 40814,
+        "exposure_record_count": 1,
+        "priors": [
+          {
+            "prior_valid": true,
+            "image_minus_prior_s": 0.001999999999995339
+          }
+        ],
+        "sampled_stationarity": {
+          "observed": true,
+          "sample_count": 17,
+          "first_stamp_s": 103.18,
+          "last_stamp_s": 104.78,
+          "wall_span_s": 1.6350116169996909,
+          "source_span_s": 1.5999999999999943,
+          "returned_commands_all_zero": true,
+          "max_anchor_drift_m": 2.079518905109636e-05,
+          "max_linear_speed_mps": 1.4305428474684272e-05,
+          "max_angular_speed_radps": 0.00010756867775407741,
+          "sampled_one_second_stable": true,
+          "interpretation": "10Hz retained samples only; does not reconstruct every high-frequency dwell check"
+        }
+      }
+    ],
+    "matches": [],
+    "attempts": {
+      "recognition": {
+        "attempted": false,
+        "publisher_returned": false
+      },
+      "declaration": {
+        "attempted": false,
+        "publisher_returned": false
+      }
+    },
+    "recognition_status_raw": []
+  }
+]

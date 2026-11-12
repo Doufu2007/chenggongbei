@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="14" skipped="0" tests="15" time="2.699" timestamp="2026-11-12T07:48:27.560360+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis" name="test_axis_limits_new_rotation_contract_and_old_caps_unchanged" time="0.068" /><testcase classname="tests.test_ground_three_point_axis" name="test_first_ground4_real_runtime_plan_has_two_axes" time="0.034"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_first_ground4_real_runtime_plan_has_two_axes():
+&gt;       run=AxisRun(("ground_4","ground_0","ground_2")).until(lambda r:r.guard.point_plan is not None)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_observation_route.py:54: in until
+    self.tick()
+tests\test_ground_three_point.py:32: in tick
+    decision = super().tick(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+tests\test_ground_observation_route.py:48: in tick
+    self.last = self.guard.step(wall_s=self.wall)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:213: in step
+    return super().step(wall_s=wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:374: in step
+    return self._plan_point(None, self.mission_draw[0], wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:81: in _plan_point
+    self._load_operations(plan.to_observation_operations, "observation", wall)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:95: in _start_operation
+    return super()._start_operation(wall)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:218: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.348, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacement_m=3.0, ma...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_positive_progress_body_heading_and_negative_request" time="0.012"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_reverse_positive_progress_body_heading_and_negative_request():
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[wrong_direction-approach_reverse_limit]" time="0.010"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">fault = 'wrong_direction', reason = 'approach_reverse_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[cross-approach_cross_track_limit]" time="0.011"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">fault = 'cross', reason = 'approach_cross_track_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[heading-approach_heading_limit]" time="0.012"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">fault = 'heading', reason = 'approach_heading_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[dds-no_external_matching_cmd_subscriber]" time="0.013"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">fault = 'dds', reason = 'no_external_matching_cmd_subscriber'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[danger-scan_invalid]" time="0.012"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">fault = 'danger', reason = 'scan_invalid'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_flag_clears_before_any_next_operation" time="0.015"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_reverse_flag_clears_before_any_next_operation():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_turn_and_settle_aim_at_body_north_not_destination_south" time="0.015"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_reverse_turn_and_settle_aim_at_body_north_not_destination_south():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw0]" time="0.052"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">draw = ('ground_2', 'ground_0', 'ground_4')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+        run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+        for index,target in enumerate(draw):
+&gt;           sent+=run.recognise();epochs.append(run.guard.stationary_epoch)
+                  ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:43: in recognise
+    self.until(lambda r: r.guard.state == "RECOGNIZE_WAIT", cap=25000)
+tests\test_ground_observation_route.py:54: in until
+    self.tick()
+tests\test_ground_three_point.py:32: in tick
+    decision = super().tick(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+tests\test_ground_observation_route.py:48: in tick
+    self.last = self.guard.step(wall_s=self.wall)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:213: in step
+    return super().step(wall_s=wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:374: in step
+    return self._plan_point(None, self.mission_draw[0], wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:81: in _plan_point
+    self._load_operations(plan.to_observation_operations, "observation", wall)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:95: in _start_operation
+    return super()._start_operation(wall)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:218: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.598, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacement_m=3.0, ma...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw1]" time="0.040"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">draw = ('ground_4', 'ground_3', 'ground_2')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+        run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+        for index,target in enumerate(draw):
+&gt;           sent+=run.recognise();epochs.append(run.guard.stationary_epoch)
+                  ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:43: in recognise
+    self.until(lambda r: r.guard.state == "RECOGNIZE_WAIT", cap=25000)
+tests\test_ground_observation_route.py:54: in until
+    self.tick()
+tests\test_ground_three_point.py:32: in tick
+    decision = super().tick(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+tests\test_ground_observation_route.py:48: in tick
+    self.last = self.guard.step(wall_s=self.wall)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:213: in step
+    return super().step(wall_s=wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:374: in step
+    return self._plan_point(None, self.mission_draw[0], wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:81: in _plan_point
+    self._load_operations(plan.to_observation_operations, "observation", wall)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:95: in _start_operation
+    return super()._start_operation(wall)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:218: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.348, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacement_m=3.0, ma...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_handoff_cannot_expand_or_reset_fixed_rotation_budget" time="0.045"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_handoff_cannot_expand_or_reset_fixed_rotation_budget():
+&gt;       run=AxisRun();run.recognise();run.declare()
+                      ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:43: in recognise
+    self.until(lambda r: r.guard.state == "RECOGNIZE_WAIT", cap=25000)
+tests\test_ground_observation_route.py:54: in until
+    self.tick()
+tests\test_ground_three_point.py:32: in tick
+    decision = super().tick(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+tests\test_ground_observation_route.py:48: in tick
+    self.last = self.guard.step(wall_s=self.wall)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:213: in step
+    return super().step(wall_s=wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:374: in step
+    return self._plan_point(None, self.mission_draw[0], wall_s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:81: in _plan_point
+    self._load_operations(plan.to_observation_operations, "observation", wall)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:95: in _start_operation
+    return super()._start_operation(wall)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\ground_three_point.py:218: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.598, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacement_m=3.0, ma...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_entry_without_current_visual_still_locks_stop" time="0.016"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">def test_entry_without_current_visual_still_locks_stop():
+&gt;       g=reverse_guard();g._begin_entry(.01)
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:156: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_actual_adapter_tick_publishes_signed_negative_and_rebinds_coordinator" time="0.041"><failure message="ValueError: target_distance_m exceeds axis-three-ground limit">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002846F09A650&gt;
+
+    def test_actual_adapter_tick_publishes_signed_negative_and_rebinds_coordinator(monkeypatch):
+        install_ros_transport(monkeypatch)
+        class Worker:
+            def cancel_context(self):pass
+            def poll(self):return []
+        wall=[0.]
+        node=api().create_axis_three_point_node(wall_clock=lambda:wall[0],worker=Worker())
+        node.arm_watchdog=lambda:None
+        assert node.single_point_coordinator.guard is node.guard
+        assert isinstance(node.guard,api().GroundThreePointAxisGuard)
+&gt;       reverse_guard(node.guard)
+
+tests\test_ground_three_point_axis.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:41: in reverse_guard
+    g._load_operations((reverse,), "entry", 0.)
+src\inspection_mission\inspection_mission\ground_three_point.py:158: in _load_operations
+    self._start_operation(wall)
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:130: in _start_operation
+    self.approach_limits = replace(self.approach_limits, target_distance_m=distance-.002)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1596: in replace
+    return _replace(obj, **changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\dataclasses.py:1630: in _replace
+    return self.__class__(**changes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;string&gt;:23: in __init__
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = AxisThreePointLimits(target_distance_m=0.8879999999999999, global_wall_s=1200.0, max_path_m=12.5, max_origin_displacem...turn_drift_m=0.06, wait_wall_s=5.0, turn_wall_s=45.0, turn_total_wall_s=700.0, drive_wall_s=500.0, capture_wall_s=10.0)
+
+    def __post_init__(self):
+        caps = {**asdict(ThreePointLimits()), "max_rotation_rad": 28.}
+        for key, cap in caps.items():
+            if not finite(getattr(self, key)) or not 0 &lt; getattr(self, key) &lt;= cap:
+&gt;               raise ValueError(key+" exceeds axis-three-ground limit")
+E               ValueError: target_distance_m exceeds axis-three-ground limit
+
+src\inspection_mission\inspection_mission\ground_three_point_axis.py:35: ValueError</failure></testcase></testsuite></testsuites>

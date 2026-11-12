@@ -1,0 +1,1 @@
+{"received_at": "2026-11-12T04:35:24.427889+00:00", "event": "request_result", "method": "GET", "path_sha256": "8f732e3d9182a4e0", "exact_path": true, "http_status": 405, "reason": "method_not_allowed", "response_completed": true, "evidence_appended": false}

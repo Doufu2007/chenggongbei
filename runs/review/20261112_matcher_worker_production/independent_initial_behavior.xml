@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="5" time="0.780" timestamp="2026-11-12T05:27:16.732111+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="runs.review.20261112_matcher_worker_production.review_production_cases" name="test_failure_before_first_poll_preserves_submitted_source_binding[False]" time="0.006"><failure message="AssertionError: assert None == '2d96addd516b4cbbab56d2a47a48993d0dba68d2b7b6647574b2e751ee924cd0'&#10; +  where None = &lt;built-in method get of dict object at 0x0000015855950080&gt;('source_sha256')&#10; +    where &lt;built-in method get of dict object at 0x0000015855950080&gt; = {}.get">initialization_message = False
+
+    @pytest.mark.parametrize('initialization_message',[False,True])
+    def test_failure_before_first_poll_preserves_submitted_source_binding(initialization_message):
+        worker=pending_owner()
+        if initialization_message: worker._completed.put_nowait({'initialization_error':'template load failed'})
+        result=worker.poll()
+        assert len(result)==1 and 'error'in result[0]
+&gt;       assert result[0]['job'].get('source_sha256')==original_job()['source_sha256']
+E       AssertionError: assert None == '2d96addd516b4cbbab56d2a47a48993d0dba68d2b7b6647574b2e751ee924cd0'
+E        +  where None = &lt;built-in method get of dict object at 0x0000015855950080&gt;('source_sha256')
+E        +    where &lt;built-in method get of dict object at 0x0000015855950080&gt; = {}.get
+
+runs\review\20261112_matcher_worker_production\review_production_cases.py:50: AssertionError</failure></testcase><testcase classname="runs.review.20261112_matcher_worker_production.review_production_cases" name="test_failure_before_first_poll_preserves_submitted_source_binding[True]" time="0.005"><failure message="AssertionError: assert None == '2d96addd516b4cbbab56d2a47a48993d0dba68d2b7b6647574b2e751ee924cd0'&#10; +  where None = &lt;built-in method get of dict object at 0x000001585593F040&gt;('source_sha256')&#10; +    where &lt;built-in method get of dict object at 0x000001585593F040&gt; = {}.get">initialization_message = True
+
+    @pytest.mark.parametrize('initialization_message',[False,True])
+    def test_failure_before_first_poll_preserves_submitted_source_binding(initialization_message):
+        worker=pending_owner()
+        if initialization_message: worker._completed.put_nowait({'initialization_error':'template load failed'})
+        result=worker.poll()
+        assert len(result)==1 and 'error'in result[0]
+&gt;       assert result[0]['job'].get('source_sha256')==original_job()['source_sha256']
+E       AssertionError: assert None == '2d96addd516b4cbbab56d2a47a48993d0dba68d2b7b6647574b2e751ee924cd0'
+E        +  where None = &lt;built-in method get of dict object at 0x000001585593F040&gt;('source_sha256')
+E        +    where &lt;built-in method get of dict object at 0x000001585593F040&gt; = {}.get
+
+runs\review\20261112_matcher_worker_production\review_production_cases.py:50: AssertionError</failure></testcase><testcase classname="runs.review.20261112_matcher_worker_production.review_production_cases" name="test_invalid_submission_preserves_original_pending_and_sequence" time="0.005" /><testcase classname="runs.review.20261112_matcher_worker_production.review_production_cases" name="test_result_after_context_round_trip_cannot_reactivate_old_generation" time="0.003" /><testcase classname="runs.review.20261112_matcher_worker_production.review_production_cases" name="test_zero_distortion_nan_in_original_camera_info_is_rejected" time="0.003" /></testsuite></testsuites>

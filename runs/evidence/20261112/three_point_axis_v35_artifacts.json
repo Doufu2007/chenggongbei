@@ -1,0 +1,26 @@
+{
+  "version": "three_point_axis_v35",
+  "mode": "practice",
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "review": "docs/control_review_ground_three_point_axis_runtime_20261112_v2.md",
+  "reverse_evidence": "runs/analysis/20261112_relocated_reverse_v33/",
+  "added_frozen_modules": [
+    "src/inspection_mission/inspection_mission/ground_three_point_axis.py",
+    "src/inspection_mission/inspection_mission/ground_three_point_axis_plan.py",
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py"
+  ],
+  "base_sha256": "044ca528340f29decdf0c5776bc06a9be8e5ec2e3fb06c634609cbe46cffeb61",
+  "artifacts": [
+    {
+      "path": "dist/inspection_three_point_axis_v35_src.zip",
+      "bytes": 9598227,
+      "sha256": "69c4ae666508cc16b3e4bec6236234d10d8123bf9858e86fde737e31f1b7d608"
+    },
+    {
+      "path": "dist/run_three_point_axis_v35.sh",
+      "bytes": 2898,
+      "sha256": "9a8fb53306cf69ef34de1346a72d05a377cbab93aeb56d9265c4dc56fe8e1d18"
+    }
+  ]
+}

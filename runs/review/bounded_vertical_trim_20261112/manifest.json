@@ -1,0 +1,57 @@
+{
+  "kind": "bounded_vertical_trim_local_implementation",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "review_status": "pending_delayed_ground_fix_rereview",
+  "trim_tests_passed": 35,
+  "covering_tests_passed": null,
+  "junit": "after_delayed_ground_fix.xml",
+  "initial_red_junit": "red.xml",
+  "gate_invalid_red_junit": "gate_invalid_red.xml",
+  "frozen_sources_unchanged": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_trim.py",
+      "bytes": 15195,
+      "sha256": "54744be026c23d43bfe8dba5686ffd7d25d9028a8d4eaf06e667501b5984d89c"
+    },
+    {
+      "path": "scripts/run_bounded_vertical_trim.sh",
+      "bytes": 2738,
+      "sha256": "bb304a609f3c72da8baa462c61366444737aeab80c1ea93cfeca11f014502a95"
+    },
+    {
+      "path": "tests/test_bounded_vertical_trim.py",
+      "bytes": 16198,
+      "sha256": "de2551d885da82302ee5589ceccefd51e0bb4c6ed3f29db76703231bb6edbbe5"
+    },
+    {
+      "path": "docs/bounded_vertical_trim_runtime_20261112.md",
+      "bytes": 9098,
+      "sha256": "3f22fd4af48b6aed0b662121857780db31d83cca052bf48cc2a7d4cbb7970e3c"
+    }
+  ],
+  "history_before_delayed_ground_fix": {
+    "manifest": "before_delayed_ground_fix/manifest.json",
+    "source_sha256": "445d23768dda55ea70195ca0a1cfbff2b4ca2a7d6df1269f1a0ed0d18f210abd",
+    "trim_tests_passed": 28,
+    "covering_tests_passed": 149,
+    "junit": "final_affected.xml",
+    "note": "Historical check only; not rerun after the post-ground-publish fix."
+  },
+  "delayed_ground_fix": {
+    "red_junit": "delayed_ground_red.xml",
+    "extended_red_junit": "delayed_ground_red_extended.xml",
+    "green_junit": "delayed_ground_green.xml",
+    "regressions_passed": 7,
+    "independent_after_fix_probe": "delayed_ground_after_fix_probe.py",
+    "independent_after_fix_metrics": "delayed_ground_after_fix_metrics.json",
+    "py_compile_exit": 0,
+    "limit": "Revalidation after blocking calls return; no hard-real-time zero guarantee during a blocked call."
+  }
+}

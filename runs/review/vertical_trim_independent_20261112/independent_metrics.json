@@ -1,0 +1,49 @@
+{
+  "actual_full_protocol": {
+    "commands": 166,
+    "negative": 6,
+    "state": "FINISHED",
+    "reason": "support_return_verified_trim_complete",
+    "wall_s": 8.1,
+    "motion_s": 7.1
+  },
+  "gate_nan": [
+    {
+      "topic": "/uav/odom",
+      "reason": "trim_gate_odom_invalid"
+    },
+    {
+      "topic": "/scan",
+      "reason": "trim_gate_scan_invalid"
+    }
+  ],
+  "negative_low_callback": {
+    "phase": "ZERO_RETURN",
+    "reason": "trim_low_height_nonzero_aborted"
+  },
+  "permanent_budget": [
+    {
+      "injected_state": "PAUSE",
+      "reason": "motion_wall_time_limit"
+    },
+    {
+      "injected_state": "PHASE_GATE",
+      "reason": "motion_wall_time_limit"
+    },
+    {
+      "injected_state": "ZERO_RETURN",
+      "reason": "motion_wall_time_limit"
+    }
+  ],
+  "no_successful_request": {
+    "reason": "trim_insufficient_advancing_feedback_or_requests",
+    "odom_count": 20
+  },
+  "independent_watchdog": {
+    "reason": "trim_interrupted:control_watchdog_stale"
+  },
+  "sha256": {
+    "src\\inspection_mission\\inspection_mission\\bounded_vertical_trim.py": "445d23768dda55ea70195ca0a1cfbff2b4ca2a7d6df1269f1a0ed0d18f210abd",
+    "scripts\\run_bounded_vertical_trim.sh": "bb304a609f3c72da8baa462c61366444737aeab80c1ea93cfeca11f014502a95"
+  }
+}

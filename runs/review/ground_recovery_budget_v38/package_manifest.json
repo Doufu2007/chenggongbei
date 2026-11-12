@@ -1,0 +1,12 @@
+{
+  "base_archive": "dist\\inspection_three_point_axis_v35_src.zip",
+  "base_sha256": "69c4ae666508cc16b3e4bec6236234d10d8123bf9858e86fde737e31f1b7d608",
+  "archive": "dist\\inspection_three_point_recovery_v38_src.zip",
+  "bytes": 9607969,
+  "archive_sha256": "b9874ada14c3df72483ea85eedebdfa02fbe1a245bb13da926e6d92bd524b85b",
+  "added": {
+    "src/inspection_mission/inspection_mission/ground_three_point_camera_recovery.py": "2c7addc67afda66e4aab53b1796dc0537756fb6ffd907647eb998a6699b809ee",
+    "src/inspection_mission/inspection_mission/ground_three_point_recovery_budget.py": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d"
+  },
+  "unchanged_base_entries": 50
+}

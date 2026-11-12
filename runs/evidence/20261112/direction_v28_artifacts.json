@@ -1,0 +1,25 @@
+{
+  "version": "direction_v28",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_direction_response.py": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946"
+  },
+  "reviewed_launcher_sha256": "2b464c13550fcf24d0e891ab19a49c48d09a28f90ed4b581c47ce4946c83bc10",
+  "base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "artifacts": [
+    {
+      "path": "dist/inspection_direction_v28_src.zip",
+      "bytes": 9577772,
+      "sha256": "6b95153c477194b907d4f1263fdadf831d90fc10dd76f54d17178bda70f9c9c0"
+    },
+    {
+      "path": "dist/run_direction_v28.sh",
+      "bytes": 2903,
+      "sha256": "7cc18ea8b51f32620255f02270f1d4e97d2ab5443044c7f426f4e0a978deca51"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "production_normal": {
+    "frames": 9,
+    "fragments": 9,
+    "source_preserved": true,
+    "images": [
+      {
+        "phase": "point_0_capture_0",
+        "stamp_s": 65.9,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_0_capture_1",
+        "stamp_s": 65.95,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_0_capture_2",
+        "stamp_s": 66.0,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_1_capture_0",
+        "stamp_s": 264.3,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_1_capture_1",
+        "stamp_s": 264.35,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_1_capture_2",
+        "stamp_s": 264.4,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_2_capture_0",
+        "stamp_s": 403.85,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_2_capture_1",
+        "stamp_s": 403.9,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      },
+      {
+        "phase": "point_2_capture_2",
+        "stamp_s": 403.95,
+        "bytes": 631,
+        "sha256": "3195f9a5a84335198bc12a20d3e34f995e943f1edba1392322a9f24f91da119f",
+        "width": 8,
+        "height": 8
+      }
+    ]
+  },
+  "production_cap_stress": {
+    "frames": 9,
+    "fragments": 153,
+    "source_preserved": true,
+    "images": [
+      {
+        "phase": "point_0_capture_0",
+        "stamp_s": 65.9,
+        "bytes": 385060,
+        "sha256": "844c2cb2b3316479c48e3d379dd853eb5d4da74ea097ec4427f64b0a44d38f41",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_0_capture_1",
+        "stamp_s": 65.95,
+        "bytes": 384815,
+        "sha256": "39b20e330b2fec5480c0a894300081acb88899c220b24d16432e52cb61aeb508",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_0_capture_2",
+        "stamp_s": 66.0,
+        "bytes": 385291,
+        "sha256": "7a0ad5dc787aa3f65c2423d0ac45fc8ae72bb6ad2032de7ce12e40718b94b441",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_1_capture_0",
+        "stamp_s": 264.3,
+        "bytes": 385003,
+        "sha256": "7891c26399780056a377d9a346fe3571f302c98e811dc560d4f70dc1ed4cd1f4",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_1_capture_1",
+        "stamp_s": 264.35,
+        "bytes": 385285,
+        "sha256": "0c08f7f81823bde5258d43e0c4689b9358e8dd7a45c171f8413045d112c1befd",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_1_capture_2",
+        "stamp_s": 264.4,
+        "bytes": 385355,
+        "sha256": "5ad210a6216a893be89f7600c120dcf5903d9d88acd76002c3add77af003146e",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_2_capture_0",
+        "stamp_s": 403.85,
+        "bytes": 385158,
+        "sha256": "fdddc6a6e9efdb521ba7dda9da3fa8d9bdb4363391907bef869b0af16b0dbe72",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_2_capture_1",
+        "stamp_s": 403.9,
+        "bytes": 385173,
+        "sha256": "40382e8564363e44664ff85bf296cc81f43ef5fda3772332511cc2bf36b97321",
+        "width": 800,
+        "height": 800
+      },
+      {
+        "phase": "point_2_capture_2",
+        "stamp_s": 403.95,
+        "bytes": 385057,
+        "sha256": "c73788c5417293c914a994b4782178471149bed0a9176d0e6850427648bfd7ae",
+        "width": 800,
+        "height": 800
+      }
+    ]
+  }
+}

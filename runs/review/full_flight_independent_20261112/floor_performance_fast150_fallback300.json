@@ -1,0 +1,47 @@
+{
+  "source_sha256": "a0ae1f6eb8e9950e69eb0e4a7bceffef32abeb1809c51901b6266b2bdbcdafd9",
+  "initialization_wall_s": 2.806616200003191,
+  "detect_wall_s": [
+    0.22451030000229366,
+    0.1969623999975738,
+    0.18202519999613287,
+    0.19064049999724375,
+    0.18773350000265054
+  ],
+  "warm_max_wall_s": 0.1969623999975738,
+  "warm_mean_wall_s": 0.18934039999840024,
+  "answers": [
+    [
+      {
+        "label": "坍塌废墟",
+        "inliers": 65
+      }
+    ],
+    [
+      {
+        "label": "坍塌废墟",
+        "inliers": 65
+      }
+    ],
+    [
+      {
+        "label": "坍塌废墟",
+        "inliers": 65
+      }
+    ],
+    [
+      {
+        "label": "坍塌废墟",
+        "inliers": 65
+      }
+    ],
+    [
+      {
+        "label": "坍塌废墟",
+        "inliers": 65
+      }
+    ]
+  ],
+  "tag": "fast150_fallback300",
+  "limitation": "One public-geometry synthetic frame on this host; not real-time platform timing guarantee."
+}

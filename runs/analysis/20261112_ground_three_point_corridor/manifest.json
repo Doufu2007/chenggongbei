@@ -1,0 +1,94 @@
+{
+  "kind": "candidate_three_ground_point_corridor_delivery",
+  "created_at": "2026-11-11T22:26:50.223709+00:00",
+  "candidate_only": true,
+  "production_modified": false,
+  "ROS_executed": false,
+  "uploaded": false,
+  "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "sequence_count_per_scheme": 60,
+  "scheme_count": 2,
+  "reference_interface": "plan_transfer_from_pose(previous_id,next_id,actual_pose,scheme=preserve_ground0_axis)",
+  "baseline_summary": {
+    "sequence_count": 60,
+    "worst_path": {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 11.114290096809475,
+      "path_with_0_30m_per_point_reserve": 12.014290096809475,
+      "rotation_rad": 23.304866760825774,
+      "rotation_with_0_40rad_per_point_reserve": 24.504866760825774,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "longest_drive_m": 2.2399999999999998,
+      "largest_single_turn_rad": 3.141592653589793,
+      "drive_leg_count": 12,
+      "max_origin_displacement_m": 2.7561023203067045
+    },
+    "worst_rotation": {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 11.114290096809475,
+      "path_with_0_30m_per_point_reserve": 12.014290096809475,
+      "rotation_rad": 23.304866760825774,
+      "rotation_with_0_40rad_per_point_reserve": 24.504866760825774,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "longest_drive_m": 2.2399999999999998,
+      "largest_single_turn_rad": 3.141592653589793,
+      "drive_leg_count": 12,
+      "max_origin_displacement_m": 2.7561023203067045
+    },
+    "longest_complete_transfer": 4.460220564387917,
+    "longest_complete_transfer_pair": "ground_2->ground_4",
+    "longest_transfer_to_observation": 3.44,
+    "largest_single_turn_rad": 3.141592653589793,
+    "longest_drive_m": 2.59,
+    "minimum_laser_distance_m": 0.6499999999999999,
+    "max_origin_displacement_m": 2.7561023203067045,
+    "max_drive_leg_count_per_sequence": 12,
+    "max_turn_only_suboperations_per_sequence": 20
+  },
+  "numerical_crosscheck": {
+    "distinct_phase_checks": 122,
+    "samples_per_phase": 10001,
+    "maximum_dense_minus_analytic_m": 2.382842034798216e-09,
+    "all_agree_within_1e_7m": true
+  },
+  "files": [
+    {
+      "path": "runs/analysis/20261112_ground_three_point_corridor/calculate_corridor.py",
+      "size_bytes": 18869,
+      "sha256": "967dbfd062b017d95a2a190066d857f77e38412506cda7e5e8e38edb898f94b4"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_corridor/report.json",
+      "size_bytes": 813924,
+      "sha256": "cb41d31fc7514e24d0f0928376f488e171cdb605e77e051c22eb74a5abc24384"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_corridor/corridor_graph.png",
+      "size_bytes": 131496,
+      "sha256": "ecd581a8f1f3bbd4af8c30238489a4a7375d27bf3acb2be317cc7fa3bea598c2"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_corridor/corridor_graph.pdf",
+      "size_bytes": 20078,
+      "sha256": "b2ab0f9e52daf4463b6e010dd1f6342ea12f5187c8e4d2313238278077e3cb81"
+    },
+    {
+      "path": "docs/ground_three_point_corridor_design_20261112.md",
+      "size_bytes": 11586,
+      "sha256": "2b8bec74011de76bd57ab8fd4d7ae646101e1f8f90346b6215b6efc169a6ef00"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/calculate_geometry.py",
+      "size_bytes": 15148,
+      "sha256": "996fa1ae54a7f998ddfab59b0517c8926e6357f23ab24f42745655dbe4c550e1"
+    }
+  ]
+}

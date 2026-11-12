@@ -1,0 +1,56 @@
+{
+  "kind": "candidate_ground23_geometry_design_delivery",
+  "created_at": "2026-11-11T21:58:44.501806+00:00",
+  "production_modified": false,
+  "uploaded": false,
+  "ROS_or_referee_messages": false,
+  "candidate_only_wait_for_first_real_acceptance": true,
+  "candidate_world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "nominal_source_pose": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "numerical_crosscheck": {
+    "phase_count": 55,
+    "samples_per_phase": 25001,
+    "largest_dense_minus_analytic_m": 0.0
+  },
+  "files": [
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/calculate_geometry.py",
+      "size_bytes": 15148,
+      "sha256": "996fa1ae54a7f998ddfab59b0517c8926e6357f23ab24f42745655dbe4c550e1"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/verify_dense_geometry.py",
+      "size_bytes": 2261,
+      "sha256": "f29415450d1f0dc03d69e8c9c581955c7c1b70867eacfa7dbd4bdf16b90c4e60"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/report.json",
+      "size_bytes": 53522,
+      "sha256": "2eac2f9bcf0daff311b09f134852648ba66abcbd8b0c86ab0b5715ad7593f41d"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/dense_check.json",
+      "size_bytes": 10558,
+      "sha256": "e063b5001eb854ad10560039134e190b02b87f1a68d50824a8b8e7a1487ac256"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/ground23_geometry.png",
+      "size_bytes": 198347,
+      "sha256": "d5a3862b2b3373e0a4eb9085b8f0fc64d7d6beae5166d0044324482d7d230369"
+    },
+    {
+      "path": "runs/analysis/20261112_ground23_geometry/ground23_geometry.pdf",
+      "size_bytes": 21664,
+      "sha256": "82f028fdad54b18ad124177bd45c59bafef726264a36d1ab950b08727408ce81"
+    },
+    {
+      "path": "docs/ground23_candidate_geometry_20261112.md",
+      "size_bytes": 7701,
+      "sha256": "efc2fc81cf9bcb4a88cfc6af2af7139110e8ba38bc3d5bdc82da41a7c766f4cb"
+    }
+  ]
+}

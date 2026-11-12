@@ -1,0 +1,58 @@
+{
+  "kind": "independent_worker_benchmark_arithmetic",
+  "source_identity": {
+    "report": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/benchmark_report.json",
+      "bytes": 565020,
+      "sha256": "95648c167769e07a4edc8a5eda8de861ca593d37cf582d7ab85752ef18f53d26"
+    },
+    "ticks": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/heartbeat_ticks.csv",
+      "bytes": 20831,
+      "sha256": "0e2d3224b8831464d24f60369b1b6306c858be483497acb895dea674989edb0c"
+    }
+  },
+  "recomputed_summary": {
+    "ticks": 276,
+    "effective_tick_rate_hz": 19.999364238398055,
+    "max_heartbeat_interval_ms": 55.58780000137631,
+    "p99_heartbeat_interval_ms": 54.18948200007435,
+    "median_heartbeat_interval_ms": 50.01379999885103,
+    "owner_work_max_ms": 15.154100001382176,
+    "owner_work_p99_ms": 2.723374998822692,
+    "lateness_max_ms": 7.383599229797255,
+    "skipped_scheduled_ticks": 0
+  },
+  "result_identity": [
+    {
+      "job_seq": 1,
+      "worker_pid": 29204,
+      "source_sha256": "13d20f2020c949810312a998e134d7f5c0a8e49bc64afa4fb666674b00dcbf34",
+      "image_stamp_s": 65.379,
+      "prior_pose_stamp_s": 65.36,
+      "context": 1,
+      "matches_current_context": false,
+      "diagnostic_count": 12,
+      "candidate_count": 0,
+      "job_ms": 2575.637900001311,
+      "queue_to_result_wall_s": 10.712345299994922
+    },
+    {
+      "job_seq": 4,
+      "worker_pid": 29204,
+      "source_sha256": "13d20f2020c949810312a998e134d7f5c0a8e49bc64afa4fb666674b00dcbf34",
+      "image_stamp_s": 65.379,
+      "prior_pose_stamp_s": 65.36,
+      "context": 2,
+      "matches_current_context": true,
+      "diagnostic_count": 12,
+      "candidate_count": 0,
+      "job_ms": 3024.2794000005233,
+      "queue_to_result_wall_s": 13.459133600001223
+    }
+  ],
+  "scope": "Original local offline benchmark only; retained report has no prototype source hash and predates later metadata/epoch fixes. This arithmetic does not attach its timing results to a later frozen prototype version.",
+  "hard_realtime_or_platform_control_guarantee": false,
+  "verified_current_src_sha256": null,
+  "official_acceptance": false
+}

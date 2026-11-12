@@ -1,0 +1,1 @@
+{"received_at": "2026-11-11T07:56:21.578330+00:00", "payload": {"event": "heartbeat", "data": {"source": "local_self_test", "read_only": true}}, "source": "unverified_callback"}

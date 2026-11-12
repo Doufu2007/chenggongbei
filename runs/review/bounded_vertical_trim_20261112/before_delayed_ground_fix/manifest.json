@@ -1,0 +1,39 @@
+{
+  "kind": "bounded_vertical_trim_local_implementation",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "review_status": "pending",
+  "trim_tests_passed": 28,
+  "covering_tests_passed": 149,
+  "junit": "final_affected.xml",
+  "initial_red_junit": "red.xml",
+  "gate_invalid_red_junit": "gate_invalid_red.xml",
+  "frozen_sources_unchanged": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_trim.py",
+      "bytes": 14189,
+      "sha256": "445d23768dda55ea70195ca0a1cfbff2b4ca2a7d6df1269f1a0ed0d18f210abd"
+    },
+    {
+      "path": "scripts/run_bounded_vertical_trim.sh",
+      "bytes": 2738,
+      "sha256": "bb304a609f3c72da8baa462c61366444737aeab80c1ea93cfeca11f014502a95"
+    },
+    {
+      "path": "tests/test_bounded_vertical_trim.py",
+      "bytes": 14230,
+      "sha256": "680ecef03b63d688db4788aa72239e16a9173a905d81f88d97c528eea74dfe99"
+    },
+    {
+      "path": "docs/bounded_vertical_trim_runtime_20261112.md",
+      "bytes": 6677,
+      "sha256": "7699d2c491440f0a33ee427d2a664d06e331e0147636fc21bfe75b2de81ca04f"
+    }
+  ]
+}

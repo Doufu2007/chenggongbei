@@ -1,0 +1,23 @@
+{
+  "verified": false,
+  "note": "Partial official V1.0 binding: referee course 129d6e75-f19a-4c97-9ec6-0853695a4c48 table 1 and table 5. Control/feedback frames and QoS still require the actual workspace; verified remains false.",
+  "ground_frame": "",
+  "uav_frame": "",
+  "uav_velocity_frame": "",
+  "flight_mode": "",
+  "channels": {
+    "ground_cmd": {"topic": "", "type": "geometry_msgs/msg/Twist"},
+    "uav_cmd": {"topic": "", "type": "geometry_msgs/msg/Twist"},
+    "ground_odom": {"topic": "/odom", "type": "nav_msgs/msg/Odometry"},
+    "uav_odom": {"topic": "/uav/odom", "type": "nav_msgs/msg/Odometry"},
+    "ground_scan": {"topic": "", "type": "sensor_msgs/msg/LaserScan", "frame_id": "", "yaw_offset_rad": null},
+    "uav_scan": {"topic": "", "type": "sensor_msgs/msg/LaserScan", "frame_id": "", "yaw_offset_rad": null},
+    "ground_tasks": {"topic": "/referee/ground_tasks", "type": "std_msgs/msg/String", "encoding": "csv", "path": "data", "id_field": "", "selection_count": 3},
+    "recognition": {"topic": "/inspection/detections", "type": "std_msgs/msg/String", "encoding": "inspection_phrase_v1", "fields": {"data": "$phrase"}},
+    "recognition_ack": {"topic": "/referee/recognition_status", "type": "", "path": "", "id_field": "", "accepted_field": ""},
+    "light": {"topic": "/uav/laser_fire", "type": "std_msgs/msg/Bool", "fields": {"data": "$enabled"}},
+    "light_feedback": {"topic": "", "type": "", "path": ""},
+    "current_target": {"topic": "/referee/current_target", "type": "std_msgs/msg/String", "fields": {"data": "$value"}},
+    "cruise_event": {"topic": "/referee/cruise_event", "type": "std_msgs/msg/String", "fields": {"data": "$value"}}
+  }
+}

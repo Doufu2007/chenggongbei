@@ -1,0 +1,28 @@
+{
+  "version": "ground-route-v23",
+  "mode": "practice",
+  "revision": "ground_observation_route_v2",
+  "official_task_success": false,
+  "change": "all legs early-zero .01->.002m plus each DRIVE_SETTLE post-trigger cumulative path hard limit .01m; unchanged original local reserve, waypoint .02, global budgets, QoS",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "checks": {
+    "prior_full_suite": 1102,
+    "changed_area_regressions": 78,
+    "failures": 0
+  },
+  "included_new_matcher_or_worker": false,
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_route_v23_src.zip",
+      "bytes": 111413,
+      "sha256": "64ba09f3430869e596a4b752f129ca002ea06ec13796ced7474bf06878db4bb4"
+    },
+    {
+      "path": "dist/run_ground_route_v23.sh",
+      "bytes": 2809,
+      "sha256": "24d223fc39abc486742696a5b83f31942e03280862b8478f7f8f1752243c8726"
+    }
+  ]
+}

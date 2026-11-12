@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.165" timestamp="2026-11-12T04:38:59.307855+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_plane_matcher" name="test_visible_front_fragment_cannot_approve_board_crossing_camera_depth_zero" time="0.290"><failure message="AssertionError: assert [{'good_match...xy': 76, ...}] == []&#10;  &#10;  Left contains one more item: {'good_matches': 111, 'inliers': 103, 'inlier_fraction': 0.9279279279279279, 'template_distinct_xy': 76, ...}&#10;  Use -v to get more diff">module = &lt;module 'inspection_mission.ground_plane_matcher' from 'C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\src\\inspection_mission\\inspection_mission\\ground_plane_matcher.py'&gt;
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-722/test_visible_front_fragment_ca0')
+
+    def test_visible_front_fragment_cannot_approve_board_crossing_camera_depth_zero(module, tmp_path):
+        # Independent ray inversion renders only physically visible positive-depth rays.
+        # Board X=[.30,.74] crosses camera X=.390 although its visible part matches well.
+        pattern = texture()
+        K = np.array([[300.,0,400.],[0,300.,100.],[0,0,1.]])
+        v, u = np.indices((800,800),dtype=np.float64)
+        denominator = v-100
+        forward = np.full_like(denominator,100.)
+        np.divide(51.9,denominator,out=forward,where=denominator&gt;0)
+        forward += .390
+        left = (400-u)*(forward-.390)/300
+        template_u = ((.25-left)/.5*299).astype(np.float32)
+        template_v = ((.74-forward)/.44*263).astype(np.float32)
+        image = cv2.remap(pattern,template_u,template_v,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT)
+        image[denominator&lt;=0] = 0
+        path = save_template(tmp_path,pattern)
+        result = module.GroundPlaneMatcher([module.TemplateSpec(path,"synthetic","synthetic",{"source":"synthetic camera-plane stress"})]).match(image,K)
+&gt;       assert result["candidates"] == []
+E       AssertionError: assert [{'good_match...xy': 76, ...}] == []
+E         
+E         Left contains one more item: {'good_matches': 111, 'inliers': 103, 'inlier_fraction': 0.9279279279279279, 'template_distinct_xy': 76, ...}
+E         Use -v to get more diff
+
+tests\test_ground_plane_matcher.py:200: AssertionError</failure></testcase></testsuite></testsuites>

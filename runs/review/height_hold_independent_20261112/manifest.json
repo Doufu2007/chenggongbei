@@ -1,0 +1,29 @@
+{
+  "review": "height_hold_independent_20261112",
+  "scope": "synthetic_transport_software_only",
+  "groups": 8,
+  "cases": 18,
+  "status": "passed",
+  "files": {
+    "src/inspection_mission/inspection_mission/bounded_height_hold.py": {
+      "bytes": 17759,
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391"
+    },
+    "scripts/run_bounded_height_hold.sh": {
+      "bytes": 2718,
+      "sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7"
+    },
+    "runs/review/height_hold_independent_20261112/independent_probe.py": {
+      "bytes": 11262,
+      "sha256": "f29a2030090734953cc5880fa4227dbadae44f39581c666933dbadd7300ffc50"
+    },
+    "runs/review/height_hold_independent_20261112/metrics.json": {
+      "bytes": 4561,
+      "sha256": "719649bee99156b7925940efbf6d347f02f7583bee5a254dfc6c815cb416afef"
+    },
+    "docs/control_review_height_hold_independent_20261112.md": {
+      "bytes": 3505,
+      "sha256": "a681f99d26a501d7e07f95c4807c2f49d8fad7ac3f2a95104b28d36a2dfeccc2"
+    }
+  }
+}

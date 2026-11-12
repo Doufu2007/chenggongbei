@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-11-12T00:28:32.223327+00:00",
+  "status": "author_preflight_complete_pending_independent_review",
+  "uploaded": false,
+  "new_files": {
+    "src/inspection_mission/inspection_mission/ground_relocated_reverse.py": {
+      "sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a",
+      "bytes": 23269
+    },
+    "scripts/run_ground_relocated_reverse.sh": {
+      "sha256": "b9305b0771d4be3645237ed9f1daf4d868e90ba52a737070fc3c1762f667256a",
+      "bytes": 2769
+    },
+    "tests/test_ground_relocated_reverse.py": {
+      "sha256": "6675765ad30daf951b860e957cb5cd3568b2527ab85c11e9f9f34439be4dce4d",
+      "bytes": 10724
+    },
+    "docs/superpowers/specs/2026-11-12-ground-relocated-reverse-design.md": {
+      "sha256": "f6dae47a1ab1cf073da1aef4afc5fa28d039ece5a611329dbbe33f880a1f5cbd",
+      "bytes": 2666
+    },
+    "docs/superpowers/plans/2026-11-12-ground-relocated-reverse.md": {
+      "sha256": "296da113f97e0fb2ec60672279805e39b3d2bfce1cf00d8e106a09d7cb30c0b2",
+      "bytes": 2450
+    },
+    "docs/ground_relocated_reverse_20261112.md": {
+      "sha256": "8d36378e8d90677cef8422806a31f9ac7a42eb1670e949ede74af0b79ce6f34a",
+      "bytes": 3823
+    }
+  },
+  "frozen_files": {
+    "src/inspection_mission/inspection_mission/ground_direction_response.py": {
+      "sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+      "bytes": 28604,
+      "expected_sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+      "matches": true
+    },
+    "src/inspection_mission/inspection_mission/ground_reverse_response.py": {
+      "sha256": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae",
+      "bytes": 7065,
+      "expected_sha256": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae",
+      "matches": true
+    },
+    "scripts/run_ground_reverse_response.sh": {
+      "sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+      "bytes": 2763,
+      "expected_sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+      "matches": true
+    },
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": {
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "bytes": 22825,
+      "expected_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "matches": true
+    },
+    "src/inspection_mission/inspection_mission/ground_single_point.py": {
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "bytes": 42543,
+      "expected_sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "matches": true
+    },
+    "src/inspection_mission/inspection_mission/ground_three_point.py": {
+      "sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "bytes": 33185,
+      "expected_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "matches": true
+    },
+    "src/inspection_mission/inspection_mission/ground_three_point_plan.py": {
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "bytes": 11401,
+      "expected_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "matches": true
+    }
+  },
+  "checks": {
+    "related_pytest": {
+      "tests": 208,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "py_compile_exit": 0,
+    "git_bash_n_exit": 0,
+    "first_attempt_preserved": "related_results_first_attempt.xml",
+    "isolated_frozen_y_recheck": "frozen_v28_y_recheck.xml",
+    "red_observations": [
+      "missing runtime AssertionError observed before production code",
+      "default preposition40 assertion observed 30 != 40 before uploaded-contract revision"
+    ]
+  },
+  "evidence_sections": {
+    "core": "ground_relocated_reverse_core",
+    "parts": "ground_relocated_reverse_evidence_gzip_part",
+    "schema": "ground_relocated_reverse_evidence_v1"
+  },
+  "official_score": null,
+  "platform_response_verified": false
+}

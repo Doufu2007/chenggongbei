@@ -1,0 +1,19 @@
+{
+  "record_id": "69f58da5-1669-4433-a15b-3adb4e3f2392",
+  "checked_at": "2026-11-12T04:39:44.318571+00:00",
+  "all_verified": true,
+  "files": [
+    {
+      "kind": "source",
+      "bytes": 13378153,
+      "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d",
+      "verified": true
+    },
+    {
+      "kind": "script",
+      "bytes": 5011,
+      "sha256": "7299ec1761e61737e7af545e401a2c01d0da515636d6d01f795ffa96b9729617",
+      "verified": true
+    }
+  ]
+}

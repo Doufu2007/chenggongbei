@@ -1,0 +1,5 @@
+COMMAND: ['C:\\Program Files\\Python313\\python.exe', '-m', 'py_compile', 'src/inspection_mission/inspection_mission/bounded_cruise_height.py', 'src/inspection_mission/inspection_mission/cruise_cloud_capture.py', 'tests/test_bounded_cruise_height.py', 'tests/test_cruise_cloud_capture.py']
+EXIT: 0
+
+COMMAND: ['C:/Program Files/Git/bin/bash.exe', '-n', 'scripts/run_bounded_cruise_height.sh']
+EXIT: 0

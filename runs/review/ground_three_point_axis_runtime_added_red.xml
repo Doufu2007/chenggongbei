@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="3" skipped="0" tests="5" time="0.849" timestamp="2026-11-12T07:51:24.876143+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_pause_and_stop_do_not_clear_permanent_budgets_or_allow_revival" time="0.070" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_zero_request_still_limits_accumulated_post_stop_path" time="0.081" /><testcase classname="tests.test_ground_three_point_axis" name="test_axis_evidence_receiver_contract_keeps_28rad_and_reverse_plan" time="0.056"><failure message="KeyError: 'target_id'">def test_axis_evidence_receiver_contract_keeps_28rad_and_reverse_plan():
+        from inspection_mission.telemetry import DiagnosticReporter
+        from tools.diagnostic_receiver import validate_event
+        import base64,gzip,json
+        g=reverse_guard();events=g.additional_events()
+        decoded=[validate_event(DiagnosticReporter._encode(e,p))["data"] for e,p in events]
+        parts=[p for p in decoded if p.get("section")=="three_ground_evidence_gzip_part"]
+        body=json.loads(gzip.decompress(base64.b64decode("".join(p["base64_part"] for p in parts))))
+&gt;       assert body["current_point"]["target_id"]=="ground_2"
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'target_id'
+
+tests\test_ground_three_point_axis.py:229: KeyError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_launcher_runs_new_source_and_preserves_real_exit[0]" time="0.019"><failure message="AssertionError: axis launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_ground_three_point_axis.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-782/test_axis_launcher_runs_new_so0')
+exit_code = 0
+
+    @pytest.mark.parametrize("exit_code",[0,17])
+    def test_axis_launcher_runs_new_source_and_preserves_real_exit(tmp_path,exit_code):
+        import os,shlex,shutil,subprocess,sys
+        from pathlib import Path
+        from test_ground_probe_launch import BASH,shell_path
+        if not BASH.is_file():pytest.skip("Git Bash unavailable")
+        root=tmp_path/"axis uploaded workspace"
+        package=root/"src/inspection_mission/inspection_mission";package.mkdir(parents=True)
+        (package/"__init__.py").write_text("",encoding="utf-8")
+        (package/"ground_three_point_axis.py").write_text(
+            "import os,sys\nassert os.environ['AXIS_FAKE_ROS']=='1'\n"
+            f"sys.exit({exit_code})\n",encoding="utf-8")
+        source=Path(__file__).resolve().parents[1]/"scripts/run_ground_three_point_axis.sh"
+&gt;       assert source.is_file(),"axis launcher missing"
+E       AssertionError: axis launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_ground_three_point_axis.sh').is_file
+
+tests\test_ground_three_point_axis.py:248: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_launcher_runs_new_source_and_preserves_real_exit[17]" time="0.008"><failure message="AssertionError: axis launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_ground_three_point_axis.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-782/test_axis_launcher_runs_new_so1')
+exit_code = 17
+
+    @pytest.mark.parametrize("exit_code",[0,17])
+    def test_axis_launcher_runs_new_source_and_preserves_real_exit(tmp_path,exit_code):
+        import os,shlex,shutil,subprocess,sys
+        from pathlib import Path
+        from test_ground_probe_launch import BASH,shell_path
+        if not BASH.is_file():pytest.skip("Git Bash unavailable")
+        root=tmp_path/"axis uploaded workspace"
+        package=root/"src/inspection_mission/inspection_mission";package.mkdir(parents=True)
+        (package/"__init__.py").write_text("",encoding="utf-8")
+        (package/"ground_three_point_axis.py").write_text(
+            "import os,sys\nassert os.environ['AXIS_FAKE_ROS']=='1'\n"
+            f"sys.exit({exit_code})\n",encoding="utf-8")
+        source=Path(__file__).resolve().parents[1]/"scripts/run_ground_three_point_axis.sh"
+&gt;       assert source.is_file(),"axis launcher missing"
+E       AssertionError: axis launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_ground_three_point_axis.sh').is_file
+
+tests\test_ground_three_point_axis.py:248: AssertionError</failure></testcase></testsuite></testsuites>

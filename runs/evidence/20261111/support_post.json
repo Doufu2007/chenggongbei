@@ -1,0 +1,50 @@
+{
+  "success": true,
+  "data": {
+    "id": "ec69fbe7-f2cc-4a4d-ae34-252823bd7db4",
+    "category_id": "fd590c95-1e1f-4d18-8990-b9da3ab04da4",
+    "user_id": "<redacted>",
+    "title": "全域巡检示例工作空间下载与用户运行日志查看问题",
+    "content": "您好，我们参加城市应急全域巡检仿真。课程视频展示了 demo_inspection_ws.zip，但当前课程页面和提交指南中没有找到可下载附件。请提供该示例工作空间的官方下载入口，以及现行版本的接口说明（控制、地图/坐标、识别确认、灯光反馈和正常结束流程）。\n\n另外，我们的练习测评详情只有裁判启动日志，前台启动脚本在 source ROS 之前打印的 stdout、stderr 和退出码均不可见。请说明如何查看用户编译日志、启动脚本实际执行日志和退出码，或提供平台要求的最小日志示例。谢谢。",
+    "tags": "",
+    "view_count": 1,
+    "like_count": 0,
+    "comment_count": 0,
+    "is_pinned": false,
+    "pinned_order": 0,
+    "pinned_until": null,
+    "last_reply_at": null,
+    "is_locked": false,
+    "is_featured": false,
+    "is_recommended": false,
+    "status": "rejected",
+    "accepted_comment_id": null,
+    "post_type": "question",
+    "attachments": [],
+    "cover_image": null,
+    "enable_vote": false,
+    "vote_options": [],
+    "vote_count": 0,
+    "vote_results": {},
+    "my_option": null,
+    "reward": 0,
+    "reject_reason": "工作空间等等文件都在官方的百度网盘连接中。测评侧的构建、运行日志等等内容都是不展示的。",
+    "audited_at": "2026-11-10 15:40:21.990762+08",
+    "moderator_id": "<redacted>",
+    "course_id": null,
+    "course_title": null,
+    "created_at": "2026-11-06 20:27:11.500457+08",
+    "updated_at": "2026-11-10 15:40:21.990762+08",
+    "author": {
+      "id": "<account-id-redacted>",
+      "name": "郑傅韬",
+      "avatar": null,
+      "tier": 1,
+      "title": "新入社区"
+    },
+    "category": {
+      "id": "fd590c95-1e1f-4d18-8990-b9da3ab04da4",
+      "name": "城市应急全域巡检任务场景技术讨论"
+    }
+  }
+}

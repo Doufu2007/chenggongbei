@@ -1,0 +1,5316 @@
+{
+  "kind": "single_real_frame_rectification_exploratory",
+  "created_at": "2026-11-11T19:50:59.539440+00:00",
+  "status": "completed",
+  "source_image": {
+    "path": "runs\\analysis\\20261112_approach_v16b\\native_L000020_a672e7739804717c.jpg",
+    "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+    "size_wh": [
+      800,
+      800
+    ],
+    "source_metadata": {
+      "topic": "/uav/camera/image",
+      "frame_id": "uav/camera_link",
+      "width": 800,
+      "phase": "last",
+      "jpeg_sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "stamp_s": 89.11,
+      "height": 800,
+      "encoding": "jpeg",
+      "part_count": 2,
+      "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "bytes": 29365,
+      "file_name": "native_L000020_a672e7739804717c.jpg",
+      "parts": [
+        {
+          "line": 20,
+          "event": "probe_snapshot",
+          "payload_timestamp": "2026-11-11T19:30:53.792487+00:00",
+          "received_at": "2026-11-11T19:30:57.526015+00:00",
+          "source": "unverified_callback"
+        },
+        {
+          "line": 21,
+          "event": "probe_snapshot",
+          "payload_timestamp": "2026-11-11T19:30:54.869452+00:00",
+          "received_at": "2026-11-11T19:30:58.366819+00:00",
+          "source": "unverified_callback"
+        }
+      ],
+      "exposure": {
+        "topic": "/uav/camera/image",
+        "stamp_s": 89.11,
+        "frame_id": "uav/camera_link",
+        "wall_elapsed_s": 87.48622328300007,
+        "odom": null,
+        "association_error": "prior_odom_too_old",
+        "phase": "last"
+      },
+      "exposure_validation": "invalid_or_unverified_pose_association"
+    }
+  },
+  "source_summary": {
+    "path": "runs\\analysis\\20261112_approach_v16b\\summary.json",
+    "sha256": "9159fc28f8c4318b2ae9db763245798a0e53f6c63410fb613efa5e1464ec5dec"
+  },
+  "manual_annotation": {
+    "quad_xy": [
+      [
+        267.0,
+        477.0
+      ],
+      [
+        524.0,
+        477.0
+      ],
+      [
+        592.0,
+        531.0
+      ],
+      [
+        198.0,
+        531.0
+      ]
+    ],
+    "source_vertical_extent_px": 54,
+    "method": "Parent-provided approximate visually reviewed full-board corners; not runtime detection.",
+    "aspect_ratio_status": "unverified sensitivity candidates; no board ID or class used"
+  },
+  "protocol": {
+    "candidate_selection": "10 fixed source/ROI/context/warp candidates x 4 rotations, all preserved.",
+    "clip": {
+      "weight_source": {
+        "model": "ViT-B/32",
+        "source_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+        "expected_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "status": "verified",
+        "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "size_bytes": 353976522,
+        "local_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\openai_CLIP\\weights\\ViT-B-32.pt"
+      },
+      "implementation": {
+        "repository": "https://github.com/openai/CLIP",
+        "commit_sha": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+        "files": [
+          {
+            "path": "clip/__init__.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/__init__.py",
+            "git_blob_sha": "dcc5619538c0f7c782508bdbd9587259d805e0d9",
+            "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+            "size_bytes": 20
+          },
+          {
+            "path": "clip/clip.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/clip.py",
+            "git_blob_sha": "398a6282cc243e449430d91c2562491fc799929d",
+            "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+            "size_bytes": 9644
+          },
+          {
+            "path": "clip/model.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/model.py",
+            "git_blob_sha": "232b7792eb97440642547bd462cf128df9243933",
+            "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+            "size_bytes": 17374
+          },
+          {
+            "path": "clip/simple_tokenizer.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/simple_tokenizer.py",
+            "git_blob_sha": "0a66286b7d5019c6e221932a813768038f839c91",
+            "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+            "size_bytes": 4632
+          },
+          {
+            "path": "clip/bpe_simple_vocab_16e6.txt.gz",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz",
+            "git_blob_sha": "7b5088a527f720063f044eb928eee315f63b2fc0",
+            "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+            "size_bytes": 1356917
+          },
+          {
+            "path": "LICENSE",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+            "git_blob_sha": "4e97f0b45803b7c04ae89548934af4f257a97501",
+            "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+            "size_bytes": 1064
+          }
+        ]
+      },
+      "device": "cuda",
+      "torch": "2.6.0+cu124",
+      "prompts": {
+        "collapsed_ruins": "a photo of collapsed buildings and earthquake rubble.",
+        "damaged_vehicle": "a photo of a damaged wrecked vehicle.",
+        "landslide": "a photo of a landslide with soil and rocks covering a road.",
+        "rescue_camp": "a photo of a rescue camp with emergency tents and supplies.",
+        "trapped_people": "a photo of people trapped under rubble being rescued.",
+        "window_bird": "a photo of a bird flying in the sky.",
+        "window_target": "a photo of a rescue drone, a quadcopter flying in the sky."
+      },
+      "rejection": {
+        "min_cosine": 0.2,
+        "min_margin": 0.02,
+        "calibrated": false
+      }
+    },
+    "image_encoder": {
+      "weight_source": {
+        "model": "ViT-B/32",
+        "source_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+        "expected_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "status": "verified",
+        "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+        "size_bytes": 353976522,
+        "local_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\openai_CLIP\\weights\\ViT-B-32.pt"
+      },
+      "implementation": {
+        "repository": "https://github.com/openai/CLIP",
+        "commit_sha": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+        "files": [
+          {
+            "path": "clip/__init__.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/__init__.py",
+            "git_blob_sha": "dcc5619538c0f7c782508bdbd9587259d805e0d9",
+            "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+            "size_bytes": 20
+          },
+          {
+            "path": "clip/clip.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/clip.py",
+            "git_blob_sha": "398a6282cc243e449430d91c2562491fc799929d",
+            "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+            "size_bytes": 9644
+          },
+          {
+            "path": "clip/model.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/model.py",
+            "git_blob_sha": "232b7792eb97440642547bd462cf128df9243933",
+            "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+            "size_bytes": 17374
+          },
+          {
+            "path": "clip/simple_tokenizer.py",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/simple_tokenizer.py",
+            "git_blob_sha": "0a66286b7d5019c6e221932a813768038f839c91",
+            "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+            "size_bytes": 4632
+          },
+          {
+            "path": "clip/bpe_simple_vocab_16e6.txt.gz",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz",
+            "git_blob_sha": "7b5088a527f720063f044eb928eee315f63b2fc0",
+            "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+            "size_bytes": 1356917
+          },
+          {
+            "path": "LICENSE",
+            "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+            "git_blob_sha": "4e97f0b45803b7c04ae89548934af4f257a97501",
+            "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+            "size_bytes": 1064
+          }
+        ]
+      },
+      "device": "cuda",
+      "torch": "2.6.0+cu124",
+      "device_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "preprocess": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    <function _convert_image_to_rgb at 0x000001D02344CB80>\n    ToTensor()\n    Normalize(mean=(0.48145466, 0.4578275, 0.40821073), std=(0.26862954, 0.26130258, 0.27577711))\n)",
+      "feature_math": "image encode -> float32 -> L2 normalize -> float32 dot",
+      "training": false,
+      "text_prompts": null
+    },
+    "opencv": {
+      "threshold_changes": false,
+      "source_sha256": "3703cd28b813e74a29c4034964089bb7adcc560ac4481d1d76333741546b90c2",
+      "reference_paths": [
+        "src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+        "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg"
+      ]
+    },
+    "assets": {
+      "repository": "https://github.com/wbxxmz/ros2-car-first",
+      "commit_sha": "48b3dac26b6f562ff21dd321db03fd6ffc91b492",
+      "manifest_sha256": "b5e94bf80eb5ec03ffc6845c92f009e21916be0897ec40e238464db5d90ca41a",
+      "official_current_library_verified": false
+    }
+  },
+  "candidates": [
+    {
+      "name": "full_scene",
+      "path": "full_scene.png",
+      "sha256": "de60de83a432975c44c577a46c3cda867365cb9319beb296c9ede20dac29ee93",
+      "size_wh": [
+        800,
+        800
+      ],
+      "description": "Unmodified decoded original JPEG scene."
+    },
+    {
+      "name": "oblique_bbox",
+      "path": "oblique_bbox.png",
+      "sha256": "4e5175aebb53a907d68d164ef96d8976bf59d4be18b6f5279436931fd6fee2bc",
+      "size_wh": [
+        395,
+        55
+      ],
+      "description": "Unwarped bbox; official CLIP center crop discards both wide ends.",
+      "bbox_xyxy": [
+        198,
+        477,
+        593,
+        532
+      ]
+    },
+    {
+      "name": "oblique_bbox_letterbox",
+      "path": "oblique_bbox_letterbox.png",
+      "sha256": "b563ee8bbd4c245352fc2bac654623dd7d03e3588018c72add5de08d251e3689",
+      "size_wh": [
+        395,
+        395
+      ],
+      "description": "Unwarped bbox with neutral padding preserving all observed content."
+    },
+    {
+      "name": "scene_context",
+      "path": "scene_context.png",
+      "sha256": "83639b1d5e002cc2e8f3c72aab35b998fa3854a1eeaf873b4aa9e38918555e28",
+      "size_wh": [
+        520,
+        150
+      ],
+      "description": "Larger unchanged scene region around board; contains blue floor and other markings.",
+      "bbox_xyxy": [
+        140,
+        420,
+        660,
+        570
+      ]
+    },
+    {
+      "name": "scene_context_letterbox",
+      "path": "scene_context_letterbox.png",
+      "sha256": "a10319d6b0d900db434d7c91d71bce372f11022381df94e1f0e32cf8f4d5f195",
+      "size_wh": [
+        520,
+        520
+      ],
+      "description": "Same scene context padded to retain its full width in CLIP."
+    },
+    {
+      "name": "warp_4_3",
+      "path": "warp_4_3.png",
+      "sha256": "f368ece8ab1fe115757dbac0a76a1309857647d9cdd26164130944776709f666",
+      "size_wh": [
+        384,
+        288
+      ],
+      "description": "Manual-quad projective resampling; no detail restoration.",
+      "manual_quad_xy": [
+        [
+          267.0,
+          477.0
+        ],
+        [
+          524.0,
+          477.0
+        ],
+        [
+          592.0,
+          531.0
+        ],
+        [
+          198.0,
+          531.0
+        ]
+      ],
+      "output_board_size_wh": [
+        384,
+        288
+      ],
+      "external_context_margin_fraction": 0,
+      "homography_source_to_output": [
+        [
+          -0.40181849973771544,
+          -0.5134347496648608,
+          352.19391502010865
+        ],
+        [
+          -3.8407715446491904e-16,
+          -2.1969264245885984,
+          1047.9339045287616
+        ],
+        [
+          -2.2366943924070545e-18,
+          -0.0026616929921703444,
+          1.0
+        ]
+      ],
+      "valid_source_fraction": 1.0
+    },
+    {
+      "name": "warp_square",
+      "path": "warp_square.png",
+      "sha256": "70bec8eddb7e741505d55d4afae3c7f8dfdd6c5c54474aa30b02c6d51a3fd6f7",
+      "size_wh": [
+        384,
+        384
+      ],
+      "description": "Manual-quad projective resampling; no detail restoration.",
+      "manual_quad_xy": [
+        [
+          267.0,
+          477.0
+        ],
+        [
+          524.0,
+          477.0
+        ],
+        [
+          592.0,
+          531.0
+        ],
+        [
+          198.0,
+          531.0
+        ]
+      ],
+      "output_board_size_wh": [
+        384,
+        384
+      ],
+      "external_context_margin_fraction": 0,
+      "homography_source_to_output": [
+        [
+          -0.4018184997377157,
+          -0.5134347496648605,
+          352.1939150201086
+        ],
+        [
+          -3.8407715446491904e-16,
+          -2.93178683141963,
+          1398.4623185871635
+        ],
+        [
+          -2.882078701668599e-18,
+          -0.002661692992170344,
+          1.0
+        ]
+      ],
+      "valid_source_fraction": 1.0
+    },
+    {
+      "name": "warp_4_3_context",
+      "path": "warp_4_3_context.png",
+      "sha256": "4b192689993c5dbdd7b4d8d6d04ecb93408f82840f7b2daed301f5b3b48bfb94",
+      "size_wh": [
+        476,
+        358
+      ],
+      "description": "Manual-quad projective resampling; no detail restoration.",
+      "manual_quad_xy": [
+        [
+          267.0,
+          477.0
+        ],
+        [
+          524.0,
+          477.0
+        ],
+        [
+          592.0,
+          531.0
+        ],
+        [
+          198.0,
+          531.0
+        ]
+      ],
+      "output_board_size_wh": [
+        384,
+        288
+      ],
+      "external_context_margin_fraction": 0.12,
+      "homography_source_to_output": [
+        [
+          -0.40181849973771583,
+          -0.6358726273046965,
+          398.1939150201087
+        ],
+        [
+          -8.641735975460678e-16,
+          -2.2900856793145614,
+          1082.9339045287622
+        ],
+        [
+          -2.2366943924070556e-18,
+          -0.002661692992170345,
+          1.0
+        ]
+      ],
+      "valid_source_fraction": 1.0
+    },
+    {
+      "name": "warp_4_3_expand_y2",
+      "path": "warp_4_3_expand_y2.png",
+      "sha256": "21d17b86d0884e207da5d3a9b05483abaa904c40016a461dc3af2b24337fa752",
+      "size_wh": [
+        384,
+        288
+      ],
+      "description": "Manual-quad projective resampling; no detail restoration.",
+      "manual_quad_xy": [
+        [
+          267.0,
+          475.0
+        ],
+        [
+          524.0,
+          475.0
+        ],
+        [
+          592.0,
+          533.0
+        ],
+        [
+          198.0,
+          533.0
+        ]
+      ],
+      "output_board_size_wh": [
+        384,
+        288
+      ],
+      "external_context_margin_fraction": 0,
+      "homography_source_to_output": [
+        [
+          -0.4427833921345842,
+          -0.5267595527118343,
+          368.4339532380554
+        ],
+        [
+          -1.9203857723245952e-16,
+          -2.253941677131291,
+          1070.6222966373632
+        ],
+        [
+          -8.420407436386383e-19,
+          -0.002730769997408756,
+          1.0
+        ]
+      ],
+      "valid_source_fraction": 1.0
+    },
+    {
+      "name": "warp_4_3_contract_y2",
+      "path": "warp_4_3_contract_y2.png",
+      "sha256": "836910fe05fac196178ce360f58b9c79cc5eff9c896dfc7ea242749ea2731657",
+      "size_wh": [
+        384,
+        288
+      ],
+      "description": "Manual-quad projective resampling; no detail restoration.",
+      "manual_quad_xy": [
+        [
+          267.0,
+          479.0
+        ],
+        [
+          524.0,
+          479.0
+        ],
+        [
+          592.0,
+          529.0
+        ],
+        [
+          198.0,
+          529.0
+        ]
+      ],
+      "output_board_size_wh": [
+        384,
+        288
+      ],
+      "external_context_margin_fraction": 0,
+      "homography_source_to_output": [
+        [
+          -0.3628749549959262,
+          -0.500767437894379,
+          336.75521573531984
+        ],
+        [
+          -9.601928861622976e-17,
+          -2.142724499270463,
+          1026.3650351505519
+        ],
+        [
+          -1.0147012584847769e-18,
+          -0.0025960244822162844,
+          1.0
+        ]
+      ],
+      "valid_source_fraction": 1.0
+    }
+  ],
+  "variants": [
+    {
+      "candidate": "full_scene",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.193359375,
+        "top2_cosine": 0.1873779296875,
+        "margin": 0.0059814453125,
+        "cosines": {
+          "collapsed_ruins": 0.1873779296875,
+          "damaged_vehicle": 0.1865234375,
+          "landslide": 0.1527099609375,
+          "rescue_camp": 0.193359375,
+          "trapped_people": 0.166748046875,
+          "window_bird": 0.1611328125,
+          "window_target": 0.18408203125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1869,
+      "timing_ms": {
+        "template": 753.4649000008358,
+        "clip": 379.54069999977946
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6274545192718506
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.626457929611206
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6138910055160522
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5743021965026855
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5664482712745667
+        },
+        {
+          "rank": 6,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5659937262535095
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5283017754554749
+        },
+        {
+          "rank": 8,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.49384474754333496
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.48136666417121887
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.47951966524124146
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4654284119606018
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4194730520248413
+        }
+      ]
+    },
+    {
+      "candidate": "full_scene",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.191650390625,
+        "top2_cosine": 0.18408203125,
+        "margin": 0.007568359375,
+        "cosines": {
+          "collapsed_ruins": 0.1749267578125,
+          "damaged_vehicle": 0.191650390625,
+          "landslide": 0.12078857421875,
+          "rescue_camp": 0.1810302734375,
+          "trapped_people": 0.1728515625,
+          "window_bird": 0.1806640625,
+          "window_target": 0.18408203125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1869,
+      "timing_ms": {
+        "template": 744.722700001148,
+        "clip": 29.271600000356557
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6414432525634766
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.621573269367218
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6212921142578125
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5859530568122864
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5421762466430664
+        },
+        {
+          "rank": 6,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5165538191795349
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5062796473503113
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4546967148780823
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.43678298592567444
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.42722558975219727
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.42350295186042786
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4125027060508728
+        }
+      ]
+    },
+    {
+      "candidate": "full_scene",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.1971435546875,
+        "top2_cosine": 0.19384765625,
+        "margin": 0.0032958984375,
+        "cosines": {
+          "collapsed_ruins": 0.1876220703125,
+          "damaged_vehicle": 0.1971435546875,
+          "landslide": 0.1419677734375,
+          "rescue_camp": 0.1893310546875,
+          "trapped_people": 0.18017578125,
+          "window_bird": 0.1783447265625,
+          "window_target": 0.19384765625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1869,
+      "timing_ms": {
+        "template": 890.7128999999259,
+        "clip": 32.49130000040168
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6464709639549255
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6286505460739136
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6171506643295288
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5758557319641113
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5349202156066895
+        },
+        {
+          "rank": 6,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5315521359443665
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5143764019012451
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4595050811767578
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4423680007457733
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.43192538619041443
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.42324233055114746
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4009907841682434
+        }
+      ]
+    },
+    {
+      "candidate": "full_scene",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "window_target",
+        "top1_cosine": 0.188720703125,
+        "top2_cosine": 0.1883544921875,
+        "margin": 0.0003662109375,
+        "cosines": {
+          "collapsed_ruins": 0.174560546875,
+          "damaged_vehicle": 0.1883544921875,
+          "landslide": 0.11383056640625,
+          "rescue_camp": 0.17822265625,
+          "trapped_people": 0.1761474609375,
+          "window_bird": 0.1727294921875,
+          "window_target": 0.188720703125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1869,
+      "timing_ms": {
+        "template": 869.2967999995744,
+        "clip": 33.8104000002204
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6617755889892578
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6451694965362549
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6302699446678162
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5846396088600159
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5441745519638062
+        },
+        {
+          "rank": 6,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5258713960647583
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5113374590873718
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.46589699387550354
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.44719186425209045
+        },
+        {
+          "rank": 10,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.43426504731178284
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4269956648349762
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.42391833662986755
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.197509765625,
+        "top2_cosine": 0.1961669921875,
+        "margin": 0.0013427734375,
+        "cosines": {
+          "collapsed_ruins": 0.1961669921875,
+          "damaged_vehicle": 0.197509765625,
+          "landslide": 0.196044921875,
+          "rescue_camp": 0.181884765625,
+          "trapped_people": 0.175537109375,
+          "window_bird": 0.1903076171875,
+          "window_target": 0.1767578125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 362,
+      "timing_ms": {
+        "template": 253.7776000026497,
+        "clip": 25.632900000346126
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6184249520301819
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6059809923171997
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5893346071243286
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5686326622962952
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5342710018157959
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5061187744140625
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4707806408405304
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4398224353790283
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4243393838405609
+        },
+        {
+          "rank": 10,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.41734474897384644
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.410299688577652
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3633910119533539
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.203369140625,
+        "top2_cosine": 0.2027587890625,
+        "margin": 0.0006103515625,
+        "cosines": {
+          "collapsed_ruins": 0.194091796875,
+          "damaged_vehicle": 0.203369140625,
+          "landslide": 0.181640625,
+          "rescue_camp": 0.189208984375,
+          "trapped_people": 0.1820068359375,
+          "window_bird": 0.2027587890625,
+          "window_target": 0.187744140625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 362,
+      "timing_ms": {
+        "template": 264.34770000196295,
+        "clip": 29.514499998185784
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6214951276779175
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6109527945518494
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6009511947631836
+        },
+        {
+          "rank": 4,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.579746425151825
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5309303998947144
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.49417707324028015
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.47296544909477234
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.433351069688797
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4329615831375122
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4309280216693878
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.40705278515815735
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.38153791427612305
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2279052734375,
+        "top2_cosine": 0.222900390625,
+        "margin": 0.0050048828125,
+        "cosines": {
+          "collapsed_ruins": 0.2041015625,
+          "damaged_vehicle": 0.222900390625,
+          "landslide": 0.2064208984375,
+          "rescue_camp": 0.1910400390625,
+          "trapped_people": 0.1949462890625,
+          "window_bird": 0.2279052734375,
+          "window_target": 0.204345703125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 362,
+      "timing_ms": {
+        "template": 256.2367999998969,
+        "clip": 28.948499999387423
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6203315854072571
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6162686944007874
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5949694514274597
+        },
+        {
+          "rank": 4,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5691758394241333
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5327050089836121
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4958271086215973
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4731403589248657
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43204545974731445
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4256271719932556
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.41746625304222107
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.40893566608428955
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.37362515926361084
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.200927734375,
+        "top2_cosine": 0.1993408203125,
+        "margin": 0.0015869140625,
+        "cosines": {
+          "collapsed_ruins": 0.19775390625,
+          "damaged_vehicle": 0.1993408203125,
+          "landslide": 0.184326171875,
+          "rescue_camp": 0.1893310546875,
+          "trapped_people": 0.1807861328125,
+          "window_bird": 0.200927734375,
+          "window_target": 0.177978515625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 362,
+      "timing_ms": {
+        "template": 284.45519999877433,
+        "clip": 31.84490000057849
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6207695603370667
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6011435985565186
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6007811427116394
+        },
+        {
+          "rank": 4,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.574911892414093
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5417260527610779
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.49837979674339294
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.48366379737854004
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4437768757343292
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4344866871833801
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4326401650905609
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.41887998580932617
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3805379569530487
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox_letterbox",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.208740234375,
+        "top2_cosine": 0.203857421875,
+        "margin": 0.0048828125,
+        "cosines": {
+          "collapsed_ruins": 0.203857421875,
+          "damaged_vehicle": 0.208740234375,
+          "landslide": 0.1961669921875,
+          "rescue_camp": 0.1842041015625,
+          "trapped_people": 0.19189453125,
+          "window_bird": 0.197265625,
+          "window_target": 0.1756591796875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1026,
+      "timing_ms": {
+        "template": 656.0950000020966,
+        "clip": 22.330700001475634
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6235584020614624
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6075025796890259
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5999643802642822
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5843623280525208
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5298762321472168
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.48813939094543457
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4789412319660187
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.455778568983078
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43327340483665466
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4117603003978729
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.40102913975715637
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.37193846702575684
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox_letterbox",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2010498046875,
+        "top2_cosine": 0.2003173828125,
+        "margin": 0.000732421875,
+        "cosines": {
+          "collapsed_ruins": 0.1953125,
+          "damaged_vehicle": 0.2003173828125,
+          "landslide": 0.1695556640625,
+          "rescue_camp": 0.1751708984375,
+          "trapped_people": 0.1790771484375,
+          "window_bird": 0.2010498046875,
+          "window_target": 0.1778564453125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1026,
+      "timing_ms": {
+        "template": 608.7176000000909,
+        "clip": 36.28519999983837
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6076101660728455
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.583665132522583
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5796729922294617
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5740871429443359
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.4911782741546631
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4734213352203369
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.45922738313674927
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4204941689968109
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4151204228401184
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.38018330931663513
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.37020424008369446
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3570556640625
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox_letterbox",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2021484375,
+        "top2_cosine": 0.197998046875,
+        "margin": 0.004150390625,
+        "cosines": {
+          "collapsed_ruins": 0.1717529296875,
+          "damaged_vehicle": 0.197998046875,
+          "landslide": 0.1885986328125,
+          "rescue_camp": 0.1787109375,
+          "trapped_people": 0.162109375,
+          "window_bird": 0.2021484375,
+          "window_target": 0.1893310546875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1026,
+      "timing_ms": {
+        "template": 634.9766000021191,
+        "clip": 37.774299999000505
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6050190925598145
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.60190349817276
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5919682383537292
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5913676619529724
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5398789644241333
+        },
+        {
+          "rank": 6,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4794633090496063
+        },
+        {
+          "rank": 7,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.46645262837409973
+        },
+        {
+          "rank": 8,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4642905592918396
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4217730760574341
+        },
+        {
+          "rank": 10,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.39979100227355957
+        },
+        {
+          "rank": 11,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.39812344312667847
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3310700058937073
+        }
+      ]
+    },
+    {
+      "candidate": "oblique_bbox_letterbox",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2086181640625,
+        "top2_cosine": 0.203125,
+        "margin": 0.0054931640625,
+        "cosines": {
+          "collapsed_ruins": 0.1988525390625,
+          "damaged_vehicle": 0.203125,
+          "landslide": 0.174560546875,
+          "rescue_camp": 0.1756591796875,
+          "trapped_people": 0.1883544921875,
+          "window_bird": 0.2086181640625,
+          "window_target": 0.1817626953125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1026,
+      "timing_ms": {
+        "template": 649.7153000018443,
+        "clip": 39.86010000153328
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6110022664070129
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.585788369178772
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5842133164405823
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5728989243507385
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.49131521582603455
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4805257022380829
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.46392542123794556
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4217679500579834
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.42033058404922485
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.383943647146225
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.36415863037109375
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.36182934045791626
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.2060546875,
+        "top2_cosine": 0.203369140625,
+        "margin": 0.002685546875,
+        "cosines": {
+          "collapsed_ruins": 0.2060546875,
+          "damaged_vehicle": 0.203369140625,
+          "landslide": 0.16650390625,
+          "rescue_camp": 0.180419921875,
+          "trapped_people": 0.176513671875,
+          "window_bird": 0.173095703125,
+          "window_target": 0.1707763671875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1372,
+      "timing_ms": {
+        "template": 636.3984999989043,
+        "clip": 39.80049999881885
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6575018167495728
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6177846789360046
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.593756377696991
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5542303919792175
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5464484095573425
+        },
+        {
+          "rank": 6,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5284045338630676
+        },
+        {
+          "rank": 7,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5194988250732422
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.46628880500793457
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4648978114128113
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4620581865310669
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.43756115436553955
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.41214632987976074
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.212158203125,
+        "top2_cosine": 0.210205078125,
+        "margin": 0.001953125,
+        "cosines": {
+          "collapsed_ruins": 0.210205078125,
+          "damaged_vehicle": 0.201416015625,
+          "landslide": 0.168701171875,
+          "rescue_camp": 0.1905517578125,
+          "trapped_people": 0.178466796875,
+          "window_bird": 0.212158203125,
+          "window_target": 0.1826171875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1372,
+      "timing_ms": {
+        "template": 636.2754000001587,
+        "clip": 40.2341000008164
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6565290689468384
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6474148035049438
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.62300705909729
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6161289215087891
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5470554828643799
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5338761210441589
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4904794991016388
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4589724540710449
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.44574007391929626
+        },
+        {
+          "rank": 10,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4417055547237396
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43831321597099304
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4190773069858551
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.20556640625,
+        "top2_cosine": 0.192626953125,
+        "margin": 0.012939453125,
+        "cosines": {
+          "collapsed_ruins": 0.20556640625,
+          "damaged_vehicle": 0.192626953125,
+          "landslide": 0.1842041015625,
+          "rescue_camp": 0.1689453125,
+          "trapped_people": 0.1761474609375,
+          "window_bird": 0.18603515625,
+          "window_target": 0.1793212890625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1372,
+      "timing_ms": {
+        "template": 629.6351000019058,
+        "clip": 40.12409999995725
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6678896546363831
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6377233862876892
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5997008681297302
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5734077095985413
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5718547701835632
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5479314923286438
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5254747271537781
+        },
+        {
+          "rank": 8,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4851963520050049
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4699953496456146
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.46594011783599854
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.46585404872894287
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.40874311327934265
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2137451171875,
+        "top2_cosine": 0.2117919921875,
+        "margin": 0.001953125,
+        "cosines": {
+          "collapsed_ruins": 0.2117919921875,
+          "damaged_vehicle": 0.19970703125,
+          "landslide": 0.173095703125,
+          "rescue_camp": 0.1854248046875,
+          "trapped_people": 0.1822509765625,
+          "window_bird": 0.2137451171875,
+          "window_target": 0.17919921875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1372,
+      "timing_ms": {
+        "template": 911.7527999987942,
+        "clip": 40.382099999987986
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6474747061729431
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6276536583900452
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6136067509651184
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6001923680305481
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5360146164894104
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5288602709770203
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4882849156856537
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4427771270275116
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43890324234962463
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4330095052719116
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4274408519268036
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.41168278455734253
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context_letterbox",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.2244873046875,
+        "top2_cosine": 0.2198486328125,
+        "margin": 0.004638671875,
+        "cosines": {
+          "collapsed_ruins": 0.2244873046875,
+          "damaged_vehicle": 0.2198486328125,
+          "landslide": 0.19775390625,
+          "rescue_camp": 0.213134765625,
+          "trapped_people": 0.1920166015625,
+          "window_bird": 0.1956787109375,
+          "window_target": 0.1883544921875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1557,
+      "timing_ms": {
+        "template": 986.5236000005098,
+        "clip": 41.80819999965024
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6415826678276062
+        },
+        {
+          "rank": 2,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6114633083343506
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5988187789916992
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.576920747756958
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5382139682769775
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5381487607955933
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5078596472740173
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4659106433391571
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4644075036048889
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4377538859844208
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4230009615421295
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4108431339263916
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context_letterbox",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.2171630859375,
+        "top2_cosine": 0.212158203125,
+        "margin": 0.0050048828125,
+        "cosines": {
+          "collapsed_ruins": 0.2171630859375,
+          "damaged_vehicle": 0.212158203125,
+          "landslide": 0.1820068359375,
+          "rescue_camp": 0.1881103515625,
+          "trapped_people": 0.1973876953125,
+          "window_bird": 0.2093505859375,
+          "window_target": 0.185302734375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1557,
+      "timing_ms": {
+        "template": 812.8658999994514,
+        "clip": 44.22360000171466
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6269723773002625
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6252068281173706
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.6067463755607605
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6012497544288635
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5344201922416687
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5323461294174194
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4880046248435974
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4413207769393921
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.44016164541244507
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4401509165763855
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4125194847583771
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.41203951835632324
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context_letterbox",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.217529296875,
+        "top2_cosine": 0.2135009765625,
+        "margin": 0.0040283203125,
+        "cosines": {
+          "collapsed_ruins": 0.217529296875,
+          "damaged_vehicle": 0.2135009765625,
+          "landslide": 0.1981201171875,
+          "rescue_camp": 0.1995849609375,
+          "trapped_people": 0.18701171875,
+          "window_bird": 0.205810546875,
+          "window_target": 0.1947021484375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1557,
+      "timing_ms": {
+        "template": 920.9179999998014,
+        "clip": 41.34720000001835
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.61319500207901
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.595507800579071
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5892374515533447
+        },
+        {
+          "rank": 4,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5860742926597595
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.509996771812439
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.496303528547287
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.47256648540496826
+        },
+        {
+          "rank": 8,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.43964892625808716
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4221901595592499
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.39988094568252563
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.3892282247543335
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3633158802986145
+        }
+      ]
+    },
+    {
+      "candidate": "scene_context_letterbox",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.2061767578125,
+        "top2_cosine": 0.203857421875,
+        "margin": 0.0023193359375,
+        "cosines": {
+          "collapsed_ruins": 0.203857421875,
+          "damaged_vehicle": 0.2061767578125,
+          "landslide": 0.170166015625,
+          "rescue_camp": 0.183837890625,
+          "trapped_people": 0.185791015625,
+          "window_bird": 0.2025146484375,
+          "window_target": 0.1751708984375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1557,
+      "timing_ms": {
+        "template": 715.0559000001522,
+        "clip": 41.679099998873426
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6247596740722656
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6006414294242859
+        },
+        {
+          "rank": 3,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5987156629562378
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5754691958427429
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5104647278785706
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5067914128303528
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.46618539094924927
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.42873212695121765
+        },
+        {
+          "rank": 9,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.42198070883750916
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4195273816585541
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.38984715938568115
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.38785576820373535
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.2392578125,
+        "top2_cosine": 0.221435546875,
+        "margin": 0.017822265625,
+        "cosines": {
+          "collapsed_ruins": 0.221435546875,
+          "damaged_vehicle": 0.2392578125,
+          "landslide": 0.1458740234375,
+          "rescue_camp": 0.2095947265625,
+          "trapped_people": 0.1966552734375,
+          "window_bird": 0.188232421875,
+          "window_target": 0.1949462890625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1607,
+      "timing_ms": {
+        "template": 862.8412000034587,
+        "clip": 38.89079999862588
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.624850332736969
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6148751974105835
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5910145044326782
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5559490323066711
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5450578331947327
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5182520747184753
+        },
+        {
+          "rank": 7,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.48707088828086853
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4804483652114868
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4773433804512024
+        },
+        {
+          "rank": 10,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.46863460540771484
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4422247111797333
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4299130141735077
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.278076171875,
+        "top2_cosine": 0.2685546875,
+        "margin": 0.009521484375,
+        "cosines": {
+          "collapsed_ruins": 0.2685546875,
+          "damaged_vehicle": 0.2431640625,
+          "landslide": 0.215087890625,
+          "rescue_camp": 0.278076171875,
+          "trapped_people": 0.229736328125,
+          "window_bird": 0.21142578125,
+          "window_target": 0.215087890625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1607,
+      "timing_ms": {
+        "template": 899.3775999988429,
+        "clip": 38.94639999998617
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.575516939163208
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5649657845497131
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5631553530693054
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5611394047737122
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4983910322189331
+        },
+        {
+          "rank": 6,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.48892441391944885
+        },
+        {
+          "rank": 7,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4745781719684601
+        },
+        {
+          "rank": 8,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4717807173728943
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4347466230392456
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4242761433124542
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4163202941417694
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.41146406531333923
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "rescue_camp",
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.3115234375,
+        "top2_cosine": 0.239990234375,
+        "margin": 0.071533203125,
+        "cosines": {
+          "collapsed_ruins": 0.239990234375,
+          "damaged_vehicle": 0.224853515625,
+          "landslide": 0.1610107421875,
+          "rescue_camp": 0.3115234375,
+          "trapped_people": 0.2081298828125,
+          "window_bird": 0.173828125,
+          "window_target": 0.197509765625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1607,
+      "timing_ms": {
+        "template": 904.7097000002395,
+        "clip": 38.85960000116029
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.6631401181221008
+        },
+        {
+          "rank": 2,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.620907187461853
+        },
+        {
+          "rank": 3,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.6149666905403137
+        },
+        {
+          "rank": 4,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5558018088340759
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.550255537033081
+        },
+        {
+          "rank": 6,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5247315764427185
+        },
+        {
+          "rank": 7,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5159448385238647
+        },
+        {
+          "rank": 8,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.49883201718330383
+        },
+        {
+          "rank": 9,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.4969462752342224
+        },
+        {
+          "rank": 10,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4821924865245819
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.47388043999671936
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.44235941767692566
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "collapsed_ruins",
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.29248046875,
+        "top2_cosine": 0.268798828125,
+        "margin": 0.023681640625,
+        "cosines": {
+          "collapsed_ruins": 0.29248046875,
+          "damaged_vehicle": 0.2493896484375,
+          "landslide": 0.2266845703125,
+          "rescue_camp": 0.265869140625,
+          "trapped_people": 0.268798828125,
+          "window_bird": 0.220703125,
+          "window_target": 0.22900390625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1607,
+      "timing_ms": {
+        "template": 734.0500999998767,
+        "clip": 38.84689999904367
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5921623110771179
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5867577195167542
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5745474696159363
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5684197545051575
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5381936430931091
+        },
+        {
+          "rank": 6,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5230880975723267
+        },
+        {
+          "rank": 7,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4892202317714691
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.471218079328537
+        },
+        {
+          "rank": 9,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4680204391479492
+        },
+        {
+          "rank": 10,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.45896393060684204
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4460000991821289
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.43590614199638367
+        }
+      ]
+    },
+    {
+      "candidate": "warp_square",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.248291015625,
+        "top2_cosine": 0.2413330078125,
+        "margin": 0.0069580078125,
+        "cosines": {
+          "collapsed_ruins": 0.248291015625,
+          "damaged_vehicle": 0.2413330078125,
+          "landslide": 0.187744140625,
+          "rescue_camp": 0.2249755859375,
+          "trapped_people": 0.215576171875,
+          "window_bird": 0.2071533203125,
+          "window_target": 0.2021484375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1536,
+      "timing_ms": {
+        "template": 934.8418000008678,
+        "clip": 40.788800000882475
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5996149778366089
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5913304686546326
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5878302454948425
+        },
+        {
+          "rank": 4,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5531818866729736
+        },
+        {
+          "rank": 5,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5460047125816345
+        },
+        {
+          "rank": 6,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5426303744316101
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.49607527256011963
+        },
+        {
+          "rank": 8,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4783375859260559
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4769558608531952
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4519243836402893
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4483707845211029
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4426328241825104
+        }
+      ]
+    },
+    {
+      "candidate": "warp_square",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.2763671875,
+        "top2_cosine": 0.264404296875,
+        "margin": 0.011962890625,
+        "cosines": {
+          "collapsed_ruins": 0.2763671875,
+          "damaged_vehicle": 0.2342529296875,
+          "landslide": 0.2113037109375,
+          "rescue_camp": 0.264404296875,
+          "trapped_people": 0.2388916015625,
+          "window_bird": 0.1981201171875,
+          "window_target": 0.2086181640625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1536,
+      "timing_ms": {
+        "template": 931.1624999972992,
+        "clip": 39.942000003065914
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5772223472595215
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5582484006881714
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5503488183021545
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5502117276191711
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5169895887374878
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.507798969745636
+        },
+        {
+          "rank": 7,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.45545393228530884
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.45224326848983765
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4423099458217621
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43858057260513306
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4121386408805847
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.40476322174072266
+        }
+      ]
+    },
+    {
+      "candidate": "warp_square",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "rescue_camp",
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.274169921875,
+        "top2_cosine": 0.237060546875,
+        "margin": 0.037109375,
+        "cosines": {
+          "collapsed_ruins": 0.237060546875,
+          "damaged_vehicle": 0.21484375,
+          "landslide": 0.168212890625,
+          "rescue_camp": 0.274169921875,
+          "trapped_people": 0.2037353515625,
+          "window_bird": 0.1802978515625,
+          "window_target": 0.1966552734375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1536,
+      "timing_ms": {
+        "template": 886.3898999989033,
+        "clip": 40.61509999883128
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.5814752578735352
+        },
+        {
+          "rank": 2,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5666411519050598
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5618700385093689
+        },
+        {
+          "rank": 4,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.5100306272506714
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5100149512290955
+        },
+        {
+          "rank": 6,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5095280408859253
+        },
+        {
+          "rank": 7,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5067842602729797
+        },
+        {
+          "rank": 8,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.49711987376213074
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4566708207130432
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43264132738113403
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4190187156200409
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4158986210823059
+        }
+      ]
+    },
+    {
+      "candidate": "warp_square",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "collapsed_ruins",
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.292236328125,
+        "top2_cosine": 0.26904296875,
+        "margin": 0.023193359375,
+        "cosines": {
+          "collapsed_ruins": 0.292236328125,
+          "damaged_vehicle": 0.257080078125,
+          "landslide": 0.2342529296875,
+          "rescue_camp": 0.262451171875,
+          "trapped_people": 0.26904296875,
+          "window_bird": 0.2135009765625,
+          "window_target": 0.2265625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1536,
+      "timing_ms": {
+        "template": 925.8034999984375,
+        "clip": 39.820999998482876
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6249141097068787
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5859466791152954
+        },
+        {
+          "rank": 3,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5831111669540405
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5717628598213196
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.566708505153656
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5531680583953857
+        },
+        {
+          "rank": 7,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.5068029165267944
+        },
+        {
+          "rank": 8,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4966764748096466
+        },
+        {
+          "rank": 9,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4937847852706909
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.48910441994667053
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4622294306755066
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.46194860339164734
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_context",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.25634765625,
+        "top2_cosine": 0.251953125,
+        "margin": 0.00439453125,
+        "cosines": {
+          "collapsed_ruins": 0.251953125,
+          "damaged_vehicle": 0.25634765625,
+          "landslide": 0.2027587890625,
+          "rescue_camp": 0.2481689453125,
+          "trapped_people": 0.2200927734375,
+          "window_bird": 0.202880859375,
+          "window_target": 0.2022705078125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 2062,
+      "timing_ms": {
+        "template": 754.4863999974041,
+        "clip": 40.53629999907571
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6115120649337769
+        },
+        {
+          "rank": 2,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5841869711875916
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5816327929496765
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5728412866592407
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5683226585388184
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.527662992477417
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5057117938995361
+        },
+        {
+          "rank": 8,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.5048807859420776
+        },
+        {
+          "rank": 9,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.47734779119491577
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4732478857040405
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4524449110031128
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4160521328449249
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_context",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.264892578125,
+        "top2_cosine": 0.260498046875,
+        "margin": 0.00439453125,
+        "cosines": {
+          "collapsed_ruins": 0.260498046875,
+          "damaged_vehicle": 0.258544921875,
+          "landslide": 0.2119140625,
+          "rescue_camp": 0.264892578125,
+          "trapped_people": 0.2161865234375,
+          "window_bird": 0.2098388671875,
+          "window_target": 0.212890625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 2062,
+      "timing_ms": {
+        "template": 747.3558999990928,
+        "clip": 40.655599997990066
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5905008316040039
+        },
+        {
+          "rank": 2,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5767809748649597
+        },
+        {
+          "rank": 3,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5557714700698853
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5533723831176758
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5352204442024231
+        },
+        {
+          "rank": 6,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.504222571849823
+        },
+        {
+          "rank": 7,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4917696416378021
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4727703630924225
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.46601012349128723
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.43539196252822876
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4250752627849579
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4083552956581116
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_context",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "rescue_camp",
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.298828125,
+        "top2_cosine": 0.23486328125,
+        "margin": 0.06396484375,
+        "cosines": {
+          "collapsed_ruins": 0.23486328125,
+          "damaged_vehicle": 0.2249755859375,
+          "landslide": 0.156494140625,
+          "rescue_camp": 0.298828125,
+          "trapped_people": 0.2066650390625,
+          "window_bird": 0.1611328125,
+          "window_target": 0.20654296875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 2062,
+      "timing_ms": {
+        "template": 734.1794999992999,
+        "clip": 41.04739999820595
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.6633018255233765
+        },
+        {
+          "rank": 2,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.611754834651947
+        },
+        {
+          "rank": 3,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.6011790037155151
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5993032455444336
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5652320384979248
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5350638031959534
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5114327073097229
+        },
+        {
+          "rank": 8,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5081331729888916
+        },
+        {
+          "rank": 9,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5016182661056519
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4837912619113922
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4763234257698059
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4638252854347229
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_context",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.28173828125,
+        "top2_cosine": 0.2783203125,
+        "margin": 0.00341796875,
+        "cosines": {
+          "collapsed_ruins": 0.28173828125,
+          "damaged_vehicle": 0.270263671875,
+          "landslide": 0.23193359375,
+          "rescue_camp": 0.2783203125,
+          "trapped_people": 0.25341796875,
+          "window_bird": 0.216796875,
+          "window_target": 0.2197265625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 2062,
+      "timing_ms": {
+        "template": 773.6690000019735,
+        "clip": 40.66400000010617
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5736547112464905
+        },
+        {
+          "rank": 2,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.569098711013794
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5517648458480835
+        },
+        {
+          "rank": 4,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5504932403564453
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5187990665435791
+        },
+        {
+          "rank": 6,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.5127870440483093
+        },
+        {
+          "rank": 7,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4964183568954468
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4804461598396301
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4672899544239044
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.46123406291007996
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4301808774471283
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.41880178451538086
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_expand_y2",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.234619140625,
+        "top2_cosine": 0.218994140625,
+        "margin": 0.015625,
+        "cosines": {
+          "collapsed_ruins": 0.218994140625,
+          "damaged_vehicle": 0.234619140625,
+          "landslide": 0.1685791015625,
+          "rescue_camp": 0.2041015625,
+          "trapped_people": 0.1903076171875,
+          "window_bird": 0.1929931640625,
+          "window_target": 0.1944580078125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1687,
+      "timing_ms": {
+        "template": 881.8761999973503,
+        "clip": 40.17580000072485
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5959160923957825
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5908246040344238
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5838279128074646
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5444413423538208
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.531569242477417
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5077700614929199
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4723086953163147
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.46286138892173767
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4590045213699341
+        },
+        {
+          "rank": 10,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.45105981826782227
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4411289393901825
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4032769203186035
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_expand_y2",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.270263671875,
+        "top2_cosine": 0.260986328125,
+        "margin": 0.00927734375,
+        "cosines": {
+          "collapsed_ruins": 0.260986328125,
+          "damaged_vehicle": 0.2432861328125,
+          "landslide": 0.20361328125,
+          "rescue_camp": 0.270263671875,
+          "trapped_people": 0.208251953125,
+          "window_bird": 0.206298828125,
+          "window_target": 0.2120361328125
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1687,
+      "timing_ms": {
+        "template": 809.0164999994158,
+        "clip": 38.97619999770541
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5836067795753479
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5661689639091492
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.559425950050354
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5575462579727173
+        },
+        {
+          "rank": 5,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.5015802979469299
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5009245872497559
+        },
+        {
+          "rank": 7,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.49435174465179443
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4801093637943268
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.43938297033309937
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4195634126663208
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4194362461566925
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.3958834707736969
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_expand_y2",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "rescue_camp",
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.274169921875,
+        "top2_cosine": 0.2371826171875,
+        "margin": 0.0369873046875,
+        "cosines": {
+          "collapsed_ruins": 0.2371826171875,
+          "damaged_vehicle": 0.219482421875,
+          "landslide": 0.1644287109375,
+          "rescue_camp": 0.274169921875,
+          "trapped_people": 0.2099609375,
+          "window_bird": 0.1572265625,
+          "window_target": 0.1851806640625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1687,
+      "timing_ms": {
+        "template": 760.8882999993511,
+        "clip": 39.1734999975597
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.6687631011009216
+        },
+        {
+          "rank": 2,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.6233078241348267
+        },
+        {
+          "rank": 3,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.6228717565536499
+        },
+        {
+          "rank": 4,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5893175005912781
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5694594979286194
+        },
+        {
+          "rank": 6,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5346203446388245
+        },
+        {
+          "rank": 7,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.5243735313415527
+        },
+        {
+          "rank": 8,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5170074105262756
+        },
+        {
+          "rank": 9,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5123661756515503
+        },
+        {
+          "rank": 10,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.49879997968673706
+        },
+        {
+          "rank": 11,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4983111023902893
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.49574607610702515
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_expand_y2",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.28466796875,
+        "top2_cosine": 0.282470703125,
+        "margin": 0.002197265625,
+        "cosines": {
+          "collapsed_ruins": 0.28466796875,
+          "damaged_vehicle": 0.25439453125,
+          "landslide": 0.236572265625,
+          "rescue_camp": 0.282470703125,
+          "trapped_people": 0.244873046875,
+          "window_bird": 0.21142578125,
+          "window_target": 0.216796875
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1687,
+      "timing_ms": {
+        "template": 732.4135999988357,
+        "clip": 38.795200001914054
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5738351941108704
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.556551992893219
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5515641570091248
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5487364530563354
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.50578773021698
+        },
+        {
+          "rank": 6,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4928916096687317
+        },
+        {
+          "rank": 7,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.4892870783805847
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.47709619998931885
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.4622108042240143
+        },
+        {
+          "rank": 10,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.45118847489356995
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4226485788822174
+        },
+        {
+          "rank": 12,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.40760859847068787
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_contract_y2",
+      "rotation_ccw_deg": 0,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.244384765625,
+        "top2_cosine": 0.2413330078125,
+        "margin": 0.0030517578125,
+        "cosines": {
+          "collapsed_ruins": 0.2413330078125,
+          "damaged_vehicle": 0.244384765625,
+          "landslide": 0.1595458984375,
+          "rescue_camp": 0.22900390625,
+          "trapped_people": 0.22607421875,
+          "window_bird": 0.2027587890625,
+          "window_target": 0.21240234375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1563,
+      "timing_ms": {
+        "template": 716.836699997657,
+        "clip": 38.86860000056913
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.6340725421905518
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6230235695838928
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6072772145271301
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5552634596824646
+        },
+        {
+          "rank": 5,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5543772578239441
+        },
+        {
+          "rank": 6,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5393996238708496
+        },
+        {
+          "rank": 7,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.5097919702529907
+        },
+        {
+          "rank": 8,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.5084200501441956
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.492458701133728
+        },
+        {
+          "rank": 10,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4777615964412689
+        },
+        {
+          "rank": 11,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4619142711162567
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.447330117225647
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_contract_y2",
+      "rotation_ccw_deg": 90,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.28515625,
+        "top2_cosine": 0.268310546875,
+        "margin": 0.016845703125,
+        "cosines": {
+          "collapsed_ruins": 0.268310546875,
+          "damaged_vehicle": 0.2431640625,
+          "landslide": 0.2169189453125,
+          "rescue_camp": 0.28515625,
+          "trapped_people": 0.251708984375,
+          "window_bird": 0.2103271484375,
+          "window_target": 0.218505859375
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1563,
+      "timing_ms": {
+        "template": 712.3573999997461,
+        "clip": 39.05220000160625
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5728445649147034
+        },
+        {
+          "rank": 2,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5675845146179199
+        },
+        {
+          "rank": 3,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5661575794219971
+        },
+        {
+          "rank": 4,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5575461387634277
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.4911496341228485
+        },
+        {
+          "rank": 6,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.48451197147369385
+        },
+        {
+          "rank": 7,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.4793980121612549
+        },
+        {
+          "rank": 8,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.4737448990345001
+        },
+        {
+          "rank": 9,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.44660741090774536
+        },
+        {
+          "rank": 10,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4421650171279907
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.42192691564559937
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4203021824359894
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_contract_y2",
+      "rotation_ccw_deg": 180,
+      "clip_fixed_protocol": {
+        "decision": "accepted",
+        "predicted_class": "rescue_camp",
+        "closed_set_class": "rescue_camp",
+        "top1_cosine": 0.279296875,
+        "top2_cosine": 0.247314453125,
+        "margin": 0.031982421875,
+        "cosines": {
+          "collapsed_ruins": 0.247314453125,
+          "damaged_vehicle": 0.2327880859375,
+          "landslide": 0.18896484375,
+          "rescue_camp": 0.279296875,
+          "trapped_people": 0.231689453125,
+          "window_bird": 0.206787109375,
+          "window_target": 0.2119140625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1563,
+      "timing_ms": {
+        "template": 745.507900002849,
+        "clip": 38.54259999934584
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5976632237434387
+        },
+        {
+          "rank": 2,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.5912330746650696
+        },
+        {
+          "rank": 3,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.5716596245765686
+        },
+        {
+          "rank": 4,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5642825961112976
+        },
+        {
+          "rank": 5,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.5534141659736633
+        },
+        {
+          "rank": 6,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.541354775428772
+        },
+        {
+          "rank": 7,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5323536992073059
+        },
+        {
+          "rank": 8,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5061162114143372
+        },
+        {
+          "rank": 9,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.48582348227500916
+        },
+        {
+          "rank": 10,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.48342859745025635
+        },
+        {
+          "rank": 11,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.46756571531295776
+        },
+        {
+          "rank": 12,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.44689807295799255
+        }
+      ]
+    },
+    {
+      "candidate": "warp_4_3_contract_y2",
+      "rotation_ccw_deg": 270,
+      "clip_fixed_protocol": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "collapsed_ruins",
+        "top1_cosine": 0.289794921875,
+        "top2_cosine": 0.28515625,
+        "margin": 0.004638671875,
+        "cosines": {
+          "collapsed_ruins": 0.289794921875,
+          "damaged_vehicle": 0.2430419921875,
+          "landslide": 0.222412109375,
+          "rescue_camp": 0.241455078125,
+          "trapped_people": 0.28515625,
+          "window_bird": 0.223876953125,
+          "window_target": 0.2353515625
+        }
+      },
+      "template_candidates": [],
+      "raw_orb_keypoints": 1563,
+      "timing_ms": {
+        "template": 754.1047999984585,
+        "clip": 38.92459999769926
+      },
+      "reference_neighbors": [
+        {
+          "rank": 1,
+          "reference_index": 10,
+          "reference_id": "window_target_1.jpg",
+          "cosine": 0.6070637702941895
+        },
+        {
+          "rank": 2,
+          "reference_index": 8,
+          "reference_id": "window_bird_01.jpg",
+          "cosine": 0.6041532158851624
+        },
+        {
+          "rank": 3,
+          "reference_index": 9,
+          "reference_id": "window_bird_02.jpg",
+          "cosine": 0.5907542705535889
+        },
+        {
+          "rank": 4,
+          "reference_index": 3,
+          "reference_id": "landslide_02.jpg",
+          "cosine": 0.5752623677253723
+        },
+        {
+          "rank": 5,
+          "reference_index": 0,
+          "reference_id": "collapsed_ruins_02.jpg",
+          "cosine": 0.5660786032676697
+        },
+        {
+          "rank": 6,
+          "reference_index": 11,
+          "reference_id": "window_target_2.jpg",
+          "cosine": 0.5412483811378479
+        },
+        {
+          "rank": 7,
+          "reference_index": 7,
+          "reference_id": "trapped_people_02.jpg",
+          "cosine": 0.5287131071090698
+        },
+        {
+          "rank": 8,
+          "reference_index": 1,
+          "reference_id": "damaged_vehicle_01.png",
+          "cosine": 0.4888777434825897
+        },
+        {
+          "rank": 9,
+          "reference_index": 6,
+          "reference_id": "trapped_people_01.png",
+          "cosine": 0.4835168123245239
+        },
+        {
+          "rank": 10,
+          "reference_index": 4,
+          "reference_id": "rescue_camp_01.png",
+          "cosine": 0.4709591865539551
+        },
+        {
+          "rank": 11,
+          "reference_index": 2,
+          "reference_id": "landslide_01.jpg",
+          "cosine": 0.4606369137763977
+        },
+        {
+          "rank": 12,
+          "reference_index": 5,
+          "reference_id": "rescue_camp_02.jpg",
+          "cosine": 0.457682341337204
+        }
+      ]
+    }
+  ],
+  "image_neighbor_cosine_matrix": [
+    [
+      0.5664482712745667,
+      0.5283017754554749,
+      0.4654284119606018,
+      0.5659937262535095,
+      0.48136666417121887,
+      0.49384474754333496,
+      0.4194730520248413,
+      0.47951966524124146,
+      0.6138910055160522,
+      0.5743021965026855,
+      0.626457929611206,
+      0.6274545192718506
+    ],
+    [
+      0.5421762466430664,
+      0.5062796473503113,
+      0.42722558975219727,
+      0.5165538191795349,
+      0.43678298592567444,
+      0.4125027060508728,
+      0.42350295186042786,
+      0.4546967148780823,
+      0.621573269367218,
+      0.5859530568122864,
+      0.6414432525634766,
+      0.6212921142578125
+    ],
+    [
+      0.5349202156066895,
+      0.5143764019012451,
+      0.43192538619041443,
+      0.5315521359443665,
+      0.4423680007457733,
+      0.42324233055114746,
+      0.4009907841682434,
+      0.4595050811767578,
+      0.6171506643295288,
+      0.5758557319641113,
+      0.6464709639549255,
+      0.6286505460739136
+    ],
+    [
+      0.5441745519638062,
+      0.5113374590873718,
+      0.4269956648349762,
+      0.5258713960647583,
+      0.44719186425209045,
+      0.42391833662986755,
+      0.43426504731178284,
+      0.46589699387550354,
+      0.6302699446678162,
+      0.5846396088600159,
+      0.6617755889892578,
+      0.6451694965362549
+    ],
+    [
+      0.5061187744140625,
+      0.4707806408405304,
+      0.4398224353790283,
+      0.5342710018157959,
+      0.4243393838405609,
+      0.41734474897384644,
+      0.3633910119533539,
+      0.410299688577652,
+      0.6059809923171997,
+      0.5686326622962952,
+      0.6184249520301819,
+      0.5893346071243286
+    ],
+    [
+      0.49417707324028015,
+      0.47296544909477234,
+      0.4329615831375122,
+      0.5309303998947144,
+      0.4309280216693878,
+      0.40705278515815735,
+      0.38153791427612305,
+      0.433351069688797,
+      0.6214951276779175,
+      0.6009511947631836,
+      0.6109527945518494,
+      0.579746425151825
+    ],
+    [
+      0.4958271086215973,
+      0.4731403589248657,
+      0.4256271719932556,
+      0.5327050089836121,
+      0.41746625304222107,
+      0.40893566608428955,
+      0.37362515926361084,
+      0.43204545974731445,
+      0.6203315854072571,
+      0.5949694514274597,
+      0.6162686944007874,
+      0.5691758394241333
+    ],
+    [
+      0.49837979674339294,
+      0.48366379737854004,
+      0.4437768757343292,
+      0.5417260527610779,
+      0.4326401650905609,
+      0.41887998580932617,
+      0.3805379569530487,
+      0.4344866871833801,
+      0.6207695603370667,
+      0.6007811427116394,
+      0.6011435985565186,
+      0.574911892414093
+    ],
+    [
+      0.48813939094543457,
+      0.4789412319660187,
+      0.455778568983078,
+      0.5298762321472168,
+      0.4117603003978729,
+      0.40102913975715637,
+      0.37193846702575684,
+      0.43327340483665466,
+      0.5999643802642822,
+      0.5843623280525208,
+      0.6235584020614624,
+      0.6075025796890259
+    ],
+    [
+      0.4734213352203369,
+      0.45922738313674927,
+      0.4151204228401184,
+      0.4911782741546631,
+      0.38018330931663513,
+      0.37020424008369446,
+      0.3570556640625,
+      0.4204941689968109,
+      0.5796729922294617,
+      0.5740871429443359,
+      0.6076101660728455,
+      0.583665132522583
+    ],
+    [
+      0.4642905592918396,
+      0.4794633090496063,
+      0.46645262837409973,
+      0.5398789644241333,
+      0.39812344312667847,
+      0.39979100227355957,
+      0.3310700058937073,
+      0.4217730760574341,
+      0.60190349817276,
+      0.5913676619529724,
+      0.6050190925598145,
+      0.5919682383537292
+    ],
+    [
+      0.4805257022380829,
+      0.46392542123794556,
+      0.42033058404922485,
+      0.49131521582603455,
+      0.383943647146225,
+      0.36182934045791626,
+      0.36415863037109375,
+      0.4217679500579834,
+      0.5842133164405823,
+      0.5728989243507385,
+      0.6110022664070129,
+      0.585788369178772
+    ],
+    [
+      0.5464484095573425,
+      0.5284045338630676,
+      0.46628880500793457,
+      0.5194988250732422,
+      0.4648978114128113,
+      0.43756115436553955,
+      0.41214632987976074,
+      0.4620581865310669,
+      0.593756377696991,
+      0.5542303919792175,
+      0.6575018167495728,
+      0.6177846789360046
+    ],
+    [
+      0.5338761210441589,
+      0.4904794991016388,
+      0.4589724540710449,
+      0.5470554828643799,
+      0.44574007391929626,
+      0.4417055547237396,
+      0.4190773069858551,
+      0.43831321597099304,
+      0.6474148035049438,
+      0.6161289215087891,
+      0.6565290689468384,
+      0.62300705909729
+    ],
+    [
+      0.5479314923286438,
+      0.5254747271537781,
+      0.4699953496456146,
+      0.5718547701835632,
+      0.46594011783599854,
+      0.4851963520050049,
+      0.40874311327934265,
+      0.46585404872894287,
+      0.5997008681297302,
+      0.5734077095985413,
+      0.6678896546363831,
+      0.6377233862876892
+    ],
+    [
+      0.5288602709770203,
+      0.4882849156856537,
+      0.4427771270275116,
+      0.5360146164894104,
+      0.4330095052719116,
+      0.4274408519268036,
+      0.41168278455734253,
+      0.43890324234962463,
+      0.6276536583900452,
+      0.6001923680305481,
+      0.6474747061729431,
+      0.6136067509651184
+    ],
+    [
+      0.5381487607955933,
+      0.5078596472740173,
+      0.4659106433391571,
+      0.5382139682769775,
+      0.4644075036048889,
+      0.4230009615421295,
+      0.4108431339263916,
+      0.4377538859844208,
+      0.5988187789916992,
+      0.576920747756958,
+      0.6415826678276062,
+      0.6114633083343506
+    ],
+    [
+      0.5323461294174194,
+      0.4880046248435974,
+      0.4401509165763855,
+      0.5344201922416687,
+      0.44016164541244507,
+      0.4125194847583771,
+      0.41203951835632324,
+      0.4413207769393921,
+      0.6252068281173706,
+      0.6012497544288635,
+      0.6269723773002625,
+      0.6067463755607605
+    ],
+    [
+      0.496303528547287,
+      0.47256648540496826,
+      0.43964892625808716,
+      0.509996771812439,
+      0.39988094568252563,
+      0.3892282247543335,
+      0.3633158802986145,
+      0.4221901595592499,
+      0.595507800579071,
+      0.5892374515533447,
+      0.61319500207901,
+      0.5860742926597595
+    ],
+    [
+      0.5067914128303528,
+      0.46618539094924927,
+      0.42198070883750916,
+      0.5104647278785706,
+      0.42873212695121765,
+      0.38785576820373535,
+      0.38984715938568115,
+      0.4195273816585541,
+      0.6006414294242859,
+      0.5754691958427429,
+      0.6247596740722656,
+      0.5987156629562378
+    ],
+    [
+      0.5182520747184753,
+      0.4773433804512024,
+      0.4299130141735077,
+      0.5559490323066711,
+      0.48707088828086853,
+      0.46863460540771484,
+      0.4422247111797333,
+      0.4804483652114868,
+      0.6148751974105835,
+      0.624850332736969,
+      0.5910145044326782,
+      0.5450578331947327
+    ],
+    [
+      0.4983910322189331,
+      0.4347466230392456,
+      0.4163202941417694,
+      0.575516939163208,
+      0.4745781719684601,
+      0.4717807173728943,
+      0.41146406531333923,
+      0.4242761433124542,
+      0.5649657845497131,
+      0.5611394047737122,
+      0.5631553530693054,
+      0.48892441391944885
+    ],
+    [
+      0.550255537033081,
+      0.4821924865245819,
+      0.44235941767692566,
+      0.6149666905403137,
+      0.620907187461853,
+      0.6631401181221008,
+      0.49883201718330383,
+      0.47388043999671936,
+      0.5159448385238647,
+      0.5247315764427185,
+      0.5558018088340759,
+      0.4969462752342224
+    ],
+    [
+      0.5381936430931091,
+      0.45896393060684204,
+      0.43590614199638367,
+      0.5684197545051575,
+      0.471218079328537,
+      0.4680204391479492,
+      0.4460000991821289,
+      0.4892202317714691,
+      0.5867577195167542,
+      0.5745474696159363,
+      0.5921623110771179,
+      0.5230880975723267
+    ],
+    [
+      0.5531818866729736,
+      0.49607527256011963,
+      0.4519243836402893,
+      0.5460047125816345,
+      0.4769558608531952,
+      0.4426328241825104,
+      0.4483707845211029,
+      0.4783375859260559,
+      0.5996149778366089,
+      0.5878302454948425,
+      0.5913304686546326,
+      0.5426303744316101
+    ],
+    [
+      0.507798969745636,
+      0.4423099458217621,
+      0.40476322174072266,
+      0.5502117276191711,
+      0.45224326848983765,
+      0.45545393228530884,
+      0.4121386408805847,
+      0.43858057260513306,
+      0.5582484006881714,
+      0.5503488183021545,
+      0.5772223472595215,
+      0.5169895887374878
+    ],
+    [
+      0.49711987376213074,
+      0.4566708207130432,
+      0.4158986210823059,
+      0.5666411519050598,
+      0.5100306272506714,
+      0.5814752578735352,
+      0.4190187156200409,
+      0.43264132738113403,
+      0.5095280408859253,
+      0.5067842602729797,
+      0.5618700385093689,
+      0.5100149512290955
+    ],
+    [
+      0.5531680583953857,
+      0.4966764748096466,
+      0.46194860339164734,
+      0.5831111669540405,
+      0.48910441994667053,
+      0.4937847852706909,
+      0.4622294306755066,
+      0.5068029165267944,
+      0.5859466791152954,
+      0.5717628598213196,
+      0.6249141097068787,
+      0.566708505153656
+    ],
+    [
+      0.527662992477417,
+      0.5057117938995361,
+      0.4524449110031128,
+      0.5728412866592407,
+      0.47734779119491577,
+      0.5048807859420776,
+      0.4160521328449249,
+      0.4732478857040405,
+      0.5816327929496765,
+      0.5841869711875916,
+      0.6115120649337769,
+      0.5683226585388184
+    ],
+    [
+      0.4917696416378021,
+      0.46601012349128723,
+      0.4250752627849579,
+      0.5767809748649597,
+      0.4727703630924225,
+      0.504222571849823,
+      0.4083552956581116,
+      0.43539196252822876,
+      0.5557714700698853,
+      0.5533723831176758,
+      0.5905008316040039,
+      0.5352204442024231
+    ],
+    [
+      0.5350638031959534,
+      0.5114327073097229,
+      0.4638252854347229,
+      0.5993032455444336,
+      0.6011790037155151,
+      0.6633018255233765,
+      0.4763234257698059,
+      0.4837912619113922,
+      0.5081331729888916,
+      0.5016182661056519,
+      0.611754834651947,
+      0.5652320384979248
+    ],
+    [
+      0.4964183568954468,
+      0.4672899544239044,
+      0.4301808774471283,
+      0.569098711013794,
+      0.4804461598396301,
+      0.5127870440483093,
+      0.41880178451538086,
+      0.46123406291007996,
+      0.5504932403564453,
+      0.5517648458480835,
+      0.5736547112464905,
+      0.5187990665435791
+    ],
+    [
+      0.5077700614929199,
+      0.4723086953163147,
+      0.4411289393901825,
+      0.5444413423538208,
+      0.46286138892173767,
+      0.45105981826782227,
+      0.4032769203186035,
+      0.4590045213699341,
+      0.5908246040344238,
+      0.5959160923957825,
+      0.5838279128074646,
+      0.531569242477417
+    ],
+    [
+      0.5009245872497559,
+      0.43938297033309937,
+      0.4195634126663208,
+      0.5836067795753479,
+      0.4801093637943268,
+      0.5015802979469299,
+      0.3958834707736969,
+      0.4194362461566925,
+      0.5661689639091492,
+      0.5575462579727173,
+      0.559425950050354,
+      0.49435174465179443
+    ],
+    [
+      0.5694594979286194,
+      0.5243735313415527,
+      0.49879997968673706,
+      0.6233078241348267,
+      0.6228717565536499,
+      0.6687631011009216,
+      0.49574607610702515,
+      0.4983111023902893,
+      0.5170074105262756,
+      0.5123661756515503,
+      0.5893175005912781,
+      0.5346203446388245
+    ],
+    [
+      0.50578773021698,
+      0.45118847489356995,
+      0.4226485788822174,
+      0.5738351941108704,
+      0.47709619998931885,
+      0.4928916096687317,
+      0.40760859847068787,
+      0.4622108042240143,
+      0.556551992893219,
+      0.5487364530563354,
+      0.5515641570091248,
+      0.4892870783805847
+    ],
+    [
+      0.5393996238708496,
+      0.492458701133728,
+      0.447330117225647,
+      0.5552634596824646,
+      0.5084200501441956,
+      0.4619142711162567,
+      0.4777615964412689,
+      0.5097919702529907,
+      0.6230235695838928,
+      0.6340725421905518,
+      0.6072772145271301,
+      0.5543772578239441
+    ],
+    [
+      0.4911496341228485,
+      0.4421650171279907,
+      0.4203021824359894,
+      0.5661575794219971,
+      0.48451197147369385,
+      0.4737448990345001,
+      0.42192691564559937,
+      0.44660741090774536,
+      0.5728445649147034,
+      0.5675845146179199,
+      0.5575461387634277,
+      0.4793980121612549
+    ],
+    [
+      0.5323536992073059,
+      0.48582348227500916,
+      0.44689807295799255,
+      0.5976632237434387,
+      0.541354775428772,
+      0.5912330746650696,
+      0.46756571531295776,
+      0.48342859745025635,
+      0.5534141659736633,
+      0.5642825961112976,
+      0.5716596245765686,
+      0.5061162114143372
+    ],
+    [
+      0.5660786032676697,
+      0.4888777434825897,
+      0.4606369137763977,
+      0.5752623677253723,
+      0.4709591865539551,
+      0.457682341337204,
+      0.4835168123245239,
+      0.5287131071090698,
+      0.6041532158851624,
+      0.5907542705535889,
+      0.6070637702941895,
+      0.5412483811378479
+    ]
+  ],
+  "references_in_column_order": [
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/b992a20870a3aba5f14305374b0c0e6333305e7f",
+      "git_blob_sha": "b992a20870a3aba5f14305374b0c0e6333305e7f",
+      "sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+      "size_bytes": 252690,
+      "class_id": "collapsed_ruins",
+      "label": "坍塌废墟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\collapsed_ruins_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+      "git_blob_sha": "4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+      "sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+      "size_bytes": 3126947,
+      "class_id": "damaged_vehicle",
+      "label": "受损车辆",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\damaged_vehicle_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+      "git_blob_sha": "7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+      "sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+      "size_bytes": 335117,
+      "class_id": "landslide",
+      "label": "滑坡塌方",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\landslide_01.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/fdd40f739ab39a1be6d638c4b9216bf7f91dcb22",
+      "git_blob_sha": "fdd40f739ab39a1be6d638c4b9216bf7f91dcb22",
+      "sha256": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+      "size_bytes": 276459,
+      "class_id": "landslide",
+      "label": "滑坡塌方",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\landslide_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+      "git_blob_sha": "aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+      "sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+      "size_bytes": 2586531,
+      "class_id": "rescue_camp",
+      "label": "救援营地",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\rescue_camp_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/cf3f39cffcbef10cc27334eab1663bf047a910cd",
+      "git_blob_sha": "cf3f39cffcbef10cc27334eab1663bf047a910cd",
+      "sha256": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+      "size_bytes": 246274,
+      "class_id": "rescue_camp",
+      "label": "救援营地",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\rescue_camp_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/c741011c11b6a47dc67069fa9e025075ade15feb",
+      "git_blob_sha": "c741011c11b6a47dc67069fa9e025075ade15feb",
+      "sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "size_bytes": 2475363,
+      "class_id": "trapped_people",
+      "label": "被困人员",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\trapped_people_01.png"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/adc7032c09911331976793bbe506d4278a9379e6",
+      "git_blob_sha": "adc7032c09911331976793bbe506d4278a9379e6",
+      "sha256": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777",
+      "size_bytes": 177638,
+      "class_id": "trapped_people",
+      "label": "被困人员",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\trapped_people_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/a4db6edd86eb182c2381632855a0a23958d757d4",
+      "git_blob_sha": "a4db6edd86eb182c2381632855a0a23958d757d4",
+      "sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf",
+      "size_bytes": 34614,
+      "class_id": "window_bird",
+      "label": "飞鸟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_bird_01.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_02.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_02.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/b5c0310278917445eb169795a3e5679713c72e30",
+      "git_blob_sha": "b5c0310278917445eb169795a3e5679713c72e30",
+      "sha256": "8eb1b2ac13851cecaaada1602f4c20e7c993849db05b29aea612a1b4cbcb76f2",
+      "size_bytes": 24606,
+      "class_id": "window_bird",
+      "label": "飞鸟",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_bird_02.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "git_blob_sha": "cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e",
+      "size_bytes": 57883,
+      "class_id": "window_target",
+      "label": "救援无人机",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_target_1.jpg"
+    },
+    {
+      "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_2.jpg",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_2.jpg",
+      "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "git_blob_sha": "a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6",
+      "size_bytes": 42160,
+      "class_id": "window_target",
+      "label": "救援无人机",
+      "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_target_2.jpg"
+    }
+  ],
+  "class_ground_truth": null,
+  "recognized_class": null,
+  "accuracy": null,
+  "threshold_tuning": false,
+  "runtime_corner_detector": false,
+  "deployed": false,
+  "published_to_referee": false,
+  "official_scoring": "unverified",
+  "limitations": [
+    "All 40 variants share one JPEG and are not independent observations.",
+    "54 source pixels vertically; projective interpolation and padding create no new measured detail.",
+    "Approximate corners and assumed output aspect ratios can change scores.",
+    "Fixed CLIP acceptance is an uncalibrated exploratory candidate, not a truth label.",
+    "All 12 annotated third-party references are neighbors, not verified current simulator textures.",
+    "Source is retained diagnostic JPEG, not original raw camera bytes; no new image is acquired."
+  ]
+}

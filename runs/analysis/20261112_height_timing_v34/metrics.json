@@ -1,0 +1,193 @@
+{
+  "kind": "independent_height_hold_raw_analysis",
+  "platform_id": "0d99c6fc-e6b7-4a69-aa35-abad82dbcbc0",
+  "reported": {
+    "state": "FINISHED",
+    "reason": "support_return_verified_height_protocol_complete",
+    "phase": "ZERO_RETURN",
+    "hold_verified": true,
+    "descent_verified": true,
+    "protocol_complete": true,
+    "protocol_abort_reason": "",
+    "support_return_verified": true,
+    "official_score": null,
+    "full_mission_complete": false
+  },
+  "motion_start_elapsed_s": 1.1141646949981805,
+  "hold_interval": [
+    3.4553951369962306,
+    6.638090301996272
+  ],
+  "hold_valid_blocks": [
+    {
+      "samples": 148,
+      "start_source_stamp": 6.26,
+      "end_source_stamp": 9.3,
+      "start_arrival_wall_s": 3.4805962500031455,
+      "end_arrival_wall_s": 6.575524163003138,
+      "source_span_s": 3.040000000000001,
+      "arrival_span_s": 3.0949279129999923,
+      "max_abs_height_error_m": 0.001996764850751037,
+      "max_abs_vz_mps": 0.000992365894486591,
+      "max_speed_mps": 0.000992365894486591,
+      "max_angular_speed_rps": 2.0100091838344547e-16,
+      "position_radius_from_first_m": 0.001571343179710305,
+      "max_source_gap_s": 0.08000000000000007,
+      "max_arrival_gap_s": 0.17015993099630577,
+      "kind": "hold"
+    }
+  ],
+  "independent_hold_3s_source_and_arrival": true,
+  "reported_hold_dwell_audit": {
+    "reported": {
+      "started_wall_elapsed_s": 3.505856096999196,
+      "ended_wall_elapsed_s": 6.587660614997731,
+      "started_odom_stamp": 6.28,
+      "ended_odom_stamp": 9.3
+    },
+    "reconstructed_window": {
+      "samples": 147,
+      "start_source_stamp": 6.28,
+      "end_source_stamp": 9.3,
+      "start_arrival_wall_s": 3.4995867039979203,
+      "end_arrival_wall_s": 6.575524163003138,
+      "source_span_s": 3.0200000000000005,
+      "arrival_span_s": 3.0759374590052175,
+      "max_abs_height_error_m": 0.001984731788971267,
+      "max_abs_vz_mps": 0.000992365894486591,
+      "max_speed_mps": 0.000992365894486591,
+      "max_angular_speed_rps": 2.0100091838344547e-16,
+      "position_radius_from_first_m": 0.0015593101179305346,
+      "max_source_gap_s": 0.08000000000000007,
+      "max_arrival_gap_s": 0.17015993099630577,
+      "kind": "reported_hold_window"
+    },
+    "all_frames_inside_band": true,
+    "source_span_ge_3s": true,
+    "arrival_span_ge_3s": true,
+    "exact_source_endpoints": true,
+    "reported_tick_wall_span_s": 3.0818045179985347
+  },
+  "descent_transition_audit": {
+    "transition": {
+      "wall_elapsed_s": 12.190887500997633,
+      "from": "DESCEND_002",
+      "to": "ZERO_RETURN",
+      "reason": "descent_height_and_speed_verified",
+      "odom_stamp": 14.82
+    },
+    "odom": {
+      "wall_elapsed_s": 12.190887500997633,
+      "stamp": 14.82,
+      "xyz": [
+        3.479651217340438e-05,
+        3.716501992849592e-05,
+        0.07996908741423292
+      ],
+      "q": [
+        0.0,
+        0.0,
+        4.665401950287176e-06,
+        0.999999999989117
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.00256169918747412
+      ],
+      "angular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed": 0.00256169918747412,
+      "angular_speed": 0.0,
+      "tilt": 0.0,
+      "wall": 33008.993386024
+    },
+    "relative_height_m": 0.024968379185628067,
+    "vz_mps": -0.00256169918747412,
+    "height_le_025": true,
+    "speed_le_020": true,
+    "joint_descent_gate_measured": true
+  },
+  "support_valid_blocks": [
+    {
+      "samples": 50,
+      "start_source_stamp": 15.32,
+      "end_source_stamp": 16.3,
+      "start_arrival_wall_s": 12.700530677997449,
+      "end_arrival_wall_s": 13.696925026997633,
+      "source_span_s": 0.9800000000000004,
+      "arrival_span_s": 0.9963943490001839,
+      "max_abs_height_error_m": 7.637256349696253e-06,
+      "max_abs_vz_mps": 0.0003611406204938328,
+      "max_speed_mps": 0.0003636477750139043,
+      "max_angular_speed_rps": 0.0005033388100634653,
+      "position_radius_from_first_m": 3.1958840193065676e-05,
+      "max_source_gap_s": 0.020000000000003126,
+      "max_arrival_gap_s": 0.022562022997590248,
+      "kind": "support"
+    }
+  ],
+  "support_last_block_source_and_arrival_ge_1s": false,
+  "independent_full_local_protocol_observed": false,
+  "command_measurement_or_formula_errors": [],
+  "nonzero_at_or_below_phase_low_cutoff": [],
+  "nonzero_after_hold_deadline": [],
+  "nonzero_after_motion_budget": [],
+  "command_counts": {
+    "positive": 217,
+    "negative": 0,
+    "zero": 62
+  },
+  "reconstructed_path_m": 0.2051931993165637,
+  "reported_path_m": 0.20519319931656366,
+  "max_odom_source_gap_s": 0.08000000000000007,
+  "max_odom_arrival_gap_s": 0.17015993099630577,
+  "rise_m": {
+    "count": 666,
+    "min": -7.637256349696253e-06,
+    "median": 0.04430791123091254,
+    "max": 0.1009526938220243
+  },
+  "last_odom": {
+    "wall_elapsed_s": 13.737211022002157,
+    "stamp": 16.34,
+    "xyz": [
+      1.8883397194739313e-05,
+      6.820229599057021e-05,
+      0.05500070822850159
+    ],
+    "q": [
+      0.0,
+      0.0,
+      4.420308454216684e-06,
+      0.9999999999902305
+    ],
+    "linear": [
+      7.028783388958217e-06,
+      2.2103989067078715e-05,
+      -2.1198320876436583e-13
+    ],
+    "angular": [
+      0.0,
+      0.0,
+      0.00011171999476208446
+    ],
+    "speed": 2.319461421551198e-05,
+    "angular_speed": 0.00011171999476208446,
+    "tilt": 0.0,
+    "wall": 33010.539709545
+  },
+  "interpretation_limits": [
+    "sampled observations do not establish behavior between samples",
+    "command time is process publication return time, not actuator application time",
+    "support proximity is not an independent touchdown sensor",
+    "callback byte integrity is not independent source authentication",
+    "no task score or complete inspection mission is inferred"
+  ],
+  "legacy_v31_analysis_criterion_note": "independent_full_local_protocol_observed additionally requires pre-FINISHED support source and arrival spans >=1s; original guard requires wall dwell only",
+  "original_guard_wall_support_contract_supported": true,
+  "original_guard_local_protocol_supported": true
+}

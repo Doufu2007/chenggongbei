@@ -1,0 +1,73 @@
+{
+  "kind": "local_uav_envelope_bugfix_review",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "tests": {
+    "affected_passed": 296,
+    "new_envelope_passed": 34
+  },
+  "candidate_geometry_verified": false,
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/envelope.py",
+      "bytes": 1927,
+      "sha256": "4c2c18fac681a134cacd5ba4337f941c62b2b3667f3af291467c738674746839"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/mission.py",
+      "bytes": 42528,
+      "sha256": "f6142ef086ed8da35f120c3cbfb1be74304672df3e3adfa1088c9ec379c47822"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/mission_node.py",
+      "bytes": 33608,
+      "sha256": "d63a5bd00015d823fb50975618a050e4117cd02d6b405cee8e83e9cac8b6f7b2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/runtime.py",
+      "bytes": 19165,
+      "sha256": "74069f278e2d85f5bd31846a4ad3f2b7c75056c5cdb0aaf953c3c833c21569c6"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/perception.py",
+      "bytes": 17409,
+      "sha256": "58e32b3226f9711589b83e538d93699f66341d89732eb17ec3b4dbeb8ac2eb63"
+    },
+    {
+      "path": "tests/test_uav_envelope.py",
+      "bytes": 10187,
+      "sha256": "1a99e35de0b00b492ebeda3ee65c4c55124d134559b50d933ace971d7c0ecbbc"
+    },
+    {
+      "path": "docs/candidates/uav_body_envelope_20261112.json",
+      "bytes": 1222,
+      "sha256": "e1a9be19bb443d6b8d0d89f1ab86e19c5e2224534ef3f224531fa3ba8f237d31"
+    },
+    {
+      "path": "docs/uav_envelope_fix_20261112.md",
+      "bytes": 8724,
+      "sha256": "9cd636a8a6767609ee81785e2dbe91fd10aa446ab23001aa3e57a9e9c0dc0677"
+    },
+    {
+      "path": "docs/full_mission_bridge_20261112.md",
+      "bytes": 22462,
+      "sha256": "a3825c33a53296dbcdcc5c70c371f38934b0aa5808dab4e215e6f306047a414f"
+    },
+    {
+      "path": "runs/review/uav_envelope_20261112/red.txt",
+      "bytes": 4510,
+      "sha256": "dd6f6fd3d822e8f0cab0eabb9e3989375800ef622217d3ef4271b51bfdf20ed3"
+    },
+    {
+      "path": "runs/review/uav_envelope_20261112/red_width.txt",
+      "bytes": 1768,
+      "sha256": "ba35247e5f70704fb4a9e8a06f8b23efcbacca9e4a1ca817052717c9d43feb54"
+    },
+    {
+      "path": "runs/review/uav_envelope_20261112/green_final.txt",
+      "bytes": 854,
+      "sha256": "c20d32454b0d7847cc61bfe86fbd2d9eabbf52a2e8aeba36895e5d099bf1aa15"
+    }
+  ]
+}

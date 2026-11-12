@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="8" skipped="0" tests="13" time="8.632" timestamp="2026-11-12T05:57:44.788563+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_single_point" name="test_v24b_measured_camera_gap_does_not_stop_zero_motion_recognition" time="0.438"><failure message="AssertionError: assert 'single_point_uav_image_stale' == ''&#10;  &#10;  + single_point_uav_image_stale">def test_v24b_measured_camera_gap_does_not_stop_zero_motion_recognition():
+        # Exact raw line-5 capture_2 -&gt; line-7 command STOP delta, with the
+        # independent current odom/scan/clock refreshed; original image unchanged.
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        state = run.guard
+        _, results = fixture_jobs(run)
+        source_before = deepcopy(state.capture_frames[-1]["record"])
+        state.last_uav_image = (run.wall-.21698330799834, state.clock[0]-.125)
+&gt;       assert state._current_recognition_condition(run.wall) == ""
+E       AssertionError: assert 'single_point_uav_image_stale' == ''
+E         
+E         + single_point_uav_image_stale
+
+tests\test_ground_single_point.py:279: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_wall_age_has_own_half_second_boundary[0.2-]" time="0.539" /><testcase classname="tests.test_ground_single_point" name="test_camera_wall_age_has_own_half_second_boundary[0.38484501899802126-]" time="0.543"><failure message="AssertionError: assert 'single_point_uav_image_stale' == ''&#10;  &#10;  + single_point_uav_image_stale">age = 0.38484501899802126, expected = ''
+
+    @pytest.mark.parametrize("age,expected", [(.20, ""), (.38484501899802126, ""), (.50, ""),
+        (.500002, "single_point_uav_image_stale")])
+    def test_camera_wall_age_has_own_half_second_boundary(age, expected):
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        run.guard.last_uav_image = (run.wall-age, run.guard.clock[0]-.1)
+&gt;       assert run.guard._current_recognition_condition(run.wall) == expected
+E       AssertionError: assert 'single_point_uav_image_stale' == ''
+E         
+E         + single_point_uav_image_stale
+
+tests\test_ground_single_point.py:290: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_wall_age_has_own_half_second_boundary[0.5-]" time="0.648"><failure message="AssertionError: assert 'single_point_uav_image_stale' == ''&#10;  &#10;  + single_point_uav_image_stale">age = 0.5, expected = ''
+
+    @pytest.mark.parametrize("age,expected", [(.20, ""), (.38484501899802126, ""), (.50, ""),
+        (.500002, "single_point_uav_image_stale")])
+    def test_camera_wall_age_has_own_half_second_boundary(age, expected):
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        run.guard.last_uav_image = (run.wall-age, run.guard.clock[0]-.1)
+&gt;       assert run.guard._current_recognition_condition(run.wall) == expected
+E       AssertionError: assert 'single_point_uav_image_stale' == ''
+E         
+E         + single_point_uav_image_stale
+
+tests\test_ground_single_point.py:290: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_wall_age_has_own_half_second_boundary[0.500002-single_point_uav_image_stale]" time="0.647" /><testcase classname="tests.test_ground_single_point" name="test_camera_original_stamp_age_is_independent_from_wall_arrival[-0.12-]" time="0.714" /><testcase classname="tests.test_ground_single_point" name="test_camera_original_stamp_age_is_independent_from_wall_arrival[0.384845-]" time="0.674"><failure message="AssertionError: assert 'single_point..._inconsistent' == ''&#10;  &#10;  + single_point_current_image_clock_inconsistent">delta = 0.384845, expected = ''
+
+    @pytest.mark.parametrize("delta,expected", [(-.12, ""), (.384845, ""), (.50, ""),
+        (-.120002, "single_point_current_image_clock_inconsistent"),
+        (.500002, "single_point_current_image_clock_inconsistent")])
+    def test_camera_original_stamp_age_is_independent_from_wall_arrival(delta, expected):
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        run.guard.last_uav_image = (run.wall, run.guard.clock[0]-delta)
+&gt;       assert run.guard._current_recognition_condition(run.wall) == expected
+E       AssertionError: assert 'single_point..._inconsistent' == ''
+E         
+E         + single_point_current_image_clock_inconsistent
+
+tests\test_ground_single_point.py:299: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_original_stamp_age_is_independent_from_wall_arrival[0.5-]" time="0.641"><failure message="AssertionError: assert 'single_point..._inconsistent' == ''&#10;  &#10;  + single_point_current_image_clock_inconsistent">delta = 0.5, expected = ''
+
+    @pytest.mark.parametrize("delta,expected", [(-.12, ""), (.384845, ""), (.50, ""),
+        (-.120002, "single_point_current_image_clock_inconsistent"),
+        (.500002, "single_point_current_image_clock_inconsistent")])
+    def test_camera_original_stamp_age_is_independent_from_wall_arrival(delta, expected):
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        run.guard.last_uav_image = (run.wall, run.guard.clock[0]-delta)
+&gt;       assert run.guard._current_recognition_condition(run.wall) == expected
+E       AssertionError: assert 'single_point..._inconsistent' == ''
+E         
+E         + single_point_current_image_clock_inconsistent
+
+tests\test_ground_single_point.py:299: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_original_stamp_age_is_independent_from_wall_arrival[-0.120002-single_point_current_image_clock_inconsistent]" time="0.591" /><testcase classname="tests.test_ground_single_point" name="test_camera_original_stamp_age_is_independent_from_wall_arrival[0.500002-single_point_current_image_clock_inconsistent]" time="0.605" /><testcase classname="tests.test_ground_single_point" name="test_three_hz_camera_continues_while_control_sensors_stay_fresh" time="0.616"><failure message="AssertionError: single_point_uav_image_stale&#10;assert 'STOP' == 'RECOGNIZE_WAIT'&#10;  &#10;  - RECOGNIZE_WAIT&#10;  + STOP">def test_three_hz_camera_continues_while_control_sensors_stay_fresh():
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        _, results = fixture_jobs(run)
+        original = deepcopy(run.guard.capture_frames)
+        for index in range(70):
+            run.tick(emit_image=index % 7 == 0)
+&gt;           assert run.guard.state == "RECOGNIZE_WAIT", run.guard.reason
+E           AssertionError: single_point_uav_image_stale
+E           assert 'STOP' == 'RECOGNIZE_WAIT'
+E             
+E             - RECOGNIZE_WAIT
+E             + STOP
+
+tests\test_ground_single_point.py:308: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_duplicate_camera_stamp_cannot_refresh_arrival_freshness" time="0.611"><failure message="assert (25.85, 35.8) == (25.8, 35.8)&#10;  &#10;  At index 0 diff: 25.85 != 25.8&#10;  Use -v to get more diff">def test_duplicate_camera_stamp_cannot_refresh_arrival_freshness():
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        original = run.guard.last_uav_image
+        run.tick(emit_image=False)
+        run.guard.observe_image("/uav/camera/image", image(original[1]), wall_s=run.wall)
+&gt;       assert run.guard.last_uav_image == original
+E       assert (25.85, 35.8) == (25.8, 35.8)
+E         
+E         At index 0 diff: 25.85 != 25.8
+E         Use -v to get more diff
+
+tests\test_ground_single_point.py:319: AssertionError</failure></testcase><testcase classname="tests.test_ground_single_point" name="test_camera_independent_gate_does_not_relax_control_sensor_age" time="0.574"><failure message="AssertionError: assert 'single_point_uav_image_stale' == ''&#10;  &#10;  + single_point_uav_image_stale">def test_camera_independent_gate_does_not_relax_control_sensor_age():
+        run = SingleRun().until(lambda r: r.guard.state == "RECOGNIZE_WAIT")
+        state = run.guard
+        state.last_uav_image = (run.wall-.3, state.clock[0]-.3)
+&gt;       assert state._current_recognition_condition(run.wall) == ""
+E       AssertionError: assert 'single_point_uav_image_stale' == ''
+E         
+E         + single_point_uav_image_stale
+
+tests\test_ground_single_point.py:326: AssertionError</failure></testcase></testsuite></testsuites>

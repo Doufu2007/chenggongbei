@@ -1,0 +1,490 @@
+{
+  "full_flight_source_sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+  "floor_source_sha256": "ce852363945a49c3056201a3ae0a66e358149851fafd909ffc3fb2a224c80748",
+  "wall_elapsed_s": 5.734195700002601,
+  "source_elapsed_s": 5.675384399999999,
+  "state": "AIR_MOVE_TO_LIGHT_1",
+  "stop_reason": null,
+  "recognition_count": 1,
+  "worker_completions": [
+    {
+      "wall_duration_s": 4.262426900000719,
+      "source_age_at_completion_s": 4.247749300003541
+    },
+    {
+      "wall_duration_s": 0.30786580000130925,
+      "source_age_at_completion_s": 0.3056396000032535
+    },
+    {
+      "wall_duration_s": 0.2070603999964078,
+      "source_age_at_completion_s": 0.2071664000010287
+    },
+    {
+      "wall_duration_s": 0.23287349999736762,
+      "source_age_at_completion_s": 0.21769890000176417
+    },
+    {
+      "wall_duration_s": 0.19221229999675415,
+      "source_age_at_completion_s": 0.1629232999989938
+    }
+  ],
+  "rows": [
+    {
+      "wall_elapsed_s": 0.006246999997529201,
+      "source_stamp_s": 30.0015284,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.10443579999991925,
+      "source_stamp_s": 30.0823827,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.2082418999998481,
+      "source_stamp_s": 30.2058901,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.307432699999481,
+      "source_stamp_s": 30.2898115,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.40921939999680035,
+      "source_stamp_s": 30.3719115,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.5118071000033524,
+      "source_stamp_s": 30.4950427,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.6130256999967969,
+      "source_stamp_s": 30.5779375,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.7153939999989234,
+      "source_stamp_s": 30.7029605,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.8156917000014801,
+      "source_stamp_s": 30.7865277,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 0.9184949999980745,
+      "source_stamp_s": 30.9115254,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.0192416999998386,
+      "source_stamp_s": 30.9953719,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.1217124000031617,
+      "source_stamp_s": 31.1203322,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.2220094000003883,
+      "source_stamp_s": 31.2021176,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.3228584000025876,
+      "source_stamp_s": 31.2845573,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.4240735999992467,
+      "source_stamp_s": 31.4100185,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.526555600001302,
+      "source_stamp_s": 31.4934472,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.6264069000026211,
+      "source_stamp_s": 31.6172805,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.7288630999973975,
+      "source_stamp_s": 31.6995967,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.82939919999626,
+      "source_stamp_s": 31.8231753,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 1.9311979999984032,
+      "source_stamp_s": 31.9059737,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.034961099998327,
+      "source_stamp_s": 32.0296967,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.13500280000153,
+      "source_stamp_s": 32.1109347,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.237121699996351,
+      "source_stamp_s": 32.235314,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.3360089999987395,
+      "source_stamp_s": 32.316055,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.4367800999971223,
+      "source_stamp_s": 32.3988047,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.538746699996409,
+      "source_stamp_s": 32.5219751,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.6396515000014915,
+      "source_stamp_s": 32.6048137,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.7409344999978202,
+      "source_stamp_s": 32.7293861,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.843217599998752,
+      "source_stamp_s": 32.8124881,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 2.9426078999968013,
+      "source_stamp_s": 32.9363773,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.0439183999988018,
+      "source_stamp_s": 33.0190991,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.144964200000686,
+      "source_stamp_s": 33.1433059,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.2447878000020864,
+      "source_stamp_s": 33.2255342,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.347182299999986,
+      "source_stamp_s": 33.3083858,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.4475995000029798,
+      "source_stamp_s": 33.4316907,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.5480090999990352,
+      "source_stamp_s": 33.5131675,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.64822219999769,
+      "source_stamp_s": 33.6370925,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.750366000000213,
+      "source_stamp_s": 33.7191463,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.851207499996235,
+      "source_stamp_s": 33.8419884,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 3.9537698999993154,
+      "source_stamp_s": 33.9226943,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.054532499998459,
+      "source_stamp_s": 34.0448265,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.157481700000062,
+      "source_stamp_s": 34.1286955,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.259050599997863,
+      "source_stamp_s": 34.2492777,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": null,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.360365399996226,
+      "source_stamp_s": 34.3300712,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 4.3285427999999975,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.480323099996895,
+      "source_stamp_s": 34.4529825,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 4.451454099999996,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.581430799997179,
+      "source_stamp_s": 34.5508324,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 4.549303999999996,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.683175199999823,
+      "source_stamp_s": 34.676065,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.30563959999999923,
+      "evidence_since": 34.676065,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.787398300002678,
+      "source_stamp_s": 34.758234,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.3878085999999996,
+      "evidence_since": 34.676065,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.88657570000214,
+      "source_stamp_s": 34.8848382,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.5144127999999952,
+      "evidence_since": null,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 4.987954099997296,
+      "source_stamp_s": 34.965554,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.24760870000000068,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.099803700002667,
+      "source_stamp_s": 35.0943111,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.3763658000000021,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.195243499998469,
+      "source_stamp_s": 35.1825228,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.4645775000000043,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.297139499998593,
+      "source_stamp_s": 35.2645641,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.25876420000000167,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.398518900001363,
+      "source_stamp_s": 35.3859199,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.380119999999998,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.499328999998397,
+      "source_stamp_s": 35.4675622,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.16292330000000277,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.60154280000279,
+      "source_stamp_s": 35.5921202,
+      "state": "AIR_RECOGNIZE_1",
+      "detection_age_s": 0.28748129999999605,
+      "evidence_since": 34.965554,
+      "stop_reason": null
+    },
+    {
+      "wall_elapsed_s": 5.732742200001667,
+      "source_stamp_s": 35.6753844,
+      "state": "AIR_MOVE_TO_LIGHT_1",
+      "detection_age_s": 0.3707454999999982,
+      "evidence_since": null,
+      "stop_reason": null
+    }
+  ],
+  "errors": []
+}

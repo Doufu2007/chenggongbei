@@ -1,0 +1,36 @@
+{
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\height_hold_independent_20261112\\synthetic_callback.jsonl",
+  "source_bytes": 31262,
+  "source_sha256": "f0325f333205909cbbce6b6e185e869932c53921ce06ee7fdf5c56601a108daf",
+  "event_count": 2,
+  "parts_verified": 1,
+  "metadata": {
+    "session_id": "11438a13d1ad49b2a705207ec20218b4",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 586283,
+    "compressed_bytes": 21680,
+    "uncompressed_sha256": "19495cb2f54e0f1cabb550ff735205211c7d8c8578d0028f3787cb4441cac0a5",
+    "compressed_sha256": "a03571dd5c46205833056da89af29d29bb297cb3d7c23b740492187dfaed9d21",
+    "part_count": 1
+  },
+  "lengths_and_both_sha_match": true,
+  "core_matches": true,
+  "source_authenticated_independently": false,
+  "callback_source": "unverified_callback",
+  "platform_id": "synthetic_transport",
+  "sample_counts": {
+    "trajectory": 268,
+    "commands": 269,
+    "scans": 268,
+    "downscans": 0,
+    "tf_records": 1
+  },
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "launcher_exit_codes": []
+}

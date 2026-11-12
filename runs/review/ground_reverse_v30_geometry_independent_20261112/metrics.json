@@ -1,0 +1,1425 @@
+{
+  "purpose": "independent read-only v30 laser clearance and next-experiment geometry diagnosis",
+  "platform_id": "e5d26785-01cd-41a6-acb8-02098e088649",
+  "world_path": "external_resources\\ranmengjia_ICAN\\binary_install\\share\\ican_inspection_sim\\worlds\\inspection_task1.world",
+  "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "evidence_sha256": "b560fe98c9f3c3044d784613f1a5f15b211dd1cfcafa0c71b56aea2afdf8f43c",
+  "snapshots_sha256": "b6d5f842be9b37b3c14dfb21169d99ab269187c38f9ef7a275528b227ba56a00",
+  "source_status": "public candidate world; actual platform mapping not independently authenticated",
+  "gate_m_unchanged": 0.641,
+  "assumed_forward_laser_offset_m": 0.08,
+  "candidate_scan_plane_z_m": 0.135,
+  "parsed_collision_boxes": [
+    {
+      "name": "north_wall/collision",
+      "rect": [
+        -0.7999999999999998,
+        0.65,
+        4.25,
+        0.7000000000000001
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "south_wall/collision",
+      "rect": [
+        -0.7999999999999998,
+        -3.4,
+        4.25,
+        -3.35
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "west_wall/collision",
+      "rect": [
+        -0.8250000000000001,
+        -3.375,
+        -0.775,
+        0.6749999999999998
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "east_wall/collision",
+      "rect": [
+        4.225,
+        -3.375,
+        4.275,
+        0.6749999999999998
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "window_1/bottom",
+      "rect": [
+        1.845,
+        -0.8275,
+        2.005,
+        0.1725
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "window_1/side_negative",
+      "rect": [
+        1.845,
+        -1.0275,
+        2.005,
+        -0.8275
+      ],
+      "z": [
+        0.0,
+        1.8
+      ]
+    },
+    {
+      "name": "window_1/side_positive",
+      "rect": [
+        1.845,
+        0.17249999999999996,
+        2.005,
+        0.37249999999999994
+      ],
+      "z": [
+        0.0,
+        1.8
+      ]
+    },
+    {
+      "name": "window_2/bottom",
+      "rect": [
+        1.845,
+        -2.8725,
+        2.005,
+        -1.8725
+      ],
+      "z": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "name": "window_2/side_negative",
+      "rect": [
+        1.845,
+        -3.0725000000000002,
+        2.005,
+        -2.8725
+      ],
+      "z": [
+        0.0,
+        1.8
+      ]
+    },
+    {
+      "name": "window_2/side_positive",
+      "rect": [
+        1.845,
+        -1.8725,
+        2.005,
+        -1.6724999999999999
+      ],
+      "z": [
+        0.0,
+        1.8
+      ]
+    }
+  ],
+  "accepted_scan_count": 20,
+  "accepted_scans": [
+    {
+      "label": "accepted_raw_0",
+      "source_stamp_s": 3.4,
+      "scan_arrival_wall_s": 0.18520111099860515,
+      "prior_odom_source_s": 3.4,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 0.18344868599888287,
+      "pose_xy_m": [
+        3.1978099295738615e-05,
+        8.105234951846305e-06
+      ],
+      "yaw_rad": -2.0901612871025324e-05,
+      "laser_xy_m": [
+        0.08003197808182065,
+        6.4331059222860316e-06
+      ],
+      "minimum_range_m": 0.6500023007392883,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.565605581797726,
+      "minimum_beam_endpoint_m": [
+        0.08340595912115431,
+        0.6499999770879487
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500023236516483,
+      "minimum_beam_range_abs_error_m": 2.2912360009286203e-08,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.637889046262313e-07,
+        "max": 3.0681367335638754e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499935668940777,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003197808182065,
+          6.4331059222860316e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_1",
+      "source_stamp_s": 3.501,
+      "scan_arrival_wall_s": 0.2864224449986068,
+      "prior_odom_source_s": 3.5,
+      "actual_prior_skew_s": 0.0009999999999998899,
+      "prior_odom_wall_s": 0.28461124199748156,
+      "pose_xy_m": [
+        3.2934357753324523e-05,
+        8.077775740376499e-06
+      ],
+      "yaw_rad": -2.090211403091135e-05,
+      "laser_xy_m": [
+        0.08003293434027739,
+        6.405606618025352e-06
+      ],
+      "minimum_range_m": 0.6500023603439331,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.565605581296566,
+      "minimum_beam_endpoint_m": [
+        0.08340691601475296,
+        0.6500000091907953
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.650002351153014,
+      "minimum_beam_range_abs_error_m": 9.19091913686998e-09,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.6735811264703514e-07,
+        "max": 2.963258199706331e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.649993594393382,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003293434027739,
+          6.405606618025352e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_2",
+      "source_stamp_s": 3.65,
+      "scan_arrival_wall_s": 0.43778554999880726,
+      "prior_odom_source_s": 3.64,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 0.4276777269988088,
+      "pose_xy_m": [
+        3.4277034367452376e-05,
+        8.048926566108009e-06
+      ],
+      "yaw_rad": -2.0902529896190902e-05,
+      "laser_xy_m": [
+        0.08003427701689082,
+        6.376724174534505e-06
+      ],
+      "minimum_range_m": 0.6500023603439331,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.5656055808807006,
+      "minimum_beam_endpoint_m": [
+        0.08340825896167621,
+        0.6499999803069487
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500023800372497,
+      "minimum_beam_range_abs_error_m": 1.9693316644087133e-08,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 3.0667768426541185e-07,
+        "max": 2.863606055836243e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936232758254,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003427701689082,
+          6.376724174534505e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_3",
+      "source_stamp_s": 3.75,
+      "scan_arrival_wall_s": 0.539476902999013,
+      "prior_odom_source_s": 3.74,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 0.5295686139979807,
+      "pose_xy_m": [
+        3.523828111554787e-05,
+        8.033685396822645e-06
+      ],
+      "yaw_rad": -2.0902814166913742e-05,
+      "laser_xy_m": [
+        0.08003523826363845,
+        6.361460263591319e-06
+      ],
+      "minimum_range_m": 0.6500023603439331,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.56560558059643,
+      "minimum_beam_endpoint_m": [
+        0.08340922039319791,
+        0.6499999650420786
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500023953023255,
+      "minimum_beam_range_abs_error_m": 3.495839240308385e-08,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 3.108335841192942e-07,
+        "max": 2.9378117041289897e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936385397365,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003523826363845,
+          6.361460263591319e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_4",
+      "source_stamp_s": 3.9,
+      "scan_arrival_wall_s": 0.6944067269978405,
+      "prior_odom_source_s": 3.9,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 0.6931113609971362,
+      "pose_xy_m": [
+        3.677891253442496e-05,
+        8.016315196069842e-06
+      ],
+      "yaw_rad": -2.090327678874872e-05,
+      "laser_xy_m": [
+        0.08003677889505655,
+        6.344053053091727e-06
+      ],
+      "minimum_range_m": 0.6500024199485779,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.565605580133808,
+      "minimum_beam_endpoint_m": [
+        0.08341076163470854,
+        0.650000007237149
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500024127113314,
+      "minimum_beam_range_abs_error_m": 7.237246468783098e-09,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.663763731678179e-07,
+        "max": 3.0243040645139274e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936559469469,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003677889505655,
+          6.344053053091727e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_5",
+      "source_stamp_s": 4.0,
+      "scan_arrival_wall_s": 0.7961461959966982,
+      "prior_odom_source_s": 4.0,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 0.7945018949976657,
+      "pose_xy_m": [
+        3.7743110702511666e-05,
+        8.008849088474581e-06
+      ],
+      "yaw_rad": -2.0903521754165175e-05,
+      "laser_xy_m": [
+        0.08003774309322423,
+        6.336567348263153e-06
+      ],
+      "minimum_range_m": 0.6500024199485779,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.5656055798888426,
+      "minimum_beam_endpoint_m": [
+        0.08341172599210216,
+        0.6499999997506176
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500024201979636,
+      "minimum_beam_range_abs_error_m": 2.4938573428556765e-10,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.700709335735753e-07,
+        "max": 3.0621194739843816e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936634326517,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003774309322423,
+          6.336567348263153e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_6",
+      "source_stamp_s": 4.15,
+      "scan_arrival_wall_s": 0.9470095959986793,
+      "prior_odom_source_s": 4.14,
+      "actual_prior_skew_s": 0.010000000000000675,
+      "prior_odom_wall_s": 0.9367438469998888,
+      "pose_xy_m": [
+        3.909439930839173e-05,
+        8.001662120382782e-06
+      ],
+      "yaw_rad": -2.0903831729919214e-05,
+      "laser_xy_m": [
+        0.08003909438182959,
+        6.329355582111036e-06
+      ],
+      "minimum_range_m": 0.6500024199485779,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.565605579578867,
+      "minimum_beam_endpoint_m": [
+        0.0834130774821897,
+        0.6499999925378057
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500024274108728,
+      "minimum_beam_range_abs_error_m": 7.462294893123556e-09,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 3.0927039085156447e-07,
+        "max": 2.8611301430281344e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936706444179,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003909438182959,
+          6.329355582111036e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_7",
+      "source_stamp_s": 4.25,
+      "scan_arrival_wall_s": 1.0481653429997095,
+      "prior_odom_source_s": 4.24,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 1.0380584909980826,
+      "pose_xy_m": [
+        4.0060595959793165e-05,
+        7.998353137966774e-06
+      ],
+      "yaw_rad": -2.0903996997816468e-05,
+      "laser_xy_m": [
+        0.0800400605784807,
+        6.326033378263251e-06
+      ],
+      "minimum_range_m": 0.6500024199485779,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.565605579413599,
+      "minimum_beam_endpoint_m": [
+        0.08341404378626398,
+        0.6499999892150442
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.650002430733679,
+      "minimum_beam_range_abs_error_m": 1.0785101145494025e-08,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 3.0867114547386247e-07,
+        "max": 2.878675552597798e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936739666218,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.0800400605784807,
+          6.326033378263251e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_8",
+      "source_stamp_s": 4.401,
+      "scan_arrival_wall_s": 1.2021505149969016,
+      "prior_odom_source_s": 4.4,
+      "actual_prior_skew_s": 0.0009999999999994458,
+      "prior_odom_wall_s": 1.2006872869969811,
+      "pose_xy_m": [
+        4.160785006436989e-05,
+        7.995436759791403e-06
+      ],
+      "yaw_rad": -2.0904171214722445e-05,
+      "laser_xy_m": [
+        0.08004160783258499,
+        6.323103062735405e-06
+      ],
+      "minimum_range_m": 0.6500024199485779,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.5656055792393822,
+      "minimum_beam_endpoint_m": [
+        0.08341559115360812,
+        0.6499999862841408
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6500024336646218,
+      "minimum_beam_range_abs_error_m": 1.3716043967271219e-08,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.6137658083859164e-07,
+        "max": 2.894534922859293e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6499936768969373,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08004160783258499,
+          6.323103062735405e-06
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_9",
+      "source_stamp_s": 4.5,
+      "scan_arrival_wall_s": 1.3034624569991138,
+      "prior_odom_source_s": 4.5,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 1.302237897998566,
+      "pose_xy_m": [
+        3.322325402792008e-05,
+        1.1155083916000699e-05
+      ],
+      "yaw_rad": 0.002719736083232649,
+      "laser_xy_m": [
+        0.0800329273756358,
+        0.00022873370233750007
+      ],
+      "minimum_range_m": 0.6497729420661926,
+      "minimum_beam_index": 269,
+      "minimum_body_angle_rad": 1.5656264834105968,
+      "minimum_world_angle_rad": 1.5683462194938296,
+      "minimum_beam_endpoint_m": [
+        0.0816249392122122,
+        0.6499997254676423
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6497732165993744,
+      "minimum_beam_range_abs_error_m": 2.745331817433083e-07,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 4.825431179066185e-07,
+        "max": 4.011227957345653e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6497712662976626,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.0800329273756358,
+          0.00022873370233750007
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_10",
+      "source_stamp_s": 4.65,
+      "scan_arrival_wall_s": 1.4553346229986346,
+      "prior_odom_source_s": 4.64,
+      "actual_prior_skew_s": 0.010000000000000675,
+      "prior_odom_wall_s": 1.4453066749993013,
+      "pose_xy_m": [
+        0.00011621728695680289,
+        2.492476609970411e-05
+      ],
+      "yaw_rad": 0.013873523696868268,
+      "laser_xy_m": [
+        0.08010851842405363,
+        0.0011347710581684298
+      ],
+      "minimum_range_m": 0.6487976312637329,
+      "minimum_beam_index": 268,
+      "minimum_body_angle_rad": 1.548133447766304,
+      "minimum_world_angle_rad": 1.5620069714631724,
+      "minimum_beam_endpoint_m": [
+        0.08581095792141141,
+        0.6499073417770681
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6488902930658321,
+      "minimum_beam_range_abs_error_m": 9.266180209921426e-05,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.0012732623669749821,
+        "max": 0.01518418724148729
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6488652289418316,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08010851842405363,
+          0.0011347710581684298
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_11",
+      "source_stamp_s": 4.75,
+      "scan_arrival_wall_s": 1.558271108999179,
+      "prior_odom_source_s": 4.74,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 1.5486073109968856,
+      "pose_xy_m": [
+        0.00012622573424213646,
+        4.615981488939242e-05
+      ],
+      "yaw_rad": 0.02251726222692788,
+      "laser_xy_m": [
+        0.08010594550722139,
+        0.0018473885720743319
+      ],
+      "minimum_range_m": 0.6480587124824524,
+      "minimum_beam_index": 268,
+      "minimum_body_angle_rad": 1.548133447766304,
+      "minimum_world_angle_rad": 1.5706507099932319,
+      "minimum_beam_endpoint_m": [
+        0.08020031374389056,
+        0.6499060941837264
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6481526182997217,
+      "minimum_beam_range_abs_error_m": 9.390581726931302e-05,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.012795405230684944,
+        "max": 2.757419617070905
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6481526114279257,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08010594550722139,
+          0.0018473885720743319
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_12",
+      "source_stamp_s": 4.9,
+      "scan_arrival_wall_s": 1.7108639379985107,
+      "prior_odom_source_s": 4.9,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 1.7094928369988338,
+      "pose_xy_m": [
+        0.00011482049925251252,
+        3.383395926492881e-05
+      ],
+      "yaw_rad": 0.036071800272408396,
+      "laser_xy_m": [
+        0.08006277915153137,
+        0.0029189522122160605
+      ],
+      "minimum_range_m": 0.6470869779586792,
+      "minimum_beam_index": 267,
+      "minimum_body_angle_rad": 1.5306404121220112,
+      "minimum_world_angle_rad": 1.5667122123944195,
+      "minimum_beam_endpoint_m": [
+        0.08270554904966324,
+        0.6500005334760948
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6470864444781352,
+      "minimum_beam_range_abs_error_m": 5.334805439627388e-07,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 3.88596389235459e-07,
+        "max": 1.6066445547302521e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.647081047787784,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08006277915153137,
+          0.0029189522122160605
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_13",
+      "source_stamp_s": 5.0,
+      "scan_arrival_wall_s": 1.8134244670000044,
+      "prior_odom_source_s": 5.0,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 1.811259665999387,
+      "pose_xy_m": [
+        0.00016311080326173393,
+        4.034649138380061e-05
+      ],
+      "yaw_rad": 0.04433761987023558,
+      "laser_xy_m": [
+        0.08008449070254105,
+        0.003586194062144813
+      ],
+      "minimum_range_m": 0.6464226245880127,
+      "minimum_beam_index": 267,
+      "minimum_body_angle_rad": 1.5306404121220112,
+      "minimum_world_angle_rad": 1.5749780319922468,
+      "minimum_beam_endpoint_m": [
+        0.0773813497317831,
+        0.6500031667725981
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6464194577877262,
+      "minimum_beam_range_abs_error_m": 3.1668002864471134e-06,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 2.5039373743790393e-06,
+        "max": 1.2032877709344802e-05
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6464138059378552,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08008449070254105,
+          0.003586194062144813
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_14",
+      "source_stamp_s": 5.15,
+      "scan_arrival_wall_s": 1.963944133996847,
+      "prior_odom_source_s": 5.14,
+      "actual_prior_skew_s": 0.010000000000000675,
+      "prior_odom_wall_s": 1.954077904996666,
+      "pose_xy_m": [
+        0.00016796122260751448,
+        3.910302691257616e-05
+      ],
+      "yaw_rad": 0.055447210041832784,
+      "laser_xy_m": [
+        0.08004501700163182,
+        0.004472607292687077
+      ],
+      "minimum_range_m": 0.6454410552978516,
+      "minimum_beam_index": 266,
+      "minimum_body_angle_rad": 1.5131473764777184,
+      "minimum_world_angle_rad": 1.5685945865195512,
+      "minimum_beam_endpoint_m": [
+        0.0814661094202797,
+        0.6499120981517001
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6455289573592111,
+      "minimum_beam_range_abs_error_m": 8.790206135955714e-05,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.001148456730670297,
+        "max": 0.010375147256866502
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.645527392707313,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08004501700163182,
+          0.004472607292687077
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_15",
+      "source_stamp_s": 5.25,
+      "scan_arrival_wall_s": 2.065266501998849,
+      "prior_odom_source_s": 5.24,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 2.055129198997747,
+      "pose_xy_m": [
+        0.00019823479737757425,
+        2.2200924206371875e-05
+      ],
+      "yaw_rad": 0.06378903643400936,
+      "laser_xy_m": [
+        0.08003552833344535,
+        0.00512186374009448
+      ],
+      "minimum_range_m": 0.644806444644928,
+      "minimum_beam_index": 266,
+      "minimum_body_angle_rad": 1.5131473764777184,
+      "minimum_world_angle_rad": 1.5769364129117278,
+      "minimum_beam_endpoint_m": [
+        0.07607638611179132,
+        0.6499161536097406
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6448902926157442,
+      "minimum_beam_range_abs_error_m": 8.384797081617545e-05,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.0014121348843653017,
+        "max": 0.01611621700943333
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6448781362599055,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.08003552833344535,
+          0.00512186374009448
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_16",
+      "source_stamp_s": 5.4,
+      "scan_arrival_wall_s": 2.2188553329979186,
+      "prior_odom_source_s": 5.4,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 2.2176136569978553,
+      "pose_xy_m": [
+        0.00023509966742610438,
+        1.2646610313788267e-05
+      ],
+      "yaw_rad": 0.0770369723514483,
+      "laser_xy_m": [
+        0.07999782924186075,
+        0.006169510327792883
+      ],
+      "minimum_range_m": 0.6438314914703369,
+      "minimum_beam_index": 265,
+      "minimum_body_angle_rad": 1.4956543408334255,
+      "minimum_world_angle_rad": 1.5726913131848739,
+      "minimum_beam_endpoint_m": [
+        0.07877777805828123,
+        0.6499998458075898
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6438316456630239,
+      "minimum_beam_range_abs_error_m": 1.5419268695193722e-07,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 4.75881717444208e-07,
+        "max": 3.6523706850033477e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6438304896722071,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.07999782924186075,
+          0.006169510327792883
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_17",
+      "source_stamp_s": 5.5,
+      "scan_arrival_wall_s": 2.320238130996586,
+      "prior_odom_source_s": 5.5,
+      "actual_prior_skew_s": 0.0,
+      "prior_odom_wall_s": 2.3190762419981183,
+      "pose_xy_m": [
+        0.000257112053330022,
+        2.0023939410270826e-05
+      ],
+      "yaw_rad": 0.08552792474392411,
+      "laser_xy_m": [
+        0.07996468933875096,
+        0.006853919116294908
+      ],
+      "minimum_range_m": 0.643162727355957,
+      "minimum_beam_index": 264,
+      "minimum_body_angle_rad": 1.4781613051891327,
+      "minimum_world_angle_rad": 1.5636892299330567,
+      "minimum_beam_endpoint_m": [
+        0.08453567065909459,
+        0.6500004032003814
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6431623241453923,
+      "minimum_beam_range_abs_error_m": 4.032105647144846e-07,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 5.633545766470855e-07,
+        "max": 3.259858691428974e-06
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6431460808837051,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.07996468933875096,
+          0.006853919116294908
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_18",
+      "source_stamp_s": 5.65,
+      "scan_arrival_wall_s": 2.4717144969981746,
+      "prior_odom_source_s": 5.64,
+      "actual_prior_skew_s": 0.010000000000000675,
+      "prior_odom_wall_s": 2.4615459029992053,
+      "pose_xy_m": [
+        0.00028162623839901943,
+        6.506814105936384e-05
+      ],
+      "yaw_rad": 0.09740089859087697,
+      "laser_xy_m": [
+        0.07990244874814653,
+        0.007844825391210829
+      ],
+      "minimum_range_m": 0.6420758962631226,
+      "minimum_beam_index": 264,
+      "minimum_body_angle_rad": 1.4781613051891327,
+      "minimum_world_angle_rad": 1.5755622037800097,
+      "minimum_beam_endpoint_m": [
+        0.0768424055955719,
+        0.6499134297459142
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6421624675003781,
+      "minimum_beam_range_abs_error_m": 8.657123725552829e-05,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.0013969277328835514,
+        "max": 0.016988270425358554
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6421551746087892,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.07990244874814653,
+          0.007844825391210829
+        ]
+      }
+    },
+    {
+      "label": "accepted_raw_19",
+      "source_stamp_s": 5.75,
+      "scan_arrival_wall_s": 2.5741152099981264,
+      "prior_odom_source_s": 5.74,
+      "actual_prior_skew_s": 0.009999999999999787,
+      "prior_odom_wall_s": 2.563801316999161,
+      "pose_xy_m": [
+        0.00030291243875891474,
+        6.13032128145377e-05
+      ],
+      "yaw_rad": 0.10573003358138686,
+      "laser_xy_m": [
+        0.07985617523840427,
+        0.00850395551707071
+      ],
+      "minimum_range_m": 0.6413823366165161,
+      "minimum_beam_index": 263,
+      "minimum_body_angle_rad": 1.4606682695448399,
+      "minimum_world_angle_rad": 1.5663983031262267,
+      "minimum_beam_endpoint_m": [
+        0.08267698084186517,
+        0.6498800891386839
+      ],
+      "candidate_minimum_beam_obstacle": "north_wall/collision",
+      "candidate_expected_beam_range_m": 0.6415022486375362,
+      "minimum_beam_range_abs_error_m": 0.00011991202102012988,
+      "candidate_full_scan_ray_errors_m": {
+        "count": 360,
+        "mean": 0.0014375808332716168,
+        "max": 0.013319245134547408
+      },
+      "candidate_continuous_ring": {
+        "minimum_m": 0.6414960444829293,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.07985617523840427,
+          0.00850395551707071
+        ]
+      }
+    }
+  ],
+  "post_stop_latest_scan": {
+    "label": "post_stop_public_snapshot_latest_not_first_rejected",
+    "source_stamp_s": 7.9,
+    "scan_arrival_wall_s": null,
+    "prior_odom_source_s": 7.9,
+    "actual_prior_skew_s": 0.0,
+    "prior_odom_wall_s": 4.760436233998917,
+    "pose_xy_m": [
+      0.00036163663266497014,
+      7.123554342476384e-05
+    ],
+    "yaw_rad": 0.11996336762981628,
+    "laser_xy_m": [
+      0.07978667827503443,
+      0.009645302605435531
+    ],
+    "minimum_range_m": 0.6403734683990479,
+    "minimum_beam_index": 262,
+    "minimum_body_angle_rad": 1.443175233900547,
+    "minimum_world_angle_rad": 1.5631386015303632,
+    "minimum_beam_endpoint_m": [
+      0.0846904344357412,
+      0.6499999951040091
+    ],
+    "candidate_minimum_beam_obstacle": "north_wall/collision",
+    "candidate_expected_beam_range_m": 0.6403734732951823,
+    "minimum_beam_range_abs_error_m": 4.896134497833771e-09,
+    "candidate_full_scan_ray_errors_m": {
+      "count": 360,
+      "mean": 2.5569983902585927e-07,
+      "max": 2.83862280436864e-06
+    },
+    "candidate_continuous_ring": {
+      "minimum_m": 0.6403546973945645,
+      "obstacle": "north_wall/collision",
+      "laser_xy_m": [
+        0.07978667827503443,
+        0.009645302605435531
+      ]
+    }
+  },
+  "first_rejected_scan_preserved": false,
+  "origin_ccw_quarter": {
+    "anchor_xy_m": [
+      0.0,
+      0.0
+    ],
+    "start_yaw_rad": 0.0,
+    "delta_rad": 1.5707963267948966,
+    "minimum_m": 0.5700000000000001,
+    "obstacle": "north_wall/collision",
+    "laser_xy_m": [
+      4.898587196589413e-18,
+      0.08
+    ],
+    "yaw_rad": 1.5707963267948966,
+    "sample_count": 15709,
+    "minimum_error_bound_m": 3.999990646281886e-06,
+    "passes_gate_with_sampling_error": false
+  },
+  "east_200mm_ccw_quarter": {
+    "anchor_xy_m": [
+      0.2,
+      0.0
+    ],
+    "start_yaw_rad": 0.0,
+    "delta_rad": 1.5707963267948966,
+    "minimum_m": 0.5700000000000001,
+    "obstacle": "north_wall/collision",
+    "laser_xy_m": [
+      0.2,
+      0.08
+    ],
+    "yaw_rad": 1.5707963267948966,
+    "sample_count": 15709,
+    "minimum_error_bound_m": 3.999990646281886e-06,
+    "passes_gate_with_sampling_error": false
+  },
+  "origin_north_wall_analytic_gate_crossing_yaw_rad": 0.11273866648206084,
+  "minimum_south_preposition_for_north_facing_gate_m_strictly_greater_than": 0.07099999999999995,
+  "preposition_candidate_150mm": {
+    "initial_clockwise_quarter": {
+      "anchor_xy_m": [
+        0.0,
+        0.0
+      ],
+      "start_yaw_rad": 0.0,
+      "delta_rad": -1.5707963267948966,
+      "minimum_m": 0.65,
+      "obstacle": "north_wall/collision",
+      "laser_xy_m": [
+        0.08,
+        0.0
+      ],
+      "yaw_rad": 0.0,
+      "sample_count": 15709,
+      "minimum_error_bound_m": 3.999990646281886e-06,
+      "passes_gate_with_sampling_error": true
+    },
+    "south_drive_150mm": {
+      "start_xy_m": [
+        0.0,
+        0.0
+      ],
+      "end_xy_m": [
+        0.0,
+        -0.15
+      ],
+      "yaw_rad": -1.5707963267948966,
+      "minimum_m": 0.73,
+      "obstacle": "north_wall/collision",
+      "laser_xy_m": [
+        4.898587196589413e-18,
+        -0.08
+      ],
+      "base_xy_m": [
+        0.0,
+        0.0
+      ],
+      "sample_count": 1501,
+      "minimum_error_bound_m": 4.9999999999999996e-05,
+      "passes_gate_with_sampling_error": true
+    },
+    "south_counterclockwise_quarter_1": {
+      "anchor_xy_m": [
+        0.0,
+        -0.15
+      ],
+      "start_yaw_rad": -1.5707963267948966,
+      "delta_rad": 1.5707963267948966,
+      "minimum_m": 0.775,
+      "obstacle": "west_wall/collision",
+      "laser_xy_m": [
+        4.898587196589413e-18,
+        -0.22999999999999998
+      ],
+      "yaw_rad": -1.5707963267948966,
+      "sample_count": 15709,
+      "minimum_error_bound_m": 3.999990646281886e-06,
+      "passes_gate_with_sampling_error": true
+    },
+    "south_counterclockwise_quarter_2": {
+      "anchor_xy_m": [
+        0.0,
+        -0.15
+      ],
+      "start_yaw_rad": 0.0,
+      "delta_rad": 1.5707963267948966,
+      "minimum_m": 0.72,
+      "obstacle": "north_wall/collision",
+      "laser_xy_m": [
+        4.898587196589413e-18,
+        -0.06999999999999999
+      ],
+      "yaw_rad": 1.5707963267948966,
+      "sample_count": 15709,
+      "minimum_error_bound_m": 3.999990646281886e-06,
+      "passes_gate_with_sampling_error": true
+    },
+    "reverse_south_max_3_pulses_40mm_each": {
+      "start_xy_m": [
+        0.0,
+        -0.15
+      ],
+      "end_xy_m": [
+        0.0,
+        -0.27
+      ],
+      "yaw_rad": 1.5707963267948966,
+      "minimum_m": 0.72,
+      "obstacle": "north_wall/collision",
+      "laser_xy_m": [
+        4.898587196589413e-18,
+        -0.06999999999999999
+      ],
+      "base_xy_m": [
+        0.0,
+        -0.15
+      ],
+      "sample_count": 1202,
+      "minimum_error_bound_m": 4.995836802664447e-05,
+      "passes_gate_with_sampling_error": true
+    }
+  },
+  "preposition_turn_total_rad": 4.71238898038469,
+  "candidate_path_notes": {
+    "nominal_preposition_plus_requested_3x10mm_m": 0.18,
+    "preposition_plus_3x40mm_hard_motion_limits_m": 0.27,
+    "radius_250mm_incompatible_with_reaching_all_3x40mm_hard_limits": true,
+    "budget_policy": "abort at radius/path/rotation/time limit; limits must not be reset after preposition"
+  },
+  "axis_ground2_first_leg_operations": [
+    {
+      "kind": "DRIVE_TO_XY",
+      "target_xy_m": [
+        0.6,
+        0.0
+      ],
+      "anchor_xy_m": [
+        0.0,
+        0.0
+      ],
+      "expected_start_yaw_rad": 0.0,
+      "target_yaw_rad": 0.0,
+      "signed_subturn_rad": 0.0,
+      "source_phase": "first_observation_axis_1",
+      "minimum_laser_distance_m": 0.65,
+      "length_m": 0.6,
+      "settle_required_after": true
+    },
+    {
+      "kind": "TURN_ONLY",
+      "target_xy_m": null,
+      "anchor_xy_m": [
+        0.6,
+        0.0
+      ],
+      "expected_start_yaw_rad": 0.0,
+      "target_yaw_rad": -1.5707963267948966,
+      "signed_subturn_rad": -1.5707963267948966,
+      "source_phase": "first_observation_axis_2_aim",
+      "minimum_laser_distance_m": 0.65,
+      "length_m": 0.0,
+      "settle_required_after": true,
+      "independent_arc": {
+        "anchor_xy_m": [
+          0.6,
+          0.0
+        ],
+        "start_yaw_rad": 0.0,
+        "delta_rad": -1.5707963267948966,
+        "minimum_m": 0.65,
+        "obstacle": "north_wall/collision",
+        "laser_xy_m": [
+          0.6799999999999999,
+          0.0
+        ],
+        "yaw_rad": 0.0,
+        "sample_count": 15709,
+        "minimum_error_bound_m": 3.999990646281886e-06,
+        "passes_gate_with_sampling_error": true
+      }
+    },
+    {
+      "kind": "DRIVE_TO_XY",
+      "target_xy_m": [
+        0.6,
+        -1.8
+      ],
+      "anchor_xy_m": [
+        0.6,
+        0.0
+      ],
+      "expected_start_yaw_rad": -1.5707963267948966,
+      "target_yaw_rad": -1.5707963267948966,
+      "signed_subturn_rad": 0.0,
+      "source_phase": "first_observation_axis_2",
+      "minimum_laser_distance_m": 0.73,
+      "length_m": 1.8,
+      "settle_required_after": true
+    },
+    {
+      "kind": "TURN_ONLY",
+      "target_xy_m": null,
+      "anchor_xy_m": [
+        0.6,
+        -1.8
+      ],
+      "expected_start_yaw_rad": -1.5707963267948966,
+      "target_yaw_rad": -2.158798930342464,
+      "signed_subturn_rad": -0.5880026035475675,
+      "source_phase": "observation_visual_heading",
+      "minimum_laser_distance_m": 1.245,
+      "length_m": 0.0,
+      "settle_required_after": true,
+      "independent_arc": {
+        "anchor_xy_m": [
+          0.6,
+          -1.8
+        ],
+        "start_yaw_rad": -1.5707963267948966,
+        "delta_rad": -0.5880026035475675,
+        "minimum_m": 1.245,
+        "obstacle": "window_2/bottom",
+        "laser_xy_m": [
+          0.6,
+          -1.8800000000000001
+        ],
+        "yaw_rad": -1.5707963267948966,
+        "sample_count": 5882,
+        "minimum_error_bound_m": 3.999337551760364e-06,
+        "passes_gate_with_sampling_error": true
+      }
+    },
+    {
+      "kind": "TURN_ONLY",
+      "target_xy_m": null,
+      "anchor_xy_m": [
+        0.6,
+        -1.8
+      ],
+      "expected_start_yaw_rad": -2.158798930342464,
+      "target_yaw_rad": 3.1415926535897927,
+      "signed_subturn_rad": -0.9827937232473298,
+      "source_phase": "entry_west_axis_2_aim",
+      "minimum_laser_distance_m": 1.2893760156980183,
+      "length_m": 0.0,
+      "settle_required_after": true,
+      "independent_arc": {
+        "anchor_xy_m": [
+          0.6,
+          -1.8
+        ],
+        "start_yaw_rad": -2.158798930342464,
+        "delta_rad": -0.9827937232473298,
+        "minimum_m": 1.2893760156980183,
+        "obstacle": "window_2/side_positive",
+        "laser_xy_m": [
+          0.5556239843019817,
+          -1.8665640235470276
+        ],
+        "yaw_rad": -2.158798930342464,
+        "sample_count": 9829,
+        "minimum_error_bound_m": 3.999974453591086e-06,
+        "passes_gate_with_sampling_error": true
+      }
+    },
+    {
+      "kind": "DRIVE_TO_XY",
+      "target_xy_m": [
+        0.0,
+        -1.8
+      ],
+      "anchor_xy_m": [
+        0.6,
+        -1.8
+      ],
+      "expected_start_yaw_rad": 3.141592653589793,
+      "target_yaw_rad": 3.141592653589793,
+      "signed_subturn_rad": 0.0,
+      "source_phase": "entry_west_axis_2",
+      "minimum_laser_distance_m": 0.6950000000000001,
+      "length_m": 0.6,
+      "settle_required_after": true
+    },
+    {
+      "kind": "TURN_ONLY",
+      "target_xy_m": null,
+      "anchor_xy_m": [
+        0.0,
+        -1.8
+      ],
+      "expected_start_yaw_rad": 3.141592653589793,
+      "target_yaw_rad": 1.5707963267948966,
+      "signed_subturn_rad": -1.5707963267948966,
+      "source_phase": "entry_reverse_south_reverse_aim",
+      "minimum_laser_distance_m": 0.6950000000000001,
+      "length_m": 0.0,
+      "settle_required_after": true,
+      "independent_arc": {
+        "anchor_xy_m": [
+          0.0,
+          -1.8
+        ],
+        "start_yaw_rad": 3.141592653589793,
+        "delta_rad": -1.5707963267948966,
+        "minimum_m": 0.6950000000000001,
+        "obstacle": "west_wall/collision",
+        "laser_xy_m": [
+          -0.08,
+          -1.8
+        ],
+        "yaw_rad": 3.141592653589793,
+        "sample_count": 15709,
+        "minimum_error_bound_m": 3.999990646281886e-06,
+        "passes_gate_with_sampling_error": true
+      }
+    },
+    {
+      "kind": "DRIVE_REVERSE_TO_XY",
+      "target_xy_m": [
+        0.0,
+        -2.69
+      ],
+      "anchor_xy_m": [
+        0.0,
+        -1.8
+      ],
+      "expected_start_yaw_rad": 1.5707963267948966,
+      "target_yaw_rad": 1.5707963267948966,
+      "signed_subturn_rad": 0.0,
+      "source_phase": "entry_reverse_south",
+      "minimum_laser_distance_m": 0.7400000000000002,
+      "length_m": 0.8899999999999999,
+      "settle_required_after": true
+    },
+    {
+      "kind": "TURN_ONLY",
+      "target_xy_m": null,
+      "anchor_xy_m": [
+        0.0,
+        -2.69
+      ],
+      "expected_start_yaw_rad": 1.5707963267948966,
+      "target_yaw_rad": 3.141592653589793,
+      "signed_subturn_rad": 1.5707963267948966,
+      "source_phase": "final_entry_alignment",
+      "minimum_laser_distance_m": 0.6600000000000001,
+      "length_m": 0.0,
+      "settle_required_after": true,
+      "independent_arc": {
+        "anchor_xy_m": [
+          0.0,
+          -2.69
+        ],
+        "start_yaw_rad": 1.5707963267948966,
+        "delta_rad": 1.5707963267948966,
+        "minimum_m": 0.6600000000000001,
+        "obstacle": "south_wall/collision",
+        "laser_xy_m": [
+          -0.08,
+          -2.69
+        ],
+        "yaw_rad": 3.141592653589793,
+        "sample_count": 15709,
+        "minimum_error_bound_m": 3.999990646281886e-06,
+        "passes_gate_with_sampling_error": true
+      }
+    }
+  ],
+  "axis_ground2_first_leg_minimum_reported_m": 0.65,
+  "historical_turn_time": {
+    "v28_negative_turn": {
+      "first_nonzero_wall_s": 1.2209591480022937,
+      "first_zero_wall_s": 19.60901120100243,
+      "command_interval_s": 18.388052053000138,
+      "actual_observed_yaw_change_rad": -0.5748024383063997,
+      "actual_odometry_interval_s": 18.37087502600116,
+      "mean_observed_rate_rad_s": 0.0312887893196625,
+      "command_min_abs_rad_s": 0.35,
+      "command_max_abs_rad_s": 0.35998745691852385,
+      "quarter_turn_constant_observed_rate_projection_s": 50.203167362815684,
+      "projection_is_not_a_verified_prediction": true
+    },
+    "v30_positive_turn": {
+      "first_nonzero_wall_s": 1.264969169998949,
+      "first_zero_wall_s": 2.729203389997565,
+      "command_interval_s": 1.464234219998616,
+      "actual_observed_yaw_change_rad": 0.11826145583537176,
+      "actual_odometry_interval_s": 1.4463184229971375,
+      "mean_observed_rate_rad_s": 0.08176723324197456,
+      "command_min_abs_rad_s": 0.5,
+      "command_max_abs_rad_s": 0.5,
+      "quarter_turn_constant_observed_rate_projection_s": 19.21058429537935,
+      "projection_is_not_a_verified_prediction": true
+    }
+  },
+  "conclusion": "north wall plus forward laser offset explains v30; east shift cannot resolve; south preposition is geometry-feasible but adds unverified motion/time contract"
+}

@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "data": {
+    "id": "d2d6ba08-ac43-42f7-a77f-a08eee68c53d",
+    "scenarioKey": "inspection",
+    "scenarioName": "城市应急全域巡检仿真",
+    "fileName": "inspection_full_mission_v41_src.zip",
+    "fileSize": 13378153,
+    "fileType": "zip",
+    "fileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794454072632_7dv9oa9mvp4_inspection_full_mission_v41_src_d3e580ba.zip",
+    "scriptFileName": "run_full_mission_v41.sh",
+    "scriptFileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794454074703_7dv9oa9mvp4_run_full_mission_v41_39961543.sh",
+    "note": "本队完整全域巡检v41：按当局抽签完成三地面点视觉识别与到点并返航，随后窗1识别下降穿越、双空中点真实图像定位与灯光提示、窗2下降穿越和返航降落。补齐十图与空中透视矫正，保留真实进度/拒识帧；仅上报当局图像类别，不读取隐藏答案。公开候选地图与外参仍需本局验证，待真实裁判计分及结算。",
+    "status": "failed",
+    "result": "运行未通过：流程未检测到完整结束标志（未提取到成绩）",
+    "score": null,
+    "runId": "run_20261112_114542_50c9a8cd",
+    "submissionNo": "#55477230",
+    "durationMs": 291350,
+    "scoreDetail": null,
+    "startedAt": null,
+    "finishedAt": null,
+    "failedReason": "流程未检测到完整结束标志（未提取到成绩）",
+    "pendingResubmit": false,
+    "pendingResubmitHint": "",
+    "serverDown": false,
+    "serverStatus": "up",
+    "abnormalEnd": false,
+    "createdAt": "2026-11-12 11:27:54.860807+08",
+    "updatedAt": "2026-11-12 11:53:04.341353+08",
+    "hasLogs": true,
+    "tabLogs": [
+      {
+        "tab": "referee",
+        "label": "裁判",
+        "content": ""
+      }
+    ],
+    "terminalLogs": [],
+    "downloadEnabled": false
+  }
+}

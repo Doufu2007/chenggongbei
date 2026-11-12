@@ -1,0 +1,204 @@
+{
+  "source_sha256": {
+    "src/inspection_mission/inspection_mission/ground_plane_matcher.py": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+    "tests/test_ground_plane_matcher.py": "5d2caffcbe16af77844494f1894e23799821baec0125c9284be90aeb4377af9c",
+    "runs/analysis/20261112_ground_plane_matcher_dev/development_check_final/report.json": "a4b78d35184756a0b25e1397f951ff77e6824846ec205409bd542835009197e6",
+    "runs/review/20261112_ground_plane_matcher/horizon_red.xml": "48382e4bcc4021ee9f8d10c75f1998fafaea6d0a418f2a0fc6901b9f27dbbd07",
+    "runs/review/20261112_ground_plane_matcher/independent_final_green.xml": "ef3a6ceab06d95cc082e35c8b33664950e806032749606affc06d29754895c83",
+    "runs/review/20261112_ground_plane_matcher/horizon_source_final.png": "8c1ec9eac9cee2dba97761d562b86f8153e4366429ea0e768bce7e36942057af",
+    "runs/review/20261112_ground_plane_matcher/horizon_bev_final.png": "dd6acd81a1b0995a7c5f652eb20e18bd36ba5f884cb7ee8ecca0bc8ab68f121d"
+  },
+  "independent_tests": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "duration_s": 2.23
+  },
+  "horizon_final": {
+    "good_matches": 111,
+    "inliers": 103,
+    "inlier_fraction": 0.9279279279279279,
+    "template_distinct_xy": 76,
+    "query_distinct_xy": 76,
+    "template_hull_fraction": 0.27496666944019266,
+    "query_hull_area_px2": 5491.281851478852,
+    "query_hull_fraction_of_bev": 0.006933436681160167,
+    "bev_quad_xy": [
+      [
+        404.5068054199219,
+        737.5298461914062
+      ],
+      [
+        554.683837890625,
+        737.6773681640625
+      ],
+      [
+        554.45751953125,
+        869.4466552734375
+      ],
+      [
+        404.6594543457031,
+        869.4796142578125
+      ]
+    ],
+    "plane_area_m2": 0.2197476604721095,
+    "query_hull_over_projection": 0.2776559380114694,
+    "median_reprojection_error_px": 0.04711613804101944,
+    "max_reprojection_error_px": 0.4711911082267761,
+    "rejection_reasons": [
+      "nonpositive_camera_depth",
+      "source_projection_nonfinite_or_nonconvex"
+    ],
+    "geometrically_accepted": false,
+    "projection_finite": true,
+    "projection_convex": true,
+    "template_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\20261112_ground_plane_matcher\\horizon_template.png",
+    "template_sha256": "b139db49cddb2e19394add6d2f889f174254c21cb284e7b7f3e426d3a7a0590b",
+    "class_id": "synthetic",
+    "label": "synthetic",
+    "provenance": {
+      "source": "independent horizon stress"
+    },
+    "template_keypoints": 593,
+    "query_keypoints": 255,
+    "homography_template_to_bev": [
+      [
+        0.5048065195318,
+        0.004476462325651279,
+        404.5068001917615
+      ],
+      [
+        0.003874154581353679,
+        0.5100813714391955,
+        737.5298679803016
+      ],
+      [
+        4.583045513934409e-06,
+        9.62783172688879e-06,
+        1.0
+      ]
+    ],
+    "candidate_calibration": true,
+    "source_quad_xy": [
+      [
+        185.6728057861328,
+        248.327880859375
+      ],
+      [
+        615.1744384765625,
+        248.53662109375
+      ],
+      [
+        -434.5101013183594,
+        -477.8082580566406
+      ],
+      [
+        1232.18994140625,
+        -477.1023864746094
+      ]
+    ],
+    "body_plane_center_forward_left_m": [
+      0.519611120223999,
+      -0.00042724609375
+    ],
+    "source_projection_finite": true,
+    "source_projection_convex": false,
+    "body_plane_quad_forward_left_m": [
+      [
+        0.7399005889892578,
+        0.24997735023498535
+      ],
+      [
+        0.7394087314605713,
+        -0.250612735748291
+      ],
+      [
+        0.30017781257629395,
+        -0.24985837936401367
+      ],
+      [
+        0.3000679016113281,
+        0.24946856498718262
+      ]
+    ],
+    "quad_camera_depths_m": [
+      0.34990060329437256,
+      0.34940874576568604,
+      -0.08982217311859131,
+      -0.08993208408355713
+    ],
+    "source_center_xy": [
+      400.9889221191406,
+      500.428955078125
+    ],
+    "accepted_candidate": false,
+    "conflicting_template_paths": []
+  },
+  "real_frame_check": [
+    {
+      "name": "v16b",
+      "count": 1,
+      "candidates": [
+        {
+          "class_id": "rescue_camp",
+          "inliers": 49,
+          "query_distinct_xy": 38,
+          "plane_area_m2": 0.210142307992828,
+          "quad_camera_depths_m": [
+            0.6784747838973999,
+            0.6901291608810425,
+            1.0868563652038574,
+            1.0685818195343018
+          ],
+          "source_projection_finite": true,
+          "source_projection_convex": true
+        }
+      ],
+      "diagnostic_count": 12
+    },
+    {
+      "name": "v17",
+      "count": 1,
+      "candidates": [
+        {
+          "class_id": "trapped_people",
+          "inliers": 37,
+          "query_distinct_xy": 33,
+          "plane_area_m2": 0.21047419758690522,
+          "quad_camera_depths_m": [
+            0.6941865682601929,
+            0.7070261240005493,
+            1.0970731973648071,
+            1.0885380506515503
+          ],
+          "source_projection_finite": true,
+          "source_projection_convex": true
+        }
+      ],
+      "diagnostic_count": 12
+    },
+    {
+      "name": "v18_capture_0",
+      "count": 0,
+      "candidates": [],
+      "diagnostic_count": 12
+    },
+    {
+      "name": "v18_capture_1",
+      "count": 0,
+      "candidates": [],
+      "diagnostic_count": 12
+    },
+    {
+      "name": "v18_capture_2",
+      "count": 0,
+      "candidates": [],
+      "diagnostic_count": 12
+    }
+  ],
+  "class_ground_truth": null,
+  "accuracy": null,
+  "held_out": false,
+  "official_acceptance": false,
+  "evidence_note": "Initial source/BEV PNGs mentioned in draft were absent; final PNGs are regenerated from the independent regression with checked PNG writes. Old red XML and JSON remain unchanged."
+}

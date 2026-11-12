@@ -1,0 +1,9 @@
+{
+  "model": "ViT-B/32",
+  "source_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+  "expected_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+  "status": "verified",
+  "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+  "size_bytes": 353976522,
+  "local_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\openai_CLIP\\weights\\ViT-B-32.pt"
+}

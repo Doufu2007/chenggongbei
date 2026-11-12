@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="7" skipped="0" tests="7" time="0.727" timestamp="2026-11-12T12:19:21.963079+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_rejection_has_separate_sanitized_delivery_ledger[wrong_path-POST /wrong-fixture-path HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 47\r\n\r\n{&quot;event&quot;:&quot;launcher_started&quot;,&quot;data&quot;:{&quot;pid&quot;:123}}-404-path_mismatch]" time="0.013"><failure message="AssertionError: request outcome is invisible after rejection&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_rejection_has_separate_sa0')
+case = 'wrong_path'
+wire = b'POST /wrong-fixture-path HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 47\r\n\r\n{"event":"launcher_started","data":{"pid":123}}'
+status = 404, reason = 'path_mismatch'
+
+    @pytest.mark.parametrize('case,wire,status,reason',[
+        ('wrong_path',make_request(path='/wrong-fixture-path'),404,'path_mismatch'),
+        ('method',make_request(method='GET'),405,'method_not_allowed'),
+        ('schema',make_request(raw=b'{broken'),400,'event_invalid'),
+        ('large',make_request(headers=[('Content-Type','application/json'),('Content-Length','65537')],raw=b''),413,'body_too_large'),
+    ])
+    def test_rejection_has_separate_sanitized_delivery_ledger(tmp_path,case,wire,status,reason):
+        result=execute(tmp_path,case,wire)
+        assert result['http_status']==status
+        assert result['accepted']==[] and result['events_count']==0
+&gt;       assert len(result['deliveries'])==1, 'request outcome is invisible after rejection'
+E       AssertionError: request outcome is invisible after rejection
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:25: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_rejection_has_separate_sanitized_delivery_ledger[method-GET /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 47\r\n\r\n{&quot;event&quot;:&quot;launcher_started&quot;,&quot;data&quot;:{&quot;pid&quot;:123}}-405-method_not_allowed]" time="0.006"><failure message="AssertionError: request outcome is invisible after rejection&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_rejection_has_separate_sa1')
+case = 'method'
+wire = b'GET /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 47\r\n\r\n{"event":"launcher_started","data":{"pid":123}}'
+status = 405, reason = 'method_not_allowed'
+
+    @pytest.mark.parametrize('case,wire,status,reason',[
+        ('wrong_path',make_request(path='/wrong-fixture-path'),404,'path_mismatch'),
+        ('method',make_request(method='GET'),405,'method_not_allowed'),
+        ('schema',make_request(raw=b'{broken'),400,'event_invalid'),
+        ('large',make_request(headers=[('Content-Type','application/json'),('Content-Length','65537')],raw=b''),413,'body_too_large'),
+    ])
+    def test_rejection_has_separate_sanitized_delivery_ledger(tmp_path,case,wire,status,reason):
+        result=execute(tmp_path,case,wire)
+        assert result['http_status']==status
+        assert result['accepted']==[] and result['events_count']==0
+&gt;       assert len(result['deliveries'])==1, 'request outcome is invisible after rejection'
+E       AssertionError: request outcome is invisible after rejection
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:25: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_rejection_has_separate_sanitized_delivery_ledger[schema-POST /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 7\r\n\r\n{broken-400-event_invalid]" time="0.005"><failure message="AssertionError: request outcome is invisible after rejection&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_rejection_has_separate_sa2')
+case = 'schema'
+wire = b'POST /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 7\r\n\r\n{broken'
+status = 400, reason = 'event_invalid'
+
+    @pytest.mark.parametrize('case,wire,status,reason',[
+        ('wrong_path',make_request(path='/wrong-fixture-path'),404,'path_mismatch'),
+        ('method',make_request(method='GET'),405,'method_not_allowed'),
+        ('schema',make_request(raw=b'{broken'),400,'event_invalid'),
+        ('large',make_request(headers=[('Content-Type','application/json'),('Content-Length','65537')],raw=b''),413,'body_too_large'),
+    ])
+    def test_rejection_has_separate_sanitized_delivery_ledger(tmp_path,case,wire,status,reason):
+        result=execute(tmp_path,case,wire)
+        assert result['http_status']==status
+        assert result['accepted']==[] and result['events_count']==0
+&gt;       assert len(result['deliveries'])==1, 'request outcome is invisible after rejection'
+E       AssertionError: request outcome is invisible after rejection
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:25: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_rejection_has_separate_sanitized_delivery_ledger[large-POST /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 65537\r\n\r\n-413-body_too_large]" time="0.006"><failure message="AssertionError: request outcome is invisible after rejection&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_rejection_has_separate_sa3')
+case = 'large'
+wire = b'POST /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 65537\r\n\r\n'
+status = 413, reason = 'body_too_large'
+
+    @pytest.mark.parametrize('case,wire,status,reason',[
+        ('wrong_path',make_request(path='/wrong-fixture-path'),404,'path_mismatch'),
+        ('method',make_request(method='GET'),405,'method_not_allowed'),
+        ('schema',make_request(raw=b'{broken'),400,'event_invalid'),
+        ('large',make_request(headers=[('Content-Type','application/json'),('Content-Length','65537')],raw=b''),413,'body_too_large'),
+    ])
+    def test_rejection_has_separate_sanitized_delivery_ledger(tmp_path,case,wire,status,reason):
+        result=execute(tmp_path,case,wire)
+        assert result['http_status']==status
+        assert result['accepted']==[] and result['events_count']==0
+&gt;       assert len(result['deliveries'])==1, 'request outcome is invisible after rejection'
+E       AssertionError: request outcome is invisible after rejection
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:25: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_accepted_payload_keeps_original_schema_and_separate_success_delivery" time="0.018"><failure message="AssertionError: accepted event lacks a delivery outcome&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_accepted_payload_keeps_or0')
+
+    def test_accepted_payload_keeps_original_schema_and_separate_success_delivery(tmp_path):
+        result=execute(tmp_path,'accepted',make_request())
+        assert result['http_status']==202 and result['accepted_count']==1
+        assert set(result['accepted'][0])=={'received_at','payload','source'}
+&gt;       assert len(result['deliveries'])==1, 'accepted event lacks a delivery outcome'
+E       AssertionError: accepted event lacks a delivery outcome
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:39: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_response_failure_is_distinct_from_successful_evidence_append" time="0.021"><failure message="AssertionError: client disconnect after persistence is invisible&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_response_failure_is_disti0')
+
+    def test_response_failure_is_distinct_from_successful_evidence_append(tmp_path):
+        result=execute(tmp_path,'broken_reply',make_request(),reply_error=True)
+        assert result['accepted_count']==1 and result['events_count']==1
+        assert result['uncaught_error_type']=='BrokenPipeError'
+&gt;       assert len(result['deliveries'])==1, 'client disconnect after persistence is invisible'
+E       AssertionError: client disconnect after persistence is invisible
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:49: AssertionError</failure></testcase><testcase classname="runs.review.receiver_delivery_20261112.test_delivery_contract_red" name="test_sink_failure_has_no_evidence_and_explicit_delivery_reason" time="0.006"><failure message="AssertionError: evidence IO error is invisible&#10;assert 0 == 1&#10; +  where 0 = len([])">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-858/test_sink_failure_has_no_evide0')
+
+    def test_sink_failure_has_no_evidence_and_explicit_delivery_reason(tmp_path):
+        result=execute(tmp_path,'sink_failure',make_request(),sink_error=True)
+        assert result['http_status']==500 and result['accepted']==[]
+&gt;       assert len(result['deliveries'])==1, 'evidence IO error is invisible'
+E       AssertionError: evidence IO error is invisible
+E       assert 0 == 1
+E        +  where 0 = len([])
+
+runs\review\receiver_delivery_20261112\test_delivery_contract_red.py:58: AssertionError</failure></testcase></testsuite></testsuites>

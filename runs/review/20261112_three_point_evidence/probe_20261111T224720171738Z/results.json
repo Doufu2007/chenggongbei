@@ -1,0 +1,149 @@
+{
+  "scope": "independent local review; synthetic transport only; no official points",
+  "start_hashes": {
+    "tools\\analyze_ground_three_point_evidence.py": "e4e0c95ee7485b218d81d708f9e93df34788e475d351625d2ab65d01d0f64acc",
+    "src\\inspection_mission\\inspection_mission\\ground_three_point.py": "304a0674e35d4815410924e3edc1620901dc719e14901e57ad127ef98a55d1ba",
+    "tools\\diagnostic_receiver.py": "1621108f3b1688a8e177240970dd2620525a683aac05ed665119697622211d6a",
+    "src\\inspection_mission\\inspection_mission\\telemetry.py": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5"
+  },
+  "production_normal": {
+    "events": 9,
+    "parts": 5,
+    "max_envelope_bytes": 48662,
+    "raw_bytes": 1545287,
+    "compressed_bytes": 161880,
+    "trajectory_rows": 4586,
+    "command_rows": 0,
+    "capture_fragment_events": 9,
+    "raw_source_preserved": true,
+    "official_score": null,
+    "full_mission_complete": false,
+    "uncompressed_sha256": "1304b8f2f68a46d51a9ec42a8bbab3369fa3f58327bc186690e1e8942a364bcf"
+  },
+  "production_cap_stress": {
+    "events": 153,
+    "parts": 149,
+    "max_envelope_bytes": 48668,
+    "raw_bytes": 13080229,
+    "compressed_bytes": 5356814,
+    "trajectory_rows": 12500,
+    "command_rows": 30000,
+    "capture_fragment_events": 153,
+    "raw_source_preserved": true,
+    "official_score": null,
+    "full_mission_complete": false,
+    "uncompressed_sha256": "dd34374ee2e39e9dec63d888b2eca76fa2f4a6ad51ffe06201c531bce95204d1"
+  },
+  "adversarial": {
+    "identical_retransmission": {
+      "accepted": true,
+      "duplicate_parts": 1
+    },
+    "missing": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "missing bundle parts"
+    },
+    "conflicting_part": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "conflicting bundle part"
+    },
+    "compressed_bytes_144": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "compressed bundle size mismatch"
+    },
+    "uncompressed_bytes_181": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "uncompressed bundle size or stream mismatch"
+    },
+    "uncompressed_sha256_0000000000000000000000000000000000000000000000000000000000000000": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "uncompressed SHA256 mismatch"
+    },
+    "compressed_sha256_0000000000000000000000000000000000000000000000000000000000000000": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "compressed SHA256 mismatch"
+    },
+    "part_count_513": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "bundle size or count exceeds bound"
+    },
+    "uncompressed_bytes_33554433": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "bundle size or count exceeds bound"
+    },
+    "compressed_bytes_8388609": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "bundle size or count exceeds bound"
+    },
+    "mixed_fragment_session": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "conflicting bundle metadata"
+    },
+    "body_session": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "bundle schema or session mismatch"
+    },
+    "duplicate_json_key": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "duplicate JSON key"
+    },
+    "NaN": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "nonfinite JSON value"
+    },
+    "exponent_overflow": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "nonfinite JSON float"
+    },
+    "non_utf8": {
+      "rejected": true,
+      "exception": "UnicodeDecodeError",
+      "error": "'utf-8' codec can't decode byte 0xff in position 182: invalid start byte"
+    },
+    "gzip_concatenation": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "uncompressed bundle size or stream mismatch"
+    },
+    "gzip_trailing_data": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "uncompressed bundle size or stream mismatch"
+    },
+    "bounded_expansion": {
+      "rejected": true,
+      "exception": "ValueError",
+      "error": "uncompressed bundle size or stream mismatch"
+    },
+    "source_collision_bundle.json": {
+      "rejected": true,
+      "source_preserved": true,
+      "error": "analysis output would overwrite source"
+    },
+    "source_collision_summary.json": {
+      "rejected": true,
+      "source_preserved": true,
+      "error": "analysis output would overwrite source"
+    }
+  },
+  "end_hashes": {
+    "tools\\analyze_ground_three_point_evidence.py": "e4e0c95ee7485b218d81d708f9e93df34788e475d351625d2ab65d01d0f64acc",
+    "src\\inspection_mission\\inspection_mission\\ground_three_point.py": "304a0674e35d4815410924e3edc1620901dc719e14901e57ad127ef98a55d1ba",
+    "tools\\diagnostic_receiver.py": "1621108f3b1688a8e177240970dd2620525a683aac05ed665119697622211d6a",
+    "src\\inspection_mission\\inspection_mission\\telemetry.py": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5"
+  }
+}

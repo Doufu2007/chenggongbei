@@ -1,0 +1,31 @@
+{
+  "kind": "ground_observation_survey_practice",
+  "version": "v9",
+  "created_at": "2026-11-11T17:29:16.237487+00:00",
+  "read_only": false,
+  "official_scoring": "unverified",
+  "formal_submission": false,
+  "candidate_id_mapping_confirmed": false,
+  "limits": {
+    "angular_speed_max_rps": 0.15,
+    "turn_wall_max_s": 25,
+    "rotation_budget_rad": 1.8,
+    "linear_cmd_mps": 0,
+    "displacement_budget_m": 0.06,
+    "body_radius_m": 0.447,
+    "scan_offset_bound_m": 0.114,
+    "clearance_m": 0.02
+  },
+  "files": [
+    {
+      "path": "dist/inspection_survey_v9_src.zip",
+      "bytes": 77383,
+      "sha256": "7ef7ab87dc2dcd8959b5a47e6050e1367044f84a5268f850f1663544668090f5"
+    },
+    {
+      "path": "dist/run_ground_survey_v9.sh",
+      "bytes": 2857,
+      "sha256": "bc1ac8322db9c8437fe59aacc44c23626ff278e0ce12d4c8cbd8146ee0bc8e9a"
+    }
+  ]
+}

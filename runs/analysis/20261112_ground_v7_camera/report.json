@@ -1,0 +1,816 @@
+{
+  "schema": "inspection.real_camera_crop_diagnostic.v1",
+  "status": "completed",
+  "created_at": "2026-11-11T17:21:48.508446+00:00",
+  "summary_path": "runs\\analysis\\20261112_ground_v7\\summary.json",
+  "summary_sha256": "d268572ad95f72a1c92d7cc34d83d30469deb5d388f183bc19f0e918c0a67edf",
+  "roi_plan_path": "docs\\camera_roi_review_v7_20261112.json",
+  "roi_plan_sha256": "b6c346a8dfb7d0c9c035343616701d975fc01934a07f039d49d8d50493a22d1d",
+  "source_callback_sha256": "c3d6a9419f331ba0f1ace30aa19fc7254f9c8b57862d0de6aa812d8f1733575c",
+  "review_method": "Direct visual inspection of all four original received v7 diagnostic JPEGs before model inference; boxes select observed pixels and contain no target classes or referee answers.",
+  "template_source": {
+    "repository": "https://github.com/wbxxmz/ros2-car-first",
+    "commit_sha": "48b3dac26b6f562ff21dd321db03fd6ffc91b492",
+    "license": null,
+    "reference_assets": [
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/b992a20870a3aba5f14305374b0c0e6333305e7f",
+        "git_blob_sha": "b992a20870a3aba5f14305374b0c0e6333305e7f",
+        "sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+        "size_bytes": 252690,
+        "class_id": "collapsed_ruins",
+        "label": "坍塌废墟",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\collapsed_ruins_02.jpg"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+        "git_blob_sha": "4c34da76479c0aa55f5db0b388cb257bcbbf9a59",
+        "sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+        "size_bytes": 3126947,
+        "class_id": "damaged_vehicle",
+        "label": "受损车辆",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\damaged_vehicle_01.png"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+        "git_blob_sha": "7afc08cef3507ba7fbfc40f7df6dfbeef97c5fe7",
+        "sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+        "size_bytes": 335117,
+        "class_id": "landslide",
+        "label": "滑坡塌方",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\landslide_01.jpg"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+        "git_blob_sha": "aa377b86fd1c2befcca9c07cab904b837dc74b5f",
+        "sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+        "size_bytes": 2586531,
+        "class_id": "rescue_camp",
+        "label": "救援营地",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\rescue_camp_01.png"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/c741011c11b6a47dc67069fa9e025075ade15feb",
+        "git_blob_sha": "c741011c11b6a47dc67069fa9e025075ade15feb",
+        "sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+        "size_bytes": 2475363,
+        "class_id": "trapped_people",
+        "label": "被困人员",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\trapped_people_01.png"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/a4db6edd86eb182c2381632855a0a23958d757d4",
+        "git_blob_sha": "a4db6edd86eb182c2381632855a0a23958d757d4",
+        "sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf",
+        "size_bytes": 34614,
+        "class_id": "window_bird",
+        "label": "飞鸟",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_bird_01.jpg"
+      },
+      {
+        "path": "src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+        "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+        "api_url": "https://api.github.com/repos/wbxxmz/ros2-car-first/git/blobs/cab402593f56bcfe6402d4462d7d5c9848a46b48",
+        "git_blob_sha": "cab402593f56bcfe6402d4462d7d5c9848a46b48",
+        "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e",
+        "size_bytes": 57883,
+        "class_id": "window_target",
+        "label": "救援无人机",
+        "absolute_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\wbxxmz_ros2-car-first\\src\\ican_inspection_examples\\ican_inspection_examples\\templates\\window_target_1.jpg"
+      }
+    ],
+    "threshold_changes": false,
+    "official_current_library_verified": false
+  },
+  "clip_status": "completed",
+  "clip": {
+    "weight_source": {
+      "model": "ViT-B/32",
+      "source_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt",
+      "expected_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "status": "verified",
+      "sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+      "size_bytes": 353976522,
+      "local_path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\external_resources\\openai_CLIP\\weights\\ViT-B-32.pt"
+    },
+    "implementation": {
+      "repository": "https://github.com/openai/CLIP",
+      "commit_sha": "d05afc436d78f1c48dc0dbf8e5980a9d471f35f6",
+      "files": [
+        {
+          "path": "clip/__init__.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/__init__.py",
+          "git_blob_sha": "dcc5619538c0f7c782508bdbd9587259d805e0d9",
+          "sha256": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+          "size_bytes": 20
+        },
+        {
+          "path": "clip/clip.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/clip.py",
+          "git_blob_sha": "398a6282cc243e449430d91c2562491fc799929d",
+          "sha256": "9540f200fbf8145479fa655382a56dab048d238cc698b9cbd8df3b6d86d3f1b6",
+          "size_bytes": 9644
+        },
+        {
+          "path": "clip/model.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/model.py",
+          "git_blob_sha": "232b7792eb97440642547bd462cf128df9243933",
+          "sha256": "9902cbe5ee90a1da2aa3e6f043e8a23dc1f8831193b963785c9af03d5c7bef2c",
+          "size_bytes": 17374
+        },
+        {
+          "path": "clip/simple_tokenizer.py",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/simple_tokenizer.py",
+          "git_blob_sha": "0a66286b7d5019c6e221932a813768038f839c91",
+          "sha256": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+          "size_bytes": 4632
+        },
+        {
+          "path": "clip/bpe_simple_vocab_16e6.txt.gz",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/clip/bpe_simple_vocab_16e6.txt.gz",
+          "git_blob_sha": "7b5088a527f720063f044eb928eee315f63b2fc0",
+          "sha256": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+          "size_bytes": 1356917
+        },
+        {
+          "path": "LICENSE",
+          "source_url": "https://github.com/openai/CLIP/blob/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+          "git_blob_sha": "4e97f0b45803b7c04ae89548934af4f257a97501",
+          "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db",
+          "size_bytes": 1064
+        }
+      ]
+    },
+    "device": "cuda",
+    "torch": "2.6.0+cu124",
+    "prompts": {
+      "collapsed_ruins": "a photo of collapsed buildings and earthquake rubble.",
+      "damaged_vehicle": "a photo of a damaged wrecked vehicle.",
+      "landslide": "a photo of a landslide with soil and rocks covering a road.",
+      "rescue_camp": "a photo of a rescue camp with emergency tents and supplies.",
+      "trapped_people": "a photo of people trapped under rubble being rescued.",
+      "window_bird": "a photo of a bird flying in the sky.",
+      "window_target": "a photo of a rescue drone, a quadcopter flying in the sky."
+    },
+    "rejection": {
+      "min_cosine": 0.2,
+      "min_margin": 0.02,
+      "calibrated": false
+    }
+  },
+  "crops": [
+    {
+      "source": {
+        "line": 4,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:41.282834+00:00",
+        "received_at": "2026-11-11T17:12:44.423612+00:00",
+        "source": "unverified_callback",
+        "topic": "/camera/image",
+        "width": 360,
+        "stamp": 2.915,
+        "encoding": "jpeg",
+        "frame_id": "camera_link",
+        "height": 360,
+        "sha256": "7e8a2d30d4881eaa20979850a1fd3806ac0b7808a7d4dd901c93061a8e70a4dc",
+        "bytes": 2760,
+        "file_name": "image_L000004_7e8a2d30d4881eaa.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000004_7e8a2d30d4881eaa.jpg",
+      "region_id": "full_green_frame",
+      "bbox_xyxy": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "visual_observation": "Uniform green camera image; whole-frame negative/context control, not a target crop.",
+      "panel_adequacy": "insufficient",
+      "crop_file": "crop_L000004_full_green_frame_7e8a2d30d488.png",
+      "crop_width": 360,
+      "crop_height": 360,
+      "crop_sha256": "7b3b851f887d3defab86633ff43769a9834fc1c2d008b94250a758dae395da80",
+      "crop_rgb_sha256": "2114ac3bb14610adcce42a688e6ff9debb955ffa5ccd5cf5253bd4a915be0e2a",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 0.15947444549341475,
+        "gray_min": 157,
+        "gray_max": 159,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 6.620799998927396,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2117919921875,
+        "top2_cosine": 0.19970703125,
+        "margin": 0.0120849609375,
+        "cosines": {
+          "collapsed_ruins": 0.1689453125,
+          "damaged_vehicle": 0.1627197265625,
+          "landslide": 0.1610107421875,
+          "rescue_camp": 0.1708984375,
+          "trapped_people": 0.17529296875,
+          "window_bird": 0.2117919921875,
+          "window_target": 0.19970703125
+        }
+      },
+      "clip_inference_ms": 401.453099999344,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 5,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:42.536608+00:00",
+        "received_at": "2026-11-11T17:12:45.365830+00:00",
+        "source": "unverified_callback",
+        "topic": "/camera/image",
+        "width": 360,
+        "stamp": 6.5809999999999995,
+        "encoding": "jpeg",
+        "frame_id": "camera_link",
+        "height": 360,
+        "sha256": "96c5fdbc85cb1dd3b3c2db99e9539a7260b5e1bed7c2f0d4555e663bb4c5b486",
+        "bytes": 2744,
+        "file_name": "image_L000005_96c5fdbc85cb1dd3.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000005_96c5fdbc85cb1dd3.jpg",
+      "region_id": "full_green_frame",
+      "bbox_xyxy": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "visual_observation": "Final green frame; no class label or target identity is supplied.",
+      "panel_adequacy": "insufficient",
+      "crop_file": "crop_L000005_full_green_frame_96c5fdbc85cb.png",
+      "crop_width": 360,
+      "crop_height": 360,
+      "crop_sha256": "059b1a7dce160845ff6216dc4bd24abc6f6772958eb3374fa100078fc6666a0f",
+      "crop_rgb_sha256": "ebd28cf8bf0545364225d2ec44044d0bcd7fb0e5348498b0ff2fcf0fad488e9c",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 0.0,
+        "gray_min": 158,
+        "gray_max": 158,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 3.3885000011650845,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.21533203125,
+        "top2_cosine": 0.2032470703125,
+        "margin": 0.0120849609375,
+        "cosines": {
+          "collapsed_ruins": 0.174072265625,
+          "damaged_vehicle": 0.1666259765625,
+          "landslide": 0.165771484375,
+          "rescue_camp": 0.1741943359375,
+          "trapped_people": 0.1759033203125,
+          "window_bird": 0.21533203125,
+          "window_target": 0.2032470703125
+        }
+      },
+      "clip_inference_ms": 28.745299998263363,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 6,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:43.478038+00:00",
+        "received_at": "2026-11-11T17:12:47.312685+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 2.915,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "65c5bfbcd37b1d9e0ba86e2215d53d685ddc647b36a1a61be2863eb1609587e1",
+        "bytes": 9231,
+        "file_name": "image_L000006_65c5bfbcd37b1d9e.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000006_65c5bfbcd37b1d9e.jpg",
+      "region_id": "full_scene_context",
+      "bbox_xyxy": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "visual_observation": "Whole scene context only; scene classification cannot locate or identify a task panel.",
+      "panel_adequacy": "insufficient",
+      "crop_file": "crop_L000006_full_scene_context_65c5bfbcd37b.png",
+      "crop_width": 360,
+      "crop_height": 360,
+      "crop_sha256": "2d7feb0aabcd4f00578af8c4c40e468c5e452a3ed321ec9352056b5ad364a84a",
+      "crop_rgb_sha256": "c1ce8525e8cd931008ba1d88754b6a3ebdf3c1f1948bd4eb1cba56be44104ea5",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 66.34221180147925,
+        "gray_min": 17,
+        "gray_max": 206,
+        "orb_keypoints": 581,
+        "edge_pixels": 3437
+      },
+      "template_candidates": [],
+      "template_inference_ms": 110.80230000152369,
+      "clip_candidate": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "window_target",
+        "top1_cosine": 0.18310546875,
+        "top2_cosine": 0.178466796875,
+        "margin": 0.004638671875,
+        "cosines": {
+          "collapsed_ruins": 0.177978515625,
+          "damaged_vehicle": 0.17724609375,
+          "landslide": 0.1295166015625,
+          "rescue_camp": 0.178466796875,
+          "trapped_people": 0.1402587890625,
+          "window_bird": 0.1693115234375,
+          "window_target": 0.18310546875
+        }
+      },
+      "clip_inference_ms": 23.526599998149322,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 6,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:43.478038+00:00",
+        "received_at": "2026-11-11T17:12:47.312685+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 2.915,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "65c5bfbcd37b1d9e0ba86e2215d53d685ddc647b36a1a61be2863eb1609587e1",
+        "bytes": 9231,
+        "file_name": "image_L000006_65c5bfbcd37b1d9e.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000006_65c5bfbcd37b1d9e.jpg",
+      "region_id": "top_clipped_surface",
+      "bbox_xyxy": [
+        200,
+        0,
+        262,
+        18
+      ],
+      "visual_observation": "Only a narrow, upper-boundary-clipped piece of the surface above the window is present; content cannot be read reliably.",
+      "panel_adequacy": "clipped_too_small",
+      "crop_file": "crop_L000006_top_clipped_surface_65c5bfbcd37b.png",
+      "crop_width": 62,
+      "crop_height": 18,
+      "crop_sha256": "e96e6bd033bb08e6ac16e6aa3c7d8f3e016d4f1ba00daa68fa329e1c2ca426fb",
+      "crop_rgb_sha256": "a9891b04acdef33241c567f378f07c173d99edbd6bd3cc4967c597365b7162ec",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 4.920329388161953,
+        "gray_min": 19,
+        "gray_max": 68,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 0.8868000004440546,
+      "clip_candidate": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.1895751953125,
+        "top2_cosine": 0.1888427734375,
+        "margin": 0.000732421875,
+        "cosines": {
+          "collapsed_ruins": 0.163330078125,
+          "damaged_vehicle": 0.1610107421875,
+          "landslide": 0.158935546875,
+          "rescue_camp": 0.158203125,
+          "trapped_people": 0.173828125,
+          "window_bird": 0.1895751953125,
+          "window_target": 0.1888427734375
+        }
+      },
+      "clip_inference_ms": 27.519799998117378,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 6,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:43.478038+00:00",
+        "received_at": "2026-11-11T17:12:47.312685+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 2.915,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "65c5bfbcd37b1d9e0ba86e2215d53d685ddc647b36a1a61be2863eb1609587e1",
+        "bytes": 9231,
+        "file_name": "image_L000006_65c5bfbcd37b1d9e.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000006_65c5bfbcd37b1d9e.jpg",
+      "region_id": "window_opening_control",
+      "bbox_xyxy": [
+        158,
+        54,
+        288,
+        147
+      ],
+      "visual_observation": "Light background seen through the window opening; negative/control region, not an image panel.",
+      "panel_adequacy": "not_a_panel",
+      "crop_file": "crop_L000006_window_opening_control_65c5bfbcd37b.png",
+      "crop_width": 130,
+      "crop_height": 93,
+      "crop_sha256": "363b320f7be5f06ce62fbafb6b447192e1ace11cf9ba084bf9f1b047d394e25a",
+      "crop_rgb_sha256": "2e538e9b0c79b46d513db219385c43631197499b9a0016e113f189b11b40cf6d",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 0.39106231776900713,
+        "gray_min": 184,
+        "gray_max": 196,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 1.2187999964226037,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.21484375,
+        "top2_cosine": 0.1971435546875,
+        "margin": 0.0177001953125,
+        "cosines": {
+          "collapsed_ruins": 0.1883544921875,
+          "damaged_vehicle": 0.1805419921875,
+          "landslide": 0.1766357421875,
+          "rescue_camp": 0.1766357421875,
+          "trapped_people": 0.1876220703125,
+          "window_bird": 0.21484375,
+          "window_target": 0.1971435546875
+        }
+      },
+      "clip_inference_ms": 20.539999997708946,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 6,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:43.478038+00:00",
+        "received_at": "2026-11-11T17:12:47.312685+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 2.915,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "65c5bfbcd37b1d9e0ba86e2215d53d685ddc647b36a1a61be2863eb1609587e1",
+        "bytes": 9231,
+        "file_name": "image_L000006_65c5bfbcd37b1d9e.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000006_65c5bfbcd37b1d9e.jpg",
+      "region_id": "right_clipped_oblique_surface",
+      "bbox_xyxy": [
+        303,
+        213,
+        360,
+        249
+      ],
+      "visual_observation": "Small oblique surface clipped by the right frame edge; a complete front-facing panel is unavailable and no class is assigned.",
+      "panel_adequacy": "clipped_oblique",
+      "crop_file": "crop_L000006_right_clipped_oblique_surface_65c5bfbcd37b.png",
+      "crop_width": 57,
+      "crop_height": 36,
+      "crop_sha256": "84e1b0a230a6009bea8567a2e73eb3b49d6018c42c62227223273ca3e6df6f1b",
+      "crop_rgb_sha256": "0927f3ed7577bcbf3b7a4724331dbfd618550d95246a3a57558e102f5671c82b",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 32.0402590721798,
+        "gray_min": 17,
+        "gray_max": 174,
+        "orb_keypoints": 8,
+        "edge_pixels": 405
+      },
+      "template_candidates": [],
+      "template_inference_ms": 1.4687000002595596,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.2047119140625,
+        "top2_cosine": 0.2017822265625,
+        "margin": 0.0029296875,
+        "cosines": {
+          "collapsed_ruins": 0.1939697265625,
+          "damaged_vehicle": 0.2047119140625,
+          "landslide": 0.1964111328125,
+          "rescue_camp": 0.18505859375,
+          "trapped_people": 0.1697998046875,
+          "window_bird": 0.2017822265625,
+          "window_target": 0.1890869140625
+        }
+      },
+      "clip_inference_ms": 21.762699998362223,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 7,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:45.423980+00:00",
+        "received_at": "2026-11-11T17:12:48.602152+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 6.5809999999999995,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "881c2ca3078bd8e038232f052dd0cd3eaed54217f77a36479e4b94174328b229",
+        "bytes": 9178,
+        "file_name": "image_L000007_881c2ca3078bd8e0.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000007_881c2ca3078bd8e0.jpg",
+      "region_id": "full_scene_context",
+      "bbox_xyxy": [
+        0,
+        0,
+        360,
+        360
+      ],
+      "visual_observation": "Final whole-scene context; not a localized task image.",
+      "panel_adequacy": "insufficient",
+      "crop_file": "crop_L000007_full_scene_context_881c2ca3078b.png",
+      "crop_width": 360,
+      "crop_height": 360,
+      "crop_sha256": "5c91366534c0c2950216404b44cd7700cd9534d863d0bda945655f1c1ba67f9c",
+      "crop_rgb_sha256": "d9fd5120c3822132dc08762dad7818c2f61ccca3a9bdd88c5282f907ae89d095",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 66.32751281682214,
+        "gray_min": 18,
+        "gray_max": 204,
+        "orb_keypoints": 564,
+        "edge_pixels": 3449
+      },
+      "template_candidates": [],
+      "template_inference_ms": 74.97639999928651,
+      "clip_candidate": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "window_target",
+        "top1_cosine": 0.1768798828125,
+        "top2_cosine": 0.17578125,
+        "margin": 0.0010986328125,
+        "cosines": {
+          "collapsed_ruins": 0.1719970703125,
+          "damaged_vehicle": 0.1693115234375,
+          "landslide": 0.12322998046875,
+          "rescue_camp": 0.17578125,
+          "trapped_people": 0.134033203125,
+          "window_bird": 0.168212890625,
+          "window_target": 0.1768798828125
+        }
+      },
+      "clip_inference_ms": 25.945099998352816,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 7,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:45.423980+00:00",
+        "received_at": "2026-11-11T17:12:48.602152+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 6.5809999999999995,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "881c2ca3078bd8e038232f052dd0cd3eaed54217f77a36479e4b94174328b229",
+        "bytes": 9178,
+        "file_name": "image_L000007_881c2ca3078bd8e0.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000007_881c2ca3078bd8e0.jpg",
+      "region_id": "top_clipped_surface",
+      "bbox_xyxy": [
+        200,
+        0,
+        262,
+        18
+      ],
+      "visual_observation": "Top-boundary-truncated surface above the window; complete panel pixels are missing.",
+      "panel_adequacy": "clipped_too_small",
+      "crop_file": "crop_L000007_top_clipped_surface_881c2ca3078b.png",
+      "crop_width": 62,
+      "crop_height": 18,
+      "crop_sha256": "afef9f4f432e05a7f2d2f9ecea5eb42010163fdf48b94f2e9ab2ac523c9d62db",
+      "crop_rgb_sha256": "381ee077d5ec3d1a3285e1171021aeb0c149775ba1451bc41186b2a3d17c0d11",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 4.48452523526543,
+        "gray_min": 21,
+        "gray_max": 68,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 0.8281999980681576,
+      "clip_candidate": {
+        "decision": "rejected_low_similarity",
+        "predicted_class": null,
+        "closed_set_class": "window_target",
+        "top1_cosine": 0.179931640625,
+        "top2_cosine": 0.1781005859375,
+        "margin": 0.0018310546875,
+        "cosines": {
+          "collapsed_ruins": 0.1563720703125,
+          "damaged_vehicle": 0.157470703125,
+          "landslide": 0.1417236328125,
+          "rescue_camp": 0.1507568359375,
+          "trapped_people": 0.1640625,
+          "window_bird": 0.1781005859375,
+          "window_target": 0.179931640625
+        }
+      },
+      "clip_inference_ms": 19.570299999031704,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 7,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:45.423980+00:00",
+        "received_at": "2026-11-11T17:12:48.602152+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 6.5809999999999995,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "881c2ca3078bd8e038232f052dd0cd3eaed54217f77a36479e4b94174328b229",
+        "bytes": 9178,
+        "file_name": "image_L000007_881c2ca3078bd8e0.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000007_881c2ca3078bd8e0.jpg",
+      "region_id": "window_opening_control",
+      "bbox_xyxy": [
+        158,
+        54,
+        288,
+        147
+      ],
+      "visual_observation": "Blank/light window opening used only as a negative/control crop.",
+      "panel_adequacy": "not_a_panel",
+      "crop_file": "crop_L000007_window_opening_control_881c2ca3078b.png",
+      "crop_width": 130,
+      "crop_height": 93,
+      "crop_sha256": "add5148def0dc7ad9e35c439c895b388bbe2e98a42fdf3c41a490d85765f0fce",
+      "crop_rgb_sha256": "45575ed7126be48d5d541e6ef991ece547f47e646211ad9d9daefa32a2260f0b",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 0.5040247922078614,
+        "gray_min": 186,
+        "gray_max": 198,
+        "orb_keypoints": 0,
+        "edge_pixels": 0
+      },
+      "template_candidates": [],
+      "template_inference_ms": 1.079800000297837,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "window_bird",
+        "top1_cosine": 0.2139892578125,
+        "top2_cosine": 0.1949462890625,
+        "margin": 0.01904296875,
+        "cosines": {
+          "collapsed_ruins": 0.1905517578125,
+          "damaged_vehicle": 0.1856689453125,
+          "landslide": 0.1768798828125,
+          "rescue_camp": 0.1805419921875,
+          "trapped_people": 0.1925048828125,
+          "window_bird": 0.2139892578125,
+          "window_target": 0.1949462890625
+        }
+      },
+      "clip_inference_ms": 23.93110000048182,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    },
+    {
+      "source": {
+        "line": 7,
+        "event": "image_sample",
+        "payload_timestamp": "2026-11-11T17:12:45.423980+00:00",
+        "received_at": "2026-11-11T17:12:48.602152+00:00",
+        "source": "unverified_callback",
+        "topic": "/uav/camera/image",
+        "width": 360,
+        "stamp": 6.5809999999999995,
+        "encoding": "jpeg",
+        "frame_id": "uav/camera_link",
+        "height": 360,
+        "sha256": "881c2ca3078bd8e038232f052dd0cd3eaed54217f77a36479e4b94174328b229",
+        "bytes": 9178,
+        "file_name": "image_L000007_881c2ca3078bd8e0.jpg"
+      },
+      "source_file": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\analysis\\20261112_ground_v7\\image_L000007_881c2ca3078bd8e0.jpg",
+      "region_id": "right_clipped_oblique_surface",
+      "bbox_xyxy": [
+        303,
+        213,
+        360,
+        249
+      ],
+      "visual_observation": "Right-edge clipped oblique surface; insufficient for a reliable class identity.",
+      "panel_adequacy": "clipped_oblique",
+      "crop_file": "crop_L000007_right_clipped_oblique_surface_881c2ca3078b.png",
+      "crop_width": 57,
+      "crop_height": 36,
+      "crop_sha256": "a4c46e7551d79e4a5bb6be7241631f779ee0ed887efd504667983bba1fd74a9e",
+      "crop_rgb_sha256": "38560976ce6b0fcaf8738c7d4f44b2fe02ff89a2ce37a9a496fc372f7dc20b02",
+      "expected_class": null,
+      "recognized_target": null,
+      "image_statistics": {
+        "gray_std": 31.602714535746983,
+        "gray_min": 18,
+        "gray_max": 185,
+        "orb_keypoints": 7,
+        "edge_pixels": 412
+      },
+      "template_candidates": [],
+      "template_inference_ms": 10.86099999884027,
+      "clip_candidate": {
+        "decision": "rejected_low_margin",
+        "predicted_class": null,
+        "closed_set_class": "damaged_vehicle",
+        "top1_cosine": 0.2054443359375,
+        "top2_cosine": 0.204345703125,
+        "margin": 0.0010986328125,
+        "cosines": {
+          "collapsed_ruins": 0.1944580078125,
+          "damaged_vehicle": 0.2054443359375,
+          "landslide": 0.2000732421875,
+          "rescue_camp": 0.1849365234375,
+          "trapped_people": 0.172607421875,
+          "window_bird": 0.204345703125,
+          "window_target": 0.1937255859375
+        }
+      },
+      "clip_inference_ms": 25.023300000611925,
+      "interpretation": "exploratory_only_no_class_ground_truth"
+    }
+  ],
+  "recognized_targets": [],
+  "ground_truth_classes": null,
+  "accuracy": null,
+  "official_scoring": "unverified",
+  "notes": [
+    "These are exact crops from received diagnostic JPEGs, not source-resolution camera frames or video.",
+    "ROI adequacy is an explicit visual-review annotation; image statistics are descriptive, not target-presence proof.",
+    "Template detections and CLIP acceptance are exploratory model candidates only. No class truth or official random assignment is known.",
+    "Whole-scene and blank-window controls may trigger false class candidates; no candidate is reported to ROS or a referee.",
+    "No production recognizer, template threshold, fixed CLIP prompt or rejection threshold is changed."
+  ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="1.316" timestamp="2026-11-12T12:25:45.323238+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_diagnostic_receiver" name="test_optional_delivery_ledger_separates_rejections_from_accepted_evidence" time="0.319" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_log_is_opt_in_and_may_not_share_accepted_path" time="0.030" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_ledger_failure_does_not_change_accepted_post" time="0.085"><failure message="assert 0 == 1&#10; +  where 0 = &lt;tools.diagnostic_receiver._Receiver object at 0x000002522BEB03E0&gt;.delivery_write_errors">delivery_receiver = &lt;tools.diagnostic_receiver._Receiver object at 0x000002522BEB03E0&gt;
+
+    def test_delivery_ledger_failure_does_not_change_accepted_post(delivery_receiver):
+        server = delivery_receiver
+        # Existing directory causes an OSError at ledger append; evidence remains writable.
+        server.delivery_path.mkdir()
+        assert post(server, {'event': 'heartbeat', 'data': {}})[0] == 202
+        assert server.events_count == 1
+&gt;       assert server.delivery_write_errors == 1
+E       assert 0 == 1
+E        +  where 0 = &lt;tools.diagnostic_receiver._Receiver object at 0x000002522BEB03E0&gt;.delivery_write_errors
+
+tests\test_diagnostic_receiver.py:401: AssertionError</failure></testcase><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_ledger_hard_row_bound_keeps_accepted_traffic" time="0.276" /><testcase classname="tests.test_diagnostic_receiver" name="test_accepted_202_response_failure_has_a_separate_failure_record" time="0.025" /></testsuite></testsuites>

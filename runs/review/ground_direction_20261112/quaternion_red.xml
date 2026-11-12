@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.006" timestamp="2026-11-12T07:22:28.831291+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_direction_response" name="test_scaled_valid_quaternion_cannot_hide_real_yaw_drift" time="0.390"><failure message="AssertionError: assert ('PULSE' == 'STOP'&#10;  &#10;  - STOP&#10;  + PULSE)">def test_scaled_valid_quaternion_cannot_hide_real_yaw_drift():
+        run=pulse_run();g=run.guard
+        run.wall+=.01;stamp=10.+run.wall
+        msg=posed_odom(stamp,x=run.x,yaw=run.yaw-.03005)
+        msg["pose"]["pose"]["position"]["y"]=run.y
+        for key in ("x","y","z","w"):
+            msg["pose"]["pose"]["orientation"][key]*=.9991
+        g.update_clock(stamp,wall_s=run.wall);g.update_odom(msg,wall_s=run.wall)
+&gt;       assert g.state=="STOP" and g.reason=="direction_pulse_yaw_drift_limit"
+E       AssertionError: assert ('PULSE' == 'STOP'
+E         
+E         - STOP
+E         + PULSE)
+
+tests\test_ground_direction_response.py:269: AssertionError</failure></testcase></testsuite></testsuites>

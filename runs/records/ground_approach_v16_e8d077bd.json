@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_id": "e8d077bd-89ca-4b0e-8ff8-dfefbd7e10d6",
+  "runId": "run_20261112_031225_e3fbe459",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-bounded-approach-v16",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_approach_v16_src.zip",
+    "sha256": "38c337af70dd5185c3dcebdd3e0a3534a06ee1addd91987dc5c2c60c3ceecc47"
+  },
+  "script": {
+    "path": "dist/run_ground_approach_v16.sh",
+    "sha256": "3c7de09e59a9cc01749a62e0fee85ef4f34c317c2c5795393c772f97eae6ee3c"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 159.174,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/approach_v16_artifacts.json",
+    "runs/evidence/20261112/approach_v16b_list_settled.json",
+    "runs/evidence/20261112/approach_v16_submit.json",
+    "runs/evidence/20261112/approach_v16_list_resume.json"
+  ]
+}

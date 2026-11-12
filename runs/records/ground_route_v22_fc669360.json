@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "record_id": "fc669360-a189-4dca-b804-19166267589f",
+  "runId": "run_20261112_050555_42cc6111",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-route-v22",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_route_v22_src.zip",
+    "sha256": "f64e9c9b059b489c1c22b3ba5bb9665761616bbac0eb5ed6d41f92620010003a"
+  },
+  "script": {
+    "path": "dist/run_ground_route_v22.sh",
+    "sha256": "995523370fec423799bb5c385d8ac53cfa933f11e68347f4dfbab86b982a7ec0"
+  },
+  "draw_order": [
+    "ground_3",
+    "ground_2",
+    "ground_0"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 166.037,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/route_v22_submit.json",
+    "runs/evidence/20261112/route_v22_artifacts.json",
+    "runs/evidence/20261112/route_v22_list_final.json",
+    "runs/evidence/20261112/callback_route_v22.jsonl",
+    "runs/analysis/20261112_route_v22_independent/summary.json",
+    "runs/review/20261112_route_v22/independent_metrics.json",
+    "runs/analysis/20261112_route_v22_matcher/report.json"
+  ]
+}

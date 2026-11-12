@@ -1,0 +1,85 @@
+{
+  "schema": "ground_direction_freeze_manifest_v1",
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_direction_response.py",
+      "sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+      "bytes": 28604,
+      "crlf": 0
+    },
+    {
+      "path": "scripts/run_ground_direction_response.sh",
+      "sha256": "2b464c13550fcf24d0e891ab19a49c48d09a28f90ed4b581c47ce4946c83bc10",
+      "bytes": 2771,
+      "crlf": 0
+    },
+    {
+      "path": "tests/test_ground_direction_response.py",
+      "sha256": "280426be1a41ae9b3f8231a888023c47a10f383c6d3b87a53838a4e9d4ac53a4",
+      "bytes": 15775,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "bytes": 22825,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "bytes": 42543,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "bytes": 33185,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "bytes": 11401,
+      "crlf": 0
+    }
+  ],
+  "checks": [
+    {
+      "path": "runs/review/ground_direction_20261112/final_related.xml",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "203",
+          "time": "23.332",
+          "timestamp": "2026-11-12T07:25:48.023520+08:00",
+          "hostname": "DESKTOP-9S2BM4P"
+        }
+      ]
+    },
+    {
+      "path": "runs/review/ground_direction_20261112/telemetry.xml",
+      "suites": [
+        {
+          "name": "pytest",
+          "errors": "0",
+          "failures": "0",
+          "skipped": "0",
+          "tests": "4",
+          "time": "1.940",
+          "timestamp": "2026-11-12T07:26:27.543668+08:00",
+          "hostname": "DESKTOP-9S2BM4P"
+        }
+      ]
+    }
+  ],
+  "bash_syntax": {
+    "executable": "C:/Program Files/Git/bin/bash.exe",
+    "command": "bash -n scripts/run_ground_direction_response.sh",
+    "exit_code": 0,
+    "fallback_reason": "default bash invokes broken WSL VHDX; installed Git Bash succeeded"
+  }
+}

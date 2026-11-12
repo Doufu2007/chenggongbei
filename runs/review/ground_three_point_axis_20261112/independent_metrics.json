@@ -1,0 +1,10 @@
+{
+  "source_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+  "accepted_perturbed_chains": 675,
+  "rejected_perturbed_chains": 0,
+  "explicit_reverse_ops": 135,
+  "unsafe_south_departure_rejected": true,
+  "all_checks_passed": true,
+  "runtime_integrated": false,
+  "official_score_verified": false
+}

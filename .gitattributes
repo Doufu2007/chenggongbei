@@ -1,0 +1,12 @@
+* -text
+*.sh diff
+*.py diff
+*.md diff
+*.json diff
+*.jsonl diff
+*.yaml diff
+*.yml diff
+*.xml diff
+*.txt diff
+*.csv diff
+

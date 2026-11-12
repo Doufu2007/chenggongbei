@@ -1,0 +1,242 @@
+[
+  {
+    "reference": "collapsed_ruins_02.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_02.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_02.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_02.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_01.png",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_01.png",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_01.png",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_01.png",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_01.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_01.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_01.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_01.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_02.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_02.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_02.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "landslide_02.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_01.png",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_01.png",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_01.png",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_01.png",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_02.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_02.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_02.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "rescue_camp_02.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_01.png",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_01.png",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_01.png",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_01.png",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_02.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_02.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_02.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "trapped_people_02.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_01.png",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_01.png",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_01.png",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "collapsed_ruins_01.png",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_02.jpg",
+    "rotation": 0,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_02.jpg",
+    "rotation": 90,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_02.jpg",
+    "rotation": 180,
+    "raw": [],
+    "normalised": []
+  },
+  {
+    "reference": "damaged_vehicle_02.jpg",
+    "rotation": 270,
+    "raw": [],
+    "normalised": []
+  }
+]

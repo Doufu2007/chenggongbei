@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.568" timestamp="2026-11-12T09:14:05.008031+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_current_clock_sampling_ahead_is_not_new_camera_stop_during_motion" time="0.085"><failure message="AssertionError: assert ('STOP' == 'TURN'&#10;  &#10;  - TURN&#10;  + STOP)">def test_current_clock_sampling_ahead_is_not_new_camera_stop_during_motion():
+        run = StationaryRun(); g = run.guard
+        g.phase = g.state = "TURN"
+        g.observe_image("/uav/camera/image", image(g.clock[0]+.16), wall_s=run.wall)
+&gt;       assert g.state == "TURN" and g.last_uav_image[1] == pytest.approx(g.clock[0]+.16)
+E       AssertionError: assert ('STOP' == 'TURN'
+E         
+E         - TURN
+E         + STOP)
+
+tests\test_ground_three_point_camera_recovery.py:275: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_factory_injection_constructs_subclass_with_same_frozen_contract" time="0.001"><failure message="TypeError: create_camera_recovery_three_point_node() got an unexpected keyword argument 'guard_factory'">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001C4D4F72650&gt;
+
+    def test_factory_injection_constructs_subclass_with_same_frozen_contract(monkeypatch):
+        from inspection_mission.ground_three_point_axis import AxisThreePointLimits
+        install_ros_transport(monkeypatch)
+        class CustomGuard(guard_type()):
+            pass
+        limits = AxisThreePointLimits(global_wall_s=1199.)
+&gt;       node = api().create_camera_recovery_three_point_node(route_limits=limits, guard_factory=CustomGuard)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: create_camera_recovery_three_point_node() got an unexpected keyword argument 'guard_factory'
+
+tests\test_ground_three_point_camera_recovery.py:284: TypeError</failure></testcase></testsuite></testsuites>

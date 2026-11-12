@@ -1,0 +1,33 @@
+{
+  "source_sha256": "d6d002d2a9a0bfe8e4962ef7b49323327460ea85459f946c37e789ef74016869",
+  "rows": [
+    {
+      "case": "near_return",
+      "before": {
+        "state": "ASCEND",
+        "source_stamp": 11.1,
+        "minimum_m": 2.0
+      },
+      "after_state": "ASCEND",
+      "after_reason": "bounded_positive_z_response",
+      "output_z_mps": 0.05,
+      "old_minimum_retained": 2.0,
+      "hazard_hidden": true
+    },
+    {
+      "case": "nonfinite_return",
+      "before": {
+        "state": "ASCEND",
+        "source_stamp": 11.1,
+        "minimum_m": 2.0
+      },
+      "after_state": "ASCEND",
+      "after_reason": "bounded_positive_z_response",
+      "output_z_mps": 0.05,
+      "old_minimum_retained": 2.0,
+      "hazard_hidden": true
+    }
+  ],
+  "all_expected_stops": false,
+  "platform_run": false
+}

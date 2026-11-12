@@ -1,0 +1,8 @@
+{
+  "status": 409,
+  "response": {
+    "success": false,
+    "code": "EVAL_IN_FLIGHT_LIMIT",
+    "message": "您已有一条正在测评或排队中的测评，请等待其完成后再提交新的测评"
+  }
+}

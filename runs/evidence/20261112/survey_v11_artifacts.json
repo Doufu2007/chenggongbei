@@ -1,0 +1,41 @@
+{
+  "kind": "ground_observation_survey_practice",
+  "version": "v11",
+  "created_at": "2026-11-11T17:48:12.648141+00:00",
+  "read_only": false,
+  "official_scoring": "unverified",
+  "formal_submission": false,
+  "candidate_id_mapping_confirmed": false,
+  "limits": {
+    "angular_speed_max_rps": 0.5,
+    "observed_omega_stop_rps": 0.55,
+    "turn_wall_max_s": 25,
+    "rotation_budget_rad": 1.8,
+    "linear_cmd_mps": 0,
+    "displacement_budget_m": 0.06,
+    "body_radius_m": 0.447,
+    "scan_offset_bound_m": 0.114,
+    "clearance_m": 0.02,
+    "sensor_age_s": 0.2
+  },
+  "changes": [
+    "active invalid odom/scan latches stop",
+    "invalid pose history cleared independently by source",
+    "actual yaw target stop; bounded command calibration .15 to .5 rad/s",
+    "last associated camera frame retained; no synthesized exposure pose",
+    "compact series only once; full snapshot has metadata and counts",
+    "observed odom arrival and header periods retained"
+  ],
+  "files": [
+    {
+      "path": "dist/inspection_ground_survey_v11_src.zip",
+      "bytes": 78135,
+      "sha256": "dff72b3926ee14e161ec2165e2d9908ecea207bb4ee4b7ca53d1fcd20a39db81"
+    },
+    {
+      "path": "dist/run_ground_survey_v11.sh",
+      "bytes": 2845,
+      "sha256": "022494c64d58e7a16062688afbd3aec908f71d0af29b79bf8587064f58b461e0"
+    }
+  ]
+}

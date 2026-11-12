@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="4" time="0.490" timestamp="2026-11-12T07:22:28.010261+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis_plan" name="test_g4_actual_regression_never_starts_with_diagonal" time="0.002"><failure message="ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'">def test_g4_actual_regression_never_starts_with_diagonal():
+&gt;       p = module().plan_ground_leg(None, "ground_4", (0., 0., 0.))
+            ^^^^^^^^
+
+tests\test_ground_three_point_axis_plan.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis_plan.py:10: in module
+    return importlib.import_module("inspection_mission.ground_three_point_axis_plan")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'inspection_mission.ground_three_point_axis_plan'
+import_ = &lt;function _gcd_import at 0x000001FEA3E804A0&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'
+
+&lt;frozen importlib._bootstrap&gt;:1324: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_ground_three_point_axis_plan" name="test_all_sixty_orders_only_axis_drives_and_explicit_reverse" time="0.001"><failure message="ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'">def test_all_sixty_orders_only_axis_drives_and_explicit_reverse():
+&gt;       m = module()
+            ^^^^^^^^
+
+tests\test_ground_three_point_axis_plan.py:25: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis_plan.py:10: in module
+    return importlib.import_module("inspection_mission.ground_three_point_axis_plan")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'inspection_mission.ground_three_point_axis_plan'
+import_ = &lt;function _gcd_import at 0x000001FEA3E804A0&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'
+
+&lt;frozen importlib._bootstrap&gt;:1324: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_ground_three_point_axis_plan" name="test_ground2_reverse_keeps_sensor_on_north_side_of_south_wall" time="0.001"><failure message="ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'">def test_ground2_reverse_keeps_sensor_on_north_side_of_south_wall():
+&gt;       p = module().plan_ground_leg(None, "ground_2", (0., 0., 0.))
+            ^^^^^^^^
+
+tests\test_ground_three_point_axis_plan.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis_plan.py:10: in module
+    return importlib.import_module("inspection_mission.ground_three_point_axis_plan")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'inspection_mission.ground_three_point_axis_plan'
+import_ = &lt;function _gcd_import at 0x000001FEA3E804A0&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'
+
+&lt;frozen importlib._bootstrap&gt;:1324: ModuleNotFoundError</failure></testcase><testcase classname="tests.test_ground_three_point_axis_plan" name="test_actual_pose_is_preserved_and_unsafe_south_departure_rejected" time="0.001"><failure message="ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'">def test_actual_pose_is_preserved_and_unsafe_south_departure_rejected():
+&gt;       m = module()
+            ^^^^^^^^
+
+tests\test_ground_three_point_axis_plan.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis_plan.py:10: in module
+    return importlib.import_module("inspection_mission.ground_three_point_axis_plan")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Program Files\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+&lt;frozen importlib._bootstrap&gt;:1387: in _gcd_import
+    ???
+&lt;frozen importlib._bootstrap&gt;:1360: in _find_and_load
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+name = 'inspection_mission.ground_three_point_axis_plan'
+import_ = &lt;function _gcd_import at 0x000001FEA3E804A0&gt;
+
+&gt;   ???
+E   ModuleNotFoundError: No module named 'inspection_mission.ground_three_point_axis_plan'
+
+&lt;frozen importlib._bootstrap&gt;:1324: ModuleNotFoundError</failure></testcase></testsuite></testsuites>

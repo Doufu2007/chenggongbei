@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.922" timestamp="2026-11-12T07:25:11.001381+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_direction_response" name="test_dds_disappearing_after_step_is_checked_again_before_nonzero_publish" time="0.395"><failure message="assert ([(0.03, 0.0, 0.0)] == [(0.0, 0.0, 0.0)]&#10;  &#10;  At index 0 diff: (0.03, 0.0, 0.0) != (0.0, 0.0, 0.0)&#10;  Use -v to get more diff)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002919FCB4FC0&gt;
+
+    def test_dds_disappearing_after_step_is_checked_again_before_nonzero_publish(monkeypatch):
+        install_ros_transport(monkeypatch);run=pulse_run();wall=[run.wall]
+        node=api().create_direction_response_node(wall_clock=lambda:wall[0]);node.guard=run.guard
+        node.last_graph_refresh_wall=wall[0]
+        matches=iter((1,0));sent=[]
+        node.publisher_by_topic["/cmd_vel"].get_subscription_count=lambda:next(matches)
+        node.publisher_by_topic["/cmd_vel"].publish=lambda m:sent.append((m.linear.x,m.linear.y,m.angular.z))
+        try:
+            decision=node.tick()
+&gt;           assert sent==[(0.,0.,0.)] and decision.linear_x==decision.linear_y==0.
+E           assert ([(0.03, 0.0, 0.0)] == [(0.0, 0.0, 0.0)]
+E             
+E             At index 0 diff: (0.03, 0.0, 0.0) != (0.0, 0.0, 0.0)
+E             Use -v to get more diff)
+
+tests\test_ground_direction_response.py:317: AssertionError</failure></testcase></testsuite></testsuites>

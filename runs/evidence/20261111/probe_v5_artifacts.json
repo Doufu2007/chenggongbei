@@ -1,0 +1,17 @@
+{
+  "kind": "read_only_probe",
+  "version": "v5",
+  "duration_s": 60,
+  "files": [
+    {
+      "path": "dist/inspection_probe_v5_src.zip",
+      "bytes": 52731,
+      "sha256": "909867d6820edad19eceb4ad24582cdfc749a3617a04c8d13f8f5e19cd6d0061"
+    },
+    {
+      "path": "dist/run_interface_probe_v5.sh",
+      "bytes": 3336,
+      "sha256": "6698cc5500a541357cac7b304aed925530eca604904837cf29e9d0ebbbcf3a17"
+    }
+  ]
+}

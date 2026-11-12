@@ -1,0 +1,28 @@
+{
+  "source_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+  "before_uav": [
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "stop_state": "STOP",
+  "stop_exception": null,
+  "following_publications": [
+    [
+      "/uav/cmd_vel",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ],
+  "uav_zero_attempt_returned": true,
+  "platform_run": false
+}

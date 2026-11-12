@@ -1,0 +1,703 @@
+{
+  "schema": "axis_candidate_budget_v1",
+  "source_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+  "nominal_only": true,
+  "official_score": null,
+  "runtime_integrated": false,
+  "reverse_response_verified": false,
+  "orders": [
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 7.820000000000001,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 810.1989133850873
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 7.620000000000001,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 839.0269516531491
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 8.82,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 882.2339116531491
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 9.16,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 858.4466853850872
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 8.6,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 874.3126356531491
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 9.8,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 917.519595653149
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 8.110000000000001,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 820.6405953850872
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 6.8500000000000005,
+      "rotation_rad": 25.01288491847593,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 820.3577700865906
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 8.75,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 879.713505653149
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 8.16,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 822.4408853850872
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 8.95,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 850.8854673850872
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 8.1,
+      "rotation_rad": 22.532650042039094,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 808.4761207492465
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 7.92,
+      "rotation_rad": 23.220474478972882,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 817.7716370767531
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 7.720000000000001,
+      "rotation_rad": 24.79127080576778,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 846.5996753448151
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 8.92,
+      "rotation_rad": 24.79127080576778,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 889.806635344815
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 9.344999999999999,
+      "rotation_rad": 23.220474478972882,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 869.0799020767531
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 8.77,
+      "rotation_rad": 24.79127080576778,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 884.4057653448151
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 9.969999999999999,
+      "rotation_rad": 24.79127080576778,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 927.6127253448151
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 8.295000000000002,
+      "rotation_rad": 23.220474478972882,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 831.2738120767532
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 7.0200000000000005,
+      "rotation_rad": 25.18606192546754,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 830.4508997782565
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 8.920000000000002,
+      "rotation_rad": 24.79127080576778,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 889.806635344815
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 8.345,
+      "rotation_rad": 23.220474478972882,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 833.0741020767532
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 9.12,
+      "rotation_rad": 23.220474478972886,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 860.9785970767532
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 8.27,
+      "rotation_rad": 22.705827049030706,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 818.5692504409125
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 10.96,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 971.0907402889898
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 10.4,
+      "rotation_rad": 26.703537555513243,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 986.9566905570517
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 11.6,
+      "rotation_rad": 26.703537555513243,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 1030.1636505570518
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 11.044999999999998,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 974.1512332889897
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 10.469999999999999,
+      "rotation_rad": 26.703537555513243,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 989.4770965570517
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 11.669999999999998,
+      "rotation_rad": 26.703537555513243,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 1032.6840565570517
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 10.975000000000001,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 971.6308272889898
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 10.96,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 971.0907402889898
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 11.600000000000001,
+      "rotation_rad": 26.703537555513243,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 1030.1636505570518
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 11.025,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 973.4311172889898
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 11.01,
+      "rotation_rad": 25.132741228718345,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 972.8910302889898
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 10.95,
+      "rotation_rad": 24.61809379877617,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 958.9262656531491
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 9.260000000000002,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 862.0472653850873
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 8.9,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 849.0851773850873
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 9.9,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 921.1201756531491
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 9.344999999999999,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 865.1077583850872
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 8.969999999999999,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 851.6055833850871
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 9.969999999999999,
+      "rotation_rad": 24.618093798776165,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 923.640581653149
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 9.425,
+      "rotation_rad": 25.01288491847593,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 913.0727050865905
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 9.41,
+      "rotation_rad": 25.01288491847593,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 912.5326180865907
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 10.05,
+      "rotation_rad": 26.583681245270824,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 971.6055283546524
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 9.325000000000001,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 864.3876423850872
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 9.31,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 863.8475553850872
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 10.1,
+      "rotation_rad": 23.04729747198127,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 892.2921373850872
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 6.960000000000001,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 755.0091437528662
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 6.6000000000000005,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 742.0470557528662
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 6.4,
+      "rotation_rad": 23.561944901923447,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 770.875094020928
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 7.045000000000001,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 758.0696367528661
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 6.670000000000001,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 744.5674617528662
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 6.470000000000001,
+      "rotation_rad": 23.561944901923447,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 773.395500020928
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 9.175,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 834.7619907528662
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 9.16,
+      "rotation_rad": 21.991148575128552,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 834.2219037528662
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 8.6,
+      "rotation_rad": 23.561944901923447,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 850.087854020928
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 7.4750000000000005,
+      "rotation_rad": 19.905704818391477,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 725.7185158489635
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 7.460000000000001,
+      "rotation_rad": 19.905704818391477,
+      "reverse_operations": 0,
+      "empirical_scaled_time_s": 725.1784288489634
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 6.2,
+      "rotation_rad": 21.871292264886137,
+      "reverse_operations": 1,
+      "empirical_scaled_time_s": 724.8956035504668
+    }
+  ],
+  "max_path": {
+    "order": [
+      "ground_2",
+      "ground_1",
+      "ground_4"
+    ],
+    "path_m": 11.669999999999998,
+    "rotation_rad": 26.703537555513243,
+    "reverse_operations": 1,
+    "empirical_scaled_time_s": 1032.6840565570517
+  },
+  "max_rotation": {
+    "order": [
+      "ground_2",
+      "ground_0",
+      "ground_3"
+    ],
+    "path_m": 10.4,
+    "rotation_rad": 26.703537555513243,
+    "reverse_operations": 1,
+    "empirical_scaled_time_s": 986.9566905570517
+  },
+  "max_time": {
+    "order": [
+      "ground_2",
+      "ground_1",
+      "ground_4"
+    ],
+    "path_m": 11.669999999999998,
+    "rotation_rad": 26.703537555513243,
+    "reverse_operations": 1,
+    "empirical_scaled_time_s": 1032.6840565570517
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "source_sha256": "1621108f3b1688a8e177240970dd2620525a683aac05ed665119697622211d6a",
+  "transport": "in_memory_real_handler_no_sockets",
+  "cases": [
+    {
+      "case": "accepted_launcher",
+      "http_status": 202,
+      "events_count": 1,
+      "accepted_count": 1,
+      "accepted_event_names": [
+        "launcher_started"
+      ],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "wrong_path",
+      "http_status": 404,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "exact_token_query_rejected",
+      "http_status": 404,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "get_exact_path",
+      "http_status": 405,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "invalid_json",
+      "http_status": 400,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "content_type",
+      "http_status": 400,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "duplicate_length",
+      "http_status": 400,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "too_large",
+      "http_status": 413,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "short_body",
+      "http_status": 400,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "body_timeout",
+      "http_status": 400,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "sink_error",
+      "http_status": 500,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    },
+    {
+      "case": "reply_write_error",
+      "http_status": null,
+      "events_count": 1,
+      "accepted_count": 1,
+      "accepted_event_names": [
+        "launcher_started"
+      ],
+      "uncaught_error_type": "BrokenPipeError",
+      "delivery_count": 0
+    },
+    {
+      "case": "unsupported_method",
+      "http_status": 501,
+      "events_count": 0,
+      "accepted_count": 0,
+      "accepted_event_names": [],
+      "uncaught_error_type": null,
+      "delivery_count": 0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "yaw_pi_over_2_translation": {
+    "stage": "AIR_NAV_1",
+    "fault": null,
+    "requested_world_velocity": [
+      0.027556152894026596,
+      -0.11679322941712429,
+      0.0,
+      -3.3306690738754696e-16
+    ],
+    "published_body_xyz": [
+      -0.11679322941712429,
+      -0.02755615289402658,
+      0.02695
+    ],
+    "reconstructed_world_xy": [
+      0.027556152894026572,
+      -0.11679322941712429
+    ],
+    "light_commands": [
+      false
+    ]
+  },
+  "window_descent": {
+    "stage": "WINDOW_1_DESCEND",
+    "fault": null,
+    "requested_world_velocity": [
+      0.0,
+      0.0,
+      -0.12,
+      0.0
+    ],
+    "published_body_xyz": [
+      0.0,
+      0.0,
+      0.011950000000000002
+    ],
+    "reconstructed_world_xy": [
+      0.0,
+      0.0
+    ],
+    "light_commands": [
+      false
+    ]
+  },
+  "hover_trim": 0.02695
+}

@@ -1,0 +1,325 @@
+{
+  "source_raw": {
+    "path": "runs/evidence/20261112/callback_speed_v19.jsonl",
+    "bytes": 532695,
+    "sha256": "320f3b16d0cef2925c8809585c8109de5e315d382221798faf5a11ffbf209daa"
+  },
+  "state": "FINISHED",
+  "reason": "approach_capture_wall_time_limit",
+  "draw": [
+    "ground_2",
+    "ground_1",
+    "ground_3"
+  ],
+  "measured_forward_m": 0.20028617049504752,
+  "capture_count": 0,
+  "resume_count": 0,
+  "segment_arithmetic": {
+    "HIGH_PULSE": {
+      "interval_count": 7,
+      "forward_m": 0.03872201634355423,
+      "wall_s": 0.7109850000000009,
+      "sim_s": 0.6999999999999957,
+      "sampled_max_speed_mps": 0.0595459,
+      "forward_per_wall_mps": 0.0544624940660551
+    },
+    "DRIVE": {
+      "interval_count": 308,
+      "forward_m": 0.15727446607565124,
+      "wall_s": 31.739250000000002,
+      "sim_s": 31.199999999999996,
+      "sampled_max_speed_mps": 0.0061431,
+      "forward_per_wall_mps": 0.004955204236888119
+    }
+  },
+  "calibration": {
+    "revision": "v19_speed_calibration",
+    "stage": "final_slow",
+    "low_request_start": {
+      "wall_elapsed_s": 30.748379967997607,
+      "stamp_s": 33.48,
+      "position": [
+        -0.004990287597780656,
+        -0.006045912200125786,
+        0.0550001036352359
+      ],
+      "linear_speed_mps": 9.274854696750943e-06,
+      "angular_speed_radps": 0.0,
+      "forward_m": 0.0,
+      "total_path_m": 0.01369507887862928
+    },
+    "low_continuous_wall_s": 1.0595637140031613,
+    "low_continuous_sim_s": 1.0400000000000063,
+    "low_duration_verified": true,
+    "high_request_start": {
+      "wall_elapsed_s": 41.85214424500009,
+      "stamp_s": 44.4,
+      "position": [
+        -0.004736628885005087,
+        -0.0561607588218171,
+        0.05500012292565294
+      ],
+      "linear_speed_mps": 9.606971953864787e-06,
+      "angular_speed_radps": 1.224671364319363e-06,
+      "forward_m": 0.050106383047991976,
+      "total_path_m": 0.06381481761498813
+    },
+    "high_total_path_m": 0.041730310710176965,
+    "high_trigger_distance_m": 0.04,
+    "high_total_path_limit_m": 0.05,
+    "high_wall_limit_s": 5.0,
+    "high_sim_limit_s": 5.0,
+    "stops": [
+      {
+        "tier": "low",
+        "phase_switch": {
+          "wall_elapsed_s": 40.82777995300057,
+          "stamp_s": 43.4,
+          "position": [
+            -0.004735496542410595,
+            -0.05610201718635413,
+            0.055000500396130074
+          ],
+          "linear_speed_mps": 0.004987104303917926,
+          "angular_speed_radps": 3.7174311640075786e-05,
+          "forward_m": 0.050047685819467704,
+          "total_path_m": 0.06375596434598153
+        },
+        "path_origin_m": 0.06375596434598153,
+        "path_increment_m": 5.885326900659238e-05,
+        "first_successful_zero_publish": {
+          "wall_elapsed_s": 40.83142671099995,
+          "stamp_s": 43.4,
+          "position": [
+            -0.004735496542410595,
+            -0.05610201718635413,
+            0.055000500396130074
+          ],
+          "linear_speed_mps": 0.004987104303917926,
+          "angular_speed_radps": 3.7174311640075786e-05,
+          "forward_m": 0.050047685819467704,
+          "total_path_m": 0.06375596434598153,
+          "path_increment_m": 0.0
+        },
+        "verified": true,
+        "publish_interpretation": "local publish returned; actuator receipt/ACK unverified",
+        "stationary_wall_s": 1.0090823130012723,
+        "stationary_sim_s": 1.0,
+        "verified_sample": {
+          "wall_elapsed_s": 41.85214424500009,
+          "stamp_s": 44.4,
+          "position": [
+            -0.004736628885005087,
+            -0.0561607588218171,
+            0.05500012292565294
+          ],
+          "linear_speed_mps": 9.606971953864787e-06,
+          "angular_speed_radps": 1.224671364319363e-06,
+          "forward_m": 0.050106383047991976,
+          "total_path_m": 0.06381481761498813
+        }
+      },
+      {
+        "tier": "high",
+        "phase_switch": {
+          "wall_elapsed_s": 42.61330298399844,
+          "stamp_s": 45.16,
+          "position": [
+            -0.00465665776110026,
+            -0.09711773150435588,
+            0.055000601720155674
+          ],
+          "linear_speed_mps": 0.059207562255074106,
+          "angular_speed_radps": 0.00034332820010307685,
+          "forward_m": 0.09105336720372063,
+          "total_path_m": 0.10477210125521652
+        },
+        "path_origin_m": 0.10477210125521652,
+        "path_increment_m": 0.0007730270699485703,
+        "first_successful_zero_publish": {
+          "wall_elapsed_s": 42.61503367000114,
+          "stamp_s": 45.16,
+          "position": [
+            -0.00465665776110026,
+            -0.09711773150435588,
+            0.055000601720155674
+          ],
+          "linear_speed_mps": 0.059207562255074106,
+          "angular_speed_radps": 0.00034332820010307685,
+          "forward_m": 0.09105336720372063,
+          "total_path_m": 0.10477210125521652,
+          "path_increment_m": 0.0
+        },
+        "verified": true,
+        "publish_interpretation": "local publish returned; actuator receipt/ACK unverified",
+        "stationary_wall_s": 1.0085562280000886,
+        "stationary_sim_s": 1.0,
+        "verified_sample": {
+          "wall_elapsed_s": 43.66725985700032,
+          "stamp_s": 46.2,
+          "position": [
+            -0.0046594436482062474,
+            -0.09788379597523753,
+            0.05500017344853261
+          ],
+          "linear_speed_mps": 9.670858785867125e-06,
+          "angular_speed_radps": 1.1102230246251565e-14,
+          "forward_m": 0.09181914156519547,
+          "total_path_m": 0.10554512832516509
+        }
+      }
+    ],
+    "tiers": {
+      "low": {
+        "requested_mps": 0.03,
+        "sample_count": 494,
+        "max_speed_mps": 0.006497315445595472,
+        "first": {
+          "wall_elapsed_s": 30.762467063999793,
+          "stamp_s": 33.5,
+          "position": [
+            -0.004986750160757161,
+            -0.006104892214014757,
+            0.05500029071405093
+          ],
+          "linear_speed_mps": 0.002954300043596786,
+          "angular_speed_radps": 0.0006621699417008742,
+          "forward_m": 5.9048182121480455e-05,
+          "total_path_m": 0.013754165175666085
+        },
+        "last": {
+          "wall_elapsed_s": 40.82777995300057,
+          "stamp_s": 43.4,
+          "position": [
+            -0.004735496542410595,
+            -0.05610201718635413,
+            0.055000500396130074
+          ],
+          "linear_speed_mps": 0.004987104303917926,
+          "angular_speed_radps": 3.7174311640075786e-05,
+          "forward_m": 0.050047685819467704,
+          "total_path_m": 0.06375596434598153
+        },
+        "first_successful_nonzero_publish": {
+          "wall_elapsed_s": 30.74877109299996,
+          "stamp_s": 33.48,
+          "position": [
+            -0.004990287597780656,
+            -0.006045912200125786,
+            0.0550001036352359
+          ],
+          "linear_speed_mps": 9.274854696750943e-06,
+          "angular_speed_radps": 0.0,
+          "forward_m": 0.0,
+          "total_path_m": 0.01369507887862928
+        }
+      },
+      "high": {
+        "requested_mps": 0.1,
+        "sample_count": 38,
+        "max_speed_mps": 0.059545903960688644,
+        "first": {
+          "wall_elapsed_s": 41.86222294300023,
+          "stamp_s": 44.42,
+          "position": [
+            -0.004736633372020165,
+            -0.05616095048707919,
+            0.05500012021256621
+          ],
+          "linear_speed_mps": 9.585888847299766e-06,
+          "angular_speed_radps": 1.1833389934601257e-06,
+          "forward_m": 0.05010657454924775,
+          "total_path_m": 0.06381500935196119
+        },
+        "last": {
+          "wall_elapsed_s": 42.61330298399844,
+          "stamp_s": 45.16,
+          "position": [
+            -0.00465665776110026,
+            -0.09711773150435588,
+            0.055000601720155674
+          ],
+          "linear_speed_mps": 0.059207562255074106,
+          "angular_speed_radps": 0.00034332820010307685,
+          "forward_m": 0.09105336720372063,
+          "total_path_m": 0.10477210125521652
+        },
+        "first_successful_nonzero_publish": {
+          "wall_elapsed_s": 41.85228627700053,
+          "stamp_s": 44.4,
+          "position": [
+            -0.004736628885005087,
+            -0.0561607588218171,
+            0.05500012292565294
+          ],
+          "linear_speed_mps": 9.606971953864787e-06,
+          "angular_speed_radps": 1.224671364319363e-06,
+          "forward_m": 0.050106383047991976,
+          "total_path_m": 0.06381481761498813
+        }
+      },
+      "final_slow": {
+        "requested_mps": 0.03,
+        "sample_count": 1067,
+        "max_speed_mps": 0.00745700108301934,
+        "first": {
+          "wall_elapsed_s": 43.686241149000125,
+          "stamp_s": 46.22,
+          "position": [
+            -0.004658765192205843,
+            -0.09794420765018935,
+            0.05500042181908661
+          ],
+          "linear_speed_mps": 0.0030207742273420856,
+          "angular_speed_radps": 0.0010371802842690236,
+          "forward_m": 0.09187955202738972,
+          "total_path_m": 0.10560554432024058
+        },
+        "last": {
+          "wall_elapsed_s": 65.5443992119981,
+          "stamp_s": 67.7,
+          "position": [
+            -0.0042564210452714964,
+            -0.20617806956889967,
+            0.055000510413042644
+          ],
+          "linear_speed_mps": 0.005112415526295055,
+          "angular_speed_radps": 2.9121138545029623e-05,
+          "forward_m": 0.2000916255910387,
+          "total_path_m": 0.2138422293613728
+        },
+        "first_successful_nonzero_publish": {
+          "wall_elapsed_s": 43.66737451899826,
+          "stamp_s": 46.2,
+          "position": [
+            -0.0046594436482062474,
+            -0.09788379597523753,
+            0.05500017344853261
+          ],
+          "linear_speed_mps": 9.670858785867125e-06,
+          "angular_speed_radps": 1.1102230246251565e-14,
+          "forward_m": 0.09181914156519547,
+          "total_path_m": 0.10554512832516509
+        }
+      }
+    },
+    "interpretation": "bounded tier/stop observation; sustained route response and official score unverified"
+  },
+  "series": {
+    "trajectory_10hz": {
+      "total_rows": 718,
+      "received_rows": 718,
+      "complete": true,
+      "missing_rows": [],
+      "conflicted": false
+    },
+    "actual_commands": {
+      "total_rows": 1690,
+      "received_rows": 1690,
+      "complete": true,
+      "missing_rows": [],
+      "conflicted": false
+    }
+  },
+  "interpretation": "offline arithmetic from real public odom and locally returned publish calls; no actuator ACK or official task score"
+}

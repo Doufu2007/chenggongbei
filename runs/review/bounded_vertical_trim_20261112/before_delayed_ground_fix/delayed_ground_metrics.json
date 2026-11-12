@@ -1,0 +1,31 @@
+{
+  "phase": "TRIM_NEG_010",
+  "phase_started_wall": 3.1500000000000004,
+  "phase_end_wall": 3.45,
+  "before_ground_publish_wall": 3.16,
+  "after_ground_publish_wall": 3.51,
+  "uav_outputs_after_delay": [
+    [
+      0.0,
+      0.0,
+      -0.01,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "recorded_command": {
+    "wall_elapsed_s": 3.51,
+    "linear_z": -0.01,
+    "ground_linear_x": 0.0,
+    "ground_angular_z": 0.0,
+    "state": "ASCEND",
+    "phase": "TRIM_NEG_010"
+  },
+  "state_after_tick": "ASCEND",
+  "returned_decision": {
+    "linear_z": -0.01,
+    "state": "ASCEND",
+    "reason": "fixed_trim_response"
+  }
+}

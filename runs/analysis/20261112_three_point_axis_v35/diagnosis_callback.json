@@ -1,0 +1,1225 @@
+{
+  "schema": "v35_callback_diagnosis_v1",
+  "read_only_analysis": true,
+  "official_score": null,
+  "sources": {
+    "callback_jsonl": "runs\\evidence\\20261112\\callback_three_point_axis_v35.jsonl",
+    "callback_sha256": "8db889d1496ef05f358cdaf4e003c887c56050b66f1dbf8f341ae3c5a6538fc0",
+    "strict_bundle": "runs\\analysis\\20261112_three_point_axis_v35\\actual\\bundle.exact.json",
+    "bundle_sha256": "196d4f6abcc9f8979b9d5a46b98ecf45cb0b5a0d47250ec7759fa7c83bd99200"
+  },
+  "window": {
+    "recognize_wait_elapsed_s": 98.51261452399922,
+    "stop_elapsed_s": 100.76066820899723,
+    "duration_s": 2.2480536849980126,
+    "stop_reason": "single_point_uav_image_stale",
+    "stop_timing": {
+      "clock_sampling_lag_s": 0.12,
+      "sensor_age_s": 0.2,
+      "clock": {
+        "stamp_s": 102.3,
+        "wall_age_s": 0.032307369001500774
+      },
+      "odom": {
+        "stamp_s": 102.32,
+        "wall_age_s": 0.012021361002553022,
+        "clock_minus_stamp_s": -0.01999999999999602,
+        "fresh": true
+      },
+      "scan": {
+        "stamp_s": 102.258,
+        "wall_age_s": 0.07519638200028567,
+        "clock_minus_stamp_s": 0.04200000000000159,
+        "fresh": true
+      }
+    }
+  },
+  "captures": [
+    {
+      "phase": "capture_0",
+      "stamp_s": 99.423,
+      "wall_elapsed_s": 97.821431974,
+      "prior_stamp_s": 99.42,
+      "image_minus_odom_s": 0.0030000000000001137,
+      "association_error": null
+    },
+    {
+      "phase": "capture_1",
+      "stamp_s": 99.757,
+      "wall_elapsed_s": 98.15677083799892,
+      "prior_stamp_s": 99.74,
+      "image_minus_odom_s": 0.017000000000010118,
+      "association_error": null
+    },
+    {
+      "phase": "capture_2",
+      "stamp_s": 100.089,
+      "wall_elapsed_s": 98.48883464199753,
+      "prior_stamp_s": 100.08,
+      "image_minus_odom_s": 0.009000000000000341,
+      "association_error": null
+    }
+  ],
+  "accepted_worker_results": [
+    {
+      "job_seq": 0,
+      "image_stamp_s": 99.423,
+      "worker_pid": 633,
+      "worker_started_utc": "2026-11-12T00:46:44.479300+00:00",
+      "worker_finished_utc": "2026-11-12T00:46:45.487063+00:00",
+      "worker_started_monotonic_s": 32290.285492236,
+      "worker_finished_monotonic_s": 32291.293262795,
+      "template_load_ms": 4451.429832999565,
+      "decode_ms": 3.8695160001225304,
+      "match_ms": 1003.8992420013528,
+      "worker_duration_s": 1.0077705590010737,
+      "start_relative_to_liveness_stop_s": -2.1446041660019546,
+      "finish_relative_to_liveness_stop_s": -1.1368336070008809,
+      "clock_alignment_note": "Both clocks use CLOCK_MONOTONIC on the same platform; worker offsets are computed against the recorded liveness-check absolute wall, without inventing a shared elapsed origin."
+    },
+    {
+      "job_seq": 1,
+      "image_stamp_s": 99.757,
+      "worker_pid": 633,
+      "worker_started_utc": "2026-11-12T00:46:45.557944+00:00",
+      "worker_finished_utc": "2026-11-12T00:46:46.551230+00:00",
+      "worker_started_monotonic_s": 32291.36414252,
+      "worker_finished_monotonic_s": 32292.357429252,
+      "template_load_ms": 4451.429832999565,
+      "decode_ms": 3.2316079996235203,
+      "match_ms": 990.0529840015224,
+      "worker_duration_s": 0.9932867319985235,
+      "start_relative_to_liveness_stop_s": -1.0659538820000307,
+      "finish_relative_to_liveness_stop_s": -0.07266715000150725,
+      "clock_alignment_note": "Both clocks use CLOCK_MONOTONIC on the same platform; worker offsets are computed against the recorded liveness-check absolute wall, without inventing a shared elapsed origin."
+    }
+  ],
+  "capture_count": 3,
+  "accepted_result_count": 2,
+  "recognition": null,
+  "attempts": {},
+  "matcher_failures": [],
+  "camera_liveness": {
+    "wall_s": 32292.430096402,
+    "phase": "RECOGNIZE_WAIT",
+    "camera_max_wall_age_s": 0.5,
+    "camera_max_clock_age_s": 0.5,
+    "camera_min_clock_age_s": -0.12,
+    "last_image_arrival_wall_s": 32291.900058389,
+    "last_image_stamp_s": 101.757,
+    "image_wall_age_s": 0.5300380129992845,
+    "clock_minus_image_stamp_s": 0.5429999999999922,
+    "interpretation": "current camera liveness only; original capture stamps and priors unchanged"
+  },
+  "direct_trigger": {
+    "checked_first": "image_wall_age_s > 0.50s",
+    "observed_wall_age_s": 0.5300380129992845,
+    "wall_excess_s": 0.030038012999284547,
+    "clock_minus_image_s": 0.5429999999999922,
+    "clock_excess_s": 0.042999999999992156,
+    "source": "ground_single_point.py:239-259; wall age is checked before clock age"
+  },
+  "callback_statistics": {
+    "receive:/odom": {
+      "wall_s": {
+        "count": 5035,
+        "total": 2.0043495859063114,
+        "min": 0.0002761860014288686,
+        "max": 0.0109946350021346,
+        "buckets": [
+          0,
+          5025,
+          9,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 5035,
+        "total": 2.0021740290000256,
+        "min": 0.00027568699999996893,
+        "max": 0.010995606999999907,
+        "buckets": [
+          0,
+          5025,
+          9,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 5034,
+        "total": 102.72790087599788,
+        "min": 0.005110134999995353,
+        "max": 0.06916494899996906,
+        "buckets": [
+          0,
+          0,
+          0,
+          2287,
+          2740,
+          7,
+          0,
+          0,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 5034,
+        "total": 100.86,
+        "min": 0.01999999999999602,
+        "max": 0.04000000000000625,
+        "buckets": [
+          0,
+          0,
+          0,
+          5034,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 5034,
+        "total": -202.79999999999347,
+        "min": -0.18000000000000682,
+        "max": 0.0,
+        "buckets": [
+          0,
+          11,
+          5023,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "spin_once": {
+      "wall_s": {
+        "count": 25001,
+        "total": 101.66134883929044,
+        "min": 3.695399936987087e-05,
+        "max": 0.055359638998197624,
+        "buckets": [
+          10,
+          16572,
+          2151,
+          5876,
+          391,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 25001,
+        "total": 14.723478717999583,
+        "min": 3.695800000080851e-05,
+        "max": 0.011654244000000036,
+        "buckets": [
+          10,
+          20452,
+          4538,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "tick": {
+      "wall_s": {
+        "count": 2028,
+        "total": 0.6873616400298488,
+        "min": 0.00018023500160779804,
+        "max": 0.008013283997570397,
+        "buckets": [
+          0,
+          2011,
+          16,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 2028,
+        "total": 0.6840376779999544,
+        "min": 0.0001803720000008724,
+        "max": 0.008014616999998836,
+        "buckets": [
+          0,
+          2015,
+          12,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/uav/odom": {
+      "wall_s": {
+        "count": 5034,
+        "total": 0.775794866905926,
+        "min": 0.00010719200145103969,
+        "max": 0.040163068999390816,
+        "buckets": [
+          0,
+          5033,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 5034,
+        "total": 0.7346370870000118,
+        "min": 0.00010728999999998212,
+        "max": 0.0003496510000000619,
+        "buckets": [
+          0,
+          5034,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 5033,
+        "total": 102.70750509899881,
+        "min": 0.0043692809995263815,
+        "max": 0.06924370200067642,
+        "buckets": [
+          0,
+          0,
+          1,
+          2415,
+          2610,
+          7,
+          0,
+          0,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 5033,
+        "total": 100.83999999999999,
+        "min": 0.01999999999999602,
+        "max": 0.04000000000000625,
+        "buckets": [
+          0,
+          0,
+          0,
+          5033,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 5033,
+        "total": -202.75999999999345,
+        "min": -0.18000000000000682,
+        "max": 0.0,
+        "buckets": [
+          0,
+          11,
+          5022,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/clock": {
+      "wall_s": {
+        "count": 1006,
+        "total": 0.13315183105078177,
+        "min": 5.342300210031681e-05,
+        "max": 0.028802165001252433,
+        "buckets": [
+          459,
+          546,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 1006,
+        "total": 0.10372028999999566,
+        "min": 5.3069999999988404e-05,
+        "max": 0.0002472960000012847,
+        "buckets": [
+          480,
+          526,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 1005,
+        "total": 102.67666273600116,
+        "min": 0.07217094400039059,
+        "max": 0.20577557000069646,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          90,
+          912,
+          3,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/scan": {
+      "wall_s": {
+        "count": 807,
+        "total": 0.8555534859988256,
+        "min": 0.0004096279990335461,
+        "max": 0.0022357229972840287,
+        "buckets": [
+          0,
+          434,
+          373,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 807,
+        "total": 0.855596652,
+        "min": 0.00040925200000074824,
+        "max": 0.0022366729999987456,
+        "buckets": [
+          0,
+          435,
+          372,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 806,
+        "total": 102.63225930799672,
+        "min": 0.07165615499980049,
+        "max": 0.196375931998773,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          31,
+          775,
+          0,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 806,
+        "total": 100.758,
+        "min": 0.09999999999999432,
+        "max": 0.15399999999999636,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          184,
+          622,
+          0,
+          0,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 807,
+        "total": -22.117000000000225,
+        "min": -0.1530000000000058,
+        "max": 0.0,
+        "buckets": [
+          0,
+          3,
+          804,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/uav/camera/camera_info": {
+      "wall_s": {
+        "count": 275,
+        "total": 0.043842688010045094,
+        "min": 0.00011634700058493763,
+        "max": 0.0003483099972072523,
+        "buckets": [
+          0,
+          275,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 275,
+        "total": 0.04376102200000931,
+        "min": 0.00011649600000041005,
+        "max": 0.00035161999999999694,
+        "buckets": [
+          0,
+          275,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 274,
+        "total": 99.82040646700261,
+        "min": 0.0006402209983207285,
+        "max": 4.41599559700262,
+        "buckets": [
+          0,
+          1,
+          2,
+          113,
+          1,
+          0,
+          2,
+          140,
+          15
+        ]
+      },
+      "header_delta_s": {
+        "count": 274,
+        "total": 98.001,
+        "min": 0.33099999999999596,
+        "max": 2.0009999999999994,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          272,
+          2
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 275,
+        "total": 193.8939999999999,
+        "min": -0.08899999999999864,
+        "max": 3.344000000000001,
+        "buckets": [
+          0,
+          0,
+          96,
+          53,
+          2,
+          2,
+          2,
+          31,
+          89
+        ]
+      }
+    },
+    "receive:/camera/image": {
+      "wall_s": {
+        "count": 302,
+        "total": 0.04466766705081682,
+        "min": 8.398199861403555e-05,
+        "max": 0.00023191400032374077,
+        "buckets": [
+          1,
+          301,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 302,
+        "total": 0.0440450899999959,
+        "min": 8.282100000001069e-05,
+        "max": 0.00022913499999965836,
+        "buckets": [
+          1,
+          301,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 301,
+        "total": 102.18849092399978,
+        "min": 0.3060038949988666,
+        "max": 0.38324614700104576,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          301,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 301,
+        "total": 100.333,
+        "min": 0.33099999999999596,
+        "max": 0.3360000000000003,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          301,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 302,
+        "total": -12.026999999999854,
+        "min": -0.09000000000000341,
+        "max": 0.011000000000002785,
+        "buckets": [
+          0,
+          0,
+          252,
+          50,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/uav/camera/image": {
+      "wall_s": {
+        "count": 299,
+        "total": 0.07168055097645265,
+        "min": 9.461500303586945e-05,
+        "max": 0.02912646299955668,
+        "buckets": [
+          2,
+          296,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 299,
+        "total": 0.0421053499999986,
+        "min": 9.315900000006483e-05,
+        "max": 0.00029020899999920857,
+        "buckets": [
+          3,
+          296,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 298,
+        "total": 102.19994466800199,
+        "min": 0.001999752999836346,
+        "max": 0.6963154880031652,
+        "buckets": [
+          0,
+          0,
+          3,
+          0,
+          1,
+          1,
+          0,
+          293,
+          0
+        ]
+      },
+      "header_delta_s": {
+        "count": 298,
+        "total": 100.333,
+        "min": 0.33099999999999596,
+        "max": 0.6679999999999993,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          298,
+          0
+        ]
+      },
+      "clock_minus_header_s": {
+        "count": 299,
+        "total": -5.525999999999929,
+        "min": -0.08899999999999864,
+        "max": 0.3440000000000012,
+        "buckets": [
+          0,
+          0,
+          198,
+          96,
+          0,
+          0,
+          3,
+          2,
+          0
+        ]
+      }
+    }
+  },
+  "slow_events": [
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 4.524134768002114,
+      "wall_s": 0.055359638998197624,
+      "cpu_s": 0.0005503549999998913
+    },
+    {
+      "key": "receive:/tf",
+      "header_stamp_s": null,
+      "entry_elapsed_perf_s": 4.5244371459994,
+      "clock_stamp_at_entry_s": 7.8,
+      "state_at_entry": "CALIBRATION_SETTLE",
+      "wall_s": 0.05497787800049991,
+      "cpu_s": 0.0001692550000000903
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 99.23097167400192,
+      "wall_s": 0.04730322799878195,
+      "cpu_s": 0.0007738420000009683
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 1.437948184000561,
+      "wall_s": 0.04063463100101217,
+      "cpu_s": 0.0007238939999999472
+    },
+    {
+      "key": "receive:/uav/odom",
+      "header_stamp_s": 4.78,
+      "entry_elapsed_perf_s": 1.43835384400154,
+      "clock_stamp_at_entry_s": 4.7,
+      "state_at_entry": "TURN_SETTLE",
+      "wall_s": 0.040163068999390816,
+      "cpu_s": 0.00027240299999997664
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 0.7432526760021574,
+      "wall_s": 0.03528900199671625,
+      "cpu_s": 0.001998814999999987
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 1.742878799999744,
+      "wall_s": 0.03519188200152712,
+      "cpu_s": 0.0008142340000000248
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 99.94467793299918,
+      "wall_s": 0.033942368001589784,
+      "cpu_s": 0.0007360129999991472
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 100.24837631600167,
+      "wall_s": 0.029808070998115,
+      "cpu_s": 0.0008413019999995441
+    },
+    {
+      "key": "spin_once",
+      "entry_elapsed_perf_s": 2.84866847900048,
+      "wall_s": 0.029707970999879763,
+      "cpu_s": 0.0004634079999999985
+    },
+    {
+      "key": "receive:/uav/camera/image",
+      "header_stamp_s": 101.757,
+      "entry_elapsed_perf_s": 100.2489912609999,
+      "clock_stamp_at_entry_s": 101.7,
+      "state_at_entry": "RECOGNIZE_WAIT",
+      "wall_s": 0.02912646299955668,
+      "cpu_s": 0.00015853400000054307
+    },
+    {
+      "key": "receive:/clock",
+      "header_stamp_s": null,
+      "entry_elapsed_perf_s": 99.24939990799976,
+      "clock_stamp_at_entry_s": 100.7,
+      "state_at_entry": "RECOGNIZE_WAIT",
+      "wall_s": 0.028802165001252433,
+      "cpu_s": 0.00016383899999894425
+    }
+  ],
+  "slow_events_dropped": 384,
+  "slow_event_retention": "Only 12 largest callback/spin durations >=20ms are retained; this is not a complete event timeline.",
+  "window_published_return_commands": {
+    "count": 89,
+    "nonzero_count": 0
+  },
+  "last_scan_promotion_trace": [
+    {
+      "scan_stamp_s": 100.904,
+      "scan_arrival_wall_elapsed_s": 99.31299029899674,
+      "latest_odom_stamp_at_scan_arrival_s": 100.9,
+      "prior_odom_stamp_s": 100.9,
+      "prior_odom_arrival_wall_elapsed_s": 99.30970877499931,
+      "scan_minus_odom_s": 0.003999999999990678,
+      "pairing_wall_elapsed_s": 99.31299029899674,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.003999999999990678
+    },
+    {
+      "scan_stamp_s": 101.004,
+      "scan_arrival_wall_elapsed_s": 99.41023395899902,
+      "latest_odom_stamp_at_scan_arrival_s": 101.0,
+      "prior_odom_stamp_s": 101.0,
+      "prior_odom_arrival_wall_elapsed_s": 99.40656900399699,
+      "scan_minus_odom_s": 0.0040000000000048885,
+      "pairing_wall_elapsed_s": 99.41023395899902,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.0040000000000048885
+    },
+    {
+      "scan_stamp_s": 101.154,
+      "scan_arrival_wall_elapsed_s": 99.56970654199904,
+      "latest_odom_stamp_at_scan_arrival_s": 101.14,
+      "prior_odom_stamp_s": 101.14,
+      "prior_odom_arrival_wall_elapsed_s": 99.55694714699712,
+      "scan_minus_odom_s": 0.013999999999995794,
+      "pairing_wall_elapsed_s": 99.56970654199904,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.054000000000002046
+    },
+    {
+      "scan_stamp_s": 101.254,
+      "scan_arrival_wall_elapsed_s": 99.6660957699969,
+      "latest_odom_stamp_at_scan_arrival_s": 101.24,
+      "prior_odom_stamp_s": 101.24,
+      "prior_odom_arrival_wall_elapsed_s": 99.65225604999796,
+      "scan_minus_odom_s": 0.014000000000010004,
+      "pairing_wall_elapsed_s": 99.6660957699969,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.054000000000002046
+    },
+    {
+      "scan_stamp_s": 101.404,
+      "scan_arrival_wall_elapsed_s": 99.81607470399831,
+      "latest_odom_stamp_at_scan_arrival_s": 101.4,
+      "prior_odom_stamp_s": 101.4,
+      "prior_odom_arrival_wall_elapsed_s": 99.81249944299998,
+      "scan_minus_odom_s": 0.003999999999990678,
+      "pairing_wall_elapsed_s": 99.81607470399831,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.003999999999990678
+    },
+    {
+      "scan_stamp_s": 101.504,
+      "scan_arrival_wall_elapsed_s": 99.93347624599846,
+      "latest_odom_stamp_at_scan_arrival_s": 101.5,
+      "prior_odom_stamp_s": 101.5,
+      "prior_odom_arrival_wall_elapsed_s": 99.93179114999657,
+      "scan_minus_odom_s": 0.0040000000000048885,
+      "pairing_wall_elapsed_s": 99.93347624599846,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.0040000000000048885
+    },
+    {
+      "scan_stamp_s": 101.654,
+      "scan_arrival_wall_elapsed_s": 100.07255285099745,
+      "latest_odom_stamp_at_scan_arrival_s": 101.64,
+      "prior_odom_stamp_s": 101.64,
+      "prior_odom_arrival_wall_elapsed_s": 100.05890780499976,
+      "scan_minus_odom_s": 0.013999999999995794,
+      "pairing_wall_elapsed_s": 100.07255285099745,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.054000000000002046
+    },
+    {
+      "scan_stamp_s": 101.754,
+      "scan_arrival_wall_elapsed_s": 100.17246958599935,
+      "latest_odom_stamp_at_scan_arrival_s": 101.74,
+      "prior_odom_stamp_s": 101.74,
+      "prior_odom_arrival_wall_elapsed_s": 100.15843248499732,
+      "scan_minus_odom_s": 0.014000000000010004,
+      "pairing_wall_elapsed_s": 100.17246958599935,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.054000000000002046
+    },
+    {
+      "scan_stamp_s": 101.904,
+      "scan_arrival_wall_elapsed_s": 100.33186052299789,
+      "latest_odom_stamp_at_scan_arrival_s": 101.9,
+      "prior_odom_stamp_s": 101.9,
+      "prior_odom_arrival_wall_elapsed_s": 100.32819183999891,
+      "scan_minus_odom_s": 0.003999999999990678,
+      "pairing_wall_elapsed_s": 100.33186052299789,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.003999999999990678
+    },
+    {
+      "scan_stamp_s": 102.004,
+      "scan_arrival_wall_elapsed_s": 100.42842863799888,
+      "latest_odom_stamp_at_scan_arrival_s": 102.0,
+      "prior_odom_stamp_s": 102.0,
+      "prior_odom_arrival_wall_elapsed_s": 100.42484893899746,
+      "scan_minus_odom_s": 0.0040000000000048885,
+      "pairing_wall_elapsed_s": 100.42842863799888,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.0040000000000048885
+    },
+    {
+      "scan_stamp_s": 102.158,
+      "scan_arrival_wall_elapsed_s": 100.58362704999672,
+      "latest_odom_stamp_at_scan_arrival_s": 102.14,
+      "prior_odom_stamp_s": 102.14,
+      "prior_odom_arrival_wall_elapsed_s": 100.5656208069995,
+      "scan_minus_odom_s": 0.018000000000000682,
+      "pairing_wall_elapsed_s": 100.58362704999672,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.058000000000006935
+    },
+    {
+      "scan_stamp_s": 102.258,
+      "scan_arrival_wall_elapsed_s": 100.68547269299961,
+      "latest_odom_stamp_at_scan_arrival_s": 102.24,
+      "prior_odom_stamp_s": 102.24,
+      "prior_odom_arrival_wall_elapsed_s": 100.66735877999963,
+      "scan_minus_odom_s": 0.018000000000000682,
+      "pairing_wall_elapsed_s": 100.68547269299961,
+      "late_prior": false,
+      "scan_original_wall_age_s": 0.0,
+      "clock_minus_scan_s": -0.057999999999992724
+    }
+  ],
+  "public_first_last_summary": {
+    "/clock": {
+      "first": {
+        "clock": {
+          "sec": 3,
+          "nanosec": 500000000
+        }
+      },
+      "last": {
+        "clock": {
+          "sec": 104,
+          "nanosec": 300000000
+        }
+      }
+    },
+    "/scan": {
+      "first": {
+        "header": {
+          "stamp": {
+            "sec": 3,
+            "nanosec": 500000000
+          },
+          "frame_id": "laser_link"
+        }
+      },
+      "last": {
+        "header": {
+          "stamp": {
+            "sec": 104,
+            "nanosec": 258000000
+          },
+          "frame_id": "laser_link"
+        }
+      }
+    },
+    "/uav/camera/camera_info": {
+      "first": {
+        "header": {
+          "stamp": {
+            "sec": 3,
+            "nanosec": 756000000
+          },
+          "frame_id": "uav/camera_link"
+        }
+      },
+      "last": {
+        "header": {
+          "stamp": {
+            "sec": 101,
+            "nanosec": 757000000
+          },
+          "frame_id": "uav/camera_link"
+        }
+      }
+    }
+  },
+  "graph_refresh_diagnostics": {
+    "interval_s": 0.5,
+    "refresh_count": 204,
+    "graph_query_count": 1224,
+    "graph_query_total_wall_s": 0.0665916409343481,
+    "graph_query_max_wall_s": 0.0002138030031346716,
+    "match_check_count": 4056
+  },
+  "supported_conclusions": [
+    "Direct STOP trigger was UAV image wall-age 0.530038s exceeding frozen 0.50s. clock-minus-image was also 0.543s, but wall age is checked first.",
+    "STOP did not coincide with a >=0.50s common outage of image/scan/ground odom/clock: at STOP the latter three were fresh (wall ages about 75.2ms/12.0ms/32.3ms).",
+    "Global callback-entry gap maxima were 69.2ms for ground/uav odom, 196.4ms for scan and 205.8ms for clock, inconsistent with a common half-second input blackout.",
+    "UAV image callback-entry gap max was 696.3ms and header delta max 668ms; at least one delivered-image interval exceeded the 500ms liveness allowance, but aggregate stats do not locate that maximum.",
+    "Three stationary captures exist, two distinct match results were accepted; neither recognition nor official String publish was recorded in current-point attempts.",
+    "Worker 1 finished 72.7ms before the recorded failing liveness check. No accepted third result is present; its dispatch, execution or completion is not established by this bundle.",
+    "The measured main tick/receive/spin durations show no >=0.50s callback/tick monopoly: max tick 8.0ms, max spin_once 55.4ms; perception matching ran in a separate worker process."
+  ],
+  "not_established": [
+    "Cannot split missing/new-image delay among source, public bridge, DDS delivery, executor take, transport backpressure or OS scheduling because pre-receive transport and DDS take latency were not instrumented.",
+    "Cannot prove worker CPU contention caused the image interval merely from temporal overlap; no process CPU/resource trace was returned.",
+    "Cannot reconstruct a complete per-input timeline inside the window: public_messages stores only first/last; callback spans store aggregates; slow_events retains only 12 largest durations.",
+    "Cannot infer source image publication count from the difference between the ground and UAV subscription counts.",
+    "Cannot infer official acceptance or score from local transport/callback evidence."
+  ]
+}

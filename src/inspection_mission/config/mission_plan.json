@@ -1,0 +1,86 @@
+{
+  "note": "ground_1 through ground_5 are unverified placeholders, not a confirmed official ID range. Replace them only from the official workspace or actual public draw IDs, together with measured coordinates; do not infer a subtract-one mapping. Measured external observation approaches, in-point poses, window geometry and home coordinates are still required. Null is intentional; no official coordinates are invented.",
+  "protocol": "inspection_v1",
+  "home_ground": null,
+  "home_uav": null,
+  "robot_radius_m": null,
+  "clearance_m": null,
+  "ground_points": [
+    {
+      "id": "ground_1",
+      "target_id": "*",
+      "pose": null,
+      "approach": null,
+      "via": []
+    },
+    {
+      "id": "ground_2",
+      "target_id": "*",
+      "pose": null,
+      "approach": null,
+      "via": []
+    },
+    {
+      "id": "ground_3",
+      "target_id": "*",
+      "pose": null,
+      "approach": null,
+      "via": []
+    },
+    {
+      "id": "ground_4",
+      "target_id": "*",
+      "pose": null,
+      "approach": null,
+      "via": []
+    },
+    {
+      "id": "ground_5",
+      "target_id": "*",
+      "pose": null,
+      "approach": null,
+      "via": []
+    }
+  ],
+  "aerial_points": [
+    {
+      "id": "a1",
+      "target_id": "*",
+      "pose": null,
+      "via": []
+    },
+    {
+      "id": "a2",
+      "target_id": "*",
+      "pose": null,
+      "via": []
+    }
+  ],
+  "windows": [
+    {
+      "id": "w1",
+      "target_id": "*",
+      "approach": null,
+      "exit": null,
+      "crossing_z": null,
+      "bottom": null,
+      "top": null,
+      "via": []
+    },
+    {
+      "id": "w2",
+      "target_id": "*",
+      "approach": null,
+      "exit": null,
+      "crossing_z": null,
+      "bottom": null,
+      "top": null,
+      "via": []
+    }
+  ],
+  "home_ground_via": [],
+  "home_uav_via": [],
+  "settings": {
+    "visual_servo_enabled": false
+  }
+}

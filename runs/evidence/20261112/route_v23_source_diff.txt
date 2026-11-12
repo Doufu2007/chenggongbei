@@ -1,0 +1,46 @@
+--- 
++++ 
+@@ -91,6 +91,7 @@
+         self.initial_slow_validated = False
+         self.calibration_verified = False
+         self.calibration_stop_path_m = None
++        self.leg_stop_path_m = None
+         self.speed_validation = {"status": "not_yet_measured",
+             "requested_tiers_mps": [min(.03, limits.linear_command_mps), limits.linear_command_mps]}
+ 
+@@ -141,6 +142,11 @@
+         if phase != "DRIVE" and not self.initial_slow_validated:
+             self.initial_slow_anchor = None
+         wall = max(self.last_wall, self.last_observation_wall)
++        if phase == "DRIVE_SETTLE" and self.phase != "DRIVE_SETTLE":
++            self.leg_stop_path_m = self.total_path_m
++            self.leg_records[-1]["stop_request"] = {"path_origin_m": self.total_path_m,
++                "path_increment_m": 0., "wall_s": wall, "odom_stamp_s": self.odom["stamp"],
++                "interpretation": "phase requested zero; local publish and actuator receipt not implied"}
+         old, new = self._phase_group(self.phase), self._phase_group(phase)
+         if old != new:
+             if self.phase_started_wall is not None:
+@@ -160,6 +166,11 @@
+         super().temporal_fault(reason, wall)
+ 
+     def observed_motion_fault(self):
++        if self.phase == "DRIVE_SETTLE" and self.leg_stop_path_m is not None:
++            increment = self.total_path_m-self.leg_stop_path_m
++            self.leg_records[-1]["stop_request"]["path_increment_m"] = increment
++            if increment > .01+1e-9:
++                return "route_drive_settle_path_limit"
+         fault = super().observed_motion_fault()
+         if fault:
+             return fault
+@@ -211,8 +222,9 @@
+         if self.leg_target_distance_m <= .02:
+             self.stop("route_leg_too_short_or_behind", wall)
+             return
+-        # End by actual projection, leaving <=.01m for measured settling.
+-        self.approach_limits = replace(self.approach_limits, target_distance_m=self.leg_target_distance_m-.01)
++        # Request zero 2mm early; independently bound all post-trigger path to 1cm.
++        self.approach_limits = replace(self.approach_limits, target_distance_m=self.leg_target_distance_m-.002)
++        self.leg_stop_path_m = None
+         self.drive_started_wall = wall
+         self.leg_records.append({"leg_index": self.leg_index, "origin": self.drive_origin,
+             "yaw_rad": self.drive_yaw, "waypoint_xy_m": self.leg_target_xy,

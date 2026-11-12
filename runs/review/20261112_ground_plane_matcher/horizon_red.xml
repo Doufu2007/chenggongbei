@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.295" timestamp="2026-11-12T04:37:40.783858+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="runs.review.20261112_ground_plane_matcher.horizon_regression" name="test_visible_front_part_cannot_approve_a_quad_crossing_the_camera_plane" time="0.370"><failure message="AssertionError: [{'accepted_candidate': True, 'inliers': 103, 'query_distinct_xy': 76, 'plane_area_m2': 0.2197476604721095, ...}]&#10;assert not [{'good_matches': 111, 'inliers': 103, 'inlier_fraction': 0.9279279279279279, 'template_distinct_xy': 76, ...}]">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-721/test_visible_front_part_cannot0')
+
+    def test_visible_front_part_cannot_approve_a_quad_crossing_the_camera_plane(tmp_path):
+        """Render only positive-depth ground rays; near edge of board is behind lens.
+    
+        Board rectangle X=[.30,.74], Y=[-.25,.25]m; camera X=.390m.
+        This uses independent ray inversion rather than the module's rectification.
+        """
+        cv2.setNumThreads(1)
+        pattern=texture()
+        K=np.array([[300.,0,400.],[0,300.,100.],[0,0,1.]])
+        v,u=np.indices((800,800),dtype=np.float64)
+        den=v-100
+        forward=np.full_like(den,100.)
+        np.divide(51.9,den,out=forward,where=den&gt;0)
+        forward+=.390
+        left=(400-u)*(forward-.390)/300
+        template_u=((.25-left)/.5*299).astype(np.float32)
+        template_v=((.74-forward)/.44*263).astype(np.float32)
+        image=cv2.remap(pattern,template_u,template_v,cv2.INTER_LINEAR,borderMode=cv2.BORDER_CONSTANT)
+        image[den&lt;=0]=0
+        path=save_template(tmp_path,pattern)
+        result=GroundPlaneMatcher([TemplateSpec(path,'synthetic','synthetic',{'source':'independent horizon stress'})]).match(image,K)
+&gt;       assert not result['candidates'], [
+            {key:row.get(key) for key in ['accepted_candidate','inliers','query_distinct_xy',
+                                        'plane_area_m2','source_quad_xy','body_plane_quad_forward_left_m']}
+            for row in result['candidates']]
+E       AssertionError: [{'accepted_candidate': True, 'inliers': 103, 'query_distinct_xy': 76, 'plane_area_m2': 0.2197476604721095, ...}]
+E       assert not [{'good_matches': 111, 'inliers': 103, 'inlier_fraction': 0.9279279279279279, 'template_distinct_xy': 76, ...}]
+
+runs\review\20261112_ground_plane_matcher\horizon_regression.py:35: AssertionError</failure></testcase></testsuite></testsuites>

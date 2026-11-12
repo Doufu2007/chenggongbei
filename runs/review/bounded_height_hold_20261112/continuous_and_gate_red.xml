@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.544" timestamp="2026-11-12T08:00:03.149212+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_height_hold" name="test_outside_hold_sample_cannot_be_hidden_by_a_good_replacement_before_tick" time="0.039"><failure message="assert (not True)&#10; +  where True = &lt;inspection_mission.bounded_height_hold.HeightHoldGuard object at 0x000001D2A9AAE660&gt;.hold_verified">def test_outside_hold_sample_cannot_be_hidden_by_a_good_replacement_before_tick():
+        g = guard(); enter_hold(g); feed_steps(g, 1.4, 3.0)
+        update(g, 3.05, z=.161)
+        update(g, 3.1, z=.155)
+        step(g, 3.1)
+        feed_steps(g, 3.2, 4.3)
+&gt;       assert not g.hold_verified and g.phase == "HOLD_010"
+E       assert (not True)
+E        +  where True = &lt;inspection_mission.bounded_height_hold.HeightHoldGuard object at 0x000001D2A9AAE660&gt;.hold_verified
+
+tests\test_bounded_height_hold.py:94: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_descent_gate_cannot_send_a_first_nonzero_below_the_near_support_cutoff" time="0.026"><failure message="AssertionError: assert 0.02595 == 0.0&#10; +  where 0.02595 = VerticalDecision(linear_z=0.02595, state='ASCEND', reason='bounded_local_height_feedback').linear_z&#10; +    where VerticalDecision(linear_z=0.02595, state='ASCEND', reason='bounded_local_height_feedback') = step(&lt;inspection_mission.bounded_height_hold.HeightHoldGuard object at 0x000001D2A9E0CF50&gt;, 4.4)">def test_descent_gate_cannot_send_a_first_nonzero_below_the_near_support_cutoff():
+        g = guard(); enter_hold(g); feed_steps(g, 1.4, 4.3)
+        update(g, 4.4, z=.079, vz=-.01)
+&gt;       assert step(g, 4.4).linear_z == 0.
+E       AssertionError: assert 0.02595 == 0.0
+E        +  where 0.02595 = VerticalDecision(linear_z=0.02595, state='ASCEND', reason='bounded_local_height_feedback').linear_z
+E        +    where VerticalDecision(linear_z=0.02595, state='ASCEND', reason='bounded_local_height_feedback') = step(&lt;inspection_mission.bounded_height_hold.HeightHoldGuard object at 0x000001D2A9E0CF50&gt;, 4.4)
+
+tests\test_bounded_height_hold.py:101: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_id": "69f58da5-1669-4433-a15b-3adb4e3f2392",
+  "kind": "full_inspection_practice_candidate",
+  "evaluation_mode": "practice",
+  "variant": "v42_launcher_only",
+  "status": "submitted",
+  "submitted_at": "2026-11-12T04:37:55.969Z",
+  "runId": "",
+  "runtime_started": null,
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist\\inspection_full_mission_v41_src.zip",
+    "bytes": 13378153,
+    "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d"
+  },
+  "script": {
+    "path": "dist\\run_full_mission_v42.sh",
+    "bytes": 5011,
+    "sha256": "7299ec1761e61737e7af545e401a2c01d0da515636d6d01f795ffa96b9729617"
+  },
+  "scores": {
+    "total": null,
+    "extraction_status": "pending"
+  },
+  "evidence_paths": [
+    "runs/evidence/20261112/full_v42_submission.json",
+    "runs/evidence/20261112/full_v42_detail_latest.json",
+    "runs/evidence/20261112/callback_full_inspection_v42.jsonl",
+    "runs/evidence/20261112/delivery_full_inspection_v42.jsonl",
+    "runs/evidence/20261112/full_v42_callback_health.json",
+    "runs/review/full_v42_final_combined_20261112.xml"
+  ],
+  "notes": "Official server still down, automatic resubmission pending, no runId/startup/score. Reverse SSH callback tunnel later exited with Connection reset; historical GET405 was valid only at its timestamp. No absent callback may be used to infer startup or algorithm failure.",
+  "last_checked_at": "2026-11-12T04:48:57.418336+00:00",
+  "durationMs": 0,
+  "serverStatus": "down",
+  "serverDown": true,
+  "pendingResubmit": true,
+  "callback_channel_currently_available": false
+}

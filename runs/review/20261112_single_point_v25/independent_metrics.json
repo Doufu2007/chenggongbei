@@ -1,0 +1,895 @@
+{
+  "raw": {
+    "path": "runs/evidence/20261112/callback_single_point_v25.jsonl",
+    "bytes": 885764,
+    "sha256": "042ebd40a121aa8f6c54b55afb720b29d8d0076d1f567ee02e54aa5f0a62610a"
+  },
+  "analysis": {
+    "path": "runs/analysis/20261112_single_point_v25_independent/summary.json",
+    "bytes": 5018160,
+    "sha256": "0c0cfe2e0599c31725b7100930447d046acc61a01355376d8b3c2441cf18ab11"
+  },
+  "official_list": {
+    "path": "runs/evidence/20261112/single_point_v25_list_final.json",
+    "bytes": 44290,
+    "sha256": "aec2b4a23c9ac3691eff834e6db970a26e9ddab4fd6b2828e836ce53b3a0678d"
+  },
+  "official_screenshot": {
+    "path": "runs/evidence/20261112/single_point_v25_official_success.png",
+    "bytes": 51064,
+    "sha256": "6e90188878b5893ccead06147097b4178044e79fcd0b823e192f688e7ac45e14"
+  },
+  "official_result": {
+    "record_id": "c4202874-407a-4361-844a-0f95ba7b1d7f",
+    "runId": "run_20261112_060713_501f412f",
+    "submissionNo": "#86630201",
+    "status": "success",
+    "total": 10.0,
+    "duration_s": 275.179,
+    "ground_0_score": 10.0,
+    "item_evidence": "independently viewed official screenshot: ground_0 到达并计分 +10"
+  },
+  "parser_status": "partial",
+  "parser_missing_snapshot_fields": [
+    "image_records",
+    "motion_log",
+    "tf_edges"
+  ],
+  "parser_full_snapshot_count": 0,
+  "parser_score_remains_null": true,
+  "series": {
+    "trajectory_10hz": {
+      "rows": 1904,
+      "complete": true
+    },
+    "actual_commands": {
+      "rows": 4316,
+      "complete": true
+    }
+  },
+  "draw": [
+    "ground_0",
+    "ground_3",
+    "ground_2"
+  ],
+  "captures_and_match_jobs": [
+    {
+      "job_seq": 0,
+      "phase": "capture_0",
+      "image_stamp_s": 92.122,
+      "prior_odom_stamp_s": 92.12,
+      "image_minus_prior_s": 0.001999999999995339,
+      "source_jpeg": {
+        "path": "runs/analysis/20261112_single_point_v25_independent/native_L000028_d137503246f05f0d.jpg",
+        "bytes": 45436,
+        "sha256": "d137503246f05f0d5271f84c4d4653fc026b0ec06a5967ba2f6102d286a24d7c"
+      },
+      "source_ros_sha256_observed": "cea8517015c802b5a204ce39b9422926a41bcd4cdfdb62563c17fcd258fe2139",
+      "raw_ros_hash_independent_recompute": "unavailable_original_raw_ros_bytes_not_transported",
+      "camera_info_stamp_s": 92.122,
+      "camera_info": {
+        "header": {
+          "stamp": {
+            "sec": 92,
+            "nanosec": 122000000
+          },
+          "frame_id": "uav/camera_link"
+        },
+        "height": 800,
+        "width": 800,
+        "distortion_model": "plumb_bob",
+        "d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "k": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "r": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "p": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          -33.36921585209936,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "binning_x": 0,
+        "binning_y": 0,
+        "roi": {
+          "x_offset": 0,
+          "y_offset": 0,
+          "height": 0,
+          "width": 0,
+          "do_rectify": false
+        }
+      },
+      "K": [
+        [
+          476.7030836014194,
+          0.0,
+          400.5
+        ],
+        [
+          0.0,
+          476.7030836014194,
+          400.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": {
+        "stamp_s": 92.12,
+        "wall_elapsed_s": 90.40586916499888,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.5891224364342149,
+          -0.4509217404939968,
+          0.05500013789270021
+        ],
+        "quaternion": [
+          -9.380662347270186e-08,
+          1.2012997457378376e-07,
+          -0.5069844101949835,
+          0.8619552237902045
+        ],
+        "yaw_rad": -1.0633652605987032,
+        "linear_speed": 1.2373833339029577e-05,
+        "angular_speed": 0.0,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.001999999999995339
+      },
+      "source_ros_encoding": "rgb8",
+      "source_ros_stride": 2400,
+      "source_jpeg_derivation": "original ROS pixels, JPEG quality 75, no resize",
+      "class_id": "trapped_people",
+      "template_sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "world_center_xy_m": [
+        1.1178879485878204,
+        -1.360063522863225
+      ],
+      "candidate_center_error_m": 0.012322977225822339,
+      "worker": {
+        "worker_pid": 628,
+        "worker_started_utc": "2026-11-11T22:09:02.385030+00:00",
+        "worker_finished_utc": "2026-11-11T22:09:03.751464+00:00",
+        "worker_started_monotonic_s": 22828.191224128,
+        "worker_finished_monotonic_s": 22829.557663308,
+        "template_load_ms": 4486.688953998964,
+        "decode_ms": 3.265469000325538,
+        "match_ms": 1363.1718680007907
+      }
+    },
+    {
+      "job_seq": 1,
+      "phase": "capture_1",
+      "image_stamp_s": 92.457,
+      "prior_odom_stamp_s": 92.44,
+      "image_minus_prior_s": 0.016999999999995907,
+      "source_jpeg": {
+        "path": "runs/analysis/20261112_single_point_v25_independent/native_L000030_aafd594934f4cf62.jpg",
+        "bytes": 45444,
+        "sha256": "aafd594934f4cf6280bb77b01354d84468d967c5c4f784309246faf69f0a84f4"
+      },
+      "source_ros_sha256_observed": "d92a1b97cc78e7aac7719746d6027fbbac25c3dc3e9b5de3d6e7154625c5c21c",
+      "raw_ros_hash_independent_recompute": "unavailable_original_raw_ros_bytes_not_transported",
+      "camera_info_stamp_s": 92.122,
+      "camera_info": {
+        "header": {
+          "stamp": {
+            "sec": 92,
+            "nanosec": 122000000
+          },
+          "frame_id": "uav/camera_link"
+        },
+        "height": 800,
+        "width": 800,
+        "distortion_model": "plumb_bob",
+        "d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "k": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "r": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "p": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          -33.36921585209936,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "binning_x": 0,
+        "binning_y": 0,
+        "roi": {
+          "x_offset": 0,
+          "y_offset": 0,
+          "height": 0,
+          "width": 0,
+          "do_rectify": false
+        }
+      },
+      "K": [
+        [
+          476.7030836014194,
+          0.0,
+          400.5
+        ],
+        [
+          0.0,
+          476.7030836014194,
+          400.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": {
+        "stamp_s": 92.44,
+        "wall_elapsed_s": 90.72974787000203,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.5891242706026802,
+          -0.45092531559520477,
+          0.05500009457114074
+        ],
+        "quaternion": [
+          -7.156100330379833e-08,
+          7.345427416564157e-08,
+          -0.5069843923491985,
+          0.8619552342867369
+        ],
+        "yaw_rad": -1.0633652191910006,
+        "linear_speed": 1.2727552301787578e-05,
+        "angular_speed": 2.797794773634621e-07,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.016999999999995907
+      },
+      "source_ros_encoding": "rgb8",
+      "source_ros_stride": 2400,
+      "source_jpeg_derivation": "original ROS pixels, JPEG quality 75, no resize",
+      "class_id": "trapped_people",
+      "template_sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "world_center_xy_m": [
+        1.1175949845423956,
+        -1.3599665617011487
+      ],
+      "candidate_center_error_m": 0.012416384581276583,
+      "worker": {
+        "worker_pid": 628,
+        "worker_started_utc": "2026-11-11T22:09:03.859493+00:00",
+        "worker_finished_utc": "2026-11-11T22:09:05.166628+00:00",
+        "worker_started_monotonic_s": 22829.665692343,
+        "worker_finished_monotonic_s": 22830.972827679,
+        "template_load_ms": 4486.688953998964,
+        "decode_ms": 3.1904240022413433,
+        "match_ms": 1303.943041999446
+      }
+    },
+    {
+      "job_seq": 2,
+      "phase": "capture_2",
+      "image_stamp_s": 92.79,
+      "prior_odom_stamp_s": 92.78,
+      "image_minus_prior_s": 0.010000000000005116,
+      "source_jpeg": {
+        "path": "runs/analysis/20261112_single_point_v25_independent/native_L000032_ea4a5782000bee0c.jpg",
+        "bytes": 45404,
+        "sha256": "ea4a5782000bee0ca4ae85227a16750dd4d0e8c91443d30483c20d6ed55a52e4"
+      },
+      "source_ros_sha256_observed": "f4a8b26ad93336390b3abc5729fa6ac22a530355f7a0c65b92363e24b674130e",
+      "raw_ros_hash_independent_recompute": "unavailable_original_raw_ros_bytes_not_transported",
+      "camera_info_stamp_s": 92.457,
+      "camera_info": {
+        "header": {
+          "stamp": {
+            "sec": 92,
+            "nanosec": 457000000
+          },
+          "frame_id": "uav/camera_link"
+        },
+        "height": 800,
+        "width": 800,
+        "distortion_model": "plumb_bob",
+        "d": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "k": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "r": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "p": [
+          476.7030836014194,
+          0.0,
+          400.5,
+          -33.36921585209936,
+          0.0,
+          476.7030836014194,
+          400.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        "binning_x": 0,
+        "binning_y": 0,
+        "roi": {
+          "x_offset": 0,
+          "y_offset": 0,
+          "height": 0,
+          "width": 0,
+          "do_rectify": false
+        }
+      },
+      "K": [
+        [
+          476.7030836014194,
+          0.0,
+          400.5
+        ],
+        [
+          0.0,
+          476.7030836014194,
+          400.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose": {
+        "stamp_s": 92.78,
+        "wall_elapsed_s": 91.0794338199994,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.589126354272978,
+          -0.45092917434126695,
+          0.055000073171164204
+        ],
+        "quaternion": [
+          -5.637002774124822e-08,
+          5.0867273567791476e-08,
+          -0.5069843845907486,
+          0.8619552388501007
+        ],
+        "yaw_rad": -1.0633652011890162,
+        "linear_speed": 1.3027583704890902e-05,
+        "angular_speed": 3.296722894674531e-08,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.010000000000005116
+      },
+      "source_ros_encoding": "rgb8",
+      "source_ros_stride": 2400,
+      "source_jpeg_derivation": "original ROS pixels, JPEG quality 75, no resize",
+      "class_id": "trapped_people",
+      "template_sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "world_center_xy_m": [
+        1.1178707642640375,
+        -1.3599455793021027
+      ],
+      "candidate_center_error_m": 0.012236852121086371,
+      "worker": {
+        "worker_pid": 628,
+        "worker_started_utc": "2026-11-11T22:09:05.254125+00:00",
+        "worker_finished_utc": "2026-11-11T22:09:06.591686+00:00",
+        "worker_started_monotonic_s": 22831.060324225,
+        "worker_finished_monotonic_s": 22832.397883558,
+        "template_load_ms": 4486.688953998964,
+        "decode_ms": 3.2215380015259143,
+        "match_ms": 1334.335949999513
+      }
+    }
+  ],
+  "maximum_matched_center_disagreement_m": 0.0003085926098642512,
+  "attempts": {
+    "recognition": {
+      "topic": "/inspection/detections",
+      "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+      "attempted": true,
+      "sent": true,
+      "wall_s": 22832.417980345,
+      "clock_stamp_s": 97.0,
+      "odom_stamp_s": 97.0,
+      "position": [
+        0.5891534530642354,
+        -0.45097739991748864,
+        0.05500009683613801
+      ],
+      "first_id": "ground_0",
+      "stationary_epoch": 1,
+      "official_acceptance": false,
+      "interpretation": "local_transport_attempt_not_referee_ack"
+    },
+    "declaration": {
+      "topic": "/referee/current_target",
+      "data": "ground_0",
+      "attempted": true,
+      "sent": true,
+      "wall_s": 22928.235750508,
+      "clock_stamp_s": 191.1,
+      "odom_stamp_s": 191.18,
+      "position": [
+        1.1131353338396572,
+        -1.3556102279130982,
+        0.05500020098514724
+      ],
+      "first_id": "ground_0",
+      "stationary_epoch": 1,
+      "official_acceptance": false,
+      "interpretation": "local_transport_attempt_not_referee_ack"
+    }
+  },
+  "recognition_status_original": [
+    {
+      "data": "ground_0",
+      "wall_s": 22832.419199801,
+      "original_utf8_bytes": 8,
+      "data_truncated": false,
+      "original_sha256": "5077ddc08c18ad7782ee77f0ff4b30c4a3b1cf74bf1292c084ddbe245293d568",
+      "clock_stamp_s": 97.0,
+      "phase": "REPORT_WAIT",
+      "acceptance_semantics": "unknown_string_not_parsed_as_ack"
+    }
+  ],
+  "feedback_after_recognition_publish_record_s": 0.0012194560003990773,
+  "declaration_after_recognition_publish_record_s": 95.81777016300111,
+  "body_fully_inside_source_claim": "not_claimed_center_entry_only",
+  "route_legs": [
+    {
+      "leg_index": 0,
+      "origin": [
+        5.815150224113392e-05,
+        1.5947237259332714e-06,
+        0.05500025349992163
+      ],
+      "yaw_rad": -1.3326067741532196e-05,
+      "waypoint_xy_m": [
+        0.6,
+        0.0
+      ],
+      "target_projection_m": 0.5999418484657403,
+      "started_wall_s": 22739.305177475,
+      "stop_request": {
+        "path_origin_m": 0.5983214839029558,
+        "path_increment_m": 0.0005814381252923218,
+        "wall_s": 22752.103360543,
+        "odom_stamp_s": 18.02,
+        "interpretation": "phase requested zero; local publish and actuator receipt not implied"
+      },
+      "ended_wall_s": 22753.178871026,
+      "final_position": [
+        0.5989125923471328,
+        5.553741522038419e-05,
+        0.05500013488214488
+      ],
+      "waypoint_error_m": 0.0010888249666514316
+    },
+    {
+      "leg_index": 1,
+      "origin": [
+        0.5939900731504946,
+        -0.005980299322457738,
+        0.05500015957573664
+      ],
+      "yaw_rad": -1.568380168240153,
+      "waypoint_xy_m": [
+        0.6,
+        -0.45
+      ],
+      "target_projection_m": 0.4440329255461907,
+      "started_wall_s": 22782.866238261,
+      "stop_request": {
+        "path_origin_m": 1.0547247811594895,
+        "path_increment_m": 5.928116824560625e-05,
+        "wall_s": 22808.183480676,
+        "odom_stamp_s": 73.26,
+        "interpretation": "phase requested zero; local publish and actuator receipt not implied"
+      },
+      "ended_wall_s": 22809.246150311,
+      "final_position": [
+        0.5946416331057175,
+        -0.44816979788518474,
+        0.055000111869604594
+      ],
+      "waypoint_error_m": 0.005662308323892016
+    },
+    {
+      "leg_index": 0,
+      "origin": [
+        0.5869374923388976,
+        -0.45403003296703254,
+        0.05500013575238903
+      ],
+      "yaw_rad": -1.5587389620996932,
+      "waypoint_xy_m": [
+        0.6,
+        -1.35
+      ],
+      "target_projection_m": 0.8960623353481669,
+      "started_wall_s": 22848.446923743,
+      "stop_request": {
+        "path_origin_m": 1.9646139263775013,
+        "path_increment_m": 0.0005831660750210688,
+        "wall_s": 22864.61454791,
+        "odom_stamp_s": 128.68,
+        "interpretation": "phase requested zero; local publish and actuator receipt not implied"
+      },
+      "ended_wall_s": 22865.700761187,
+      "final_position": [
+        0.5878737357788681,
+        -1.3497035962978938,
+        0.05500016526028652
+      ],
+      "waypoint_error_m": 0.012129886195481157
+    },
+    {
+      "leg_index": 1,
+      "origin": [
+        0.5824058043263852,
+        -1.3548919628604619,
+        0.05500009679614881
+      ],
+      "yaw_rad": -0.000562301086069005,
+      "waypoint_xy_m": [
+        1.115,
+        -1.35
+      ],
+      "target_projection_m": 0.5325913607192473,
+      "started_wall_s": 22895.385031987,
+      "stop_request": {
+        "path_origin_m": 2.509235521698422,
+        "path_increment_m": 0.00012093691799153206,
+        "wall_s": 22927.125196538,
+        "odom_stamp_s": 190.1,
+        "interpretation": "phase requested zero; local publish and actuator receipt not implied"
+      },
+      "ended_wall_s": 22928.235510092,
+      "final_position": [
+        1.1131353338396572,
+        -1.3556102279130982,
+        0.05500020098514724
+      ],
+      "waypoint_error_m": 0.005911990961294854
+    }
+  ],
+  "final_path_m": 2.50953829598953,
+  "path_budget_m": 2.7649580051863785,
+  "final_rotation_rad": 4.070505806465582,
+  "rotation_budget_rad": 4.597735802426132,
+  "turn_elapsed_wall_s": 93.36465010799293,
+  "drive_elapsed_wall_s": 90.35792115000368,
+  "resume_count": 1,
+  "guard_elapsed_s": 195.336,
+  "guard_state": "FINISHED",
+  "guard_reason": "single_point_transport_complete_official_score_unverified",
+  "guard_errors": [],
+  "declaration_position": [
+    1.1131353338396572,
+    -1.3556102279130982,
+    0.05500020098514724
+  ],
+  "declaration_to_candidate_center_m": 0.01312421275099148,
+  "final_odom": {
+    "header": {
+      "stamp": {
+        "sec": 195,
+        "nanosec": 160000000
+      },
+      "frame_id": "odom"
+    },
+    "child_frame_id": "base_footprint",
+    "pose": {
+      "pose": {
+        "position": {
+          "x": 1.1133084128640445,
+          "y": -1.3556153652460226,
+          "z": 0.05500013713398693
+        },
+        "orientation": {
+          "x": -3.921650100052256e-08,
+          "y": 8.00932052289332e-08,
+          "z": -0.013047206240430908,
+          "w": 0.9999148815820833
+        }
+      },
+      "covariance": [
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01
+      ]
+    },
+    "twist": {
+      "twist": {
+        "linear": {
+          "x": 9.39275255201461e-06,
+          "y": -5.743678086781338e-07,
+          "z": 0.0
+        },
+        "angular": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 3.1814409943292654e-07
+        }
+      },
+      "covariance": [
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01
+      ]
+    }
+  },
+  "last_trajectory": {
+    "wall_elapsed_s": 195.286523,
+    "stamp_s": 195.12,
+    "x": 1.113308,
+    "y": -1.3556153,
+    "z": 0.0550001,
+    "qx": -0.0,
+    "qy": 1e-07,
+    "qz": -0.0130472,
+    "qw": 0.9999149,
+    "yaw_rad": -0.0260952,
+    "linear_speed": 9.4e-06,
+    "angular_speed": 3e-07
+  },
+  "last_command": {
+    "wall_elapsed_s": 195.348622,
+    "clock_stamp_s": 195.1,
+    "linear_x": 0.0,
+    "angular_z": 0.0,
+    "state": "FINISHED"
+  },
+  "command_endpoints": {
+    "/cmd_vel": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "geometry_msgs/msg/Twist",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "geometry_msgs/msg/Twist",
+      "silent": false
+    },
+    "/uav/cmd_vel": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "geometry_msgs/msg/Twist",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "geometry_msgs/msg/Twist",
+      "silent": true
+    },
+    "/referee/current_target": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": false,
+      "publication_policy": "one_attempt_after_current_visual_and_physical_gate",
+      "actual_publish_attempt_count": 1,
+      "actual_publish_return_count": 1,
+      "interpretation": "enabled_policy_not_evidence_of_referee_acceptance"
+    },
+    "/inspection/detections": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": false,
+      "publication_policy": "one_attempt_after_current_visual_and_physical_gate",
+      "actual_publish_attempt_count": 1,
+      "actual_publish_return_count": 1,
+      "interpretation": "enabled_policy_not_evidence_of_referee_acceptance"
+    },
+    "/referee/cruise_event": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": true
+    },
+    "/uav/laser_fire": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_19",
+          "type": "std_msgs/msg/Bool",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/Bool",
+      "silent": true
+    }
+  },
+  "official_full_mission_completed": false,
+  "settlement_conclusion": "this finite first-point run settled successfully without a full-mission completion publish; no universal exit guarantee"
+}

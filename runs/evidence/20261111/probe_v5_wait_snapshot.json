@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-11T23:06:43.727285+08:00",
+  "runId": "run_20261111_222348_ef5c04b0",
+  "evaluation_id": "a1485e1e-27a0-45b0-bd2f-d3c313fdef6a",
+  "status": "queued",
+  "serverStatus": "up",
+  "score": null,
+  "callback_bytes": 0,
+  "source": "probe_v5_detail_latest.json",
+  "full_mission_completed": null
+}

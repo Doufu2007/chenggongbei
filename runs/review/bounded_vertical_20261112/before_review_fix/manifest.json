@@ -1,0 +1,35 @@
+{
+  "kind": "bounded_vertical_response_local_implementation",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "new_tests_passed": 29,
+  "affected_and_receiver_passed": 97,
+  "telemetry_passed": 4,
+  "frozen_ground_sources_unchanged": {
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "bytes": 32426,
+      "sha256": "d6d002d2a9a0bfe8e4962ef7b49323327460ea85459f946c37e789ef74016869"
+    },
+    {
+      "path": "scripts/run_bounded_vertical_response.sh",
+      "bytes": 2763,
+      "sha256": "e161324e54bd411e6d14e0051c28bb1d4f4a8454270d63fb64cd4adf262e3baf"
+    },
+    {
+      "path": "tests/test_bounded_vertical_response.py",
+      "bytes": 14424,
+      "sha256": "ec807c8e780afda925583185ca85fda9887dc81ba3b8436c2ac4d07778a3b419"
+    },
+    {
+      "path": "docs/bounded_vertical_runtime_20261112.md",
+      "bytes": 5716,
+      "sha256": "b9284d046d80069a1e922539b2f74684ee33fe2b0f7bdadb2e0514a237472293"
+    }
+  ]
+}

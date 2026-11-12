@@ -1,0 +1,10 @@
+{
+  "source_sha256": "d6d002d2a9a0bfe8e4962ef7b49323327460ea85459f946c37e789ef74016869",
+  "quaternion_norm": 1.0009,
+  "normalized_angular_error_rad": 0.04,
+  "comparison_threshold_rad": 0.005,
+  "accepted": true,
+  "output_z_mps": 0.05,
+  "reason": "bounded_positive_z_response",
+  "platform_run": false
+}

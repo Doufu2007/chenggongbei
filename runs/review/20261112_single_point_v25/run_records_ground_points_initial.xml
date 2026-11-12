@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="11" skipped="0" tests="11" time="0.601" timestamp="2026-11-12T06:21:32.964744+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_run_records" name="test_optional_physical_ground_ids_preserve_ground_zero_without_relabelling_or_double_count" time="0.015"><failure message="ValueError: scores: expected fields items, manual, total">def test_optional_physical_ground_ids_preserve_ground_zero_without_relabelling_or_double_count():
+        record = scored_record(total=10, full_mission_completed=False)
+        record['scores']['items']['ground_1'] = 10
+        physical = {'ground_0':10,'ground_1':None,'ground_2':None,'ground_3':None,'ground_4':None}
+        record['scores']['ground_points'] = copy.deepcopy(physical)
+&gt;       checked = api().validate_record(record)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_run_records.py:177: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tools\run_records.py:102: in validate_record
+    _keys(scores, {"items", "total", "manual"}, "scores")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = {'items': {'ground_1': 10, 'ground_2': None, 'ground_3': None, 'window_1': None, ...}, 'total': 10, 'manual': None, 'ground_points': {'ground_0': 10, 'ground_1': None, 'ground_2': None, 'ground_3': None, ...}}
+required = {'items', 'manual', 'total'}, label = 'scores'
+
+    def _keys(value, required, label):
+        if not isinstance(value, dict) or set(value) != set(required):
+&gt;           raise ValueError(f"{label}: expected fields {', '.join(sorted(required))}")
+E           ValueError: scores: expected fields items, manual, total
+
+tools\run_records.py:37: ValueError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical0]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_5': 10}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical1]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_zero': 10}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical2]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = []
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[None]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = None
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical4]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_0': 10.01}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical5]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_0': -1}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical6]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_0': True}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical7]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_0': nan}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_ids_reject_unknown_point_and_invalid_score[physical8]" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.ground_points'&#10;  Actual message: 'scores: expected fields items, manual, total'">physical = {'ground_0': inf}
+
+    @pytest.mark.parametrize('physical',[
+        {'ground_5':10},{'ground_zero':10},[],None,{'ground_0':10.01},
+        {'ground_0':-1},{'ground_0':True},{'ground_0':float('nan')},{'ground_0':float('inf')},
+    ])
+    def test_physical_ground_ids_reject_unknown_point_and_invalid_score(physical):
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = physical
+&gt;       with pytest.raises(ValueError,match='scores.ground_points'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.ground_points'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:192: AssertionError</failure></testcase><testcase classname="tests.test_run_records" name="test_physical_ground_breakdown_neither_invents_total_nor_contradicts_known_total" time="0.001"><failure message="AssertionError: Regex pattern did not match.&#10;  Expected regex: 'scores.total'&#10;  Actual message: 'scores: expected fields items, manual, total'">def test_physical_ground_breakdown_neither_invents_total_nor_contradicts_known_total():
+        record = scored_record(total=10)
+        record['scores']['ground_points'] = {'ground_0':10,'ground_4':10}
+&gt;       with pytest.raises(ValueError,match='scores.total'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'scores.total'
+E         Actual message: 'scores: expected fields items, manual, total'
+
+tests\test_run_records.py:199: AssertionError</failure></testcase></testsuite></testsuites>

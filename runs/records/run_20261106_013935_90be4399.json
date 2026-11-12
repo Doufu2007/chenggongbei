@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_id": "history-run_20261106_013935_90be4399",
+  "runId": "run_20261106_013935_90be4399",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": null,
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": null,
+    "sha256": null
+  },
+  "script": {
+    "path": null,
+    "sha256": null
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 41.156,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261111/evaluation_history.json"
+  ]
+}

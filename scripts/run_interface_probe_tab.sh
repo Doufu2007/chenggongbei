@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Diagnostic only: follow the official competition-tab launch format.
+gnome-terminal --tab --title=competition --command="bash -lc \"set +u; source /opt/ros/humble/setup.bash; if [ -f install/setup.bash ]; then source install/setup.bash; elif [ -f ../install/setup.bash ]; then source ../install/setup.bash; fi; export PYTHONUNBUFFERED=1; echo INTERFACE_PROBE_TAB_STARTED; ros2 run inspection_mission interface_probe --duration 30; exec bash\""

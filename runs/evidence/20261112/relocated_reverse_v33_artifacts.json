@@ -1,0 +1,23 @@
+{
+  "version": "relocated_reverse_v33",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "base_sha256": "22a1dc284ede916d3579ae74bcd4701acc1ae4d83e43a135cc898de8ddd33330",
+  "reviewed_source_sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a",
+  "reviewed_launcher_sha256": "b9305b0771d4be3645237ed9f1daf4d868e90ba52a737070fc3c1762f667256a",
+  "artifacts": [
+    {
+      "path": "dist/inspection_relocated_reverse_v33_src.zip",
+      "bytes": 9585670,
+      "sha256": "e83e9e0513ba591eb4779106c246567a6b35eafe7579ebcb5467882a2929db61"
+    },
+    {
+      "path": "dist/run_relocated_reverse_v33.sh",
+      "bytes": 2906,
+      "sha256": "bc72a2d528c4c2e11532515c29bf4011129db3f54c9b4c92690a98b03133733d"
+    }
+  ]
+}

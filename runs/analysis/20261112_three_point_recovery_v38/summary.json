@@ -1,0 +1,79 @@
+{
+  "schema": "ground_three_point_analysis_v1",
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\evidence\\20261112\\callback_three_point_recovery_v38.jsonl",
+  "raw_sha256": "ba8cc75e76b677ba5ef4e11861c2bc9af2c9b0033f1a08dc718b280cb1060854",
+  "raw_bytes": 561581,
+  "transport_complete": true,
+  "official_score": null,
+  "full_mission_complete": false,
+  "errors": [],
+  "core_observations": [
+    {
+      "line": 4,
+      "data": {
+        "mode": "ground_three_point_recovery_budget",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "a9ae0375a2e243a8b34f817899a482c5",
+        "section": "three_point_core",
+        "state": "FINISHED",
+        "reason": "single_point_visual_binding_rejected",
+        "mission_draw": [
+          "ground_3",
+          "ground_2",
+          "ground_0"
+        ],
+        "point_index": 0,
+        "target_id": "ground_3",
+        "global_origin": [
+          4.4478237348478386e-05,
+          7.995200429107949e-06,
+          0.05500006661363205
+        ],
+        "total_path_m": 1.6396584390362612,
+        "accumulated_rotation_rad": 2.0723423647977346,
+        "completed_count": 0,
+        "full_mission_complete": false,
+        "frozen_limits": {
+          "target_distance_m": 0.2,
+          "global_wall_s": 1200.0,
+          "max_path_m": 12.5,
+          "max_origin_displacement_m": 3.0,
+          "max_rotation_rad": 28.0,
+          "local_swept_motion_budget_m": 0.06,
+          "scan_anchor_motion_limit_m": 0.03,
+          "local_stop_reserve_m": 0.03,
+          "linear_command_mps": 0.1,
+          "minimum_yaw_rate": 0.35,
+          "maximum_yaw_rate": 0.5,
+          "max_heading_error_rad": 0.05,
+          "max_reverse_m": 0.005,
+          "max_cross_track_m": 0.02,
+          "max_turn_drift_m": 0.06,
+          "wait_wall_s": 5.0,
+          "turn_wall_s": 45.0,
+          "turn_total_wall_s": 700.0,
+          "drive_wall_s": 500.0,
+          "capture_wall_s": 10.0
+        }
+      }
+    }
+  ],
+  "transport": {
+    "mode": "ground_three_point_recovery_budget",
+    "section": "three_ground_evidence_gzip_part",
+    "encoding": "gzip+base64",
+    "session_id": "a9ae0375a2e243a8b34f817899a482c5",
+    "bundle": "ground_three_point_v1",
+    "uncompressed_sha256": "e57148c143e5c63adcc35010dfa7f2eb62e4fa69737204b829633465ddb566ca",
+    "compressed_sha256": "eb3dd519cb4acefe7ca725843953613c4ef77708ac2981ddc2af8aa0ce261c41",
+    "uncompressed_bytes": 877402,
+    "compressed_bytes": 262893,
+    "part_count": 8,
+    "duplicate_parts": 0
+  },
+  "completed_points_observed": 0,
+  "interpretation": "byte transport only; point history and local state are unverified observations"
+}

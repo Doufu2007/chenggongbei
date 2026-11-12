@@ -1,0 +1,62 @@
+{
+  "kind": "bounded_height_hold_local_implementation",
+  "review_status": "pending_vertical_trim_review",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "height_tests_passed": 42,
+  "covering_tests_passed": 198,
+  "junit": "affected_green.xml",
+  "py_compile_exit": 0,
+  "bash_syntax_exit": 0,
+  "cloud_collection": "not_attached",
+  "cloud_control_used": false,
+  "red_junit": "red.xml",
+  "continuous_gate_red_junit": "continuous_and_gate_red.xml",
+  "changed_feedback_red_junit": "changed_feedback_red.xml",
+  "frozen_sources_unchanged": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+    "src/inspection_mission/inspection_mission/bounded_vertical_trim.py": "54744be026c23d43bfe8dba5686ffd7d25d9028a8d4eaf06e667501b5984d89c",
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+      "bytes": 17759,
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391"
+    },
+    {
+      "path": "scripts/run_bounded_height_hold.sh",
+      "bytes": 2718,
+      "sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7"
+    },
+    {
+      "path": "tests/test_bounded_height_hold.py",
+      "bytes": 13924,
+      "sha256": "949f2200fdf9ae3b596117a8586e3c1acd5a564b00293e6003ac6151688af406"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-12-bounded-height-hold-design.md",
+      "bytes": 6134,
+      "sha256": "cd1327e223db1329f49b3101b6fc7c003966c62d9d830d785f9afc3968fdae41"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-12-bounded-height-hold.md",
+      "bytes": 4649,
+      "sha256": "61bcdba90747e194ed63fa424db76f883ad9d13e33f17ee11c570bfa34b60bae"
+    },
+    {
+      "path": "docs/bounded_height_hold_runtime_20261112.md",
+      "bytes": 5577,
+      "sha256": "a1657c847f6e0954918fcfd55a1039dca779e18aed1d91750160d11bf41790fd"
+    }
+  ],
+  "runtime_package_modules": [
+    "inspection_mission/__init__.py",
+    "inspection_mission/bounded_height_hold.py",
+    "inspection_mission/bounded_vertical_response.py",
+    "inspection_mission/bounded_ground_probe.py",
+    "inspection_mission/telemetry.py"
+  ]
+}

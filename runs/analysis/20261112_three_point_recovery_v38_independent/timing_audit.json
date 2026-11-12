@@ -1,0 +1,199 @@
+{
+  "spans": {
+    "receive:/odom": {
+      "count": 5222,
+      "wall_max_s": 0.014298916001280304,
+      "wall_mean_s": 0.00044014217450583266,
+      "cpu_max_s": 0.014300513999999986,
+      "receive_gap_max_s": 0.09078286900330568,
+      "source_delta_max_s": 0.04000000000000625,
+      "clock_minus_header_min_s": -0.0800000000000125,
+      "clock_minus_header_max_s": 0.0
+    },
+    "spin_once": {
+      "count": 26005,
+      "wall_max_s": 0.068949212996813,
+      "wall_mean_s": 0.004053393377050547,
+      "cpu_max_s": 0.014622951999999967,
+      "receive_gap_max_s": null,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "tick": {
+      "count": 2100,
+      "wall_max_s": 0.0036775999978999607,
+      "wall_mean_s": 0.0003781575791591812,
+      "cpu_max_s": 0.0036779110000000337,
+      "receive_gap_max_s": null,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "receive:/uav/odom": {
+      "count": 5222,
+      "wall_max_s": 0.04199555800005328,
+      "wall_mean_s": 0.00016593283303376706,
+      "cpu_max_s": 0.00039026500000005626,
+      "receive_gap_max_s": 0.10416527400229825,
+      "source_delta_max_s": 0.04000000000000625,
+      "clock_minus_header_min_s": -0.0800000000000125,
+      "clock_minus_header_max_s": 0.0
+    },
+    "receive:/tf": {
+      "count": 10452,
+      "wall_max_s": 0.0001824369974201545,
+      "wall_mean_s": 4.698506992126084e-05,
+      "cpu_max_s": 0.00018305900000115116,
+      "receive_gap_max_s": 0.11777973800053587,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "receive:/tf_static": {
+      "count": 1,
+      "wall_max_s": 7.336300041060895e-05,
+      "wall_mean_s": 7.336300041060895e-05,
+      "cpu_max_s": 7.245600000005403e-05,
+      "receive_gap_max_s": null,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "receive:/uav/camera/image": {
+      "count": 311,
+      "wall_max_s": 0.04171422500076005,
+      "wall_mean_s": 0.0003049912056696625,
+      "cpu_max_s": 0.0004341329999988375,
+      "receive_gap_max_s": 0.7908749359994545,
+      "source_delta_max_s": 0.6679999999999993,
+      "clock_minus_header_min_s": -0.06499999999999773,
+      "clock_minus_header_max_s": 0.3380000000000001
+    },
+    "receive:/clock": {
+      "count": 1046,
+      "wall_max_s": 0.00023337199672823772,
+      "wall_mean_s": 0.00012654147802610138,
+      "cpu_max_s": 0.0002323159999981783,
+      "receive_gap_max_s": 0.1562919999996666,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "receive:/referee/ground_tasks": {
+      "count": 1,
+      "wall_max_s": 5.818300269311294e-05,
+      "wall_mean_s": 5.818300269311294e-05,
+      "cpu_max_s": 5.72049999999491e-05,
+      "receive_gap_max_s": null,
+      "source_delta_max_s": null,
+      "clock_minus_header_min_s": null,
+      "clock_minus_header_max_s": null
+    },
+    "receive:/scan": {
+      "count": 836,
+      "wall_max_s": 0.0021823060014867224,
+      "wall_mean_s": 0.0011452474893094708,
+      "cpu_max_s": 0.002183097999999717,
+      "receive_gap_max_s": 0.21540208299848018,
+      "source_delta_max_s": 0.15100000000001046,
+      "clock_minus_header_min_s": -0.06900000000000261,
+      "clock_minus_header_max_s": -0.0019999999999997797
+    },
+    "receive:/camera/camera_info": {
+      "count": 313,
+      "wall_max_s": 0.00030737099586986005,
+      "wall_mean_s": 0.00013610450789416448,
+      "cpu_max_s": 0.00031228199999944195,
+      "receive_gap_max_s": 0.4009247840003809,
+      "source_delta_max_s": 0.33600000000001273,
+      "clock_minus_header_min_s": -0.06499999999999773,
+      "clock_minus_header_max_s": 0.005000000000009663
+    },
+    "receive:/uav/camera/camera_info": {
+      "count": 290,
+      "wall_max_s": 0.00027609099925030023,
+      "wall_mean_s": 0.0001755498273143593,
+      "cpu_max_s": 0.00027548999999993384,
+      "receive_gap_max_s": 3.738379681002698,
+      "source_delta_max_s": 2.334000000000003,
+      "clock_minus_header_min_s": -0.06400000000000716,
+      "clock_minus_header_max_s": 3.0050000000000097
+    },
+    "receive:/camera/image": {
+      "count": 313,
+      "wall_max_s": 0.057465432000753935,
+      "wall_mean_s": 0.0006132534156360413,
+      "cpu_max_s": 0.000285168999999974,
+      "receive_gap_max_s": 0.402236100002483,
+      "source_delta_max_s": 0.33600000000001273,
+      "clock_minus_header_min_s": -0.06499999999999773,
+      "clock_minus_header_max_s": 0.038000000000000256
+    }
+  },
+  "stop_timing": {
+    "clock_sampling_lag_s": 0.12,
+    "sensor_age_s": 0.2,
+    "clock": {
+      "stamp_s": 106.1,
+      "wall_age_s": 0.04437009799585212
+    },
+    "odom": {
+      "stamp_s": 106.14,
+      "wall_age_s": 0.004096762997505721,
+      "clock_minus_stamp_s": -0.04000000000000625,
+      "fresh": true
+    },
+    "scan": {
+      "stamp_s": 106.017,
+      "wall_age_s": 0.12216804599302122,
+      "clock_minus_stamp_s": 0.08299999999999841,
+      "fresh": true
+    }
+  },
+  "camera_liveness_at_last_check": {
+    "wall_s": 35229.462614534,
+    "phase": "RECOGNIZE_WAIT",
+    "camera_max_wall_age_s": 0.5,
+    "camera_max_clock_age_s": 0.5,
+    "camera_min_clock_age_s": -0.12,
+    "last_image_arrival_wall_s": 35229.243747725,
+    "last_image_stamp_s": 105.862,
+    "image_wall_age_s": 0.21886680900206557,
+    "clock_minus_image_stamp_s": 0.13800000000000523,
+    "interpretation": "current camera liveness only; original capture stamps and priors unchanged"
+  },
+  "snapshot_timing": {
+    "clock_sampling_lag_s": 0.12,
+    "sensor_age_s": 0.2,
+    "clock": {
+      "stamp_s": 108.1,
+      "wall_age_s": 0.00012594900181284174
+    },
+    "odom": {
+      "stamp_s": 108.08,
+      "wall_age_s": 0.019542610003554728,
+      "clock_minus_stamp_s": 0.01999999999999602,
+      "fresh": true
+    },
+    "scan": {
+      "stamp_s": 106.017,
+      "wall_age_s": 2.114302586996928,
+      "clock_minus_stamp_s": 2.0829999999999984,
+      "fresh": false
+    }
+  },
+  "graph": {
+    "interval_s": 0.5,
+    "refresh_count": 211,
+    "graph_query_count": 1266,
+    "graph_query_total_wall_s": 0.07256651687202975,
+    "graph_query_max_wall_s": 0.00033840100513771176,
+    "match_check_count": 4200
+  },
+  "guard_lock_wait": {
+    "status": "not_measured",
+    "reason": "receive includes lock waits; no extra guard lock acquisition or wrapper introduced"
+  },
+  "pre_receive_transport": "not_measured; entry age includes source/bridge/DDS/executor delay; cannot separate them from this metric alone"
+}

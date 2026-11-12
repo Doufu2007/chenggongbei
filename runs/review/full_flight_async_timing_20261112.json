@@ -1,0 +1,271 @@
+{
+  "kind": "real_wall_worker_timing_with_synthetic_public_geometry_images_not_platform",
+  "source_clock": "30+time.monotonic_elapsed;not_frozen_while_worker_runs",
+  "real_wall_s": 14.43329320000339,
+  "stage": "AIR_MOVE_TO_LIGHT_1",
+  "advanced": true,
+  "guard_state": "AIR_MOVE_TO_LIGHT_1",
+  "reason": "waiting_actual_flight_sources",
+  "loops": 601,
+  "recognition_publish_count": 1,
+  "results": [
+    {
+      "wall_s": 4.886202100002265,
+      "source_age_s": 4.8851408000045495,
+      "exposure_stamp_s": 30.0010616,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": null,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 5.191836500001955,
+      "source_age_s": 0.2632879999984894,
+      "exposure_stamp_s": 34.928549,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 35.1896499,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 5.455136900003708,
+      "source_age_s": 0.24295629999871693,
+      "exposure_stamp_s": 35.2121809,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 35.4534529,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 5.743799700001546,
+      "source_age_s": 0.24579360000382877,
+      "exposure_stamp_s": 35.4980064,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 35.7417943,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 6.042771500004164,
+      "source_age_s": 0.255825800000693,
+      "exposure_stamp_s": 35.7869462,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 36.0408439,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 6.4494095999980345,
+      "source_age_s": 0.3638465000010811,
+      "exposure_stamp_s": 36.0855635,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 36.4469557,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 6.7189718000008725,
+      "source_age_s": 0.24914980000315978,
+      "exposure_stamp_s": 36.4698223,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 36.717132,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 7.0404902000009315,
+      "source_age_s": 0.2787977999982232,
+      "exposure_stamp_s": 36.761693,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 37.0381057,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 7.286028599999554,
+      "source_age_s": 0.22513420000259998,
+      "exposure_stamp_s": 37.0608948,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 37.0381057,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 7.633003599999938,
+      "source_age_s": 0.28254580000298546,
+      "exposure_stamp_s": 37.3504582,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 37.6307611,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 7.874469800000952,
+      "source_age_s": 0.22111170000399483,
+      "exposure_stamp_s": 37.6533585,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 37.6307611,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 8.246550700001535,
+      "source_age_s": 0.3079539000038167,
+      "exposure_stamp_s": 37.9385971,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 38.2444477,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 8.490642800003116,
+      "source_age_s": 0.22345659999812284,
+      "exposure_stamp_s": 38.2671865,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 38.4887072,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 8.867270200003986,
+      "source_age_s": 0.3102843999989915,
+      "exposure_stamp_s": 38.5569861,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 38.8655906,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 9.125556799997867,
+      "source_age_s": 0.2157209000001501,
+      "exposure_stamp_s": 38.9098362,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 39.1229571,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 9.412603500000841,
+      "source_age_s": 0.2223376000031223,
+      "exposure_stamp_s": 39.1902662,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 39.1229571,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 9.749778600002173,
+      "source_age_s": 0.2721310000044568,
+      "exposure_stamp_s": 39.4776479,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 39.7476639,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 9.98987489999854,
+      "source_age_s": 0.21990640000311146,
+      "exposure_stamp_s": 39.7699691,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 39.7476639,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 10.334465600004478,
+      "source_age_s": 0.27936510000176895,
+      "exposure_stamp_s": 40.0551011,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 40.3321906,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 10.61966720000055,
+      "source_age_s": 0.26497020000359583,
+      "exposure_stamp_s": 40.3546974,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 40.6172267,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 10.941536800004542,
+      "source_age_s": 0.3017928000010741,
+      "exposure_stamp_s": 40.6397445,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 40.9386077,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 11.330323100002715,
+      "source_age_s": 0.36867749999772315,
+      "exposure_stamp_s": 40.9616459,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 41.3282187,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 11.640308599999116,
+      "source_age_s": 0.28960790000292036,
+      "exposure_stamp_s": 41.3507012,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 41.637689,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 11.950915400004305,
+      "source_age_s": 0.26767500000083544,
+      "exposure_stamp_s": 41.6832409,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 41.9485594,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 12.230955899998662,
+      "source_age_s": 0.2598700000009444,
+      "exposure_stamp_s": 41.9710862,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 42.2287788,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 12.52056370000355,
+      "source_age_s": 0.2691670999985547,
+      "exposure_stamp_s": 42.2513969,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 42.5177131,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 12.840014900000824,
+      "source_age_s": 0.2993710000038732,
+      "exposure_stamp_s": 42.5406443,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 42.8379672,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 13.083680800002185,
+      "source_age_s": 0.22319449999795182,
+      "exposure_stamp_s": 42.8604867,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 43.0812123,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 13.424234300000535,
+      "source_age_s": 0.27595830000282007,
+      "exposure_stamp_s": 43.1482763,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 43.4220657,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 13.713608400001249,
+      "source_age_s": 0.26902140000353114,
+      "exposure_stamp_s": 43.4445873,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 43.7114288,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 13.964563699999417,
+      "source_age_s": 0.23059720000170358,
+      "exposure_stamp_s": 43.7339668,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 43.7114288,
+      "inlier_count": 65
+    },
+    {
+      "wall_s": 14.226422600004298,
+      "source_age_s": 0.2414563000000669,
+      "exposure_stamp_s": 43.9849667,
+      "stage": "AIR_RECOGNIZE_1",
+      "evidence_since": 43.7114288,
+      "inlier_count": 65
+    }
+  ],
+  "errors": [],
+  "retained_images": 3
+}

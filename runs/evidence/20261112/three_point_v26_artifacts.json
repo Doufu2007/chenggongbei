@@ -1,0 +1,24 @@
+{
+  "version": "three-point-v26",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "basis": "frozen scored v25 plus independently reviewed continuous ground modules",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_three_point.py": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+    "src/inspection_mission/inspection_mission/ground_three_point_plan.py": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65"
+  },
+  "frozen_base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "artifacts": [
+    {
+      "path": "dist/inspection_three_point_v26_src.zip",
+      "bytes": 9582313,
+      "sha256": "044ca528340f29decdf0c5776bc06a9be8e5ec2e3fb06c634609cbe46cffeb61"
+    },
+    {
+      "path": "dist/run_three_point_v26.sh",
+      "bytes": 2852,
+      "sha256": "4502bc44db15ff9fcc271405846ed78364a76b0b38a72687158e5062d238fc33"
+    }
+  ]
+}

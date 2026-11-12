@@ -1,0 +1,147 @@
+{
+  "kind": "independent_production_ground_matcher_worker_delivery",
+  "created_at": "2026-11-11T21:37:20.809035+00:00",
+  "worker_source_sha256": "d50ae59a24f11d80ca566193cf63e254eb5c55846eff278def24905b96735ec8",
+  "matcher_source_sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+  "tests": {
+    "specialized": {
+      "tests": 50,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "worker_case_count": 18,
+    "matcher_case_count": 32,
+    "independent": {
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "execution_status_red": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "py_compile_passed": true,
+  "benchmark": {
+    "worker_source_sha256": "2362025e5a3f013cc6bb124c190e9b8cbaa303675c48ac8347aa5cbdf6697ed1",
+    "current_source_benchmarked": false,
+    "reason": "Final changes only repair failure-path source bindings and execution-state diagnostics; no repeat of real SIFT measurement.",
+    "summary": {
+      "ticks": 226,
+      "duration_s": 11.250529800003278,
+      "effective_tick_rate_hz": 19.999058177681057,
+      "max_heartbeat_interval_ms": 53.4205000003567,
+      "p99_heartbeat_interval_ms": 51.10339999810093,
+      "skipped_scheduled_ticks": 0,
+      "owner_work_max_ms": 17.794699997466523,
+      "worker_construct_ms": 178.27389999729348,
+      "close": {
+        "closed": true,
+        "process_alive": false,
+        "terminated": false,
+        "close_elapsed_s": 0.0538866000060807,
+        "official_acceptance": false
+      },
+      "template_load_ms": 8143.605100005516,
+      "match_ms": 2623.489999998128,
+      "calls": 1,
+      "v22_all_12_template_counts_and_acceptance_unchanged": true
+    }
+  },
+  "scope": {
+    "ROS_integrated": false,
+    "control_modified": false,
+    "vision_node_modified": false,
+    "matcher_modified": false,
+    "official_acceptance": false,
+    "fresh_exposure_validated": false,
+    "eligible_for_recognition": false
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_matcher_worker.py",
+      "size_bytes": 13765,
+      "sha256": "d50ae59a24f11d80ca566193cf63e254eb5c55846eff278def24905b96735ec8"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_plane_matcher.py",
+      "size_bytes": 16610,
+      "sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d"
+    },
+    {
+      "path": "tests/test_ground_matcher_worker.py",
+      "size_bytes": 8569,
+      "sha256": "72315136f31d5c09617ec0f43f2c15746a045095113a146861fba21b6725f627"
+    },
+    {
+      "path": "tests/test_ground_plane_matcher.py",
+      "size_bytes": 9955,
+      "sha256": "5d2caffcbe16af77844494f1894e23799821baec0125c9284be90aeb4377af9c"
+    },
+    {
+      "path": "docs/ground_matcher_worker_20261112.md",
+      "size_bytes": 5527,
+      "sha256": "fb3a1cfce3bb8055bb7f05c679b914b15bfa6423a57155171776bf5c4075886d"
+    },
+    {
+      "path": "docs/control_review_ground_matcher_worker_production_20261112.md",
+      "size_bytes": 4879,
+      "sha256": "ad1a8a89e35448d43c5848243531d72f432d1808c73611002da36e4a0f34a6d0"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_specialized_final.xml",
+      "size_bytes": 7338,
+      "sha256": "b0bc1a744d9ad90fcb13af1b09cca1ebb1d765d28db783a044e0e635985a830e"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_execution_unknown_red.xml",
+      "size_bytes": 1650,
+      "sha256": "40f807cdde5a431f201eea1f82ec016c1bf4b862e331186e7c3181692c6756b9"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_benchmark_report.json",
+      "size_bytes": 408472,
+      "sha256": "ee7da6b0a61940364e829c5b2b2a090a6b0209407503bb6f8b2762539b109401"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_heartbeat_ticks.csv",
+      "size_bytes": 14625,
+      "sha256": "4826085d3e130481f213de74e6aa20f95bd2cf54f28cc06ed9ed13d098dcc1a6"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/benchmark_production.py",
+      "size_bytes": 4997,
+      "sha256": "69f538827ff944a181cf2791633d5e7d82f7425d39138d19cbe08ecd95d9c129"
+    },
+    {
+      "path": "runs/review/20261112_matcher_worker_production/review_production_cases.py",
+      "size_bytes": 3988,
+      "sha256": "eab5345814e6293886692312586a469709cb820bffe7689219a17f196de085c3"
+    },
+    {
+      "path": "runs/review/20261112_matcher_worker_production/independent_initial_behavior.xml",
+      "size_bytes": 3679,
+      "sha256": "3e8816b9d0db93f5623b43d49096fa09afe01549d9c473a2ec721866fa23f351"
+    },
+    {
+      "path": "runs/review/20261112_matcher_worker_production/independent_final_v2.xml",
+      "size_bytes": 1363,
+      "sha256": "6a186500d58a90df77b5547a33d6a8a2241e6c4e98475639c7a6d7c655ecb9d2"
+    },
+    {
+      "path": "runs/review/20261112_matcher_worker_production/recompute_production_benchmark.py",
+      "size_bytes": 4741,
+      "sha256": "10b9ee2ff837d04656f4c551800237051e0f194c7168a5e0c26a1b7bb7559bc4"
+    },
+    {
+      "path": "runs/review/20261112_matcher_worker_production/benchmark_independent_arithmetic.json",
+      "size_bytes": 4832,
+      "sha256": "f5fc443508172f531d3a7771a658933d9191bf572b578a23545b44adaeeb5e3a"
+    }
+  ],
+  "prototype_manifest_preserved": "runs/analysis/20261112_ground_matcher_worker_dev/manifest.json"
+}

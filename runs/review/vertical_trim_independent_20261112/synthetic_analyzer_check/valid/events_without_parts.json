@@ -1,0 +1,66 @@
+[
+  {
+    "source": "synthetic_review_fixture_not_platform",
+    "payload": {
+      "event": "probe_snapshot",
+      "data": {
+        "mode": "bounded_vertical_trim",
+        "session_id": "a7f44b978a7d434097f01352e4cad035",
+        "state": "ASCEND",
+        "reason": "fixed_trim_response",
+        "limits": {
+          "command_mps": 0.05,
+          "target_rise_m": 0.1,
+          "hard_rise_m": 0.15,
+          "max_horizontal_drift_m": 0.04,
+          "max_tilt_rad": 0.05,
+          "max_speed_mps": 0.15,
+          "max_angular_speed_rps": 0.1,
+          "max_total_path_m": 0.3,
+          "motion_wall_s": 10.0,
+          "global_wall_s": 45.0,
+          "sensor_age_s": 0.2,
+          "clock_sampling_lag_s": 0.12,
+          "stable_s": 1.0,
+          "observe_s": 5.0
+        },
+        "origin": [
+          0.0,
+          0.0,
+          0.055
+        ],
+        "target_reached": true,
+        "max_rise_m": 0.1,
+        "max_horizontal_drift_m": 0.0,
+        "total_path_m": 0.1,
+        "dropped": {
+          "trajectory": 0,
+          "commands": 0,
+          "scans": 0,
+          "downscans": 0,
+          "tf_records": 0
+        },
+        "post_stop_faults": [],
+        "assumptions": {
+          "world_source": "ranmengjia/ICAN@82b041043849a5d86e085390bf0df787366d98cd:binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+          "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+          "static_map_verified_on_platform": false,
+          "space_evidence": "fixed public static candidate departure column plus live horizontal scan consistency",
+          "initial_support_floor": "known initial support; signed Z trim only above .035m relative height; zero return is observed, not controlled landing",
+          "unknown_upper_obstacles_sensed": false,
+          "downscan_used_as_upper_clearance": false,
+          "body_world_positive_z_contract": "unverified; limited tilt and displacement measured during experiment",
+          "body_world_signed_z_contract": "unverified; fixed low-height identification, not hover PID"
+        },
+        "section": "bounded_vertical_trim_core",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "full_mission_complete": false,
+        "phase": "TRIM_NEG_010",
+        "protocol_complete": false,
+        "support_return_verified": false,
+        "protocol_abort_reason": ""
+      }
+    }
+  }
+]

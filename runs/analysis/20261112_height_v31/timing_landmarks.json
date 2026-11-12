@@ -1,0 +1,63 @@
+{
+  "fault_wall_s": 2.4367965730016294,
+  "prior_scan": {
+    "arrival_wall_s": 2.2315257219997875,
+    "source_stamp_s": 5.004,
+    "minimum_range_m": 0.6499724388122559
+  },
+  "next_scan": {
+    "arrival_wall_s": 2.439159980000113,
+    "source_stamp_s": 5.154,
+    "minimum_range_m": 0.6499724388122559
+  },
+  "prior_scan_age_at_abort_s": 0.20527085100184195,
+  "scan_arrival_gap_s": 0.20763425800032564,
+  "scan_source_gap_s": 0.15000000000000036,
+  "next_scan_arrives_after_abort_s": 0.002363406998483697,
+  "first_zero_return_command": {
+    "wall_elapsed_s": 2.437171297002351,
+    "linear_z": 0.0,
+    "ground_linear_x": 0.0,
+    "ground_angular_z": 0.0,
+    "state": "OBSERVE",
+    "phase": "ZERO_RETURN",
+    "target_z": null,
+    "measured_z": 0.10989871616225919,
+    "measured_vz": 0.04610000000000031,
+    "height_error_m": null,
+    "odom_stamp": 5.14
+  },
+  "peak_odom": {
+    "wall_elapsed_s": 2.438464794999163,
+    "stamp": 5.16,
+    "xyz": [
+      3.4468756780550596e-05,
+      3.550191343175999e-05,
+      0.11082071616225919
+    ],
+    "q": [
+      0.0,
+      0.0,
+      4.50151998810997e-06,
+      0.9999999999898682
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      0.04610000000000031
+    ],
+    "angular": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "speed": 0.04610000000000031,
+    "angular_speed": 0.0,
+    "tilt": 0.0,
+    "wall": 30287.001749211
+  },
+  "peak_relative_height_m": 0.05582000793366992,
+  "maximum_horizontal_drift_m": 0.00018633395312961932,
+  "local_path_m": 0.11187226605161958,
+  "evidence_source_sha": "2e0a266b4ab9e5e985bcc05f8cb0d6d7a738aa773d44ce2a9e48d9b4c4026baf"
+}

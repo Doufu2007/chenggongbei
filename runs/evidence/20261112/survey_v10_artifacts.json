@@ -1,0 +1,22 @@
+{
+  "kind": "ground_observation_survey_practice",
+  "version": "v10",
+  "created_at": "2026-11-11T17:33:58.108952+00:00",
+  "read_only": false,
+  "official_scoring": "unverified",
+  "formal_submission": false,
+  "candidate_id_mapping_confirmed": false,
+  "camera_binding": "explicit per-ground-point camera_source support in mission code; survey retains actual source/frame only",
+  "files": [
+    {
+      "path": "dist/inspection_ground_survey_v10_src.zip",
+      "bytes": 77417,
+      "sha256": "97d50a28069998c2341600136ac78d856821d3bb39bf17e3838cfdca0770ac66"
+    },
+    {
+      "path": "dist/run_ground_survey_v10.sh",
+      "bytes": 2857,
+      "sha256": "bc1ac8322db9c8437fe59aacc44c23626ff278e0ce12d4c8cbd8146ee0bc8e9a"
+    }
+  ]
+}

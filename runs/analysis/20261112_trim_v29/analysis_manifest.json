@@ -1,0 +1,68 @@
+{
+  "platform_id": "d9abe4ad-d514-4e69-9f3c-c90cab5ba875",
+  "kind": "read_only_own_public_observation_analysis",
+  "official_score": null,
+  "full_mission_complete": false,
+  "files": [
+    {
+      "path": "runs/analysis/20261112_trim_v29/analyze.py",
+      "bytes": 10710,
+      "sha256": "249e65477aac28d443a55a2a1b9f55009ea6494d8b5f67c897491e71f62df96b"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/commands.csv",
+      "bytes": 8954,
+      "sha256": "4d4ec2eef2ca033e5e8f9c343b9f9b3f4e1bcf044fee2dad20958790d933ba81"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/events_without_parts.json",
+      "bytes": 5562,
+      "sha256": "3a5cbf461f3fd783e9b726f9a9625ea50d931b5759d64e1b6a7aca05e34c5cf1"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/evidence.json",
+      "bytes": 1102130,
+      "sha256": "cef9646d663cf00752fc2096a6085edbc8f2eeabbe85d740df09b4d4a770c9ba"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/evidence.json.gz",
+      "bytes": 120325,
+      "sha256": "ee744aa3cd18d5e22026c59c52a0acd54f8d431243bdb9ebb74e5942fcdef588"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/height_and_requests.png",
+      "bytes": 114063,
+      "sha256": "67b30a891c0f3f8e80cbc8ef597879928d681273db0a7356277674e50289444f"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/height_and_requests.svg",
+      "bytes": 68581,
+      "sha256": "3ee843a76f2863ca2cbf3958d1651c9d6ca030bb4e23e53e820a1ecfc5f92275"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/landmarks.json",
+      "bytes": 9831,
+      "sha256": "318201a1ed8a78e59be0eea637c417b9eb0063d9ce5084b6913e96966686e375"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/landmarks.py",
+      "bytes": 5625,
+      "sha256": "815003e0250b8d197ba0fcbabb6f6e87fd4c6e550506a7f0a09926b7afe91524"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/metrics.json",
+      "bytes": 11491,
+      "sha256": "7a148554e09edefcd27b46beb8840f84658fd103c80a205dea525e471bf1ec0a"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/trajectory.csv",
+      "bytes": 100402,
+      "sha256": "3297264b44d65977a9cf58bd3d9e4f98fa57abcd1a42972fdc41ef48511079b8"
+    },
+    {
+      "path": "runs/analysis/20261112_trim_v29/validation.json",
+      "bytes": 1151,
+      "sha256": "1d4b0d6f5c8cb689953f7bd677b04682dabf341523d9a418c2b34eb93a7ec4fe"
+    }
+  ]
+}

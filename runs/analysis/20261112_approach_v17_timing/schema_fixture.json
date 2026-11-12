@@ -1,0 +1,135 @@
+{
+  "kind": "schema_fixture_not_platform_evidence",
+  "callback_timing": {
+    "revision": "v17_timing",
+    "measurement": "perf_counter wall durations; thread_time current-thread CPU; original sensor/guard clocks untouched",
+    "duration_histogram_upper_bounds_s": [
+      0.0001,
+      0.001,
+      0.005,
+      0.02,
+      0.05,
+      0.1,
+      0.2,
+      1.0
+    ],
+    "age_histogram_upper_bounds_s": [
+      -0.2,
+      -0.12,
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.3,
+      1.0
+    ],
+    "histogram_interpretation": "upper-inclusive bounds plus overflow; spin wall includes wait/take/callback",
+    "guard_lock_wait": {
+      "status": "not_measured",
+      "reason": "receive includes lock waits; no extra guard lock acquisition or wrapper introduced"
+    },
+    "pre_receive_transport": "not_measured; entry age includes source/bridge/DDS/executor delay; cannot separate them from this metric alone",
+    "clock_info": {
+      "perf_counter": {
+        "implementation": "QueryPerformanceCounter()",
+        "resolution_s": 1e-07
+      },
+      "thread_time": {
+        "implementation": "GetThreadTimes()",
+        "resolution_s": 1e-07
+      }
+    },
+    "spans": {
+      "receive:/odom": {
+        "wall_s": {
+          "count": 1,
+          "total": 0.0029999999999998916,
+          "min": 0.0029999999999998916,
+          "max": 0.0029999999999998916,
+          "buckets": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "cpu_s": {
+          "count": 1,
+          "total": 0.001,
+          "min": 0.001,
+          "max": 0.001,
+          "buckets": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "entry_gap_wall_s": {
+          "count": 0,
+          "total": 0.0,
+          "min": null,
+          "max": null,
+          "buckets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "header_delta_s": {
+          "count": 0,
+          "total": 0.0,
+          "min": null,
+          "max": null,
+          "buckets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "clock_minus_header_s": {
+          "count": 1,
+          "total": 0.17999999999999972,
+          "min": 0.17999999999999972,
+          "max": 0.17999999999999972,
+          "buckets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "input_qos": {},
+    "slow_events": [],
+    "slow_events_dropped": 0
+  }
+}

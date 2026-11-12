@@ -1,0 +1,1178 @@
+{
+  "kind": "independent_v34_timing_audit",
+  "labels": {
+    "receive:/clock": {
+      "count": 136,
+      "wall_total_s": 0.006745321981725283,
+      "wall_max_s": 7.755900151096284e-05,
+      "cpu_total_s": 0.006563155000000487,
+      "cpu_max_s": 7.527699999998472e-05,
+      "first_entry_wall_s": 0.002288935000251513,
+      "last_entry_wall_s": 13.696365019997756
+    },
+    "spin_once": {
+      "count": 2350,
+      "wall_total_s": 13.578276926869876,
+      "wall_max_s": 0.033125445996120106,
+      "cpu_total_s": 1.372332249000004,
+      "cpu_max_s": 0.011816194999999974,
+      "first_entry_wall_s": 0.0016712359938537702,
+      "last_entry_wall_s": 13.69769716799783
+    },
+    "dds:control_tick": {
+      "count": 489,
+      "wall_total_s": 0.003669781035569031,
+      "wall_max_s": 2.500599657651037e-05,
+      "cpu_total_s": 0.0036829760000027245,
+      "cpu_max_s": 2.5233000000013384e-05,
+      "first_entry_wall_s": 0.0027139679950778373,
+      "last_entry_wall_s": 13.71401666499878
+    },
+    "control_tick": {
+      "count": 272,
+      "wall_total_s": 0.07986918706592405,
+      "wall_max_s": 0.007849325003917329,
+      "cpu_total_s": 0.0725195659999992,
+      "cpu_max_s": 0.0005702670000000687,
+      "first_entry_wall_s": 0.0024012919966480695,
+      "last_entry_wall_s": 13.714007238995691
+    },
+    "tick": {
+      "count": 272,
+      "wall_total_s": 0.08328431702102534,
+      "wall_max_s": 0.007865701001719572,
+      "cpu_total_s": 0.0758549050000018,
+      "cpu_max_s": 0.0006024029999998071,
+      "first_entry_wall_s": 0.0023975499934749678,
+      "last_entry_wall_s": 13.714002393993724
+    },
+    "receive:/uav/laser/scan": {
+      "count": 271,
+      "wall_total_s": 0.026764452042698395,
+      "wall_max_s": 0.00018093999824486673,
+      "cpu_total_s": 0.026573754000000005,
+      "cpu_max_s": 0.00018067799999998968,
+      "first_entry_wall_s": 0.0036495120002655312,
+      "last_entry_wall_s": 13.752203374999226
+    },
+    "receive:/tf_static": {
+      "count": 1,
+      "wall_total_s": 0.00032472499879077077,
+      "wall_max_s": 0.00032472499879077077,
+      "cpu_total_s": 0.0003233699999999895,
+      "cpu_max_s": 0.0003233699999999895,
+      "first_entry_wall_s": 0.01070361799793318,
+      "last_entry_wall_s": 0.01070361799793318
+    },
+    "receive:/scan": {
+      "count": 108,
+      "wall_total_s": 0.11921485897619277,
+      "wall_max_s": 0.002136868999514263,
+      "cpu_total_s": 0.11919772399999923,
+      "cpu_max_s": 0.002137032999999955,
+      "first_entry_wall_s": 0.02472207499522483,
+      "last_entry_wall_s": 13.64672007199988
+    },
+    "receive:/odom": {
+      "count": 666,
+      "wall_total_s": 0.12303557993436698,
+      "wall_max_s": 0.011654873997031245,
+      "cpu_total_s": 0.11536431899999994,
+      "cpu_max_s": 0.011657092000000091,
+      "first_entry_wall_s": 0.07061118499404984,
+      "last_entry_wall_s": 13.73648739499913
+    },
+    "receive:/uav/odom": {
+      "count": 666,
+      "wall_total_s": 0.18376787095621694,
+      "wall_max_s": 0.03263291499752086,
+      "cpu_total_s": 0.11098245299999948,
+      "cpu_max_s": 0.00044908700000001467,
+      "first_entry_wall_s": 0.07150048399489606,
+      "last_entry_wall_s": 13.737083619998884
+    },
+    "dds:publish_boundary": {
+      "count": 217,
+      "wall_total_s": 0.008230753956013359,
+      "wall_max_s": 0.007454954000422731,
+      "cpu_total_s": 0.0007813750000017494,
+      "cpu_max_s": 4.670299999998129e-05,
+      "first_entry_wall_s": 1.1142377029973431,
+      "last_entry_wall_s": 12.149957163994259
+    },
+    "receive:/tf": {
+      "count": 238,
+      "wall_total_s": 0.02284294302080525,
+      "wall_max_s": 0.0013000640028622001,
+      "cpu_total_s": 0.02277066799999894,
+      "cpu_max_s": 0.0013026830000000267,
+      "first_entry_wall_s": 1.9581653419954819,
+      "last_entry_wall_s": 13.624870075997023
+    }
+  },
+  "topic_retained_tail_metrics": {
+    "/clock": {
+      "full_count": 136,
+      "retained_tail_count": 49,
+      "retained_entry_start_s": 8.80704516699916,
+      "retained_entry_end_s": 13.696365019997756,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 48,
+        "min": 0.09999999999999787,
+        "median": 0.09999999999999964,
+        "max": 0.10000000000000142
+      },
+      "retained_entry_gap_s": {
+        "count": 48,
+        "min": 0.09586394099460449,
+        "median": 0.1014709760020196,
+        "max": 0.11575774399534566
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 48,
+        "min": 0.09582191699882969,
+        "median": 0.10143113450249075,
+        "max": 0.11570724599732785
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/clock",
+          "prior_entry_wall_s": 9.414202029998705,
+          "next_entry_wall_s": 9.529959773994051,
+          "entry_gap_s": 0.11575774399534566,
+          "prior_exit_to_next_entry_s": 0.11570724599732785,
+          "prior_source_stamp_s": 12.1,
+          "next_source_stamp_s": 12.2,
+          "source_gap_s": 0.09999999999999964,
+          "prior_callback_wall_s": 5.0497998017817736e-05,
+          "prior_callback_cpu_s": 4.958699999990657e-05,
+          "next_callback_wall_s": 6.0204001783858985e-05,
+          "next_callback_cpu_s": 5.870500000004775e-05
+        },
+        {
+          "topic": "/clock",
+          "prior_entry_wall_s": 9.834980101994006,
+          "next_entry_wall_s": 9.94516234999901,
+          "entry_gap_s": 0.1101822480050032,
+          "prior_exit_to_next_entry_s": 0.11012186200241558,
+          "prior_source_stamp_s": 12.5,
+          "next_source_stamp_s": 12.6,
+          "source_gap_s": 0.09999999999999964,
+          "prior_callback_wall_s": 6.038600258762017e-05,
+          "prior_callback_cpu_s": 5.887200000009862e-05,
+          "next_callback_wall_s": 4.2023995774798095e-05,
+          "next_callback_cpu_s": 4.1074999999946016e-05
+        },
+        {
+          "topic": "/clock",
+          "prior_entry_wall_s": 10.141037986999436,
+          "next_entry_wall_s": 10.246162685994932,
+          "entry_gap_s": 0.10512469899549615,
+          "prior_exit_to_next_entry_s": 0.10507568499451736,
+          "prior_source_stamp_s": 12.8,
+          "next_source_stamp_s": 12.9,
+          "source_gap_s": 0.09999999999999964,
+          "prior_callback_wall_s": 4.90140009787865e-05,
+          "prior_callback_cpu_s": 4.8178000000120846e-05,
+          "next_callback_wall_s": 5.0237998948432505e-05,
+          "next_callback_cpu_s": 4.917199999998623e-05
+        },
+        {
+          "topic": "/clock",
+          "prior_entry_wall_s": 13.085463991999859,
+          "next_entry_wall_s": 13.188628652998887,
+          "entry_gap_s": 0.10316466099902755,
+          "prior_exit_to_next_entry_s": 0.10313278499961598,
+          "prior_source_stamp_s": 15.7,
+          "next_source_stamp_s": 15.8,
+          "source_gap_s": 0.10000000000000142,
+          "prior_callback_wall_s": 3.1875999411568046e-05,
+          "prior_callback_cpu_s": 3.08719999999596e-05,
+          "next_callback_wall_s": 3.563099744496867e-05,
+          "next_callback_cpu_s": 3.4168000000001086e-05
+        },
+        {
+          "topic": "/clock",
+          "prior_entry_wall_s": 9.109894973997143,
+          "next_entry_wall_s": 9.213005060999421,
+          "entry_gap_s": 0.1031100870022783,
+          "prior_exit_to_next_entry_s": 0.10305623100430239,
+          "prior_source_stamp_s": 11.8,
+          "next_source_stamp_s": 11.9,
+          "source_gap_s": 0.09999999999999964,
+          "prior_callback_wall_s": 5.385599797591567e-05,
+          "prior_callback_cpu_s": 5.269700000010147e-05,
+          "next_callback_wall_s": 4.976600030204281e-05,
+          "next_callback_cpu_s": 4.837199999996322e-05
+        }
+      ]
+    },
+    "/uav/odom": {
+      "full_count": 666,
+      "retained_tail_count": 247,
+      "retained_entry_start_s": 8.722962315994664,
+      "retained_entry_end_s": 13.737083619998884,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 246,
+        "min": 0.019999999999999574,
+        "median": 0.019999999999999574,
+        "max": 0.020000000000003126
+      },
+      "retained_entry_gap_s": {
+        "count": 246,
+        "min": 0.01708142799907364,
+        "median": 0.02007955300359754,
+        "max": 0.03475058099866146
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 246,
+        "min": 0.016916109001613222,
+        "median": 0.019918641999538522,
+        "max": 0.03454405799857341
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/uav/odom",
+          "prior_entry_wall_s": 9.876389548997395,
+          "next_entry_wall_s": 9.911140129996056,
+          "entry_gap_s": 0.03475058099866146,
+          "prior_exit_to_next_entry_s": 0.03454405799857341,
+          "prior_source_stamp_s": 12.54,
+          "next_source_stamp_s": 12.56,
+          "source_gap_s": 0.02000000000000135,
+          "prior_callback_wall_s": 0.0002065230000880547,
+          "prior_callback_cpu_s": 0.00020626000000012468,
+          "next_callback_wall_s": 0.00016531899746041745,
+          "next_callback_cpu_s": 0.00016511999999990756
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_entry_wall_s": 9.47572186299658,
+          "next_entry_wall_s": 9.510141952996491,
+          "entry_gap_s": 0.03442008999991231,
+          "prior_exit_to_next_entry_s": 0.034278339000593405,
+          "prior_source_stamp_s": 12.16,
+          "next_source_stamp_s": 12.18,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00014175099931890145,
+          "prior_callback_cpu_s": 0.00014131300000008729,
+          "next_callback_wall_s": 0.0001929420031956397,
+          "next_callback_cpu_s": 0.00019159700000015434
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_entry_wall_s": 10.14154122099717,
+          "next_entry_wall_s": 10.165685317995667,
+          "entry_gap_s": 0.024144096998497844,
+          "prior_exit_to_next_entry_s": 0.023962931001733523,
+          "prior_source_stamp_s": 12.8,
+          "next_source_stamp_s": 12.82,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00018116599676432088,
+          "prior_callback_cpu_s": 0.00018105700000004,
+          "next_callback_wall_s": 0.00014213399845175445,
+          "next_callback_cpu_s": 0.00014165600000004552
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_entry_wall_s": 9.110432030000084,
+          "next_entry_wall_s": 9.134149118995992,
+          "entry_gap_s": 0.023717088995908853,
+          "prior_exit_to_next_entry_s": 0.02345533100015018,
+          "prior_source_stamp_s": 11.8,
+          "next_source_stamp_s": 11.82,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.0002617579957586713,
+          "prior_callback_cpu_s": 0.00026098900000004477,
+          "next_callback_wall_s": 0.00015380200056824833,
+          "next_callback_cpu_s": 0.00015292399999999873
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_entry_wall_s": 8.783786797997891,
+          "next_entry_wall_s": 8.80749776599987,
+          "entry_gap_s": 0.023710968001978472,
+          "prior_exit_to_next_entry_s": 0.02357425100490218,
+          "prior_source_stamp_s": 11.48,
+          "next_source_stamp_s": 11.5,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.0001367169970762916,
+          "prior_callback_cpu_s": 0.000136409000000004,
+          "next_callback_wall_s": 0.00021630499395541847,
+          "next_callback_cpu_s": 0.0002164949999998722
+        }
+      ]
+    },
+    "/odom": {
+      "full_count": 666,
+      "retained_tail_count": 247,
+      "retained_entry_start_s": 8.722465573999216,
+      "retained_entry_end_s": 13.73648739499913,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 246,
+        "min": 0.019999999999999574,
+        "median": 0.019999999999999574,
+        "max": 0.020000000000003126
+      },
+      "retained_entry_gap_s": {
+        "count": 246,
+        "min": 0.01709843300341163,
+        "median": 0.020122639001783682,
+        "max": 0.03550666700175498
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 246,
+        "min": 0.008364936998987105,
+        "median": 0.019976663501438452,
+        "max": 0.03534768000099575
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/odom",
+          "prior_entry_wall_s": 9.475206683993747,
+          "next_entry_wall_s": 9.510713350995502,
+          "entry_gap_s": 0.03550666700175498,
+          "prior_exit_to_next_entry_s": 0.03534768000099575,
+          "prior_source_stamp_s": 12.16,
+          "next_source_stamp_s": 12.18,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00015898700075922534,
+          "prior_callback_cpu_s": 0.00015775800000006335,
+          "next_callback_wall_s": 0.00014313100109575316,
+          "next_callback_cpu_s": 0.00014258400000000115
+        },
+        {
+          "topic": "/odom",
+          "prior_entry_wall_s": 9.875777575995016,
+          "next_entry_wall_s": 9.910574965993874,
+          "entry_gap_s": 0.0347973899988574,
+          "prior_exit_to_next_entry_s": 0.03460077999625355,
+          "prior_source_stamp_s": 12.54,
+          "next_source_stamp_s": 12.56,
+          "source_gap_s": 0.02000000000000135,
+          "prior_callback_wall_s": 0.00019661000260384753,
+          "prior_callback_cpu_s": 0.00019547199999991882,
+          "next_callback_wall_s": 0.00017987200408242643,
+          "next_callback_cpu_s": 0.00017826400000009457
+        },
+        {
+          "topic": "/odom",
+          "prior_entry_wall_s": 8.783266401995206,
+          "next_entry_wall_s": 8.808053096996446,
+          "entry_gap_s": 0.024786695001239423,
+          "prior_exit_to_next_entry_s": 0.024628070001199376,
+          "prior_source_stamp_s": 11.48,
+          "next_source_stamp_s": 11.5,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00015862500004004687,
+          "prior_callback_cpu_s": 0.00015732400000012525,
+          "next_callback_wall_s": 0.00011561100109247491,
+          "next_callback_cpu_s": 0.00011512100000010683
+        },
+        {
+          "topic": "/odom",
+          "prior_entry_wall_s": 10.183907013997668,
+          "next_entry_wall_s": 10.207336670995574,
+          "entry_gap_s": 0.023429656997905113,
+          "prior_exit_to_next_entry_s": 0.023285607996513136,
+          "prior_source_stamp_s": 12.84,
+          "next_source_stamp_s": 12.86,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00014404900139197707,
+          "prior_callback_cpu_s": 0.00014317899999993777,
+          "next_callback_wall_s": 0.0001534469993202947,
+          "next_callback_cpu_s": 0.00015297499999999964
+        },
+        {
+          "topic": "/odom",
+          "prior_entry_wall_s": 10.141931687998294,
+          "next_entry_wall_s": 10.165095897995343,
+          "entry_gap_s": 0.0231642099970486,
+          "prior_exit_to_next_entry_s": 0.022978957997111138,
+          "prior_source_stamp_s": 12.8,
+          "next_source_stamp_s": 12.82,
+          "source_gap_s": 0.019999999999999574,
+          "prior_callback_wall_s": 0.00018525199993746355,
+          "prior_callback_cpu_s": 0.0001851179999998731,
+          "next_callback_wall_s": 0.00018608900427352637,
+          "next_callback_cpu_s": 0.00018510799999993388
+        }
+      ]
+    },
+    "/scan": {
+      "full_count": 108,
+      "retained_tail_count": 39,
+      "retained_entry_start_s": 8.808402863993251,
+      "retained_entry_end_s": 13.64672007199988,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 38,
+        "min": 0.09999999999999964,
+        "median": 0.125,
+        "max": 0.15000000000000036
+      },
+      "retained_entry_gap_s": {
+        "count": 38,
+        "min": 0.09903184699942358,
+        "median": 0.13338591150022694,
+        "max": 0.15695929000503384
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 38,
+        "min": 0.09800404999987222,
+        "median": 0.13241866799944546,
+        "max": 0.15593550199992023
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/scan",
+          "prior_entry_wall_s": 9.836387510993518,
+          "next_entry_wall_s": 9.993346800998552,
+          "entry_gap_s": 0.15695929000503384,
+          "prior_exit_to_next_entry_s": 0.15593550199992023,
+          "prior_source_stamp_s": 12.501,
+          "next_source_stamp_s": 12.651,
+          "source_gap_s": 0.15000000000000036,
+          "prior_callback_wall_s": 0.0010237880051136017,
+          "prior_callback_cpu_s": 0.0010237099999999,
+          "next_callback_wall_s": 0.0010277969995513558,
+          "next_callback_cpu_s": 0.0010269920000001154
+        },
+        {
+          "topic": "/scan",
+          "prior_entry_wall_s": 10.092378647997975,
+          "next_entry_wall_s": 10.247304796997923,
+          "entry_gap_s": 0.15492614899994805,
+          "prior_exit_to_next_entry_s": 0.15354200299771037,
+          "prior_source_stamp_s": 12.751,
+          "next_source_stamp_s": 12.901,
+          "source_gap_s": 0.15000000000000036,
+          "prior_callback_wall_s": 0.001384146002237685,
+          "prior_callback_cpu_s": 0.0013843590000000017,
+          "next_callback_wall_s": 0.0009316700015915558,
+          "next_callback_cpu_s": 0.0009316830000001275
+        },
+        {
+          "topic": "/scan",
+          "prior_entry_wall_s": 13.392466869998316,
+          "next_entry_wall_s": 13.54723350799759,
+          "entry_gap_s": 0.15476663799927337,
+          "prior_exit_to_next_entry_s": 0.15285516699805157,
+          "prior_source_stamp_s": 16.001,
+          "next_source_stamp_s": 16.151,
+          "source_gap_s": 0.14999999999999858,
+          "prior_callback_wall_s": 0.0019114710012217984,
+          "prior_callback_cpu_s": 0.0019127999999999368,
+          "next_callback_wall_s": 0.0010461619967827573,
+          "next_callback_cpu_s": 0.001044792000000072
+        },
+        {
+          "topic": "/scan",
+          "prior_entry_wall_s": 12.62920720299735,
+          "next_entry_wall_s": 12.782992830994772,
+          "entry_gap_s": 0.15378562799742213,
+          "prior_exit_to_next_entry_s": 0.15272224100044696,
+          "prior_source_stamp_s": 15.251,
+          "next_source_stamp_s": 15.401,
+          "source_gap_s": 0.15000000000000036,
+          "prior_callback_wall_s": 0.0010633869969751686,
+          "prior_callback_cpu_s": 0.0010625349999999756,
+          "next_callback_wall_s": 0.001036745001329109,
+          "next_callback_cpu_s": 0.0010370809999999953
+        },
+        {
+          "topic": "/scan",
+          "prior_entry_wall_s": 12.120633227998042,
+          "next_entry_wall_s": 12.27441426999576,
+          "entry_gap_s": 0.1537810419977177,
+          "prior_exit_to_next_entry_s": 0.1526003339968156,
+          "prior_source_stamp_s": 14.751,
+          "next_source_stamp_s": 14.901,
+          "source_gap_s": 0.15000000000000036,
+          "prior_callback_wall_s": 0.0011807080009020865,
+          "prior_callback_cpu_s": 0.00118069799999998,
+          "next_callback_wall_s": 0.0009304790000896901,
+          "next_callback_cpu_s": 0.0009305779999999597
+        }
+      ]
+    },
+    "/uav/laser/scan": {
+      "full_count": 271,
+      "retained_tail_count": 99,
+      "retained_entry_start_s": 8.758456466995995,
+      "retained_entry_end_s": 13.752203374999226,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 98,
+        "min": 0.046999999999997044,
+        "median": 0.049999999999998934,
+        "max": 0.053000000000000824
+      },
+      "retained_entry_gap_s": {
+        "count": 98,
+        "min": 0.04165417199692456,
+        "median": 0.05134952099979273,
+        "max": 0.06765443799667992
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 98,
+        "min": 0.04157382999983383,
+        "median": 0.05123039949830854,
+        "max": 0.06758019299741136
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/uav/laser/scan",
+          "prior_entry_wall_s": 9.467883953999262,
+          "next_entry_wall_s": 9.535538391995942,
+          "entry_gap_s": 0.06765443799667992,
+          "prior_exit_to_next_entry_s": 0.06758019299741136,
+          "prior_source_stamp_s": 12.151,
+          "next_source_stamp_s": 12.204,
+          "source_gap_s": 0.053000000000000824,
+          "prior_callback_wall_s": 7.424499926855788e-05,
+          "prior_callback_cpu_s": 7.386200000003562e-05,
+          "next_callback_wall_s": 0.0001133030018536374,
+          "next_callback_cpu_s": 0.00011270099999993732
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_entry_wall_s": 9.84089457099617,
+          "next_entry_wall_s": 9.902925704998779,
+          "entry_gap_s": 0.06203113400260918,
+          "prior_exit_to_next_entry_s": 0.061906146998808254,
+          "prior_source_stamp_s": 12.504,
+          "next_source_stamp_s": 12.551,
+          "source_gap_s": 0.0470000000000006,
+          "prior_callback_wall_s": 0.00012498700380092487,
+          "prior_callback_cpu_s": 0.00012413200000005453,
+          "next_callback_wall_s": 0.00011100499978056177,
+          "next_callback_cpu_s": 0.00011017299999993568
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_entry_wall_s": 10.906481793994317,
+          "next_entry_wall_s": 10.966892602998996,
+          "entry_gap_s": 0.06041080900467932,
+          "prior_exit_to_next_entry_s": 0.0603041590002249,
+          "prior_source_stamp_s": 13.551,
+          "next_source_stamp_s": 13.604,
+          "source_gap_s": 0.05299999999999905,
+          "prior_callback_wall_s": 0.00010665000445442274,
+          "prior_callback_cpu_s": 0.00010582000000014524,
+          "next_callback_wall_s": 8.034199709072709e-05,
+          "next_callback_cpu_s": 7.989199999980379e-05
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_entry_wall_s": 10.1429131900004,
+          "next_entry_wall_s": 10.2024523749933,
+          "entry_gap_s": 0.05953918499290012,
+          "prior_exit_to_next_entry_s": 0.05941803399764467,
+          "prior_source_stamp_s": 12.801,
+          "next_source_stamp_s": 12.854,
+          "source_gap_s": 0.05299999999999905,
+          "prior_callback_wall_s": 0.00012115099525544792,
+          "prior_callback_cpu_s": 0.00012080700000005606,
+          "next_callback_wall_s": 0.0001285820035263896,
+          "next_callback_cpu_s": 0.00012766200000013939
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_entry_wall_s": 9.111620302996016,
+          "next_entry_wall_s": 9.167642344997148,
+          "entry_gap_s": 0.05602204200113192,
+          "prior_exit_to_next_entry_s": 0.05590328000107547,
+          "prior_source_stamp_s": 11.801,
+          "next_source_stamp_s": 11.853,
+          "source_gap_s": 0.0519999999999996,
+          "prior_callback_wall_s": 0.00011876200005644932,
+          "prior_callback_cpu_s": 0.00011811400000016903,
+          "next_callback_wall_s": 7.214400102384388e-05,
+          "next_callback_cpu_s": 7.167400000018809e-05
+        }
+      ]
+    },
+    "/tf": {
+      "full_count": 238,
+      "retained_tail_count": 80,
+      "retained_entry_start_s": 8.743346705996373,
+      "retained_entry_end_s": 13.624870075997023,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 79,
+        "min": -0.019999999999999574,
+        "median": 0.019999999999999574,
+        "max": 0.3200000000000003
+      },
+      "retained_entry_gap_s": {
+        "count": 79,
+        "min": 0.0003030540028703399,
+        "median": 0.009216344995365944,
+        "max": 0.3245391170057701
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 79,
+        "min": 0.00021939599537290633,
+        "median": 0.009126734999881592,
+        "max": 0.32442653000180144
+      },
+      "largest_retained_entry_gaps": [
+        {
+          "topic": "/tf",
+          "prior_entry_wall_s": 10.14343663699401,
+          "next_entry_wall_s": 10.46797575399978,
+          "entry_gap_s": 0.3245391170057701,
+          "prior_exit_to_next_entry_s": 0.32442653000180144,
+          "prior_source_stamp_s": 10.82,
+          "next_source_stamp_s": 11.14,
+          "source_gap_s": 0.3200000000000003,
+          "prior_callback_wall_s": 0.00011258700396865606,
+          "prior_callback_cpu_s": 0.00011216199999997123,
+          "next_callback_wall_s": 8.960999548435211e-05,
+          "next_callback_cpu_s": 8.9419000000035e-05
+        },
+        {
+          "topic": "/tf",
+          "prior_entry_wall_s": 12.974780270000338,
+          "next_entry_wall_s": 13.293025472994486,
+          "entry_gap_s": 0.3182452029941487,
+          "prior_exit_to_next_entry_s": 0.3181633839994902,
+          "prior_source_stamp_s": 13.66,
+          "next_source_stamp_s": 13.92,
+          "source_gap_s": 0.2599999999999998,
+          "prior_callback_wall_s": 8.181899465853348e-05,
+          "prior_callback_cpu_s": 8.143399999993584e-05,
+          "next_callback_wall_s": 7.990700396476313e-05,
+          "next_callback_cpu_s": 7.940500000014339e-05
+        },
+        {
+          "topic": "/tf",
+          "prior_entry_wall_s": 11.64547401299933,
+          "next_entry_wall_s": 11.906781042998773,
+          "entry_gap_s": 0.26130702999944333,
+          "prior_exit_to_next_entry_s": 0.2612280600005761,
+          "prior_source_stamp_s": 12.3,
+          "next_source_stamp_s": 12.56,
+          "source_gap_s": 0.2599999999999998,
+          "prior_callback_wall_s": 7.896999886725098e-05,
+          "prior_callback_cpu_s": 7.857099999997175e-05,
+          "next_callback_wall_s": 0.00010172899783356115,
+          "next_callback_cpu_s": 0.00010172799999996762
+        },
+        {
+          "topic": "/tf",
+          "prior_entry_wall_s": 9.715425161994062,
+          "next_entry_wall_s": 9.965415614999074,
+          "entry_gap_s": 0.24999045300501166,
+          "prior_exit_to_next_entry_s": 0.24992076800117502,
+          "prior_source_stamp_s": 10.42,
+          "next_source_stamp_s": 10.64,
+          "source_gap_s": 0.22000000000000064,
+          "prior_callback_wall_s": 6.968500383663923e-05,
+          "prior_callback_cpu_s": 6.954399999981042e-05,
+          "next_callback_wall_s": 8.93440010258928e-05,
+          "next_callback_cpu_s": 8.894199999986974e-05
+        },
+        {
+          "topic": "/tf",
+          "prior_entry_wall_s": 8.74377741599892,
+          "next_entry_wall_s": 8.989852129998326,
+          "entry_gap_s": 0.2460747139994055,
+          "prior_exit_to_next_entry_s": 0.24599555900203995,
+          "prior_source_stamp_s": 9.46,
+          "next_source_stamp_s": 9.7,
+          "source_gap_s": 0.23999999999999844,
+          "prior_callback_wall_s": 7.91549973655492e-05,
+          "prior_callback_cpu_s": 7.863199999991188e-05,
+          "next_callback_wall_s": 8.525199518771842e-05,
+          "next_callback_cpu_s": 8.492999999987205e-05
+        }
+      ]
+    },
+    "/tf_static": {
+      "full_count": 1,
+      "retained_tail_count": 0,
+      "retained_entry_start_s": null,
+      "retained_entry_end_s": null,
+      "retained_missing_source_stamp_count": 0,
+      "retained_source_gap_s": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_entry_gap_s": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "retained_exit_to_next_entry_s": {
+        "count": 0,
+        "min": null,
+        "median": null,
+        "max": null
+      },
+      "largest_retained_entry_gaps": []
+    }
+  },
+  "complete_span_count": 5686,
+  "trace_count": 2048,
+  "trace_dropped": 3638,
+  "retained_completion_range_s": [
+    8.722629591000441,
+    13.752298305997101
+  ],
+  "slow_count": 32,
+  "slow_dropped": 4,
+  "instrumentation_errors": 0,
+  "guard_minus_recorder_origin_offset": {
+    "joined_samples": 249,
+    "lower_s": 5.642003088723868e-06,
+    "upper_s": 0.0001253930022357963,
+    "meaning": "recorder.started_wall - guard.started_wall; derived bounds only"
+  },
+  "full_raw_sample_gaps": {
+    "/uav/odom": {
+      "rows": 666,
+      "arrival_gap_s": {
+        "count": 665,
+        "min": 0.0006019720021868125,
+        "median": 0.019989925996924285,
+        "max": 0.17015993099630577
+      },
+      "source_gap_s": {
+        "count": 665,
+        "min": 0.019999999999999574,
+        "median": 0.019999999999999574,
+        "max": 0.08000000000000007
+      },
+      "largest_arrival_gaps": [
+        {
+          "topic": "/uav/odom",
+          "prior_wall_elapsed_s": 5.359636273002252,
+          "next_wall_elapsed_s": 5.529796203998558,
+          "arrival_gap_s": 0.17015993099630577,
+          "prior_source_stamp_s": 8.12,
+          "next_source_stamp_s": 8.18,
+          "source_gap_s": 0.0600000000000005
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_wall_elapsed_s": 3.044563085997652,
+          "next_wall_elapsed_s": 3.0975515370009816,
+          "arrival_gap_s": 0.05298845100332983,
+          "prior_source_stamp_s": 5.84,
+          "next_source_stamp_s": 5.86,
+          "source_gap_s": 0.020000000000000462
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_wall_elapsed_s": 2.6713114860031055,
+          "next_wall_elapsed_s": 2.718172496999614,
+          "arrival_gap_s": 0.04686101099650841,
+          "prior_source_stamp_s": 5.5,
+          "next_source_stamp_s": 5.52,
+          "source_gap_s": 0.019999999999999574
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_wall_elapsed_s": 8.457268938000198,
+          "next_wall_elapsed_s": 8.497582978001446,
+          "arrival_gap_s": 0.04031404000124894,
+          "prior_source_stamp_s": 11.16,
+          "next_source_stamp_s": 11.18,
+          "source_gap_s": 0.019999999999999574
+        },
+        {
+          "topic": "/uav/odom",
+          "prior_wall_elapsed_s": 1.9578718580014538,
+          "next_wall_elapsed_s": 1.9975382589982473,
+          "arrival_gap_s": 0.03966640099679353,
+          "prior_source_stamp_s": 4.82,
+          "next_source_stamp_s": 4.84,
+          "source_gap_s": 0.019999999999999574
+        }
+      ]
+    },
+    "/scan": {
+      "rows": 108,
+      "arrival_gap_s": {
+        "count": 107,
+        "min": 0.08781864800403127,
+        "median": 0.1286576040001819,
+        "max": 0.1754026719936519
+      },
+      "source_gap_s": {
+        "count": 107,
+        "min": 0.09999999999999964,
+        "median": 0.10000000000000142,
+        "max": 0.1509999999999998
+      },
+      "largest_arrival_gaps": [
+        {
+          "topic": "/scan",
+          "prior_wall_elapsed_s": 2.9513319800025783,
+          "next_wall_elapsed_s": 3.1267346519962302,
+          "arrival_gap_s": 0.1754026719936519,
+          "prior_source_stamp_s": 5.75,
+          "next_source_stamp_s": 5.9,
+          "source_gap_s": 0.15000000000000036
+        },
+        {
+          "topic": "/scan",
+          "prior_wall_elapsed_s": 1.8871509520031395,
+          "next_wall_elapsed_s": 2.0609650499973213,
+          "arrival_gap_s": 0.1738140979941818,
+          "prior_source_stamp_s": 4.75,
+          "next_source_stamp_s": 4.9,
+          "source_gap_s": 0.15000000000000036
+        },
+        {
+          "topic": "/scan",
+          "prior_wall_elapsed_s": 5.238146146002691,
+          "next_wall_elapsed_s": 5.407568271002674,
+          "arrival_gap_s": 0.16942212499998277,
+          "prior_source_stamp_s": 8.0,
+          "next_source_stamp_s": 8.15,
+          "source_gap_s": 0.15000000000000036
+        },
+        {
+          "topic": "/scan",
+          "prior_wall_elapsed_s": 3.9682074430020293,
+          "next_wall_elapsed_s": 4.125902410996787,
+          "arrival_gap_s": 0.15769496799475746,
+          "prior_source_stamp_s": 6.75,
+          "next_source_stamp_s": 6.9,
+          "source_gap_s": 0.15000000000000036
+        },
+        {
+          "topic": "/scan",
+          "prior_wall_elapsed_s": 9.836513754002226,
+          "next_wall_elapsed_s": 9.993478525000683,
+          "arrival_gap_s": 0.15696477099845652,
+          "prior_source_stamp_s": 12.501,
+          "next_source_stamp_s": 12.651,
+          "source_gap_s": 0.15000000000000036
+        }
+      ]
+    },
+    "/uav/laser/scan": {
+      "rows": 271,
+      "arrival_gap_s": {
+        "count": 270,
+        "min": 0.023623932000191417,
+        "median": 0.05113966249700752,
+        "max": 0.0835800909990212
+      },
+      "source_gap_s": {
+        "count": 270,
+        "min": 0.0389999999999997,
+        "median": 0.04999999999999982,
+        "max": 0.05900000000000105
+      },
+      "largest_arrival_gaps": [
+        {
+          "topic": "/uav/laser/scan",
+          "prior_wall_elapsed_s": 5.716003870998975,
+          "next_wall_elapsed_s": 5.799583961997996,
+          "arrival_gap_s": 0.0835800909990212,
+          "prior_source_stamp_s": 8.453,
+          "next_source_stamp_s": 8.503,
+          "source_gap_s": 0.05000000000000071
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_wall_elapsed_s": 2.625138508003147,
+          "next_wall_elapsed_s": 2.7012829550003516,
+          "arrival_gap_s": 0.0761444469972048,
+          "prior_source_stamp_s": 5.453,
+          "next_source_stamp_s": 5.503,
+          "source_gap_s": 0.04999999999999982
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_wall_elapsed_s": 1.9387709029979305,
+          "next_wall_elapsed_s": 2.0142305299959844,
+          "arrival_gap_s": 0.07545962699805386,
+          "prior_source_stamp_s": 4.8,
+          "next_source_stamp_s": 4.853,
+          "source_gap_s": 0.052999999999999936
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_wall_elapsed_s": 3.058340613999462,
+          "next_wall_elapsed_s": 3.128738521998457,
+          "arrival_gap_s": 0.07039790799899492,
+          "prior_source_stamp_s": 5.853,
+          "next_source_stamp_s": 5.9,
+          "source_gap_s": 0.0470000000000006
+        },
+        {
+          "topic": "/uav/laser/scan",
+          "prior_wall_elapsed_s": 8.450121727997612,
+          "next_wall_elapsed_s": 8.518734564000624,
+          "arrival_gap_s": 0.06861283600301249,
+          "prior_source_stamp_s": 11.151,
+          "next_source_stamp_s": 11.204,
+          "source_gap_s": 0.053000000000000824
+        }
+      ]
+    }
+  },
+  "largest_receive_span": {
+    "span": {
+      "label": "receive:/uav/odom",
+      "entry_wall_s": 3.0650266529992223,
+      "topic": "/uav/odom",
+      "source_stamp_s": 5.86,
+      "state_at_entry": "ASCEND",
+      "phase_at_entry": "ASCEND_TO_010",
+      "exit_wall_s": 3.097659567996743,
+      "wall_s": 0.03263291499752086,
+      "cpu_s": 0.00026804599999996626
+    },
+    "within_complete_retained_tail": false,
+    "nearest_retained_receive_before": null,
+    "nearest_retained_receive_after": null,
+    "gap_from_prior_receive_exit_s": null,
+    "gap_to_next_receive_entry_s": null,
+    "containing_spans": [
+      {
+        "label": "spin_once",
+        "entry_wall_s": 3.064616595998814,
+        "exit_wall_s": 3.097742041994934,
+        "wall_s": 0.033125445996120106,
+        "cpu_s": 0.0007596039999999693
+      }
+    ],
+    "nearby_full_trajectory": [
+      {
+        "wall_elapsed_s": 3.0250890419993084,
+        "stamp": 5.82,
+        "relative_height_m": 0.0848566938220237,
+        "vz_mps": 0.046100000000001695
+      },
+      {
+        "wall_elapsed_s": 3.044563085997652,
+        "stamp": 5.84,
+        "relative_height_m": 0.08577869382202373,
+        "vz_mps": 0.046100000000001695
+      },
+      {
+        "wall_elapsed_s": 3.0975515370009816,
+        "stamp": 5.86,
+        "relative_height_m": 0.08670069382202376,
+        "vz_mps": 0.046100000000001695
+      },
+      {
+        "wall_elapsed_s": 3.110504144002334,
+        "stamp": 5.88,
+        "relative_height_m": 0.0876226938220238,
+        "vz_mps": 0.046100000000001695
+      },
+      {
+        "wall_elapsed_s": 3.1255833999966853,
+        "stamp": 5.9,
+        "relative_height_m": 0.08854469382202383,
+        "vz_mps": 0.046100000000001695
+      }
+    ]
+  },
+  "largest_spin_span": {
+    "label": "spin_once",
+    "entry_wall_s": 3.064616595998814,
+    "exit_wall_s": 3.097742041994934,
+    "wall_s": 0.033125445996120106,
+    "cpu_s": 0.0007596039999999693
+  },
+  "original_support_contract_audit": {
+    "definition": "original _stable checks wall >= stable_s=1; no source-span >=1 requirement; speed<=.005, angular<=.01, radius<=.002, height offset<=.005",
+    "first_eligible_command": {
+      "wall_elapsed_s": 12.705357790000562,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "OBSERVE",
+      "phase": "ZERO_RETURN",
+      "target_z": null,
+      "measured_z": 0.05499960466891557,
+      "measured_vz": 0.0001875942674773451,
+      "height_error_m": null,
+      "odom_stamp": 15.32
+    },
+    "first_eligible_tick": {
+      "label": "control_tick",
+      "entry_wall_s": 12.705052350000187,
+      "state_at_entry": "OBSERVE",
+      "phase_at_entry": "ZERO_RETURN",
+      "exit_wall_s": 12.705256327993993,
+      "wall_s": 0.00020397799380589277,
+      "cpu_s": 0.000204362000000069
+    },
+    "finished_command": {
+      "wall_elapsed_s": 13.714314357996045,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "FINISHED",
+      "phase": "ZERO_RETURN",
+      "target_z": null,
+      "measured_z": 0.05500070822849186,
+      "measured_vz": -8.267692086505463e-13,
+      "height_error_m": null,
+      "odom_stamp": 16.3
+    },
+    "finished_tick": {
+      "label": "control_tick",
+      "entry_wall_s": 13.714007238995691,
+      "state_at_entry": "OBSERVE",
+      "phase_at_entry": "ZERO_RETURN",
+      "exit_wall_s": 13.714210866994108,
+      "wall_s": 0.0002036279984167777,
+      "cpu_s": 0.00020388499999990373
+    },
+    "exact_anchor_and_decision_wall_logged": false,
+    "anchor_elapsed_guard_wall_bounds_s": [
+      12.705057992003276,
+      12.705381720996229
+    ],
+    "decision_elapsed_guard_wall_bounds_s": [
+      13.71401288099878,
+      13.714336259996344
+    ],
+    "anchor_to_decision_wall_span_bounds_s": [
+      1.0087509110016981,
+      1.0091585169939208
+    ],
+    "all_source_frames_between_anchor_and_finish_good": true,
+    "radius_from_anchor_sample_m": 3.1958840193065676e-05,
+    "original_wall_1s_contract_supported": true,
+    "source_span_at_first_finish_s": 0.9800000000000004,
+    "source_span_through_cleanup_s": 1.0199999999999996,
+    "arrival_span_through_cleanup_s": 1.0366803440047079,
+    "cleanup_all_frames_good": true,
+    "extra_strict_source_and_arrival_1s_at_first_finish": false
+  },
+  "publish_boundary_maximum_detail": {
+    "span": {
+      "label": "dds:publish_boundary",
+      "entry_wall_s": 11.594419001994538,
+      "topic": "/uav/cmd_vel",
+      "exit_wall_s": 11.594436021994625,
+      "wall_s": 1.7020000086631626e-05,
+      "cpu_s": 4.086000000125267e-06
+    },
+    "within_complete_retained_tail": true,
+    "nearest_retained_receive_before": {
+      "label": "receive:/odom",
+      "entry_wall_s": 11.583048620996124,
+      "topic": "/odom",
+      "source_stamp_s": 14.22,
+      "state_at_entry": "ASCEND",
+      "phase_at_entry": "DESCEND_002",
+      "exit_wall_s": 11.58316578099766,
+      "wall_s": 0.00011716000153683126,
+      "cpu_s": 0.0001167920000000322
+    },
+    "nearest_retained_receive_after": {
+      "label": "receive:/odom",
+      "entry_wall_s": 11.602510660995904,
+      "topic": "/odom",
+      "source_stamp_s": 14.24,
+      "state_at_entry": "ASCEND",
+      "phase_at_entry": "DESCEND_002",
+      "exit_wall_s": 11.602672674998757,
+      "wall_s": 0.00016201400285353884,
+      "cpu_s": 0.00016113100000003655
+    },
+    "gap_from_prior_receive_exit_s": 0.011253220996877644,
+    "gap_to_next_receive_entry_s": 0.008074639001279138,
+    "containing_spans": [
+      {
+        "label": "control_tick",
+        "entry_wall_s": 11.59424646399566,
+        "state_at_entry": "ASCEND",
+        "phase_at_entry": "DESCEND_002",
+        "exit_wall_s": 11.594505608998588,
+        "wall_s": 0.00025914500292856246,
+        "cpu_s": 0.000259341000000024
+      },
+      {
+        "label": "tick",
+        "entry_wall_s": 11.594241636994411,
+        "exit_wall_s": 11.594513204996474,
+        "wall_s": 0.0002715680020628497,
+        "cpu_s": 0.0002714240000001311
+      }
+    ]
+  },
+  "maximum_detail_matches_full_label_max": false,
+  "last_publish_boundary_detail": {
+    "span": {
+      "label": "dds:publish_boundary",
+      "entry_wall_s": 12.149957163994259,
+      "topic": "/uav/cmd_vel",
+      "exit_wall_s": 12.149961175993667,
+      "wall_s": 4.011999408248812e-06,
+      "cpu_s": 3.8929999999215426e-06
+    },
+    "within_complete_retained_tail": true,
+    "nearest_retained_receive_before": {
+      "label": "receive:/uav/odom",
+      "entry_wall_s": 12.131133278999187,
+      "topic": "/uav/odom",
+      "source_stamp_s": 14.76,
+      "state_at_entry": "ASCEND",
+      "phase_at_entry": "DESCEND_002",
+      "exit_wall_s": 12.131283088994678,
+      "wall_s": 0.0001498099954915233,
+      "cpu_s": 0.000149588999999839
+    },
+    "nearest_retained_receive_after": {
+      "label": "receive:/odom",
+      "entry_wall_s": 12.150567485994543,
+      "topic": "/odom",
+      "source_stamp_s": 14.78,
+      "state_at_entry": "ASCEND",
+      "phase_at_entry": "DESCEND_002",
+      "exit_wall_s": 12.150707587999932,
+      "wall_s": 0.00014010200538905337,
+      "cpu_s": 0.00013947799999991517
+    },
+    "gap_from_prior_receive_exit_s": 0.018674074999580625,
+    "gap_to_next_receive_entry_s": 0.0006063100008759648,
+    "containing_spans": [
+      {
+        "label": "control_tick",
+        "entry_wall_s": 12.149595320996013,
+        "state_at_entry": "ASCEND",
+        "phase_at_entry": "DESCEND_002",
+        "exit_wall_s": 12.15004203999706,
+        "wall_s": 0.0004467190010473132,
+        "cpu_s": 0.00044715399999994965
+      },
+      {
+        "label": "tick",
+        "entry_wall_s": 12.149589840999397,
+        "exit_wall_s": 12.15005240899336,
+        "wall_s": 0.00046256799396360293,
+        "cpu_s": 0.00046268900000012714
+      }
+    ]
+  },
+  "claims_not_supported": [
+    "DDS take/deserialize root cause",
+    "OS scheduling or quota root cause",
+    "separate guard-lock wait",
+    "source-side wall publication time",
+    "all early-span adjacency",
+    "complete inspection mission or task score"
+  ],
+  "nested_spans_overlap": true,
+  "source_stamp_is_publication_wall_time": false
+}

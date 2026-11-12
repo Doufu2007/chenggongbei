@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "data": {
+    "scenarioKey": "inspection",
+    "blocks": [
+      {
+        "type": "text",
+        "content": "平台仿真只需要提交两个文件，源码压缩包和启动脚本。\n以示例工作空间代码为例：\n源码压缩包：\n同学们自己的功能包和源码都需要放在这个文件下"
+      },
+      {
+        "type": "image",
+        "fileKey": "eval-guides/inspection/1791653081678_rcqjpr_92ba6165.png",
+        "name": "图片1.png",
+        "size": 84248,
+        "url": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/eval-guides/inspection/1791653081678_rcqjpr_92ba6165.png"
+      },
+      {
+        "type": "text",
+        "content": "启动脚本：\n用来启动自己的源码和主程序等"
+      },
+      {
+        "type": "image",
+        "fileKey": "eval-guides/inspection/1791653087089_d00cvb_c6d93bcb.png",
+        "name": "图片2.png",
+        "size": 136240,
+        "url": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/eval-guides/inspection/1791653087089_d00cvb_c6d93bcb.png"
+      },
+      {
+        "type": "text",
+        "content": "注意！！！\n提交的启动脚本不需要附带启动仿真和裁判系统的命令！"
+      },
+      {
+        "type": "image",
+        "fileKey": "eval-guides/inspection/1791653092516_kx92vr_e906f675.png",
+        "name": "图片3.png",
+        "size": 465332,
+        "url": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/eval-guides/inspection/1791653092516_kx92vr_e906f675.png"
+      }
+    ],
+    "updatedAt": "2026-10-11 01:24:58.745258+08"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "bounded-vertical-v27",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "source_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+  "base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "artifacts": [
+    {
+      "path": "dist/inspection_vertical_v27_src.zip",
+      "bytes": 9579076,
+      "sha256": "94c99826fb88b7dad20ffa513f20e316709fb9a62efd41880c58f1951f9998ea"
+    },
+    {
+      "path": "dist/run_vertical_v27.sh",
+      "bytes": 2895,
+      "sha256": "a7604e79493e4d518549181087baa0dfb856b46c828daaf9c6a06aff3e49affa"
+    }
+  ]
+}

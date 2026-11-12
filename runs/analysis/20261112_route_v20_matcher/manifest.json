@@ -1,0 +1,62 @@
+{
+  "kind": "v20_frozen_matcher_offline_manifest",
+  "created_at": "2026-11-11T20:56:27.815932+00:00",
+  "checks": [
+    {
+      "path": "runs/analysis/20261112_route_v20_independent/summary.json",
+      "sha256": "c9c4c733d583b89d06216258ddaf085428ab159bb684fa6d3012eea23234d735",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_ground_ipm_sift_exploratory/report.json",
+      "sha256": "b6b4738c7ca1248cb48d645c257f0410ae0bbfc31980c1b0762108d33bfd0c5c",
+      "matches": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_plane_matcher.py",
+      "sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_route_v20_independent/native_L000013_13d20f2020c94981.jpg",
+      "sha256": "13d20f2020c949810312a998e134d7f5c0a8e49bc64afa4fb666674b00dcbf34",
+      "matches": true
+    }
+  ],
+  "files": [
+    {
+      "path": "analyze.py",
+      "size_bytes": 10739,
+      "sha256": "0f65d6e7179727ae94a52adc106fd145b4895d1cce97cefdc9fe2a34add5e8f1"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3774,
+      "sha256": "c8087743cec2d94d77257e1e001b05f8d7a3f99e13499b445e39c359d7da115e"
+    },
+    {
+      "path": "report.json",
+      "size_bytes": 282129,
+      "sha256": "504d18c297a24a034c42596b27e4890052ff24db1b05f335fba550b087730537"
+    },
+    {
+      "path": "scores.csv",
+      "size_bytes": 4533,
+      "sha256": "b736855a8640c142048dd9b2a0995536e1c3b326b996bf65956c831ef62351ea"
+    },
+    {
+      "path": "uav_65_379_bev.png",
+      "size_bytes": 508318,
+      "sha256": "ec771c4a31ce741f82e463adca227fa434e16e42c4055407e23361e72296c529"
+    },
+    {
+      "path": "uav_65_379_source_overlay.png",
+      "size_bytes": 193015,
+      "sha256": "66c5ee3e3ec0de0f26a1bb4692306b9d9d8e3ea5a33b347d8590d3843fe1adb9"
+    }
+  ],
+  "excludes_itself": true,
+  "accepted_candidates": 0,
+  "production_modified": false,
+  "published": false
+}

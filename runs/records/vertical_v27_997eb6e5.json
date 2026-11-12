@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_id": "997eb6e5-bdda-4abc-88c2-ecb252319b4a",
+  "runId": "run_20261112_070718_ea5ea8b0",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "bounded-vertical-v27",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_vertical_v27_src.zip",
+    "sha256": "94c99826fb88b7dad20ffa513f20e316709fb9a62efd41880c58f1951f9998ea"
+  },
+  "script": {
+    "path": "dist/run_vertical_v27.sh",
+    "sha256": "a7604e79493e4d518549181087baa0dfb856b46c828daaf9c6a06aff3e49affa"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "ground_points": {
+      "ground_0": null,
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "ground_4": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 34.857,
+  "failure_reason": "Platform: no score extracted. Independent experiment reached rise 0.151669001m, zero command caused descent to support floor; local cumulative path limit stopped observation. Not a scoring run.",
+  "evidence_paths": [
+    "runs/evidence/20261112/vertical_v27_submit.json",
+    "runs/evidence/20261112/vertical_v27_artifacts.json",
+    "runs/evidence/20261112/vertical_v27_list_settled.json",
+    "runs/evidence/20261112/callback_vertical_v27.jsonl",
+    "runs/analysis/20261112_vertical_v27/validation.json",
+    "runs/analysis/20261112_vertical_v27/evidence.json"
+  ]
+}

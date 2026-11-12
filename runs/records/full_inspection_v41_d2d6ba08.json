@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_id": "d2d6ba08-ac43-42f7-a77f-a08eee68c53d",
+  "status": "failed",
+  "platform_server_status": "down",
+  "platform_pending_resubmit": false,
+  "kind": "full_inspection_practice_candidate",
+  "evaluation_mode": "practice",
+  "variant": "v41",
+  "submitted_local": "2026-11-12T11:27:54.865+08:00",
+  "runId": "run_20261112_114542_50c9a8cd",
+  "source": {
+    "path": "dist\\inspection_full_mission_v41_src.zip",
+    "bytes": 13378153,
+    "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d"
+  },
+  "script": {
+    "path": "dist\\run_full_mission_v41.sh",
+    "sha256": "7eeb6f05399bdfd82b538322065fa0fb9a2e4404ac5576ac986716a729b50309"
+  },
+  "scores": {
+    "total": null,
+    "extraction_status": "official_result_not_extracted"
+  },
+  "full_mission_completed": false,
+  "evidence_paths": [
+    "runs/evidence/20261112/full_v41_submission.json",
+    "runs/evidence/20261112/callback_full_inspection_v41.jsonl",
+    "runs/evidence/20261112/full_v41_detail_latest.json",
+    "runs/evidence/20261112/full_v41_uploaded_bytes_verified.json",
+    "runs/evidence/20261112/full_v41_server_status_crosscheck.json",
+    "runs/evidence/20261112/full_v41_detail_final.json",
+    "runs/evidence/20261112/full_v41_detail_with_logs.json",
+    "runs/evidence/20261112/full_v41_refresh_logs.json"
+  ],
+  "notes": "Full task upload was accepted and later runId allocated; official terminal status failed with no extracted score. No team callback exists; user startup is unconfirmed, not proven absent. Platform log refresh returned 502/evaluation server unreachable (circuit open), current server down. Uploaded bytes verified intact. Full task physical/scoring completion remains unverified.",
+  "last_checked_local": "2026-11-12T12:14:31.367140+08:00",
+  "runtime_started": null,
+  "durationMs": 291350,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+}

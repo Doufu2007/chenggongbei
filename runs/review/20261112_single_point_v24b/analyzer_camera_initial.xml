@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="7" time="0.941" timestamp="2026-11-12T06:03:24.253243+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_camera_liveness_is_preserved_as_observed_timing_without_refreshing_exposures" time="0.119"><failure message="KeyError: 'camera_liveness'">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-747/test_camera_liveness_is_preser0')
+
+    def test_camera_liveness_is_preserved_as_observed_timing_without_refreshing_exposures(tmp_path):
+        values,_=single_point_payloads()
+        camera={'wall_s':12.,'phase':'RECOGNIZE_WAIT','camera_max_wall_age_s':.5,
+            'last_image_arrival_wall_s':11.7,'last_image_stamp_s':20.7,'image_wall_age_s':.3,
+            'clock_minus_image_stamp_s':.3,'interpretation':'current liveness only'}
+        for target in (values[0],values[2]['survey']['approach']['single_point']):
+            target['camera_liveness']=deepcopy(camera)
+        result=analyze(tmp_path,values)
+&gt;       assert result['single_point']['camera_liveness']==camera
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'camera_liveness'
+
+tests\test_analyze_ground_single_point_evidence.py:166: KeyError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_camera_liveness_bad_container_is_not_silently_accepted" time="0.041"><failure message="AssertionError: assert ('collected' == 'invalid'&#10;  &#10;  - invalid&#10;  + collected)">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-747/test_camera_liveness_bad_conta0')
+
+    def test_camera_liveness_bad_container_is_not_silently_accepted(tmp_path):
+        values,_=single_point_payloads();values[0]['camera_liveness']=[]
+        result=analyze(tmp_path,values)
+&gt;       assert result['status']=='invalid' and result['parse_errors']
+E       AssertionError: assert ('collected' == 'invalid'
+E         
+E         - invalid
+E         + collected)
+
+tests\test_analyze_ground_single_point_evidence.py:174: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_top_fields_are_explicit_observations_without_creating_full_snapshot" time="0.055" /><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_conflicting_fallback_survey_field_preserves_both_observations" time="0.048" /><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation0]" time="0.045" /><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation1]" time="0.044" /><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation2]" time="0.053" /></testsuite></testsuites>

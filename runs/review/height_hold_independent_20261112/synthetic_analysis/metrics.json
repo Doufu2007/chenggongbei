@@ -1,0 +1,190 @@
+{
+  "kind": "independent_height_hold_raw_analysis",
+  "platform_id": "synthetic_transport",
+  "reported": {
+    "state": "FINISHED",
+    "reason": "support_return_verified_height_protocol_complete",
+    "phase": "ZERO_RETURN",
+    "hold_verified": true,
+    "descent_verified": true,
+    "protocol_complete": true,
+    "protocol_abort_reason": "",
+    "support_return_verified": true,
+    "official_score": null,
+    "full_mission_complete": false
+  },
+  "motion_start_elapsed_s": 1.0,
+  "hold_interval": [
+    3.25,
+    6.35
+  ],
+  "hold_valid_blocks": [
+    {
+      "samples": 61,
+      "start_source_stamp": 13.3,
+      "end_source_stamp": 16.3,
+      "start_arrival_wall_s": 3.3,
+      "end_arrival_wall_s": 6.3,
+      "source_span_s": 3.0,
+      "arrival_span_s": 3.0,
+      "max_abs_height_error_m": 0.001243124999999956,
+      "max_abs_vz_mps": 0.0006374999999999714,
+      "max_speed_mps": 0.0006374999999999714,
+      "max_angular_speed_rps": 0.0,
+      "position_radius_from_first_m": 0.0009709853998310369,
+      "max_source_gap_s": 0.05000000000000071,
+      "max_arrival_gap_s": 0.05000000000000071,
+      "kind": "hold"
+    }
+  ],
+  "independent_hold_3s_source_and_arrival": true,
+  "reported_hold_dwell_audit": {
+    "reported": {
+      "started_wall_elapsed_s": 3.3,
+      "ended_wall_elapsed_s": 6.3,
+      "started_odom_stamp": 13.3,
+      "ended_odom_stamp": 16.3
+    },
+    "reconstructed_window": {
+      "samples": 61,
+      "start_source_stamp": 13.3,
+      "end_source_stamp": 16.3,
+      "start_arrival_wall_s": 3.3,
+      "end_arrival_wall_s": 6.3,
+      "source_span_s": 3.0,
+      "arrival_span_s": 3.0,
+      "max_abs_height_error_m": 0.001243124999999956,
+      "max_abs_vz_mps": 0.0006374999999999714,
+      "max_speed_mps": 0.0006374999999999714,
+      "max_angular_speed_rps": 0.0,
+      "position_radius_from_first_m": 0.0009709853998310369,
+      "max_source_gap_s": 0.05000000000000071,
+      "max_arrival_gap_s": 0.05000000000000071,
+      "kind": "reported_hold_window"
+    },
+    "all_frames_inside_band": true,
+    "source_span_ge_3s": true,
+    "arrival_span_ge_3s": true,
+    "exact_source_endpoints": true,
+    "reported_tick_wall_span_s": 3.0
+  },
+  "descent_transition_audit": {
+    "transition": {
+      "wall_elapsed_s": 11.85,
+      "from": "DESCEND_002",
+      "to": "ZERO_RETURN",
+      "reason": "descent_height_and_speed_verified",
+      "odom_stamp": 21.85
+    },
+    "odom": {
+      "wall_elapsed_s": 11.85,
+      "stamp": 21.85,
+      "xyz": [
+        0.0,
+        0.0,
+        0.07993794405973588
+      ],
+      "q": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.0025322790049927615
+      ],
+      "angular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed": 0.0025322790049927615,
+      "angular_speed": 0.0,
+      "tilt": 0.0,
+      "wall": 11.85
+    },
+    "relative_height_m": 0.02493794405973588,
+    "vz_mps": -0.0025322790049927615,
+    "height_le_025": true,
+    "speed_le_020": true,
+    "joint_descent_gate_measured": true
+  },
+  "support_valid_blocks": [
+    {
+      "samples": 21,
+      "start_source_stamp": 22.35,
+      "end_source_stamp": 23.35,
+      "start_arrival_wall_s": 12.35,
+      "end_arrival_wall_s": 13.35,
+      "source_span_s": 1.0,
+      "arrival_span_s": 1.0,
+      "max_abs_height_error_m": 0.0,
+      "max_abs_vz_mps": 0.0,
+      "max_speed_mps": 0.0,
+      "max_angular_speed_rps": 0.0,
+      "position_radius_from_first_m": 0.0,
+      "max_source_gap_s": 0.05000000000000071,
+      "max_arrival_gap_s": 0.05000000000000071,
+      "kind": "support"
+    }
+  ],
+  "support_last_block_source_and_arrival_ge_1s": true,
+  "independent_full_local_protocol_observed": true,
+  "command_measurement_or_formula_errors": [],
+  "nonzero_at_or_below_phase_low_cutoff": [],
+  "nonzero_after_hold_deadline": [],
+  "nonzero_after_motion_budget": [],
+  "command_counts": {
+    "positive": 215,
+    "negative": 0,
+    "zero": 54
+  },
+  "reconstructed_path_m": 0.20484572079966218,
+  "reported_path_m": 0.20484572079966212,
+  "max_odom_source_gap_s": 0.05000000000000071,
+  "max_odom_arrival_gap_s": 0.05000000000000071,
+  "rise_m": {
+    "count": 268,
+    "min": 0.0,
+    "median": 0.044648350739236606,
+    "max": 0.10142000000000007
+  },
+  "last_odom": {
+    "wall_elapsed_s": 13.35,
+    "stamp": 23.35,
+    "xyz": [
+      0.0,
+      0.0,
+      0.055
+    ],
+    "q": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "angular": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "speed": 0.0,
+    "angular_speed": 0.0,
+    "tilt": 0.0,
+    "wall": 13.35
+  },
+  "interpretation_limits": [
+    "sampled observations do not establish behavior between samples",
+    "command time is process publication return time, not actuator application time",
+    "support proximity is not an independent touchdown sensor",
+    "callback byte integrity is not independent source authentication",
+    "no task score or complete inspection mission is inferred"
+  ]
+}

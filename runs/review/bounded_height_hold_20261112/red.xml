@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="39" skipped="0" tests="39" time="1.644" timestamp="2026-11-12T07:56:55.084782+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_height_hold" name="test_feedback_uses_bounded_local_trim_and_error_response[0.155-0.155-0.02695]" time="0.003"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">target = 0.155, z = 0.155, want = 0.02695
+
+    @pytest.mark.parametrize("target,z,want", [(.155, .155, .02695), (.155, .145, .02945),
+        (.075, .155, .01195), (.155, .075, .04195)])
+    def test_feedback_uses_bounded_local_trim_and_error_response(target, z, want):
+&gt;       assert api().feedback_command(target, z) == pytest.approx(want)
+               ^^^^^
+
+tests\test_bounded_height_hold.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_feedback_uses_bounded_local_trim_and_error_response[0.155-0.145-0.02945]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">target = 0.155, z = 0.145, want = 0.02945
+
+    @pytest.mark.parametrize("target,z,want", [(.155, .155, .02695), (.155, .145, .02945),
+        (.075, .155, .01195), (.155, .075, .04195)])
+    def test_feedback_uses_bounded_local_trim_and_error_response(target, z, want):
+&gt;       assert api().feedback_command(target, z) == pytest.approx(want)
+               ^^^^^
+
+tests\test_bounded_height_hold.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_feedback_uses_bounded_local_trim_and_error_response[0.075-0.155-0.01195]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">target = 0.075, z = 0.155, want = 0.01195
+
+    @pytest.mark.parametrize("target,z,want", [(.155, .155, .02695), (.155, .145, .02945),
+        (.075, .155, .01195), (.155, .075, .04195)])
+    def test_feedback_uses_bounded_local_trim_and_error_response(target, z, want):
+&gt;       assert api().feedback_command(target, z) == pytest.approx(want)
+               ^^^^^
+
+tests\test_bounded_height_hold.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_feedback_uses_bounded_local_trim_and_error_response[0.155-0.075-0.04195]" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">target = 0.155, z = 0.075, want = 0.04195
+
+    @pytest.mark.parametrize("target,z,want", [(.155, .155, .02695), (.155, .145, .02945),
+        (.075, .155, .01195), (.155, .075, .04195)])
+    def test_feedback_uses_bounded_local_trim_and_error_response(target, z, want):
+&gt;       assert api().feedback_command(target, z) == pytest.approx(want)
+               ^^^^^
+
+tests\test_bounded_height_hold.py:56: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_nonfinite_feedback_inputs_are_rejected[nan]" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">bad = nan
+
+    @pytest.mark.parametrize("bad", [math.nan, math.inf, -math.inf])
+    def test_nonfinite_feedback_inputs_are_rejected(bad):
+&gt;       with pytest.raises(ValueError): api().feedback_command(.155, bad)
+                                        ^^^^^
+
+tests\test_bounded_height_hold.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_nonfinite_feedback_inputs_are_rejected[inf]" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">bad = inf
+
+    @pytest.mark.parametrize("bad", [math.nan, math.inf, -math.inf])
+    def test_nonfinite_feedback_inputs_are_rejected(bad):
+&gt;       with pytest.raises(ValueError): api().feedback_command(.155, bad)
+                                        ^^^^^
+
+tests\test_bounded_height_hold.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_nonfinite_feedback_inputs_are_rejected[-inf]" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">bad = -inf
+
+    @pytest.mark.parametrize("bad", [math.nan, math.inf, -math.inf])
+    def test_nonfinite_feedback_inputs_are_rejected(bad):
+&gt;       with pytest.raises(ValueError): api().feedback_command(.155, bad)
+                                        ^^^^^
+
+tests\test_bounded_height_hold.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_hold_needs_three_continuous_actual_seconds_then_gates_to_positive_trim_descent" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_hold_needs_three_continuous_actual_seconds_then_gates_to_positive_trim_descent():
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_hold_height_or_speed_break_restarts_dwell[change0]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'z': 0.161}
+
+    @pytest.mark.parametrize("change", [{"z": .161}, {"vz": .011}])
+    def test_hold_height_or_speed_break_restarts_dwell(change):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_hold_height_or_speed_break_restarts_dwell[change1]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'vz': 0.011}
+
+    @pytest.mark.parametrize("change", [{"z": .161}, {"vz": .011}])
+    def test_hold_height_or_speed_break_restarts_dwell(change):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:77: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_hold_eight_second_timeout_cannot_be_extended_by_dwell_resets" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_hold_eight_second_timeout_cannot_be_extended_by_dwell_resets():
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:89: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_replaying_one_odom_stamp_cannot_satisfy_hold" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_replaying_one_odom_stamp_cannot_satisfy_hold():
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:97: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_any_nonzero_phase_interruption_is_permanent_zero_return[ASCEND_TO_010]" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase = 'ASCEND_TO_010'
+
+    @pytest.mark.parametrize("phase", ["ASCEND_TO_010", "HOLD_010", "DESCEND_002"])
+    def test_any_nonzero_phase_interruption_is_permanent_zero_return(phase):
+&gt;       g = guard()
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_any_nonzero_phase_interruption_is_permanent_zero_return[HOLD_010]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase = 'HOLD_010'
+
+    @pytest.mark.parametrize("phase", ["ASCEND_TO_010", "HOLD_010", "DESCEND_002"])
+    def test_any_nonzero_phase_interruption_is_permanent_zero_return(phase):
+&gt;       g = guard()
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_any_nonzero_phase_interruption_is_permanent_zero_return[DESCEND_002]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase = 'DESCEND_002'
+
+    @pytest.mark.parametrize("phase", ["ASCEND_TO_010", "HOLD_010", "DESCEND_002"])
+    def test_any_nonzero_phase_interruption_is_permanent_zero_return(phase):
+&gt;       g = guard()
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_descent_near_support_needs_height_and_speed_and_always_stops_nonzero[-0.01-True]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">vz = -0.01, completed = True
+
+    @pytest.mark.parametrize("vz,completed", [(-.01, True), (-.021, False)])
+    def test_descent_near_support_needs_height_and_speed_and_always_stops_nonzero(vz, completed):
+&gt;       g = guard(); enter_hold(g); feed_steps(g, 1.4, 4.4)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_descent_near_support_needs_height_and_speed_and_always_stops_nonzero[-0.021-False]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">vz = -0.021, completed = False
+
+    @pytest.mark.parametrize("vz,completed", [(-.01, True), (-.021, False)])
+    def test_descent_near_support_needs_height_and_speed_and_always_stops_nonzero(vz, completed):
+&gt;       g = guard(); enter_hold(g); feed_steps(g, 1.4, 4.4)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_permanent_twenty_five_second_motion_budget_includes_zero_return" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_permanent_twenty_five_second_motion_budget_includes_zero_return():
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_original_hard_bounds_remain_absorbing[change0-rise_limit]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'z': 0.206}, reason = 'rise_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit"), ({"wx": .101}, "angular_speed_limit")])
+    def test_original_hard_bounds_remain_absorbing(change, reason):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_original_hard_bounds_remain_absorbing[change1-horizontal_drift]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'x': 0.041}, reason = 'horizontal_drift'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit"), ({"wx": .101}, "angular_speed_limit")])
+    def test_original_hard_bounds_remain_absorbing(change, reason):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_original_hard_bounds_remain_absorbing[change2-tilt_limit]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'pitch': 0.051}, reason = 'tilt_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit"), ({"wx": .101}, "angular_speed_limit")])
+    def test_original_hard_bounds_remain_absorbing(change, reason):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_original_hard_bounds_remain_absorbing[change3-speed_limit]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'vz': 0.151}, reason = 'speed_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit"), ({"wx": .101}, "angular_speed_limit")])
+    def test_original_hard_bounds_remain_absorbing(change, reason):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_original_hard_bounds_remain_absorbing[change4-angular_speed_limit]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'wx': 0.101}, reason = 'angular_speed_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit"), ({"wx": .101}, "angular_speed_limit")])
+    def test_original_hard_bounds_remain_absorbing(change, reason):
+&gt;       g = guard(); enter_hold(g)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:151: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_global_and_path_hard_limits_are_not_relaxed" time="0.001"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_global_and_path_hard_limits_are_not_relaxed():
+&gt;       g = guard(); assert g.step(wall_s=45.).state == "STOP"
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:159: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_invalid_input_in_stage_zero_gate_is_absorbing[odom]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">topic = 'odom'
+
+    @pytest.mark.parametrize("topic", ["odom", "scan"])
+    def test_invalid_input_in_stage_zero_gate_is_absorbing(topic):
+&gt;       g = guard(); ready(g); g.record_command(wall_s=1.1, linear_z=.05)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_invalid_input_in_stage_zero_gate_is_absorbing[scan]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">topic = 'scan'
+
+    @pytest.mark.parametrize("topic", ["odom", "scan"])
+    def test_invalid_input_in_stage_zero_gate_is_absorbing(topic):
+&gt;       g = guard(); ready(g); g.record_command(wall_s=1.1, linear_z=.05)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:168: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_evidence_roundtrip_preserves_feedback_and_dwell_without_score_claim" time="0.046"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_evidence_roundtrip_preserves_feedback_and_dwell_without_score_claim():
+        from inspection_mission.telemetry import DiagnosticReporter
+        from tools.diagnostic_receiver import validate_event
+&gt;       g = guard(); enter_hold(g); feed_steps(g, 1.4, 4.4)
+            ^^^^^^^
+
+tests\test_bounded_height_hold.py:182: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:24: in guard
+    def guard(): return api().HeightHoldGuard(started_wall_s=0.)
+                        ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_adapter_only_emits_two_channels_and_feedback_z" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B484770&gt;
+
+    def test_adapter_only_emits_two_channels_and_feedback_z(monkeypatch):
+&gt;       node, _, outputs, _ = transport(monkeypatch)
+                              ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:220: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[sensor_age]" time="0.003"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B484B00&gt;
+fault = 'sensor_age'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[motion_budget]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B4EE570&gt;
+fault = 'motion_budget'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[hold_deadline]" time="0.003"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B480F30&gt;
+fault = 'hold_deadline'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[dds_match]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B482030&gt;
+fault = 'dds_match'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[dds_query_failure]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B518150&gt;
+fault = 'dds_query_failure'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[dds_query_delay]" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B519A50&gt;
+fault = 'dds_query_delay'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[ground_failure]" time="0.003"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B55AB70&gt;
+fault = 'ground_failure'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:229: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_failed_positive_publish_is_not_counted_and_still_attempts_uav_zero" time="0.002"><failure message="AssertionError: bounded height hold module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')&#10; +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001750B55B110&gt;
+
+    def test_failed_positive_publish_is_not_counted_and_still_attempts_uav_zero(monkeypatch):
+&gt;       node, _, outputs, wall = transport(monkeypatch)
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_height_hold.py:255: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_height_hold.py:205: in transport
+    node = api().create_height_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_height_hold"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded height hold module missing"
+E       AssertionError: bounded height hold module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001750770B1A0&gt;('inspection_mission.bounded_height_hold')
+E        +    where &lt;function find_spec at 0x000001750770B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_height_hold.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_launcher_executes_uploaded_module_and_preserves_real_exit[0-0]" time="0.021"><failure message="AssertionError: height launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-784/test_launcher_executes_uploade0')
+child_exit = 0, setup_exit = 0
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0,0),(17,0),(0,29)])
+    def test_launcher_executes_uploaded_module_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded height workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_height_hold.py").write_text("import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"+f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_height_hold.sh"
+&gt;       assert source.is_file(), "height launcher missing"
+E       AssertionError: height launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file
+
+tests\test_bounded_height_hold.py:283: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_launcher_executes_uploaded_module_and_preserves_real_exit[17-0]" time="0.009"><failure message="AssertionError: height launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-784/test_launcher_executes_uploade1')
+child_exit = 17, setup_exit = 0
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0,0),(17,0),(0,29)])
+    def test_launcher_executes_uploaded_module_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded height workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_height_hold.py").write_text("import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"+f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_height_hold.sh"
+&gt;       assert source.is_file(), "height launcher missing"
+E       AssertionError: height launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file
+
+tests\test_bounded_height_hold.py:283: AssertionError</failure></testcase><testcase classname="tests.test_bounded_height_hold" name="test_launcher_executes_uploaded_module_and_preserves_real_exit[0-29]" time="0.009"><failure message="AssertionError: height launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-784/test_launcher_executes_uploade2')
+child_exit = 0, setup_exit = 29
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0,0),(17,0),(0,29)])
+    def test_launcher_executes_uploaded_module_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded height workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_height_hold.py").write_text("import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"+f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_height_hold.sh"
+&gt;       assert source.is_file(), "height launcher missing"
+E       AssertionError: height launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_height_hold.sh').is_file
+
+tests\test_bounded_height_hold.py:283: AssertionError</failure></testcase></testsuite></testsuites>

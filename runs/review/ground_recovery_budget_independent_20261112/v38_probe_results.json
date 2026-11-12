@@ -1,0 +1,104 @@
+{
+  "group": "v38",
+  "passed": 10,
+  "total": 10,
+  "checks": [
+    {
+      "name": "turn_phase_changes_during_pause",
+      "passed": true,
+      "detail": {
+        "phase_after_odom": "TURN_SETTLE",
+        "resume_command": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "drive_phase_changes_during_pause",
+      "passed": true,
+      "detail": {
+        "phase_after_odom": "DRIVE_SETTLE",
+        "resume_command": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "name": "dual_clock_dwell_with_slow_source",
+      "passed": true,
+      "detail": {
+        "wall_only_dwell_s": 1.2,
+        "source_dwell_s": 0.23,
+        "new_epoch": 2
+      }
+    },
+    {
+      "name": "actual_constructed_factory_final_dds",
+      "passed": true,
+      "detail": {
+        "retained_constructed_instance": true,
+        "transports": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "final_dds_gap_s": 0.530038013
+      }
+    },
+    {
+      "name": "real_resumes_and_32_boundary",
+      "passed": true,
+      "detail": {
+        "four_independent_resumes": 4,
+        "seeded_boundary_last_granted": 32,
+        "next_request": "three_ground_resume_resource_limit"
+      }
+    },
+    {
+      "name": "five_second_deadline_clock_callback",
+      "passed": true,
+      "detail": {
+        "callback": "clock",
+        "deadline": 5.0,
+        "no_tick": true
+      }
+    },
+    {
+      "name": "five_second_deadline_odom_callback",
+      "passed": true,
+      "detail": {
+        "callback": "odom",
+        "deadline": 5.0,
+        "no_tick": true
+      }
+    },
+    {
+      "name": "five_second_deadline_scan_callback",
+      "passed": true,
+      "detail": {
+        "callback": "scan",
+        "deadline": 5.0,
+        "no_tick": true
+      }
+    },
+    {
+      "name": "cumulative_sixty_second_watchdog_boundary",
+      "passed": true,
+      "detail": {
+        "seeded_completed_s": 59.4,
+        "active_to_stop_s": 0.6,
+        "total_s": 60.0
+      }
+    },
+    {
+      "name": "camera_after_attempt_is_terminal",
+      "passed": true,
+      "detail": {
+        "terminal_no_retry_variants": 2
+      }
+    }
+  ]
+}

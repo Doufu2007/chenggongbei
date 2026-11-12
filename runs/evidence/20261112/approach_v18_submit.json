@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "message": "源码已上传，正在推送到测评服务器，请稍后刷新查看结果",
+  "data": {
+    "id": "5038ac33-4026-490a-8c1e-5b682b2a2f06",
+    "scenarioKey": "inspection",
+    "scenarioName": "城市应急全域巡检仿真",
+    "fileName": "inspection_ground_odom_qos_v18_src.zip",
+    "runId": "",
+    "status": "submitted",
+    "createdAt": "2026-11-11T19:59:29.069Z"
+  }
+}

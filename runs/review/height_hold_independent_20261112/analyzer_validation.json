@@ -1,0 +1,6 @@
+{
+  "normal_actual_factory_raw_roundtrip": true,
+  "forged_success_flags_do_not_pass_actual_dwell": true,
+  "wrong_section_rejected": true,
+  "truncated_fragment_rejected": true
+}

@@ -1,0 +1,40 @@
+inspection_mission:
+  ros__parameters:
+    use_sim_time: true
+    # Empty paths resolve to installed package share/config JSON templates.
+    # Those templates are intentionally unverified until official binding.
+    plan_path: ""
+    interface_profile_path: ""
+    mission_status_topic: "/inspection/mission_status"
+    runtime_status_topic: "/inspection_mission/status"
+    detection_topic: "/inspection_mission/observations"
+    phase_timeout_s: 90.0
+    control_rate_hz: 20.0
+    pose_timeout_s: 0.5
+    detection_timeout_s: 0.35
+    scan_timeout_s: 0.5
+    recognition_stable_s: 0.5
+    illumination_s: 2.0
+    no_progress_timeout_s: 8.0
+    obstacle_timeout_s: 4.0
+    require_ground_order: true
+    require_detection: true
+
+inspection_vision:
+  ros__parameters:
+    use_sim_time: true
+    # Fill from official topic contract; no guessed default camera channels.
+    image_topic: ""
+    ground_image_topic: ""
+    uav_image_topic: ""
+    camera_info_topic: ""
+    ground_camera_info_topic: ""
+    uav_camera_info_topic: ""
+    detection_topic: "/inspection_mission/observations"
+    min_detection_interval_s: 0.1
+    enable_qr: true
+    enable_aruco: true
+    aruco_dictionary: "DICT_4X4_50"
+    template_paths_json: "{}"
+    target_sizes_json: "{}"
+

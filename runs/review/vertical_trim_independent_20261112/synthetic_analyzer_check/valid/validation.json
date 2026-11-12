@@ -1,0 +1,36 @@
+{
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\vertical_trim_independent_20261112\\synthetic_analyzer_check\\synthetic_callback.jsonl",
+  "source_sha256": "7159dadacd3a905d35ba23504c82eb8ab444ded309958ff00d479b2989ae106b",
+  "source_bytes": 7344,
+  "event_count": 2,
+  "parts_verified": 1,
+  "metadata": {
+    "session_id": "a7f44b978a7d434097f01352e4cad035",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 133126,
+    "compressed_bytes": 3640,
+    "uncompressed_sha256": "1f838f97c289c79590ca91e3d29f057a5295f9b5200bd8d917517983f2cf4f5b",
+    "compressed_sha256": "d371964de45ebd4ffc57f05de5abef7c627bdda0724c9fd4397d295fb283a692",
+    "part_count": 1
+  },
+  "compressed_length_and_sha_match": true,
+  "raw_length_and_sha_match": true,
+  "shared_core_fields_match": true,
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "sample_counts": {
+    "trajectory": 64,
+    "commands": 66,
+    "scans": 64,
+    "downscans": 0,
+    "tf_records": 1
+  },
+  "platform_id": "synthetic-not-platform",
+  "callback_source": "unverified_callback",
+  "source_authenticated_independently": false
+}

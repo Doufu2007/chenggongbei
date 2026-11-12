@@ -1,0 +1,898 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="36" skipped="0" tests="36" time="1.511" timestamp="2026-11-12T07:17:02.115421+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_direction_response" name="test_missing_runtime_has_finite_spec_and_three_measured_pulses" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_missing_runtime_has_finite_spec_and_three_measured_pulses():
+&gt;       run = Run()
+              ^^^^^
+
+tests\test_ground_direction_response.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[global_wall_s-120.001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'global_wall_s', value = 120.001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_path_m-0.180001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_path_m', value = 0.180001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_origin_displacement_m-0.120001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_origin_displacement_m', value = 0.120001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_rotation_rad-1.00001]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_rotation_rad', value = 1.00001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[pulse_wall_s-2.00001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'pulse_wall_s', value = 2.00001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[pulse_displacement_m-0.040001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'pulse_displacement_m', value = 0.040001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[pulse_request_stop_m-0.010001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'pulse_request_stop_m', value = 0.010001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_translation_speed_mps-0.150001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_translation_speed_mps', value = 0.150001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_translation_yaw_speed_rps-0.150001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_translation_yaw_speed_rps', value = 0.150001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[max_pulse_yaw_drift_rad-0.030001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'max_pulse_yaw_drift_rad', value = 0.030001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[stable_drift_m-0.002001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'stable_drift_m', value = 0.002001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[stop_drift_m-0.010001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'stop_drift_m', value = 0.010001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[maximum_yaw_rate-0.500001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'maximum_yaw_rate', value = 0.500001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[turn_wall_s-45.001]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'turn_wall_s', value = 45.001
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_experiment_cannot_expand_spec_bounds[stable_s-0.99]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">field = 'stable_s', value = 0.99
+
+    @pytest.mark.parametrize("field,value",[("global_wall_s",120.001),("max_path_m",.180001),
+        ("max_origin_displacement_m",.120001),("max_rotation_rad",1.00001),
+        ("pulse_wall_s",2.00001),("pulse_displacement_m",.040001),
+        ("pulse_request_stop_m",.010001),("max_translation_speed_mps",.150001),
+        ("max_translation_yaw_speed_rps",.150001),("max_pulse_yaw_drift_rad",.030001),
+        ("stable_drift_m",.002001),("stop_drift_m",.010001),
+        ("maximum_yaw_rate",.500001),("turn_wall_s",45.001),("stable_s",.99)])
+    def test_experiment_cannot_expand_spec_bounds(field,value):
+        with pytest.raises(ValueError):
+&gt;           api().DirectionLimits(**{field:value})
+            ^^^^^
+
+tests\test_ground_direction_response.py:98: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_turn_precedes_translation_and_every_handoff_publishes_zero" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_turn_precedes_translation_and_every_handoff_publishes_zero():
+&gt;       run = Run()
+              ^^^^^
+
+tests\test_ground_direction_response.py:102: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_same_stamp_scan_change_cannot_hide_near_or_invalid_returns" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_same_stamp_scan_change_cannot_hide_near_or_invalid_returns():
+        for value in (.50,float("nan"),float("inf")):
+&gt;           run=pulse_run(); stamp=10.+run.wall
+                ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_identical_duplicate_does_not_refresh_source_liveness[scan]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">topic = 'scan'
+
+    @pytest.mark.parametrize("topic",["scan","odom"])
+    def test_identical_duplicate_does_not_refresh_source_liveness(topic):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_identical_duplicate_does_not_refresh_source_liveness[odom]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">topic = 'odom'
+
+    @pytest.mark.parametrize("topic",["scan","odom"])
+    def test_identical_duplicate_does_not_refresh_source_liveness(topic):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_changed_duplicate_odom_locks_stop_instead_of_replacing_pose" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_changed_duplicate_odom_locks_stop_instead_of_replacing_pose():
+&gt;       run=pulse_run();msg=deepcopy(run.guard.last_raw_odom)
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:138: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_pause_does_not_restart_or_expand_pulse_time" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_pause_does_not_restart_or_expand_pulse_time():
+&gt;       run=pulse_run();g=run.guard;start=g.pulse_started_wall
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[pulse_radius]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'pulse_radius'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[pulse_yaw]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'pulse_yaw'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[speed]" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'speed'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[angular_speed]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'angular_speed'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[global_origin]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'global_origin'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[path]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'path'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[rotation]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'rotation'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_motion_and_permanent_budget_breaches_latch_zero[global_wall]" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">kind = 'global_wall'
+
+    @pytest.mark.parametrize("kind",["pulse_radius","pulse_yaw","speed","angular_speed","global_origin","path","rotation","global_wall"])
+    def test_motion_and_permanent_budget_breaches_latch_zero(kind):
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:158: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_measured_10mm_pulse_requests_zero_before_40mm_hard_bound" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_measured_10mm_pulse_requests_zero_before_40mm_hard_bound():
+&gt;       run=pulse_run();g=run.guard
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:177: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_missing_feedback_or_lost_dds_cannot_advance_pulse" time="0.001"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_missing_feedback_or_lost_dds_cannot_advance_pulse():
+&gt;       run=pulse_run();g=run.guard;idx=g.pulse_index
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:186: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_v26_actual_trace_preserves_direction_mismatch_and_old_cross_track_stop" time="0.050"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_v26_actual_trace_preserves_direction_mismatch_and_old_cross_track_stop():
+        bundle=Path(__file__).resolve().parents[1]/"runs/analysis/20261112_three_point_v26/bundle.json"
+        data=json.loads(bundle.read_text(encoding="utf-8"));s=data["survey"];a=s["approach"]
+        from inspection_mission.ground_bounded_approach_sync import GroundSynchronizedApproachGuard
+        old=GroundSynchronizedApproachGuard(started_wall_s=0.)
+        old.phase=old.state="DRIVE";old.drive_origin=a["drive_origin"];old.drive_yaw=a["drive_yaw_rad"]
+        sample=next(r for r in s["trajectory_10hz"] if r["stamp_s"]&gt;=17.16-1e-9)
+        old.odom={"xyz":tuple(sample["position"]),"q":tuple(sample["quaternion"]),
+                  "tilt":0.,"speed":sample["linear_speed"],"yaw_speed":sample["angular_speed"]}
+        assert old.observed_motion_fault()=="approach_cross_track_limit"
+        segment=[r for r in s["trajectory_10hz"] if 14.6-1e-9&lt;=r["stamp_s"]&lt;=15.24+1e-9]
+        def raw(r):
+            msg=posed_odom(r["stamp_s"],x=r["position"][0],yaw=r["yaw_rad"])
+            msg["pose"]["pose"]["position"]["y"]=r["position"][1]
+            return msg
+&gt;       measured=api().response_from_odom(raw(segment[0]),raw(segment[-1]))
+                 ^^^^^
+
+tests\test_ground_direction_response.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_xy_publisher_preserves_y_and_no_other_output_is_used" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000015A3B4B1E00&gt;
+
+    def test_xy_publisher_preserves_y_and_no_other_output_is_used(monkeypatch):
+        install_ros_transport(monkeypatch);wall=[0.]
+&gt;       node=api().create_direction_response_node(wall_clock=lambda:wall[0])
+             ^^^^^
+
+tests\test_ground_direction_response.py:216: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_publisher_failure_still_attempts_zero_and_latches_stop" time="0.002"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000015A3B4B22C0&gt;
+
+    def test_publisher_failure_still_attempts_zero_and_latches_stop(monkeypatch):
+&gt;       install_ros_transport(monkeypatch);node=api().create_direction_response_node(wall_clock=lambda:0.)
+                                                ^^^^^
+
+tests\test_ground_direction_response.py:230: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase><testcase classname="tests.test_ground_direction_response" name="test_core_and_gzip_parts_use_receiver_sized_envelopes_and_keep_raw_twist" time="0.022"><failure message="AssertionError: independent direction-response runtime is missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')&#10; +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_core_and_gzip_parts_use_receiver_sized_envelopes_and_keep_raw_twist():
+        from inspection_mission.telemetry import DiagnosticReporter
+&gt;       run=pulse_run();events=run.guard.additional_events()
+            ^^^^^^^^^^^
+
+tests\test_ground_direction_response.py:246: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_direction_response.py:64: in pulse_run
+    return Run().until(lambda r:r.last.linear_x &gt; 0.)
+           ^^^^^
+tests\test_ground_direction_response.py:24: in __init__
+    self.guard = api().GroundDirectionResponseGuard(started_wall_s=0.,
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_direction_response"
+&gt;       assert importlib.util.find_spec(name), "independent direction-response runtime is missing"
+E       AssertionError: independent direction-response runtime is missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x0000015A3767B1A0&gt;('inspection_mission.ground_direction_response')
+E        +    where &lt;function find_spec at 0x0000015A3767B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_direction_response.py:18: AssertionError</failure></testcase></testsuite></testsuites>

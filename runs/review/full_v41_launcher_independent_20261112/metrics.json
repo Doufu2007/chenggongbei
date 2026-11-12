@@ -1,0 +1,75 @@
+{
+  "schema": "full_v41_launcher_readonly_audit_v1",
+  "platform_record_id": "d2d6ba08-ac43-42f7-a77f-a08eee68c53d",
+  "run_id": "run_20261112_114542_50c9a8cd",
+  "scope": "read-only frozen artifacts;no simulation,no real network requests,no package edits,no upload",
+  "script": {
+    "sha256": "7eeb6f05399bdfd82b538322065fa0fb9a2e4404ac5576ac986716a729b50309",
+    "bytes": 2901,
+    "matches_manifest": true,
+    "BOM": false,
+    "CR_count": 0,
+    "NUL_count": 0,
+    "bash_n_exit": 0,
+    "embedded_python_compile": "pass",
+    "mock_request_execution": [
+      {
+        "event": "launcher_started",
+        "schema_valid": true,
+        "method": "POST",
+        "content_type": "application/json",
+        "timeout_s": 3,
+        "url_matches_frozen_env": true,
+        "exit_code": null
+      },
+      {
+        "event": "launcher_exit",
+        "schema_valid": true,
+        "method": "POST",
+        "content_type": "application/json",
+        "timeout_s": 3,
+        "url_matches_frozen_env": true,
+        "exit_code": 2
+      }
+    ],
+    "mock_network_error_silently_swallowed": true,
+    "launcher_started_line": 35,
+    "ros_setup_line": 37
+  },
+  "zip": {
+    "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d",
+    "bytes": 13378153,
+    "matches_manifest": true,
+    "crc_bad_entry": null,
+    "entry_count": 76,
+    "python_ast_count": 53,
+    "entry_manifest_mismatches": [],
+    "required_runtime_present": true
+  },
+  "prior_launchers": {
+    "v37": {
+      "same_block_line_count": true,
+      "differing_lines_in_function_and_trap": [
+        9,
+        25
+      ],
+      "differences_are_mode_revision_and_print_prefix_only": true,
+      "callback_exists": true,
+      "launcher_started_count": 1,
+      "launcher_exit_count": 1
+    },
+    "v38": {
+      "same_block_line_count": true,
+      "differing_lines_in_function_and_trap": [
+        9,
+        25
+      ],
+      "differences_are_mode_revision_and_print_prefix_only": true,
+      "callback_exists": true,
+      "launcher_started_count": 1,
+      "launcher_exit_count": 1
+    }
+  },
+  "callback_v41_exists": false,
+  "conclusion": "No reproducible frozen launcher/ZIP defect found that explains absent launcher_started;remote execution and callback delivery remain unobserved."
+}

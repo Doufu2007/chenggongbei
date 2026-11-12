@@ -1,0 +1,1298 @@
+{
+  "floor_source_sha256": "c76cae66211925184bb8d921275aad7ae887275a66b63495255a5cdcd42b8cba",
+  "case_count": 80,
+  "correct_one_count": 59,
+  "wrong_classes": [],
+  "max_localization_error_m": 0.007284298364786384,
+  "rows": [
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0800503501140475,
+            -0.31953001947140014,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0004726698967012794,
+          "inliers": 85
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.078976355569276,
+            -0.31946921038202647,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.001153076553876859,
+          "inliers": 76
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.080298495799536,
+            -0.31912566005735066,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.000923888563438635,
+          "inliers": 69
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0791444151420695,
+            -0.31859487132455233,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.001645117638251268,
+          "inliers": 80
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0802441552463624,
+            -0.3202718421806827,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0003653901415262723,
+          "inliers": 111
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0799337428566513,
+            -0.32053797122563243,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0005420360215457929,
+          "inliers": 14
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0784945676824416,
+            -0.3186463477834247,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.002024524829728891,
+          "inliers": 116
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0802823817651888,
+            -0.3199218930782537,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.00029298490154914836,
+          "inliers": 124
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.081404179908176,
+            -0.3194334532844849,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.001514165247053882,
+          "inliers": 12
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0787344348061394,
+            -0.31796719003007134,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.002394571283915551,
+          "inliers": 117
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.079227538768072,
+            -0.321141023917747,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0013779085367696818,
+          "inliers": 17
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.084476481383395,
+            -0.32073782912087134,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.004536879697268423,
+          "inliers": 35
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.0787694936253116,
+            -0.31859095164658635,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0018707119501426958,
+          "inliers": 31
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.0783994646993698,
+            -0.32008489351757574,
+            0.012000000000000455
+          ],
+          "distance_error_m": 0.001602785125302249,
+          "inliers": 44
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.079171223720458,
+            -0.3190000509958908,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0012987563791377144,
+          "inliers": 33
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.080034646096919,
+            -0.32066174895499544,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0006626552885696041,
+          "inliers": 84
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.0801261181773265,
+            -0.31357148755604514,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.006429749453651734,
+          "inliers": 53
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.0804955346257175,
+            -0.319634400786758,
+            0.012000000000000455
+          ],
+          "distance_error_m": 0.0006158062601241247,
+          "inliers": 92
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "滑坡塌方",
+          "world_xyz": [
+            3.076539229657415,
+            -0.3186534026461214,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.003713523367044795,
+          "inliers": 59
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "expected_label": "滑坡塌方",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0794957344015206,
+            -0.3205066976938782,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0007148610681743296,
+          "inliers": 95
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0869366464480974,
+            -0.31777650304220395,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.007284298364786384,
+          "inliers": 15
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0800907986706587,
+            -0.318612378959203,
+            0.011999999999999567
+          ],
+          "distance_error_m": 0.00139058856296745,
+          "inliers": 85
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0746716070701305,
+            -0.3208389095010409,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.005394028213313334,
+          "inliers": 15
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0806747795678753,
+            -0.32103347530954385,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0012342603779829388,
+          "inliers": 99
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.07914018228595,
+            -0.31876940603894055,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0015012155069776358,
+          "inliers": 85
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0764579981425006,
+            -0.32111446377096375,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.003713193592491521,
+          "inliers": 12
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0792860080937023,
+            -0.32016677101307134,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0007332100743030626,
+          "inliers": 133
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0799047266919715,
+            -0.31932068935196445,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0006859591531259017,
+          "inliers": 23
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.079178203015304,
+            -0.31894442085989705,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0013377584255299104,
+          "inliers": 129
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0790086971948902,
+            -0.31916091022441395,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0012987505160390474,
+          "inliers": 16
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0804920674591054,
+            -0.32006637852549447,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0004965244132539846,
+          "inliers": 141
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0796275177418444,
+            -0.3208758992872356,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0009518101670083947,
+          "inliers": 12
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.07932316013072,
+            -0.3191969419459,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0010502449461445727,
+          "inliers": 142
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "expected_label": "救援营地",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "救援营地",
+          "world_xyz": [
+            3.0797121585496736,
+            -0.32028096674444995,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0004022375069692458,
+          "inliers": 27
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0797901985417457,
+            -0.32009897502376017,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0002319756608223568,
+          "inliers": 184
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.083068982962488,
+            -0.3187827295574015,
+            0.012000000000000455
+          ],
+          "distance_error_m": 0.003301575950128432,
+          "inliers": 13
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.079647060944465,
+            -0.3194190977459477,
+            0.011999999999999567
+          ],
+          "distance_error_m": 0.0006797156800346943,
+          "inliers": 149
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0793996016998633,
+            -0.3186978205657025,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.001433927961201164,
+          "inliers": 17
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.079947927502466,
+            -0.3203518736982194,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0003557058398424163,
+          "inliers": 172
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.081458248364336,
+            -0.31876966728676837,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0019079326186571014,
+          "inliers": 17
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0786428418632203,
+            -0.31863746378401037,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0019231180796068605,
+          "inliers": 160
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.079720980517993,
+            -0.3206213606673869,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0006811321092966827,
+          "inliers": 22
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0799888413191336,
+            -0.31946477346639024,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.000535342841960744,
+          "inliers": 143
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.07995967289124,
+            -0.3185086334845779,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0014919116458500996,
+          "inliers": 14
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0793663969721594,
+            -0.31851595103526775,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.001613646221019875,
+          "inliers": 132
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.079900244182927,
+            -0.31985120461734606,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.00017914041682165192,
+          "inliers": 148
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.0798128856502984,
+            -0.31947286429202726,
+            0.011999999999999567
+          ],
+          "distance_error_m": 0.0005593602010191639,
+          "inliers": 13
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.079731322923154,
+            -0.31826711262611296,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0017535923192691018,
+          "inliers": 147
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "expected_label": "被困人员",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "被困人员",
+          "world_xyz": [
+            3.078915195784008,
+            -0.3203023438409478,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.001126149184252831,
+          "inliers": 13
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0798456931240095,
+            -0.31925960151714805,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0007563071633849958,
+          "inliers": 67
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0784332698604895,
+            -0.31878978308509276,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0019797141993677966,
+          "inliers": 62
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0808359882295546,
+            -0.31960752404423554,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.0009235332672984708,
+          "inliers": 76
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "坍塌废墟",
+          "world_xyz": [
+            3.0782346589221152,
+            -0.3179875897668698,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0026769804010628776,
+          "inliers": 82
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "expected_label": "坍塌废墟",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.079924213008834,
+            -0.3198118143091968,
+            0.01200000000000001
+          ],
+          "distance_error_m": 0.00020287316789835877,
+          "inliers": 88
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 1,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0784976845116248,
+            -0.3176522285532386,
+            0.012000000000000455
+          ],
+          "distance_error_m": 0.0027872894705861647,
+          "inliers": 104
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": false,
+      "turns": 3,
+      "detections": [],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 0,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0797159872394024,
+            -0.32006611774755744,
+            0.011999999999999567
+          ],
+          "distance_error_m": 0.00029160727824312216,
+          "inliers": 81
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 1,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0824562799002218,
+            -0.31979694455980523,
+            0.011999999999999567
+          ],
+          "distance_error_m": 0.0024646586903718988,
+          "inliers": 12
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 2,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.079040098073344,
+            -0.3176954000138459,
+            0.012000000000000233
+          ],
+          "distance_error_m": 0.0024965161335307644,
+          "inliers": 88
+        }
+      ],
+      "diagnostics": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "expected_label": "受损车辆",
+      "mirrored": true,
+      "turns": 3,
+      "detections": [
+        {
+          "target_id": "受损车辆",
+          "world_xyz": [
+            3.0782949259869934,
+            -0.31969076040722144,
+            0.011999999999999789
+          ],
+          "distance_error_m": 0.0017328896432181008,
+          "inliers": 15
+        }
+      ],
+      "diagnostics": []
+    }
+  ]
+}

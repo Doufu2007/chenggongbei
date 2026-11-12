@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "record_id": "a1485e1e-27a0-45b0-bd2f-d3c313fdef6a",
+  "runId": "run_20261111_222348_ef5c04b0",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "read-only-compact-v5",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_probe_v5_src.zip",
+    "sha256": "909867d6820edad19eceb4ad24582cdfc749a3617a04c8d13f8f5e19cd6d0061"
+  },
+  "script": {
+    "path": "dist/run_interface_probe_v5.sh",
+    "sha256": "6698cc5500a541357cac7b304aed925530eca604904837cf29e9d0ebbbcf3a17"
+  },
+  "draw_order": [
+    "ground_1",
+    "ground_4",
+    "ground_0"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 112.172,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261111/probe_v5_submission.json",
+    "runs/evidence/20261111/probe_v5_detail_latest.json",
+    "runs/evidence/20261111/probe_v5_artifacts.json",
+    "runs/evidence/20261112/probe_v5_final.json",
+    "runs/evidence/20261111/callback_v5.jsonl",
+    "runs/analysis/20261112_v5/summary.json",
+    "runs/analysis/20261112_v5/image_L000003_7e8a2d30d4881eaa.jpg",
+    "runs/analysis/20261112_v5/image_L000004_25df1e640247efd7.jpg"
+  ]
+}

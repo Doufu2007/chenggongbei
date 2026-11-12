@@ -1,0 +1,29 @@
+{
+  "group": "static",
+  "passed": 2,
+  "total": 2,
+  "checks": [
+    {
+      "name": "frozen_hashes_factory_ast",
+      "passed": true,
+      "detail": {
+        "frozen_file_hashes": 16,
+        "factory_tail_ast_statements_equal": 20
+      }
+    },
+    {
+      "name": "archive_and_launcher",
+      "passed": true,
+      "detail": {
+        "unchanged_entries": 50,
+        "added_entries": [
+          "src/inspection_mission/inspection_mission/ground_three_point_camera_recovery.py",
+          "src/inspection_mission/inspection_mission/ground_three_point_recovery_budget.py"
+        ],
+        "archive_sha256": "b9874ada14c3df72483ea85eedebdfa02fbe1a245bb13da926e6d92bd524b85b",
+        "launcher_only_extra_diagnostic_env": true,
+        "launcher_sha256": "18d97806f0d941f1f338b42cbab5d10bef44c6b8695130b0c4e540281e65b93f"
+      }
+    }
+  ]
+}

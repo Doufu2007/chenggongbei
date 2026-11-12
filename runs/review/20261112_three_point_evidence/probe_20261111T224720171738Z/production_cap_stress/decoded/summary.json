@@ -1,0 +1,289 @@
+{
+  "schema": "ground_three_point_analysis_v1",
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\20261112_three_point_evidence\\probe_20261111T224720171738Z\\production_cap_stress\\production_callback.jsonl",
+  "raw_sha256": "f77b636872eec7bbacc0c89ef5320b67c2c846ca3d71408c91674d0158147b0b",
+  "raw_bytes": 7255158,
+  "transport_complete": true,
+  "official_score": null,
+  "full_mission_complete": false,
+  "errors": [],
+  "core_observations": [
+    {
+      "line": 1,
+      "data": {
+        "mode": "ground_three_point",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "test-current-session",
+        "section": "three_point_core",
+        "state": "STOP",
+        "reason": "three_ground_transport_complete_official_score_unverified",
+        "mission_draw": [
+          "ground_0",
+          "ground_3",
+          "ground_2"
+        ],
+        "point_index": 2,
+        "target_id": "ground_2",
+        "global_origin": [
+          0.0,
+          0.0,
+          0.055
+        ],
+        "total_path_m": 6.406999999999938,
+        "accumulated_rotation_rad": 19.68707047399392,
+        "completed_count": 3,
+        "full_mission_complete": false,
+        "frozen_limits": {
+          "target_distance_m": 0.2,
+          "global_wall_s": 1200.0,
+          "max_path_m": 12.5,
+          "max_origin_displacement_m": 3.0,
+          "max_rotation_rad": 25.0,
+          "local_swept_motion_budget_m": 0.06,
+          "scan_anchor_motion_limit_m": 0.03,
+          "local_stop_reserve_m": 0.03,
+          "linear_command_mps": 0.1,
+          "minimum_yaw_rate": 0.35,
+          "maximum_yaw_rate": 0.5,
+          "max_heading_error_rad": 0.05,
+          "max_reverse_m": 0.005,
+          "max_cross_track_m": 0.02,
+          "max_turn_drift_m": 0.06,
+          "wait_wall_s": 5.0,
+          "turn_wall_s": 45.0,
+          "turn_total_wall_s": 700.0,
+          "drive_wall_s": 500.0,
+          "capture_wall_s": 10.0
+        }
+      }
+    },
+    {
+      "line": 2,
+      "data": {
+        "mode": "ground_three_point",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "test-current-session",
+        "section": "three_point_point",
+        "point_index": 0,
+        "target_id": "ground_0",
+        "stationary_epoch": 2,
+        "recognition": {
+          "class_id": "trapped_people",
+          "label": "被困人员",
+          "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+          "first_id": "ground_0",
+          "stationary_epoch": 2,
+          "official_acceptance": false
+        },
+        "attempts": {
+          "recognition": {
+            "topic": "/inspection/detections",
+            "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 56.0,
+            "clock_stamp_s": 66.0,
+            "odom_stamp_s": 66.0,
+            "position": [
+              0.608393649987455,
+              -0.44940183504288517,
+              0.055
+            ],
+            "first_id": "ground_0",
+            "stationary_epoch": 2,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          },
+          "declaration": {
+            "topic": "/referee/current_target",
+            "data": "ground_0",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 115.25,
+            "clock_stamp_s": 125.25,
+            "odom_stamp_s": 125.25,
+            "position": [
+              1.114216536941033,
+              -1.3582700629287632,
+              0.055
+            ],
+            "first_id": "ground_0",
+            "stationary_epoch": 3,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          }
+        },
+        "recognition_status": [],
+        "pose": [
+          1.114216536941033,
+          -1.3582700629287632,
+          -0.01851535121533721
+        ],
+        "path_m": 2.4539999999999815,
+        "rotation_rad": 4.089278264046558,
+        "official_acceptance": false
+      }
+    },
+    {
+      "line": 3,
+      "data": {
+        "mode": "ground_three_point",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "test-current-session",
+        "section": "three_point_point",
+        "point_index": 1,
+        "target_id": "ground_3",
+        "stationary_epoch": 5,
+        "recognition": {
+          "class_id": "trapped_people",
+          "label": "被困人员",
+          "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+          "first_id": "ground_3",
+          "stationary_epoch": 5,
+          "official_acceptance": false
+        },
+        "attempts": {
+          "recognition": {
+            "topic": "/inspection/detections",
+            "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 254.4,
+            "clock_stamp_s": 264.4,
+            "odom_stamp_s": 264.4,
+            "position": [
+              0.5936569572190847,
+              -1.025683658685293,
+              0.055
+            ],
+            "first_id": "ground_3",
+            "stationary_epoch": 5,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          },
+          "declaration": {
+            "topic": "/referee/current_target",
+            "data": "ground_3",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 282.5,
+            "clock_stamp_s": 292.5,
+            "odom_stamp_s": 292.5,
+            "position": [
+              1.1210823845212714,
+              -1.92086152851625,
+              0.055
+            ],
+            "first_id": "ground_3",
+            "stationary_epoch": 6,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          }
+        },
+        "recognition_status": [],
+        "pose": [
+          1.1210823845212714,
+          -1.92086152851625,
+          -1.5476169419824222
+        ],
+        "path_m": 4.347999999999959,
+        "rotation_rad": 11.901565161993291,
+        "official_acceptance": false
+      }
+    },
+    {
+      "line": 4,
+      "data": {
+        "mode": "ground_three_point",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "test-current-session",
+        "section": "three_point_point",
+        "point_index": 2,
+        "target_id": "ground_2",
+        "stationary_epoch": 8,
+        "recognition": {
+          "class_id": "trapped_people",
+          "label": "被困人员",
+          "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+          "first_id": "ground_2",
+          "stationary_epoch": 8,
+          "official_acceptance": false
+        },
+        "attempts": {
+          "recognition": {
+            "topic": "/inspection/detections",
+            "data": "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 393.95,
+            "clock_stamp_s": 403.95,
+            "odom_stamp_s": 403.95,
+            "position": [
+              0.5987023107561348,
+              -1.8006570467854672,
+              0.055
+            ],
+            "first_id": "ground_2",
+            "stationary_epoch": 8,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          },
+          "declaration": {
+            "topic": "/referee/current_target",
+            "data": "ground_2",
+            "attempted": true,
+            "sent": true,
+            "wall_s": 456.55,
+            "clock_stamp_s": 466.55,
+            "odom_stamp_s": 466.55,
+            "position": [
+              0.002716849385832356,
+              -2.6962836062294433,
+              0.055
+            ],
+            "first_id": "ground_2",
+            "stationary_epoch": 9,
+            "official_acceptance": false,
+            "interpretation": "local_transport_attempt_not_referee_ack"
+          }
+        },
+        "recognition_status": [],
+        "pose": [
+          0.002716849385832356,
+          -2.6962836062294433,
+          -3.1168951674951866
+        ],
+        "path_m": 6.406999999999938,
+        "rotation_rad": 19.68707047399392,
+        "official_acceptance": false
+      }
+    }
+  ],
+  "transport": {
+    "mode": "ground_three_point",
+    "section": "three_ground_evidence_gzip_part",
+    "encoding": "gzip+base64",
+    "session_id": "test-current-session",
+    "bundle": "ground_three_point_v1",
+    "uncompressed_sha256": "dd34374ee2e39e9dec63d888b2eca76fa2f4a6ad51ffe06201c531bce95204d1",
+    "compressed_sha256": "11b90742e6d3c424e0d467bfbadc5190d3ae7abada14c1442a3a1d7c63672596",
+    "uncompressed_bytes": 13080229,
+    "compressed_bytes": 5356814,
+    "part_count": 149,
+    "duplicate_parts": 0
+  },
+  "completed_points_observed": 3,
+  "interpretation": "byte transport only; point history and local state are unverified observations"
+}

@@ -1,0 +1,24 @@
+{
+  "version": "ground-odom-qos-v18",
+  "mode": "practice",
+  "official_task_success": false,
+  "revision": "v18_odom_best_effort",
+  "changes": "only /odom requested reliability BEST_EFFORT, same depth/durability and v17 timing/.20m/.03mps/90s/original guard",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_odom_qos.py": "8569c30561a90fb4c43f8ea8578e81d6443e2c3c523b6a2a20d9182a74a5794f",
+    "src/inspection_mission/inspection_mission/bounded_ground_probe.py": "5f21933d9bc4f2983d14ba41f844036958ff9754f128ec63f9a5f46785d1cc99",
+    "scripts/run_ground_odom_qos.sh": "17fff8969d70b6f15a5c2fcf90042c31b868b9f265ff0ceec09e829e56b9948e"
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_odom_qos_v18_src.zip",
+      "bytes": 107155,
+      "sha256": "f2f387765eb6f89b46a3558919316a3c97f40c65c15245d6a603bf85663232d3"
+    },
+    {
+      "path": "dist/run_ground_odom_qos_v18.sh",
+      "bytes": 2823,
+      "sha256": "fe2643346dae8f0e155625520f1f696df7aa2937812b3a13d96bfa727657851f"
+    }
+  ]
+}

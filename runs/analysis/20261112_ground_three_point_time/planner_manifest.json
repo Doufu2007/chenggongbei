@@ -1,0 +1,184 @@
+{
+  "kind": "production_pure_candidate_three_point_planner",
+  "reference_25_legs_numeric_equal": 25,
+  "tests": "17 passed",
+  "files": [
+    {
+      "path": "src\\inspection_mission\\inspection_mission\\ground_three_point_plan.py",
+      "bytes": 11401,
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65"
+    },
+    {
+      "path": "tests/test_ground_three_point_plan.py",
+      "bytes": 6663,
+      "sha256": "9844c642e295dee48fe89468142b160c9bb2a81c6df0593b840160e2c6525ab6"
+    },
+    {
+      "path": "docs/ground_three_point_time_budget_20261112.md",
+      "bytes": 6123,
+      "sha256": "0d14174987823b67f657fadfb6abfb56ec4789def75d1afa7d199530084bcc50"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_time/time_budget.json",
+      "bytes": 25436,
+      "sha256": "d5f931522ceffe0d7577b2e0e850ed8c3b9b6d4f2ec5845babec2b226e8066b2"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_time/analyze_time.py",
+      "bytes": 6512,
+      "sha256": "adb7c423e6542a04555799008b94dc46c6e65f144249cc578414a8951e0a1554"
+    }
+  ],
+  "checks": [
+    {
+      "previous": null,
+      "target": "ground_0",
+      "path_m": 2.4650000000000003,
+      "rotation_rad": 4.197741550442512
+    },
+    {
+      "previous": null,
+      "target": "ground_1",
+      "path_m": 2.140432602334241,
+      "rotation_rad": 3.141592653589794
+    },
+    {
+      "previous": null,
+      "target": "ground_2",
+      "path_m": 3.824069532421558,
+      "rotation_rad": 4.317597860684929
+    },
+    {
+      "previous": null,
+      "target": "ground_3",
+      "path_m": 2.6619305666244,
+      "rotation_rad": 2.6269452236476156
+    },
+    {
+      "previous": null,
+      "target": "ground_4",
+      "path_m": 1.384226058851943,
+      "rotation_rad": 1.5707963267948966
+    },
+    {
+      "previous": "ground_0",
+      "target": "ground_1",
+      "path_m": 2.405432602334241,
+      "rotation_rad": 8.195452056925049
+    },
+    {
+      "previous": "ground_0",
+      "target": "ground_2",
+      "path_m": 2.3890695324215585,
+      "rotation_rad": 7.459190514274722
+    },
+    {
+      "previous": "ground_0",
+      "target": "ground_3",
+      "path_m": 1.8769305666244005,
+      "rotation_rad": 7.853981633974483
+    },
+    {
+      "previous": "ground_0",
+      "target": "ground_4",
+      "path_m": 3.035220564387917,
+      "rotation_rad": 9.562490939371468
+    },
+    {
+      "previous": "ground_1",
+      "target": "ground_0",
+      "path_m": 2.915,
+      "rotation_rad": 9.42477796076938
+    },
+    {
+      "previous": "ground_1",
+      "target": "ground_2",
+      "path_m": 2.4740695324215585,
+      "rotation_rad": 7.459190514274722
+    },
+    {
+      "previous": "ground_1",
+      "target": "ground_3",
+      "path_m": 1.9619305666244005,
+      "rotation_rad": 7.853981633974483
+    },
+    {
+      "previous": "ground_1",
+      "target": "ground_4",
+      "path_m": 3.120220564387917,
+      "rotation_rad": 9.562490939371468
+    },
+    {
+      "previous": "ground_2",
+      "target": "ground_0",
+      "path_m": 4.255,
+      "rotation_rad": 9.42477796076938
+    },
+    {
+      "previous": "ground_2",
+      "target": "ground_1",
+      "path_m": 3.8304326023342408,
+      "rotation_rad": 8.195452056925049
+    },
+    {
+      "previous": "ground_2",
+      "target": "ground_3",
+      "path_m": 3.3019305666244003,
+      "rotation_rad": 7.853981633974483
+    },
+    {
+      "previous": "ground_2",
+      "target": "ground_4",
+      "path_m": 4.460220564387917,
+      "rotation_rad": 9.562490939371468
+    },
+    {
+      "previous": "ground_3",
+      "target": "ground_0",
+      "path_m": 3.4050000000000002,
+      "rotation_rad": 7.853981633974483
+    },
+    {
+      "previous": "ground_3",
+      "target": "ground_1",
+      "path_m": 2.9804326023342407,
+      "rotation_rad": 6.6246557301301525
+    },
+    {
+      "previous": "ground_3",
+      "target": "ground_2",
+      "path_m": 2.0640695324215583,
+      "rotation_rad": 7.853981633974484
+    },
+    {
+      "previous": "ground_3",
+      "target": "ground_4",
+      "path_m": 3.6102205643879173,
+      "rotation_rad": 7.991694612576572
+    },
+    {
+      "previous": "ground_4",
+      "target": "ground_0",
+      "path_m": 2.2550000000000003,
+      "rotation_rad": 7.853981633974483
+    },
+    {
+      "previous": "ground_4",
+      "target": "ground_1",
+      "path_m": 1.8304326023342408,
+      "rotation_rad": 6.6246557301301525
+    },
+    {
+      "previous": "ground_4",
+      "target": "ground_2",
+      "path_m": 2.9640695324215582,
+      "rotation_rad": 5.888394187479825
+    },
+    {
+      "previous": "ground_4",
+      "target": "ground_3",
+      "path_m": 1.8019305666244003,
+      "rotation_rad": 4.197741550442512
+    }
+  ]
+}

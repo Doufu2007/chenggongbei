@@ -1,0 +1,1873 @@
+{
+  "kind": "saved_public_contract_and_v41_readonly_timing_audit",
+  "zip_binding": {
+    "source_zip": {
+      "path": "dist/inspection_full_mission_v41_src.zip",
+      "bytes": 13378153,
+      "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d"
+    },
+    "comparisons": [
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point_axis_plan.py",
+        "zip_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+        "current_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_return_plan.py",
+        "zip_sha256": "a4f4709b7b2dbcbd752fe9cf15307c9c1f56e74cd119dece7bc6afee79cb9a1d",
+        "current_sha256": "a4f4709b7b2dbcbd752fe9cf15307c9c1f56e74cd119dece7bc6afee79cb9a1d",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+        "zip_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+        "current_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+        "zip_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+        "current_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point_axis.py",
+        "zip_sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+        "current_sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+        "zip_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+        "current_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point_return.py",
+        "zip_sha256": "b70cd5dde22054cae748cbb6bfcff7e26c5b40c5ba80f1760c8b2aac355d79dc",
+        "current_sha256": "b70cd5dde22054cae748cbb6bfcff7e26c5b40c5ba80f1760c8b2aac355d79dc",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/ground_three_point_recovery_budget.py",
+        "zip_sha256": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d",
+        "current_sha256": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/full_flight_inspection.py",
+        "zip_sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+        "current_sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/mission.py",
+        "zip_sha256": "f6142ef086ed8da35f120c3cbfb1be74304672df3e3adfa1088c9ec379c47822",
+        "current_sha256": "f6142ef086ed8da35f120c3cbfb1be74304672df3e3adfa1088c9ec379c47822",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+        "zip_sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+        "current_sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+        "same": true
+      },
+      {
+        "path": "src/inspection_mission/inspection_mission/full_inspection_runtime.py",
+        "zip_sha256": "f8fe6bb1be6d43782d4f844ce65697ac36617d3cb7caa14ed54e218c87b1d5f5",
+        "current_sha256": "f8fe6bb1be6d43782d4f844ce65697ac36617d3cb7caa14ed54e218c87b1d5f5",
+        "same": true
+      }
+    ]
+  },
+  "saved_contract": {
+    "sources": [
+      {
+        "path": "docs/referee_rules_v1.txt",
+        "bytes": 16345,
+        "sha256": "45c6eaf7c81777af2c6f47a3cd677a3c98c3f3285e20bed5297f08df36d2931e"
+      },
+      {
+        "path": "runs/evidence/20261111/evaluation_guide.json",
+        "bytes": 1980,
+        "sha256": "ff6aa185c8d17952518ec2a364536f80ec79014fe55cd51b68f7191e294c7477"
+      },
+      {
+        "path": ".firecrawl/ros-evaluation-notes.txt",
+        "bytes": 8769,
+        "sha256": "2683dcd26aea93bcb516bb5c6510cecde180e4a87f5677c9585975cedf03b200"
+      },
+      {
+        "path": "docs/terminal_marker_fix_20261106.md",
+        "bytes": 2408,
+        "sha256": "feaf2fe97e6070308ff6dc85ae3c47d8e8e7b824867e5af5d3f18da59c1a1b33"
+      },
+      {
+        "path": "docs/runner_contract_current.md",
+        "bytes": 12940,
+        "sha256": "dc399ed5cd87616c8df906ffd857bee185d92b890888fa0d669f6e990fbb11f8"
+      },
+      {
+        "path": "docs/full_mission_bridge_20261112.md",
+        "bytes": 22462,
+        "sha256": "a3825c33a53296dbcdcc5c70c371f38934b0aa5808dab4e215e6f306047a414f"
+      },
+      {
+        "path": ".baf13c38c0939482.js",
+        "bytes": 40227,
+        "sha256": "88a3d7f8c0abaa40a2e27db3bad3455040ec46be0908baee423bc248df247502"
+      },
+      {
+        "path": "tmp_logchunks/239582d5d4bc9916.js",
+        "bytes": 18943,
+        "sha256": "00b9af6b3592c3806005109eaf85b15304c146e1623703e7f7893bc8e89ae6b2"
+      },
+      {
+        "path": "runs/analysis/20261112_v41_log_contract/758ecc6acdc6d49b.js",
+        "bytes": 20400,
+        "sha256": "2a2604ea635152e8af7e5ddc6fad8703b74623aaf0ba89dd8f8c2022f06e198b"
+      }
+    ],
+    "document_snippets": [
+      {
+        "source": "docs/referee_rules_v1.txt",
+        "line": 8,
+        "text": "各任务移动速度不得超过0.5m/s（暂定）"
+      },
+      {
+        "source": "docs/referee_rules_v1.txt",
+        "line": 9,
+        "text": "：裁判系统检测到移动速度超限时，锁定该任务后续计分（已获分数保留）。"
+      },
+      {
+        "source": "docs/referee_rules_v1.txt",
+        "line": 55,
+        "text": "窗户声明与降落声明：window_1、window_2、landing_marker。示例：data：“window_1”、data：“landing_marker”"
+      },
+      {
+        "source": "docs/referee_rules_v1.txt",
+        "line": 122,
+        "text": "返回指挥中心降落，降落前经 /referee/cruise_event 发布降落声明（如 landing_marker）。"
+      },
+      {
+        "source": "docs/referee_rules_v1.txt",
+        "line": 156,
+        "text": "空中巡航灯光定位时长1至3秒，飞行高度不得低于80cm；灯光稳定照射到图像中心点得满分，照射到边缘酌情给分，照射时灯光乱晃按该任务零分处理。"
+      },
+      {
+        "source": ".firecrawl/ros-evaluation-notes.txt",
+        "line": 49,
+        "text": "行日志或一个累加计数器，运行一小段时间后检查其是否仍为 0。两条依据同时"
+      },
+      {
+        "source": ".firecrawl/ros-evaluation-notes.txt",
+        "line": 80,
+        "text": "可即时查看。评测平台上日志按时间分为两个阶段，呈现内容不同："
+      },
+      {
+        "source": "docs/terminal_marker_fix_20261106.md",
+        "line": 7,
+        "text": "平台论坛帖子声称需要向 `/inspection/mission_status` 发布 `mission_completed` 并正常退出。原帖地址：[巡检的结束条件是什么？](https://www.splenach.com/ros-simulation/forum/6999b2f6-69c7-4c53-bedf-e6a2001eefe5)。帖子的作者身份和该接口尚未得到官方文档或实际 ROS 消息证明，不能称为已确认的官方协议。官方判分细则要求在降落前声明 `landing_marker`；当前状态机保留该官方顺序，不采纳帖子中相反的声明时机。"
+      },
+      {
+        "source": "docs/terminal_marker_fix_20261106.md",
+        "line": 11,
+        "text": "- 新增候选终态载荷 `mission_completed`，只在状态机完成所有地面点、窗口、空中点并通过 `LAND` 阶段后发布。该传输合同仍待平台验证。"
+      },
+      {
+        "source": "docs/terminal_marker_fix_20261106.md",
+        "line": 13,
+        "text": "- 发布终态后保留 0.5 秒传输等待时间，再关闭 ROS 节点；独立 `STEADY_TIME` 定时器使用 `time.monotonic()` 检查该等待时间，即使 `/clock` 停止也能触发退出。等待本身不能证明裁判已收到消息。失败或安全停车路径不会发布完成标记。"
+      },
+      {
+        "source": "docs/runner_contract_current.md",
+        "line": 87,
+        "text": "前端与已缓存指南均没有给出：解压/编译目录、执行脚本时的 cwd、脚本最终落盘路径、`install/setup.bash` 的准确位置、是否自动 source、允许的 shell/终端程序、超时与退出码回传规则。它们也没有给出巡检控制话题的消息类型、字段、坐标约定或地图/目标图库。"
+      },
+      {
+        "source": "docs/runner_contract_current.md",
+        "line": 105,
+        "text": "仿真中心“加载场景”处理器 `tO` 用 `setTimeout` 更新 React 状态并提示“已加载至 Gazebo”；该处理器本身没有运行容器调用。这个 UI 提示不能证明真正启动了官方评测环境。"
+      },
+      {
+        "source": "docs/runner_contract_current.md",
+        "line": 111,
+        "text": "- `pub_twist` 收集前进/转向与时长，之后通过定时器更新页面；`get_position` 返回本地积分的位姿。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 9,
+        "text": "**v25 已将首点真实闭环并获得官方 10.00 分**：三帧在线识别、一次话术、原始 `recognition_status=ground_0`、真实入区停稳及一次到点声明，官方最终 `success / 10.00 / 275.179s`。该有限实验没有发布全任务完成消息，说明平台至少存在这一路自然结算；不能再把 `mission_completed` 当成取得任何分数的必要条件。v23 外观察与 v24b 识别等待失败仍是独立历史事实，不能改写。下一步应连接连续地面执行并逐项补齐飞行能力；完整完成／主动放弃的精确合同仍需独立确认。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 15,
+        "text": "| 官方流程 | `docs/referee_rules_v1.txt` 表1、表3、表5明确三地面点按公开抽签执行；入点前识别、入点后 `current_target`；窗前声明再识别、下降穿越；空中识别后1–3秒有效照射且高度≥0.8m；返航后、降落前声明 `landing_marker`。 | 识别 ACK 字符串载荷、比赛提前放弃／结算接口、`mission_completed` 接收语义。 |"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 46,
+        "text": "当前 `GroundSinglePointGuard` 只处理首ID；`plan_ground_observation_route._initial_pose` 强制距原点≤.05m、yaw≤.05rad，单点结束又进入 STOP／FINISHED。因此**不能把当前入口连续调用三遍**，不能把上一点中心冒充新起点，也不能每点重置总路径／转角／总时间。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 80,
+        "text": "不要使用report产生时的最新pose替代曝光pose，不把confidence／像素重投影阈值填成米制误差0，不刷新旧TargetFix时间。`runtime.py:pose_at_exposure`已可复用；待补的是从原始证据构造`StampedPose3D/CameraObservation/StampedRange/StampedBool`的适配及可证误差界。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 84,
+        "text": "复用既有 `WINDOW_2_*→RECOVER_AFTER_WINDOW_2→RETURN_UAV→LAND_DECLARE→LAND`。按官方顺序先在返航终点发布 `landing_marker`，再真实下降、停稳；停止交付、进程正常退出和官方成绩分别记录。完整完成才可进入现有候选完成消息路径。不能因为某个有限实验已安全停止，就提前调用 `RunOutcome.complete_after_stop`发送全任务完成。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 101,
+        "text": "1. **官方V1能确认的巡检收尾只有降落前 `cruise_event=landing_marker`和真实降落。** 表1的 `/referee/finish`、`finish:return_start`明确属于陆地障碍物清除，不能给巡检借用。官方注意事项只说评测结束后提供结构化诊断，没有给比赛提前停止／放弃话题、schema或结算流程。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 102,
+        "text": "2. **当前 `mission_completed`来自论坛线索，尚未验证。** `mission_node.py:completion_status_payload`自身注释为“Completion payload reported in the platform forum; transport is unverified”，默认发布话题 `/inspection/mission_status`。`docs/terminal_marker_fix_20261106.md`引用[巡检的结束条件是什么？](https://www.splenach.com/ros-simulation/forum/6999b2f6-69c7-4c53-bedf-e6a2001eefe5)，并明确未证实作者身份／官方协议。控制器仅在全部阶段完成、LAND通过、停止发布成功后走该候选路径；本机用例仅证明该条件和退出等待。"
+      },
+      {
+        "source": "docs/full_mission_bridge_20261112.md",
+        "line": 116,
+        "text": "| `/inspection/mission_status` `mission_completed` | 本队已有候选发布和退出实现，论坛线索。 | 当前平台订阅/桥接、消息真实接受、它与自然结算/落地的关系。 |"
+      }
+    ],
+    "frontend_keyword_matches": [
+      {
+        "source": ".baf13c38c0939482.js",
+        "matches": [
+          {
+            "offset": 33877,
+            "keyword": "durationMs",
+            "context": "uted)\"},children:[e.createdAt&&(a=e.createdAt)?new Date(a).toLocaleString(\"zh-CN\",{hour12:!1}):\"\",e.durationMs?` \\xb7 耗时 ${(e.durationMs/1e3).toFixed(1)}s`:\"\"]})]}),(0,s.jsxs)(\"div\",{className:\"flex items-center gap-2 shrink-0\",children:[null!=e.score&&(0,s.jsxs)(\"span\",{className:\"text-sm"
+          },
+          {
+            "offset": 33903,
+            "keyword": "durationMs",
+            "context": "dAt&&(a=e.createdAt)?new Date(a).toLocaleString(\"zh-CN\",{hour12:!1}):\"\",e.durationMs?` \\xb7 耗时 ${(e.durationMs/1e3).toFixed(1)}s`:\"\"]})]}),(0,s.jsxs)(\"div\",{className:\"flex items-center gap-2 shrink-0\",children:[null!=e.score&&(0,s.jsxs)(\"span\",{className:\"text-sm font-bold\",style:{color:\""
+          }
+        ]
+      },
+      {
+        "source": "tmp_logchunks/239582d5d4bc9916.js",
+        "matches": [
+          {
+            "offset": 8175,
+            "keyword": "durationMs",
+            "context": ")(\"span\",{className:\"font-bold\",style:{color:\"var(--ros-accent-amber)\"},children:[\"成绩 \",H,\" 分\"]}),g.durationMs?(0,s.jsxs)(\"span\",{className:\"inline-flex items-center gap-1 text-xs\",style:{color:\"var(--ros-text-muted)\"},children:[(0,s.jsx)(c.CalendarClock,{className:\"h-3.5 w-3.5\"}),\" 已用 \",("
+          },
+          {
+            "offset": 8367,
+            "keyword": "durationMs",
+            "context": "r:\"var(--ros-text-muted)\"},children:[(0,s.jsx)(c.CalendarClock,{className:\"h-3.5 w-3.5\"}),\" 已用 \",(g.durationMs/1e3).toFixed(1),\"s\"]}):null,g.finishedAt?(0,s.jsxs)(\"span\",{className:\"text-xs\",style:{color:\"var(--ros-text-muted)\"},children:[\"结束 \",w(g.finishedAt)]}):g.createdAt?(0,s.jsxs)(\"sp"
+          },
+          {
+            "offset": 11853,
+            "keyword": "abnormalEnd",
+            "context": "0,s.jsx)(b.TerminalSquare,{className:\"h-4 w-4\"}),\" 查看终端日志\"]})]})]}):null,g&&\"success\"===g.status&&g.abnormalEnd?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(230,160,60,.12)\",border:\"1px solid rgba(230,160,60,.4)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-"
+          },
+          {
+            "offset": 12336,
+            "keyword": "超时",
+            "context": ")(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-accent-amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,g&&\"s"
+          },
+          {
+            "offset": 12407,
+            "keyword": "时限",
+            "context": "amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,g&&\"success\"===g.status&&0===H?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-"
+          }
+        ]
+      },
+      {
+        "source": "runs/analysis/20261112_v41_log_contract/758ecc6acdc6d49b.js",
+        "matches": [
+          {
+            "offset": 9133,
+            "keyword": "durationMs",
+            "context": ")(\"span\",{className:\"font-bold\",style:{color:\"var(--ros-accent-amber)\"},children:[\"成绩 \",P,\" 分\"]}),f.durationMs?(0,s.jsxs)(\"span\",{className:\"inline-flex items-center gap-1 text-xs\",style:{color:\"var(--ros-text-muted)\"},children:[(0,s.jsx)(d.CalendarClock,{className:\"h-3.5 w-3.5\"}),\" 已用 \",("
+          },
+          {
+            "offset": 9325,
+            "keyword": "durationMs",
+            "context": "r:\"var(--ros-text-muted)\"},children:[(0,s.jsx)(d.CalendarClock,{className:\"h-3.5 w-3.5\"}),\" 已用 \",(f.durationMs/1e3).toFixed(1),\"s\"]}):null,f.finishedAt?(0,s.jsxs)(\"span\",{className:\"text-xs\",style:{color:\"var(--ros-text-muted)\"},children:[\"结束 \",A(f.finishedAt)]}):f.createdAt?(0,s.jsxs)(\"sp"
+          },
+          {
+            "offset": 12766,
+            "keyword": "abnormalEnd",
+            "context": "0,s.jsx)(j.TerminalSquare,{className:\"h-4 w-4\"}),\" 查看终端日志\"]})]})]}):null,f&&\"success\"===f.status&&f.abnormalEnd?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(230,160,60,.12)\",border:\"1px solid rgba(230,160,60,.4)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-"
+          },
+          {
+            "offset": 13249,
+            "keyword": "超时",
+            "context": ")(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-accent-amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,f&&\"s"
+          },
+          {
+            "offset": 13320,
+            "keyword": "时限",
+            "context": "amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,f&&\"success\"===f.status&&0===P?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-"
+          }
+        ]
+      }
+    ],
+    "frontend_abnormal_end_guards": [
+      {
+        "source": "tmp_logchunks/239582d5d4bc9916.js",
+        "offset": 11826,
+        "condition": "g&&\"success\"===g.status&&g.abnormalEnd",
+        "context": "g&&\"success\"===g.status&&g.abnormalEnd?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(230,160,60,.12)\",border:\"1px solid rgba(230,160,60,.4)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-start gap-2 text-sm\",children:[(0,s.jsx)(i.AlertTriangle,{className:\"h-4 w-4 mt-0.5 shrink-0\",style:{color:\"var(--ros-accent-amber)\"}}),(0,s.jsxs)(\"div\",{className:\"min-w-0\",children:[(0,s.jsx)(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-accent-amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,g&&\"success\"===g.status&&0===H?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(47,107,255,.12)\",border:\"1px solid rgba(47,107,255,.35)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-start gap-2 text-sm\",children:[(0,s.jsx)(v.Info,{className:\"h-4 w-4 mt-0.5 shrink-0\",style:{color:\"var(--ros-primary)\"}}),(0,s.jsxs)(\"div\",{className:\"min-w-0\",children:[(0,s.jsx)(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-primary)\"}",
+        "meaning": "Public UI shows the suspected-timeout warning only for success plus abnormalEnd; this does not expose a numeric backend deadline."
+      },
+      {
+        "source": "runs/analysis/20261112_v41_log_contract/758ecc6acdc6d49b.js",
+        "offset": 12739,
+        "condition": "f&&\"success\"===f.status&&f.abnormalEnd",
+        "context": "f&&\"success\"===f.status&&f.abnormalEnd?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(230,160,60,.12)\",border:\"1px solid rgba(230,160,60,.4)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-start gap-2 text-sm\",children:[(0,s.jsx)(o.AlertTriangle,{className:\"h-4 w-4 mt-0.5 shrink-0\",style:{color:\"var(--ros-accent-amber)\"}}),(0,s.jsxs)(\"div\",{className:\"min-w-0\",children:[(0,s.jsx)(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-accent-amber)\"},children:\"评测未正常结束（疑似超时）\"}),(0,s.jsx)(\"div\",{style:{color:\"var(--ros-text)\"},children:\"本次测评在时限内未完整跑完全部任务，当前显示的分数为「已定稿任务」的累计分，并非完整、满分评测。 请查看「赛后诊断」终端日志确认判分依据（累计分按已定稿任务合计，最终成绩以官方记录为准）。\"})]})]})}):null,f&&\"success\"===f.status&&0===P?(0,s.jsx)(\"div\",{className:\"mb-5 p-4 rounded-lg\",style:{background:\"rgba(47,107,255,.12)\",border:\"1px solid rgba(47,107,255,.35)\"},children:(0,s.jsxs)(\"div\",{className:\"flex items-start gap-2 text-sm\",children:[(0,s.jsx)(v.Info,{className:\"h-4 w-4 mt-0.5 shrink-0\",style:{color:\"var(--ros-primary)\"}}),(0,s.jsxs)(\"div\",{className:\"min-w-0\",children:[(0,s.jsx)(\"div\",{className:\"font-semibold mb-1\",style:{color:\"var(--ros-primary)\"}",
+        "meaning": "Public UI shows the suspected-timeout warning only for success plus abnormalEnd; this does not expose a numeric backend deadline."
+      }
+    ],
+    "official_overall_deadline_found": false,
+    "official_user_startup_timeout_found": false,
+    "scope": "Only saved public documents and downloaded frontend chunks listed above; absence here does not prove no server-side deadline."
+  },
+  "history": {
+    "own_saved_durations": [
+      {
+        "source": "runs/records/cruise_height_v37_1fa480e1.json",
+        "id": "1fa480e1-6989-497d-bbd2-f59d481dbd08",
+        "variant": "v37_cruise",
+        "duration_s": 95.713,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/direction_v28_7724ce5c.json",
+        "id": "7724ce5c-3e6b-469e-a368-2e6aa7025044",
+        "variant": "ground-direction-v28",
+        "duration_s": 100.328,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform did not extract a score. This isolated experiment intentionally omitted scoring messages. Three measured XY response pulses and their stationary stops completed; full inspection was not attempted."
+      },
+      {
+        "source": "runs/records/full_inspection_v41_d2d6ba08.json",
+        "id": "d2d6ba08-ac43-42f7-a77f-a08eee68c53d",
+        "variant": "v41",
+        "duration_s": 291.35,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_approach_v15_87616485.json",
+        "id": "87616485-22d2-4849-8b8d-0b524d63c4b3",
+        "variant": "ground-bounded-approach-v15",
+        "duration_s": 169.902,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_approach_v16_e8d077bd.json",
+        "id": "e8d077bd-89ca-4b0e-8ff8-dfefbd7e10d6",
+        "variant": "ground-bounded-approach-v16",
+        "duration_s": 159.174,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_approach_v16b_b4cd8cda.json",
+        "id": "b4cd8cda-f442-41dc-8dd6-2a2a4c5c5484",
+        "variant": "ground-bounded-approach-v16b",
+        "duration_s": 167.614,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_callback_v17_441364ff.json",
+        "id": "441364ff-c6c4-4b1d-9683-1b249b505094",
+        "variant": "ground-callback-timing-v17",
+        "duration_s": 164.794,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_odom_qos_v18_5038ac33.json",
+        "id": "5038ac33-4026-490a-8c1e-5b682b2a2f06",
+        "variant": "ground-odom-qos-v18",
+        "duration_s": 141.089,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_route_v20_724cd86f.json",
+        "id": "724cd86f-6052-4dc8-a21e-f16d5136af7a",
+        "variant": "ground-route-v20",
+        "duration_s": 124.666,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_route_v21_d734af08.json",
+        "id": "d734af08-1c3e-4e3e-ab29-55d71e20df0b",
+        "variant": "ground-route-v21",
+        "duration_s": 71.162,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_route_v22_fc669360.json",
+        "id": "fc669360-a189-4dca-b804-19166267589f",
+        "variant": "ground-route-v22",
+        "duration_s": 166.037,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_route_v23_9fdfe2de.json",
+        "id": "9fdfe2de-a2f6-4ea5-8f62-74ff099ed85d",
+        "variant": "ground-route-v23",
+        "duration_s": 171.756,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_speed_v19_17f62d65.json",
+        "id": "17f62d65-e85d-46ed-bd78-be604d0b0de3",
+        "variant": "ground-speed-v19",
+        "duration_s": 146.274,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_survey_v10_fbcdc168.json",
+        "id": "fbcdc168-a118-4729-8deb-bf5a4ecfb759",
+        "variant": "ground-observation-survey-v10",
+        "duration_s": 96.426,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_survey_v11_1da890da.json",
+        "id": "1da890da-6b9e-4701-8efb-934da9850219",
+        "variant": "ground-observation-survey-v11",
+        "duration_s": 59.393,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_survey_v12_2bb54a18.json",
+        "id": "2bb54a18-08ec-4d1f-a5f4-893600919dff",
+        "variant": "ground-observation-survey-v12",
+        "duration_s": 80.194,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_survey_v13_e8cd8e60.json",
+        "id": "e8cd8e60-fddb-4fdc-9b65-25349077328a",
+        "variant": "ground-observation-survey-v13",
+        "duration_s": 65.001,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_v6_930a52f0.json",
+        "id": "930a52f0-a4f6-4483-b88b-813e17dd3807",
+        "variant": "bounded-ground-motion-v6",
+        "duration_s": 52.948,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/ground_v7_2208e026.json",
+        "id": "2208e026-e408-4119-8737-d9cab6c4a3b4",
+        "variant": "bounded-ground-motion-v7",
+        "duration_s": 65.212,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/height_timing_v34_0d99c6fc.json",
+        "id": "0d99c6fc-e6b7-4a69-aa35-abad82dbcbc0",
+        "variant": "height-timing-v34",
+        "duration_s": 56.1,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform did not extract a score. This isolated height experiment omitted inspection scoring and completion messages."
+      },
+      {
+        "source": "runs/records/reverse_v30_e5d26785.json",
+        "id": "e5d26785-01cd-41a6-acb8-02098e088649",
+        "variant": "reverse_v30",
+        "duration_s": 38.644,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform extracted no score. Direction experiment stopped during positive initial turn due to scan_too_close; no negative-X pulse was sent and reverse response remains untested. Preserve unchanged clearance gate and diagnose initial-position geometry."
+      },
+      {
+        "source": "runs/records/run_20261105_231853_9250eb18.json",
+        "id": "history-run_20261105_231853_9250eb18",
+        "variant": null,
+        "duration_s": 15.309,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_002014_40ef0cc3.json",
+        "id": "history-run_20261106_002014_40ef0cc3",
+        "variant": null,
+        "duration_s": 11.486,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_002558_9b17bc00.json",
+        "id": "history-run_20261106_002558_9b17bc00",
+        "variant": null,
+        "duration_s": 21.105,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_004839_665ea9d0.json",
+        "id": "history-run_20261106_004839_665ea9d0",
+        "variant": null,
+        "duration_s": 29.378,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_005323_885f0a05.json",
+        "id": "history-run_20261106_005323_885f0a05",
+        "variant": null,
+        "duration_s": 43.072,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_013450_5c256bcb.json",
+        "id": "history-run_20261106_013450_5c256bcb",
+        "variant": null,
+        "duration_s": 43.334,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_013935_90be4399.json",
+        "id": "history-run_20261106_013935_90be4399",
+        "variant": null,
+        "duration_s": 41.156,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261106_031856_3b37ac97.json",
+        "id": "history-run_20261106_031856_3b37ac97",
+        "variant": null,
+        "duration_s": 41.166,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261111_155937_44feef8e.json",
+        "id": "probe-run_20261111_155937_44feef8e",
+        "variant": "interface_probe",
+        "duration_s": 66.337,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/run_20261111_222348_ef5c04b0.json",
+        "id": "a1485e1e-27a0-45b0-bd2f-d3c313fdef6a",
+        "variant": "read-only-compact-v5",
+        "duration_s": 112.172,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/short_drive_v14_2aeffd1d.json",
+        "id": "2aeffd1d-eb67-4c2d-a8e2-a5fc8b9f065b",
+        "variant": "ground-short-drive-v14",
+        "duration_s": 43.142,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/single_point_v24b_e51c52ce.json",
+        "id": "e51c52ce-2605-4a4b-acb2-ea9c4a8bbfee",
+        "variant": "single-point-v24b",
+        "duration_s": 128.875,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/records/single_point_v25_c4202874.json",
+        "id": "c4202874-407a-4361-844a-0f95ba7b1d7f",
+        "variant": "single-point-v25",
+        "duration_s": 275.179,
+        "status": "success",
+        "runtime_started": null,
+        "failure_reason": null
+      },
+      {
+        "source": "runs/records/three_point_axis_v35_af0fe738.json",
+        "id": "af0fe738-c09b-4f4c-a2ed-fe51b0e0b298",
+        "variant": "ground-three-point-axis-v35",
+        "duration_s": 184.1,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "single_point_uav_image_stale"
+      },
+      {
+        "source": "runs/records/three_point_recovery_v38_dccfbacf.json",
+        "id": "dccfbacf-1728-4500-b45c-5ae4105d5f66",
+        "variant": "ground-three-point-recovery-v38",
+        "duration_s": 202.8,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "single_point_visual_binding_rejected"
+      },
+      {
+        "source": "runs/records/three_point_v26_0425d992.json",
+        "id": "0425d992-ddd4-4b91-9d21-b3d6a394728e",
+        "variant": "three-point-v26",
+        "duration_s": 98.393,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform: no score extracted. Actual guard: approach_cross_track_limit at first drive, measured cross-track 0.0202631559331779m; no point completed."
+      },
+      {
+        "source": "runs/records/trim_v29_d9abe4ad.json",
+        "id": "d9abe4ad-d514-4e69-9f3c-c90cab5ba875",
+        "variant": "trim_v29",
+        "duration_s": 41.76,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform extracted no score; intentional non-scoring diagnostic. Fixed low-height signed-Z sequence and support-return stationary observation completed. Zero command caused descent; hover and full inspection were not tested."
+      },
+      {
+        "source": "runs/records/vertical_v27_997eb6e5.json",
+        "id": "997eb6e5-bdda-4abc-88c2-ecb252319b4a",
+        "variant": "bounded-vertical-v27",
+        "duration_s": 34.857,
+        "status": "failed",
+        "runtime_started": null,
+        "failure_reason": "Platform: no score extracted. Independent experiment reached rise 0.151669001m, zero command caused descent to support floor; local cumulative path limit stopped observation. Not a scoring run."
+      },
+      {
+        "source": "runs/evidence/20261112/cruise_height_v37_official_page_final.json",
+        "duration_s": 95.7,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": null,
+        "failure": null
+      },
+      {
+        "source": "runs/evidence/20261112/height_timing_v34_official_page_final.json",
+        "duration_s": 56.1,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": null,
+        "failure": null
+      },
+      {
+        "source": "runs/evidence/20261112/height_v31_official_page_final.json",
+        "duration_s": 33.8,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": null,
+        "failure": "流程未检测到完整结束标志（未提取到成绩）"
+      },
+      {
+        "source": "runs/evidence/20261112/relocated_reverse_v33_official_page_final.json",
+        "duration_s": 341.2,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": "?????",
+        "failure": "????????????????????"
+      },
+      {
+        "source": "runs/evidence/20261112/three_point_axis_v35_official_page_final.json",
+        "duration_s": 184.1,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": "?????",
+        "failure": "????????????????????"
+      },
+      {
+        "source": "runs/evidence/20261112/three_point_recovery_v38_official_page_final.json",
+        "duration_s": 202.8,
+        "source_kind": "saved_official_page_rounded_display",
+        "status_display": null,
+        "failure": null
+      }
+    ],
+    "v41_official_fields": {
+      "id": "d2d6ba08-ac43-42f7-a77f-a08eee68c53d",
+      "status": "failed",
+      "durationMs": 291350,
+      "result": "运行未通过：流程未检测到完整结束标志（未提取到成绩）",
+      "failedReason": "流程未检测到完整结束标志（未提取到成绩）",
+      "score": null,
+      "runId": "run_20261112_114542_50c9a8cd",
+      "startedAt": null,
+      "finishedAt": null,
+      "serverDown": true,
+      "serverStatus": "down",
+      "abnormalEnd": false,
+      "hasLogs": true,
+      "tabLogs": [],
+      "terminalLogs": []
+    },
+    "interpretation": "durationMs is observed elapsed evaluation duration, not a published limit or measured user-control interval."
+  },
+  "ground": {
+    "limits": {
+      "target_distance_m": 0.2,
+      "global_wall_s": 1800.0,
+      "max_path_m": 15.0,
+      "max_origin_displacement_m": 3.0,
+      "max_rotation_rad": 40.0,
+      "local_swept_motion_budget_m": 0.06,
+      "scan_anchor_motion_limit_m": 0.03,
+      "local_stop_reserve_m": 0.03,
+      "linear_command_mps": 0.1,
+      "minimum_yaw_rate": 0.35,
+      "maximum_yaw_rate": 0.5,
+      "max_heading_error_rad": 0.05,
+      "max_reverse_m": 0.005,
+      "max_cross_track_m": 0.02,
+      "max_turn_drift_m": 0.06,
+      "wait_wall_s": 5.0,
+      "turn_wall_s": 45.0,
+      "turn_total_wall_s": 1000.0,
+      "drive_wall_s": 650.0,
+      "capture_wall_s": 10.0
+    },
+    "order_count": 60,
+    "path_span": {
+      "min": {
+        "order": [
+          "ground_4",
+          "ground_0",
+          "ground_3"
+        ],
+        "path_m": 9.440000000000001,
+        "rotation_rad": 34.55751918948773,
+        "turn_operations": 25,
+        "drive_operations": 16,
+        "operation_count": 41,
+        "ideal_max_command_motion_only_s": 163.51503837897548,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 233.5483717123088,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1132.535923567922,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1207.535923567922
+      },
+      "max": {
+        "order": [
+          "ground_2",
+          "ground_4",
+          "ground_3"
+        ],
+        "path_m": 13.99,
+        "rotation_rad": 35.61366808634045,
+        "turn_operations": 26,
+        "drive_operations": 17,
+        "operation_count": 43,
+        "ideal_max_command_motion_only_s": 211.12733617268088,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 283.1606695060142,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1320.5870370382063,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1395.5870370382063
+      }
+    },
+    "angle_span": {
+      "min": {
+        "order": [
+          "ground_4",
+          "ground_3",
+          "ground_0"
+        ],
+        "path_m": 9.940000000000001,
+        "rotation_rad": 32.47207543275065,
+        "turn_operations": 24,
+        "drive_operations": 16,
+        "operation_count": 40,
+        "ideal_max_command_motion_only_s": 164.34415086550132,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 233.37748419883465,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1102.705275029122,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1177.705275029122
+      },
+      "max": {
+        "order": [
+          "ground_1",
+          "ground_3",
+          "ground_2"
+        ],
+        "path_m": 10.91,
+        "rotation_rad": 37.752432539826714,
+        "turn_operations": 27,
+        "drive_operations": 16,
+        "operation_count": 43,
+        "ideal_max_command_motion_only_s": 184.60486507965342,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 256.63819841298675,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1258.7457444920083,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1333.7457444920083
+      }
+    },
+    "ideal_command_motion_span": {
+      "min": {
+        "order": [
+          "ground_4",
+          "ground_0",
+          "ground_3"
+        ],
+        "path_m": 9.440000000000001,
+        "rotation_rad": 34.55751918948773,
+        "turn_operations": 25,
+        "drive_operations": 16,
+        "operation_count": 41,
+        "ideal_max_command_motion_only_s": 163.51503837897548,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 233.5483717123088,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1132.535923567922,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1207.535923567922
+      },
+      "max": {
+        "order": [
+          "ground_2",
+          "ground_4",
+          "ground_3"
+        ],
+        "path_m": 13.99,
+        "rotation_rad": 35.61366808634045,
+        "turn_operations": 26,
+        "drive_operations": 17,
+        "operation_count": 43,
+        "ideal_max_command_motion_only_s": 211.12733617268088,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 283.1606695060142,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1320.5870370382063,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1395.5870370382063
+      }
+    },
+    "ideal_proxy_span": {
+      "min": {
+        "order": [
+          "ground_4",
+          "ground_3",
+          "ground_0"
+        ],
+        "path_m": 9.940000000000001,
+        "rotation_rad": 32.47207543275065,
+        "turn_operations": 24,
+        "drive_operations": 16,
+        "operation_count": 40,
+        "ideal_max_command_motion_only_s": 164.34415086550132,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 233.37748419883465,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1102.705275029122,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1177.705275029122
+      },
+      "max": {
+        "order": [
+          "ground_2",
+          "ground_1",
+          "ground_4"
+        ],
+        "path_m": 13.56,
+        "rotation_rad": 37.69911184307752,
+        "turn_operations": 27,
+        "drive_operations": 17,
+        "operation_count": 44,
+        "ideal_max_command_motion_only_s": 210.99822368615503,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 284.03155701948833,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1352.9380912191946,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1427.9380912191946
+      }
+    },
+    "v25_extrapolated_span": {
+      "min": {
+        "order": [
+          "ground_4",
+          "ground_3",
+          "ground_0"
+        ],
+        "path_m": 9.940000000000001,
+        "rotation_rad": 32.47207543275065,
+        "turn_operations": 24,
+        "drive_operations": 16,
+        "operation_count": 40,
+        "ideal_max_command_motion_only_s": 164.34415086550132,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 233.37748419883465,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1102.705275029122,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1177.705275029122
+      },
+      "max": {
+        "order": [
+          "ground_2",
+          "ground_1",
+          "ground_4"
+        ],
+        "path_m": 13.56,
+        "rotation_rad": 37.69911184307752,
+        "turn_operations": 27,
+        "drive_operations": 17,
+        "operation_count": 44,
+        "ideal_max_command_motion_only_s": 210.99822368615503,
+        "ideal_proxy_with_slow_tails_and_minimum_dwells_s": 284.03155701948833,
+        "slow_tail_length_m": 0.7000000000000001,
+        "v25_rate_extrapolated_motion_wall_s": 1352.9380912191946,
+        "v25_rate_plus_45s_three_visual_and_30s_other_reserve_s": 1427.9380912191946
+      }
+    },
+    "empirical_rate_source": {
+      "path": "runs/analysis/20261112_ground_three_point_time/time_budget.json",
+      "bytes": 25436,
+      "sha256": "d5f931522ceffe0d7577b2e0e850ed8c3b9b6d4f2ec5845babec2b226e8066b2"
+    },
+    "v25_drive_wall_s_per_m": 36.0057948884079,
+    "v25_turn_wall_s_per_rad": 22.936866951446852,
+    "v25_saved_clock_accounting": {
+      "guard_wall_s": 195.336,
+      "trajectory_wall_s": 195.22334899999998,
+      "trajectory_sim_s": 191.86,
+      "sim_per_wall": 0.9827717892494511,
+      "platform_duration_s": 275.179,
+      "launcher_payload_wall_s": 257.770975,
+      "platform_minus_guard_s": 79.84299999999996,
+      "launcher_minus_guard_s": 62.43497500000001
+    },
+    "v25_saved_command_aligned_response": {
+      "zero": {
+        "sample_intervals": 228.0,
+        "wall_s": 23.78349699999999,
+        "sim_s": 23.239999999999966,
+        "path_m": 0.00411799532679216,
+        "absolute_rotation_rad": 0.004920300000000148,
+        "path_m_per_wall_s": 0.00017314507310645536,
+        "path_m_per_sim_s": 0.00017719429117005878,
+        "absolute_rotation_rad_per_wall_s": 0.00020687874453450433,
+        "absolute_rotation_rad_per_sim_s": 0.0002117168674698862
+      },
+      "drive_0.03": {
+        "sample_intervals": 431.0,
+        "wall_s": 43.994973,
+        "sim_s": 43.3,
+        "path_m": 0.19875326418019187,
+        "absolute_rotation_rad": 0.00717399999999974,
+        "path_m_per_wall_s": 0.0045176357803468105,
+        "path_m_per_sim_s": 0.004590144669288496,
+        "absolute_rotation_rad_per_wall_s": 0.00016306408461711614,
+        "absolute_rotation_rad_per_sim_s": 0.0001656812933025344
+      },
+      "drive_0.10": {
+        "sample_intervals": 399.0,
+        "wall_s": 40.91126399999998,
+        "sim_s": 40.24000000000002,
+        "path_m": 2.2649777078588174,
+        "absolute_rotation_rad": 0.007844500000000807,
+        "path_m_per_wall_s": 0.05536318085549296,
+        "path_m_per_sim_s": 0.05628672236229662,
+        "absolute_rotation_rad_per_wall_s": 0.00019174425898942676,
+        "absolute_rotation_rad_per_sim_s": 0.00019494284294236587
+      },
+      "turn_0.50": {
+        "sample_intervals": 168.0,
+        "wall_s": 17.195241000000003,
+        "sim_s": 16.91999999999999,
+        "path_m": 0.008808737432206386,
+        "absolute_rotation_rad": 1.4583065999999998,
+        "path_m_per_wall_s": 0.000512277637295481,
+        "path_m_per_sim_s": 0.0005206109593502595,
+        "absolute_rotation_rad_per_wall_s": 0.08480873283485818,
+        "absolute_rotation_rad_per_sim_s": 0.08618833333333337
+      },
+      "turn_between_0.35_0.50": {
+        "sample_intervals": 70.0,
+        "wall_s": 7.12675999999999,
+        "sim_s": 7.0,
+        "path_m": 0.0016528641562833517,
+        "absolute_rotation_rad": 0.4950399,
+        "path_m_per_wall_s": 0.0002319236450060552,
+        "path_m_per_sim_s": 0.00023612345089762168,
+        "absolute_rotation_rad_per_wall_s": 0.06946212584680846,
+        "absolute_rotation_rad_per_sim_s": 0.07071998571428571
+      },
+      "turn_0.35": {
+        "sample_intervals": 607.0,
+        "wall_s": 62.21161400000002,
+        "sim_s": 61.160000000000025,
+        "path_m": 0.02328559187841719,
+        "absolute_rotation_rad": 2.0903058,
+        "path_m_per_wall_s": 0.00037429654016719747,
+        "path_m_per_sim_s": 0.0003807323721127728,
+        "absolute_rotation_rad_per_wall_s": 0.033599928785001454,
+        "absolute_rotation_rad_per_sim_s": 0.034177661870503584
+      }
+    },
+    "limitations": [
+      "No v41 draw or actual path was received; all 60 public orders shown.",
+      "Ideal proxies assume exact nominal endpoints, velocities and clock=wall, not platform physics bounds.",
+      "Dwells formula counts one second per operation, initial/calibration/home one each, report1+declare2 per point; no vision/network time guarantee.",
+      "v25 rates describe one real earlier single-point run and include some settle overhead; extrapolation is a scenario, not current full-task measurement."
+    ]
+  },
+  "flight": {
+    "stage_count": 26,
+    "settings": {
+      "require_ground_order": true,
+      "require_detection": true,
+      "recognition_confirmation_mode": "transport_only",
+      "recognition_transport_wait_s": 0.2,
+      "pose_timeout_s": 0.2,
+      "detection_timeout_s": 0.5,
+      "future_tolerance_s": 0.12,
+      "recognition_stable_s": 0.5,
+      "illumination_s": 2.0,
+      "phase_timeout_s": 100.0,
+      "mission_timeout_s": 900.0,
+      "no_progress_timeout_s": 10.0,
+      "obstacle_timeout_s": 3.0,
+      "position_tolerance_m": 0.01,
+      "yaw_tolerance_rad": 0.025,
+      "window_z_tolerance_m": 0.015,
+      "landing_z_tolerance_m": 0.005,
+      "max_ground_speed_mps": 0.28,
+      "max_ground_yaw_rate_rps": 0.6,
+      "max_uav_speed_mps": 0.12,
+      "max_uav_yaw_rate_rps": 0.2,
+      "stable_speed_mps": 0.02,
+      "stable_yaw_rate_rps": 0.03,
+      "stable_radius_m": 0.015,
+      "center_tolerance": 0.48,
+      "minimum_confidence": 0.55,
+      "min_aerial_height_m": 0.8,
+      "window_descent_epsilon_m": 0.005,
+      "visual_servo_enabled": false,
+      "visual_max_yaw_offset_rad": 0.45,
+      "visual_max_yaw_rate_rps": 0.15,
+      "visual_yaw_gain": 0.8,
+      "visual_control_horizon_s": 0.2,
+      "light_feedback_timeout_s": 0.5,
+      "session_id": "timing_readonly"
+    },
+    "stages": [
+      {
+        "stage": "TAKEOFF",
+        "kind": "vertical",
+        "start": [
+          0.0,
+          0.0,
+          0.055,
+          0.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 1.227,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 1.227,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 10.225000000000001,
+        "ideal_trim_model_max_speed_motion_s": 40.900000000000006
+      },
+      {
+        "stage": "WINDOW_1_APPROACH",
+        "kind": "navigate",
+        "start": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "target": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 1.0998891989650594,
+        "horizontal_m": 1.0998891989650594,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 9.16574332470883,
+        "ideal_trim_model_max_speed_motion_s": 9.16574332470883
+      },
+      {
+        "stage": "WINDOW_1_DECLARE",
+        "kind": "declare",
+        "start": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "target": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "WINDOW_1_RECOGNIZE",
+        "kind": "recognize",
+        "start": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "target": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "WINDOW_1_DESCEND",
+        "kind": "descend",
+        "start": [
+          1.05,
+          -0.3275,
+          1.282,
+          0.0
+        ],
+        "target": [
+          1.05,
+          -0.3275,
+          0.75,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.532,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.532,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 4.433333333333334,
+        "ideal_trim_model_max_speed_motion_s": 17.733333333333334
+      },
+      {
+        "stage": "WINDOW_1_CROSS",
+        "kind": "cross",
+        "start": [
+          1.05,
+          -0.3275,
+          0.75,
+          0.0
+        ],
+        "target": [
+          2.65,
+          -0.3275,
+          0.75,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 1.5999999999999999,
+        "horizontal_m": 1.5999999999999999,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 13.333333333333332,
+        "ideal_trim_model_max_speed_motion_s": 13.333333333333332
+      },
+      {
+        "stage": "RECOVER_AFTER_WINDOW_1",
+        "kind": "vertical",
+        "start": [
+          2.65,
+          -0.3275,
+          0.75,
+          0.0
+        ],
+        "target": [
+          2.65,
+          -0.3275,
+          0.9,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.15000000000000002,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.15000000000000002,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 1.2500000000000002,
+        "ideal_trim_model_max_speed_motion_s": 5.000000000000001
+      },
+      {
+        "stage": "AIR_NAV_1",
+        "kind": "navigate",
+        "start": [
+          2.65,
+          -0.3275,
+          0.9,
+          0.0
+        ],
+        "target": [
+          3.08,
+          -2.15,
+          0.9,
+          1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 1.8725400529761704,
+        "horizontal_m": 1.8725400529761704,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 1.5707963267948966,
+        "ideal_controller_max_speed_motion_s": 15.604500441468087,
+        "ideal_trim_model_max_speed_motion_s": 15.604500441468087
+      },
+      {
+        "stage": "AIR_RECOGNIZE_1",
+        "kind": "recognize",
+        "start": [
+          3.08,
+          -2.15,
+          0.9,
+          1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          -2.15,
+          0.9,
+          1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "AIR_MOVE_TO_LIGHT_1",
+        "kind": "navigate",
+        "start": [
+          3.08,
+          -2.15,
+          0.9,
+          1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          -0.32,
+          0.912,
+          1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 1.8300393438393612,
+        "horizontal_m": 1.8299999999999998,
+        "vertical_abs_m": 0.01200000000000001,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 15.25032786532801,
+        "ideal_trim_model_max_speed_motion_s": 15.25
+      },
+      {
+        "stage": "AIR_INSPECT_1",
+        "kind": "illuminate_reported",
+        "start": [
+          3.08,
+          -0.32,
+          0.912,
+          1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          -0.32,
+          0.912,
+          1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "AIR_NAV_2",
+        "kind": "navigate",
+        "start": [
+          3.08,
+          -0.32,
+          0.912,
+          1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          0.45,
+          0.9,
+          -1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 0.7700935008166216,
+        "horizontal_m": 0.77,
+        "vertical_abs_m": 0.01200000000000001,
+        "yaw_abs_rad": 3.141592653589793,
+        "ideal_controller_max_speed_motion_s": 15.707963267948966,
+        "ideal_trim_model_max_speed_motion_s": 15.707963267948966
+      },
+      {
+        "stage": "AIR_RECOGNIZE_2",
+        "kind": "recognize",
+        "start": [
+          3.08,
+          0.45,
+          0.9,
+          -1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          0.45,
+          0.9,
+          -1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "AIR_MOVE_TO_LIGHT_2",
+        "kind": "navigate",
+        "start": [
+          3.08,
+          0.45,
+          0.9,
+          -1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          -1.355,
+          0.912,
+          -1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 1.8050398887559245,
+        "horizontal_m": 1.805,
+        "vertical_abs_m": 0.01200000000000001,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 15.041999072966037,
+        "ideal_trim_model_max_speed_motion_s": 15.041666666666666
+      },
+      {
+        "stage": "AIR_INSPECT_2",
+        "kind": "illuminate_reported",
+        "start": [
+          3.08,
+          -1.355,
+          0.912,
+          -1.5707963267948966
+        ],
+        "target": [
+          3.08,
+          -1.355,
+          0.912,
+          -1.5707963267948966
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "WINDOW_2_APPROACH",
+        "kind": "navigate",
+        "start": [
+          3.08,
+          -1.355,
+          0.912,
+          -1.5707963267948966
+        ],
+        "target": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 1.1318596423585392,
+        "horizontal_m": 1.0696757686327198,
+        "vertical_abs_m": 0.37,
+        "yaw_abs_rad": 1.5707963267948968,
+        "ideal_controller_max_speed_motion_s": 9.43216368632116,
+        "ideal_trim_model_max_speed_motion_s": 12.333333333333334
+      },
+      {
+        "stage": "WINDOW_2_DECLARE",
+        "kind": "declare",
+        "start": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "target": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "WINDOW_2_RECOGNIZE",
+        "kind": "recognize",
+        "start": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "target": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "WINDOW_2_DESCEND",
+        "kind": "descend",
+        "start": [
+          2.75,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "target": [
+          2.75,
+          -2.3725,
+          0.75,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 0.532,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.532,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 4.433333333333334,
+        "ideal_trim_model_max_speed_motion_s": 17.733333333333334
+      },
+      {
+        "stage": "WINDOW_2_CROSS",
+        "kind": "cross",
+        "start": [
+          2.75,
+          -2.3725,
+          0.75,
+          3.141592653589793
+        ],
+        "target": [
+          1.2,
+          -2.3725,
+          0.75,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 1.55,
+        "horizontal_m": 1.55,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 12.916666666666668,
+        "ideal_trim_model_max_speed_motion_s": 12.916666666666668
+      },
+      {
+        "stage": "RECOVER_AFTER_WINDOW_2",
+        "kind": "vertical",
+        "start": [
+          1.2,
+          -2.3725,
+          0.75,
+          3.141592653589793
+        ],
+        "target": [
+          1.2,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 0.532,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.532,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 4.433333333333334,
+        "ideal_trim_model_max_speed_motion_s": 17.733333333333334
+      },
+      {
+        "stage": "RETURN_UAV_VIA_1",
+        "kind": "horizontal",
+        "start": [
+          1.2,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "target": [
+          0.6,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "nominal_xyz_distance_m": 0.6,
+        "horizontal_m": 0.6,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 5.0,
+        "ideal_trim_model_max_speed_motion_s": 5.0
+      },
+      {
+        "stage": "RETURN_UAV_VIA_2",
+        "kind": "horizontal",
+        "start": [
+          0.6,
+          -2.3725,
+          1.282,
+          3.141592653589793
+        ],
+        "target": [
+          0.6,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 2.3725,
+        "horizontal_m": 2.3725,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 3.141592653589793,
+        "ideal_controller_max_speed_motion_s": 19.770833333333336,
+        "ideal_trim_model_max_speed_motion_s": 19.770833333333336
+      },
+      {
+        "stage": "RETURN_UAV",
+        "kind": "horizontal",
+        "start": [
+          0.6,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.6,
+        "horizontal_m": 0.6,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 5.0,
+        "ideal_trim_model_max_speed_motion_s": 5.0
+      },
+      {
+        "stage": "LAND_DECLARE",
+        "kind": "declare",
+        "start": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 0.0,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 0.0,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 0.0,
+        "ideal_trim_model_max_speed_motion_s": 0.0
+      },
+      {
+        "stage": "LAND",
+        "kind": "vertical",
+        "start": [
+          0.0,
+          0.0,
+          1.282,
+          0.0
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.055,
+          0.0
+        ],
+        "nominal_xyz_distance_m": 1.227,
+        "horizontal_m": 0.0,
+        "vertical_abs_m": 1.227,
+        "yaw_abs_rad": 0.0,
+        "ideal_controller_max_speed_motion_s": 10.225000000000001,
+        "ideal_trim_model_max_speed_motion_s": 40.900000000000006
+      }
+    ],
+    "nominal_distance_m": 19.431961627711676,
+    "vertical_travel_m": 4.606,
+    "ideal_controller_motion_only_s": 171.22353099207444,
+    "ideal_trim_model_motion_only_s": 279.12404036745926,
+    "minimum_explicit_visual_light_and_final_dwell_s": 7.8,
+    "existing_synthetic_source": {
+      "path": "runs/review/full_flight_closed_loop_synthetic_20261112.json",
+      "bytes": 25155,
+      "sha256": "22cda3157a0acfec374781a36384c87c2d579f664c69625602a5e413e86539ff"
+    },
+    "existing_synthetic_closed_loop": {
+      "kind": "offline_synthetic_control_loop_not_platform_or_sensor_validation",
+      "synthetic_source_and_wall_elapsed_s": 317.0,
+      "integration_dt_s": 0.1,
+      "z_model": "vz=2*(nonzero_request-.02695);zero=-.0539;home_floor=.055",
+      "visual_input": "synthetic_valid_class_and_analytic_projection;production_localize_floor_pixel_for_original_fix",
+      "actual_python_wall_s": 8.185756799997762,
+      "path_m": 19.341873082460747,
+      "mission_completed": true
+    },
+    "existing_synthetic_stage_times": [
+      {
+        "state": "WAIT",
+        "start_s": 0.0,
+        "end_s": 1.0,
+        "duration_s": 1.0
+      },
+      {
+        "state": "TAKEOFF",
+        "start_s": 1.0,
+        "end_s": 43.400000000000006,
+        "duration_s": 42.400000000000006
+      },
+      {
+        "state": "WINDOW_1_APPROACH",
+        "start_s": 43.400000000000006,
+        "end_s": 54.7,
+        "duration_s": 11.299999999999997
+      },
+      {
+        "state": "WINDOW_1_DECLARE",
+        "start_s": 54.7,
+        "end_s": 54.900000000000006,
+        "duration_s": 0.20000000000000284
+      },
+      {
+        "state": "WINDOW_1_RECOGNIZE",
+        "start_s": 54.900000000000006,
+        "end_s": 55.7,
+        "duration_s": 0.7999999999999972
+      },
+      {
+        "state": "WINDOW_1_DESCEND",
+        "start_s": 55.7,
+        "end_s": 74.2,
+        "duration_s": 18.5
+      },
+      {
+        "state": "WINDOW_1_CROSS",
+        "start_s": 74.2,
+        "end_s": 89.80000000000001,
+        "duration_s": 15.600000000000009
+      },
+      {
+        "state": "RECOVER_AFTER_WINDOW_1",
+        "start_s": 89.80000000000001,
+        "end_s": 96.30000000000001,
+        "duration_s": 6.5
+      },
+      {
+        "state": "AIR_NAV_1",
+        "start_s": 96.30000000000001,
+        "end_s": 114.10000000000001,
+        "duration_s": 17.799999999999997
+      },
+      {
+        "state": "AIR_RECOGNIZE_1",
+        "start_s": 114.10000000000001,
+        "end_s": 114.9,
+        "duration_s": 0.7999999999999972
+      },
+      {
+        "state": "AIR_MOVE_TO_LIGHT_1",
+        "start_s": 114.9,
+        "end_s": 132.20000000000002,
+        "duration_s": 17.30000000000001
+      },
+      {
+        "state": "AIR_INSPECT_1",
+        "start_s": 132.20000000000002,
+        "end_s": 134.4,
+        "duration_s": 2.1999999999999886
+      },
+      {
+        "state": "AIR_NAV_2",
+        "start_s": 134.4,
+        "end_s": 150.6,
+        "duration_s": 16.19999999999999
+      },
+      {
+        "state": "AIR_RECOGNIZE_2",
+        "start_s": 150.6,
+        "end_s": 151.4,
+        "duration_s": 0.8000000000000114
+      },
+      {
+        "state": "AIR_MOVE_TO_LIGHT_2",
+        "start_s": 151.4,
+        "end_s": 168.60000000000002,
+        "duration_s": 17.200000000000017
+      },
+      {
+        "state": "AIR_INSPECT_2",
+        "start_s": 168.60000000000002,
+        "end_s": 170.8,
+        "duration_s": 2.1999999999999886
+      },
+      {
+        "state": "WINDOW_2_APPROACH",
+        "start_s": 170.8,
+        "end_s": 185.10000000000002,
+        "duration_s": 14.300000000000011
+      },
+      {
+        "state": "WINDOW_2_DECLARE",
+        "start_s": 185.10000000000002,
+        "end_s": 185.3,
+        "duration_s": 0.19999999999998863
+      },
+      {
+        "state": "WINDOW_2_RECOGNIZE",
+        "start_s": 185.3,
+        "end_s": 186.10000000000002,
+        "duration_s": 0.8000000000000114
+      },
+      {
+        "state": "WINDOW_2_DESCEND",
+        "start_s": 186.10000000000002,
+        "end_s": 204.4,
+        "duration_s": 18.299999999999983
+      },
+      {
+        "state": "WINDOW_2_CROSS",
+        "start_s": 204.4,
+        "end_s": 219.5,
+        "duration_s": 15.099999999999994
+      },
+      {
+        "state": "RECOVER_AFTER_WINDOW_2",
+        "start_s": 219.5,
+        "end_s": 238.8,
+        "duration_s": 19.30000000000001
+      },
+      {
+        "state": "RETURN_UAV_VIA_1",
+        "start_s": 238.8,
+        "end_s": 246.0,
+        "duration_s": 7.199999999999989
+      },
+      {
+        "state": "RETURN_UAV_VIA_2",
+        "start_s": 246.0,
+        "end_s": 267.90000000000003,
+        "duration_s": 21.900000000000034
+      },
+      {
+        "state": "RETURN_UAV",
+        "start_s": 267.90000000000003,
+        "end_s": 275.0,
+        "duration_s": 7.099999999999966
+      },
+      {
+        "state": "LAND_DECLARE",
+        "start_s": 275.0,
+        "end_s": 275.2,
+        "duration_s": 0.19999999999998863
+      },
+      {
+        "state": "LAND",
+        "start_s": 275.2,
+        "end_s": 316.0,
+        "duration_s": 40.80000000000001
+      },
+      {
+        "state": "COMPLETE",
+        "start_s": 316.0,
+        "end_s": 317.0,
+        "duration_s": 1.0
+      }
+    ],
+    "limitations": [
+      "No new simulation or timing test executed; saved synthetic 317s reused.",
+      "Nominal light poses use public geometry as ideal route endpoints only, never assign class or claim actual visual fix.",
+      "Nominal .03m/s vertical response is the code/synthetic trim model; platform speed/settling above .85m remains unmeasured.",
+      "Recognition/detection cold-load delays, recovery, scheduler, transport, official scoring and runner overhead not guaranteed by this arithmetic."
+    ]
+  },
+  "combined_scenarios": {
+    "ideal_nominal_ground_plus_controller_motion_and_explicit_flight_dwells_s": [
+      412.4010151909091,
+      463.05508801156276
+    ],
+    "ideal_nominal_command_proxy_ground_plus_trim_motion_and_explicit_flight_dwells_s": [
+      520.3015245662939,
+      570.9555973869476
+    ],
+    "v25_ground_extrapolated_motion_plus_saved_317s_flight_s": [
+      1419.705275029122,
+      1669.9380912191946
+    ],
+    "team_stage_stop_budgets_s": 2700,
+    "not_official_deadlines_or_completion_guarantees": true
+  }
+}

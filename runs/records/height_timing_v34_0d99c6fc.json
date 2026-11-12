@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "record_id": "0d99c6fc-e6b7-4a69-aa35-abad82dbcbc0",
+  "runId": "run_20261112_085752_4f79c7da",
+  "evaluation_number": "22362608",
+  "kind": "isolated_height_response",
+  "evaluation_mode": "practice",
+  "variant": "height-timing-v34",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_height_timing_v34_src.zip",
+    "sha256": "b55882ce5627270292685a854b716455737a1fc5d3efa5d7de0103869af49924"
+  },
+  "script": {
+    "path": "dist/run_height_timing_v34.sh",
+    "sha256": "486a9a99ea61c59cda29037692274e1958383f802940106581fdafe1dfbc0af0"
+  },
+  "draw_order": null,
+  "scores": {
+    "total": null,
+    "manual": null,
+    "platform_display_total": 0,
+    "extraction_status": "no_score_extracted"
+  },
+  "duration_s": 56.1,
+  "duration_source": "official_page_rounded_to_one_decimal",
+  "failure_reason": "Platform did not extract a score. This isolated height experiment omitted inspection scoring and completion messages.",
+  "local_measured_outcome": {
+    "reason": "support_return_verified_height_protocol_complete",
+    "original_guard_local_protocol_supported": true,
+    "max_relative_rise_m": 0.100952693822,
+    "total_path_m": 0.205193199317,
+    "hold_source_span_s": 3.04,
+    "hold_arrival_span_s": 3.094927913,
+    "return_support_contract": "wall_clock_1s; not a claim of pre-FINISHED dual-clock 1s",
+    "interpretation": "Team sensor evidence of an isolated static-column test, not official inspection points."
+  },
+  "evidence_paths": [
+    "runs/evidence/20261112/callback_height_timing_v34.jsonl",
+    "runs/evidence/20261112/height_timing_v34_official_page_final.json",
+    "runs/evidence/20261112/height_timing_v34_final.jpg",
+    "runs/analysis/20261112_height_timing_v34/validation.json",
+    "docs/height_runtime_timing_v34_platform_analysis_20261112.md"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "kind": "synthetic_local_pure_guard_cost_not_platform_evidence",
+  "synthetic_duration_s": 50.0,
+  "final_state": "DRIVE",
+  "reason": "approach_drive",
+  "history_rows": 2048,
+  "method": "unchanged v16 guard; existing deterministic test fixtures; stationary synthetic DRIVE; no ROS transport",
+  "unmeasured": [
+    "ROS deserialize/take",
+    "message_to_ordereddict",
+    "RMW/DDS transport",
+    "platform CPU quota/steal",
+    "real executor scheduling",
+    "cross-thread lock wait"
+  ],
+  "callbacks": {
+    "odom": {
+      "count": 2500,
+      "wall": {
+        "total_s": 0.3061001000642136,
+        "median_s": 0.00010639999891282059,
+        "p99_s": 0.00037430000156746246,
+        "max_s": 0.0019021000007342082
+      },
+      "cpu": {
+        "total_s": 0.34375,
+        "median_s": 0.0,
+        "p99_s": 0.0,
+        "max_s": 0.015625
+      }
+    },
+    "uav_odom": {
+      "count": 2500,
+      "wall": {
+        "total_s": 0.03507159998116549,
+        "median_s": 1.2000000424450263e-05,
+        "p99_s": 4.529999932856299e-05,
+        "max_s": 0.0002502999996067956
+      },
+      "cpu": {
+        "total_s": 0.015625,
+        "median_s": 0.0,
+        "p99_s": 0.0,
+        "max_s": 0.015625
+      }
+    },
+    "step": {
+      "count": 833,
+      "wall": {
+        "total_s": 0.013165099946490955,
+        "median_s": 1.3199998647905886e-05,
+        "p99_s": 6.150000263005495e-05,
+        "max_s": 0.00010149999798159115
+      },
+      "cpu": {
+        "total_s": 0.015625,
+        "median_s": 0.0,
+        "p99_s": 0.0,
+        "max_s": 0.015625
+      }
+    },
+    "clock": {
+      "count": 500,
+      "wall": {
+        "total_s": 0.01072250001016073,
+        "median_s": 1.8599999748403206e-05,
+        "p99_s": 8.35999999253545e-05,
+        "max_s": 0.00022020000324118882
+      },
+      "cpu": {
+        "total_s": 0.015625,
+        "median_s": 0.0,
+        "p99_s": 0.0,
+        "max_s": 0.015625
+      }
+    },
+    "scan": {
+      "count": 416,
+      "wall": {
+        "total_s": 0.20185069997023675,
+        "median_s": 0.0004385499978525331,
+        "p99_s": 0.0010599000015645288,
+        "max_s": 0.0018841999990399927
+      },
+      "cpu": {
+        "total_s": 0.09375,
+        "median_s": 0.0,
+        "p99_s": 0.015625,
+        "max_s": 0.015625
+      }
+    },
+    "ground_image": {
+      "count": 147,
+      "wall": {
+        "total_s": 0.008119099980831379,
+        "median_s": 5.0499998906161636e-05,
+        "p99_s": 0.00010920000204350799,
+        "max_s": 0.0002432000001135748
+      },
+      "cpu": {
+        "total_s": 0.0,
+        "median_s": 0.0,
+        "p99_s": 0.0,
+        "max_s": 0.0
+      }
+    },
+    "uav_image": {
+      "count": 147,
+      "wall": {
+        "total_s": 0.007769800013193162,
+        "median_s": 4.659999831346795e-05,
+        "p99_s": 0.00020500000027823262,
+        "max_s": 0.0002779000024020206
+      },
+      "cpu": {
+        "total_s": 0.046875,
+        "median_s": 0.0,
+        "p99_s": 0.015625,
+        "max_s": 0.015625
+      }
+    }
+  }
+}

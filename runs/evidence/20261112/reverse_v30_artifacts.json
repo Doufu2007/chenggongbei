@@ -1,0 +1,26 @@
+{
+  "version": "reverse_v30",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_reverse_response.py": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae",
+    "src/inspection_mission/inspection_mission/ground_direction_response.py": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946"
+  },
+  "reviewed_launcher_sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+  "base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "artifacts": [
+    {
+      "path": "dist/inspection_reverse_v30_src.zip",
+      "bytes": 9580316,
+      "sha256": "22a1dc284ede916d3579ae74bcd4701acc1ae4d83e43a135cc898de8ddd33330"
+    },
+    {
+      "path": "dist/run_reverse_v30.sh",
+      "bytes": 2895,
+      "sha256": "ad46102cc79d0a895a5bed7a1946b6ab902fcfd4dafd8d14b49e04fab695dc76"
+    }
+  ]
+}

@@ -1,0 +1,510 @@
+{
+  "kind": "offline_candidate_ground_projection",
+  "official_scoring": "unverified",
+  "mapping_status": "candidate_unverified",
+  "camera_extrinsic_status": "candidate_unverified",
+  "source_summary": {
+    "path": "runs/analysis/20261112_survey_v11/summary.json",
+    "sha256": "6bb367998372a4dfa69c124190ea0c853bc924cb369333c501f0f3f37b7496a9"
+  },
+  "source_image": {
+    "path": "runs/analysis/20261112_survey_v11/native_L000007_2287a41129fe0ad6.jpg",
+    "sha256": "2287a41129fe0ad61c115945347c0c9b1f5030481b4580aca836b939484b3e58"
+  },
+  "candidate_world": {
+    "path": "external_resources/ranmengjia_ICAN/binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+    "sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1"
+  },
+  "exposure": {
+    "topic": "/uav/camera/image",
+    "stamp_s": 11.483,
+    "frame_id": "uav/camera_link",
+    "wall_elapsed_s": 9.087610031999247,
+    "odom": {
+      "stamp_s": 11.48,
+      "wall_elapsed_s": 9.070652909999808,
+      "source_topic": "/uav/odom",
+      "frame_id": "odom",
+      "child_frame_id": "uav/base_link",
+      "position": [
+        -0.0011145978392483676,
+        -0.002179221674690033,
+        0.05500007545407667
+      ],
+      "quaternion": [
+        -8.491324700369765e-08,
+        3.800166056430515e-08,
+        -0.23478987270207544,
+        0.9720461489438321
+      ],
+      "yaw_rad": -0.4740047847292597,
+      "linear_speed": 8.000375952062655e-06,
+      "angular_speed": 4.059372282760876e-09,
+      "association": "prior_uav_odom",
+      "image_minus_odom_s": 0.0030000000000001137
+    },
+    "association_error": null,
+    "phase": "last_associated"
+  },
+  "camera_info_first": {
+    "header": {
+      "stamp": {
+        "sec": 5,
+        "nanosec": 482000000
+      },
+      "frame_id": "uav/camera_link"
+    },
+    "height": 800,
+    "width": 800,
+    "distortion_model": "plumb_bob",
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "k": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      -33.36921585209936,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "binning_x": 0,
+    "binning_y": 0,
+    "roi": {
+      "x_offset": 0,
+      "y_offset": 0,
+      "height": 0,
+      "width": 0,
+      "do_rectify": false
+    }
+  },
+  "camera_info_last": {
+    "header": {
+      "stamp": {
+        "sec": 9,
+        "nanosec": 484000000
+      },
+      "frame_id": "uav/camera_link"
+    },
+    "height": 800,
+    "width": 800,
+    "distortion_model": "plumb_bob",
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "k": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      -33.36921585209936,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "binning_x": 0,
+    "binning_y": 0,
+    "roi": {
+      "x_offset": 0,
+      "y_offset": 0,
+      "height": 0,
+      "width": 0,
+      "do_rectify": false
+    }
+  },
+  "intrinsics_note": "Observed static K/D agree at two received times; CameraInfo is not exposure-synchronous.",
+  "camera_pose_body_xyz_rpy": [
+    0.39,
+    0.0,
+    0.13,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "projection_convention": "SDF camera forward=body +X, image right=-body Y, image down=-body Z; K, not stereo P, is used.",
+  "corner_order": [
+    "world_x_minus_y_minus",
+    "world_x_plus_y_minus",
+    "world_x_plus_y_plus",
+    "world_x_minus_y_plus"
+  ],
+  "points": {
+    "ground_0": {
+      "world_corners_m": [
+        [
+          0.85,
+          -1.55,
+          0.012
+        ],
+        [
+          1.4,
+          -1.55,
+          0.012
+        ],
+        [
+          1.4,
+          -1.1500000000000001,
+          0.012
+        ],
+        [
+          0.85,
+          -1.1500000000000001,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          839.4191602806753,
+          477.3028526444622
+        ],
+        [
+          625.4494195806042,
+          453.2588022396049
+        ],
+        [
+          532.3088381248248,
+          460.2361950147881
+        ],
+        [
+          738.9710349438983,
+          493.0374575002838
+        ]
+      ]
+    },
+    "ground_1": {
+      "world_corners_m": [
+        [
+          -0.275,
+          -1.55,
+          0.012
+        ],
+        [
+          0.275,
+          -1.55,
+          0.012
+        ],
+        [
+          0.275,
+          -1.1500000000000001,
+          0.012
+        ],
+        [
+          -0.275,
+          -1.1500000000000001,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          10234.437657376207,
+          1533.0329645735844
+        ],
+        [
+          1461.406637118633,
+          547.1963721456375
+        ],
+        [
+          1524.7460182157452,
+          617.755049191233
+        ],
+        null
+      ]
+    },
+    "ground_2": {
+      "world_corners_m": [
+        [
+          -0.275,
+          -2.9000000000000004,
+          0.012
+        ],
+        [
+          0.275,
+          -2.9000000000000004,
+          0.012
+        ],
+        [
+          0.275,
+          -2.5,
+          0.012
+        ],
+        [
+          -0.275,
+          -2.5,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          2270.797883474187,
+          520.1897166525029
+        ],
+        [
+          1392.5441647702355,
+          470.48509295675143
+        ],
+        [
+          1404.0629718727873,
+          483.31679064974526
+        ],
+        [
+          2610.068157390475,
+          563.3392834225324
+        ]
+      ]
+    },
+    "ground_3": {
+      "world_corners_m": [
+        [
+          0.925,
+          -2.2,
+          0.012
+        ],
+        [
+          1.325,
+          -2.2,
+          0.012
+        ],
+        [
+          1.325,
+          -1.65,
+          0.012
+        ],
+        [
+          0.925,
+          -1.65,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          908.9013715089753,
+          457.88183833970515
+        ],
+        [
+          759.453385023628,
+          446.49259483841917
+        ],
+        [
+          666.6133192536761,
+          453.98021992169674
+        ],
+        [
+          819.8357685125748,
+          470.0265871495286
+        ]
+      ]
+    },
+    "ground_4": {
+      "world_corners_m": [
+        [
+          0.925,
+          -1.05,
+          0.012
+        ],
+        [
+          1.325,
+          -1.05,
+          0.012
+        ],
+        [
+          1.325,
+          -0.5,
+          0.012
+        ],
+        [
+          0.925,
+          -0.5,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          666.7670746279277,
+          490.89862725632423
+        ],
+        [
+          523.4119827394793,
+          465.52952151201947
+        ],
+        [
+          324.3998609392784,
+          481.5800072878467
+        ],
+        [
+          415.0675426391878,
+          525.2197061994143
+        ]
+      ]
+    }
+  },
+  "scenarios": {
+    "origin_facing_ground2": {
+      "status": "prediction_not_platform_observation",
+      "body_xyz_m": [
+        0,
+        0,
+        0.055
+      ],
+      "yaw_rad": -1.5707963267948966,
+      "pixel_corners_xy": [
+        [
+          452.7284254941793,
+          433.35642767452015
+        ],
+        [
+          348.27157450582047,
+          433.35642767452015
+        ],
+        [
+          338.37045118938835,
+          439.5851343426756
+        ],
+        [
+          462.6295488106114,
+          439.5851343426756
+        ]
+      ],
+      "bbox_extent_px": [
+        124.25909762122308,
+        6.228706668155439
+      ]
+    },
+    "ground2_observation_candidate": {
+      "status": "prediction_not_platform_observation",
+      "body_xyz_m": [
+        0.6,
+        -1.55,
+        0.055
+      ],
+      "yaw_rad": -2.0516836069902324,
+      "pixel_corners_xy": [
+        [
+          460.02622648134616,
+          468.56476141723635
+        ],
+        [
+          233.0085990525244,
+          486.65504522921066
+        ],
+        [
+          280.80982832819774,
+          537.3587169116495
+        ],
+        [
+          587.5788136277642,
+          496.7305142732763
+        ]
+      ],
+      "bbox_extent_px": [
+        354.57021457523985,
+        68.79395549441313
+      ]
+    }
+  },
+  "rectification": {
+    "size_wh": [
+      256,
+      352
+    ],
+    "homography_source_pixel_to_output_pixel": [
+      [
+        0.12569552029399142,
+        0.9218090609647844,
+        -536.3244327620558
+      ],
+      [
+        0.24527615177625525,
+        -1.3860000504308194,
+        516.8434469876718
+      ],
+      [
+        -7.825232353121326e-11,
+        -0.0024968789554472045,
+        1.0
+      ]
+    ],
+    "orientation": "world +X to output right, world +Y to output down; does not assert texture's semantic upright orientation",
+    "upsampling_note": "Resampling adds no detail; retain original quadrilateral and original image."
+  },
+  "products": [
+    {
+      "path": "runs/analysis/20261112_survey_v11/ground4_candidate_projection_overlay.png",
+      "sha256": "8c92213a77b2fa601b55df444c5a21771270f373013039a3c2e51133349204af"
+    },
+    {
+      "path": "runs/analysis/20261112_survey_v11/ground4_candidate_bbox.png",
+      "sha256": "823789871e0e6172eb64ef6a1b19032e30028dd08dcba1a9d3ac6a8ffabd14f6"
+    },
+    {
+      "path": "runs/analysis/20261112_survey_v11/ground4_candidate_rectified_world_axes.png",
+      "sha256": "a3be97ab5f638c0a7405f0a94609cad77b6e587581e1e90b10808985eff83216"
+    }
+  ],
+  "limitations": [
+    "Projected polygons are hypothesis predictions, not independently measured target corners.",
+    "No category or task-ID declaration is sent. ground_4 is not this run's first task.",
+    "No new platform motion or score is demonstrated."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "version": "ground-route-v22",
+  "mode": "practice",
+  "revision": "ground_observation_route_v2",
+  "official_task_success": false,
+  "only_change": "ground4 observation from (.35,-.05) to (.35,0); other plans/control/guard/budgets unchanged from v21",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_observation_route_plan.py": "c2805ab778833df505c68d65eadb3f8c5e2dd9865ac3de9af2a8fc4d07c33913"
+  },
+  "checks": {
+    "prior_full_suite": 1102,
+    "changed_area_regressions": 52,
+    "failures": 0
+  },
+  "included_new_matcher": false,
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_route_v22_src.zip",
+      "bytes": 111234,
+      "sha256": "f64e9c9b059b489c1c22b3ba5bb9665761616bbac0eb5ed6d41f92620010003a"
+    },
+    {
+      "path": "dist/run_ground_route_v22.sh",
+      "bytes": 2806,
+      "sha256": "995523370fec423799bb5c385d8ac53cfa933f11e68347f4dfbab86b982a7ec0"
+    }
+  ]
+}

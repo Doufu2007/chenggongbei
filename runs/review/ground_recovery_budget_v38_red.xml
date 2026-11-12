@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="6" time="0.825" timestamp="2026-11-12T09:16:23.470846+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_fourth_safe_resume_is_allowed_with_fresh_recapture_and_true_counter" time="0.098"><failure message="AssertionError: single_point_recapture_limit&#10;assert 'STOP' not in ('STOP', 'FINISHED')&#10; +  where 'STOP' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507009550&gt;.state">run = &lt;test_ground_three_point_camera_recovery.StationaryRun object at 0x00000275070096A0&gt;
+
+    def test_fourth_safe_resume_is_allowed_with_fresh_recapture_and_true_counter(run):
+        g = run.guard
+        old_epoch, old_path, old_rotation = g.stationary_epoch, g.total_path_m, g.accumulated_rotation_rad
+        g.resume_count = 3
+        control_pause(run)
+        keep_fresh(run)
+&gt;       assert g.state not in ('STOP', 'FINISHED'), g.reason
+E       AssertionError: single_point_recapture_limit
+E       assert 'STOP' not in ('STOP', 'FINISHED')
+E        +  where 'STOP' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507009550&gt;.state
+
+tests\test_ground_three_point_recovery_budget.py:40: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_all_32_slots_can_be_used_but_slot_33_is_terminal" time="0.044"><failure message="AssertionError: three_ground_turn_settle&#10;assert 'TURN_SETTLE' == 'TURN'&#10;  &#10;  - TURN&#10;  + TURN_SETTLE">run = &lt;test_ground_three_point_camera_recovery.StationaryRun object at 0x0000027507064A50&gt;
+
+    def test_all_32_slots_can_be_used_but_slot_33_is_terminal(run):
+        g = run.guard
+        # Motion phase recovery never reuses a capture epoch. Every pause below
+        # still receives actual fresh odom/clock/scan and a new stationary dwell.
+        g.stationary_anchor = None
+        g.phase = g.state = 'TURN'
+        for expected in range(1, 33):
+            control_pause(run)
+            for _ in range(25):
+                d = run.tick()
+                assert (d.linear_x, d.angular_z) == (0., 0.)
+                if g.state != 'PAUSE':
+                    break
+&gt;           assert g.state == 'TURN', g.reason
+E           AssertionError: three_ground_turn_settle
+E           assert 'TURN_SETTLE' == 'TURN'
+E             
+E             - TURN
+E             + TURN_SETTLE
+
+tests\test_ground_three_point_recovery_budget.py:61: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_single_pause_has_fixed_five_second_wall_deadline_even_if_never_fresh" time="0.030"><failure message="AssertionError: assert 'PAUSE' in ('STOP', 'FINISHED')&#10; +  where 'PAUSE' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507065310&gt;.state">run = &lt;test_ground_three_point_camera_recovery.StationaryRun object at 0x0000027507065A90&gt;
+
+    def test_single_pause_has_fixed_five_second_wall_deadline_even_if_never_fresh(run):
+        g = run.guard
+        control_pause(run)
+        start = run.wall
+        while run.wall-start &lt; 5.1-1e-9 and g.state not in ('STOP', 'FINISHED'):
+            run.wall = round(run.wall+.05, 9)
+            # Images remain valid, but no new clock/odom may authorize movement.
+            decision = g.step(wall_s=run.wall)
+            assert (decision.linear_x, decision.angular_z) == (0., 0.)
+&gt;       assert g.state in ('STOP', 'FINISHED')
+E       AssertionError: assert 'PAUSE' in ('STOP', 'FINISHED')
+E        +  where 'PAUSE' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507065310&gt;.state
+
+tests\test_ground_three_point_recovery_budget.py:79: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_cumulative_pause_deadline_covers_watchdog_and_evidence" time="0.092"><failure message="AssertionError: assert 'cumulative_pause' in 'pause_resume_limit'&#10; +  where 'pause_resume_limit' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507066AD0&gt;.reason">run = &lt;test_ground_three_point_camera_recovery.StationaryRun object at 0x0000027506D32780&gt;
+
+    def test_cumulative_pause_deadline_covers_watchdog_and_evidence(run):
+        g = run.guard
+        g.phase = g.state = 'TURN'
+        for _ in range(20):
+            control_pause(run)
+            # Keep a real sensor gap for two seconds, then fresh + 1s dwell.
+            for _ in range(40):
+                run.wall = round(run.wall+.05, 9)
+                d = g.step(wall_s=run.wall)
+                assert (d.linear_x, d.angular_z) == (0., 0.)
+                if g.state in ('STOP', 'FINISHED'):
+                    break
+            if g.state in ('STOP', 'FINISHED'):
+                break
+            keep_fresh(run, 1.1)
+            if g.state in ('STOP', 'FINISHED'):
+                break
+        assert g.state in ('STOP', 'FINISHED')
+&gt;       assert 'cumulative_pause' in g.reason
+E       AssertionError: assert 'cumulative_pause' in 'pause_resume_limit'
+E        +  where 'pause_resume_limit' = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507066AD0&gt;.reason
+
+tests\test_ground_three_point_recovery_budget.py:102: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_stale_camera_wait_cannot_consume_fresh_dwell_or_report" time="0.056"><failure message="assert (3 == 4)&#10; +  where 3 = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507066D50&gt;.resume_count">run = &lt;test_ground_three_point_camera_recovery.StationaryRun object at 0x0000027507061F30&gt;
+
+    def test_stale_camera_wait_cannot_consume_fresh_dwell_or_report(run):
+        g = run.guard
+        g.resume_count = 3
+        camera_fixture.camera_gap(run)
+        assert g.state == 'PAUSE'
+        epoch = g.stationary_epoch
+        for _ in range(15):
+            run.tick(emit_image=False)
+        assert g.state == 'PAUSE' and g.resume_count == 3
+        assert g.stationary_epoch == epoch and not g.attempts
+        keep_fresh(run)
+&gt;       assert g.resume_count == 4 and g.stationary_epoch == epoch+1
+E       assert (3 == 4)
+E        +  where 3 = &lt;inspection_mission.ground_three_point_camera_recovery.GroundThreePointCameraRecoveryGuard object at 0x0000027507066D50&gt;.resume_count
+
+tests\test_ground_three_point_recovery_budget.py:121: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_recovery_budget" name="test_original_global_wall_budget_is_never_restarted" time="0.024" /></testsuite></testsuites>

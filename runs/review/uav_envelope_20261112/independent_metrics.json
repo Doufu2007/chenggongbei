@@ -1,0 +1,69 @@
+{
+  "exact_cylinder_boundary": {
+    "points_checked": 586894,
+    "maxima": [
+      0.4547379084954826,
+      0.09025570637085092,
+      0.18813323188955763
+    ],
+    "passed": true
+  },
+  "combined_attitudes": [
+    {
+      "rpy": [
+        0.025,
+        0.025,
+        1.1
+      ],
+      "clear": true,
+      "inside_obstacle_rejected": true,
+      "one_ns_skew_rejected": true
+    },
+    {
+      "rpy": [
+        -0.03,
+        0.02,
+        -1.7
+      ],
+      "clear": true,
+      "inside_obstacle_rejected": true,
+      "one_ns_skew_rejected": true
+    },
+    {
+      "rpy": [
+        0.01,
+        -0.04,
+        2.8
+      ],
+      "clear": true,
+      "inside_obstacle_rejected": true,
+      "one_ns_skew_rejected": true
+    },
+    {
+      "rpy": [
+        0.0,
+        0.0,
+        -0.9
+      ],
+      "clear": true,
+      "inside_obstacle_rejected": true,
+      "one_ns_skew_rejected": true
+    }
+  ],
+  "default_tolerance_rejected": "window horizontal clearance cannot contain position tolerance",
+  "invalid_configuration_rejected": [
+    "below_origin_m",
+    "above_origin_m",
+    "max_tilt_rad",
+    "above_origin_m"
+  ],
+  "real_tick_front_fov_still_refused": true,
+  "source_sha256": {
+    "envelope.py": "4c2c18fac681a134cacd5ba4337f941c62b2b3667f3af291467c738674746839",
+    "mission.py": "f6142ef086ed8da35f120c3cbfb1be74304672df3e3adfa1088c9ec379c47822",
+    "mission_node.py": "d63a5bd00015d823fb50975618a050e4117cd02d6b405cee8e83e9cac8b6f7b2",
+    "runtime.py": "74069f278e2d85f5bd31846a4ad3f2b7c75056c5cdb0aaf953c3c833c21569c6",
+    "perception.py": "58e32b3226f9711589b83e538d93699f66341d89732eb17ec3b4dbeb8ac2eb63"
+  },
+  "platform_verified": false
+}

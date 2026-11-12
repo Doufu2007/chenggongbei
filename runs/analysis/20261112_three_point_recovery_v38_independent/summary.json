@@ -1,0 +1,126 @@
+{
+  "schema": "v38_independent_platform_analysis_v1",
+  "raw_sha256": "ba8cc75e76b677ba5ef4e11861c2bc9af2c9b0033f1a08dc718b280cb1060854",
+  "raw_bytes": 561581,
+  "events": 59,
+  "transport": {
+    "mode": "ground_three_point_recovery_budget",
+    "section": "three_ground_evidence_gzip_part",
+    "encoding": "gzip+base64",
+    "session_id": "a9ae0375a2e243a8b34f817899a482c5",
+    "bundle": "ground_three_point_v1",
+    "uncompressed_sha256": "e57148c143e5c63adcc35010dfa7f2eb62e4fa69737204b829633465ddb566ca",
+    "compressed_sha256": "eb3dd519cb4acefe7ca725843953613c4ef77708ac2981ddc2af8aa0ce261c41",
+    "uncompressed_bytes": 877402,
+    "compressed_bytes": 262893,
+    "part_count": 8,
+    "duplicate_parts": 0
+  },
+  "bindings": {
+    "exact_mode": true,
+    "recovery_revision": true,
+    "same_session": true,
+    "state_reason": true,
+    "origin": true,
+    "path_rotation": true,
+    "draw_target_index": true,
+    "frozen_limits": true,
+    "completed_count": true,
+    "current_point": true,
+    "parent_pretty_bundle_equal": true
+  },
+  "state": "FINISHED",
+  "reason": "single_point_visual_binding_rejected",
+  "mission_draw": [
+    "ground_3",
+    "ground_2",
+    "ground_0"
+  ],
+  "point_index": 0,
+  "target_id": "ground_3",
+  "completed_points": 0,
+  "capture_count": 3,
+  "accepted_match_results": 0,
+  "matcher_failures": 0,
+  "recognition": null,
+  "attempts": {},
+  "in_entry": false,
+  "camera_recapture_events": 0,
+  "resume_count": 1,
+  "completed_pause_wall_s": 1.1043544510030188,
+  "motion_elapsed_at_core_s": 106.768,
+  "stop_elapsed_s": 104.7762171400027,
+  "recognize_wait_to_stop_s": 1.2827551209993544,
+  "capture_start_to_stop_s": 1.9910408670039033,
+  "reported_path_m": 1.6396584390362612,
+  "reported_rotation_rad": 2.0723423647977346,
+  "retained_10hz_path_lower_bound_m": 1.6355537719429951,
+  "retained_10hz_rotation_lower_bound_rad": 2.0683867446126123,
+  "max_observed_displacement_m": 1.183565285943583,
+  "command_rows": 2339,
+  "nonzero_commands": 1848,
+  "zero_commands": 491,
+  "core_nonzero_count": 1848,
+  "core_zero_count": 490,
+  "command_vs_core_zero_count_delta": 1,
+  "command_violations": [],
+  "negative_x_commands": 0,
+  "capture_through_stop_zero_rows": 78,
+  "post_stop_zero_rows": 85,
+  "ledger_errors": [],
+  "final_observation_error": {
+    "position_error_m": 0.011565843245372015,
+    "yaw_error_rad": -0.024502943226784257,
+    "actual_end_pose": [
+      0.5884860941119439,
+      -1.0260948521258617,
+      -1.0672248215953213
+    ],
+    "requested_observation_xy": [
+      0.6,
+      -1.025
+    ],
+    "requested_observation_yaw": -1.042721878368537
+  },
+  "leg_errors_m": [
+    0.0010944422662701734,
+    0.005338521158349326
+  ],
+  "source_prior_skews_s": [
+    {
+      "prior_valid": true,
+      "image_minus_prior_s": 0.014999999999986358
+    },
+    {
+      "prior_valid": true,
+      "image_minus_prior_s": 0.009000000000000341
+    },
+    {
+      "prior_valid": true,
+      "image_minus_prior_s": 0.001999999999995339
+    }
+  ],
+  "string_publications": {
+    "recognition": {
+      "observed_point_attempts": 0,
+      "observed_point_returns": 0,
+      "endpoint_publish_attempts": 0,
+      "endpoint_publish_returns": 0,
+      "counts_agree": true
+    },
+    "declaration": {
+      "observed_point_attempts": 0,
+      "observed_point_returns": 0,
+      "endpoint_publish_attempts": 0,
+      "endpoint_publish_returns": 0,
+      "counts_agree": true
+    }
+  },
+  "axis_attempt_sequence_status": "not_transmitted_full_snapshot_fell_back_to_sections",
+  "publication_failure_count": null,
+  "launcher_exit_code": 0,
+  "official_score": null,
+  "full_mission_complete": false,
+  "sift_reexecuted": false,
+  "production_modified": false
+}

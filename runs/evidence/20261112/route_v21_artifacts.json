@@ -1,0 +1,28 @@
+{
+  "version": "ground-route-v21",
+  "mode": "practice",
+  "revision": "ground_observation_route_v2",
+  "official_task_success": false,
+  "only_control_change": "remove <=.08 error minimum .03; use original minimum_yaw_rate .35, same cap .5, exact same yaw/deadlines/guard",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5dff1b80246f81863d5f3ab5c3f306c6085efca5fe31e48f4565764453b42673"
+  },
+  "checks": {
+    "prior_full_suite": 1102,
+    "changed_area_regressions": 72,
+    "failures": 0
+  },
+  "included_new_matcher": false,
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_route_v21_src.zip",
+      "bytes": 111234,
+      "sha256": "5dc2f1103b41df7edd0c5a9ae6f4dff403299a36875da0597614e2a5e5bf869e"
+    },
+    {
+      "path": "dist/run_ground_route_v21.sh",
+      "bytes": 2812,
+      "sha256": "20764bf25b37c46423df625e8e4c705a07e313578228dd63adcd35f95d52a0aa"
+    }
+  ]
+}

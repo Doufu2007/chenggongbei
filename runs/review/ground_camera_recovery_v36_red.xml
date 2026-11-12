@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="16" skipped="0" tests="19" time="1.485" timestamp="2026-11-12T09:06:20.877595+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_real_v35_530ms_gap_pauses_without_relaxing_camera_gate[CAPTURE]" time="0.088"><failure message="AssertionError: assert ('CAPTURE', 0.0, 0.0) == ('PAUSE', 0.0, 0.0)&#10;  &#10;  At index 0 diff: 'CAPTURE' != 'PAUSE'&#10;  Use -v to get more diff">phase = 'CAPTURE'
+
+    @pytest.mark.parametrize("phase", ["CAPTURE", "RECOGNIZE_WAIT"])
+    def test_real_v35_530ms_gap_pauses_without_relaxing_camera_gate(phase):
+        run = StationaryRun(); g = run.guard
+        if phase == "CAPTURE":
+            g._enter_phase("CAPTURE")
+        d = camera_gap(run)
+&gt;       assert (g.state, d.linear_x, d.angular_z) == ("PAUSE", 0., 0.)
+E       AssertionError: assert ('CAPTURE', 0.0, 0.0) == ('PAUSE', 0.0, 0.0)
+E         
+E         At index 0 diff: 'CAPTURE' != 'PAUSE'
+E         Use -v to get more diff
+
+tests\test_ground_three_point_camera_recovery.py:83: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_real_v35_530ms_gap_pauses_without_relaxing_camera_gate[RECOGNIZE_WAIT]" time="0.032"><failure message="AssertionError: assert ('STOP', 0.0, 0.0) == ('PAUSE', 0.0, 0.0)&#10;  &#10;  At index 0 diff: 'STOP' != 'PAUSE'&#10;  Use -v to get more diff">phase = 'RECOGNIZE_WAIT'
+
+    @pytest.mark.parametrize("phase", ["CAPTURE", "RECOGNIZE_WAIT"])
+    def test_real_v35_530ms_gap_pauses_without_relaxing_camera_gate(phase):
+        run = StationaryRun(); g = run.guard
+        if phase == "CAPTURE":
+            g._enter_phase("CAPTURE")
+        d = camera_gap(run)
+&gt;       assert (g.state, d.linear_x, d.angular_z) == ("PAUSE", 0., 0.)
+E       AssertionError: assert ('STOP', 0.0, 0.0) == ('PAUSE', 0.0, 0.0)
+E         
+E         At index 0 diff: 'STOP' != 'PAUSE'
+E         Use -v to get more diff
+
+tests\test_ground_three_point_camera_recovery.py:83: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_positive_source_age_gap_recovers_but_invalid_negative_age_is_terminal" time="0.025"><failure message="AssertionError: assert 'STOP' == 'PAUSE'&#10;  &#10;  - PAUSE&#10;  + STOP">def test_positive_source_age_gap_recovers_but_invalid_negative_age_is_terminal():
+        run = StationaryRun(); g = run.guard
+        g.last_uav_image = (run.wall, g.clock[0]-.543)
+        g.step(wall_s=run.wall)
+&gt;       assert g.state == "PAUSE"
+E       AssertionError: assert 'STOP' == 'PAUSE'
+E         
+E         - PAUSE
+E         + STOP
+
+tests\test_ground_three_point_camera_recovery.py:97: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_camera_must_recover_then_both_clocks_dwell_before_new_epoch" time="0.034"><failure message="AssertionError: assert 'STOP' == 'PAUSE'&#10;  &#10;  - PAUSE&#10;  + STOP">def test_camera_must_recover_then_both_clocks_dwell_before_new_epoch():
+        run = StationaryRun(); g = run.guard
+        old_epoch = g.stationary_epoch
+        before = (g.global_origin, g.started_wall, g.total_path_m, g.accumulated_rotation_rad,
+                  g.frozen_limits, g.turn_elapsed_wall_s, g.drive_elapsed_wall_s)
+        camera_gap(run)
+        for _ in range(24):
+            run.tick(emit_image=False)
+&gt;           assert g.state == "PAUSE"
+E           AssertionError: assert 'STOP' == 'PAUSE'
+E             
+E             - PAUSE
+E             + STOP
+
+tests\test_ground_three_point_camera_recovery.py:113: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_original_global_and_per_point_recovery_quotas_still_stop[3-0]" time="0.033"><failure message="AssertionError: assert ('STOP' == 'STOP'&#10;  &#10;    STOP and 'recapture_limit' in 'single_point_uav_image_stale')&#10; +  where 'single_point_uav_image_stale' = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x0000025C6C0C6FD0&gt;.reason">resume = 3, recapture = 0
+
+    @pytest.mark.parametrize("resume,recapture", [(3, 0), (0, 1)])
+    def test_original_global_and_per_point_recovery_quotas_still_stop(resume, recapture):
+        run = StationaryRun(); g = run.guard
+        g.resume_count, g.recapture_count = resume, recapture
+        camera_gap(run)
+        for _ in range(25):
+            run.tick()
+            if g.state == "STOP":
+                break
+&gt;       assert g.state == "STOP" and "recapture_limit" in g.reason
+E       AssertionError: assert ('STOP' == 'STOP'
+E         
+E           STOP and 'recapture_limit' in 'single_point_uav_image_stale')
+E        +  where 'single_point_uav_image_stale' = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x0000025C6C0C6FD0&gt;.reason
+
+tests\test_ground_three_point_camera_recovery.py:140: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_original_global_and_per_point_recovery_quotas_still_stop[0-1]" time="0.034"><failure message="AssertionError: assert ('STOP' == 'STOP'&#10;  &#10;    STOP and 'recapture_limit' in 'single_point_uav_image_stale')&#10; +  where 'single_point_uav_image_stale' = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x0000025C6C0C6E90&gt;.reason">resume = 0, recapture = 1
+
+    @pytest.mark.parametrize("resume,recapture", [(3, 0), (0, 1)])
+    def test_original_global_and_per_point_recovery_quotas_still_stop(resume, recapture):
+        run = StationaryRun(); g = run.guard
+        g.resume_count, g.recapture_count = resume, recapture
+        camera_gap(run)
+        for _ in range(25):
+            run.tick()
+            if g.state == "STOP":
+                break
+&gt;       assert g.state == "STOP" and "recapture_limit" in g.reason
+E       AssertionError: assert ('STOP' == 'STOP'
+E         
+E           STOP and 'recapture_limit' in 'single_point_uav_image_stale')
+E        +  where 'single_point_uav_image_stale' = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x0000025C6C0C6E90&gt;.reason
+
+tests\test_ground_three_point_camera_recovery.py:140: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_old_worker_result_cannot_cross_camera_recovery_epoch" time="0.057"><failure message="AssertionError: assert ('STOP' == 'RECOGNIZE_WAIT'&#10;  &#10;  - RECOGNIZE_WAIT&#10;  + STOP)">def test_old_worker_result_cannot_cross_camera_recovery_epoch():
+        from inspection_mission.ground_single_point import GroundSinglePointCoordinator
+        run = StationaryRun(); g = run.guard
+        jobs, results = fixture_jobs(run)
+        class Worker:
+            def __init__(self): self.context = None; self.results = []
+            def cancel_context(self): self.context = None
+            def set_context(self, *value): self.context = value
+            def poll(self): rows, self.results = self.results, []; return rows
+            def submit(self, job): pass
+        worker = Worker()
+        coordinator = GroundSinglePointCoordinator(g, worker, prepare=lambda *a, **kw: jobs)
+        coordinator.poll_once(run.wall)
+        camera_gap(run)
+        coordinator.poll_once(run.wall)
+        assert coordinator.context is None and worker.context is None
+        for _ in range(25):
+            run.tick()
+            if g.state == "CAPTURE": break
+        for _ in range(4):
+            run.tick()
+            if g.state == "RECOGNIZE_WAIT": break
+&gt;       assert g.state == "RECOGNIZE_WAIT" and g.stationary_epoch &gt; jobs[0]["stationary_epoch"]
+E       AssertionError: assert ('STOP' == 'RECOGNIZE_WAIT'
+E         
+E         - RECOGNIZE_WAIT
+E         + STOP)
+
+tests\test_ground_three_point_camera_recovery.py:166: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[frame]" time="0.037"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'frame'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[stamp]" time="0.036"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'stamp'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[reversed]" time="0.036"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'reversed'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[shape]" time="0.035"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'shape'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[stride]" time="0.033"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'stride'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_illegal_or_reversed_image_cannot_be_recovered[negative]" time="0.033"><failure message="AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'&#10;  &#10;  - STOP&#10;  + RECOGNIZE_WAIT">fault = 'negative'
+
+    @pytest.mark.parametrize("fault", ["frame", "stamp", "reversed", "shape", "stride", "negative"])
+    def test_illegal_or_reversed_image_cannot_be_recovered(fault):
+        run = StationaryRun(); g = run.guard
+        stamp = g.last_uav_image[1]+.01
+        msg = image(stamp)
+        if fault == "frame": msg.header.frame_id = "wrong_camera"
+        if fault == "stamp": msg.header.stamp.nanosec = 10**9
+        if fault == "reversed": msg = image(g.last_uav_image[1]-.001)
+        if fault == "shape": msg.encoding = "uninterpreted8"
+        if fault == "stride": msg.step = 1
+        if fault == "negative": msg = image(g.clock[0]+.120002)
+        g.observe_image("/uav/camera/image", msg, wall_s=run.wall)
+&gt;       assert g.state == "STOP"
+E       AssertionError: assert 'RECOGNIZE_WAIT' == 'STOP'
+E         
+E         - STOP
+E         + RECOGNIZE_WAIT
+
+tests\test_ground_three_point_camera_recovery.py:184: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_original_negative_sampling_tolerance_and_duplicate_no_refresh_remain" time="0.034" /><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_reporting_or_uncertain_attempt_never_retries_or_republishes[REPORT_WAIT-False]" time="0.043" /><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_reporting_or_uncertain_attempt_never_retries_or_republishes[RECOGNIZE_WAIT-True]" time="0.038" /><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_stale_image_at_dispatch_boundary_cannot_publish_current_result" time="0.053"><failure message="AssertionError: assert 'STOP' == 'PAUSE'&#10;  &#10;  - PAUSE&#10;  + STOP">def test_stale_image_at_dispatch_boundary_cannot_publish_current_result():
+        run = StationaryRun(); g = run.guard
+        _, results = fixture_jobs(run)
+        for row in results: assert g.accept_match_result(row, wall_s=run.wall)
+        advance_no_image(run, .530038013)
+        sent = []
+        assert g.dispatch_one(lambda *a: sent.append(a), wall_s=run.wall) is None
+        assert not sent and not g.attempts
+        g.step(wall_s=run.wall)
+&gt;       assert g.state == "PAUSE"
+E       AssertionError: assert 'STOP' == 'PAUSE'
+E         
+E         - PAUSE
+E         + STOP
+
+tests\test_ground_three_point_camera_recovery.py:224: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_actual_factory_constructs_new_guard_and_preserves_final_time_check" time="0.034"><failure message="AssertionError: assert 'GroundThreePointAxisGuard' == 'GroundThreeP...RecoveryGuard'&#10;  &#10;  - GroundThreePointCameraRecoveryGuard&#10;  + GroundThreePointAxisGuard">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000025C6C0F5F30&gt;
+
+    def test_actual_factory_constructs_new_guard_and_preserves_final_time_check(monkeypatch):
+        install_ros_transport(monkeypatch)
+        wall = [0.]
+        create = getattr(api(), "create_camera_recovery_three_point_node", api().create_axis_three_point_node)
+        node = create(wall_clock=lambda: wall[0])
+        node.arm_watchdog = lambda: None
+&gt;       assert type(node.guard).__name__ == "GroundThreePointCameraRecoveryGuard"
+E       AssertionError: assert 'GroundThreePointAxisGuard' == 'GroundThreeP...RecoveryGuard'
+E         
+E         - GroundThreePointCameraRecoveryGuard
+E         + GroundThreePointAxisGuard
+
+tests\test_ground_three_point_camera_recovery.py:233: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_recovery_wait_does_not_expand_global_deadline" time="0.048"><failure message="AssertionError: assert ('FINISHED' == 'STOP'&#10;  &#10;  - STOP&#10;  + FINISHED)">def test_recovery_wait_does_not_expand_global_deadline():
+        run = StationaryRun(); g = run.guard
+        camera_gap(run)
+        run.wall = 1200.001
+        run.sensors(emit_image=False)
+        g.step(wall_s=run.wall)
+&gt;       assert g.state == "STOP" and "global_wall_time_limit" in g.reason
+E       AssertionError: assert ('FINISHED' == 'STOP'
+E         
+E         - STOP
+E         + FINISHED)
+
+tests\test_ground_three_point_camera_recovery.py:260: AssertionError</failure></testcase></testsuite></testsuites>

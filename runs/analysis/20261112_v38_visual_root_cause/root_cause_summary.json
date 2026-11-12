@@ -1,0 +1,75 @@
+{
+  "source_image_hashes": [
+    "54afd63dd473ee1e3a229d628c40789ef269102a4486c90d625d173125323e02",
+    "c9a402376573089ef387ce7d6eb895319b510c1fe7b7db55a08b6dc332513855",
+    "41bef8bcc49d5a95c1dc79f21bebda9b9da275eb4f3f8464ac14b1e9106b2515"
+  ],
+  "old": {
+    "template_count": 8,
+    "pairs": 24,
+    "accepted": 0,
+    "query_distinct_min": 1,
+    "query_distinct_max": 5,
+    "nonconvex_count": 24
+  },
+  "new": {
+    "template_count": 10,
+    "old24_diagnostics_identical": true,
+    "accepted": [
+      {
+        "frame": 0,
+        "template": "damaged_vehicle_02.jpg",
+        "good": 180,
+        "inliers": 106,
+        "distinct_query": 96,
+        "area_m2": 0.2080726276904655,
+        "median_error_px": 0.23675426840782166,
+        "template_hull_fraction": 0.6396267524662491,
+        "inlier_fraction": 0.5888888888888889,
+        "world_center": [
+          1.1229058369740346,
+          -1.9170962400654248
+        ],
+        "center_error_to_public_candidate_m": 0.008176487013547923,
+        "rejection_reasons": [],
+        "bound": true
+      },
+      {
+        "frame": 1,
+        "template": "damaged_vehicle_02.jpg",
+        "good": 188,
+        "inliers": 102,
+        "distinct_query": 92,
+        "area_m2": 0.2079813068484991,
+        "median_error_px": 0.24518561363220215,
+        "template_hull_fraction": 0.6111766796107246,
+        "inlier_fraction": 0.5425531914893617,
+        "world_center": [
+          1.1228272406425788,
+          -1.9172172398371221
+        ],
+        "center_error_to_public_candidate_m": 0.008080361314826291,
+        "rejection_reasons": [],
+        "bound": true
+      },
+      {
+        "frame": 2,
+        "template": "damaged_vehicle_02.jpg",
+        "good": 190,
+        "inliers": 103,
+        "distinct_query": 94,
+        "area_m2": 0.20827314283325232,
+        "median_error_px": 0.2256406843662262,
+        "template_hull_fraction": 0.6111828099095297,
+        "inlier_fraction": 0.5421052631578948,
+        "world_center": [
+          1.1229652345926173,
+          -1.9171850017624144
+        ],
+        "center_error_to_public_candidate_m": 0.008075547518066415,
+        "rejection_reasons": [],
+        "bound": true
+      }
+    ]
+  }
+}

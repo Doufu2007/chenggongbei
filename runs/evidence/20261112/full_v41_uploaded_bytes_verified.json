@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "source",
+    "bytes": 13378153,
+    "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d",
+    "matches_frozen_submission": true
+  },
+  {
+    "kind": "script",
+    "bytes": 2901,
+    "sha256": "7eeb6f05399bdfd82b538322065fa0fb9a2e4404ac5576ac986716a729b50309",
+    "matches_frozen_submission": true
+  }
+]

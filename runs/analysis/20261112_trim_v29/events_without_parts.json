@@ -1,0 +1,168 @@
+[
+  {
+    "received_at": "2026-11-11T23:49:49.800620+00:00",
+    "payload": {
+      "event": "launcher_started",
+      "timestamp": "2026-11-11T23:49:44.683967+00:00",
+      "data": {
+        "read_only": false,
+        "mode": "bounded_vertical_trim",
+        "revision": "bounded_vertical_trim_v1",
+        "official_scoring": "unverified"
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:49:51.146681+00:00",
+    "payload": {
+      "event": "probe_started",
+      "timestamp": "2026-11-11T23:49:46.260315+00:00",
+      "data": {
+        "mode": "bounded_vertical_trim",
+        "read_only": false,
+        "limits": {
+          "command_mps": 0.05,
+          "target_rise_m": 0.1,
+          "hard_rise_m": 0.15,
+          "max_horizontal_drift_m": 0.04,
+          "max_tilt_rad": 0.05,
+          "max_speed_mps": 0.15,
+          "max_angular_speed_rps": 0.1,
+          "max_total_path_m": 0.3,
+          "motion_wall_s": 10.0,
+          "global_wall_s": 45.0,
+          "sensor_age_s": 0.2,
+          "clock_sampling_lag_s": 0.12,
+          "stable_s": 1.0,
+          "observe_s": 5.0
+        },
+        "protocol": [
+          [
+            "TRIM_POS_025",
+            0.025,
+            1.0
+          ],
+          [
+            "TRIM_POS_030",
+            0.03,
+            1.0
+          ],
+          [
+            "TRIM_NEG_010",
+            -0.01,
+            0.3
+          ]
+        ],
+        "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+        "official_scoring": "unverified",
+        "full_mission_complete": false
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:50:00.005237+00:00",
+    "payload": {
+      "event": "probe_snapshot",
+      "timestamp": "2026-11-11T23:49:54.766809+00:00",
+      "data": {
+        "mode": "bounded_vertical_trim",
+        "session_id": "ecf06e3d5bec4462a40a485a9a81e915",
+        "state": "FINISHED",
+        "reason": "support_return_verified_trim_complete",
+        "limits": {
+          "command_mps": 0.05,
+          "target_rise_m": 0.1,
+          "hard_rise_m": 0.15,
+          "max_horizontal_drift_m": 0.04,
+          "max_tilt_rad": 0.05,
+          "max_speed_mps": 0.15,
+          "max_angular_speed_rps": 0.1,
+          "max_total_path_m": 0.3,
+          "motion_wall_s": 10.0,
+          "global_wall_s": 45.0,
+          "sensor_age_s": 0.2,
+          "clock_sampling_lag_s": 0.12,
+          "stable_s": 1.0,
+          "observe_s": 5.0
+        },
+        "origin": [
+          3.257353154996108e-05,
+          3.4388623533151046e-05,
+          0.05500070822860755
+        ],
+        "target_reached": true,
+        "max_rise_m": 0.10309669382224063,
+        "max_horizontal_drift_m": 0.00018352704700803677,
+        "total_path_m": 0.21730158066952623,
+        "dropped": {
+          "trajectory": 0,
+          "commands": 0,
+          "scans": 0,
+          "downscans": 0,
+          "tf_records": 0
+        },
+        "post_stop_faults": [],
+        "assumptions": {
+          "world_source": "ranmengjia/ICAN@82b041043849a5d86e085390bf0df787366d98cd:binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+          "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+          "static_map_verified_on_platform": false,
+          "space_evidence": "fixed public static candidate departure column plus live horizontal scan consistency",
+          "initial_support_floor": "known initial support; signed Z trim only above .035m relative height; zero return is observed, not controlled landing",
+          "unknown_upper_obstacles_sensed": false,
+          "downscan_used_as_upper_clearance": false,
+          "body_world_positive_z_contract": "unverified; limited tilt and displacement measured during experiment",
+          "body_world_signed_z_contract": "unverified; fixed low-height identification, not hover PID"
+        },
+        "section": "bounded_vertical_trim_core",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "full_mission_complete": false,
+        "phase": "ZERO_RETURN",
+        "protocol_complete": true,
+        "support_return_verified": true,
+        "protocol_abort_reason": ""
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:50:06.311357+00:00",
+    "payload": {
+      "event": "probe_finished",
+      "timestamp": "2026-11-11T23:50:01.110764+00:00",
+      "data": {
+        "mode": "bounded_vertical_trim",
+        "read_only": false,
+        "state": "FINISHED",
+        "reason": "support_return_verified_trim_complete",
+        "publish_counts": {
+          "ground_zero": 174,
+          "uav_zero": 83,
+          "uav_positive_z": 85,
+          "uav_negative_z": 6
+        },
+        "errors": [],
+        "full_mission_complete": false,
+        "official_scoring": "unverified"
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:50:07.364113+00:00",
+    "payload": {
+      "event": "launcher_exit",
+      "timestamp": "2026-11-11T23:50:02.439503+00:00",
+      "data": {
+        "read_only": false,
+        "mode": "bounded_vertical_trim",
+        "revision": "bounded_vertical_trim_v1",
+        "official_scoring": "unverified",
+        "exit_code": 0
+      }
+    },
+    "source": "unverified_callback"
+  }
+]

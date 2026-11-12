@@ -1,0 +1,349 @@
+{
+  "schema": "independent_front_fov_diagnosis_v1",
+  "platform_verified": false,
+  "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "source_sha256": {
+    "envelope.py": "4c2c18fac681a134cacd5ba4337f941c62b2b3667f3af291467c738674746839",
+    "perception.py": "58e32b3226f9711589b83e538d93699f66341d89732eb17ec3b4dbeb8ac2eb63",
+    "mission_node.py": "d63a5bd00015d823fb50975618a050e4117cd02d6b405cee8e83e9cac8b6f7b2",
+    "runtime.py": "74069f278e2d85f5bd31846a4ad3f2b7c75056c5cdb0aaf953c3c833c21569c6"
+  },
+  "public_sensor_spec": {
+    "translation_m": [
+      0.12,
+      0.0,
+      0.18
+    ],
+    "horizontal_fov_rad": 3.141592653589793,
+    "vertical_fov_rad": 1.1,
+    "range_min_m": 0.08,
+    "range_max_m": 4.0
+  },
+  "envelope": {
+    "horizontal_radius_m": 0.4852965420989326,
+    "below_origin_m": 0.12034068866399322,
+    "above_origin_m": 0.21834068866399323,
+    "max_tilt_rad": 0.05
+  },
+  "real_tick_distance_m": 0.5852965420989326,
+  "real_tick_required_lower_elevation_rad": 0.5731927840239874,
+  "real_tick_gate": false,
+  "level_minimum_cap_distance_m": 0.6098681044534597,
+  "level_threshold_boundary_checked_m": 1e-06,
+  "tilt_grid": [
+    {
+      "axis_angle_rad": -3.141592653589793,
+      "minimum_cap_distance_m": 0.649183254572709
+    },
+    {
+      "axis_angle_rad": -3.0543261909900767,
+      "minimum_cap_distance_m": 0.6542641817332704
+    },
+    {
+      "axis_angle_rad": -2.9670597283903604,
+      "minimum_cap_distance_m": 0.6590848631345703
+    },
+    {
+      "axis_angle_rad": -2.8797932657906435,
+      "minimum_cap_distance_m": 0.6636000399194286
+    },
+    {
+      "axis_angle_rad": -2.792526803190927,
+      "minimum_cap_distance_m": 0.6677649437055095
+    },
+    {
+      "axis_angle_rad": -2.705260340591211,
+      "minimum_cap_distance_m": 0.6715359001845926
+    },
+    {
+      "axis_angle_rad": -2.6179938779914944,
+      "minimum_cap_distance_m": 0.6748709951847199
+    },
+    {
+      "axis_angle_rad": -2.5307274153917776,
+      "minimum_cap_distance_m": 0.677730791572509
+    },
+    {
+      "axis_angle_rad": -2.443460952792061,
+      "minimum_cap_distance_m": 0.6800790812162194
+    },
+    {
+      "axis_angle_rad": -2.356194490192345,
+      "minimum_cap_distance_m": 0.68188365218117
+    },
+    {
+      "axis_angle_rad": -2.2689280275926285,
+      "minimum_cap_distance_m": 0.6831170476909083
+    },
+    {
+      "axis_angle_rad": -2.181661564992912,
+      "minimum_cap_distance_m": 0.6837572904941278
+    },
+    {
+      "axis_angle_rad": -2.0943951023931957,
+      "minimum_cap_distance_m": 0.6837885444645284
+    },
+    {
+      "axis_angle_rad": -2.007128639793479,
+      "minimum_cap_distance_m": 0.6832016848319811
+    },
+    {
+      "axis_angle_rad": -1.9198621771937625,
+      "minimum_cap_distance_m": 0.6819947496300224
+    },
+    {
+      "axis_angle_rad": -1.832595714594046,
+      "minimum_cap_distance_m": 0.6801732478690873
+    },
+    {
+      "axis_angle_rad": -1.7453292519943295,
+      "minimum_cap_distance_m": 0.6777503045900042
+    },
+    {
+      "axis_angle_rad": -1.6580627893946132,
+      "minimum_cap_distance_m": 0.6747466291438162
+    },
+    {
+      "axis_angle_rad": -1.5707963267948966,
+      "minimum_cap_distance_m": 0.6711903004513167
+    },
+    {
+      "axis_angle_rad": -1.4835298641951802,
+      "minimum_cap_distance_m": 0.6747466291438162
+    },
+    {
+      "axis_angle_rad": -1.3962634015954636,
+      "minimum_cap_distance_m": 0.6777503045900042
+    },
+    {
+      "axis_angle_rad": -1.3089969389957472,
+      "minimum_cap_distance_m": 0.6801732478690873
+    },
+    {
+      "axis_angle_rad": -1.2217304763960306,
+      "minimum_cap_distance_m": 0.6819947496300224
+    },
+    {
+      "axis_angle_rad": -1.1344640137963142,
+      "minimum_cap_distance_m": 0.6832016848319811
+    },
+    {
+      "axis_angle_rad": -1.0471975511965979,
+      "minimum_cap_distance_m": 0.6837885444645284
+    },
+    {
+      "axis_angle_rad": -0.9599310885968815,
+      "minimum_cap_distance_m": 0.6837572904941278
+    },
+    {
+      "axis_angle_rad": -0.8726646259971647,
+      "minimum_cap_distance_m": 0.6831170476909083
+    },
+    {
+      "axis_angle_rad": -0.7853981633974483,
+      "minimum_cap_distance_m": 0.68188365218117
+    },
+    {
+      "axis_angle_rad": -0.6981317007977319,
+      "minimum_cap_distance_m": 0.6800790812162194
+    },
+    {
+      "axis_angle_rad": -0.6108652381980155,
+      "minimum_cap_distance_m": 0.677730791572509
+    },
+    {
+      "axis_angle_rad": -0.5235987755982987,
+      "minimum_cap_distance_m": 0.6748709951847199
+    },
+    {
+      "axis_angle_rad": -0.43633231299858233,
+      "minimum_cap_distance_m": 0.6715359001845926
+    },
+    {
+      "axis_angle_rad": -0.34906585039886595,
+      "minimum_cap_distance_m": 0.6677649437055095
+    },
+    {
+      "axis_angle_rad": -0.2617993877991496,
+      "minimum_cap_distance_m": 0.6636000399194286
+    },
+    {
+      "axis_angle_rad": -0.1745329251994332,
+      "minimum_cap_distance_m": 0.6590848631345703
+    },
+    {
+      "axis_angle_rad": -0.08726646259971638,
+      "minimum_cap_distance_m": 0.6542641817332704
+    },
+    {
+      "axis_angle_rad": 0.0,
+      "minimum_cap_distance_m": 0.649183254572709
+    },
+    {
+      "axis_angle_rad": 0.08726646259971638,
+      "minimum_cap_distance_m": 0.6438872974603838
+    },
+    {
+      "axis_angle_rad": 0.17453292519943275,
+      "minimum_cap_distance_m": 0.638421023644437
+    },
+    {
+      "axis_angle_rad": 0.2617993877991496,
+      "minimum_cap_distance_m": 0.6328282590571099
+    },
+    {
+      "axis_angle_rad": 0.34906585039886595,
+      "minimum_cap_distance_m": 0.6271516303897832
+    },
+    {
+      "axis_angle_rad": 0.43633231299858233,
+      "minimum_cap_distance_m": 0.6214323219822038
+    },
+    {
+      "axis_angle_rad": 0.5235987755982987,
+      "minimum_cap_distance_m": 0.6157098959583098
+    },
+    {
+      "axis_angle_rad": 0.6108652381980151,
+      "minimum_cap_distance_m": 0.6100221689900107
+    },
+    {
+      "axis_angle_rad": 0.6981317007977319,
+      "minimum_cap_distance_m": 0.6044051384530841
+    },
+    {
+      "axis_angle_rad": 0.7853981633974483,
+      "minimum_cap_distance_m": 0.5988929504822227
+    },
+    {
+      "axis_angle_rad": 0.8726646259971647,
+      "minimum_cap_distance_m": 0.5935179024593565
+    },
+    {
+      "axis_angle_rad": 0.959931088596881,
+      "minimum_cap_distance_m": 0.5883104727085613
+    },
+    {
+      "axis_angle_rad": 1.0471975511965974,
+      "minimum_cap_distance_m": 0.5832993705575773
+    },
+    {
+      "axis_angle_rad": 1.1344640137963138,
+      "minimum_cap_distance_m": 0.5785116004046053
+    },
+    {
+      "axis_angle_rad": 1.2217304763960302,
+      "minimum_cap_distance_m": 0.5739725339547648
+    },
+    {
+      "axis_angle_rad": 1.3089969389957474,
+      "minimum_cap_distance_m": 0.56970598532837
+    },
+    {
+      "axis_angle_rad": 1.3962634015954638,
+      "minimum_cap_distance_m": 0.5657342842681035
+    },
+    {
+      "axis_angle_rad": 1.4835298641951802,
+      "minimum_cap_distance_m": 0.5620783431677392
+    },
+    {
+      "axis_angle_rad": 1.5707963267948966,
+      "minimum_cap_distance_m": 0.5587577141027649
+    },
+    {
+      "axis_angle_rad": 1.658062789394613,
+      "minimum_cap_distance_m": 0.5620783431677392
+    },
+    {
+      "axis_angle_rad": 1.7453292519943293,
+      "minimum_cap_distance_m": 0.5657342842681035
+    },
+    {
+      "axis_angle_rad": 1.8325957145940457,
+      "minimum_cap_distance_m": 0.56970598532837
+    },
+    {
+      "axis_angle_rad": 1.919862177193762,
+      "minimum_cap_distance_m": 0.5739725339547648
+    },
+    {
+      "axis_angle_rad": 2.0071286397934784,
+      "minimum_cap_distance_m": 0.5785116004046053
+    },
+    {
+      "axis_angle_rad": 2.0943951023931957,
+      "minimum_cap_distance_m": 0.5832993705575773
+    },
+    {
+      "axis_angle_rad": 2.181661564992912,
+      "minimum_cap_distance_m": 0.5883104727085613
+    },
+    {
+      "axis_angle_rad": 2.2689280275926285,
+      "minimum_cap_distance_m": 0.5935179024593565
+    },
+    {
+      "axis_angle_rad": 2.356194490192345,
+      "minimum_cap_distance_m": 0.5988929504822227
+    },
+    {
+      "axis_angle_rad": 2.443460952792061,
+      "minimum_cap_distance_m": 0.6044051384530841
+    },
+    {
+      "axis_angle_rad": 2.5307274153917776,
+      "minimum_cap_distance_m": 0.6100221689900107
+    },
+    {
+      "axis_angle_rad": 2.617993877991494,
+      "minimum_cap_distance_m": 0.6157098959583098
+    },
+    {
+      "axis_angle_rad": 2.7052603405912103,
+      "minimum_cap_distance_m": 0.6214323219822038
+    },
+    {
+      "axis_angle_rad": 2.7925268031909267,
+      "minimum_cap_distance_m": 0.6271516303897832
+    },
+    {
+      "axis_angle_rad": 2.879793265790644,
+      "minimum_cap_distance_m": 0.6328282590571099
+    },
+    {
+      "axis_angle_rad": 2.9670597283903604,
+      "minimum_cap_distance_m": 0.638421023644437
+    },
+    {
+      "axis_angle_rad": 3.0543261909900767,
+      "minimum_cap_distance_m": 0.6438872974603838
+    },
+    {
+      "axis_angle_rad": 3.141592653589793,
+      "minimum_cap_distance_m": 0.649183254572709
+    }
+  ],
+  "tilt_grid_max": {
+    "axis_angle_rad": -2.0943951023931957,
+    "minimum_cap_distance_m": 0.6837885444645284
+  },
+  "longer_cap_blind_strip_counterexample": {
+    "level_point_m": [
+      0.52,
+      0.0,
+      -0.11
+    ],
+    "sensor_point_m": [
+      0.4,
+      0.0,
+      -0.29
+    ],
+    "elevation_rad": 0.6273081922757625,
+    "outside_sensor_aperture": true,
+    "within_new_required_swept_strip": true,
+    "gate_with_longer_cap_and_no_hidden_point": true,
+    "gate_with_longer_cap_and_out_of_aperture_point": true,
+    "interpretation": "Longer cap inclusion cannot certify unobserved near-field free space."
+  }
+}

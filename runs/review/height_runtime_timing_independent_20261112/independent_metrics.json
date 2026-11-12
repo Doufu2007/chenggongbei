@@ -1,0 +1,167 @@
+{
+  "reviewed_at_utc": "2026-11-12T00:41:43.745939+00:00",
+  "source_sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+  "source_unchanged": true,
+  "launcher_sha256": "29201e1323e2cb9e1d6b7b9763701617c11a5c6bb0f4b8368bb6ce6e15e010d1",
+  "manifest_sha256": "8d60a6d73f5e7633893cef8c60bd01fde4ab24807c9bd88e00e01027299e4ddf",
+  "manifest_files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+      "expected_sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+      "actual_sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "expected_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "actual_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_ground_probe.py",
+      "expected_sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb",
+      "actual_sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb"
+    },
+    {
+      "path": "scripts/run_bounded_height_hold.sh",
+      "expected_sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7",
+      "actual_sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/telemetry.py",
+      "expected_sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+      "actual_sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/height_runtime_timing.py",
+      "expected_sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+      "actual_sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be"
+    },
+    {
+      "path": "scripts/run_height_runtime_timing.sh",
+      "expected_sha256": "29201e1323e2cb9e1d6b7b9763701617c11a5c6bb0f4b8368bb6ce6e15e010d1",
+      "actual_sha256": "29201e1323e2cb9e1d6b7b9763701617c11a5c6bb0f4b8368bb6ce6e15e010d1"
+    },
+    {
+      "path": "tests/test_height_runtime_timing.py",
+      "expected_sha256": "3e77395e9b76005cdbd3b8ae380c784863a95bf94aac2a50c17ea3fc99434406",
+      "actual_sha256": "3e77395e9b76005cdbd3b8ae380c784863a95bf94aac2a50c17ea3fc99434406"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-12-height-runtime-timing-design.md",
+      "expected_sha256": "9ccfe88aec4f24349916fb0c44b0531045024cfe102a9e73511266c4d1eff7be",
+      "actual_sha256": "9ccfe88aec4f24349916fb0c44b0531045024cfe102a9e73511266c4d1eff7be"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-12-height-runtime-timing.md",
+      "expected_sha256": "15c5b7fdc3ad41b1edac39456bd69b6882c441b167104910f55dff132b4b5082",
+      "actual_sha256": "15c5b7fdc3ad41b1edac39456bd69b6882c441b167104910f55dff132b4b5082"
+    },
+    {
+      "path": "docs/height_runtime_timing_v34_20261112.md",
+      "expected_sha256": "08756ef3c4522e09d415764656d1d46811daec87391248c124914fe20773f5fc",
+      "actual_sha256": "08756ef3c4522e09d415764656d1d46811daec87391248c124914fe20773f5fc"
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/red.txt",
+      "expected_sha256": "4b9593bb0a2b044eb278496f4848049814e836571ef2699700b570faf6634184",
+      "actual_sha256": "4b9593bb0a2b044eb278496f4848049814e836571ef2699700b570faf6634184"
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/green.txt",
+      "expected_sha256": "1d42d9e52fb904be0e9aab154a6485a962a4aa418ca54a22d71080b5ca391ba0",
+      "actual_sha256": "1d42d9e52fb904be0e9aab154a6485a962a4aa418ca54a22d71080b5ca391ba0"
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/related_green.txt",
+      "expected_sha256": "8a50eb7e76e18dfcfc0d6b84daaba614d8f6b364a2240e14a84bfc884908c7cf",
+      "actual_sha256": "8a50eb7e76e18dfcfc0d6b84daaba614d8f6b364a2240e14a84bfc884908c7cf"
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/syntax.txt",
+      "expected_sha256": "2ce47a3f1b15a23272e67470f180e0ba672cdb4e823fb9d2fb7677883af79733",
+      "actual_sha256": "2ce47a3f1b15a23272e67470f180e0ba672cdb4e823fb9d2fb7677883af79733"
+    }
+  ],
+  "all_manifest_files_match": true,
+  "scope": "独立本地插桩审查；严格 Publisher stand-in；无真实 rclpy/平台性能或控制成功证据",
+  "probe_count": 8,
+  "pass_count": 8,
+  "probes": {
+    "registered_callbacks_and_spin": {
+      "pass": true,
+      "labels": {
+        "receive:/clock": 1,
+        "spin_once": 7,
+        "dds:control_tick": 1,
+        "control_tick": 1,
+        "tick": 1,
+        "receive:/uav/odom": 1,
+        "receive:/odom": 1,
+        "receive:/scan": 1,
+        "receive:/uav/laser/scan": 1,
+        "receive:/tf": 1,
+        "receive:/tf_static": 1
+      },
+      "input_count": 7
+    },
+    "strict_publisher_identity_and_exceptions": {
+      "pass": true,
+      "delegated_methods_received_original_self": true,
+      "original_registry_identity_retained": true,
+      "proxy_is_publisher_instance": false,
+      "raw_query_and_publish_exception_objects_preserved": true,
+      "rclpy_available": false,
+      "scope": "严格原对象 stand-in；非真实 rclpy 集成"
+    },
+    "original_callback_tick_publish_exceptions": {
+      "pass": true,
+      "calls": {
+        "receive": "same exception object propagated",
+        "tick": "same exception object propagated",
+        "_publish": "same exception object propagated",
+        "spin_once": "same exception object propagated"
+      }
+    },
+    "observer_metadata_isolation": {
+      "pass": true,
+      "metadata_cost_included_in_span": true,
+      "observer_error_did_not_block_original_receive": true,
+      "header_reader_ignored_large_payload": true
+    },
+    "bounded_trace_summary_and_gzip": {
+      "pass": true,
+      "trace_count": 2048,
+      "trace_dropped": 52,
+      "slow_count": 32,
+      "slow_dropped": 2068,
+      "summary_count": 2100,
+      "wall_total_s": 44.10000000000134,
+      "cpu_total_s": 2.0999999999998797,
+      "gzip_integrity_and_optional_timing_equal": true,
+      "original_mode": "bounded_height_hold"
+    },
+    "baseline_nominal": {
+      "pass": true,
+      "scenario": "nominal",
+      "publish_count": 538,
+      "final_state": "FINISHED",
+      "reason": "support_return_verified_height_protocol_complete",
+      "outputs_commands_and_transitions_equal": true
+    },
+    "baseline_dds_delay": {
+      "pass": true,
+      "scenario": "dds_delay",
+      "publish_count": 2,
+      "final_state": "OBSERVE",
+      "reason": "height_feedback_interrupted:clock_stale",
+      "outputs_commands_and_transitions_equal": true
+    },
+    "baseline_dds_exception": {
+      "pass": true,
+      "scenario": "dds_exception",
+      "publish_count": 2,
+      "final_state": "STOP",
+      "reason": "uav_publish_match_query_failed:RuntimeError",
+      "outputs_commands_and_transitions_equal": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "source_sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+  "completion_late_zero": {
+    "delayed_final_zero": true,
+    "mission_completed": false,
+    "state": "STOP",
+    "reason": "flight_landing_sources_changed_after_final_zero",
+    "condition_at_return": "flight_clock_stale",
+    "odom_wall_age_s": 0.2999999999999998,
+    "clock_wall_age_s": 0.2999999999999998,
+    "mission_status": [],
+    "landing_evidence": null
+  },
+  "vertical_return_veto": {
+    "path_clear": false,
+    "start_z": 0.9,
+    "end_z": 0.93,
+    "obstacle_world_xyz": [
+      0.32,
+      0.0,
+      1.13
+    ],
+    "BELOW": 0.11034068866399323,
+    "ABOVE": 0.20834068866399322,
+    "nonzero_published": [],
+    "state": "STOP",
+    "reason": "flight_static_or_current_return_path_rejected:TAKEOFF"
+  }
+}

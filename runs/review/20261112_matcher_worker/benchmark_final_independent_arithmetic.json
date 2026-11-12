@@ -1,0 +1,58 @@
+{
+  "kind": "independent_worker_benchmark_arithmetic",
+  "source_identity": {
+    "report": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/benchmark_report_final.json",
+      "bytes": 565391,
+      "sha256": "cd3b5939612887da83fde3e168aafb19f3c017c664853f5daf136ce74982d150"
+    },
+    "ticks": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/heartbeat_ticks_final.csv",
+      "bytes": 21807,
+      "sha256": "e0f0a5da8e8db49bca0941b71db0b90fcdfda5c60767cabf55d203e4171ddde7"
+    }
+  },
+  "recomputed_summary": {
+    "ticks": 289,
+    "effective_tick_rate_hz": 19.999947083472605,
+    "max_heartbeat_interval_ms": 51.555600002757274,
+    "p99_heartbeat_interval_ms": 50.93394400202669,
+    "median_heartbeat_interval_ms": 50.01154999990831,
+    "owner_work_max_ms": 13.857599995390046,
+    "owner_work_p99_ms": 1.2927680017310506,
+    "lateness_max_ms": 1.6605992350378074,
+    "skipped_scheduled_ticks": 0
+  },
+  "result_identity": [
+    {
+      "job_seq": 1,
+      "worker_pid": 29024,
+      "source_sha256": "13d20f2020c949810312a998e134d7f5c0a8e49bc64afa4fb666674b00dcbf34",
+      "image_stamp_s": 65.379,
+      "prior_pose_stamp_s": 65.36,
+      "context": 1,
+      "matches_current_context": false,
+      "diagnostic_count": 12,
+      "candidate_count": 0,
+      "job_ms": 3123.1071000001975,
+      "queue_to_result_wall_s": 11.659303600004932
+    },
+    {
+      "job_seq": 4,
+      "worker_pid": 29024,
+      "source_sha256": "13d20f2020c949810312a998e134d7f5c0a8e49bc64afa4fb666674b00dcbf34",
+      "image_stamp_s": 65.379,
+      "prior_pose_stamp_s": 65.36,
+      "context": 2,
+      "matches_current_context": true,
+      "diagnostic_count": 12,
+      "candidate_count": 0,
+      "job_ms": 2690.6301000053645,
+      "queue_to_result_wall_s": 14.106763799994951
+    }
+  ],
+  "scope": "Final frozen local offline prototype only; original 800x800 JPEG repeated for a worker mechanism experiment, not multiple exposures or ROS/control validation.",
+  "hard_realtime_or_platform_control_guarantee": false,
+  "verified_current_src_sha256": "c31e007852bad751f9ec2c9393c56835b0d1da904f3c818fc538c9ccc5335da5",
+  "official_acceptance": false
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="6" time="0.990" timestamp="2026-11-12T08:07:27.526455+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis" name="test_later_graph_query_dds_loss_rechecked_at_actual_publish_boundary" time="0.095"><failure message="AssertionError: assert ('DRIVE' == 'STOP'&#10;  &#10;  - STOP&#10;  + DRIVE)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE55D1BA0&gt;
+
+    def test_later_graph_query_dds_loss_rechecked_at_actual_publish_boundary(monkeypatch):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        match=[1];query=node.get_subscriptions_info_by_topic
+        def subscriptions(topic):
+            result=query(topic)
+            if topic!="/cmd_vel":match[0]=0
+            return result
+        node.publisher_by_topic["/cmd_vel"].get_subscription_count=lambda:match[0]
+        node.get_subscriptions_info_by_topic=subscriptions
+        node.last_graph_refresh_wall=None
+        d=node.tick()
+&gt;       assert node.guard.state=="STOP" and d.linear_x==0.
+E       AssertionError: assert ('DRIVE' == 'STOP'
+E         
+E         - STOP
+E         + DRIVE)
+
+tests\test_ground_three_point_axis.py:215: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_negative_publish_failure_locks_stop_and_independently_attempts_zero" time="0.018"><failure message="RuntimeError: negative transport failure">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE55D1A70&gt;
+
+    def test_negative_publish_failure_locks_stop_and_independently_attempts_zero(monkeypatch):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        def publish(msg):
+            sent.append((msg.linear.x,msg.angular.z))
+            if msg.linear.x&lt;0:raise RuntimeError("negative transport failure")
+        node.publisher_by_topic["/cmd_vel"].publish=publish
+&gt;       d=node.tick()
+          ^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:226: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\ground_three_point.py:524: in tick
+    decision = original_tick()
+               ^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\bounded_ground_probe.py:655: in tick
+    publisher.publish(message)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+msg = &lt;test_bounded_ground_probe.install_ros_transport.&lt;locals&gt;.Twist object at 0x0000023DE571BE00&gt;
+
+    def publish(msg):
+        sent.append((msg.linear.x,msg.angular.z))
+&gt;       if msg.linear.x&lt;0:raise RuntimeError("negative transport failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       RuntimeError: negative transport failure
+
+tests\test_ground_three_point_axis.py:224: RuntimeError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault[stale]" time="0.023"><failure message="assert (1 &gt;= 2)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE5600950&gt;
+fault = 'stale'
+
+    @pytest.mark.parametrize("fault",["stale","budget","phase_stop"])
+    def test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault(monkeypatch,fault):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        node.last_graph_refresh_wall=wall[0]
+        calls=[0]
+        def match():
+            calls[0]+=1
+            if calls[0]&gt;=2:
+                if fault=="stale":wall[0]=.30
+                elif fault=="budget":wall[0]=1200.
+                else:node.guard.stop("phase_changed_during_match_query",wall[0])
+            return 1
+        node.publisher_by_topic["/cmd_vel"].get_subscription_count=match
+        d=node.tick()
+&gt;       assert calls[0]&gt;=2 and d.linear_x==0. and all(x==w==0. for x,w in sent)
+E       assert (1 &gt;= 2)
+
+tests\test_ground_three_point_axis.py:248: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault[budget]" time="0.027"><failure message="assert (1 &gt;= 2)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE561C6B0&gt;
+fault = 'budget'
+
+    @pytest.mark.parametrize("fault",["stale","budget","phase_stop"])
+    def test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault(monkeypatch,fault):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        node.last_graph_refresh_wall=wall[0]
+        calls=[0]
+        def match():
+            calls[0]+=1
+            if calls[0]&gt;=2:
+                if fault=="stale":wall[0]=.30
+                elif fault=="budget":wall[0]=1200.
+                else:node.guard.stop("phase_changed_during_match_query",wall[0])
+            return 1
+        node.publisher_by_topic["/cmd_vel"].get_subscription_count=match
+        d=node.tick()
+&gt;       assert calls[0]&gt;=2 and d.linear_x==0. and all(x==w==0. for x,w in sent)
+E       assert (1 &gt;= 2)
+
+tests\test_ground_three_point_axis.py:248: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault[phase_stop]" time="0.022"><failure message="assert (1 &gt;= 2)">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE561D260&gt;
+fault = 'phase_stop'
+
+    @pytest.mark.parametrize("fault",["stale","budget","phase_stop"])
+    def test_final_actual_match_query_cannot_bypass_new_time_or_phase_fault(monkeypatch,fault):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        node.last_graph_refresh_wall=wall[0]
+        calls=[0]
+        def match():
+            calls[0]+=1
+            if calls[0]&gt;=2:
+                if fault=="stale":wall[0]=.30
+                elif fault=="budget":wall[0]=1200.
+                else:node.guard.stop("phase_changed_during_match_query",wall[0])
+            return 1
+        node.publisher_by_topic["/cmd_vel"].get_subscription_count=match
+        d=node.tick()
+&gt;       assert calls[0]&gt;=2 and d.linear_x==0. and all(x==w==0. for x,w in sent)
+E       assert (1 &gt;= 2)
+
+tests\test_ground_three_point_axis.py:248: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_zero_publish_failure_is_caught_and_next_zero_attempt_remains_possible" time="0.026"><failure message="RuntimeError: all output failed">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000023DE5688750&gt;
+
+    def test_zero_publish_failure_is_caught_and_next_zero_attempt_remains_possible(monkeypatch):
+        node,wall,sent=adapter_reverse(monkeypatch)
+        node.guard.stop("preexisting_stop",wall[0]);fail=[True]
+        def publish(msg):
+            sent.append((msg.linear.x,msg.angular.z))
+            if fail[0]:raise RuntimeError("all output failed")
+        node.publisher_by_topic["/cmd_vel"].publish=publish
+&gt;       d=node.tick()
+          ^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:260: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\ground_three_point.py:524: in tick
+    decision = original_tick()
+               ^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\bounded_ground_probe.py:655: in tick
+    publisher.publish(message)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+msg = &lt;test_bounded_ground_probe.install_ros_transport.&lt;locals&gt;.Twist object at 0x0000023DE571A270&gt;
+
+    def publish(msg):
+        sent.append((msg.linear.x,msg.angular.z))
+&gt;       if fail[0]:raise RuntimeError("all output failed")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       RuntimeError: all output failed
+
+tests\test_ground_three_point_axis.py:258: RuntimeError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "record_id": "d9abe4ad-d514-4e69-9f3c-c90cab5ba875",
+  "runId": "run_20261112_074858_f351d29c",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "trim_v29",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_trim_v29_src.zip",
+    "sha256": "cbe9229832dac099b7d5332885b91054efbc51795282ea8ce597701b5a955037"
+  },
+  "script": {
+    "path": "dist/run_trim_v29.sh",
+    "sha256": "4bcbeee7d7c8b7332b00759d2e5eb1ba8fa915432a4faa5c76cbe19d4ae551d0"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "ground_points": {
+      "ground_0": null,
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "ground_4": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 41.76,
+  "failure_reason": "Platform extracted no score; intentional non-scoring diagnostic. Fixed low-height signed-Z sequence and support-return stationary observation completed. Zero command caused descent; hover and full inspection were not tested.",
+  "evidence_paths": [
+    "runs/evidence/20261112/trim_v29_submit.json",
+    "runs/evidence/20261112/trim_v29_artifacts.json",
+    "runs/evidence/20261112/trim_v29_list_settled_check.json",
+    "runs/evidence/20261112/callback_trim_v29.jsonl",
+    "runs/analysis/20261112_trim_v29/validation.json",
+    "runs/analysis/20261112_trim_v29/metrics.json",
+    "runs/analysis/20261112_trim_v29/evidence.json"
+  ]
+}

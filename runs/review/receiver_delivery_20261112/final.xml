@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="83" time="14.221" timestamp="2026-11-12T12:28:44.428406+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_diagnostic_receiver" name="test_receiver_binds_only_loopback_and_generates_unpredictable_distinct_paths" time="0.032" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_port_is_rejected[-1]" time="0.004" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_port_is_rejected[65536]" time="0.003" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_port_is_rejected[True]" time="0.004" /><testcase classname="tests.test_diagnostic_receiver" name="test_explicit_port_is_used" time="0.007" /><testcase classname="tests.test_diagnostic_receiver" name="test_only_exact_secret_path_accepts_posts" time="0.225" /><testcase classname="tests.test_diagnostic_receiver" name="test_accepted_event_appends_timestamped_unverified_jsonl_without_url_token" time="0.127" /><testcase classname="tests.test_diagnostic_receiver" name="test_actual_receiver_url_or_path_token_cannot_be_written" time="0.122" /><testcase classname="tests.test_diagnostic_receiver" name="test_concurrent_events_append_complete_distinct_jsonl_records" time="1.383" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers0]" time="0.029" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers1]" time="0.030" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers2]" time="0.030" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers3]" time="0.062" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers4]" time="0.032" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers5]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_ambiguous_or_invalid_http_framing_is_rejected[headers6]" time="0.061" /><testcase classname="tests.test_diagnostic_receiver" name="test_rejected_framing_delivers_400_with_unread_request_bytes[headers0]" time="0.155" /><testcase classname="tests.test_diagnostic_receiver" name="test_rejected_framing_delivers_400_with_unread_request_bytes[headers1]" time="0.232" /><testcase classname="tests.test_diagnostic_receiver" name="test_rejected_framing_does_not_wait_for_advertised_body_or_client_eof" time="0.156" /><testcase classname="tests.test_diagnostic_receiver" name="test_arbitrarily_large_numeric_content_length_is_rejected_without_integer_conversion" time="0.060" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[launcher_started]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[launcher_exit]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[probe_started]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[public_graph]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[subscription]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[sample]" time="0.092" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[sample_error]" time="0.108" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[subscription_error]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[heartbeat]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[probe_finished]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_all_documented_probe_events_are_accepted[probe_snapshot]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload0]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload1]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload2]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload3]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload4]" time="0.109" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload5]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload6]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload7]" time="0.093" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload8]" time="0.092" /><testcase classname="tests.test_diagnostic_receiver" name="test_invalid_or_secret_bearing_schema_is_rejected_without_writing[payload9]" time="0.093" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[{broken]" time="0.093" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[&quot;just-string&quot;]" time="0.109" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[{&quot;event&quot;:&quot;sample&quot;,&quot;event&quot;:&quot;heartbeat&quot;,&quot;data&quot;:{}}]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[{&quot;event&quot;:&quot;sample&quot;,&quot;data&quot;:{&quot;value&quot;:NaN}}]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[{&quot;event&quot;:&quot;sample&quot;,&quot;data&quot;:{&quot;value&quot;:Infinity}}]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_malformed_duplicate_or_nonfinite_json_is_rejected[\xff\xfe]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_oversized_payload_is_rejected_before_schema_or_storage" time="0.062" /><testcase classname="tests.test_diagnostic_receiver" name="test_exact_64kb_valid_json_is_accepted" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_payload_depth_limit_is_enforced" time="0.155" /><testcase classname="tests.test_diagnostic_receiver" name="test_cli_emits_only_startup_url_then_exits_on_deadline[False]" time="0.446" /><testcase classname="tests.test_diagnostic_receiver" name="test_cli_emits_only_startup_url_then_exits_on_deadline[True]" time="0.481" /><testcase classname="tests.test_diagnostic_receiver" name="test_cli_releases_port_after_graceful_interrupt[sigterm]" time="0.665" /><testcase classname="tests.test_diagnostic_receiver" name="test_cli_releases_port_after_graceful_interrupt[keyboard]" time="0.673" /><testcase classname="tests.test_diagnostic_receiver" name="test_real_jpeg_callback_is_stored_only_as_unverified_evidence" time="0.503" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes0]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes1]" time="0.091" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes2]" time="0.091" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes3]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes4]" time="0.094" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes5]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes6]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes7]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes8]" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes9]" time="0.092" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes10]" time="0.078" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes11]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_rejects_unbounded_or_nonimage_schema[changes12]" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_image_callback_requires_all_snapshot_fields" time="0.077" /><testcase classname="tests.test_diagnostic_receiver" name="test_optional_delivery_ledger_separates_rejections_from_accepted_evidence" time="0.265" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_log_is_opt_in_and_may_not_share_accepted_path" time="0.031" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_ledger_failure_does_not_change_accepted_post" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_ledger_hard_row_bound_keeps_accepted_traffic" time="0.312" /><testcase classname="tests.test_diagnostic_receiver" name="test_accepted_202_response_failure_has_a_separate_failure_record" time="0.023" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_rejection_reason_codes_cover_framing_content_type_and_evidence_io" time="0.148" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_concurrent_bound_preserves_all_accepted_events" time="0.911" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_bound_counts_existing_rows" time="0.076" /><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_handler_error_records_no_address_or_exception_text" time="0.031" /><testcase classname="tests.test_probe_telemetry" name="test_reporter_delivers_real_event_to_loopback_receiver" time="0.578" /><testcase classname="tests.test_probe_telemetry" name="test_reporter_is_optional_and_rejects_unsafe_endpoints" time="0.001" /><testcase classname="tests.test_probe_telemetry" name="test_reporter_cannot_send_credentials_or_unknown_events" time="0.001" /><testcase classname="tests.test_probe_telemetry" name="test_launcher_reports_start_and_actual_failure_before_ros_is_available" time="1.448" /><testcase classname="runs.review.receiver_delivery_20261112.test_current_behavior_offline" name="test_current_http_outcomes_and_evidence_separation" time="0.007"><failure message="AttributeError: '_Receiver' object has no attribute '_delivery_lock'. Did you mean: 'delivery_limit'?">self = &lt;tools.diagnostic_receiver._Receiver object at 0x00000169EC223B60&gt;
+method = 'POST', path = '/offline-fixture-not-a-live-receiver-token'
+status = 202, reason = 'accepted', event = 'request_result'
+response_completed = True, evidence_appended = True
+
+    def record_delivery(self, *, method=None, path=None, status=None,
+                        reason="handler_error", event="request_result",
+                        response_completed=False, evidence_appended=False):
+        """Best-effort bounded metadata; never persist raw request or exception data."""
+        if getattr(self, "delivery_path", None) is None:
+            return
+        try:
+            known_methods = {"POST", "GET", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"}
+            fingerprint = (hashlib.sha256(path.encode("utf-8", "surrogatepass")).hexdigest()[:16]
+                           if path is not None else None)
+            record = {"received_at": datetime.now(timezone.utc).isoformat(),
+                      "event": event,
+                      "method": method if method in known_methods else "OTHER",
+                      "path_sha256": fingerprint,
+                      "exact_path": path == "/" + self.path_token,
+                      "http_status": status, "reason": reason,
+                      "response_completed": response_completed,
+                      "evidence_appended": evidence_appended}
+            line = (json.dumps(record, ensure_ascii=True, allow_nan=False) + "\n").encode("ascii")
+&gt;           with self._delivery_lock:
+                 ^^^^^^^^^^^^^^^^^^^
+E           AttributeError: '_Receiver' object has no attribute '_delivery_lock'. Did you mean: 'delivery_limit'?
+
+tools\diagnostic_receiver.py:157: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+directory = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-869/test_current_http_outcomes_and0/accepted_launcher')
+name = 'accepted_launcher'
+wire = b'POST /offline-fixture-not-a-live-receiver-token HTTP/1.1\r\nHost: offline\r\nContent-Type: application/json\r\nContent-Length: 47\r\n\r\n{"event":"launcher_started","data":{"pid":123}}'
+sink_error = False, reply_error = False, body_timeout = False
+
+    def execute(directory: Path, name: str, wire: bytes, *, sink_error=False,
+                reply_error=False, body_timeout=False):
+        directory = Path(directory)/name
+        directory.mkdir(parents=True, exist_ok=True)
+        server = production._Receiver.__new__(production._Receiver)
+        server.output_path = directory/'accepted.jsonl'
+        server.path_token = FIXTURE_TOKEN
+        server.events_count = 0
+        server._write_lock = threading.Lock()
+        # Proposed default sidecar. Its absence is the diagnosed information gap.
+        server.delivery_path = directory/'accepted.jsonl.delivery.jsonl'
+        server.delivery_limit = 10000
+        if sink_error:
+            def refused(payload): raise OSError('fixture-evidence-sink-denied')
+            server.append_event = refused
+        handler = production._Handler.__new__(production._Handler)
+        handler.server = server
+        handler.connection = MemoryConnection()
+        handler.request = handler.connection
+        handler.client_address = ('offline-fixture',0)
+        handler.rfile = io.BytesIO(wire)
+        handler.wfile = ResponseWriteFails() if reply_error else io.BytesIO()
+        handler.close_connection = True
+        error_type = None
+        if body_timeout:
+            # Parse real HTTP headers first; only the POST body read times out.
+            handler.raw_requestline = handler.rfile.readline(65537)
+            assert handler.parse_request()
+            handler.rfile = BodyReadTimesOut()
+            invoke = handler.do_POST
+        else:
+            invoke = handler.handle_one_request
+        try:
+&gt;           invoke()
+
+runs\review\receiver_delivery_20261112\offline_receiver_probe.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Program Files\Python313\Lib\http\server.py:424: in handle_one_request
+    method()
+tools\diagnostic_receiver.py:265: in do_POST
+    self._reply(202, {"accepted": True}, reason="accepted")
+tools\diagnostic_receiver.py:210: in _reply
+    self.server.record_delivery(reason=reason, **details)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;tools.diagnostic_receiver._Receiver object at 0x00000169EC223B60&gt;
+method = 'POST', path = '/offline-fixture-not-a-live-receiver-token'
+status = 202, reason = 'accepted', event = 'request_result'
+response_completed = True, evidence_appended = True
+
+    def record_delivery(self, *, method=None, path=None, status=None,
+                        reason="handler_error", event="request_result",
+                        response_completed=False, evidence_appended=False):
+        """Best-effort bounded metadata; never persist raw request or exception data."""
+        if getattr(self, "delivery_path", None) is None:
+            return
+        try:
+            known_methods = {"POST", "GET", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"}
+            fingerprint = (hashlib.sha256(path.encode("utf-8", "surrogatepass")).hexdigest()[:16]
+                           if path is not None else None)
+            record = {"received_at": datetime.now(timezone.utc).isoformat(),
+                      "event": event,
+                      "method": method if method in known_methods else "OTHER",
+                      "path_sha256": fingerprint,
+                      "exact_path": path == "/" + self.path_token,
+                      "http_status": status, "reason": reason,
+                      "response_completed": response_completed,
+                      "evidence_appended": evidence_appended}
+            line = (json.dumps(record, ensure_ascii=True, allow_nan=False) + "\n").encode("ascii")
+            with self._delivery_lock:
+                if not self._delivery_initialized:
+                    try:
+                        with self.delivery_path.open("rb") as handle:
+                            existing = handle.read(MAX_DELIVERY_ROWS * MAX_DELIVERY_LINE_BYTES + 1)
+                    except FileNotFoundError:
+                        existing = b""
+                    self.delivery_count = existing.count(b"\n")
+                    self._delivery_bytes = len(existing)
+                    if existing and not existing.endswith(b"\n"):
+                        self.delivery_count = MAX_DELIVERY_ROWS
+                    self._delivery_initialized = True
+                if (len(line) &gt; MAX_DELIVERY_LINE_BYTES
+                        or self.delivery_count &gt;= MAX_DELIVERY_ROWS
+                        or self._delivery_bytes + len(line) &gt; MAX_DELIVERY_ROWS * MAX_DELIVERY_LINE_BYTES):
+                    self.delivery_dropped_count += 1
+                    return
+                self.delivery_path.parent.mkdir(parents=True, exist_ok=True)
+                with self.delivery_path.open("ab") as handle:
+                    handle.write(line)
+                    handle.flush()
+                self.delivery_count += 1
+                self._delivery_bytes += len(line)
+        except Exception:
+            # Optional diagnostics must not change accepted evidence or HTTP behavior.
+&gt;           with self._delivery_lock:
+                 ^^^^^^^^^^^^^^^^^^^
+E           AttributeError: '_Receiver' object has no attribute '_delivery_lock'. Did you mean: 'delivery_limit'?
+
+tools\diagnostic_receiver.py:182: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+self = &lt;tools.diagnostic_receiver._Receiver object at 0x00000169EC223B60&gt;
+method = None, path = None, status = None, reason = 'handler_error'
+event = 'handler_error', response_completed = False, evidence_appended = False
+
+    def record_delivery(self, *, method=None, path=None, status=None,
+                        reason="handler_error", event="request_result",
+                        response_completed=False, evidence_appended=False):
+        """Best-effort bounded metadata; never persist raw request or exception data."""
+        if getattr(self, "delivery_path", None) is None:
+            return
+        try:
+            known_methods = {"POST", "GET", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"}
+            fingerprint = (hashlib.sha256(path.encode("utf-8", "surrogatepass")).hexdigest()[:16]
+                           if path is not None else None)
+            record = {"received_at": datetime.now(timezone.utc).isoformat(),
+                      "event": event,
+                      "method": method if method in known_methods else "OTHER",
+                      "path_sha256": fingerprint,
+                      "exact_path": path == "/" + self.path_token,
+                      "http_status": status, "reason": reason,
+                      "response_completed": response_completed,
+                      "evidence_appended": evidence_appended}
+            line = (json.dumps(record, ensure_ascii=True, allow_nan=False) + "\n").encode("ascii")
+&gt;           with self._delivery_lock:
+                 ^^^^^^^^^^^^^^^^^^^
+E           AttributeError: '_Receiver' object has no attribute '_delivery_lock'. Did you mean: 'delivery_limit'?
+
+tools\diagnostic_receiver.py:157: AttributeError
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-869/test_current_http_outcomes_and0')
+
+    def test_current_http_outcomes_and_evidence_separation(tmp_path):
+&gt;       rows=cases(tmp_path)
+             ^^^^^^^^^^^^^^^
+
+runs\review\receiver_delivery_20261112\test_current_behavior_offline.py:11: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+runs\review\receiver_delivery_20261112\offline_receiver_probe.py:89: in cases
+    execute(directory,'accepted_launcher',make_request()),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+runs\review\receiver_delivery_20261112\offline_receiver_probe.py:76: in execute
+    server.handle_error(None, None)
+tools\diagnostic_receiver.py:186: in handle_error
+    self.record_delivery(event="handler_error")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;tools.diagnostic_receiver._Receiver object at 0x00000169EC223B60&gt;
+method = None, path = None, status = None, reason = 'handler_error'
+event = 'handler_error', response_completed = False, evidence_appended = False
+
+    def record_delivery(self, *, method=None, path=None, status=None,
+                        reason="handler_error", event="request_result",
+                        response_completed=False, evidence_appended=False):
+        """Best-effort bounded metadata; never persist raw request or exception data."""
+        if getattr(self, "delivery_path", None) is None:
+            return
+        try:
+            known_methods = {"POST", "GET", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"}
+            fingerprint = (hashlib.sha256(path.encode("utf-8", "surrogatepass")).hexdigest()[:16]
+                           if path is not None else None)
+            record = {"received_at": datetime.now(timezone.utc).isoformat(),
+                      "event": event,
+                      "method": method if method in known_methods else "OTHER",
+                      "path_sha256": fingerprint,
+                      "exact_path": path == "/" + self.path_token,
+                      "http_status": status, "reason": reason,
+                      "response_completed": response_completed,
+                      "evidence_appended": evidence_appended}
+            line = (json.dumps(record, ensure_ascii=True, allow_nan=False) + "\n").encode("ascii")
+            with self._delivery_lock:
+                if not self._delivery_initialized:
+                    try:
+                        with self.delivery_path.open("rb") as handle:
+                            existing = handle.read(MAX_DELIVERY_ROWS * MAX_DELIVERY_LINE_BYTES + 1)
+                    except FileNotFoundError:
+                        existing = b""
+                    self.delivery_count = existing.count(b"\n")
+                    self._delivery_bytes = len(existing)
+                    if existing and not existing.endswith(b"\n"):
+                        self.delivery_count = MAX_DELIVERY_ROWS
+                    self._delivery_initialized = True
+                if (len(line) &gt; MAX_DELIVERY_LINE_BYTES
+                        or self.delivery_count &gt;= MAX_DELIVERY_ROWS
+                        or self._delivery_bytes + len(line) &gt; MAX_DELIVERY_ROWS * MAX_DELIVERY_LINE_BYTES):
+                    self.delivery_dropped_count += 1
+                    return
+                self.delivery_path.parent.mkdir(parents=True, exist_ok=True)
+                with self.delivery_path.open("ab") as handle:
+                    handle.write(line)
+                    handle.flush()
+                self.delivery_count += 1
+                self._delivery_bytes += len(line)
+        except Exception:
+            # Optional diagnostics must not change accepted evidence or HTTP behavior.
+&gt;           with self._delivery_lock:
+                 ^^^^^^^^^^^^^^^^^^^
+E           AttributeError: '_Receiver' object has no attribute '_delivery_lock'. Did you mean: 'delivery_limit'?
+
+tools\diagnostic_receiver.py:182: AttributeError</failure></testcase></testsuite></testsuites>

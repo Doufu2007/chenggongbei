@@ -1,0 +1,166 @@
+{
+  "source": "runs\\evidence\\20261112\\callback_height_timing_v34.jsonl",
+  "source_bytes": 299790,
+  "source_sha256": "8ed9fd939c35bc80ebf7462e1b45a6d7730c7c725c19922346652326936ec3a3",
+  "event_count": 12,
+  "parts_verified": 7,
+  "metadata": {
+    "session_id": "2f0caa808b9a4cdda6455a3c9fa360ba",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 1861180,
+    "compressed_bytes": 218381,
+    "uncompressed_sha256": "10ec4cc4df9932f2e20155227ceeb077cd3b75a1bf29ca9f68d0ac5af7401752",
+    "compressed_sha256": "e5645a117e0d8ead8081f899b9b54ab161519a914fa5e15ef37ee79e35d2a606",
+    "part_count": 7
+  },
+  "lengths_and_both_sha_match": true,
+  "core_matches": true,
+  "core_fields_compared": [
+    "mode",
+    "session_id",
+    "state",
+    "reason",
+    "limits",
+    "origin",
+    "target_reached",
+    "max_rise_m",
+    "max_horizontal_drift_m",
+    "total_path_m",
+    "dropped",
+    "post_stop_faults",
+    "assumptions",
+    "read_only",
+    "full_mission_complete",
+    "phase",
+    "hold_verified",
+    "descent_verified",
+    "protocol_complete",
+    "support_return_verified",
+    "protocol_abort_reason"
+  ],
+  "mode": "bounded_height_hold",
+  "schema": "bounded_height_hold_v1",
+  "runtime_revision": "v34_timing",
+  "runtime_nested_in_full_payload": true,
+  "source_authenticated_independently": false,
+  "callback_source": "unverified_callback",
+  "platform_id": "0d99c6fc-e6b7-4a69-aa35-abad82dbcbc0",
+  "run_id": "run_20261112_085752_4f79c7da",
+  "evaluation_number": "#22362608",
+  "sample_counts": {
+    "trajectory": 666,
+    "commands": 279,
+    "scans": 108,
+    "downscans": 271,
+    "tf_records": 239
+  },
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "launcher_exit_codes": [
+    0
+  ],
+  "local_review_manifest_checks": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+      "bytes": 17759,
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "bytes": 33793,
+      "sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_ground_probe.py",
+      "bytes": 46104,
+      "sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "scripts/run_bounded_height_hold.sh",
+      "bytes": 2718,
+      "sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/telemetry.py",
+      "bytes": 6437,
+      "sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/height_runtime_timing.py",
+      "bytes": 8173,
+      "sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "scripts/run_height_runtime_timing.sh",
+      "bytes": 2733,
+      "sha256": "29201e1323e2cb9e1d6b7b9763701617c11a5c6bb0f4b8368bb6ce6e15e010d1",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "tests/test_height_runtime_timing.py",
+      "bytes": 9561,
+      "sha256": "3e77395e9b76005cdbd3b8ae380c784863a95bf94aac2a50c17ea3fc99434406",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-12-height-runtime-timing-design.md",
+      "bytes": 2083,
+      "sha256": "9ccfe88aec4f24349916fb0c44b0531045024cfe102a9e73511266c4d1eff7be",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-12-height-runtime-timing.md",
+      "bytes": 2349,
+      "sha256": "15c5b7fdc3ad41b1edac39456bd69b6882c441b167104910f55dff132b4b5082",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "docs/height_runtime_timing_v34_20261112.md",
+      "bytes": 3786,
+      "sha256": "08756ef3c4522e09d415764656d1d46811daec87391248c124914fe20773f5fc",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/red.txt",
+      "bytes": 5550,
+      "sha256": "4b9593bb0a2b044eb278496f4848049814e836571ef2699700b570faf6634184",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/green.txt",
+      "bytes": 103,
+      "sha256": "1d42d9e52fb904be0e9aab154a6485a962a4aa418ca54a22d71080b5ca391ba0",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/related_green.txt",
+      "bytes": 103,
+      "sha256": "8a50eb7e76e18dfcfc0d6b84daaba614d8f6b364a2240e14a84bfc884908c7cf",
+      "matches_review_manifest": true
+    },
+    {
+      "path": "runs/review/height_runtime_timing_20261112/syntax.txt",
+      "bytes": 87,
+      "sha256": "2ce47a3f1b15a23272e67470f180e0ba672cdb4e823fb9d2fb7677883af79733",
+      "matches_review_manifest": true
+    }
+  ],
+  "local_archive_module": {
+    "archive": "dist\\inspection_height_timing_v34_src.zip",
+    "archive_sha256": "b55882ce5627270292685a854b716455737a1fc5d3efa5d7de0103869af49924",
+    "entry": "src/inspection_mission/inspection_mission/height_runtime_timing.py",
+    "sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+    "matches_reviewed_worktree_module": true
+  }
+}

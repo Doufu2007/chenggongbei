@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "data": {
+    "scenarioKeys": [
+      "inspection"
+    ],
+    "hasSubscription": true,
+    "freeGrantEligible": false,
+    "grantPanelEligible": false,
+    "defaultFreeQuota": 0,
+    "labels": {
+      "grantedSub": "已开通",
+      "grantedEnroll": "已报名",
+      "freeSub": "未开通·可免费开通",
+      "lockedSub": "未开通",
+      "noSub": "未订阅"
+    },
+    "freeQuota": null
+  }
+}

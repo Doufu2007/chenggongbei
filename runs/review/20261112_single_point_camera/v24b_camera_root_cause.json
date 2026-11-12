@@ -1,0 +1,214 @@
+{
+  "source_raw": {
+    "path": "runs/evidence/20261112/callback_single_point_v24b.jsonl",
+    "sha256": "40d5905f4c0d749537ba8183617686a9f886cc58d2922d4ebed5d80a76a221e7",
+    "bytes": 636523
+  },
+  "core_raw_line": 3,
+  "metadata_raw_line": 5,
+  "failure": {
+    "state": "FINISHED",
+    "reason": "single_point_uav_image_stale",
+    "elapsed_s": 53.083,
+    "errors": []
+  },
+  "camera_samples": 156,
+  "camera_arrival_gap_wall_s": {
+    "count": 155,
+    "total": 52.49860691899812,
+    "min": 0.31379651699899114,
+    "max": 0.38484501899802126,
+    "buckets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      155,
+      0
+    ]
+  },
+  "camera_exposure_delta_s": {
+    "count": 155,
+    "total": 51.666000000000004,
+    "min": 0.3309999999999995,
+    "max": 0.3360000000000021,
+    "buckets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      155,
+      0
+    ]
+  },
+  "camera_callback_wall_s": {
+    "count": 156,
+    "total": 0.019023680040845647,
+    "min": 8.049499956541695e-05,
+    "max": 0.00025751000066520646,
+    "buckets": [
+      6,
+      150,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "command_tick_wall_s": {
+    "count": 1050,
+    "total": 0.26178954500937834,
+    "min": 0.00012473600145312957,
+    "max": 0.004625330999260768,
+    "buckets": [
+      0,
+      1049,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "capture_originals": [
+    {
+      "topic": "/uav/camera/image",
+      "stamp_s": 52.409,
+      "frame_id": "uav/camera_link",
+      "wall_elapsed_s": 50.14697175300171,
+      "odom": {
+        "stamp_s": 52.4,
+        "wall_elapsed_s": 50.124454296001204,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.34549679792135396,
+          -0.005096757955178431,
+          0.05500014639304878
+        ],
+        "quaternion": [
+          -1.2267567412713532e-07,
+          6.15969781420157e-08,
+          -0.37122107423219713,
+          0.9285445137665047
+        ],
+        "yaw_rad": -0.7606474334173955,
+        "linear_speed": 1.0564674547966504e-05,
+        "angular_speed": 5.551115123125783e-15,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.009000000000000341
+      },
+      "association_error": null,
+      "phase": "capture_0"
+    },
+    {
+      "topic": "/uav/camera/image",
+      "stamp_s": 52.743,
+      "frame_id": "uav/camera_link",
+      "wall_elapsed_s": 50.48579390700252,
+      "odom": {
+        "stamp_s": 52.74,
+        "wall_elapsed_s": 50.46990714899948,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.3454993196144843,
+          -0.005099391747305475,
+          0.05500009322073701
+        ],
+        "quaternion": [
+          -7.341896938189632e-08,
+          4.7050743271797285e-08,
+          -0.3712210886541,
+          0.9285445080008051
+        ],
+        "yaw_rad": -0.7606474644808511,
+        "linear_speed": 1.0864041391542752e-05,
+        "angular_speed": 0.0,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.0030000000000001137
+      },
+      "association_error": null,
+      "phase": "capture_1"
+    },
+    {
+      "topic": "/uav/camera/image",
+      "stamp_s": 53.075,
+      "frame_id": "uav/camera_link",
+      "wall_elapsed_s": 50.82146269200166,
+      "odom": {
+        "stamp_s": 53.06,
+        "wall_elapsed_s": 50.79426586500267,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.345501820673013,
+          -0.005101853839197552,
+          0.055000070802173874
+        ],
+        "quaternion": [
+          -4.883566063871347e-08,
+          4.1617251029603363e-08,
+          -0.37122109606395826,
+          0.9285445050384334
+        ],
+        "yaw_rad": -0.7606474804410068,
+        "linear_speed": 1.104107561558803e-05,
+        "angular_speed": 6.841043287408866e-08,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.015000000000000568
+      },
+      "association_error": null,
+      "phase": "capture_2"
+    }
+  ],
+  "first_recognize_command": {
+    "raw_line": 11,
+    "series_row": 1104,
+    "wall_elapsed_s": 50.835714,
+    "clock_stamp_s": 53.1,
+    "linear_x": 0.0,
+    "angular_z": 0.0,
+    "state": "RECOGNIZE_WAIT"
+  },
+  "first_stop_command": {
+    "raw_line": 11,
+    "series_row": 1112,
+    "wall_elapsed_s": 51.038446,
+    "clock_stamp_s": 53.2,
+    "linear_x": 0.0,
+    "angular_z": 0.0,
+    "state": "STOP"
+  },
+  "first_stop_command_minus_capture2_arrival_s": 0.21698330799834054,
+  "first_stop_command_clock_minus_capture2_stamp_s": 0.125,
+  "derivation_precision": "command series wall_elapsed_s is rounded to 6 decimals; this is first STOP command time, not an exact latch/publish/actuator ACK time",
+  "proposed_camera_contract": {
+    "max_wall_age_s": 0.5,
+    "max_clock_minus_image_stamp_s": 0.5,
+    "min_clock_minus_image_stamp_s": -0.12,
+    "odom_scan_age_s": 0.2,
+    "exposure_prior_skew_max_s": 0.05,
+    "justification": "max measured image arrival interval .38484501899802126 + one .05s command slot < .5s; engineering allocation, not official camera guarantee"
+  },
+  "candidate_world": {
+    "path": "external_resources/ranmengjia_ICAN/binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+    "uav_camera_update_rate_hz": 30,
+    "line": 302,
+    "status": "public candidate source; actual delivered image header rate ~3Hz, throttling stage unverified"
+  }
+}

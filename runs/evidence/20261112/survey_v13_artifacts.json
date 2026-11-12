@@ -1,0 +1,57 @@
+{
+  "version": "ground-survey-v13",
+  "mode": "practice",
+  "official_task_success": false,
+  "experiment": {
+    "minimum_yaw_rate": 0.35,
+    "maximum_yaw_rate": 0.5,
+    "max_turn_wall_s": 45.0,
+    "global_wall_s": 60.0,
+    "max_rotation_rad": 1.8,
+    "max_displacement_m": 0.06,
+    "sensor_age_s": 0.2
+  },
+  "reviewed_control_sha256": {
+    "bounded_ground_probe.py": "296ceee6a535da20176ef1e97501a453af5936929d5777197fd8412cc5cd8d32",
+    "ground_observation_survey.py": "e52fc4d142756b7e125c7249af3646772980e2f5bf424ec4e21faabf31e18856"
+  },
+  "source_files_sha256": {
+    "src/inspection_mission/config/inspection.yaml": "9696747f1a0a880467e583a483a9260e33dba362761aacc4559b4c6ebda96329",
+    "src/inspection_mission/config/interface_profile.json": "4de364403fc0b25afe0a3580ea11aeb84b9fb3bdc8001aeeee38a1fd80d007e2",
+    "src/inspection_mission/config/mission_plan.json": "28df78ebe339fed6b20b97124436ae27ed764fca792a42cced7c3e648f759415",
+    "src/inspection_mission/inspection_mission/__init__.py": "b0a720bb465b663f1c94cfc495f0fbdad71632b9dc8615cd2503b60ccd3a8635",
+    "src/inspection_mission/inspection_mission/bounded_ground_probe.py": "296ceee6a535da20176ef1e97501a453af5936929d5777197fd8412cc5cd8d32",
+    "src/inspection_mission/inspection_mission/control.py": "98ec05057a81f7ce9f3ff615a05100af2f86b351acfcc0962c296dcc0bc3b9f5",
+    "src/inspection_mission/inspection_mission/fsm.py": "739ed6727f58d2c875a8154e9ff3d69f470dce3fb7f8035e5067a4e354beef41",
+    "src/inspection_mission/inspection_mission/geometry_runtime.py": "88c50aba2bc03a9bc2f2b4709b447e9956fed421a00c628f53c2ed2502af8939",
+    "src/inspection_mission/inspection_mission/ground_observation_survey.py": "e52fc4d142756b7e125c7249af3646772980e2f5bf424ec4e21faabf31e18856",
+    "src/inspection_mission/inspection_mission/mission.py": "81ddf73cdc545688810e4b21db4985e541c88a7089e243dcc45d28099b66e1c4",
+    "src/inspection_mission/inspection_mission/mission_node.py": "23daea54572bd2f4624f9eacc555c166386724388ef3b4646dfe29b58b0a64b3",
+    "src/inspection_mission/inspection_mission/official_protocol.py": "f38cbe319daefb6782985737f8eb213c2ee5cd4703ab8cd47f4c24175774ff7d",
+    "src/inspection_mission/inspection_mission/perception.py": "0aea0a1121b1988ab0feef5dcab14a3dd91318dd5f1965e8aababb4bac23f9f9",
+    "src/inspection_mission/inspection_mission/probe.py": "4f15f94540a2ad0256067bd513bcbd1d41cd61445c903f731cc66c8f9ae437c8",
+    "src/inspection_mission/inspection_mission/protocol.py": "2ab3245dfdd7a7edf210988560ba265ad1dd306ce7b81ff6926fdea417348ae1",
+    "src/inspection_mission/inspection_mission/runtime.py": "1472dfaab7380de11ee4f93c90870d85116c35481a879c27ac4e781b4dcd8682",
+    "src/inspection_mission/inspection_mission/target_geometry.py": "716fdee7bc72d563c1be4102c859ee587fc011293aeec98f901b9eaa1f2faea6",
+    "src/inspection_mission/inspection_mission/telemetry.py": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+    "src/inspection_mission/inspection_mission/validation.py": "20e0bad0090a1c26cff5e5543a6036568a6382be036912383961ba90b769c0d2",
+    "src/inspection_mission/inspection_mission/vision_core.py": "3703cd28b813e74a29c4034964089bb7adcc560ac4481d1d76333741546b90c2",
+    "src/inspection_mission/inspection_mission/vision_node.py": "fea4dcd0bb4ba03b336e785fe964c13acde7930365d481d94a50a286efd9bab5",
+    "src/inspection_mission/package.xml": "9f9357ab43b89a1f263d1b4449c7f559f2c201b60121e558a8fa3fa12d7e60da",
+    "src/inspection_mission/resource/inspection_mission": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "src/inspection_mission/setup.cfg": "a993ad22467cc116906926462fc917d3c88cb95d50477d74be77d457b90505c7",
+    "src/inspection_mission/setup.py": "a313a8b80757d87fd7ea3d4afc1911f36a2854228f871e646ebd48e5df0c6c10"
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_survey_v13_src.zip",
+      "bytes": 79204,
+      "sha256": "8d175fab024decff6ba275fe7e8b0bab4437627c1ba2dc029e9eb583cdc65ac4"
+    },
+    {
+      "path": "dist/run_ground_survey_v13.sh",
+      "bytes": 2900,
+      "sha256": "0e812b18e9a0fe83c9071d33682efb79f255fdfa2308353b40dc878957827040"
+    }
+  ]
+}

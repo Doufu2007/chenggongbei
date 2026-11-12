@@ -1,0 +1,84 @@
+{
+  "platform_id": "f21b350d-dcba-4121-ae93-9781c554471c",
+  "analysis": "independent_raw_height_hold",
+  "official_terminal_status": {
+    "status": "failed",
+    "runId": "run_20261112_081239_56ea65d7",
+    "evaluation_number": "85465159",
+    "duration_display_s": 33.8,
+    "score_extracted": false
+  },
+  "local_protocol_complete": false,
+  "hold_observed_3s": false,
+  "source_authenticated_independently": false,
+  "files": {
+    "docs/height_hold_v31_response_analysis_20261112.md": {
+      "bytes": 4991,
+      "sha256": "892ad529726a304b6a7bbd3e81089014cbef75a4e007968086d420b1a52fe7f1"
+    },
+    "runs/evidence/20261112/callback_height_v31.jsonl": {
+      "bytes": 136436,
+      "sha256": "2e0a266b4ab9e5e985bcc05f8cb0d6d7a738aa773d44ce2a9e48d9b4c4026baf"
+    },
+    "runs/review/height_hold_independent_20261112/validate_analyzer.py": {
+      "bytes": 2904,
+      "sha256": "749d3e795bc3c66d9668fb2269002f6b024b1f9b975ac30f49dd5128ae62d56d"
+    },
+    "runs/review/height_hold_independent_20261112/analyzer_validation.json": {
+      "bytes": 186,
+      "sha256": "742d366a189f9a73411b31c3308eacd3b49e24d07ed50d96ca85bc6fc09a580c"
+    },
+    "runs/analysis/20261112_height_v31/analyze.py": {
+      "bytes": 13485,
+      "sha256": "dee97544e8a6181b09d9e3de67c59abcc4ea1b50537a615d823e37f7d86c2c32"
+    },
+    "runs/analysis/20261112_height_v31/commands.csv": {
+      "bytes": 10245,
+      "sha256": "13807422aabd592bed35c63eb51a7827cabcdb01fa4c1c3832cc1bbe760a4b78"
+    },
+    "runs/analysis/20261112_height_v31/events_without_parts.json": {
+      "bytes": 5183,
+      "sha256": "a3069e1d750108493d6e4c90dcc3cb8e82bca1609cfe88f0778199c2ff0628f8"
+    },
+    "runs/analysis/20261112_height_v31/evidence.json": {
+      "bytes": 608389,
+      "sha256": "c94604be273945f94e97f44b09b835a31daecb12bf1b2634b033e019724a71dd"
+    },
+    "runs/analysis/20261112_height_v31/evidence.json.gz": {
+      "bytes": 97890,
+      "sha256": "e1ff00d14305a732b872903a51028dbb4f3cf0400f902b784b75ebaa2e539ecb"
+    },
+    "runs/analysis/20261112_height_v31/metrics.json": {
+      "bytes": 4376,
+      "sha256": "fe72b1b52c1d865bea1801d9c5f1c0bbdda252eba3c685d92dfd83886f4e5e7e"
+    },
+    "runs/analysis/20261112_height_v31/timing_landmarks.json": {
+      "bytes": 1684,
+      "sha256": "a26b0a0fd7173fb3543ff32bc2141151dbfafda4516ebc6605a16f11aa8ebe22"
+    },
+    "runs/analysis/20261112_height_v31/trajectory.csv": {
+      "bytes": 28320,
+      "sha256": "7214909f5c1b82d05a996bb4be4a733b479f78e5ced549b74ddc8949bb73e2bb"
+    },
+    "runs/analysis/20261112_height_v31/validation.json": {
+      "bytes": 1136,
+      "sha256": "09b198318d7c1ba998762a3f2e6efc9d3c362986c52ee2b98129ca19308aa4af"
+    },
+    "docs/height_hold_v31_timing_investigation_20261112.md": {
+      "bytes": 5688,
+      "sha256": "87039fbffefa3e538d641d9b3b27759a8475924ba0928613f16f53c3f791cf6e"
+    },
+    "runs/evidence/20261112/height_v31_official_page_final.json": {
+      "bytes": 1523,
+      "sha256": "306119daadc2383c285980e5f3dea8a1f3dd71dfe8fbaa964f303ef38c0e5e72"
+    },
+    "runs/analysis/20261112_height_v31/investigate_timing.py": {
+      "bytes": 3462,
+      "sha256": "4d43f8e6b5cc5e2357569dfec5b0e3c165455558cc0b1a098b6326843ca4a429"
+    },
+    "runs/analysis/20261112_height_v31/timing_investigation.json": {
+      "bytes": 15225,
+      "sha256": "b65c06a15e40ed14d0b767e5d694970224ae6e0c9ad0cd7a3fa63fdb42637f08"
+    }
+  }
+}

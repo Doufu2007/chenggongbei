@@ -1,0 +1,12 @@
+{
+  "source": "logged-in browser practice upload",
+  "submitted_at": "2026-11-12T08:43:50+08:00",
+  "id": "af0fe738-c09b-4f4c-a2ed-fe51b0e0b298",
+  "url": "https://www.splenach.com/ros-simulation/evaluation/log/af0fe738-c09b-4f4c-a2ed-fe51b0e0b298",
+  "runId": "run_20261112_084355_23ba4d48",
+  "evaluation_number": "92599511",
+  "source_file": "inspection_three_point_axis_v35_src.zip",
+  "script_file": "run_three_point_axis_v35.sh",
+  "status": "submitted",
+  "full_mission_complete": false
+}

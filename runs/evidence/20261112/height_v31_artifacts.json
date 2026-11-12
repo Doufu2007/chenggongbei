@@ -1,0 +1,26 @@
+{
+  "version": "height_v31",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/bounded_height_hold.py": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+  },
+  "reviewed_launcher_sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7",
+  "base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "artifacts": [
+    {
+      "path": "dist/inspection_height_v31_src.zip",
+      "bytes": 9583939,
+      "sha256": "21156814ee01e5898edbe82756507b321f06eba6154f451533fd59b934664e27"
+    },
+    {
+      "path": "dist/run_height_v31.sh",
+      "bytes": 2850,
+      "sha256": "cc97bc494008516fa5740445cd5f2615ce2e7d68b622a6f2914d98afcab1a037"
+    }
+  ]
+}

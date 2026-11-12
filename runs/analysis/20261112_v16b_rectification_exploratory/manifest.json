@@ -1,0 +1,323 @@
+{
+  "kind": "offline_rectification_artifact_manifest",
+  "created_at": "2026-11-11T19:56:29.113572+00:00",
+  "manifest_excludes_itself": true,
+  "model_inference_repeated_for_packaging": false,
+  "source_checks": [
+    {
+      "kind": "source_image",
+      "path": "C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/runs/analysis/20261112_approach_v16b/native_L000020_a672e7739804717c.jpg",
+      "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "matches_original_report": true
+    },
+    {
+      "kind": "source_summary",
+      "path": "C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/runs/analysis/20261112_approach_v16b/summary.json",
+      "sha256": "9159fc28f8c4318b2ae9db763245798a0e53f6c63410fb613efa5e1464ec5dec",
+      "matches_original_report": true
+    }
+  ],
+  "counts": {
+    "variants": 40,
+    "clip_accepted_candidates": 7,
+    "opencv_accepted": 0,
+    "files_excluding_manifest": 59
+  },
+  "files": [
+    {
+      "path": "candidate_gallery.png",
+      "size_bytes": 615030,
+      "sha256": "e682c14eee1df12209b3aac02ed347bb7dfb754248ab38c8202d940ec2056fd3"
+    },
+    {
+      "path": "experiment.py",
+      "size_bytes": 11062,
+      "sha256": "9945148b98ea66df3798fcd7863c6ce1464f81e8c584f90b76d8cf9af6513e08"
+    },
+    {
+      "path": "full_scene.png",
+      "size_bytes": 181332,
+      "sha256": "de60de83a432975c44c577a46c3cda867365cb9319beb296c9ede20dac29ee93"
+    },
+    {
+      "path": "full_scene_ccw_000.png",
+      "size_bytes": 181332,
+      "sha256": "de60de83a432975c44c577a46c3cda867365cb9319beb296c9ede20dac29ee93"
+    },
+    {
+      "path": "full_scene_ccw_090.png",
+      "size_bytes": 192986,
+      "sha256": "2f1d9da649535e7f056f9ae960f2a2ac8677152f679bde83b05b17ac5f50dca8"
+    },
+    {
+      "path": "full_scene_ccw_180.png",
+      "size_bytes": 181105,
+      "sha256": "8e0f25d5b5979e6f1127c92126d4c1678689bb84dc462aadf7edd4faeeff492a"
+    },
+    {
+      "path": "full_scene_ccw_270.png",
+      "size_bytes": 193319,
+      "sha256": "4ca3a69f115aa4d25a737b68e1ee5554b206ae44fd4eaa47122b62a93cdcb79f"
+    },
+    {
+      "path": "image_features.npz",
+      "size_bytes": 107010,
+      "sha256": "fe70b6c05bd06d44cc0e582b0b1d771a731228c4db0a169aa69bbcddadc922db"
+    },
+    {
+      "path": "manual_quad_overlay.png",
+      "size_bytes": 180456,
+      "sha256": "a08dafb1eec6298957f2e351fe88e45902d9d57223c618bb87947728f7d820ff"
+    },
+    {
+      "path": "oblique_bbox.png",
+      "size_bytes": 27540,
+      "sha256": "4e5175aebb53a907d68d164ef96d8976bf59d4be18b6f5279436931fd6fee2bc"
+    },
+    {
+      "path": "oblique_bbox_ccw_000.png",
+      "size_bytes": 27540,
+      "sha256": "4e5175aebb53a907d68d164ef96d8976bf59d4be18b6f5279436931fd6fee2bc"
+    },
+    {
+      "path": "oblique_bbox_ccw_090.png",
+      "size_bytes": 28301,
+      "sha256": "259ffb40a80afbc0aec6dff2ae0ee7dcfa8c1918bf7c2bcfd5b767f53713d064"
+    },
+    {
+      "path": "oblique_bbox_ccw_180.png",
+      "size_bytes": 27563,
+      "sha256": "4a253d45bdea476064c8fc4a88a0bd9a548d02fce6ae4b1cb6cfdf67919ca1a1"
+    },
+    {
+      "path": "oblique_bbox_ccw_270.png",
+      "size_bytes": 28299,
+      "sha256": "9e4a0442891957f8df968c81d498bc3ee5c464dee5a0022feaa5d37dfe574424"
+    },
+    {
+      "path": "oblique_bbox_letterbox.png",
+      "size_bytes": 30228,
+      "sha256": "b563ee8bbd4c245352fc2bac654623dd7d03e3588018c72add5de08d251e3689"
+    },
+    {
+      "path": "oblique_bbox_letterbox_ccw_000.png",
+      "size_bytes": 30228,
+      "sha256": "b563ee8bbd4c245352fc2bac654623dd7d03e3588018c72add5de08d251e3689"
+    },
+    {
+      "path": "oblique_bbox_letterbox_ccw_090.png",
+      "size_bytes": 33250,
+      "sha256": "6a823bffd62d7614631e9aad201dd4676a1db8b404a424529f7cffc8c3074f4e"
+    },
+    {
+      "path": "oblique_bbox_letterbox_ccw_180.png",
+      "size_bytes": 30254,
+      "sha256": "a6780e680f439228fd6c763a297d3bce8169c624e2e5d38fd6f648f8faf037e8"
+    },
+    {
+      "path": "oblique_bbox_letterbox_ccw_270.png",
+      "size_bytes": 33302,
+      "sha256": "5161ba42092237d933c1f63f16170595d843e4ebc114682c080aefd093084aec"
+    },
+    {
+      "path": "query_reference_neighbors.png",
+      "size_bytes": 1083829,
+      "sha256": "e751d6f95f9c5b781f33c004ec54f2026de540d98f7f6cc99cf94ea73097cdd7"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 5429,
+      "sha256": "9038006a2bbc9026dc656e00a0c3f2d7c2c88981e322e2484f445e9d4a0f853b"
+    },
+    {
+      "path": "reference_gallery.png",
+      "size_bytes": 1109324,
+      "sha256": "e9067c760961301a58f8d4cb9cdcae7ac96aa79ea18290eb6e009e87eb7e47ae"
+    },
+    {
+      "path": "report.json",
+      "size_bytes": 161767,
+      "sha256": "53a7e2074fa51c76db7f00b1450ec8a0f4b28936f446766519eca077ffa8a1fc"
+    },
+    {
+      "path": "scene_context.png",
+      "size_bytes": 56785,
+      "sha256": "83639b1d5e002cc2e8f3c72aab35b998fa3854a1eeaf873b4aa9e38918555e28"
+    },
+    {
+      "path": "scene_context_ccw_000.png",
+      "size_bytes": 56785,
+      "sha256": "83639b1d5e002cc2e8f3c72aab35b998fa3854a1eeaf873b4aa9e38918555e28"
+    },
+    {
+      "path": "scene_context_ccw_090.png",
+      "size_bytes": 57810,
+      "sha256": "c60310db37892de7e9ea6d672f219f13aa3eb1215ea85866cc3abcbb11fdc74a"
+    },
+    {
+      "path": "scene_context_ccw_180.png",
+      "size_bytes": 56721,
+      "sha256": "56aedc86701998770f8f3f1e153914598b3447f8e28aefc9d3afcb3062232b3f"
+    },
+    {
+      "path": "scene_context_ccw_270.png",
+      "size_bytes": 58241,
+      "sha256": "84b94c2975744d881f659acea502eed436f9e4a11d4531fd1fa2e17a20db4ba3"
+    },
+    {
+      "path": "scene_context_letterbox.png",
+      "size_bytes": 60049,
+      "sha256": "a10319d6b0d900db434d7c91d71bce372f11022381df94e1f0e32cf8f4d5f195"
+    },
+    {
+      "path": "scene_context_letterbox_ccw_000.png",
+      "size_bytes": 60049,
+      "sha256": "a10319d6b0d900db434d7c91d71bce372f11022381df94e1f0e32cf8f4d5f195"
+    },
+    {
+      "path": "scene_context_letterbox_ccw_090.png",
+      "size_bytes": 64862,
+      "sha256": "31718ce37ed295c68b7e5ab1e871a1e4150da95aeb8a4ff1ca948a46e96683c7"
+    },
+    {
+      "path": "scene_context_letterbox_ccw_180.png",
+      "size_bytes": 59991,
+      "sha256": "a4ca738c4f0c3b76e513b4644955747d8f1ed6277c06085fe5dc19c22770fac9"
+    },
+    {
+      "path": "scene_context_letterbox_ccw_270.png",
+      "size_bytes": 65222,
+      "sha256": "271e64cac8fdfa76b7686ec29387f3054fe21af3f0479d981839d72150135f7c"
+    },
+    {
+      "path": "scores.csv",
+      "size_bytes": 19953,
+      "sha256": "69c9218001e33a9984307f870999afca1fef9917b2943789e8c1cb6ae6a64af3"
+    },
+    {
+      "path": "warp_4_3.png",
+      "size_bytes": 116163,
+      "sha256": "f368ece8ab1fe115757dbac0a76a1309857647d9cdd26164130944776709f666"
+    },
+    {
+      "path": "warp_4_3_ccw_000.png",
+      "size_bytes": 116163,
+      "sha256": "f368ece8ab1fe115757dbac0a76a1309857647d9cdd26164130944776709f666"
+    },
+    {
+      "path": "warp_4_3_ccw_090.png",
+      "size_bytes": 109966,
+      "sha256": "45155e7820d9c4a7bb8f4a1117ec8963560d5860418dfff3d398ca47fd79a9da"
+    },
+    {
+      "path": "warp_4_3_ccw_180.png",
+      "size_bytes": 116157,
+      "sha256": "0aba3c1a6a8dcba8cda424a9b04594cdef3178e75363f893872dcca3a4f2407e"
+    },
+    {
+      "path": "warp_4_3_ccw_270.png",
+      "size_bytes": 109891,
+      "sha256": "61b97f44be0d993a436c3f685d062888c49ecb0545855c4ca58d911ca00e2f0a"
+    },
+    {
+      "path": "warp_4_3_context.png",
+      "size_bytes": 154517,
+      "sha256": "4b192689993c5dbdd7b4d8d6d04ecb93408f82840f7b2daed301f5b3b48bfb94"
+    },
+    {
+      "path": "warp_4_3_context_ccw_000.png",
+      "size_bytes": 154517,
+      "sha256": "4b192689993c5dbdd7b4d8d6d04ecb93408f82840f7b2daed301f5b3b48bfb94"
+    },
+    {
+      "path": "warp_4_3_context_ccw_090.png",
+      "size_bytes": 146212,
+      "sha256": "39c4fd00e1eea07d2187ccc9d1733dfae7805bc698e402dd2c01219f534b91e5"
+    },
+    {
+      "path": "warp_4_3_context_ccw_180.png",
+      "size_bytes": 154114,
+      "sha256": "8bf09ab6215a47c991e7a38286055f4136744dc5a74e83a11c4a98ff5229da91"
+    },
+    {
+      "path": "warp_4_3_context_ccw_270.png",
+      "size_bytes": 146085,
+      "sha256": "37da00b46ba1274fbccf7858348ed5804f788db0b454ac2dac3ed17c10426522"
+    },
+    {
+      "path": "warp_4_3_contract_y2.png",
+      "size_bytes": 116008,
+      "sha256": "836910fe05fac196178ce360f58b9c79cc5eff9c896dfc7ea242749ea2731657"
+    },
+    {
+      "path": "warp_4_3_contract_y2_ccw_000.png",
+      "size_bytes": 116008,
+      "sha256": "836910fe05fac196178ce360f58b9c79cc5eff9c896dfc7ea242749ea2731657"
+    },
+    {
+      "path": "warp_4_3_contract_y2_ccw_090.png",
+      "size_bytes": 109750,
+      "sha256": "5c54356fc0b2f5bb2728ee52887c938e2529eb2cd1912b7eeda34f0adfa21868"
+    },
+    {
+      "path": "warp_4_3_contract_y2_ccw_180.png",
+      "size_bytes": 116042,
+      "sha256": "121b7727fc7b3a9820c032e7a91c8c5c5647d6911cbbbdcd78b19b06a7cbb88e"
+    },
+    {
+      "path": "warp_4_3_contract_y2_ccw_270.png",
+      "size_bytes": 109674,
+      "sha256": "7fc7f4ddddc582eb1a959a4c5544f387c432d82fff29642a711f615c01888637"
+    },
+    {
+      "path": "warp_4_3_expand_y2.png",
+      "size_bytes": 116295,
+      "sha256": "21d17b86d0884e207da5d3a9b05483abaa904c40016a461dc3af2b24337fa752"
+    },
+    {
+      "path": "warp_4_3_expand_y2_ccw_000.png",
+      "size_bytes": 116295,
+      "sha256": "21d17b86d0884e207da5d3a9b05483abaa904c40016a461dc3af2b24337fa752"
+    },
+    {
+      "path": "warp_4_3_expand_y2_ccw_090.png",
+      "size_bytes": 110288,
+      "sha256": "46f469def62f1fbac3c98719537a1efdf37e0386fcb61cad6474d99af8415a59"
+    },
+    {
+      "path": "warp_4_3_expand_y2_ccw_180.png",
+      "size_bytes": 116611,
+      "sha256": "45f457df4ee3d951cf3a526b61afe4c9de5c3e113e285dcd7d3767512252854f"
+    },
+    {
+      "path": "warp_4_3_expand_y2_ccw_270.png",
+      "size_bytes": 110350,
+      "sha256": "cd741b813cb417d938decfb0ff94e3c768020422249cced26494bebd6bc410b6"
+    },
+    {
+      "path": "warp_square.png",
+      "size_bytes": 145320,
+      "sha256": "70bec8eddb7e741505d55d4afae3c7f8dfdd6c5c54474aa30b02c6d51a3fd6f7"
+    },
+    {
+      "path": "warp_square_ccw_000.png",
+      "size_bytes": 145320,
+      "sha256": "70bec8eddb7e741505d55d4afae3c7f8dfdd6c5c54474aa30b02c6d51a3fd6f7"
+    },
+    {
+      "path": "warp_square_ccw_090.png",
+      "size_bytes": 135744,
+      "sha256": "6730f1a9ff2487454c90d76522db0819614917ffb7fa9c9d4a2b7e84c4132bf4"
+    },
+    {
+      "path": "warp_square_ccw_180.png",
+      "size_bytes": 145206,
+      "sha256": "1fac18e10dba841d63cbb8c834d5ae59b826f1146da571209f8a9d376368426c"
+    },
+    {
+      "path": "warp_square_ccw_270.png",
+      "size_bytes": 135791,
+      "sha256": "e2e66a4c88d012743b5ace6cac78554ba8264c843018b2bb20de03e385d36610"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "kind": "submission_materials",
+  "mode": "draft",
+  "validation": {
+    "generated_at": "2026-11-11T22:51:28+08:00",
+    "junit": {
+      "tests": 577,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "passed": 577,
+      "evidence": {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\dist\\current_tests.xml",
+        "sha256": "cc6133125b52330728395c85823b6cbcecf5271cb130e9294992a0466f2a95e9",
+        "bytes": 80259
+      }
+    },
+    "local_record": {
+      "schema_version": 1,
+      "kind": "local_validation",
+      "executed_now": true,
+      "offline_scenario": {
+        "protocol": "inspection_v1",
+        "completed": true,
+        "steps": 727,
+        "reports": 7,
+        "fault": ""
+      }
+    },
+    "readiness": {
+      "kind": "development_build",
+      "configuration_ready": false,
+      "platform_run_verified": false,
+      "reason": "interface profile must be verified against the actual platform",
+      "note": "Do not spend a formal upload attempt on this unbound development configuration."
+    },
+    "profile_verified": false,
+    "probe_runtime": {
+      "status": "partial",
+      "official_scoring": "unverified",
+      "record_count": 21,
+      "event_counts": {
+        "launcher_started": 1,
+        "probe_started": 1,
+        "public_graph": 1,
+        "subscription": 14,
+        "sample": 3,
+        "launcher_exit": 1
+      },
+      "startup": {
+        "launcher_started": true,
+        "probe_started": true
+      },
+      "sample_topics": [
+        "/odom",
+        "/tf"
+      ],
+      "launcher_exit_codes": [
+        0
+      ],
+      "missing_events": [
+        "probe_finished",
+        "probe_snapshot"
+      ],
+      "images": []
+    },
+    "inputs": [
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\evidence\\20261111\\callback.jsonl",
+        "sha256": "0a0b7c33fc1276c29357b67a136339cc6d14487b15cfca7788903b84b3931cc0",
+        "bytes": 12322
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\submission\\城市应急全域巡检技术方案-草稿.probe\\summary.json",
+        "sha256": "72e59b541022744749f402fcd6bb59df342844b9176103a784edcef8599691f9",
+        "bytes": 18579
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\dist\\readiness.json",
+        "sha256": "f0090ef7ac8876d368a94b6b670c3fee1a101b264b35a51a21beffe8d5efb261",
+        "bytes": 276
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\src\\inspection_mission\\config\\interface_profile.json",
+        "sha256": "4de364403fc0b25afe0a3580ea11aeb84b9fb3bdc8001aeeee38a1fd80d007e2",
+        "bytes": 1684
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\docs\\referee_rules_v1.txt",
+        "sha256": "45c6eaf7c81777af2c6f47a3cd677a3c98c3f3285e20bed5297f08df36d2931e",
+        "bytes": 16345
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\docs\\protocol_gap_current.md",
+        "sha256": "3b17280644b080196e40ce175e2453c666bf3b52f16f5ace1fd372d14cf3d3e5",
+        "bytes": 13979
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\evidence\\20261111\\support_post.json",
+        "sha256": "891f1d188740ac94ced4c39130d8a48ebc74ecd0e4277c32ef2c7844fe1f607f",
+        "bytes": 2255
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\docs\\resource_search_20261111.md",
+        "sha256": "31bceb1a1cb163a0e8094831613afa8213adfe2827e8ad7abe81b3a51cad8b8a",
+        "bytes": 8464
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\docs\\reference_vision_20261111.json",
+        "sha256": "1941e90bd5a33cc2e98c44436aca46b74e6b8191080a2872824e15fda547405a",
+        "bytes": 269457
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\docs\\zero_shot_vision_20261111.json",
+        "sha256": "14a5db6219892834753c0a5880bf0b7267bbc8d25b667229e3bbe218a3b999ea",
+        "bytes": 160645
+      },
+      {
+        "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\tools\\mission_scenario.py",
+        "sha256": "f0bb60db013213ea4dffa3aca9a88165f983d90915401f462c6373d3fb95d47e",
+        "bytes": 6994
+      }
+    ]
+  },
+  "official": null,
+  "pdf": {
+    "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\submission\\城市应急全域巡检技术方案-草稿.pdf",
+    "sha256": "f494913f6b0d3825ebdf530959961fa0b7fa4b6b414fa9a6512d846f4fea07ae",
+    "bytes": 381803
+  },
+  "generator": {
+    "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\tools\\create_submission_media.py",
+    "sha256": "f82fa31cbeef0a0140a7a5a2b8efe2e23e7634ae7ac16bdedf97109b567ed82a",
+    "bytes": 29708
+  },
+  "flow": {
+    "path": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\submission\\城市应急全域巡检技术方案-草稿.flow.png",
+    "sha256": "274b556df1a4f3a59777526d0391d9c1096dea26d9095c7af983896bcc891119",
+    "bytes": 104891
+  },
+  "note": "No animation or platform recording is generated by this tool."
+}

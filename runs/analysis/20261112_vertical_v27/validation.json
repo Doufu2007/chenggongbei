@@ -1,0 +1,39 @@
+{
+  "source": "runs/evidence/20261112/callback_vertical_v27.jsonl",
+  "source_sha256": "967b429a02c4bb675c32d4ef384091d774bb519ed20fe5c63c81a08bf9c05099",
+  "source_bytes": 195407,
+  "event_count": 9,
+  "parts_verified": 4,
+  "session_id": "dd830b26c28043e195bee21de05e1642",
+  "metadata": {
+    "session_id": "dd830b26c28043e195bee21de05e1642",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 1165751,
+    "compressed_bytes": 141742,
+    "uncompressed_sha256": "1b1c20afeeff67b39763f0a55120725ecccace868f4cb9c95be905447df4b93c",
+    "compressed_sha256": "e1ecfa981de2de10972b044c8de312013b2955466e4f8a2925e3fc40a1091fae",
+    "part_count": 4
+  },
+  "compressed_length_matches": true,
+  "compressed_hash_matches": true,
+  "raw_length_matches": true,
+  "raw_hash_matches": true,
+  "core_matches_recovered": true,
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "sample_counts": {
+    "trajectory": 453,
+    "commands": 191,
+    "scans": 73,
+    "downscans": 184,
+    "tf_records": 749
+  },
+  "callback_source": "unverified_callback",
+  "platform_id": "997eb6e5-bdda-4abc-88c2-ecb252319b4a",
+  "source_authenticated_independently": false
+}

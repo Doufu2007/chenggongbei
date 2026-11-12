@@ -1,0 +1,481 @@
+{
+  "raw": {
+    "path": "runs/evidence/20261112/callback_single_point_v24b.jsonl",
+    "bytes": 636523,
+    "sha256": "40d5905f4c0d749537ba8183617686a9f886cc58d2922d4ebed5d80a76a221e7"
+  },
+  "analysis": {
+    "path": "runs/analysis/20261112_single_point_v24b_independent/summary.json",
+    "bytes": 2708915,
+    "sha256": "a24af1b9ed78c3008fdaebbb0b7a4f35b0250bc3f9fa4064dbe5186fd1fee371"
+  },
+  "platform": {
+    "record_id": "e51c52ce-2605-4a4b-acb2-ea9c4a8bbfee",
+    "runId": "run_20261112_055257_72484c3b",
+    "submissionNo": "#29764869",
+    "status": "failed",
+    "score": null,
+    "duration_s": 128.875,
+    "failedReason": "流程未检测到完整结束标志（未提取到成绩）"
+  },
+  "parser_status": "partial",
+  "parser_partial_reason": "no_ground_motion_full_event",
+  "unknown_sections": [],
+  "survey_fallback_fragment_count": 10,
+  "record_count": 65,
+  "series": {
+    "trajectory_10hz": {
+      "rows": 517,
+      "complete": true
+    },
+    "actual_commands": {
+      "rows": 1200,
+      "complete": true
+    }
+  },
+  "capture_images": [
+    {
+      "phase": "capture_0",
+      "file": "native_L000012_1220a44c55aa365a.jpg",
+      "sha256": "1220a44c55aa365aa78d37faf4ee6b569b8c03dc87007d04469dbeddce6fa974",
+      "image_stamp_s": 52.409,
+      "image_wall_elapsed_s": 50.14697175300171,
+      "prior_odom_stamp_s": 52.4,
+      "prior_pose": {
+        "stamp_s": 52.4,
+        "wall_elapsed_s": 50.124454296001204,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.34549679792135396,
+          -0.005096757955178431,
+          0.05500014639304878
+        ],
+        "quaternion": [
+          -1.2267567412713532e-07,
+          6.15969781420157e-08,
+          -0.37122107423219713,
+          0.9285445137665047
+        ],
+        "yaw_rad": -0.7606474334173955,
+        "linear_speed": 1.0564674547966504e-05,
+        "angular_speed": 5.551115123125783e-15,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.009000000000000341
+      },
+      "skew_s": 0.009000000000000341,
+      "waypoint_error_m": 0.006801159505172367
+    },
+    {
+      "phase": "capture_1",
+      "file": "native_L000014_182fb89009136f44.jpg",
+      "sha256": "182fb89009136f4446d18515ccb79488e883d717dad724424ca77de80dfa354c",
+      "image_stamp_s": 52.743,
+      "image_wall_elapsed_s": 50.48579390700252,
+      "prior_odom_stamp_s": 52.74,
+      "prior_pose": {
+        "stamp_s": 52.74,
+        "wall_elapsed_s": 50.46990714899948,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.3454993196144843,
+          -0.005099391747305475,
+          0.05500009322073701
+        ],
+        "quaternion": [
+          -7.341896938189632e-08,
+          4.7050743271797285e-08,
+          -0.3712210886541,
+          0.9285445080008051
+        ],
+        "yaw_rad": -0.7606474644808511,
+        "linear_speed": 1.0864041391542752e-05,
+        "angular_speed": 0.0,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.0030000000000001137
+      },
+      "skew_s": 0.0030000000000001137,
+      "waypoint_error_m": 0.006801464557362078
+    },
+    {
+      "phase": "capture_2",
+      "file": "native_L000016_edf74d9622579602.jpg",
+      "sha256": "edf74d96225796028e34cf1ed1619ebe24cb378bfb713277c3b276a2b5c634b7",
+      "image_stamp_s": 53.075,
+      "image_wall_elapsed_s": 50.82146269200166,
+      "prior_odom_stamp_s": 53.06,
+      "prior_pose": {
+        "stamp_s": 53.06,
+        "wall_elapsed_s": 50.79426586500267,
+        "source_topic": "/uav/odom",
+        "frame_id": "odom",
+        "child_frame_id": "uav/base_link",
+        "position": [
+          0.345501820673013,
+          -0.005101853839197552,
+          0.055000070802173874
+        ],
+        "quaternion": [
+          -4.883566063871347e-08,
+          4.1617251029603363e-08,
+          -0.37122109606395826,
+          0.9285445050384334
+        ],
+        "yaw_rad": -0.7606474804410068,
+        "linear_speed": 1.104107561558803e-05,
+        "angular_speed": 6.841043287408866e-08,
+        "association": "prior_uav_odom",
+        "image_minus_odom_s": 0.015000000000000568
+      },
+      "skew_s": 0.015000000000000568,
+      "waypoint_error_m": 0.006801656405190421
+    }
+  ],
+  "header_capture_deltas_s": [
+    0.3340000000000032,
+    0.33200000000000074
+  ],
+  "camera_header_delta_s": {
+    "count": 155,
+    "total": 51.666000000000004,
+    "min": 0.3309999999999995,
+    "max": 0.3360000000000021,
+    "buckets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      155,
+      0
+    ]
+  },
+  "camera_wall_gap_s": {
+    "count": 155,
+    "total": 52.49860691899812,
+    "min": 0.31379651699899114,
+    "max": 0.38484501899802126,
+    "buckets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      155,
+      0
+    ]
+  },
+  "camera_rate_from_header_hz": 3.0000387101769053,
+  "camera_rate_from_wall_hz": 2.9524592955229223,
+  "stop": {
+    "first_actual_zero_command_in_stop": {
+      "wall_elapsed_s": 51.038446,
+      "clock_stamp_s": 53.2,
+      "linear_x": 0.0,
+      "angular_z": 0.0,
+      "state": "STOP"
+    },
+    "motion_transition": {
+      "wall_elapsed_s": 51.0385,
+      "state": "STOP",
+      "reason": "single_point_uav_image_stale",
+      "linear_x": 0.0,
+      "angular_z": 0.0,
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 53.2,
+          "wall_age_s": 0.08786844199858024
+        },
+        "odom": {
+          "stamp_s": 53.28,
+          "wall_age_s": 0.013890643000195269,
+          "clock_minus_stamp_s": -0.0799999999999983,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 53.251,
+          "wall_age_s": 0.040881304998038104,
+          "clock_minus_stamp_s": -0.05099999999999483,
+          "fresh": true
+        }
+      }
+    },
+    "last_capture_to_first_stop_command_s": 0.21698330799834054,
+    "clock_minus_last_capture_s": 0.125
+  },
+  "guard_final": {
+    "state": "FINISHED",
+    "reason": "single_point_uav_image_stale",
+    "elapsed_s": 53.083,
+    "errors": []
+  },
+  "draw": [
+    "ground_4",
+    "ground_2",
+    "ground_3"
+  ],
+  "in_entry": false,
+  "match_results": [],
+  "attempts": {},
+  "matcher_failures": [],
+  "recognition_status": [],
+  "route_legs": [
+    {
+      "leg_index": 0,
+      "origin": [
+        5.546588457269503e-05,
+        2.038091530351518e-06,
+        0.05500037290216644
+      ],
+      "yaw_rad": -2.2858369672484647e-05,
+      "waypoint_xy_m": [
+        0.35,
+        0.0
+      ],
+      "target_projection_m": 0.34994453407059084,
+      "started_wall_s": 21881.010390112,
+      "stop_request": {
+        "path_origin_m": 0.3480729381740249,
+        "path_increment_m": 7.547846940580971e-05,
+        "wall_s": 21906.434099798,
+        "odom_stamp_s": 30.22,
+        "interpretation": "phase requested zero; local publish and actuator receipt not implied"
+      },
+      "ended_wall_s": 21907.450705597,
+      "final_position": [
+        0.3481222995734186,
+        0.0005313549357084078,
+        0.05500009747944395
+      ],
+      "waypoint_error_m": 0.0019514345901632268
+    }
+  ],
+  "route_origin": [
+    3.960786676764593e-05,
+    7.999524015502376e-06,
+    0.0550000727474911
+  ],
+  "final_odom": {
+    "header": {
+      "stamp": {
+        "sec": 55,
+        "nanosec": 280000000
+      },
+      "frame_id": "odom"
+    },
+    "child_frame_id": "base_footprint",
+    "pose": {
+      "pose": {
+        "position": {
+          "x": 0.34551817211509644,
+          "y": -0.005119870051709166,
+          "z": 0.05500009305012927
+        },
+        "orientation": {
+          "x": -7.580561708236796e-08,
+          "y": 4.0238894268455995e-08,
+          "z": -0.37122244175940866,
+          "w": 0.9285439670441972
+        }
+      },
+      "covariance": [
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01
+      ]
+    },
+    "twist": {
+      "twist": {
+        "linear": {
+          "x": 1.0930699154842414e-05,
+          "y": -3.0184996310934125e-07,
+          "z": 0.0
+        },
+        "angular": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": -1.7033833787927222e-07
+        }
+      },
+      "covariance": [
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0001,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1000000000000.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.01
+      ]
+    }
+  },
+  "command_endpoints": {
+    "/cmd_vel": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "geometry_msgs/msg/Twist",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "geometry_msgs/msg/Twist",
+      "silent": false
+    },
+    "/uav/cmd_vel": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "geometry_msgs/msg/Twist",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "geometry_msgs/msg/Twist",
+      "silent": true
+    },
+    "/referee/current_target": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": false,
+      "publication_policy": "one_attempt_after_current_visual_and_physical_gate",
+      "actual_publish_attempt_count": 0,
+      "actual_publish_return_count": 0,
+      "interpretation": "enabled_policy_not_evidence_of_referee_acceptance"
+    },
+    "/inspection/detections": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": false,
+      "publication_policy": "one_attempt_after_current_visual_and_physical_gate",
+      "actual_publish_attempt_count": 0,
+      "actual_publish_return_count": 0,
+      "interpretation": "enabled_policy_not_evidence_of_referee_acceptance"
+    },
+    "/referee/cruise_event": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "std_msgs/msg/String",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/String",
+      "silent": true
+    },
+    "/uav/laser_fire": {
+      "subscriber_endpoints": [
+        {
+          "node": "/ican_inspection_public_bridge_13",
+          "type": "std_msgs/msg/Bool",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ],
+      "matched_subscriptions": 1,
+      "subscriber_endpoints_omitted": 0,
+      "declared_type": "std_msgs/msg/Bool",
+      "silent": true
+    }
+  },
+  "all_commands_from_last_capture_are_zero": true,
+  "maximum_recorded_x_m": 0.3481234,
+  "minimum_recorded_y_m": -0.005185,
+  "official_acceptance": false,
+  "full_mission_completed": false
+}

@@ -1,0 +1,89 @@
+.F....FFF                                                                [100%]
+================================== FAILURES ===================================
+__________ test_receive_entry_is_captured_before_metadata_inspection __________
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x0000019AF5F73BB0>
+
+    def test_receive_entry_is_captured_before_metadata_inspection(monkeypatch):
+        node,callbacks,wall,cpu=make(monkeypatch)
+        original=api().source_stamp
+        def slow_metadata(topic,msg):wall[0]+=.03;return original(topic,msg)
+        monkeypatch.setattr(api(),'source_stamp',slow_metadata)
+        callbacks['/clock']({'clock':{'sec':10,'nanosec':0}})
+        row=node.height_timing.snapshot()['trace'][-1]
+>       assert row['entry_wall_s']==0.
+E       assert 0.03 == 0.0
+
+tests\test_height_runtime_timing.py:87: AssertionError
+________________ test_timing_launcher_preserves_real_exit[0-0] ________________
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-794/test_timing_launcher_preserves0')
+child_exit = 0, setup_exit = 0
+
+    @pytest.mark.parametrize('child_exit,setup_exit',[(0,0),(17,0),(0,29)])
+    def test_timing_launcher_preserves_real_exit(tmp_path,child_exit,setup_exit):
+        import os,shlex,shutil,subprocess
+        from pathlib import Path
+        from test_ground_probe_launch import BASH,shell_path
+        if not BASH.is_file():pytest.skip('bash unavailable')
+        package=tmp_path/'uploaded/src/inspection_mission/inspection_mission';package.mkdir(parents=True)
+        (package/'__init__.py').write_text('',encoding='utf8')
+        (package/'height_runtime_timing.py').write_text(f'import sys\nsys.exit({child_exit})\n',encoding='utf8')
+        source=Path(__file__).resolve().parents[1]/'scripts/run_height_runtime_timing.sh'
+>       assert source.is_file(),'v34 timing launcher missing'
+E       AssertionError: v34 timing launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_height_runtime_timing.sh').is_file
+
+tests\test_height_runtime_timing.py:171: AssertionError
+_______________ test_timing_launcher_preserves_real_exit[17-0] ________________
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-794/test_timing_launcher_preserves1')
+child_exit = 17, setup_exit = 0
+
+    @pytest.mark.parametrize('child_exit,setup_exit',[(0,0),(17,0),(0,29)])
+    def test_timing_launcher_preserves_real_exit(tmp_path,child_exit,setup_exit):
+        import os,shlex,shutil,subprocess
+        from pathlib import Path
+        from test_ground_probe_launch import BASH,shell_path
+        if not BASH.is_file():pytest.skip('bash unavailable')
+        package=tmp_path/'uploaded/src/inspection_mission/inspection_mission';package.mkdir(parents=True)
+        (package/'__init__.py').write_text('',encoding='utf8')
+        (package/'height_runtime_timing.py').write_text(f'import sys\nsys.exit({child_exit})\n',encoding='utf8')
+        source=Path(__file__).resolve().parents[1]/'scripts/run_height_runtime_timing.sh'
+>       assert source.is_file(),'v34 timing launcher missing'
+E       AssertionError: v34 timing launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_height_runtime_timing.sh').is_file
+
+tests\test_height_runtime_timing.py:171: AssertionError
+_______________ test_timing_launcher_preserves_real_exit[0-29] ________________
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-794/test_timing_launcher_preserves2')
+child_exit = 0, setup_exit = 29
+
+    @pytest.mark.parametrize('child_exit,setup_exit',[(0,0),(17,0),(0,29)])
+    def test_timing_launcher_preserves_real_exit(tmp_path,child_exit,setup_exit):
+        import os,shlex,shutil,subprocess
+        from pathlib import Path
+        from test_ground_probe_launch import BASH,shell_path
+        if not BASH.is_file():pytest.skip('bash unavailable')
+        package=tmp_path/'uploaded/src/inspection_mission/inspection_mission';package.mkdir(parents=True)
+        (package/'__init__.py').write_text('',encoding='utf8')
+        (package/'height_runtime_timing.py').write_text(f'import sys\nsys.exit({child_exit})\n',encoding='utf8')
+        source=Path(__file__).resolve().parents[1]/'scripts/run_height_runtime_timing.sh'
+>       assert source.is_file(),'v34 timing launcher missing'
+E       AssertionError: v34 timing launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_height_runtime_timing.sh').is_file
+
+tests\test_height_runtime_timing.py:171: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_height_runtime_timing.py::test_receive_entry_is_captured_before_metadata_inspection
+FAILED tests/test_height_runtime_timing.py::test_timing_launcher_preserves_real_exit[0-0]
+FAILED tests/test_height_runtime_timing.py::test_timing_launcher_preserves_real_exit[17-0]
+FAILED tests/test_height_runtime_timing.py::test_timing_launcher_preserves_real_exit[0-29]
+4 failed, 5 passed in 1.03s

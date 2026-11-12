@@ -1,0 +1,665 @@
+{
+  "deadline_fresh_sources": {
+    "pulse_start": 26.55,
+    "deadline": 28.55,
+    "wall_after_query": 28.57,
+    "outputs": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "phase": "PULSE_SETTLE",
+    "state": "PULSE_SETTLE",
+    "reason": "direction_pulse_settle",
+    "decision": {
+      "linear_x": 0.0,
+      "linear_y": 0.0,
+      "angular_z": 0.0,
+      "state": "PULSE_SETTLE",
+      "reason": "direction_pulse_settle"
+    },
+    "last_command": {
+      "wall_elapsed_s": 28.57,
+      "clock_stamp_s": 38.5,
+      "linear_x": 0.0,
+      "linear_y": 0.0,
+      "angular_z": 0.0,
+      "sent": true,
+      "error": null,
+      "phase": "PULSE_SETTLE",
+      "state": "PULSE_SETTLE",
+      "pulse_index": 0,
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 38.5,
+          "wall_age_s": 0.07000000000000028
+        },
+        "odom": {
+          "stamp_s": 38.5,
+          "wall_age_s": 0.07000000000000028,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 38.5,
+          "wall_age_s": 0.07000000000000028,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    }
+  },
+  "dds_exception": {
+    "fault": "exception",
+    "outputs": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "state": "STOP",
+    "phase": "PULSE",
+    "reason": "no_external_matching_cmd_subscriber",
+    "last_command": {
+      "wall_elapsed_s": 26.560000000000002,
+      "clock_stamp_s": 36.55,
+      "linear_x": 0.0,
+      "linear_y": 0.0,
+      "angular_z": 0.0,
+      "sent": true,
+      "error": null,
+      "phase": "PULSE",
+      "state": "STOP",
+      "pulse_index": 0,
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.010000000000001563
+        },
+        "odom": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.010000000000001563,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.010000000000001563,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    }
+  },
+  "dds_stale_sources": {
+    "fault": "stale",
+    "outputs": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "state": "PAUSE",
+    "phase": "PULSE",
+    "reason": "clock_stale",
+    "last_command": {
+      "wall_elapsed_s": 26.810000000000002,
+      "clock_stamp_s": 36.55,
+      "linear_x": 0.0,
+      "linear_y": 0.0,
+      "angular_z": 0.0,
+      "sent": true,
+      "error": null,
+      "phase": "PULSE",
+      "state": "PAUSE",
+      "pulse_index": 0,
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.26000000000000156
+        },
+        "odom": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.26000000000000156,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 36.55,
+          "wall_age_s": 0.26000000000000156,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    }
+  },
+  "normal_three_pulses": {
+    "commands": 648,
+    "negative_requests": 54,
+    "turn_rotation_rad": 1.5472718076308973,
+    "pulse_records": [
+      {
+        "index": 0,
+        "requested_body_xy_mps": [
+          -0.03,
+          0.0
+        ],
+        "start": {
+          "wall_elapsed_s": 26.55,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 36,
+                "nanosec": 550000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "yaw_rad": 1.5472718076308973,
+          "path_origin_m": 0.0,
+          "rotation_origin_rad": 1.5472718076308973
+        },
+        "zero_requests": [
+          {
+            "wall_elapsed_s": 28.25,
+            "reason": "pulse_measured_request_stop",
+            "path_origin_m": 0.010200000000000002,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 38,
+                  "nanosec": 250000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": -0.00023992796456797703,
+                    "y": -0.010197177774846244,
+                    "z": 0.055
+                  },
+                  "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.6987408856409332,
+                    "w": 0.7153748491062042
+                  }
+                }
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": -0.006,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          }
+        ],
+        "motion_end_reason": "pulse_measured_request_stop",
+        "settled": {
+          "wall_elapsed_s": 29.3,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 39,
+                "nanosec": 300000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": -0.00023992796456797703,
+                  "y": -0.010197177774846244,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "stable_wall_s": 1.0,
+          "stable_source_s": 1.0,
+          "stop_path_increment_m": 0.0
+        },
+        "response": {
+          "source_dt_s": 2.75,
+          "delta_world_m": [
+            -0.00023992796456797703,
+            -0.010197177774846244,
+            0.0
+          ],
+          "mean_world_velocity_mps": [
+            -8.724653257017347e-05,
+            -0.0037080646453986343,
+            0.0
+          ],
+          "delta_start_body_xy_m": [
+            -0.010199999999999996,
+            8.131516293641283e-20
+          ],
+          "horizontal_displacement_m": 0.010199999999999997,
+          "start_yaw_rad": 1.5472718076308973,
+          "yaw_delta_rad": 0.0,
+          "displacement_bearing_rad": -1.594320845958896,
+          "bearing_minus_start_yaw_rad": -3.141592653589793,
+          "interface_semantics_confirmed": false
+        }
+      },
+      {
+        "index": 1,
+        "requested_body_xy_mps": [
+          -0.1,
+          0.0
+        ],
+        "start": {
+          "wall_elapsed_s": 29.3,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 39,
+                "nanosec": 300000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": -0.00023992796456797703,
+                  "y": -0.010197177774846244,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "yaw_rad": 1.5472718076308973,
+          "path_origin_m": 0.010200000000000002,
+          "rotation_origin_rad": 1.5472718076308973
+        },
+        "zero_requests": [
+          {
+            "wall_elapsed_s": 29.8,
+            "reason": "pulse_measured_request_stop",
+            "path_origin_m": 0.020200000000000003,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 39,
+                  "nanosec": 800000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": -0.0004751514592424643,
+                    "y": -0.020194410887440603,
+                    "z": 0.055
+                  },
+                  "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.6987408856409332,
+                    "w": 0.7153748491062042
+                  }
+                }
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": -0.020000000000000004,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          }
+        ],
+        "motion_end_reason": "pulse_measured_request_stop",
+        "settled": {
+          "wall_elapsed_s": 30.85,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 40,
+                "nanosec": 850000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": -0.0004751514592424643,
+                  "y": -0.020194410887440603,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "stable_wall_s": 1.0,
+          "stable_source_s": 1.0,
+          "stop_path_increment_m": 0.0
+        },
+        "response": {
+          "source_dt_s": 1.5500000000000043,
+          "delta_world_m": [
+            -0.00023522349467448728,
+            -0.009997233112594359,
+            0.0
+          ],
+          "mean_world_velocity_mps": [
+            -0.00015175709333837848,
+            -0.0064498278145769875,
+            0.0
+          ],
+          "delta_start_body_xy_m": [
+            -0.009999999999999998,
+            5.421010862427522e-20
+          ],
+          "horizontal_displacement_m": 0.009999999999999998,
+          "start_yaw_rad": 1.5472718076308973,
+          "yaw_delta_rad": 0.0,
+          "displacement_bearing_rad": -1.594320845958896,
+          "bearing_minus_start_yaw_rad": -3.141592653589793,
+          "interface_semantics_confirmed": false
+        }
+      },
+      {
+        "index": 2,
+        "requested_body_xy_mps": [
+          -0.1,
+          0.0
+        ],
+        "start": {
+          "wall_elapsed_s": 30.85,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 40,
+                "nanosec": 850000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": -0.0004751514592424643,
+                  "y": -0.020194410887440603,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "yaw_rad": 1.5472718076308973,
+          "path_origin_m": 0.020200000000000003,
+          "rotation_origin_rad": 1.5472718076308973
+        },
+        "zero_requests": [
+          {
+            "wall_elapsed_s": 31.35,
+            "reason": "pulse_measured_request_stop",
+            "path_origin_m": 0.03020000000000001,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 41,
+                  "nanosec": 350000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": -0.000710374953916952,
+                    "y": -0.030191644000034962,
+                    "z": 0.055
+                  },
+                  "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.6987408856409332,
+                    "w": 0.7153748491062042
+                  }
+                }
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": -0.020000000000000004,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                }
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          }
+        ],
+        "motion_end_reason": "pulse_measured_request_stop",
+        "settled": {
+          "wall_elapsed_s": 32.4,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 42,
+                "nanosec": 400000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": -0.000710374953916952,
+                  "y": -0.030191644000034962,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.6987408856409332,
+                  "w": 0.7153748491062042
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "stable_wall_s": 1.0,
+          "stable_source_s": 1.0,
+          "stop_path_increment_m": 0.0
+        },
+        "response": {
+          "source_dt_s": 1.5499999999999972,
+          "delta_world_m": [
+            -0.00023522349467448769,
+            -0.009997233112594359,
+            0.0
+          ],
+          "mean_world_velocity_mps": [
+            -0.00015175709333837943,
+            -0.006449827814577018,
+            0.0
+          ],
+          "delta_start_body_xy_m": [
+            -0.009999999999999998,
+            4.607859233063394e-19
+          ],
+          "horizontal_displacement_m": 0.009999999999999998,
+          "start_yaw_rad": 1.5472718076308973,
+          "yaw_delta_rad": 0.0,
+          "displacement_bearing_rad": -1.594320845958896,
+          "bearing_minus_start_yaw_rad": -3.141592653589793,
+          "interface_semantics_confirmed": false
+        }
+      }
+    ],
+    "initial_turn_error": 1.5707963267948966,
+    "target_yaw": 1.5707963267948966,
+    "other_outputs": []
+  },
+  "sha256": {
+    "src/inspection_mission/inspection_mission/ground_reverse_response.py": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae",
+    "scripts/run_ground_reverse_response.sh": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+    "src/inspection_mission/inspection_mission/ground_direction_response.py": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946"
+  }
+}

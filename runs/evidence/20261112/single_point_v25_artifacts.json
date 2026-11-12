@@ -1,0 +1,52 @@
+{
+  "version": "single-point-v25",
+  "mode": "practice",
+  "official_task_success": false,
+  "revision": "ground_single_point_v1",
+  "basis": "frozen v23 archive plus independently reviewed single-point, worker, matcher and public image assets",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_matcher_worker.py": "d50ae59a24f11d80ca566193cf63e254eb5c55846eff278def24905b96735ec8",
+    "src/inspection_mission/inspection_mission/ground_plane_matcher.py": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/collapsed_ruins_02.jpg": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/damaged_vehicle_01.png": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_01.jpg": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_02.jpg": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/manifest.json": "c78ddcdd8e194f484607c9e5a0029f6839bf7816da8fb572ab302318ba670352",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_01.png": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_02.jpg": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_01.png": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_02.jpg": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777"
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_single_point_v25_src.zip",
+      "bytes": 9570081,
+      "sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e"
+    },
+    {
+      "path": "dist/run_single_point_v25.sh",
+      "bytes": 2858,
+      "sha256": "79d9cf1f4e980599c9e2ee8cae061a8ecc9828678aa92cac2c652fcb6fef8c5f"
+    }
+  ],
+  "platform_submission": "submitted",
+  "change_from_v24b": "Independent camera liveness .50s based on measured ~3Hz; odom/scan .20s and original exposure prior .05s unchanged; repeated or reversed stamps do not renew arrival.",
+  "validation": {
+    "source_and_archive_sha_verified": true,
+    "python_ast_valid_members": 30,
+    "bash_syntax_passed": true,
+    "single_point_author_suite_passed": 43,
+    "camera_and_transport_independent_passed": 18,
+    "camera_boundary_independent_passed": 13,
+    "parser_range_passed": 125,
+    "report": "docs/ground_single_point_camera_liveness_fix_20261112.md",
+    "independent_camera_xml": "runs/review/20261112_single_point_v24b/camera_transport_independent_final.xml",
+    "receiver_health_status": 405
+  },
+  "platform_detail_id": "c4202874-407a-4361-844a-0f95ba7b1d7f",
+  "platform_run_id": "run_20261112_060713_501f412f",
+  "platform_evaluation_number": "#86630201",
+  "submission_response": "runs/evidence/20261112/single_point_v25_submission.json"
+}

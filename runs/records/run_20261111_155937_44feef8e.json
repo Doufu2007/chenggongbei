@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "record_id": "probe-run_20261111_155937_44feef8e",
+  "runId": "run_20261111_155937_44feef8e",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "interface_probe",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_probe_callback_src.zip",
+    "sha256": "f89f6ee051a82026463a9ac92366cc8b813cf93246e8fc47d0591f2ad3d9a159"
+  },
+  "script": {
+    "path": "dist/run_interface_probe_callback.sh",
+    "sha256": "9fd1f777569f5ce01774882d96d1037812ff7c47401f0d87d0ef7de62986f526"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 66.337,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs\\evidence\\20261111\\probe_detail_third.json",
+    "runs/evidence/20261111/probe_files.json",
+    "runs/evidence/20261111/probe_detail_sixth.json",
+    "runs/evidence/20261111/callback.jsonl",
+    "runs/evidence/20261111/probe_detail_latest.json",
+    "docs/platform_probe_v4_20261111.json"
+  ]
+}

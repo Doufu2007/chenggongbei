@@ -1,0 +1,59 @@
+{
+  "kind": "v22_frozen_matcher_offline_manifest",
+  "created_at": "2026-11-11T21:13:20.559579+00:00",
+  "checks": [
+    {
+      "path": "runs/analysis/20261112_route_v22_independent/summary.json",
+      "sha256": "7ca1cd746e4a733d7102ea24f8d6b4e5fe85e4d7560ca9da4b2427b1c5f6ddc6",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_ground_ipm_sift_exploratory/report.json",
+      "sha256": "b6b4738c7ca1248cb48d645c257f0410ae0bbfc31980c1b0762108d33bfd0c5c",
+      "matches": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_plane_matcher.py",
+      "sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_route_v22_independent/native_L000017_cb457617beacb1b2.jpg",
+      "sha256": "cb457617beacb1b2e958ae33a860676a650152cfd2a23886d455214adec8464c",
+      "matches": true
+    }
+  ],
+  "files": [
+    {
+      "path": "analyze.py",
+      "size_bytes": 10885,
+      "sha256": "daee9eeb77ed6d04a0da937e307ba7fd9c7f33d483cf0586c33b1a462c745396"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1821,
+      "sha256": "837aef30e17044257d1268e60ce223dcdff10435299102a01b24f832e9a42619"
+    },
+    {
+      "path": "report.json",
+      "size_bytes": 448268,
+      "sha256": "d9bfa1c40faa518406514593c52ffdb64d317c0ebdb2ccd22a39d4f72384c6cf"
+    },
+    {
+      "path": "scores.csv",
+      "size_bytes": 5262,
+      "sha256": "2e525412bd40884f525c60112d6032fdb3cf5cf335f5c1ff033ce87f9624594e"
+    },
+    {
+      "path": "uav_101_782_bev.png",
+      "size_bytes": 303425,
+      "sha256": "42d467b29d9b114cba5f1f00e758575e4c20d499f74fe387bbc32997cefe13d9"
+    },
+    {
+      "path": "uav_101_782_source_overlay.png",
+      "size_bytes": 334289,
+      "sha256": "d24250b6cf99824caa0f97564aa443eb0df9309d3d7e31501cc036917d0a8707"
+    }
+  ],
+  "excludes_itself": true
+}

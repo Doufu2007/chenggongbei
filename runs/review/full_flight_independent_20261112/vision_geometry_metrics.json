@@ -1,0 +1,134 @@
+{
+  "corners_px": [
+    [
+      335.33120040186463,
+      776.1876456622965
+    ],
+    [
+      464.66879959813537,
+      776.1876456622965
+    ],
+    [
+      452.4671392966004,
+      705.2088445939387
+    ],
+    [
+      347.5328607033996,
+      705.2088445939387
+    ]
+  ],
+  "results": [
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "label": "坍塌废墟",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_collapsed_ruins_02.png"
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "label": "坍塌废墟",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_collapsed_ruins_01.png"
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "label": "受损车辆",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_damaged_vehicle_01.png"
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "label": "受损车辆",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_damaged_vehicle_02.png"
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "label": "滑坡塌方",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_landslide_01.png"
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "label": "滑坡塌方",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_landslide_02.png"
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "label": "救援营地",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_rescue_camp_01.png"
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "label": "救援营地",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_rescue_camp_02.png"
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "label": "被困人员",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_trapped_people_01.png"
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "label": "被困人员",
+      "detected": [],
+      "synthetic_image": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\review\\full_flight_independent_20261112\\synthetic_trapped_people_02.png"
+    }
+  ],
+  "real_factory_worker_results": [
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "detections_count": 0,
+      "errors": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "detections_count": 0,
+      "errors": []
+    }
+  ]
+}

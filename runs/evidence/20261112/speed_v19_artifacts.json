@@ -1,0 +1,28 @@
+{
+  "version": "ground-speed-v19",
+  "mode": "practice",
+  "official_task_success": false,
+  "revision": "v19_speed_calibration",
+  "checks": {
+    "full_suite_tests": 1095,
+    "failures": 0,
+    "errors": 0,
+    "independent_counterexamples": 9
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_ground_speed_v19_src.zip",
+      "bytes": 111002,
+      "sha256": "57106a6b23a5ce21b1c6b5e6c3b37a14b15ad09147a04cc87f0b1fa14bf3761a"
+    },
+    {
+      "path": "dist/run_ground_speed_v19.sh",
+      "bytes": 2883,
+      "sha256": "7856a1282d8f5b8caf00113477f983b00c21cf5c30a69ba632129e264f86dc3c"
+    }
+  ],
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_speed_calibration.py": "98437fe45a1aaeee73a1ff6bf9976955acffeff99d135740109ffa27d220fc43",
+    "scripts/run_ground_speed_calibration.sh": "f1de21365073897c384c4428584cc537786da0e396d1a3145ad1de90b574f204"
+  }
+}

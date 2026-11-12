@@ -1,0 +1,24 @@
+{
+  "source": "logged-in in-app browser accessibility state",
+  "observed_at": "2026-11-12T08:20:00+08:00",
+  "url": "https://www.splenach.com/ros-simulation/evaluation/log/f21b350d-dcba-4121-ae93-9781c554471c",
+  "id": "f21b350d-dcba-4121-ae93-9781c554471c",
+  "runId": "run_20261112_081239_56ea65d7",
+  "evaluation_number": "85465159",
+  "page_status": "测评未通过",
+  "displayed_score": 0,
+  "score_extracted": false,
+  "duration_display_s": 33.8,
+  "ended_display": "2026/11/12 08:13:39",
+  "source_file": "inspection_height_v31_src.zip",
+  "source_size_display": "9.1 MB",
+  "script": "run_height_v31.sh",
+  "failure": "流程未检测到完整结束标志（未提取到成绩）",
+  "referee_log": [
+    "[INFO] [1794442391.707645212] [inspection_referee]: 已加载贴图匹配表：/run/ican_referee_private/texture_assignment.json",
+    "[INFO] [1794442391.716637830] [inspection_referee]: 本场巡航抽签顺序=<hidden>（随机化答案仅裁判内部可见）",
+    "[INFO] [1794442391.716926416] [inspection_referee]: 城市应急全域巡检（巡航组）裁判系统已启动",
+    "[WARN] [1794442399.922650658] [inspection_referee]: 陆地计分取消：检测到 /uav/cmd_vel 非零飞行控制指令；后续陆地巡航点不再计分，已获得的陆地分数保留"
+  ],
+  "interpretation": "有限Z响应实验，不发布巡检计分或完成消息；网页0分不能解释为已提取的正式任务得分。真实传感器分析另见height_hold_v31_response_analysis_20261112.md。"
+}

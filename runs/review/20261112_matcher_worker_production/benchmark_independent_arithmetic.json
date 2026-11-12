@@ -1,0 +1,134 @@
+{
+  "kind": "production_worker_benchmark_independent_arithmetic",
+  "source_identity": {
+    "report": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_benchmark_report.json",
+      "bytes": 408472,
+      "sha256": "ee7da6b0a61940364e829c5b2b2a090a6b0209407503bb6f8b2762539b109401"
+    },
+    "csv": {
+      "path": "runs/analysis/20261112_ground_matcher_worker_dev/production_heartbeat_ticks.csv",
+      "bytes": 14625,
+      "sha256": "4826085d3e130481f213de74e6aa20f95bd2cf54f28cc06ed9ed13d098dcc1a6"
+    },
+    "previous": {
+      "path": "runs/analysis/20261112_route_v22_matcher/report.json",
+      "bytes": 448268,
+      "sha256": "d9bfa1c40faa518406514593c52ffdb64d317c0ebdb2ccd22a39d4f72384c6cf"
+    }
+  },
+  "reported_worker_source_sha256": "2362025e5a3f013cc6bb124c190e9b8cbaa303675c48ac8347aa5cbdf6697ed1",
+  "reported_matcher_source_sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+  "recomputed_summary": {
+    "ticks": 226,
+    "duration_s": 11.250529800003278,
+    "effective_tick_rate_hz": 19.999058177681057,
+    "max_heartbeat_interval_ms": 53.4205000003567,
+    "p99_heartbeat_interval_ms": 51.10339999810093,
+    "skipped_scheduled_ticks": 0,
+    "owner_work_max_ms": 17.794699997466523
+  },
+  "additional_arithmetic": {
+    "first_actual_tick_elapsed_s": 2.3000029614195228e-06,
+    "first_to_last_actual_tick_rate_hz": 19.999062266190954,
+    "median_heartbeat_interval_ms": 50.014000000373926,
+    "owner_work_p99_ms": 0.27180000142834615
+  },
+  "result_binding": {
+    "source_sha256": "cb457617beacb1b2e958ae33a860676a650152cfd2a23886d455214adec8464c",
+    "image_stamp_s": 101.782,
+    "prior_pose_stamp_s": 101.78,
+    "frozen_first_ID": "ground_3",
+    "job_seq": 1,
+    "worker_pid": 29968,
+    "main_pid_retained": false,
+    "matches_current_context": true,
+    "fresh_exposure_validated": false,
+    "eligible_for_recognition": false,
+    "official_acceptance": false
+  },
+  "template_count_pairs": [
+    {
+      "template_sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+      "good_matches": 62,
+      "inliers": 6,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+      "good_matches": 173,
+      "inliers": 28,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+      "good_matches": 38,
+      "inliers": 8,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+      "good_matches": 49,
+      "inliers": 8,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+      "good_matches": 143,
+      "inliers": 18,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+      "good_matches": 78,
+      "inliers": 13,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "good_matches": 102,
+      "inliers": 14,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777",
+      "good_matches": 172,
+      "inliers": 100,
+      "accepted_candidate": true
+    },
+    {
+      "template_sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf",
+      "good_matches": 13,
+      "inliers": 6,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "8eb1b2ac13851cecaaada1602f4c20e7c993849db05b29aea612a1b4cbcb76f2",
+      "good_matches": 7,
+      "inliers": 0,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e",
+      "good_matches": 8,
+      "inliers": 4,
+      "accepted_candidate": false
+    },
+    {
+      "template_sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6",
+      "good_matches": 2,
+      "inliers": 0,
+      "accepted_candidate": false
+    }
+  ],
+  "close_original": {
+    "closed": true,
+    "process_alive": false,
+    "terminated": false,
+    "close_elapsed_s": 0.0538866000060807,
+    "official_acceptance": false
+  },
+  "scope": "Single retained local production worker benchmark for reported exact worker SHA; new failure-path changes must not be relabelled as the timed source. No new SIFT call or ROS/control run.",
+  "official_acceptance": false,
+  "hard_realtime_or_platform_control_guarantee": false
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "record_id": "5038ac33-4026-490a-8c1e-5b682b2a2f06",
+  "runId": "run_20261112_035930_d1431193",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-odom-qos-v18",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_odom_qos_v18_src.zip",
+    "sha256": "f2f387765eb6f89b46a3558919316a3c97f40c65c15245d6a603bf85663232d3"
+  },
+  "script": {
+    "path": "dist/run_ground_odom_qos_v18.sh",
+    "sha256": "fe2643346dae8f0e155625520f1f696df7aa2937812b3a13d96bfa727657851f"
+  },
+  "draw_order": [
+    "ground_0",
+    "ground_1",
+    "ground_4"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 141.089,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/approach_v18_submit.json",
+    "runs/evidence/20261112/approach_v18_artifacts.json",
+    "runs/evidence/20261112/approach_v18_list_after_callback.json",
+    "runs/evidence/20261112/approach_v18_list_final_check.json",
+    "runs/evidence/20261112/callback_approach_v18.jsonl",
+    "runs/analysis/20261112_approach_v18/summary.json",
+    "runs/review/20261112_approach_v18/independent_metrics.json",
+    "runs/review/20261112_approach_v18/review_v18.py",
+    "runs/analysis/20261112_approach_v18/native_L000013_b9429ec3dc23cab3.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000015_065f0f56563a1ec7.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000017_b9621149fa948b9a.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000019_405e200377a3af9f.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000021_5514907183cfdd93.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000022_974176ce021e5de1.jpg",
+    "runs/analysis/20261112_approach_v18/native_L000024_69bbc2a1c81d95c0.jpg"
+  ]
+}

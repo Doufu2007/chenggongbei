@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="15" time="4.984" timestamp="2026-11-12T07:48:55.164562+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis" name="test_axis_limits_new_rotation_contract_and_old_caps_unchanged" time="0.081" /><testcase classname="tests.test_ground_three_point_axis" name="test_first_ground4_real_runtime_plan_has_two_axes" time="0.063" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_positive_progress_body_heading_and_negative_request" time="0.017" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[wrong_direction-approach_reverse_limit]" time="0.016" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[cross-approach_cross_track_limit]" time="0.016" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[heading-approach_heading_limit]" time="0.018" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[dds-no_external_matching_cmd_subscriber]" time="0.013" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[danger-scan_invalid]" time="0.012" /><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_flag_clears_before_any_next_operation" time="0.012"><failure message="AssertionError: assert (not False and 'DRIVE' == 'CAPTURE'&#10; +  where False = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB807D0&gt;.reverse_segment&#10;  &#10;  - CAPTURE&#10;  + DRIVE)">def test_reverse_flag_clears_before_any_next_operation():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+        g=reverse_guard()
+        following=GroundOperation("DRIVE_TO_XY",(0.,-1.7),(0.,-1.8),math.pi/2,math.pi/2,0.,"test",.7,.1)
+        g._load_operations((following,),"observation",0.)
+        assert not g.reverse_segment
+        assert g._linear_request(0.)&gt;0.
+        g._load_operations((),"observation",0.)
+&gt;       assert not g.reverse_segment and g.phase=="CAPTURE"
+E       AssertionError: assert (not False and 'DRIVE' == 'CAPTURE'
+E        +  where False = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB807D0&gt;.reverse_segment
+E         
+E         - CAPTURE
+E         + DRIVE)
+
+tests\test_ground_three_point_axis.py:102: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_turn_and_settle_aim_at_body_north_not_destination_south" time="0.016"><failure message="AssertionError: assert 0.0 &gt; 0&#10; +  where 0.0 = MotionDecision(linear_x=0.0, state='STOP', reason='approach_heading_limit', angular_z=0.0).angular_z&#10; +    where MotionDecision(linear_x=0.0, state='STOP', reason='approach_heading_limit', angular_z=0.0) = step(wall_s=0.05)&#10; +      where step = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80CD0&gt;.step">def test_reverse_turn_and_settle_aim_at_body_north_not_destination_south():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+        g=reverse_guard()
+        reverse=g.operations[0]
+        turn=GroundOperation("TURN_ONLY",None,(0.,-1.8),0.,math.pi/2,math.pi/2,"reverse_aim",.7)
+        refresh(g,.05,x=0.,y=-1.8,yaw=0.)
+        g._load_operations((turn,reverse),"entry",.05)
+        assert g.target_yaw==pytest.approx(math.pi/2)
+&gt;       assert g.step(wall_s=.05).angular_z&gt;0
+E       AssertionError: assert 0.0 &gt; 0
+E        +  where 0.0 = MotionDecision(linear_x=0.0, state='STOP', reason='approach_heading_limit', angular_z=0.0).angular_z
+E        +    where MotionDecision(linear_x=0.0, state='STOP', reason='approach_heading_limit', angular_z=0.0) = step(wall_s=0.05)
+E        +      where step = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80CD0&gt;.step
+
+tests\test_ground_three_point_axis.py:113: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw0]" time="1.513"><failure message="AssertionError: assert False&#10; +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_2', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_2', 'stationary_epoch': 2, ...}], epoch=2)&#10; +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB816D0&gt;.register_prepared_jobs&#10; +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB816D0&gt;.stationary_epoch">draw = ('ground_2', 'ground_0', 'ground_4')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+        run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+        for index,target in enumerate(draw):
+&gt;           sent+=run.recognise();epochs.append(run.guard.stationary_epoch)
+                  ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:44: in recognise
+    _, results = fixture_jobs(self)
+                 ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+run = &lt;test_ground_three_point_axis.AxisRun object at 0x000002177BB80E10&gt;
+category = 'trapped_people'
+
+    def fixture_jobs(run, *, category="trapped_people"):
+        state = run.guard
+        jobs, results = [], []
+        board, size, _ = api()._POINTS[state.target_id]
+        for index, frame in enumerate(state.capture_frames):
+            record, pose = frame["record"], frame["record"]["odom"]
+            result = candidate_result(state.target_id, category, stamp=record["stamp_s"], seq=index)
+            result["job"].update(pose=deepcopy(pose), camera_info=deepcopy(frame["camera_info"]),
+                K=[[476.7, 0., 400.5], [0., 476.7, 400.5], [0., 0., 1.]], stationary_epoch=state.stationary_epoch)
+            yaw = api().yaw_from_q(pose["quaternion"])
+            def local(point):
+                x, y = point[0]-pose["position"][0], point[1]-pose["position"][1]
+                return [math.cos(yaw)*x+math.sin(yaw)*y, -math.sin(yaw)*x+math.cos(yaw)*y]
+            row = result["matcher"]["candidates"][0]
+            row["body_plane_center_forward_left_m"] = local(board)
+            row["body_plane_quad_forward_left_m"] = [local((board[0]+x*size[0]/2, board[1]+y*size[1]/2))
+                                                    for x, y in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
+            jobs.append({**deepcopy(result["job"]), "source_jpeg": b"unit-fixture-never-submitted-to-real-worker"})
+            results.append(result)
+&gt;       assert state.register_prepared_jobs(jobs, epoch=state.stationary_epoch)
+E       AssertionError: assert False
+E        +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_2', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_2', 'stationary_epoch': 2, ...}], epoch=2)
+E        +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB816D0&gt;.register_prepared_jobs
+E        +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB816D0&gt;.stationary_epoch
+
+tests\test_ground_single_point.py:68: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw1]" time="1.184"><failure message="AssertionError: assert False&#10; +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_4', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_4', 'stationary_epoch': 2, ...}], epoch=2)&#10; +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB81810&gt;.register_prepared_jobs&#10; +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB81810&gt;.stationary_epoch">draw = ('ground_4', 'ground_3', 'ground_2')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+        run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+        for index,target in enumerate(draw):
+&gt;           sent+=run.recognise();epochs.append(run.guard.stationary_epoch)
+                  ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:44: in recognise
+    _, results = fixture_jobs(self)
+                 ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+run = &lt;test_ground_three_point_axis.AxisRun object at 0x000002177BB80CD0&gt;
+category = 'trapped_people'
+
+    def fixture_jobs(run, *, category="trapped_people"):
+        state = run.guard
+        jobs, results = [], []
+        board, size, _ = api()._POINTS[state.target_id]
+        for index, frame in enumerate(state.capture_frames):
+            record, pose = frame["record"], frame["record"]["odom"]
+            result = candidate_result(state.target_id, category, stamp=record["stamp_s"], seq=index)
+            result["job"].update(pose=deepcopy(pose), camera_info=deepcopy(frame["camera_info"]),
+                K=[[476.7, 0., 400.5], [0., 476.7, 400.5], [0., 0., 1.]], stationary_epoch=state.stationary_epoch)
+            yaw = api().yaw_from_q(pose["quaternion"])
+            def local(point):
+                x, y = point[0]-pose["position"][0], point[1]-pose["position"][1]
+                return [math.cos(yaw)*x+math.sin(yaw)*y, -math.sin(yaw)*x+math.cos(yaw)*y]
+            row = result["matcher"]["candidates"][0]
+            row["body_plane_center_forward_left_m"] = local(board)
+            row["body_plane_quad_forward_left_m"] = [local((board[0]+x*size[0]/2, board[1]+y*size[1]/2))
+                                                    for x, y in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
+            jobs.append({**deepcopy(result["job"]), "source_jpeg": b"unit-fixture-never-submitted-to-real-worker"})
+            results.append(result)
+&gt;       assert state.register_prepared_jobs(jobs, epoch=state.stationary_epoch)
+E       AssertionError: assert False
+E        +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_4', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_4', 'stationary_epoch': 2, ...}], epoch=2)
+E        +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB81810&gt;.register_prepared_jobs
+E        +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB81810&gt;.stationary_epoch
+
+tests\test_ground_single_point.py:68: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_handoff_cannot_expand_or_reset_fixed_rotation_budget" time="1.151"><failure message="AssertionError: assert False&#10; +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_0', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_0', 'stationary_epoch': 2, ...}], epoch=2)&#10; +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80E10&gt;.register_prepared_jobs&#10; +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80E10&gt;.stationary_epoch">def test_handoff_cannot_expand_or_reset_fixed_rotation_budget():
+&gt;       run=AxisRun();run.recognise();run.declare()
+                      ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point.py:44: in recognise
+    _, results = fixture_jobs(self)
+                 ^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+run = &lt;test_ground_three_point_axis.AxisRun object at 0x000002177BD995B0&gt;
+category = 'trapped_people'
+
+    def fixture_jobs(run, *, category="trapped_people"):
+        state = run.guard
+        jobs, results = [], []
+        board, size, _ = api()._POINTS[state.target_id]
+        for index, frame in enumerate(state.capture_frames):
+            record, pose = frame["record"], frame["record"]["odom"]
+            result = candidate_result(state.target_id, category, stamp=record["stamp_s"], seq=index)
+            result["job"].update(pose=deepcopy(pose), camera_info=deepcopy(frame["camera_info"]),
+                K=[[476.7, 0., 400.5], [0., 476.7, 400.5], [0., 0., 1.]], stationary_epoch=state.stationary_epoch)
+            yaw = api().yaw_from_q(pose["quaternion"])
+            def local(point):
+                x, y = point[0]-pose["position"][0], point[1]-pose["position"][1]
+                return [math.cos(yaw)*x+math.sin(yaw)*y, -math.sin(yaw)*x+math.cos(yaw)*y]
+            row = result["matcher"]["candidates"][0]
+            row["body_plane_center_forward_left_m"] = local(board)
+            row["body_plane_quad_forward_left_m"] = [local((board[0]+x*size[0]/2, board[1]+y*size[1]/2))
+                                                    for x, y in ((-1, -1), (1, -1), (1, 1), (-1, 1))]
+            jobs.append({**deepcopy(result["job"]), "source_jpeg": b"unit-fixture-never-submitted-to-real-worker"})
+            results.append(result)
+&gt;       assert state.register_prepared_jobs(jobs, epoch=state.stationary_epoch)
+E       AssertionError: assert False
+E        +  where False = register_prepared_jobs([{'job_seq': 0, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_0', 'stationary_epoch': 2, ...}, {'jo... ...}, {'job_seq': 2, 'session_id': 'test-current-session', 'frozen_first_ID': 'ground_0', 'stationary_epoch': 2, ...}], epoch=2)
+E        +    where register_prepared_jobs = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80E10&gt;.register_prepared_jobs
+E        +    and   2 = &lt;inspection_mission.ground_three_point_axis.GroundThreePointAxisGuard object at 0x000002177BB80E10&gt;.stationary_epoch
+
+tests\test_ground_single_point.py:68: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_entry_without_current_visual_still_locks_stop" time="0.011" /><testcase classname="tests.test_ground_three_point_axis" name="test_actual_adapter_tick_publishes_signed_negative_and_rebinds_coordinator" time="0.060" /></testsuite></testsuites>

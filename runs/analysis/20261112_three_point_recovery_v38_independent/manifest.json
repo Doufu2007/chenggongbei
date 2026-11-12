@@ -1,0 +1,104 @@
+{
+  "schema": "v38_independent_platform_review_manifest_v1",
+  "date": "2026-11-12",
+  "workspace": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯",
+  "scope": "Raw callback transport/core/bundle binding; recovery resource; source/prior/stationarity; motion and callback timing audit",
+  "constraints": {
+    "official_score_extracted": false,
+    "sift_reexecuted": false,
+    "production_modified_by_this_audit": false,
+    "upload_performed": false,
+    "simulation_started": false
+  },
+  "observations": {
+    "raw_sha256": "ba8cc75e76b677ba5ef4e11861c2bc9af2c9b0033f1a08dc718b280cb1060854",
+    "session_id": "a9ae0375a2e243a8b34f817899a482c5",
+    "stop_reason": "single_point_visual_binding_rejected",
+    "completed_points": 0,
+    "resume_count": 1,
+    "camera_recovery_exercised": false,
+    "full_retry_capacity_exercised": false
+  },
+  "files": [
+    {
+      "path": "runs/evidence/20261112/callback_three_point_recovery_v38.jsonl",
+      "bytes": 561581,
+      "sha256": "ba8cc75e76b677ba5ef4e11861c2bc9af2c9b0033f1a08dc718b280cb1060854"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38/bundle.json",
+      "bytes": 1318173,
+      "sha256": "afcfba01f4392e55bb53450295bb4cb69d1de57354e18aafa4bf91b4c623f15a"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38/point_0_capture_0.jpg",
+      "bytes": 40897,
+      "sha256": "54afd63dd473ee1e3a229d628c40789ef269102a4486c90d625d173125323e02"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38/point_0_capture_1.jpg",
+      "bytes": 40814,
+      "sha256": "c9a402376573089ef387ce7d6eb895319b510c1fe7b7db55a08b6dc332513855"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38/point_0_capture_2.jpg",
+      "bytes": 40814,
+      "sha256": "41bef8bcc49d5a95c1dc79f21bebda9b9da275eb4f3f8464ac14b1e9106b2515"
+    },
+    {
+      "path": "tools/analyze_ground_three_point_evidence.py",
+      "bytes": 7354,
+      "sha256": "b1e55f279af83b7072d08c4917efe1e0bd38e16c2709e5f1e0b3f580a14968cb"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_axis_v35/analyze.py",
+      "bytes": 38628,
+      "sha256": "4b502e022599daf7611f895e1dbc7e5680ee1e31bc563dcd5da93952deedffcb"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "bytes": 42543,
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/audit.py",
+      "bytes": 11100,
+      "sha256": "8342216b2014c71d4458d8f5a88282c88cc588e404937642f3e5a3c5a0fedbdc"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/summary.json",
+      "bytes": 3835,
+      "sha256": "ac119c9136009d86dc922537f6453b4e0b98d5c778dff293512020c1a225bd40"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/resource_audit.json",
+      "bytes": 4577,
+      "sha256": "9b8d25370501fed2da8c2d764875bd89e1d6568abe547b649c582ad83eaa6d76"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/motion_audit.json",
+      "bytes": 58685,
+      "sha256": "b150104974d8bd703bfbc1833cf34044cc8c77d748e2e55bcb02746d7795202a"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/capture_source_audit.json",
+      "bytes": 3741,
+      "sha256": "3719912b01df3a26d2673a158e856a7d2917d3083f43a34c5a96dddf6529895c"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/timing_audit.json",
+      "bytes": 6920,
+      "sha256": "ff818a8997c4d5325de598e9531ab7467ecc952c4f0b0d6e3b84794ff0e868b7"
+    },
+    {
+      "path": "runs/analysis/20261112_three_point_recovery_v38_independent/operation_rates.json",
+      "bytes": 2120,
+      "sha256": "ddbe289912143d8ac1cb16a8b6e4ef1997ba70b79a0478e4d146cc6af44a323e"
+    },
+    {
+      "path": "docs/ground_three_point_recovery_v38_independent_platform_analysis_20261112.md",
+      "bytes": 4878,
+      "sha256": "2be90d95c0ff88a6c65ec64818b8f8323f63c99103526d2f5e2d597f8f90da63"
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="14" skipped="0" tests="14" time="1.120" timestamp="2026-11-12T05:32:59.986027+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_real_payloads_keep_native_bytes_attempts_raw_status_and_no_score_inference" time="0.095"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_real_payloads_keep_native0')
+
+    def test_real_payloads_keep_native_bytes_attempts_raw_status_and_no_score_inference(tmp_path):
+        values,raw=single_point_payloads();before=deepcopy(values)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_real_payloads_keep_native0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_mixed_old_route_mode_is_rejected_without_relabelling[source]" time="0.012"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r0')
+scope = 'source'
+
+    @pytest.mark.parametrize('scope',['source','metadata','approach'])
+    def test_mixed_old_route_mode_is_rejected_without_relabelling(tmp_path,scope):
+        values,_=single_point_payloads()
+        if scope=='source':values[0]['mode']='ground_observation_route'
+        elif scope=='metadata':values[2]['survey']['mode']='ground_observation_route'
+        else:values[2]['survey']['approach']['mode']='ground_observation_route'
+&gt;       assert analyze(tmp_path,values)['status']=='invalid'
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r0')
+values = [{'mode': 'ground_observation_route', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'m......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_mixed_old_route_mode_is_rejected_without_relabelling[metadata]" time="0.010"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r1')
+scope = 'metadata'
+
+    @pytest.mark.parametrize('scope',['source','metadata','approach'])
+    def test_mixed_old_route_mode_is_rejected_without_relabelling(tmp_path,scope):
+        values,_=single_point_payloads()
+        if scope=='source':values[0]['mode']='ground_observation_route'
+        elif scope=='metadata':values[2]['survey']['mode']='ground_observation_route'
+        else:values[2]['survey']['approach']['mode']='ground_observation_route'
+&gt;       assert analyze(tmp_path,values)['status']=='invalid'
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r1')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_mixed_old_route_mode_is_rejected_without_relabelling[approach]" time="0.010"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r2')
+scope = 'approach'
+
+    @pytest.mark.parametrize('scope',['source','metadata','approach'])
+    def test_mixed_old_route_mode_is_rejected_without_relabelling(tmp_path,scope):
+        values,_=single_point_payloads()
+        if scope=='source':values[0]['mode']='ground_observation_route'
+        elif scope=='metadata':values[2]['survey']['mode']='ground_observation_route'
+        else:values[2]['survey']['approach']['mode']='ground_observation_route'
+&gt;       assert analyze(tmp_path,values)['status']=='invalid'
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:79: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_mixed_old_route_mode_is_r2')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation0]" time="0.011"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core0')
+mutation = {'partial': False}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': False, ...}, {'mode'......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation1]" time="0.010"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core1')
+mutation = {'official_acceptance': True}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core1')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation2]" time="0.009"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core2')
+mutation = {'full_mission_complete': True}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core2')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation3]" time="0.012"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core3')
+mutation = {'match_results': {}}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core3')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation4]" time="0.016"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core4')
+mutation = {'recognition_status': {}}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core4')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_invalid_single_point_core_claim_or_container_is_explicitly_invalid[mutation5]" time="0.011"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core5')
+mutation = {'attempts': []}
+
+    @pytest.mark.parametrize('mutation',[{'partial':False},{'official_acceptance':True},
+        {'full_mission_complete':True},{'match_results':{}},{'recognition_status':{}},{'attempts':[]}])
+    def test_invalid_single_point_core_claim_or_container_is_explicitly_invalid(tmp_path,mutation):
+        values,_=single_point_payloads();values[0].update(mutation)
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_invalid_single_point_core5')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_missing_dedicated_core_retains_embedded_evidence_and_marks_partial" time="0.013"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_missing_dedicated_core_re0')
+
+    def test_missing_dedicated_core_retains_embedded_evidence_and_marks_partial(tmp_path):
+&gt;       values,_=single_point_payloads();result=analyze(tmp_path,values[1:])
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:92: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_missing_dedicated_core_re0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'section': 'ground_motion_full'......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_conflicting_dedicated_and_embedded_attempts_remain_visible" time="0.014"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_conflicting_dedicated_and0')
+
+    def test_conflicting_dedicated_and_embedded_attempts_remain_visible(tmp_path):
+        values,_=single_point_payloads();values[2]['survey']['approach']['single_point']['attempts']['recognition']['sent']=False
+&gt;       result=analyze(tmp_path,values)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_conflicting_dedicated_and0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_conflicting_duplicate_core_and_unknown_field_preserve_raw_observations" time="0.015"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_conflicting_duplicate_cor0')
+
+    def test_conflicting_duplicate_core_and_unknown_field_preserve_raw_observations(tmp_path):
+        values,_=single_point_payloads();different=deepcopy(values[0]);different['attempts']['recognition']['sent']=False
+        different['future_diagnostic']={'kept':'exactly'}
+&gt;       values.insert(1,different);result=analyze(tmp_path,values)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:111: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_conflicting_duplicate_cor0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'point'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_new_mode_cannot_enter_old_route_analyzer_and_uses_explicit_route_capacity" time="0.045"><failure message="AssertionError: explicit single-point analyzer is missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')&#10; +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_new_mode_cannot_enter_old0')
+
+    def test_new_mode_cannot_enter_old_route_analyzer_and_uses_explicit_route_capacity(tmp_path):
+        values,_=single_point_payloads();source=write_events(tmp_path/'point.jsonl',[event('probe_snapshot',values[0])])
+        old=importlib.import_module('tools.analyze_ground_observation_route_evidence').analyze_file(source,tmp_path/'old')
+        assert old['status']=='invalid'
+        fragments=[]
+        for offset in range(0,14000,300):
+            fragment=series('actual_commands',[[0.,10.,0.,0.,'WAIT']for _ in range(min(300,14000-offset))],offset,14000)
+            fragment['mode']=MODE;fragments.append(fragment)
+&gt;       good=analyze(tmp_path,fragments,name='capacity')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_analyze_ground_single_point_evidence.py:126: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-737/test_new_mode_cannot_enter_old0')
+values = [{'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, {'mode':......}, {'mode': 'ground_single_point', 'read_only': False, 'official_scoring': 'unverified', 'partial': True, ...}, ...]
+name = 'capacity'
+
+    def analyze(tmp_path,values,name='point'):
+        name_module='tools.analyze_ground_single_point_evidence'
+&gt;       assert importlib.util.find_spec(name_module) is not None,'explicit single-point analyzer is missing'
+E       AssertionError: explicit single-point analyzer is missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x0000018F4C97B1A0&gt;('tools.analyze_ground_single_point_evidence')
+E        +    where &lt;function find_spec at 0x0000018F4C97B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_analyze_ground_single_point_evidence.py:44: AssertionError</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,39 @@
+{
+  "success": true,
+  "data": {
+    "list": [
+      {
+        "id": "5038ac33-4026-490a-8c1e-5b682b2a2f06",
+        "userId": "<redacted>",
+        "scenarioKey": "inspection",
+        "scenarioName": "城市应急全域巡检仿真",
+        "fileKey": "ros-evaluation/<account-id-redacted>/1794427168580_rinq7wdyz8t_inspection_ground_odom_qos_v18_src_f82df6f6.zip",
+        "fileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794427168580_rinq7wdyz8t_inspection_ground_odom_qos_v18_src_f82df6f6.zip",
+        "fileName": "inspection_ground_odom_qos_v18_src.zip",
+        "fileSize": "107155",
+        "fileType": "zip",
+        "note": "v18单变量QoS对照：仅/odom订阅RELIABLE→BEST_EFFORT，depth=1/durability及其余QoS不变；沿用v17计时、原同步守卫、.20m/.03mps/90s和所有freshness/净空/预算。1079本地检查通过。不发送识别、到点、飞行或完成，不声称得分。",
+        "status": "running",
+        "result": "已推送到测评服务器，排队中…",
+        "score": null,
+        "runId": "run_20261112_035930_d1431193",
+        "durationMs": "0",
+        "submissionNo": "#88131099",
+        "hasLogs": false,
+        "scriptFileName": "run_ground_odom_qos_v18.sh",
+        "scriptFileKey": "ros-evaluation/<account-id-redacted>/1794427168860_rinq7wdyz8t_run_ground_odom_qos_v18_92f350de.sh",
+        "scriptFileUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/ros-evaluation/<account-id-redacted>/1794427168860_rinq7wdyz8t_run_ground_odom_qos_v18_92f350de.sh",
+        "failedReason": null,
+        "createdAt": "2026-11-12 03:59:29.065808+08",
+        "updatedAt": "2026-11-12 03:59:33.599672+08"
+      }
+    ],
+    "total": 22,
+    "page": 1,
+    "pageSize": 1,
+    "serverDown": false,
+    "serverStatus": "up",
+    "resubmittedCount": 0,
+    "pendingResubmitHint": ""
+  }
+}

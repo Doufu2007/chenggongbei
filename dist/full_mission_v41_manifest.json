@@ -1,0 +1,396 @@
+{
+  "kind": "full_inspection_practice_candidate",
+  "full_mission_platform_verified": false,
+  "source": {
+    "path": "dist\\inspection_full_mission_v41_src.zip",
+    "bytes": 13378153,
+    "sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d"
+  },
+  "script": {
+    "path": "dist\\run_full_mission_v41.sh",
+    "sha256": "7eeb6f05399bdfd82b538322065fa0fb9a2e4404ac5576ac986716a729b50309"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/config/inspection.yaml",
+      "bytes": 1257,
+      "sha256": "9696747f1a0a880467e583a483a9260e33dba362761aacc4559b4c6ebda96329"
+    },
+    {
+      "path": "src/inspection_mission/config/interface_profile.json",
+      "bytes": 1684,
+      "sha256": "4de364403fc0b25afe0a3580ea11aeb84b9fb3bdc8001aeeee38a1fd80d007e2"
+    },
+    {
+      "path": "src/inspection_mission/config/mission_plan.json",
+      "bytes": 1957,
+      "sha256": "28df78ebe339fed6b20b97124436ae27ed764fca792a42cced7c3e648f759415"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/__init__.py",
+      "bytes": 84,
+      "sha256": "b0a720bb465b663f1c94cfc495f0fbdad71632b9dc8615cd2503b60ccd3a8635"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/flight_templates/manifest.json",
+      "bytes": 1969,
+      "sha256": "1f9ae326f417a5a6ee996b09731da1dee9a33f0acb6105254f8d2f921eae7e95"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/flight_templates/window_bird_01.jpg",
+      "bytes": 34614,
+      "sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/flight_templates/window_bird_02.jpg",
+      "bytes": 24606,
+      "sha256": "8eb1b2ac13851cecaaada1602f4c20e7c993849db05b29aea612a1b4cbcb76f2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/flight_templates/window_target_1.jpg",
+      "bytes": 57883,
+      "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/flight_templates/window_target_2.jpg",
+      "bytes": 42160,
+      "sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/collapsed_ruins_02.jpg",
+      "bytes": 252690,
+      "sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/damaged_vehicle_01.png",
+      "bytes": 3126947,
+      "sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_01.jpg",
+      "bytes": 335117,
+      "sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_02.jpg",
+      "bytes": 276459,
+      "sha256": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/manifest.json",
+      "bytes": 3384,
+      "sha256": "c78ddcdd8e194f484607c9e5a0029f6839bf7816da8fb572ab302318ba670352"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_01.png",
+      "bytes": 2586531,
+      "sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_02.jpg",
+      "bytes": 246274,
+      "sha256": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_01.png",
+      "bytes": 2475363,
+      "sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_02.jpg",
+      "bytes": 177638,
+      "sha256": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates_recovered/collapsed_ruins_01.png",
+      "bytes": 3270491,
+      "sha256": "e5ed0aaf0b9b4432c262bec0255da90dbccb30bbf05479b70df1a98dafc169b2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates_recovered/damaged_vehicle_02.jpg",
+      "bytes": 276074,
+      "sha256": "dbb9a48f44f4b63e27ebdba53343af120cae8d4ef27d1cc82a5bf4407d954026"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/assets/ground_templates_recovered/manifest.json",
+      "bytes": 1090,
+      "sha256": "a3fc7ff4f204b88ffdbb82a01e04769a6f6aecdcfaf9ea1a0cb47d51286c4822"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_cruise_height.py",
+      "bytes": 26956,
+      "sha256": "65408ea8d17f2cb1629eef1a1509b68e547ed1392c2c2c086fbd47ca2ee1b96d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_ground_probe.py",
+      "bytes": 46104,
+      "sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+      "bytes": 17759,
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "bytes": 33793,
+      "sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_trim.py",
+      "bytes": 15195,
+      "sha256": "54744be026c23d43bfe8dba5686ffd7d25d9028a8d4eaf06e667501b5984d89c"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/control.py",
+      "bytes": 3286,
+      "sha256": "98ec05057a81f7ce9f3ff615a05100af2f86b351acfcc0962c296dcc0bc3b9f5"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/cruise_cloud_capture.py",
+      "bytes": 16663,
+      "sha256": "73f7e51481880309f9ec416ca7cf60009ab37e3d91770e8d40c42a7262c5c902"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/envelope.py",
+      "bytes": 1927,
+      "sha256": "4c2c18fac681a134cacd5ba4337f941c62b2b3667f3af291467c738674746839"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/floor_plane_detector.py",
+      "bytes": 10185,
+      "sha256": "a0ae1f6eb8e9950e69eb0e4a7bceffef32abeb1809c51901b6266b2bdbcdafd9"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/fsm.py",
+      "bytes": 3386,
+      "sha256": "739ed6727f58d2c875a8154e9ff3d69f470dce3fb7f8035e5067a4e354beef41"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/full_flight_inspection.py",
+      "bytes": 63848,
+      "sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/full_inspection_runtime.py",
+      "bytes": 7826,
+      "sha256": "f8fe6bb1be6d43782d4f844ce65697ac36617d3cb7caa14ed54e218c87b1d5f5"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/geometry_runtime.py",
+      "bytes": 8083,
+      "sha256": "88c50aba2bc03a9bc2f2b4709b447e9956fed421a00c628f53c2ed2502af8939"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_bounded_approach.py",
+      "bytes": 32818,
+      "sha256": "4290b53179c00cf5c52f37b3f8a91adb86539c3295248e9e93aea013390086a9"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_bounded_approach_sync.py",
+      "bytes": 9315,
+      "sha256": "6c4f5c5b5d12fff3c7311193381155b3799305be031bd41e556b5a4b0e60be3b"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_callback_timing.py",
+      "bytes": 7753,
+      "sha256": "eca410cbe4f66c243c2e60ef4641b2b725ab054bef1b47b63b29df18d8240b16"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_direction_response.py",
+      "bytes": 28604,
+      "sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_match_result_recorder.py",
+      "bytes": 5064,
+      "sha256": "46871282184487d3ad859e65b3e93c0a74cc325a297b9ad0eb8808d2be1e6022"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_matcher_worker.py",
+      "bytes": 13765,
+      "sha256": "d50ae59a24f11d80ca566193cf63e254eb5c55846eff278def24905b96735ec8"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "bytes": 22825,
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route_plan.py",
+      "bytes": 7360,
+      "sha256": "c2805ab778833df505c68d65eadb3f8c5e2dd9865ac3de9af2a8fc4d07c33913"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_survey.py",
+      "bytes": 28553,
+      "sha256": "e52fc4d142756b7e125c7249af3646772980e2f5bf424ec4e21faabf31e18856"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_odom_qos.py",
+      "bytes": 2269,
+      "sha256": "8569c30561a90fb4c43f8ea8578e81d6443e2c3c523b6a2a20d9182a74a5794f"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_plane_matcher.py",
+      "bytes": 16610,
+      "sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_relocated_reverse.py",
+      "bytes": 23269,
+      "sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_return_plan.py",
+      "bytes": 1287,
+      "sha256": "a4f4709b7b2dbcbd752fe9cf15307c9c1f56e74cd119dece7bc6afee79cb9a1d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_reverse_response.py",
+      "bytes": 7065,
+      "sha256": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_short_drive.py",
+      "bytes": 15298,
+      "sha256": "d1e1c5b0528cc6fb2db70729f80bc17d6659c40e5a17e250755cbec055b32b4e"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "bytes": 42543,
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_speed_calibration.py",
+      "bytes": 12262,
+      "sha256": "98437fe45a1aaeee73a1ff6bf9976955acffeff99d135740109ffa27d220fc43"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_template_catalog.py",
+      "bytes": 3284,
+      "sha256": "3e1f4b5a2a989d9cbc5d948c4dfc055cbe3761339c19191aa72d2f71bcbec780"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "bytes": 33185,
+      "sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis.py",
+      "bytes": 21838,
+      "sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis_plan.py",
+      "bytes": 3682,
+      "sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_camera_recovery.py",
+      "bytes": 21369,
+      "sha256": "2c7addc67afda66e4aab53b1796dc0537756fb6ffd907647eb998a6699b809ee"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "bytes": 11401,
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_recovery_budget.py",
+      "bytes": 9829,
+      "sha256": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_return.py",
+      "bytes": 14299,
+      "sha256": "b70cd5dde22054cae748cbb6bfcff7e26c5b40c5ba80f1760c8b2aac355d79dc"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/height_runtime_timing.py",
+      "bytes": 8173,
+      "sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/mission.py",
+      "bytes": 42528,
+      "sha256": "f6142ef086ed8da35f120c3cbfb1be74304672df3e3adfa1088c9ec379c47822"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/mission_node.py",
+      "bytes": 33608,
+      "sha256": "d63a5bd00015d823fb50975618a050e4117cd02d6b405cee8e83e9cac8b6f7b2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/official_protocol.py",
+      "bytes": 1811,
+      "sha256": "f38cbe319daefb6782985737f8eb213c2ee5cd4703ab8cd47f4c24175774ff7d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/perception.py",
+      "bytes": 17409,
+      "sha256": "58e32b3226f9711589b83e538d93699f66341d89732eb17ec3b4dbeb8ac2eb63"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/probe.py",
+      "bytes": 18960,
+      "sha256": "4f15f94540a2ad0256067bd513bcbd1d41cd61445c903f731cc66c8f9ae437c8"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/protocol.py",
+      "bytes": 10678,
+      "sha256": "2ab3245dfdd7a7edf210988560ba265ad1dd306ce7b81ff6926fdea417348ae1"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/runtime.py",
+      "bytes": 19165,
+      "sha256": "74069f278e2d85f5bd31846a4ad3f2b7c75056c5cdb0aaf953c3c833c21569c6"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/target_geometry.py",
+      "bytes": 21178,
+      "sha256": "716fdee7bc72d563c1be4102c859ee587fc011293aeec98f901b9eaa1f2faea6"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/telemetry.py",
+      "bytes": 6437,
+      "sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/validation.py",
+      "bytes": 7244,
+      "sha256": "20e0bad0090a1c26cff5e5543a6036568a6382be036912383961ba90b769c0d2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/vision_core.py",
+      "bytes": 11642,
+      "sha256": "3703cd28b813e74a29c4034964089bb7adcc560ac4481d1d76333741546b90c2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/vision_node.py",
+      "bytes": 8659,
+      "sha256": "fea4dcd0bb4ba03b336e785fe964c13acde7930365d481d94a50a286efd9bab5"
+    },
+    {
+      "path": "src/inspection_mission/package.xml",
+      "bytes": 884,
+      "sha256": "9f9357ab43b89a1f263d1b4449c7f559f2c201b60121e558a8fa3fa12d7e60da"
+    },
+    {
+      "path": "src/inspection_mission/resource/inspection_mission",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/inspection_mission/setup.cfg",
+      "bytes": 105,
+      "sha256": "a993ad22467cc116906926462fc917d3c88cb95d50477d74be77d457b90505c7"
+    },
+    {
+      "path": "src/inspection_mission/setup.py",
+      "bytes": 838,
+      "sha256": "a313a8b80757d87fd7ea3d4afc1911f36a2854228f871e646ebd48e5df0c6c10"
+    }
+  ],
+  "diagnostics": "temporary_team_receiver_configured_only_in_launch_script"
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "interface_probe",
+  "created_for": "practice_only",
+  "archive": "inspection_probe_callback_src.zip",
+  "script": "run_interface_probe_callback.sh",
+  "callback_url_persisted_in_temporary_script": true,
+  "callback_evidence_is_score": false,
+  "files": {
+    "inspection_probe_callback_src.zip": {
+      "bytes": 48713,
+      "sha256": "f89f6ee051a82026463a9ac92366cc8b813cf93246e8fc47d0591f2ad3d9a159"
+    },
+    "run_interface_probe_callback.sh": {
+      "bytes": 3280,
+      "sha256": "9fd1f777569f5ce01774882d96d1037812ff7c47401f0d87d0ef7de62986f526"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_id": "c4202874-407a-4361-844a-0f95ba7b1d7f",
+  "runId": "run_20261112_060713_501f412f",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "single-point-v25",
+  "status": "success",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_single_point_v25_src.zip",
+    "sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e"
+  },
+  "script": {
+    "path": "dist/run_single_point_v25.sh",
+    "sha256": "79d9cf1f4e980599c9e2ee8cae061a8ecc9828678aa92cac2c652fcb6fef8c5f"
+  },
+  "draw_order": ["ground_0", "ground_3", "ground_2"],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "ground_points": {
+      "ground_0": 10,
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "ground_4": null
+    },
+    "total": 10,
+    "manual": null
+  },
+  "duration_s": 275.179,
+  "failure_reason": null,
+  "evidence_paths": [
+    "runs/evidence/20261112/single_point_v25_submission.json",
+    "runs/evidence/20261112/single_point_v25_artifacts.json",
+    "runs/evidence/20261112/single_point_v25_list_final.json",
+    "runs/evidence/20261112/single_point_v25_official_success.png",
+    "runs/evidence/20261112/callback_single_point_v25.jsonl",
+    "runs/analysis/20261112_single_point_v25_independent/summary.json",
+    "runs/review/20261112_single_point_v25/independent_metrics.json",
+    "docs/platform_single_point_v25_independent_20261112.md"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "src/inspection_mission/inspection_mission/full_flight_inspection.py": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+  "src/inspection_mission/inspection_mission/floor_plane_detector.py": "ce852363945a49c3056201a3ae0a66e358149851fafd909ffc3fb2a224c80748",
+  "tools/analyze_ground_three_point_evidence.py": "888eeaa2c54d0aee9e5cc524e867c0f797b02ec6485ddd33f4479b22fc81a68b",
+  "tests/test_ground_three_point_evidence.py": "e79fa9026eca71cb92a7a3c174fc4d8b5a0ea5afa15f6a39b2ae639e14c21a61"
+}

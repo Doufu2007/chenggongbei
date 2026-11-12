@@ -1,0 +1,28 @@
+{
+  "kind": "bounded_ground_motion_practice",
+  "created_at": "2026-11-11T17:00:30.957132+00:00",
+  "read_only": false,
+  "official_scoring": "unverified",
+  "formal_submission": false,
+  "limits": {
+    "speed_mps": 0.03,
+    "pulse_wall_s": 1.0,
+    "max_displacement_m": 0.06,
+    "body_radius_m": 0.447,
+    "scan_offset_bound_m": 0.114,
+    "clearance_m": 0.02
+  },
+  "bounds_source": "public candidate static model, not a verified production platform profile",
+  "files": [
+    {
+      "path": "dist/inspection_ground_v6_src.zip",
+      "bytes": 69546,
+      "sha256": "4f170f3fbf74a68d76f0537cf9971966f342a0ad13bb3985645f1718dc2e79f4"
+    },
+    {
+      "path": "dist/run_ground_control_v6.sh",
+      "bytes": 2858,
+      "sha256": "b0108f2a12f612bead325254aff30da630da4bb547b1aa3c4225a00af9953084"
+    }
+  ]
+}

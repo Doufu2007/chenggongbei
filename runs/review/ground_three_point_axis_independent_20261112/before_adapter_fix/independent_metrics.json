@@ -1,0 +1,101 @@
+{
+  "source_sha256": "5ece68ce5b1460e0bb419bdc87b18b9212be749ebfa6ea35a368003ee7f24454",
+  "scope": "independent local software probes only",
+  "probes": {
+    "signed_factory_callback_tick": {
+      "pass": true,
+      "published": [
+        [
+          -0.03,
+          0.0
+        ]
+      ],
+      "progress_m": 0.0009999999999998899,
+      "body_yaw_rad": 1.5707963267948966
+    },
+    "dds_lost_during_later_graph_queries": {
+      "pass": false,
+      "observed": {
+        "actual_match_at_publish": 0,
+        "published": [
+          [
+            -0.03,
+            0.0
+          ]
+        ],
+        "guard_cached_match": 1,
+        "state": "DRIVE",
+        "reason": "route_drive"
+      },
+      "requirement": "actual loss during graph refresh must be rechecked before nonzero output"
+    },
+    "negative_publish_exception_zero_attempt": {
+      "pass": false,
+      "observed": {
+        "escaped_exception": "RuntimeError:independent negative publish failure",
+        "published_attempts": [
+          [
+            -0.03,
+            0.0
+          ]
+        ],
+        "state": "DRIVE",
+        "reason": "route_drive"
+      },
+      "requirement": "negative publish failure must lock stop and independently attempt zero"
+    },
+    "reverse_settle_reaim_and_flag_clear": {
+      "pass": true,
+      "reaim_target_rad": 1.5618078048292405,
+      "forward_request_positive": true
+    },
+    "alternate_order_visual_epoch_and_ledger": {
+      "pass": true,
+      "epochs": [
+        2,
+        5,
+        8
+      ],
+      "ledger_at_points": [
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 2.5489999999999964,
+          "rotation": 4.285135286067586,
+          "turn_wall": 76.0,
+          "drive_wall": 36.05
+        },
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 5.069499999999954,
+          "rotation": 14.714067829305026,
+          "turn_wall": 253.39999999999998,
+          "drive_wall": 70.10000000000001
+        },
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 9.943000000000172,
+          "rotation": 25.623762113703528,
+          "turn_wall": 438.4499999999999,
+          "drive_wall": 128.85000000000008
+        }
+      ],
+      "reason": "three_ground_transport_complete_official_score_unverified",
+      "actual_reverse_on_platform": "unverified"
+    }
+  }
+}

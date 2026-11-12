@@ -1,0 +1,62 @@
+{
+  "repository": "wbxxmz/ros2-car-first",
+  "commit": "48b3dac26b6f562ff21dd321db03fd6ffc91b492",
+  "templates": [
+    {
+      "file": "collapsed_ruins_02.jpg",
+      "class_id": "collapsed_ruins",
+      "sha256": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+      "size_bytes": 252690,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_02.jpg"
+    },
+    {
+      "file": "damaged_vehicle_01.png",
+      "class_id": "damaged_vehicle",
+      "sha256": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+      "size_bytes": 3126947,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_01.png"
+    },
+    {
+      "file": "landslide_01.jpg",
+      "class_id": "landslide",
+      "sha256": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+      "size_bytes": 335117,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_01.jpg"
+    },
+    {
+      "file": "landslide_02.jpg",
+      "class_id": "landslide",
+      "sha256": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+      "size_bytes": 276459,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/landslide_02.jpg"
+    },
+    {
+      "file": "rescue_camp_01.png",
+      "class_id": "rescue_camp",
+      "sha256": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+      "size_bytes": 2586531,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_01.png"
+    },
+    {
+      "file": "rescue_camp_02.jpg",
+      "class_id": "rescue_camp",
+      "sha256": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+      "size_bytes": 246274,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/rescue_camp_02.jpg"
+    },
+    {
+      "file": "trapped_people_01.png",
+      "class_id": "trapped_people",
+      "sha256": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+      "size_bytes": 2475363,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_01.png"
+    },
+    {
+      "file": "trapped_people_02.jpg",
+      "class_id": "trapped_people",
+      "sha256": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777",
+      "size_bytes": 177638,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/trapped_people_02.jpg"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "success": true,
+  "message": "源码已上传，正在推送到测评服务器，请稍后刷新查看结果",
+  "data": {
+    "id": "2208e026-e408-4119-8737-d9cab6c4a3b4",
+    "scenarioKey": "inspection",
+    "scenarioName": "城市应急全域巡检仿真",
+    "fileName": "inspection_ground_v7_src.zip",
+    "runId": "",
+    "status": "submitted",
+    "createdAt": "2026-11-11T17:10:50.964Z"
+  }
+}

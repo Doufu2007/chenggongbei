@@ -1,0 +1,49 @@
+{
+  "version": "single-point-v24",
+  "mode": "practice",
+  "official_task_success": false,
+  "revision": "ground_single_point_v1",
+  "basis": "frozen v23 archive plus independently reviewed single-point, worker, matcher and public image assets",
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "7f1ee2e6a4dfaeb9f05a557be4ea398f6dc121cf2bda2708664e0606c38845f0",
+    "src/inspection_mission/inspection_mission/ground_matcher_worker.py": "d50ae59a24f11d80ca566193cf63e254eb5c55846eff278def24905b96735ec8",
+    "src/inspection_mission/inspection_mission/ground_plane_matcher.py": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/collapsed_ruins_02.jpg": "200732c46709ed2d6fba5017ce7f56c8cc0908d60eed14b6063b84a9c37cba7f",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/damaged_vehicle_01.png": "76feb761210089a1c3885ce09024ea3da6e991c52fc4bd7cc3f13d7e28b1c13b",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_01.jpg": "2653c12e906773f388fde39fbee3633ede5531460bb1442096452c41fe10a30d",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/landslide_02.jpg": "f79dc767cacfd16dc8d3f989ec3ae1743f46c85bafca95223120e19c516cc689",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/manifest.json": "c78ddcdd8e194f484607c9e5a0029f6839bf7816da8fb572ab302318ba670352",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_01.png": "781d7c9e505a5a46c9177f584d5aff220560d28a290d1046a6378bcbb38bd014",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/rescue_camp_02.jpg": "b81c0269dc79776a10edcb54043b3e06a9188d5bbbf4b28ad951e4e998cb864a",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_01.png": "e31429ccbf79d3898bc24fe5fb5bd8faefbfc6c29d9fc0ed573f78db1fde90b7",
+    "src/inspection_mission/inspection_mission/assets/ground_templates/trapped_people_02.jpg": "b8aefe526d7d3a3a9045107aae75f0f9cbdcc190c5a61c9d27a9c67646308777"
+  },
+  "artifacts": [
+    {
+      "path": "dist/inspection_single_point_v24_src.zip",
+      "bytes": 9569290,
+      "sha256": "34ce51776c48b511792ca94819a408b219fe2b8b8dea542e27fa68d724e4f3a1"
+    },
+    {
+      "path": "dist/run_single_point_v24.sh",
+      "bytes": 2858,
+      "sha256": "69a5ccbc16b4fab46952cf0f01416816edab7282abad1e2f4b31a1efed01e6a6"
+    }
+  ],
+  "validation": {
+    "full_suite_passed": 1206,
+    "full_suite_failures": 0,
+    "full_suite_seconds": 95.43,
+    "junit": "dist/single_point_v24_full_suite_20261112.xml",
+    "bash_syntax": "passed"
+  },
+  "submission_status": "not_submitted_review_blocked",
+  "blocking_review": "runs/review/20261112_single_point_transport/independent_initial_behavior.xml",
+  "blocking_reasons": [
+    "large metadata transport",
+    "original job provenance missing",
+    "actual publish count inaccurate",
+    "worker error identity missing"
+  ]
+}

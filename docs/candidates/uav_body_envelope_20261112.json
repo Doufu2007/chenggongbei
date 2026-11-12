@@ -1,0 +1,20 @@
+{
+  "verified": false,
+  "kind": "public_static_engineering_candidate_not_a_launch_configuration",
+  "source_commit": "82b041043849a5d86e085390bf0df787366d98cd",
+  "source_world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "body_origin": "amphibious_drone/base_footprint",
+  "geometry_scope": "all public collision plus visual geometry, including visual-only rotors and emitter",
+  "plan_fragment": {
+    "robot_radius_m": 0.447,
+    "clearance_m": 0.03,
+    "uav_body_envelope": {
+      "below_origin_m": 0.068,
+      "above_origin_m": 0.166,
+      "max_tilt_rad": 0.05
+    }
+  },
+  "window_fragment_each": {"width_m": 1.0, "bottom": 0.4, "top": 1.15},
+  "engineering_test_settings_only": {"position_tolerance_m": 0.01, "window_z_tolerance_m": 0.04},
+  "note": "Not measured on the current platform. Default position_tolerance_m=0.08 is deliberately rejected for this aperture. The 0.01 test tolerance is explicit, not a controller default or evidence of achievable flight accuracy. Current body origin, dimensions, tilt, sensor coverage and synchronized pose/cloud timestamps must be confirmed before adoption. Production mission_plan.json and interface_profile.json remain unbound."
+}

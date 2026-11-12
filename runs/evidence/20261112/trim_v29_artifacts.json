@@ -1,0 +1,26 @@
+{
+  "version": "trim_v29",
+  "mode": "practice",
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "receiver_get_status": 405,
+  "test_event_written": false,
+  "source_files_sha256": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_trim.py": "54744be026c23d43bfe8dba5686ffd7d25d9028a8d4eaf06e667501b5984d89c",
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+  },
+  "reviewed_launcher_sha256": "bb304a609f3c72da8baa462c61366444737aeab80c1ea93cfeca11f014502a95",
+  "base_sha256": "6c3f39642065ee14b07775a37fa1b9eac6dce91a37977382b337ad27858bbf1e",
+  "artifacts": [
+    {
+      "path": "dist/inspection_trim_v29_src.zip",
+      "bytes": 9583536,
+      "sha256": "cbe9229832dac099b7d5332885b91054efbc51795282ea8ce597701b5a955037"
+    },
+    {
+      "path": "dist/run_trim_v29.sh",
+      "bytes": 2870,
+      "sha256": "4bcbeee7d7c8b7332b00759d2e5eb1ba8fa915432a4faa5c76cbe19d4ae551d0"
+    }
+  ]
+}

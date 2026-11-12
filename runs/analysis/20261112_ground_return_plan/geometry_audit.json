@@ -1,0 +1,1925 @@
+{
+  "scope": "public candidate only; nominal geometry, no platform execution or score",
+  "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "source_sha256": {
+    "src\\inspection_mission\\inspection_mission\\ground_three_point_axis_plan.py": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+    "src\\inspection_mission\\inspection_mission\\ground_three_point_plan.py": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+    "src\\inspection_mission\\inspection_mission\\ground_three_point_axis.py": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+    "src\\inspection_mission\\inspection_mission\\ground_three_point_recovery_budget.py": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d"
+  },
+  "summary": {
+    "draw_count": 60,
+    "max_path": {
+      "draw": [
+        "ground_2",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 13.989999999999998,
+      "rotation_rad": 35.61366808634045,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1320.5882855295822
+    },
+    "max_rotation": {
+      "draw": [
+        "ground_1",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 10.91,
+      "rotation_rad": 37.752432539826714,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1258.7470479227513
+    },
+    "max_v25_extrapolated_wall": {
+      "draw": [
+        "ground_2",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 13.559999999999999,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1352.9394064334847
+    },
+    "minimum_laser_distance_m": 0.6499999999999999,
+    "maximum_operation_count": 44,
+    "maximum_drive_count": 17,
+    "maximum_turn_count": 27
+  },
+  "return_candidates": {
+    "ground_0": {
+      "path_m": 2.4650000000000003,
+      "rotation_rad": 12.566370614359172,
+      "minimum_laser_distance_m": 0.65,
+      "operations": [
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            1.115,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.718064063844501,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            1.115,
+            -1.35
+          ],
+          "expected_start_yaw_rad": -1.5707963267948966,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.7692244470894044,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "anchor_xy_m": [
+            1.115,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_exit_to_spine",
+          "minimum_laser_distance_m": 0.8718407251327505,
+          "length_m": 0.515,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_north_to_turn_anchor_aim",
+          "minimum_laser_distance_m": 1.26839711841363,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_north_to_turn_anchor",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 1.1500000000000001,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.8500000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_REVERSE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_reverse_north",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.2,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_west_to_home_aim",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.0,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_west_to_home",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -2.4492935982947064e-16,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        }
+      ]
+    },
+    "ground_1": {
+      "path_m": 2.5500000000000003,
+      "rotation_rad": 12.566370614359172,
+      "minimum_laser_distance_m": 0.65,
+      "operations": [
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.6950000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.775,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "anchor_xy_m": [
+            0.0,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_exit_to_spine",
+          "minimum_laser_distance_m": 0.855,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_north_to_turn_anchor_aim",
+          "minimum_laser_distance_m": 1.2060914625328945,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -1.35
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_north_to_turn_anchor",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 1.1500000000000001,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.8500000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_REVERSE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_reverse_north",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.2,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_west_to_home_aim",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.0,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_west_to_home",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -2.4492935982947064e-16,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        }
+      ]
+    },
+    "ground_2": {
+      "path_m": 3.8899999999999997,
+      "rotation_rad": 12.566370614359172,
+      "minimum_laser_distance_m": 0.65,
+      "operations": [
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            -2.69
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.6600000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            -2.69
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.6600000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -2.69
+          ],
+          "anchor_xy_m": [
+            0.0,
+            -2.69
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_exit_to_spine",
+          "minimum_laser_distance_m": 0.6600000000000001,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -2.69
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_north_to_turn_anchor_aim",
+          "minimum_laser_distance_m": 0.6600000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -2.69
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_north_to_turn_anchor",
+          "minimum_laser_distance_m": 0.7400000000000002,
+          "length_m": 2.4899999999999998,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.8500000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_REVERSE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_reverse_north",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.2,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_west_to_home_aim",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.0,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_west_to_home",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -2.4492935982947064e-16,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        }
+      ]
+    },
+    "ground_3": {
+      "path_m": 3.04,
+      "rotation_rad": 10.995574287564276,
+      "minimum_laser_distance_m": 0.65,
+      "operations": [
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            1.115,
+            -1.925
+          ],
+          "expected_start_yaw_rad": -1.5707963267948966,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -1.925
+          ],
+          "anchor_xy_m": [
+            1.115,
+            -1.925
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_exit_to_spine",
+          "minimum_laser_distance_m": 0.81,
+          "length_m": 0.515,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -1.925
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_north_to_turn_anchor_aim",
+          "minimum_laser_distance_m": 1.245,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -1.925
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_north_to_turn_anchor",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 1.725,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.8500000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_REVERSE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_reverse_north",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.2,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_west_to_home_aim",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.0,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_west_to_home",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -2.4492935982947064e-16,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        }
+      ]
+    },
+    "ground_4": {
+      "path_m": 1.89,
+      "rotation_rad": 10.995574287564276,
+      "minimum_laser_distance_m": 0.65,
+      "operations": [
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            1.115,
+            -0.775
+          ],
+          "expected_start_yaw_rad": -1.5707963267948966,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_exit_to_spine_aim",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.775
+          ],
+          "anchor_xy_m": [
+            1.115,
+            -0.775
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_exit_to_spine",
+          "minimum_laser_distance_m": 0.81,
+          "length_m": 0.515,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.775
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_north_to_turn_anchor_aim",
+          "minimum_laser_distance_m": 1.245,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.775
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 1.5707963267948966,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_north_to_turn_anchor",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.575,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 1.5707963267948966,
+          "target_yaw_rad": 0.0,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.77,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": 0.0,
+          "target_yaw_rad": -1.5707963267948966,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_reverse_north_reverse_aim",
+          "minimum_laser_distance_m": 0.8500000000000001,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_REVERSE_TO_XY",
+          "target_xy_m": [
+            0.6,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            -0.2
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_reverse_north",
+          "minimum_laser_distance_m": 0.73,
+          "length_m": 0.2,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -3.141592653589793,
+          "signed_subturn_rad": -1.5707963267948966,
+          "source_phase": "return_west_to_home_aim",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "DRIVE_TO_XY",
+          "target_xy_m": [
+            0.0,
+            0.0
+          ],
+          "anchor_xy_m": [
+            0.6,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": 3.141592653589793,
+          "signed_subturn_rad": 0.0,
+          "source_phase": "return_west_to_home",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.6,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": 3.141592653589793,
+          "target_yaw_rad": -1.5707963267948968,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        },
+        {
+          "kind": "TURN_ONLY",
+          "target_xy_m": null,
+          "anchor_xy_m": [
+            0.0,
+            0.0
+          ],
+          "expected_start_yaw_rad": -1.5707963267948968,
+          "target_yaw_rad": -2.4492935982947064e-16,
+          "signed_subturn_rad": 1.5707963267948966,
+          "source_phase": "return_final_alignment",
+          "minimum_laser_distance_m": 0.65,
+          "length_m": 0.0,
+          "settle_required_after": true
+        }
+      ]
+    }
+  },
+  "all_draws": [
+    {
+      "draw": [
+        "ground_0",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 11.71,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1238.495061529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 10.66,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1200.6889715295822
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 10.71,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1202.489261529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 11.71,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1238.495061529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 11.64,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1235.9746555295822
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 11.690000000000001,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1237.774945529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 10.660000000000002,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1200.6889715295822
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 10.74,
+      "rotation_rad": 37.579255532835106,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1248.6539182310855
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 10.64,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1199.968855529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 10.71,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1202.489261529582
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 12.84,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1279.1816155295821
+    },
+    {
+      "draw": [
+        "ground_0",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 11.14,
+      "rotation_rad": 33.52822432960337,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 17,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1170.1381406256796
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 11.809999999999999,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1246.067785221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 10.760000000000002,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1208.2616952212481
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 10.81,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1210.061985221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 11.809999999999999,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1246.067785221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 11.809999999999999,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1246.067785221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 11.86,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1247.868075221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 10.760000000000002,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1208.2616952212481
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 10.91,
+      "rotation_rad": 37.752432539826714,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1258.7470479227513
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 10.810000000000002,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1210.061985221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 10.81,
+      "rotation_rad": 35.786845093332055,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1210.061985221248
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 13.009999999999998,
+      "rotation_rad": 35.78684509333206,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1289.2747452212482
+    },
+    {
+      "draw": [
+        "ground_1",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 11.309999999999999,
+      "rotation_rad": 33.701401336594984,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 17,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1180.2312703173454
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 13.510000000000002,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1351.1391164334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 13.440000000000001,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1348.618710433485
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 13.49,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1350.4190004334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 13.509999999999998,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.65,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1351.1391164334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 13.509999999999998,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1351.1391164334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 13.559999999999999,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1352.9394064334847
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 13.440000000000001,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1348.618710433485
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 13.510000000000002,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1351.1391164334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 13.490000000000002,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1350.4190004334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 13.49,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1350.4190004334848
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 13.56,
+      "rotation_rad": 37.69911184307752,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1352.9394064334847
+    },
+    {
+      "draw": [
+        "ground_2",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 13.989999999999998,
+      "rotation_rad": 35.61366808634045,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1320.5882855295822
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 11.810000000000002,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1242.0956415295823
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 12.79,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1277.3813255295822
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 11.790000000000001,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1241.375525529582
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 11.809999999999999,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1242.095641529582
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 12.86,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 42,
+      "drive_count": 16,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1279.901731529582
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 11.86,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1243.895931529582
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 11.89,
+      "rotation_rad": 37.579255532835106,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1290.0605882310856
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 11.96,
+      "rotation_rad": 37.579255532835106,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 16,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1292.5809942310857
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 11.940000000000001,
+      "rotation_rad": 37.5792555328351,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 44,
+      "drive_count": 17,
+      "turn_count": 27,
+      "v25_extrapolated_wall_s": 1291.8608782310855
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 11.790000000000001,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1241.375525529582
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 11.860000000000001,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1243.8959315295822
+    },
+    {
+      "draw": [
+        "ground_3",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 13.989999999999998,
+      "rotation_rad": 35.61366808634044,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 43,
+      "drive_count": 17,
+      "turn_count": 26,
+      "v25_extrapolated_wall_s": 1320.588285529582
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 9.510000000000002,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1135.057519897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 10.49,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1170.343203897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 9.440000000000001,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1132.537113897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 9.510000000000002,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1135.057519897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 10.56,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1172.863609897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 9.510000000000002,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1135.057519897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 11.64,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1211.7498738973609
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 11.71,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1214.270279897361
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 11.64,
+      "rotation_rad": 34.55751918948772,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1211.7498738973609
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 9.940000000000001,
+      "rotation_rad": 32.47207543275065,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 40,
+      "drive_count": 16,
+      "turn_count": 24,
+      "v25_extrapolated_wall_s": 1102.7063989934584
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 10.010000000000002,
+      "rotation_rad": 32.47207543275065,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 40,
+      "drive_count": 16,
+      "turn_count": 24,
+      "v25_extrapolated_wall_s": 1105.2268049934585
+    },
+    {
+      "draw": [
+        "ground_4",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 10.09,
+      "rotation_rad": 34.43766287924531,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "operation_count": 41,
+      "drive_count": 16,
+      "turn_count": 25,
+      "v25_extrapolated_wall_s": 1153.1917516949618
+    }
+  ],
+  "sampled_terminal_pose_perturbations_not_a_continuous_proof": [
+    {
+      "last_point": "ground_0",
+      "accepted": 15,
+      "rejected": [],
+      "accepted_minimum_laser_distance_m": 0.65
+    },
+    {
+      "last_point": "ground_1",
+      "accepted": 15,
+      "rejected": [],
+      "accepted_minimum_laser_distance_m": 0.65
+    },
+    {
+      "last_point": "ground_2",
+      "accepted": 12,
+      "rejected": [
+        {
+          "offset": [
+            0.0,
+            -0.02,
+            -0.025
+          ],
+          "reason": "unsafe candidate turn: neither angular arc passes fixed ring"
+        },
+        {
+          "offset": [
+            0.0,
+            -0.02,
+            0.0
+          ],
+          "reason": "unsafe candidate initial laser ring"
+        },
+        {
+          "offset": [
+            0.0,
+            -0.02,
+            0.025
+          ],
+          "reason": "unsafe candidate initial laser ring"
+        }
+      ],
+      "accepted_minimum_laser_distance_m": 0.65
+    },
+    {
+      "last_point": "ground_3",
+      "accepted": 15,
+      "rejected": [],
+      "accepted_minimum_laser_distance_m": 0.65
+    },
+    {
+      "last_point": "ground_4",
+      "accepted": 15,
+      "rejected": [],
+      "accepted_minimum_laser_distance_m": 0.65
+    }
+  ]
+}

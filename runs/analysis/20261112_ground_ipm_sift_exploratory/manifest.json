@@ -1,0 +1,415 @@
+{
+  "kind": "frozen_offline_exploratory_manifest",
+  "created_at": "2026-11-11T20:19:46.356048+00:00",
+  "manifest_excludes_itself": true,
+  "source_checks": [
+    {
+      "path": "runs/analysis/20261112_approach_v16b/native_L000020_a672e7739804717c.jpg",
+      "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_approach_v17/native_L000017_46381698801c0842.jpg",
+      "sha256": "46381698801c0842ae13784f842bf5d774a94483efcd63f64863d3ccca88a2a3",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_approach_v18/native_L000013_b9429ec3dc23cab3.jpg",
+      "sha256": "b9429ec3dc23cab3a72b68b4ce66b764c090188288d614f833d5263e4c5a56f9",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_approach_v18/native_L000015_065f0f56563a1ec7.jpg",
+      "sha256": "065f0f56563a1ec7e45ab27c811c188e6e1faf41391855284ed5552b48a39184",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_approach_v18/native_L000017_b9621149fa948b9a.jpg",
+      "sha256": "b9621149fa948b9a6777944ce9e52698bd3d9d771fce336754877bf90b2c6fa4",
+      "matches": true
+    }
+  ],
+  "report_sha256": "b6b4738c7ca1248cb48d645c257f0410ae0bbfc31980c1b0762108d33bfd0c5c",
+  "files": [
+    {
+      "path": "experiment.py",
+      "size_bytes": 13879,
+      "sha256": "ebd19e57e53e43063b68e713e0e73a45ea68fea7daa1ca1219268de7dcf0dd3d"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__collapsed_ruins_02.jpg.jpg",
+      "size_bytes": 360524,
+      "sha256": "d11e036636b5b360f2e8bfd625c2ca910388b5d8361f120afdf5cd34e2ffc915"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__damaged_vehicle_01.png.jpg",
+      "size_bytes": 457357,
+      "sha256": "0bd949b918f9a173249a38cd08936f54370140c30cb26dcad925853cfe89dd46"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__landslide_01.jpg.jpg",
+      "size_bytes": 441112,
+      "sha256": "b0ba32fffc0f2e23eff4ee05c7fad8b864962ee143cfa763d063acffd6452844"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__landslide_02.jpg.jpg",
+      "size_bytes": 399380,
+      "sha256": "643febe54cd377d2b69101f6bf2ddf509d761fb9485f086847284eaae6b951a7"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__rescue_camp_01.png.jpg",
+      "size_bytes": 401620,
+      "sha256": "9e8e0e3d5d320cf6141a5a7116e0d77f90b682f246553fd9682423b376fe1c80"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__rescue_camp_02.jpg.jpg",
+      "size_bytes": 384942,
+      "sha256": "3e23d0d1e337cb51dd17071e027cb030fa4a7220393da529c3edb59785e104f8"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__trapped_people_01.png.jpg",
+      "size_bytes": 341887,
+      "sha256": "59e6bf59bb257ee9c1fe257e34d87bc206c77903bc05b627e37cb8c38df392f1"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__trapped_people_02.jpg.jpg",
+      "size_bytes": 296897,
+      "sha256": "caf362f34974b233aa867287de9ccfdfd5bf4f7e278d0128f5b59a8a67b8916f"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__window_bird_01.jpg.jpg",
+      "size_bytes": 140789,
+      "sha256": "7fa9bb9cfe878e48eee4e30bce51e14c178f7dc358a60e3db3b884ef2768ca01"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__window_bird_02.jpg.jpg",
+      "size_bytes": 123874,
+      "sha256": "cd3b2d1cb74bd649d7816b45d27f796dba774fcc5664a12ccc273a86fcfbb526"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__window_target_1.jpg.jpg",
+      "size_bytes": 144510,
+      "sha256": "9c188319585bbeb1b796a7ffdcbd1a9e32a464db55f3e8a8c0add81998ffe606"
+    },
+    {
+      "path": "matches/v16b_full_ground_bev__window_target_2.jpg.jpg",
+      "size_bytes": 137809,
+      "sha256": "64960f343aac7755187239ed68dd4be9a1466fc1321a827eabd7e685640947ce"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__collapsed_ruins_02.jpg.jpg",
+      "size_bytes": 359110,
+      "sha256": "29538ffd158cf5db58b22893eb64fba54e8c9b9f63d438b4f4d498d00f3402b8"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__damaged_vehicle_01.png.jpg",
+      "size_bytes": 468361,
+      "sha256": "d53f55eb0185e19bb3fe4774bd0b84f75399beb7552df93a20571ea0670ce1da"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__landslide_01.jpg.jpg",
+      "size_bytes": 432963,
+      "sha256": "e726eeddc958318a5d27dd204fb9490dd2d54fe14cd60b474f967db130dbcefb"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__landslide_02.jpg.jpg",
+      "size_bytes": 383469,
+      "sha256": "d594df58033041143eabe606c3720d96611edeb49cd74f82ba908f9c1af018f2"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__rescue_camp_01.png.jpg",
+      "size_bytes": 396291,
+      "sha256": "8e96abd69534c202a51b33027e0517af54a61da1d90b2f2392be85c1f5e1eb92"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__rescue_camp_02.jpg.jpg",
+      "size_bytes": 362365,
+      "sha256": "a7de4e8ef92534b3c17583dbdfc11a8fe7de89b728a1123b5aa10a0d745ae490"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__trapped_people_01.png.jpg",
+      "size_bytes": 338225,
+      "sha256": "eb7f89948a522fe7a0869b237b150857cbebe649325f75b603505af0219a3349"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__trapped_people_02.jpg.jpg",
+      "size_bytes": 335313,
+      "sha256": "544bb3b07b9921cd3b6286882024f85895580c81830c0f2c9e25c995ded341fd"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__window_bird_01.jpg.jpg",
+      "size_bytes": 146901,
+      "sha256": "ea388f6698d08d126b4c6aecb26ff3a726a4998626bfd24b58b0d3524d2ad782"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__window_bird_02.jpg.jpg",
+      "size_bytes": 141312,
+      "sha256": "4beec6f893d8c3ddd0c9224b006fd3afcb94fd047341d6710cedfb285316d901"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__window_target_1.jpg.jpg",
+      "size_bytes": 144907,
+      "sha256": "b2d08c47315c254e9b2da29ae35d28a085ae24e5fcff4670b4997e2eae923658"
+    },
+    {
+      "path": "matches/v17_full_ground_bev__window_target_2.jpg.jpg",
+      "size_bytes": 143268,
+      "sha256": "a6464dfb248169bf2a4a4925e45b836c175409665b93f5f55a251198484a3a18"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__collapsed_ruins_02.jpg.jpg",
+      "size_bytes": 372715,
+      "sha256": "af312c0c9f883a992f625e8a99533ff17859629f0f690f14e838c703fd774c66"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__damaged_vehicle_01.png.jpg",
+      "size_bytes": 460906,
+      "sha256": "a50dfde3cba8c04e6869e1dd26a87cbd1815292e7b08b8e084a32698f3912de9"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__landslide_01.jpg.jpg",
+      "size_bytes": 433286,
+      "sha256": "d7e81b6f226ffdd2e11f487082f945c3480f90ffc489ff874394e6699a5b3225"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__landslide_02.jpg.jpg",
+      "size_bytes": 403307,
+      "sha256": "4900644ebd8813e361c70fa550fcf18500dd828f5d0eb13d4e276a21b0f16162"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__rescue_camp_01.png.jpg",
+      "size_bytes": 395206,
+      "sha256": "22ab0fee4ad8cd2352cdad29b905dac1652c11f56f17ced6a294c7e2cbe84c65"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__rescue_camp_02.jpg.jpg",
+      "size_bytes": 375089,
+      "sha256": "55c8f841aa857f67b7c4cac0a56c2befc1ec1e652f1658e0c383b40d9154bde0"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__trapped_people_01.png.jpg",
+      "size_bytes": 354674,
+      "sha256": "788cb804d8024462fb2e30c6cd294d952270eb27abd37d4fb19a5f3dfb1153d9"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__trapped_people_02.jpg.jpg",
+      "size_bytes": 302571,
+      "sha256": "24e17b312087fec2e8979e2e0e393c92902d8aa0767d5dc52e17798890e90e30"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__window_bird_01.jpg.jpg",
+      "size_bytes": 142029,
+      "sha256": "b4fe85ccaffe8578062b3805cdac9a4083b113aa90a488f575b8932dd7194cae"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__window_bird_02.jpg.jpg",
+      "size_bytes": 134704,
+      "sha256": "8b0bf0bff6bd707f694513b399b6f34c12e9a027495a5f8eb92b190d2419b038"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__window_target_1.jpg.jpg",
+      "size_bytes": 155033,
+      "sha256": "06196e82344e917163feaaf79b3707b68fdb5b8456b8aa98141fbdb4c325a5b2"
+    },
+    {
+      "path": "matches/v18_capture_0_full_ground_bev__window_target_2.jpg.jpg",
+      "size_bytes": 140927,
+      "sha256": "6ecc362647db7c3de7d705f0f2a673502faec27c1bf10d121f1378f2ec1e77fb"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__collapsed_ruins_02.jpg.jpg",
+      "size_bytes": 384614,
+      "sha256": "cf4b20a4910970609089140d23819c304149ef64245076b5110c50a0a4db7a81"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__damaged_vehicle_01.png.jpg",
+      "size_bytes": 460221,
+      "sha256": "03f49066fb73430ae80ea746d54933cef8f150bb5a602640d4955fb8142f48d7"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__landslide_01.jpg.jpg",
+      "size_bytes": 431420,
+      "sha256": "f469e27b6357bb3ae769704fd23558c2017fb29f97e3cab0bce71c863872b10d"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__landslide_02.jpg.jpg",
+      "size_bytes": 391135,
+      "sha256": "7d4e08b9535fb7924eadce78545da5cb84ee80ca1c0267f1eb9782fe6be6adf2"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__rescue_camp_01.png.jpg",
+      "size_bytes": 394702,
+      "sha256": "08cf7f13be7f0bd84b5f44e86674dc5b77230b761b83ee0397d02a0ff0d4ddf0"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__rescue_camp_02.jpg.jpg",
+      "size_bytes": 370612,
+      "sha256": "822540b2d511a1799af58e2a40b0f79cacc5875b21601d721deb13bfbfd3d345"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__trapped_people_01.png.jpg",
+      "size_bytes": 346032,
+      "sha256": "0b2b46e862db84b1ce2c33c14123f328bcd02172a21755ad2c3522e228501842"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__trapped_people_02.jpg.jpg",
+      "size_bytes": 308021,
+      "sha256": "066e57b771fed3f6a99459e8e37cdeb1d87134f2b42a01307d6c60c5b237cc99"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__window_bird_01.jpg.jpg",
+      "size_bytes": 136542,
+      "sha256": "b378bd4f8ea28d17c0a53aed7737ca6644644f8ca0ac5f638c6b48499b5e3fcf"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__window_bird_02.jpg.jpg",
+      "size_bytes": 134842,
+      "sha256": "c2572b71567aeb186ca1a33b64116969d32869670059edb066666b0f841ccd1a"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__window_target_1.jpg.jpg",
+      "size_bytes": 153602,
+      "sha256": "3fa99f12c9670c116f37d43da7773a94704b6b49e887bc9ce529ee651dcbfae0"
+    },
+    {
+      "path": "matches/v18_capture_1_full_ground_bev__window_target_2.jpg.jpg",
+      "size_bytes": 142577,
+      "sha256": "4d628dde522941f03fbcd64ef8adf8acd6006f5a6dfa0514b376fe3a546e1dc8"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__collapsed_ruins_02.jpg.jpg",
+      "size_bytes": 363879,
+      "sha256": "1e99cd0d1f0444cc4b2fc344ba84f370ef6519907039f5af583e3b2f8d56f151"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__damaged_vehicle_01.png.jpg",
+      "size_bytes": 463054,
+      "sha256": "6291a14dcd78118d7b080e8864fdcb31277f47bffddae47602bc092e95b88993"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__landslide_01.jpg.jpg",
+      "size_bytes": 436904,
+      "sha256": "65304e4394fae5073d594ab062a7cf707529b84760f7cd92169b503a9cd641c8"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__landslide_02.jpg.jpg",
+      "size_bytes": 390011,
+      "sha256": "3e84eb51830a01763dc170ed4d57066147b069d4b62f5f8d8c1cb2c4e23b07fc"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__rescue_camp_01.png.jpg",
+      "size_bytes": 410196,
+      "sha256": "770657ae59bedf9a4d27958af4b3acf4fe9b3abd6a4cfe4f89edabcb99ed8cfa"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__rescue_camp_02.jpg.jpg",
+      "size_bytes": 385780,
+      "sha256": "89dfd58cad387b5b286113aaa1d77c1fd4b7269800bcce16433e61bf3d0ffdb3"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__trapped_people_01.png.jpg",
+      "size_bytes": 354098,
+      "sha256": "04764ec4b2a93d5fe3de5609c129097aadc389f35b94483d605171606ab2d8cb"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__trapped_people_02.jpg.jpg",
+      "size_bytes": 310383,
+      "sha256": "b165ba8628fa372c1e39aebec9a91cdaae7c70ecc774501ffd8dbd616e2b3eb4"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__window_bird_01.jpg.jpg",
+      "size_bytes": 152153,
+      "sha256": "543d39e51c0bb7b8d890a7b56b06adf77a9f39af294731951e0824dcebf9835a"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__window_bird_02.jpg.jpg",
+      "size_bytes": 133112,
+      "sha256": "34a94da5775ad6edc7722e490cbc5155e0d33776f4d28970200123e853d8abd0"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__window_target_1.jpg.jpg",
+      "size_bytes": 156963,
+      "sha256": "0ce59ff193c81934a58b7eefa76599e82c78d4666339627b9061e7dc094c0b34"
+    },
+    {
+      "path": "matches/v18_capture_2_full_ground_bev__window_target_2.jpg.jpg",
+      "size_bytes": 140424,
+      "sha256": "949cec13d380b26ec752407e26105f27557f27f360528ac8591ada0fda31f7fc"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 4371,
+      "sha256": "efcfa31743c760ac5bd20718eb33d33cf3ca624dda3dfaf6eb7126a6c4d99edf"
+    },
+    {
+      "path": "report.json",
+      "size_bytes": 1072366,
+      "sha256": "b6b4738c7ca1248cb48d645c257f0410ae0bbfc31980c1b0762108d33bfd0c5c"
+    },
+    {
+      "path": "scores.csv",
+      "size_bytes": 10805,
+      "sha256": "6acd14deadc5cf205d5256e6335fbcf6727e5682d6fc819cae9a30b8a757da9f"
+    },
+    {
+      "path": "source_mapping.npz",
+      "size_bytes": 2901074,
+      "sha256": "0af4d259726672d44564abcfe9ce1ec95ac1a6c38453962af4ce760d9d91cea1"
+    },
+    {
+      "path": "v16b_full_ground_bev.png",
+      "size_bytes": 429088,
+      "sha256": "cbb8d155ed3c277803bed6ffb38880c5e1a8bc2d262b87be28be71ac695a6ea0"
+    },
+    {
+      "path": "v16b_source_metric_grid.png",
+      "size_bytes": 214609,
+      "sha256": "f8d3c7907055be1da645dde9f49cf7ab4e3fc290eba276cd189325b0d3723924"
+    },
+    {
+      "path": "v17_full_ground_bev.png",
+      "size_bytes": 427311,
+      "sha256": "0ba207728a4f005538fd2b2bc9831695fa43d1ceeb86e4f98037ba4dba2f1f4a"
+    },
+    {
+      "path": "v17_source_metric_grid.png",
+      "size_bytes": 225625,
+      "sha256": "2a062f78228faccef663af3c5d034052c90229e765608014a7703c1e5ecbc1d8"
+    },
+    {
+      "path": "v18_capture_0_full_ground_bev.png",
+      "size_bytes": 457439,
+      "sha256": "380a5b5f1831630a50a3bbc56a4a26af75a231a2e3769a77557f7b044f7799d1"
+    },
+    {
+      "path": "v18_capture_0_source_metric_grid.png",
+      "size_bytes": 210341,
+      "sha256": "eed4491a4b41f7cac4288953e71024dadcb46dc9fb9e264da197cacbc0afe73e"
+    },
+    {
+      "path": "v18_capture_1_full_ground_bev.png",
+      "size_bytes": 463137,
+      "sha256": "556de83c6dd9fbe3b750e31e80ac8d796ac366f9b045527e01da4ab18b8d1a5b"
+    },
+    {
+      "path": "v18_capture_1_source_metric_grid.png",
+      "size_bytes": 207812,
+      "sha256": "0ed650640a6e2e1843fc496c1a8aceb459c4853fdb0f082d0a2546a0c1f14e14"
+    },
+    {
+      "path": "v18_capture_2_full_ground_bev.png",
+      "size_bytes": 460372,
+      "sha256": "628ad81df8230a29e27f210ddf06eeb858f5b1a5cc33595565e2f4c8dce81cbe"
+    },
+    {
+      "path": "v18_capture_2_source_metric_grid.png",
+      "size_bytes": 211317,
+      "sha256": "09fbef5aad83c79861b763cb50f371348a52132353249acafd46e4bc7bb8a8c1"
+    },
+    {
+      "path": "valid_source_mask.png",
+      "size_bytes": 4631,
+      "sha256": "339cb860075ceeaa73a8db6d23da7429accbf866c72002c8a25da91afa8d2712"
+    }
+  ]
+}

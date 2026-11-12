@@ -1,0 +1,70 @@
+{
+  "kind": "independent_ground_single_point_control_entry_review",
+  "created_at": "2026-11-11T21:42:55.715746+00:00",
+  "reviewed_source_sha256": "7f1ee2e6a4dfaeb9f05a557be4ea398f6dc121cf2bda2708664e0606c38845f0",
+  "production_code_modified": false,
+  "tests": {
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "elapsed_test_s": 17.7,
+  "reproducible_blockers_found": [],
+  "coverage": [
+    "entry route preserves permanent origin and frozen cumulative budgets",
+    "measured absolute yaw oscillation reaches cap despite near-zero net yaw",
+    "final observation TURN_SETTLE rejects waypoint error before capture",
+    "turn drift over actual cap stops in callback",
+    "final entry stop transfers dwell and path anchor without extra turn",
+    "single declaration and sustained zero after transport completion",
+    "declaration current sensor age gate",
+    "REPORT_WAIT freshness hard stop and actual scan-silence age expiry"
+  ],
+  "ROS_executed": false,
+  "real_SIFT_executed": false,
+  "official_publish_performed": false,
+  "official_acceptance": false,
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "size_bytes": 39366,
+      "sha256": "7f1ee2e6a4dfaeb9f05a557be4ea398f6dc121cf2bda2708664e0606c38845f0"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "size_bytes": 22825,
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_bounded_approach.py",
+      "size_bytes": 32818,
+      "sha256": "4290b53179c00cf5c52f37b3f8a91adb86539c3295248e9e93aea013390086a9"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_bounded_approach_sync.py",
+      "size_bytes": 9315,
+      "sha256": "6c4f5c5b5d12fff3c7311193381155b3799305be031bd41e556b5a4b0e60be3b"
+    },
+    {
+      "path": "runs/review/20261112_single_point_control/review_control_cases.py",
+      "size_bytes": 8050,
+      "sha256": "b33721fe7c968ca9d033ff398ddddf70a8a39fd6d46c7ebbc78d2d560e001060"
+    },
+    {
+      "path": "runs/review/20261112_single_point_control/independent_initial.xml",
+      "size_bytes": 6674,
+      "sha256": "7f10e78f4d8d323bcef2b08ea9d7cc34baa749ffe5c7b6d2714eb80bcad3d5be"
+    },
+    {
+      "path": "runs/review/20261112_single_point_control/independent_final.xml",
+      "size_bytes": 2900,
+      "sha256": "37491b07ff70dd0ca767259b892cf54d3226a7073f55e5891eb991c509ba7c8b"
+    },
+    {
+      "path": "docs/control_review_ground_single_point_20261112.md",
+      "size_bytes": 3037,
+      "sha256": "3193fb2ca44dd967f4e6ecb5e60f19d18af4ba7676a34043417cc493b978f6dc"
+    }
+  ]
+}

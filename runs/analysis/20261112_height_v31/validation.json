@@ -1,0 +1,38 @@
+{
+  "source": "runs\\evidence\\20261112\\callback_height_v31.jsonl",
+  "source_bytes": 136436,
+  "source_sha256": "2e0a266b4ab9e5e985bcc05f8cb0d6d7a738aa773d44ce2a9e48d9b4c4026baf",
+  "event_count": 8,
+  "parts_verified": 3,
+  "metadata": {
+    "session_id": "6d818f37b8e9411f860825b0cb49524c",
+    "encoding": "gzip+base64",
+    "uncompressed_bytes": 608389,
+    "compressed_bytes": 97890,
+    "uncompressed_sha256": "c94604be273945f94e97f44b09b835a31daecb12bf1b2634b033e019724a71dd",
+    "compressed_sha256": "e1ff00d14305a732b872903a51028dbb4f3cf0400f902b784b75ebaa2e539ecb",
+    "part_count": 3
+  },
+  "lengths_and_both_sha_match": true,
+  "core_matches": true,
+  "source_authenticated_independently": false,
+  "callback_source": "unverified_callback",
+  "platform_id": "f21b350d-dcba-4121-ae93-9781c554471c",
+  "sample_counts": {
+    "trajectory": 221,
+    "commands": 95,
+    "scans": 35,
+    "downscans": 87,
+    "tf_records": 441
+  },
+  "dropped": {
+    "trajectory": 0,
+    "commands": 0,
+    "scans": 0,
+    "downscans": 0,
+    "tf_records": 0
+  },
+  "launcher_exit_codes": [
+    0
+  ]
+}

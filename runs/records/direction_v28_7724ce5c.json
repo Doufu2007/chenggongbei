@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "record_id": "7724ce5c-3e6b-469e-a368-2e6aa7025044",
+  "runId": "run_20261112_073445_70f255cc",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-direction-v28",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_direction_v28_src.zip",
+    "sha256": "6b95153c477194b907d4f1263fdadf831d90fc10dd76f54d17178bda70f9c9c0"
+  },
+  "script": {
+    "path": "dist/run_direction_v28.sh",
+    "sha256": "7cc18ea8b51f32620255f02270f1d4e97d2ab5443044c7f426f4e0a978deca51"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "ground_points": {
+      "ground_0": null,
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "ground_4": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 100.328,
+  "failure_reason": "Platform did not extract a score. This isolated experiment intentionally omitted scoring messages. Three measured XY response pulses and their stationary stops completed; full inspection was not attempted.",
+  "evidence_paths": [
+    "runs/evidence/20261112/direction_v28_submit.json",
+    "runs/evidence/20261112/direction_v28_artifacts.json",
+    "runs/evidence/20261112/direction_v28_list_after_analysis.json",
+    "runs/evidence/20261112/callback_direction_v28.jsonl",
+    "runs/analysis/20261112_direction_v28/validation.json",
+    "runs/analysis/20261112_direction_v28/metrics.json",
+    "runs/analysis/20261112_direction_v28/evidence.json"
+  ]
+}

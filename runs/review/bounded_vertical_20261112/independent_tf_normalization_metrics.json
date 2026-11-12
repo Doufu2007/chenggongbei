@@ -1,0 +1,10 @@
+{
+  "source_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+  "quaternion_norm": 1.0009,
+  "normalized_angular_error_rad": 0.04,
+  "comparison_threshold_rad": 0.005,
+  "accepted": false,
+  "output_z_mps": 0.0,
+  "reason": "static_laser_tf_mismatch",
+  "platform_run": false
+}

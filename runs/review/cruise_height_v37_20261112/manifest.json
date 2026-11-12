@@ -1,0 +1,123 @@
+{
+  "revision": "v37_cruise",
+  "scope": "offline implementation, no upload or platform run",
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_cruise_height.py",
+      "bytes": 26956,
+      "sha256": "65408ea8d17f2cb1629eef1a1509b68e547ed1392c2c2c086fbd47ca2ee1b96d"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/cruise_cloud_capture.py",
+      "bytes": 16663,
+      "sha256": "73f7e51481880309f9ec416ca7cf60009ab37e3d91770e8d40c42a7262c5c902"
+    },
+    {
+      "path": "scripts/run_bounded_cruise_height.sh",
+      "bytes": 2735,
+      "sha256": "68a243a8919cb6d84982dddb9fb95c7313f64b7ed772f3212bb01edd71b412b8"
+    },
+    {
+      "path": "tests/test_bounded_cruise_height.py",
+      "bytes": 18750,
+      "sha256": "472d88a53c559410f690a196a3dd8da59562e097b27a6e8f5aab8089417014c0"
+    },
+    {
+      "path": "tests/test_cruise_cloud_capture.py",
+      "bytes": 14926,
+      "sha256": "9090204cd71b905f7bdeee3f92ab163973c6a781d3b3582ddf0b64add726f375"
+    },
+    {
+      "path": "docs/bounded_cruise_height_v37_20261112.md",
+      "bytes": 5361,
+      "sha256": "703c47b5776cec054bca4fdb708b15bfd79dbcca1fc355b46610fcfe10080710"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-12-bounded-cruise-height-v37-design.md",
+      "bytes": 9010,
+      "sha256": "0fa94062a64b9dc379f9783abfedf9b1a0ad270a070a55cca6a81500579d02a4"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-12-bounded-cruise-height-v37.md",
+      "bytes": 4229,
+      "sha256": "56d567aedcc4dccd530707224647fdc0d51cc7ced4d0ae52b5d620d91875580f"
+    }
+  ],
+  "frozen_parents": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_height_hold.py",
+      "bytes": 17759,
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+      "expected_sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+      "unchanged": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "bytes": 33793,
+      "sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "expected_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "unchanged": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_ground_probe.py",
+      "bytes": 46104,
+      "sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb",
+      "expected_sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb",
+      "unchanged": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/telemetry.py",
+      "bytes": 6437,
+      "sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+      "expected_sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/run_bounded_height_hold.sh",
+      "bytes": 2718,
+      "sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7",
+      "expected_sha256": "40477f039c6c765d1f683f68f33ee6dff0b51635ec14c77e08c3942d3185a6d7",
+      "unchanged": true
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/height_runtime_timing.py",
+      "bytes": 8173,
+      "sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+      "expected_sha256": "cb2c0b4dadb30b8b2ff1700e19e669ff7759bbf69dbaf58a71058cd5f8dee6be",
+      "unchanged": true
+    }
+  ],
+  "limits": {
+    "absolute_target_m": 0.85,
+    "absolute_hard_m": 1.0,
+    "relative_hard_m": 0.965,
+    "motion_s": 90,
+    "global_s": 110,
+    "path_m": 2.0,
+    "phase_s": [
+      25,
+      8,
+      45,
+      8
+    ]
+  },
+  "checks": {
+    "height_final": "36 passed in 3.16s; height_stage_attribution_green.txt",
+    "cloud_final": "42 passed; cloud_green.txt",
+    "combined_regression": "289 passed in 13.52s before final feedback metadata/watchdog addition; combined_regression.txt",
+    "py_compile": "passed, final static_checks.txt",
+    "bash_n": "passed, final static_checks.txt"
+  },
+  "independent_review": {
+    "status": "passed",
+    "reviewer": "/root/axis_final_review",
+    "report": "docs/bounded_cruise_height_v37_independent_review_20261112.md",
+    "machine_readable": "runs/review/cruise_height_v37_20261112/independent_review.json"
+  },
+  "review_fix": {
+    "finding": "terminal or prior-phase cloud could occupy active stage slot",
+    "red": "height_stage_attribution_red.txt",
+    "green": "height_stage_attribution_green.txt",
+    "status": "independent recheck passed, no remaining blocker"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_id": "dccfbacf-1728-4500-b45c-5ae4105d5f66",
+  "runId": "run_20261112_093301_624e5479",
+  "evaluation_number": "13840696",
+  "submitted_local": "2026-11-12T09:32:49+08:00",
+  "kind": "ground_three_point_practice",
+  "evaluation_mode": "practice",
+  "variant": "ground-three-point-recovery-v38",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_three_point_recovery_v38_src.zip",
+    "sha256": "b9874ada14c3df72483ea85eedebdfa02fbe1a245bb13da926e6d92bd524b85b"
+  },
+  "script": {
+    "path": "dist/run_three_point_recovery_v38.sh",
+    "sha256": "18d97806f0d941f1f338b42cbab5d10bef44c6b8695130b0c4e540281e65b93f"
+  },
+  "scores": {
+    "total": null,
+    "platform_display_total": 0,
+    "extraction_status": "no_score_extracted"
+  },
+  "evidence_paths": [
+    "runs/evidence/20261112/callback_three_point_recovery_v38.jsonl",
+    "runs/evidence/20261112/three_point_recovery_v38_official_page_final.json",
+    "runs/evidence/20261112/three_point_recovery_v38_final.jpg",
+    "runs/analysis/20261112_three_point_recovery_v38/summary.json",
+    "runs/analysis/20261112_three_point_recovery_v38/visual_replay.json"
+  ],
+  "notes": "8/8 bundle parts, length and dual SHA verified. Runtime binding rejected before any scoring publication; offline stable-K replay also has zero accepted candidates, not exact original worker reproduction.",
+  "duration_s": 202.8,
+  "duration_source": "official_page_rounded_to_one_decimal",
+  "draw_order": [
+    "ground_3",
+    "ground_2",
+    "ground_0"
+  ],
+  "failure_reason": "single_point_visual_binding_rejected",
+  "measured_outcome": {
+    "completed_point_count": 0,
+    "recognition_or_declaration_attempts": 0,
+    "ground_odom_path_ledger_m": 1.6396584390362612,
+    "ground_odom_absolute_rotation_ledger_rad": 2.0723423647977346,
+    "resume_count": 1,
+    "completed_pause_wall_s": 1.1043544510030188,
+    "camera_recaptures": 0,
+    "captured_images": 3
+  }
+}

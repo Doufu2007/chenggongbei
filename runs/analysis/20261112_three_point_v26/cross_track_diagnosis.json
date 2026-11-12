@@ -1,0 +1,85 @@
+{
+  "kind": "v26_actual_cross_track_read_only_diagnosis",
+  "bundle_sha256": "9d68d2d00f53e672cf2722c4ca14456e897cc3d47709c7cfecab83aa2bbbbdca",
+  "session_id": "dadc93c7229d4c378cb3f5a833b44d32",
+  "reason": "approach_cross_track_limit",
+  "draw": [
+    "ground_4",
+    "ground_1",
+    "ground_3"
+  ],
+  "drive_origin": [
+    -0.0002479350814498005,
+    -0.0007789044819574726,
+    0.055000173947063725
+  ],
+  "stored_drive_yaw_rad": -0.2760552089569863,
+  "target_xy": [
+    0.35,
+    -0.1
+  ],
+  "independently_calculated_drive_bearing_rad": -0.2760552089569863,
+  "drive_bearing_difference_rad": 0.0,
+  "first_sample_over_2cm": {
+    "stamp_s": 17.16,
+    "wall_s": 14.34633415099961,
+    "xy": [
+      0.09608677870810252,
+      -0.007123697350171338
+    ],
+    "yaw_rad": -0.25878562827944207,
+    "forward_m": 0.09441665234003879,
+    "cross_m": 0.02015264842038747
+  },
+  "windows": {
+    "slow_tier": {
+      "start_stamp_s": 13.6,
+      "end_stamp_s": 14.4,
+      "dx_m": 0.00463669562078396,
+      "dy_m": -0.0005789597175291838,
+      "displacement_m": 0.004672701641911093,
+      "displacement_bearing_rad": -0.12422179719503278,
+      "mean_pose_yaw_rad": -0.25455790352734065,
+      "bearing_minus_pose_yaw_rad": 0.13033610633230786,
+      "mean_world_velocity_mps": [
+        0.005795869525979946,
+        -0.0007236996469114792
+      ]
+    },
+    "fast_before_calibration": {
+      "start_stamp_s": 14.6,
+      "end_stamp_s": 15.24,
+      "dx_m": 0.03446682927865405,
+      "dy_m": -0.002089993730966951,
+      "displacement_m": 0.03453013747901049,
+      "displacement_bearing_rad": -0.06056367275003761,
+      "mean_pose_yaw_rad": -0.25571193934431596,
+      "bearing_minus_pose_yaw_rad": 0.19514826659427836,
+      "mean_world_velocity_mps": [
+        0.053854420747896904,
+        -0.003265615204635858
+      ]
+    },
+    "fast_after_calibration": {
+      "start_stamp_s": 16.46,
+      "end_stamp_s": 17.16,
+      "dx_m": 0.03768307674968707,
+      "dy_m": -0.002363846086367925,
+      "displacement_m": 0.03775714557064455,
+      "displacement_bearing_rad": -0.06264755973011682,
+      "mean_pose_yaw_rad": -0.25768751533973033,
+      "bearing_minus_pose_yaw_rad": 0.1950399556096135,
+      "mean_world_velocity_mps": [
+        0.0538329667852673,
+        -0.003376922980525611
+      ]
+    }
+  },
+  "trajectory_rows": 155,
+  "command_rows": 411,
+  "trajectory_dropped": 0,
+  "commands_dropped": 0,
+  "full_moving_twist_xyz_available": false,
+  "confirmed": "real positional deviation crossed the unchanged guard; anchors are current first-drive anchors",
+  "unresolved": "cannot distinguish contact slip, public bridge transform, or odom semantics from pose and speed norms alone"
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "in_memory_auditor_negative_checks_not_platform_results",
+  "checks": [
+    {
+      "name": "real_axis_parent_outer_revision_accepted",
+      "passed": true
+    },
+    {
+      "name": "legacy_mode_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_part_rejected",
+      "passed": true
+    },
+    {
+      "name": "conflicting_sha_metadata_rejected",
+      "passed": true
+    },
+    {
+      "name": "compressed_length_rejected",
+      "passed": true
+    },
+    {
+      "name": "changed_payload_rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong_nested_axis_revision_rejected",
+      "passed": true
+    },
+    {
+      "name": "core_body_conflict_rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate_json_key_rejected",
+      "passed": true
+    },
+    {
+      "name": "nonfinite_json_rejected",
+      "passed": true
+    },
+    {
+      "name": "missing_image_part_rejected",
+      "passed": true
+    }
+  ],
+  "passed": 11,
+  "failed": 0
+}

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="15" skipped="0" tests="20" time="1.602" timestamp="2026-11-12T06:59:57.355457+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_vertical_response" name="test_duplicate_scan_stamp_cannot_hide_a_current_hazard[0.5-horizontal_ring_too_close]" time="0.025"><failure message="AssertionError: assert ('ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND)">value = 0.5, reason = 'horizontal_ring_too_close'
+
+    @pytest.mark.parametrize("value,reason", [(.50, "horizontal_ring_too_close"), (math.nan, "finite_complete_ring_required")])
+    def test_duplicate_scan_stamp_cannot_hide_a_current_hazard(value, reason):
+        import copy
+        g = state(); ready(g)
+        old_stamp = g.sensor_stamps["scan"]
+        old_history = copy.deepcopy(g.scans)
+        message = scan(old_stamp)
+        message["ranges"][0] = value
+        g.update_scan(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "STOP" and decision.linear_z == 0.
+E       AssertionError: assert ('ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND)
+
+tests\test_bounded_vertical_response.py:147: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_duplicate_scan_stamp_cannot_hide_a_current_hazard[nan-finite_complete_ring_required]" time="0.009"><failure message="AssertionError: assert ('ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND)">value = nan, reason = 'finite_complete_ring_required'
+
+    @pytest.mark.parametrize("value,reason", [(.50, "horizontal_ring_too_close"), (math.nan, "finite_complete_ring_required")])
+    def test_duplicate_scan_stamp_cannot_hide_a_current_hazard(value, reason):
+        import copy
+        g = state(); ready(g)
+        old_stamp = g.sensor_stamps["scan"]
+        old_history = copy.deepcopy(g.scans)
+        message = scan(old_stamp)
+        message["ranges"][0] = value
+        g.update_scan(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "STOP" and decision.linear_z == 0.
+E       AssertionError: assert ('ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND)
+
+tests\test_bounded_vertical_response.py:147: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_safe_but_changed_complete_duplicate_scan_latches_stop[ranges]" time="0.009"><failure message="AssertionError: assert ('ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND)">field = 'ranges'
+
+    @pytest.mark.parametrize("field", ["ranges", "intensities"])
+    def test_safe_but_changed_complete_duplicate_scan_latches_stop(field):
+        import copy
+        g = state(); ready(g)
+        old_history = copy.deepcopy(g.scans)
+        message = scan(11.1)
+        if field == "ranges": message[field][0] = 2.1
+        else: message[field] = [1.]*360
+        g.update_scan(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "STOP" and decision.linear_z == 0.
+E       AssertionError: assert ('ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND)
+
+tests\test_bounded_vertical_response.py:162: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_safe_but_changed_complete_duplicate_scan_latches_stop[intensities]" time="0.009"><failure message="AssertionError: assert ('ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND)">field = 'intensities'
+
+    @pytest.mark.parametrize("field", ["ranges", "intensities"])
+    def test_safe_but_changed_complete_duplicate_scan_latches_stop(field):
+        import copy
+        g = state(); ready(g)
+        old_history = copy.deepcopy(g.scans)
+        message = scan(11.1)
+        if field == "ranges": message[field][0] = 2.1
+        else: message[field] = [1.]*360
+        g.update_scan(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "STOP" and decision.linear_z == 0.
+E       AssertionError: assert ('ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND)
+
+tests\test_bounded_vertical_response.py:162: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_identical_duplicate_scan_does_not_refresh_arrival_or_source_age" time="0.008" /><testcase classname="tests.test_bounded_vertical_response" name="test_invalid_wait_scan_does_not_claim_stamp_or_hide_corrected_same_stamp" time="0.001"><failure message="AssertionError: assert 'scan' not in {'scan': 10.0}&#10; +  where {'scan': 10.0} = &lt;inspection_mission.bounded_vertical_response.VerticalResponseGuard object at 0x00000272520656D0&gt;.sensor_stamps">def test_invalid_wait_scan_does_not_claim_stamp_or_hide_corrected_same_stamp():
+        g = state()
+        message = scan(10.)
+        message["ranges"][0] = math.nan
+        g.update_scan(message, wall_s=0.)
+&gt;       assert "scan" not in g.sensor_stamps
+E       AssertionError: assert 'scan' not in {'scan': 10.0}
+E        +  where {'scan': 10.0} = &lt;inspection_mission.bounded_vertical_response.VerticalResponseGuard object at 0x00000272520656D0&gt;.sensor_stamps
+
+tests\test_bounded_vertical_response.py:189: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_tf_angular_threshold_uses_normalized_quaternions[1.0009]" time="0.007"><failure message="AssertionError: assert ('ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND)">scale = 1.0009
+
+    @pytest.mark.parametrize("scale", [1.0009, .9991])
+    def test_tf_angular_threshold_uses_normalized_quaternions(scale):
+        g = state(); ready(g)
+        message = tf_static()
+        s, c, k = math.sin(.04/2), math.cos(.04/2), math.sqrt(.5)
+        values = (scale*s*k, scale*c*k, scale*s*k, scale*c*k)
+        message["transforms"][0]["transform"]["rotation"] = dict(zip(("x", "y", "z", "w"), values))
+        g.update_tf(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "STOP" and decision.linear_z == 0.
+E       AssertionError: assert ('ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND)
+
+tests\test_bounded_vertical_response.py:203: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_tf_angular_threshold_uses_normalized_quaternions[0.9991]" time="0.006" /><testcase classname="tests.test_bounded_vertical_response" name="test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted[1.0009]" time="0.006" /><testcase classname="tests.test_bounded_vertical_response" name="test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted[0.9991]" time="0.006"><failure message="AssertionError: assert ('STOP' == 'ASCEND'&#10;  &#10;  - ASCEND&#10;  + STOP)">scale = 0.9991
+
+    @pytest.mark.parametrize("scale", [1.0009, .9991, -1.0009, -.9991])
+    def test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted(scale):
+        g = state(); ready(g)
+        message = tf_static()
+        s, c, k = math.sin(.004/2), math.cos(.004/2), math.sqrt(.5)
+        values = (scale*s*k, scale*c*k, scale*s*k, scale*c*k)
+        message["transforms"][0]["transform"]["rotation"] = dict(zip(("x", "y", "z", "w"), values))
+        g.update_tf(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "ASCEND" and decision.linear_z == .05
+E       AssertionError: assert ('STOP' == 'ASCEND'
+E         
+E         - ASCEND
+E         + STOP)
+
+tests\test_bounded_vertical_response.py:216: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted[-1.0009]" time="0.008" /><testcase classname="tests.test_bounded_vertical_response" name="test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted[-0.9991]" time="0.007"><failure message="AssertionError: assert ('STOP' == 'ASCEND'&#10;  &#10;  - ASCEND&#10;  + STOP)">scale = -0.9991
+
+    @pytest.mark.parametrize("scale", [1.0009, .9991, -1.0009, -.9991])
+    def test_equivalent_small_tf_rotation_with_allowed_norm_slack_is_accepted(scale):
+        g = state(); ready(g)
+        message = tf_static()
+        s, c, k = math.sin(.004/2), math.cos(.004/2), math.sqrt(.5)
+        values = (scale*s*k, scale*c*k, scale*s*k, scale*c*k)
+        message["transforms"][0]["transform"]["rotation"] = dict(zip(("x", "y", "z", "w"), values))
+        g.update_tf(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == "ASCEND" and decision.linear_z == .05
+E       AssertionError: assert ('STOP' == 'ASCEND'
+E         
+E         - ASCEND
+E         + STOP)
+
+tests\test_bounded_vertical_response.py:216: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_odom_tilt_uses_normalized_geometry_while_retaining_raw_quaternion[0.9991-0.05004-STOP]" time="0.007"><failure message="AssertionError: assert 'ASCEND' == 'STOP'&#10;  &#10;  - STOP&#10;  + ASCEND">scale = 0.9991, pitch = 0.05004, want_state = 'STOP'
+
+    @pytest.mark.parametrize("scale,pitch,want_state", [(.9991, .05004, "STOP"), (1.0009, .04998, "ASCEND")])
+    def test_odom_tilt_uses_normalized_geometry_while_retaining_raw_quaternion(scale, pitch, want_state):
+        g = state(); ready(g)
+        message = odom(11.15, pitch=pitch)
+        raw = message["pose"]["pose"]["orientation"]
+        for key in raw: raw[key] *= scale
+        g.update_odom(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == want_state
+E       AssertionError: assert 'ASCEND' == 'STOP'
+E         
+E         - STOP
+E         + ASCEND
+
+tests\test_bounded_vertical_response.py:227: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_odom_tilt_uses_normalized_geometry_while_retaining_raw_quaternion[1.0009-0.04998-ASCEND]" time="0.007"><failure message="AssertionError: assert 'STOP' == 'ASCEND'&#10;  &#10;  - ASCEND&#10;  + STOP">scale = 1.0009, pitch = 0.04998, want_state = 'ASCEND'
+
+    @pytest.mark.parametrize("scale,pitch,want_state", [(.9991, .05004, "STOP"), (1.0009, .04998, "ASCEND")])
+    def test_odom_tilt_uses_normalized_geometry_while_retaining_raw_quaternion(scale, pitch, want_state):
+        g = state(); ready(g)
+        message = odom(11.15, pitch=pitch)
+        raw = message["pose"]["pose"]["orientation"]
+        for key in raw: raw[key] *= scale
+        g.update_odom(message, wall_s=1.15)
+        decision = g.step(wall_s=1.15)
+&gt;       assert decision.state == want_state
+E       AssertionError: assert 'STOP' == 'ASCEND'
+E         
+E         - ASCEND
+E         + STOP
+
+tests\test_bounded_vertical_response.py:227: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z[stop]" time="0.007"><failure message="RuntimeError: injected ground channel failure">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000027251D52520&gt;
+action = 'stop'
+
+    @pytest.mark.parametrize("action", ["stop", "publish_zero", "tick", "callback", "watchdog"])
+    def test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z(monkeypatch, action):
+        import threading
+        wall = [0.]
+        node, callbacks, published, _ = transport(monkeypatch, wall)
+        callbacks["/tf_static"](tf_static())
+        for i in range(12):
+            wall[0] = i/10
+            feed_transport(node, callbacks, wall)
+            node.tick()
+        assert published[-1] == ("/uav/cmd_vel", (0., 0., .05, 0., 0., 0.))
+        before = len(published)
+        def broken_ground(_): raise RuntimeError("injected ground channel failure")
+        node.publisher_by_topic["/cmd_vel"].publish = broken_ground
+&gt;       if action == "stop": node.stop("requested_stop")
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_response.py:322: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:486: in stop
+    self._publish(0.)
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:474: in _publish
+    self.publisher_by_topic["/cmd_vel"].publish(ground)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251D7C0C0&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z[publish_zero]" time="0.007"><failure message="RuntimeError: injected ground channel failure">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000027251D522C0&gt;
+action = 'publish_zero'
+
+    @pytest.mark.parametrize("action", ["stop", "publish_zero", "tick", "callback", "watchdog"])
+    def test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z(monkeypatch, action):
+        import threading
+        wall = [0.]
+        node, callbacks, published, _ = transport(monkeypatch, wall)
+        callbacks["/tf_static"](tf_static())
+        for i in range(12):
+            wall[0] = i/10
+            feed_transport(node, callbacks, wall)
+            node.tick()
+        assert published[-1] == ("/uav/cmd_vel", (0., 0., .05, 0., 0., 0.))
+        before = len(published)
+        def broken_ground(_): raise RuntimeError("injected ground channel failure")
+        node.publisher_by_topic["/cmd_vel"].publish = broken_ground
+        if action == "stop": node.stop("requested_stop")
+&gt;       elif action == "publish_zero": node.publish_zero()
+                                       ^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_response.py:323: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:481: in publish_zero
+    with self.command_lock: self._publish(0.)
+                            ^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:474: in _publish
+    self.publisher_by_topic["/cmd_vel"].publish(ground)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251FBA970&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z[tick]" time="0.010"><failure message="RuntimeError: injected ground channel failure">_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251FBAA50&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError
+
+During handling of the above exception, another exception occurred:
+
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x0000027251D5CB90&gt;
+action = 'tick'
+
+    @pytest.mark.parametrize("action", ["stop", "publish_zero", "tick", "callback", "watchdog"])
+    def test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z(monkeypatch, action):
+        import threading
+        wall = [0.]
+        node, callbacks, published, _ = transport(monkeypatch, wall)
+        callbacks["/tf_static"](tf_static())
+        for i in range(12):
+            wall[0] = i/10
+            feed_transport(node, callbacks, wall)
+            node.tick()
+        assert published[-1] == ("/uav/cmd_vel", (0., 0., .05, 0., 0., 0.))
+        before = len(published)
+        def broken_ground(_): raise RuntimeError("injected ground channel failure")
+        node.publisher_by_topic["/cmd_vel"].publish = broken_ground
+        if action == "stop": node.stop("requested_stop")
+        elif action == "publish_zero": node.publish_zero()
+        elif action == "tick":
+            wall[0] = 1.15
+&gt;           decision = node.tick()
+                       ^^^^^^^^^^^
+
+tests\test_bounded_vertical_response.py:326: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:516: in tick
+    return self.stop("control_tick_failed:"+type(exc).__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:486: in stop
+    self._publish(0.)
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:474: in _publish
+    self.publisher_by_topic["/cmd_vel"].publish(ground)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251F9F4D0&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z[callback]" time="0.010"><failure message="RuntimeError: injected ground channel failure">_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251FBAEB0&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError
+
+During handling of the above exception, another exception occurred:
+
+monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002725205A7A0&gt;
+action = 'callback'
+
+    @pytest.mark.parametrize("action", ["stop", "publish_zero", "tick", "callback", "watchdog"])
+    def test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z(monkeypatch, action):
+        import threading
+        wall = [0.]
+        node, callbacks, published, _ = transport(monkeypatch, wall)
+        callbacks["/tf_static"](tf_static())
+        for i in range(12):
+            wall[0] = i/10
+            feed_transport(node, callbacks, wall)
+            node.tick()
+        assert published[-1] == ("/uav/cmd_vel", (0., 0., .05, 0., 0., 0.))
+        before = len(published)
+        def broken_ground(_): raise RuntimeError("injected ground channel failure")
+        node.publisher_by_topic["/cmd_vel"].publish = broken_ground
+        if action == "stop": node.stop("requested_stop")
+        elif action == "publish_zero": node.publish_zero()
+        elif action == "tick":
+            wall[0] = 1.15
+            decision = node.tick()
+            assert decision.state == "STOP" and decision.linear_z == 0.
+        elif action == "callback":
+            wall[0] = 1.15
+            message = scan(11.15); message["ranges"][0] = .5
+&gt;           callbacks["/scan"](message)
+
+tests\test_bounded_vertical_response.py:331: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:451: in &lt;lambda&gt;
+    self.subscriptions_keep.append(self.create_subscription(get_message(kind), topic, lambda msg, topic=topic:self.receive(topic, msg), qos))
+                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:469: in receive
+    self.stop("input_callback_failed:"+topic+":"+type(exc).__name__)
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:486: in stop
+    self._publish(0.)
+src\inspection_mission\inspection_mission\bounded_vertical_response.py:474: in _publish
+    self.publisher_by_topic["/cmd_vel"].publish(ground)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+_ = &lt;test_bounded_vertical_response.transport.&lt;locals&gt;.Twist object at 0x0000027251F3C950&gt;
+
+&gt;   def broken_ground(_): raise RuntimeError("injected ground channel failure")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   RuntimeError: injected ground channel failure
+
+tests\test_bounded_vertical_response.py:320: RuntimeError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z[watchdog]" time="0.315"><failure message="AssertionError: watchdog skipped UAV zero after ground publish failure&#10;assert False&#10; +  where False = wait(0.3)&#10; +    where wait = &lt;threading.Event at 0x2725205af10: unset&gt;.wait">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002725205AE00&gt;
+action = 'watchdog'
+
+    @pytest.mark.parametrize("action", ["stop", "publish_zero", "tick", "callback", "watchdog"])
+    def test_ground_publisher_fault_cannot_suppress_uav_zero_or_allow_more_positive_z(monkeypatch, action):
+        import threading
+        wall = [0.]
+        node, callbacks, published, _ = transport(monkeypatch, wall)
+        callbacks["/tf_static"](tf_static())
+        for i in range(12):
+            wall[0] = i/10
+            feed_transport(node, callbacks, wall)
+            node.tick()
+        assert published[-1] == ("/uav/cmd_vel", (0., 0., .05, 0., 0., 0.))
+        before = len(published)
+        def broken_ground(_): raise RuntimeError("injected ground channel failure")
+        node.publisher_by_topic["/cmd_vel"].publish = broken_ground
+        if action == "stop": node.stop("requested_stop")
+        elif action == "publish_zero": node.publish_zero()
+        elif action == "tick":
+            wall[0] = 1.15
+            decision = node.tick()
+            assert decision.state == "STOP" and decision.linear_z == 0.
+        elif action == "callback":
+            wall[0] = 1.15
+            message = scan(11.15); message["ranges"][0] = .5
+            callbacks["/scan"](message)
+        else:
+            observed_zero = threading.Event()
+            original = node.publisher_by_topic["/uav/cmd_vel"].publish
+            def observe(msg):
+                original(msg)
+                if msg.linear.z == 0.: observed_zero.set()
+            node.publisher_by_topic["/uav/cmd_vel"].publish = observe
+            wall[0] = 1.4
+            node.arm_watchdog()
+&gt;           try: assert observed_zero.wait(.3), "watchdog skipped UAV zero after ground publish failure"
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           AssertionError: watchdog skipped UAV zero after ground publish failure
+E           assert False
+E            +  where False = wait(0.3)
+E            +    where wait = &lt;threading.Event at 0x2725205af10: unset&gt;.wait
+
+tests\test_bounded_vertical_response.py:341: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_response" name="test_failed_uav_positive_publish_latches_and_attempts_uav_zero" time="0.009" /></testsuite></testsuites>

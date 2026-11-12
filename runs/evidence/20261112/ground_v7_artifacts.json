@@ -1,0 +1,33 @@
+{
+  "kind": "bounded_ground_motion_practice",
+  "version": "v7",
+  "created_at": "2026-11-11T17:10:27.250349+00:00",
+  "read_only": false,
+  "official_scoring": "unverified",
+  "formal_submission": false,
+  "changes": [
+    "explicit 0.12 s clock sampling lag bound; 0.2 s age checks retained",
+    "wall-clock 20 Hz commands with continuous ROS reception",
+    "bounded timing evidence"
+  ],
+  "limits": {
+    "speed_mps": 0.03,
+    "pulse_wall_s": 1.0,
+    "max_displacement_m": 0.06,
+    "body_radius_m": 0.447,
+    "scan_offset_bound_m": 0.114,
+    "clearance_m": 0.02
+  },
+  "files": [
+    {
+      "path": "dist/inspection_ground_v7_src.zip",
+      "bytes": 70122,
+      "sha256": "b2c794ebc9d1550f51d83de3d606a5b272e0bfbc2b0b822308b47b6e01a0f25e"
+    },
+    {
+      "path": "dist/run_ground_control_v7.sh",
+      "bytes": 2862,
+      "sha256": "71750a0a9da5c775c9f9a5c8140d6da38ee48ad5e73413e19e1544e5f627f810"
+    }
+  ]
+}

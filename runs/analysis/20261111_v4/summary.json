@@ -1,0 +1,664 @@
+{
+  "schema_version": 1,
+  "status": "partial",
+  "official_scoring": "unverified",
+  "source_evidence": {
+    "path": "runs\\evidence\\20261111\\callback.jsonl",
+    "exists": true,
+    "bytes": 12322,
+    "sha256": "0a0b7c33fc1276c29357b67a136339cc6d14487b15cfca7788903b84b3931cc0"
+  },
+  "record_count": 21,
+  "event_counts": {
+    "launcher_started": 1,
+    "probe_started": 1,
+    "public_graph": 1,
+    "subscription": 14,
+    "sample": 3,
+    "launcher_exit": 1
+  },
+  "missing_events": [
+    "probe_finished",
+    "probe_snapshot"
+  ],
+  "event_presence": {
+    "heartbeat": false,
+    "image_sample": false,
+    "launcher_exit": true,
+    "launcher_started": true,
+    "probe_finished": false,
+    "probe_snapshot": false,
+    "probe_started": true,
+    "public_graph": true,
+    "sample": true,
+    "sample_error": false,
+    "subscription": true,
+    "subscription_error": false
+  },
+  "launcher_starts": [
+    {
+      "line": 1,
+      "event": "launcher_started",
+      "payload_timestamp": "2026-11-11T08:35:48.124166+00:00",
+      "received_at": "2026-11-11T08:35:57.885889+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "read_only": true
+      }
+    }
+  ],
+  "launcher_exits": [
+    {
+      "line": 21,
+      "event": "launcher_exit",
+      "payload_timestamp": "2026-11-11T08:36:23.436290+00:00",
+      "received_at": "2026-11-11T08:36:34.159730+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "read_only": true,
+        "exit_code": 0
+      }
+    }
+  ],
+  "probe_starts": [
+    {
+      "line": 2,
+      "event": "probe_started",
+      "payload_timestamp": "2026-11-11T08:35:50.252935+00:00",
+      "received_at": "2026-11-11T08:36:02.406058+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "read_only": true,
+        "duration_s": 30.0
+      }
+    }
+  ],
+  "probe_finishes": [],
+  "heartbeats": [],
+  "samples": [
+    {
+      "line": 18,
+      "event": "sample",
+      "payload_timestamp": "2026-11-11T08:35:50.334478+00:00",
+      "received_at": "2026-11-11T08:36:28.138068+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "topic": "/odom",
+        "sample_index": 1,
+        "message": {
+          "header": {
+            "stamp": {
+              "sec": 3,
+              "nanosec": 180000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 2.9835790453977926e-05,
+                "y": 8.193480046904608e-06,
+                "z": 0.055000140467037426
+              },
+              "orientation": {
+                "x": -1.4934002428477054e-07,
+                "y": 7.791787351419313e-09,
+                "z": -1.0450149319478169e-05,
+                "w": 0.999999999945386
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 9.988421261339776e-06,
+                "y": -5.199068660413901e-07,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 4.577033317682184e-09
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001
+            ]
+          }
+        }
+      }
+    },
+    {
+      "line": 19,
+      "event": "sample",
+      "payload_timestamp": "2026-11-11T08:35:50.337822+00:00",
+      "received_at": "2026-11-11T08:36:30.195952+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "topic": "/odom",
+        "sample_index": 2,
+        "message": {
+          "header": {
+            "stamp": {
+              "sec": 3,
+              "nanosec": 200000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 3.0035598157377267e-05,
+                "y": 8.183512348145376e-06,
+                "z": 0.05500013746282902
+              },
+              "orientation": {
+                "x": -1.4656976320665384e-07,
+                "y": 7.787602273529257e-09,
+                "z": -1.0450130189806659e-05,
+                "w": 0.9999999999453867
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 9.990395584160028e-06,
+                "y": -4.981761362013643e-07,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 1.912969370414144e-09
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001
+            ]
+          }
+        }
+      }
+    },
+    {
+      "line": 20,
+      "event": "sample",
+      "payload_timestamp": "2026-11-11T08:35:50.338847+00:00",
+      "received_at": "2026-11-11T08:36:31.236677+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "topic": "/tf",
+        "sample_index": 1,
+        "message": {
+          "transforms": [
+            {
+              "header": {
+                "stamp": {
+                  "sec": 3,
+                  "nanosec": 200000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "uav/base_link",
+              "transform": {
+                "translation": {
+                  "x": 3.0035598157377267e-05,
+                  "y": 8.183512348145376e-06,
+                  "z": 0.05500013746282902
+                },
+                "rotation": {
+                  "x": -1.4656976320665384e-07,
+                  "y": 7.787602273529257e-09,
+                  "z": -1.0450130189806659e-05,
+                  "w": 0.9999999999453867
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "sample_record_counts": {
+    "/odom": 2,
+    "/tf": 1
+  },
+  "reported_sample_counts": {},
+  "sample_count_reports": [],
+  "draw_order_payloads": [],
+  "subscriptions": {
+    "/camera/camera_info": {
+      "topic": "/camera/camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "fields": {
+        "header": "std_msgs/Header",
+        "height": "uint32",
+        "width": "uint32",
+        "distortion_model": "string",
+        "d": "sequence<double>",
+        "k": "double[9]",
+        "r": "double[9]",
+        "p": "double[12]",
+        "binning_x": "uint32",
+        "binning_y": "uint32",
+        "roi": "sensor_msgs/RegionOfInterest"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/camera/image": {
+      "topic": "/camera/image",
+      "type": "sensor_msgs/msg/Image",
+      "fields": {
+        "header": "std_msgs/Header",
+        "height": "uint32",
+        "width": "uint32",
+        "encoding": "string",
+        "is_bigendian": "uint8",
+        "step": "uint32",
+        "data": "sequence<uint8>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/odom": {
+      "topic": "/odom",
+      "type": "nav_msgs/msg/Odometry",
+      "fields": {
+        "header": "std_msgs/Header",
+        "child_frame_id": "string",
+        "pose": "geometry_msgs/PoseWithCovariance",
+        "twist": "geometry_msgs/TwistWithCovariance"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/referee/events_public": {
+      "topic": "/referee/events_public",
+      "type": "std_msgs/msg/String",
+      "fields": {
+        "data": "string"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/referee/ground_tasks": {
+      "topic": "/referee/ground_tasks",
+      "type": "std_msgs/msg/String",
+      "fields": {
+        "data": "string"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ]
+    },
+    "/referee/recognition_status": {
+      "topic": "/referee/recognition_status",
+      "type": "std_msgs/msg/String",
+      "fields": {
+        "data": "string"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/scan": {
+      "topic": "/scan",
+      "type": "sensor_msgs/msg/LaserScan",
+      "fields": {
+        "header": "std_msgs/Header",
+        "angle_min": "float",
+        "angle_max": "float",
+        "angle_increment": "float",
+        "time_increment": "float",
+        "scan_time": "float",
+        "range_min": "float",
+        "range_max": "float",
+        "ranges": "sequence<float>",
+        "intensities": "sequence<float>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/tf": {
+      "topic": "/tf",
+      "type": "tf2_msgs/msg/TFMessage",
+      "fields": {
+        "transforms": "sequence<geometry_msgs/TransformStamped>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/tf_static": {
+      "topic": "/tf_static",
+      "type": "tf2_msgs/msg/TFMessage",
+      "fields": {
+        "transforms": "sequence<geometry_msgs/TransformStamped>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.TRANSIENT_LOCAL"
+        }
+      ]
+    },
+    "/uav/camera/camera_info": {
+      "topic": "/uav/camera/camera_info",
+      "type": "sensor_msgs/msg/CameraInfo",
+      "fields": {
+        "header": "std_msgs/Header",
+        "height": "uint32",
+        "width": "uint32",
+        "distortion_model": "string",
+        "d": "sequence<double>",
+        "k": "double[9]",
+        "r": "double[9]",
+        "p": "double[12]",
+        "binning_x": "uint32",
+        "binning_y": "uint32",
+        "roi": "sensor_msgs/RegionOfInterest"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/uav/camera/image": {
+      "topic": "/uav/camera/image",
+      "type": "sensor_msgs/msg/Image",
+      "fields": {
+        "header": "std_msgs/Header",
+        "height": "uint32",
+        "width": "uint32",
+        "encoding": "string",
+        "is_bigendian": "uint8",
+        "step": "uint32",
+        "data": "sequence<uint8>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/uav/laser/scan": {
+      "topic": "/uav/laser/scan",
+      "type": "sensor_msgs/msg/LaserScan",
+      "fields": {
+        "header": "std_msgs/Header",
+        "angle_min": "float",
+        "angle_max": "float",
+        "angle_increment": "float",
+        "time_increment": "float",
+        "scan_time": "float",
+        "range_min": "float",
+        "range_max": "float",
+        "ranges": "sequence<float>",
+        "intensities": "sequence<float>"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/uav/lidar/points": {
+      "topic": "/uav/lidar/points",
+      "type": "sensor_msgs/msg/PointCloud2",
+      "fields": {
+        "header": "std_msgs/Header",
+        "height": "uint32",
+        "width": "uint32",
+        "fields": "sequence<sensor_msgs/PointField>",
+        "is_bigendian": "boolean",
+        "point_step": "uint32",
+        "row_step": "uint32",
+        "data": "sequence<uint8>",
+        "is_dense": "boolean"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    },
+    "/uav/odom": {
+      "topic": "/uav/odom",
+      "type": "nav_msgs/msg/Odometry",
+      "fields": {
+        "header": "std_msgs/Header",
+        "child_frame_id": "string",
+        "pose": "geometry_msgs/PoseWithCovariance",
+        "twist": "geometry_msgs/TwistWithCovariance"
+      },
+      "publishers": [
+        {
+          "node": "//ican_inspection_public_bridge_3",
+          "reliability": "ReliabilityPolicy.RELIABLE",
+          "durability": "DurabilityPolicy.VOLATILE"
+        }
+      ]
+    }
+  },
+  "public_graphs": [
+    {
+      "line": 3,
+      "event": "public_graph",
+      "payload_timestamp": "2026-11-11T08:35:50.257442+00:00",
+      "received_at": "2026-11-11T08:36:05.436603+00:00",
+      "source": "unverified_callback",
+      "data": {
+        "topics": [
+          {
+            "name": "/camera/camera_info",
+            "type": "sensor_msgs/msg/CameraInfo",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/camera/image",
+            "type": "sensor_msgs/msg/Image",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/odom",
+            "type": "nav_msgs/msg/Odometry",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/referee/events_public",
+            "type": "std_msgs/msg/String",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/referee/ground_tasks",
+            "type": "std_msgs/msg/String",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/referee/recognition_status",
+            "type": "std_msgs/msg/String",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/scan",
+            "type": "sensor_msgs/msg/LaserScan",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/tf",
+            "type": "tf2_msgs/msg/TFMessage",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/tf_static",
+            "type": "tf2_msgs/msg/TFMessage",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/uav/camera/camera_info",
+            "type": "sensor_msgs/msg/CameraInfo",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/uav/camera/image",
+            "type": "sensor_msgs/msg/Image",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/uav/laser/scan",
+            "type": "sensor_msgs/msg/LaserScan",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/uav/lidar/points",
+            "type": "sensor_msgs/msg/PointCloud2",
+            "publishers": 1,
+            "subscribers": 0
+          },
+          {
+            "name": "/uav/odom",
+            "type": "nav_msgs/msg/Odometry",
+            "publishers": 1,
+            "subscribers": 0
+          }
+        ]
+      }
+    }
+  ],
+  "snapshots": {
+    "full_count": 0,
+    "partial_count": 0,
+    "incomplete_count": 0,
+    "assembled": {},
+    "parts": []
+  },
+  "images": [],
+  "diagnostic_errors": [],
+  "parse_errors": [],
+  "unknown_events": [],
+  "unknown_fields": [],
+  "sample_topics": [
+    "/odom",
+    "/tf"
+  ],
+  "launcher_exit_codes": [
+    0
+  ],
+  "startup": {
+    "launcher_started": true,
+    "probe_started": true
+  },
+  "missing_snapshot_fields": [
+    "elapsed_s",
+    "errors",
+    "official_scoring",
+    "public_endpoints",
+    "read_only",
+    "sample_counts",
+    "samples",
+    "subscriptions",
+    "topics"
+  ],
+  "notes": [
+    "Only local diagnostic evidence is analyzed; no mission, coordinates, recognition acceptance or score is inferred.",
+    "Missing callbacks do not prove missing ROS callbacks. Received order does not prove generation order.",
+    "Reported counts may overlap individual samples and repeated snapshots; they are not added together.",
+    "Partial fragments have no completeness manifest and remain partial evidence."
+  ]
+}

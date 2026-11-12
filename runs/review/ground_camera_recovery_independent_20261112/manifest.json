@@ -1,0 +1,35 @@
+{
+  "schema": "independent_ground_review_v1",
+  "date": "2026-11-12",
+  "reviewer": "/root/axis_final_review",
+  "revision": "v36",
+  "verdict": "no_blocking_finding_in_reviewed_scope",
+  "independent_probe_passed": 5,
+  "independent_probe_total": 5,
+  "static_passed": 2,
+  "production_modified": false,
+  "uploaded": false,
+  "platform_verified": false,
+  "files": [
+    {
+      "path": "runs/review/ground_camera_recovery_independent_20261112/REVIEW.md",
+      "sha256": "08da8df38c2f6966b6fdceca65944d78be5a539549dee6b6efa08aa3265020bc",
+      "bytes": 2214
+    },
+    {
+      "path": "runs/review/ground_camera_recovery_independent_20261112/v36_probe_results.json",
+      "sha256": "c8d34cc2acbf380fb346ae300f2fae3961d325bf4114b204eeab29f5aab2fd43",
+      "bytes": 1116
+    },
+    {
+      "path": "runs/review/ground_camera_recovery_independent_20261112/independent_probe.py",
+      "sha256": "b51d003c43140a9d87619c0b3260bda556aacec09bf6a34274d0e83fb22a84bf",
+      "bytes": 14466
+    },
+    {
+      "path": "runs/review/ground_camera_recovery_independent_20261112/static_probe_results.json",
+      "sha256": "f434d120b15d8d30f24ad3e471fc013eee295ff8e8bcfb02ffa08d6fad9c0589",
+      "bytes": 879
+    }
+  ]
+}

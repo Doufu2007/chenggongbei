@@ -1,0 +1,13 @@
+{
+  "manifest_matches": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": true,
+    "scripts/run_bounded_vertical_response.sh": true,
+    "tests/test_bounded_vertical_response.py": true,
+    "docs/bounded_vertical_runtime_20261112.md": true
+  },
+  "frozen_ground_matches": {
+    "src/inspection_mission/inspection_mission/ground_single_point.py": true,
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": true
+  },
+  "review_sha256": "b959af41896b2bc2125c84ebf0687a3a185446cc5be066012516043187d46735"
+}

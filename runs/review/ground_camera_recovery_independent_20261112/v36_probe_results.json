@@ -1,0 +1,52 @@
+{
+  "group": "v36",
+  "passed": 5,
+  "total": 5,
+  "checks": [
+    {
+      "name": "camera_half_second_boundary",
+      "passed": true,
+      "detail": {
+        "accepted_wall_age": 0.5,
+        "paused_wall_age": 0.50001
+      }
+    },
+    {
+      "name": "invalid_time_priority_and_missing_source",
+      "passed": true,
+      "detail": {
+        "terminal_variants": 3
+      }
+    },
+    {
+      "name": "dual_clock_dwell_with_slow_source",
+      "passed": true,
+      "detail": {
+        "wall_only_dwell_s": 1.2,
+        "source_dwell_s": 0.23,
+        "new_epoch": 2
+      }
+    },
+    {
+      "name": "actual_constructed_factory_final_dds",
+      "passed": true,
+      "detail": {
+        "retained_constructed_instance": true,
+        "transports": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "final_dds_gap_s": 0.530038013
+      }
+    },
+    {
+      "name": "factory_rejects_changed_start_or_contract",
+      "passed": true,
+      "detail": {
+        "mismatched_start_and_limit_instances_rejected": 2
+      }
+    }
+  ]
+}

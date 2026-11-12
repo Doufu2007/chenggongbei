@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "record_id": "e51c52ce-2605-4a4b-acb2-ea9c4a8bbfee",
+  "runId": "run_20261112_055257_72484c3b",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "single-point-v24b",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_single_point_v24b_src.zip",
+    "sha256": "61a8c1bc8a5a6938ea981e0fdadc8b407953fca56b5005a0cdd85a7904a4d643"
+  },
+  "script": {
+    "path": "dist/run_single_point_v24b.sh",
+    "sha256": "00b7011688f206bb1f95608ad4e89b94a2ba8e5de6ce60652f5d285b1e7d2150"
+  },
+  "draw_order": ["ground_4", "ground_2", "ground_3"],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 128.875,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/single_point_v24b_submission.json",
+    "runs/evidence/20261112/single_point_v24b_artifacts.json",
+    "runs/evidence/20261112/single_point_v24b_list_after_run.json",
+    "runs/evidence/20261112/callback_single_point_v24b.jsonl",
+    "runs/analysis/20261112_single_point_v24b_independent/summary.json",
+    "runs/review/20261112_single_point_v24b/independent_metrics.json",
+    "docs/platform_single_point_v24b_independent_20261112.md"
+  ]
+}

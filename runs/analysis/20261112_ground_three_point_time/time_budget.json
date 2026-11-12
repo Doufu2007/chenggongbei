@@ -1,0 +1,891 @@
+{
+  "kind": "v25_observation_based_time_scenario_not_deadline_guarantee",
+  "sources": [
+    {
+      "path": "runs/analysis/20261112_single_point_v25_independent/summary.json",
+      "sha256": "0c0cfe2e0599c31725b7100930447d046acc61a01355376d8b3c2441cf18ab11"
+    },
+    {
+      "path": "runs/analysis/20261112_ground_three_point_corridor/report.json",
+      "sha256": "cb41d31fc7514e24d0f0928376f488e171cdb605e77e051c22eb74a5abc24384"
+    },
+    {
+      "path": "docs/referee_rules_v1.txt",
+      "sha256": "45c6eaf7c81777af2c6f47a3cd677a3c98c3f3285e20bed5297f08df36d2931e"
+    }
+  ],
+  "complete_series": {
+    "trajectory_10hz": {
+      "complete": true,
+      "rows": 1904
+    },
+    "actual_commands": {
+      "complete": true,
+      "rows": 4316
+    }
+  },
+  "clock": {
+    "guard_wall_s": 195.336,
+    "trajectory_wall_s": 195.22334899999998,
+    "trajectory_sim_s": 191.86,
+    "sim_per_wall": 0.9827717892494511,
+    "platform_duration_s": 275.179,
+    "launcher_payload_wall_s": 257.770975,
+    "platform_minus_guard_s": 79.84299999999996,
+    "launcher_minus_guard_s": 62.43497500000001
+  },
+  "command_state_wall_s": {
+    "WAIT": 1.190512,
+    "TURN_SETTLE": 5.527681000000021,
+    "DRIVE": 84.88035899999997,
+    "CALIBRATION_SETTLE": 1.1495069999999998,
+    "DRIVE_SETTLE": 4.328273999999995,
+    "TURN": 86.73636600000002,
+    "PAUSE": 1.1001329999999996,
+    "CAPTURE": 0.9496959999999888,
+    "RECOGNIZE_WAIT": 4.377154000000004,
+    "REPORT_WAIT": 0.9731299999999976,
+    "DECLARE_WAIT": 2.0212180000000046,
+    "STOP": 2.01952,
+    "FINISHED": 0.031260000000003174
+  },
+  "midpoint_wall_aligned_response": {
+    "zero": {
+      "sample_intervals": 228.0,
+      "wall_s": 23.78349699999999,
+      "sim_s": 23.239999999999966,
+      "path_m": 0.00411799532679216,
+      "absolute_rotation_rad": 0.004920300000000148,
+      "path_m_per_wall_s": 0.00017314507310645536,
+      "path_m_per_sim_s": 0.00017719429117005878,
+      "absolute_rotation_rad_per_wall_s": 0.00020687874453450433,
+      "absolute_rotation_rad_per_sim_s": 0.0002117168674698862
+    },
+    "drive_0.03": {
+      "sample_intervals": 431.0,
+      "wall_s": 43.994973,
+      "sim_s": 43.3,
+      "path_m": 0.19875326418019187,
+      "absolute_rotation_rad": 0.00717399999999974,
+      "path_m_per_wall_s": 0.0045176357803468105,
+      "path_m_per_sim_s": 0.004590144669288496,
+      "absolute_rotation_rad_per_wall_s": 0.00016306408461711614,
+      "absolute_rotation_rad_per_sim_s": 0.0001656812933025344
+    },
+    "drive_0.10": {
+      "sample_intervals": 399.0,
+      "wall_s": 40.91126399999998,
+      "sim_s": 40.24000000000002,
+      "path_m": 2.2649777078588174,
+      "absolute_rotation_rad": 0.007844500000000807,
+      "path_m_per_wall_s": 0.05536318085549296,
+      "path_m_per_sim_s": 0.05628672236229662,
+      "absolute_rotation_rad_per_wall_s": 0.00019174425898942676,
+      "absolute_rotation_rad_per_sim_s": 0.00019494284294236587
+    },
+    "turn_0.50": {
+      "sample_intervals": 168.0,
+      "wall_s": 17.195241000000003,
+      "sim_s": 16.91999999999999,
+      "path_m": 0.008808737432206386,
+      "absolute_rotation_rad": 1.4583065999999998,
+      "path_m_per_wall_s": 0.000512277637295481,
+      "path_m_per_sim_s": 0.0005206109593502595,
+      "absolute_rotation_rad_per_wall_s": 0.08480873283485818,
+      "absolute_rotation_rad_per_sim_s": 0.08618833333333337
+    },
+    "turn_between_0.35_0.50": {
+      "sample_intervals": 70.0,
+      "wall_s": 7.12675999999999,
+      "sim_s": 7.0,
+      "path_m": 0.0016528641562833517,
+      "absolute_rotation_rad": 0.4950399,
+      "path_m_per_wall_s": 0.0002319236450060552,
+      "path_m_per_sim_s": 0.00023612345089762168,
+      "absolute_rotation_rad_per_wall_s": 0.06946212584680846,
+      "absolute_rotation_rad_per_sim_s": 0.07071998571428571
+    },
+    "turn_0.35": {
+      "sample_intervals": 607.0,
+      "wall_s": 62.21161400000002,
+      "sim_s": 61.160000000000025,
+      "path_m": 0.02328559187841719,
+      "absolute_rotation_rad": 2.0903058,
+      "path_m_per_wall_s": 0.00037429654016719747,
+      "path_m_per_sim_s": 0.0003807323721127728,
+      "absolute_rotation_rad_per_wall_s": 0.033599928785001454,
+      "absolute_rotation_rad_per_sim_s": 0.034177661870503584
+    }
+  },
+  "v25_accounting": {
+    "path_m": 2.50953829598953,
+    "rotation_rad": 4.070505806465582,
+    "turn_elapsed_wall_s": 93.36465010799293,
+    "drive_elapsed_wall_s": 90.35792115000368,
+    "turn_wall_s_per_rad": 22.936866951446852,
+    "drive_wall_s_per_m": 36.0057948884079
+  },
+  "sixty_order_scenario": [
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 7.3445021347558,
+      "rotation_rad": 19.85238412164228,
+      "turn_wall_s": 455.3514932671251,
+      "drive_wall_s": 264.4446374214913,
+      "scaled_motion_wall_s": 719.7961306886164
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 6.832363168958642,
+      "rotation_rad": 20.247175241342042,
+      "turn_wall_s": 464.40676465329125,
+      "drive_wall_s": 246.00466686463744,
+      "scaled_motion_wall_s": 710.4114315179287
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 7.990653166722158,
+      "rotation_rad": 21.95568454673903,
+      "turn_wall_s": 503.5946152764908,
+      "drive_wall_s": 287.70981894540506,
+      "scaled_motion_wall_s": 791.3044342218959
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 8.6845021347558,
+      "rotation_rad": 19.85238412164228,
+      "turn_wall_s": 455.3514932671251,
+      "drive_wall_s": 312.69240257195787,
+      "scaled_motion_wall_s": 768.043895839083
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 8.15600009904596,
+      "rotation_rad": 19.510913698691716,
+      "turn_wall_s": 447.5192316080537,
+      "drive_wall_s": 293.6632666760833,
+      "scaled_motion_wall_s": 741.182498284137
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 9.314290096809476,
+      "rotation_rad": 21.219423004088704,
+      "turn_wall_s": 486.70708223125325,
+      "drive_wall_s": 335.36841875685093,
+      "scaled_motion_wall_s": 822.0755009881042
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 7.322363168958642,
+      "rotation_rad": 18.676378914547147,
+      "turn_wall_s": 428.3776182977753,
+      "drive_wall_s": 263.64750635995733,
+      "scaled_motion_wall_s": 692.0251246577327
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 6.40600009904596,
+      "rotation_rad": 19.905704818391477,
+      "turn_wall_s": 456.5745029942198,
+      "drive_wall_s": 230.6531256213695,
+      "scaled_motion_wall_s": 687.2276286155893
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 7.952151131012318,
+      "rotation_rad": 20.043417796993566,
+      "turn_wall_s": 459.7332072619034,
+      "drive_wall_s": 286.3235225448504,
+      "scaled_motion_wall_s": 746.0567298067538
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 7.330653166722158,
+      "rotation_rad": 20.38488821994413,
+      "turn_wall_s": 467.56546892097475,
+      "drive_wall_s": 263.94599431905584,
+      "scaled_motion_wall_s": 731.5114632400306
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 8.464290096809476,
+      "rotation_rad": 19.648626677293805,
+      "turn_wall_s": 450.67793587573726,
+      "drive_wall_s": 304.7634931017042,
+      "scaled_motion_wall_s": 755.4414289774415
+    },
+    {
+      "order": [
+        "ground_0",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 7.302151131012318,
+      "rotation_rad": 17.95797404025649,
+      "turn_wall_s": 411.8996612788996,
+      "drive_wall_s": 262.9197558673853,
+      "scaled_motion_wall_s": 674.8194171462849
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 7.444502134755799,
+      "rotation_rad": 20.025561128633896,
+      "turn_wall_s": 459.32363123554154,
+      "drive_wall_s": 268.04521691033204,
+      "scaled_motion_wall_s": 727.3688481458736
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 6.932363168958641,
+      "rotation_rad": 20.420352248333657,
+      "turn_wall_s": 468.3789026217077,
+      "drive_wall_s": 249.60524635347824,
+      "scaled_motion_wall_s": 717.9841489751859
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 8.090653166722158,
+      "rotation_rad": 22.12886155373064,
+      "turn_wall_s": 507.56675324490715,
+      "drive_wall_s": 291.3103984342458,
+      "scaled_motion_wall_s": 798.877151679153
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 8.869502134755798,
+      "rotation_rad": 20.025561128633896,
+      "turn_wall_s": 459.32363123554154,
+      "drive_wall_s": 319.35347462631324,
+      "scaled_motion_wall_s": 778.6771058618548
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 7.9164327013802,
+      "rotation_rad": 18.454764801838998,
+      "turn_wall_s": 423.29448488002555,
+      "drive_wall_s": 285.0374520937803,
+      "scaled_motion_wall_s": 708.3319369738058
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 9.074722699143717,
+      "rotation_rad": 20.163274107235985,
+      "turn_wall_s": 462.4823355032251,
+      "drive_wall_s": 326.742604174548,
+      "scaled_motion_wall_s": 789.2249396777731
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 7.5073631689586415,
+      "rotation_rad": 18.84955592153876,
+      "turn_wall_s": 432.34975626619166,
+      "drive_wall_s": 270.30857841431276,
+      "scaled_motion_wall_s": 702.6583346805044
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 6.1664327013802,
+      "rotation_rad": 18.84955592153876,
+      "turn_wall_s": 432.34975626619166,
+      "drive_wall_s": 222.0273110390665,
+      "scaled_motion_wall_s": 654.3770673052582
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 7.712583733346559,
+      "rotation_rad": 18.987268900140847,
+      "turn_wall_s": 435.5084605338752,
+      "drive_wall_s": 277.69770796254744,
+      "scaled_motion_wall_s": 713.2061684964226
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 7.515653166722158,
+      "rotation_rad": 20.558065226935746,
+      "turn_wall_s": 471.5376068893912,
+      "drive_wall_s": 270.6070663734113,
+      "scaled_motion_wall_s": 742.1446732628026
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 8.224722699143715,
+      "rotation_rad": 18.592477780441087,
+      "turn_wall_s": 426.45318914770905,
+      "drive_wall_s": 296.1376785194012,
+      "scaled_motion_wall_s": 722.5908676671103
+    },
+    {
+      "order": [
+        "ground_1",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 7.062583733346559,
+      "rotation_rad": 16.901825143403777,
+      "turn_wall_s": 387.6749145508715,
+      "drive_wall_s": 254.2939412850823,
+      "scaled_motion_wall_s": 641.9688558359538
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 10.484502134755799,
+      "rotation_rad": 21.93782787837936,
+      "turn_wall_s": 503.1850392501289,
+      "drive_wall_s": 377.50283337109204,
+      "scaled_motion_wall_s": 880.687872621221
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 9.956000099045959,
+      "rotation_rad": 21.59635745542879,
+      "turn_wall_s": 495.3527775910575,
+      "drive_wall_s": 358.4736974752175,
+      "scaled_motion_wall_s": 853.826475066275
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 11.114290096809475,
+      "rotation_rad": 23.304866760825774,
+      "turn_wall_s": 534.5406282142569,
+      "drive_wall_s": 400.1788495559851,
+      "scaled_motion_wall_s": 934.7194777702421
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 10.5695021347558,
+      "rotation_rad": 21.93782787837936,
+      "turn_wall_s": 503.1850392501289,
+      "drive_wall_s": 380.5633259366067,
+      "scaled_motion_wall_s": 883.7483651867356
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 9.6164327013802,
+      "rotation_rad": 20.36703155158446,
+      "turn_wall_s": 467.1558928946129,
+      "drive_wall_s": 346.24730340407376,
+      "scaled_motion_wall_s": 813.4031962986867
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 10.774722699143716,
+      "rotation_rad": 22.075540856981448,
+      "turn_wall_s": 506.34374351781247,
+      "drive_wall_s": 387.9524554848414,
+      "scaled_motion_wall_s": 894.2961990026538
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 10.531000099045958,
+      "rotation_rad": 20.025561128633896,
+      "turn_wall_s": 459.32363123554154,
+      "drive_wall_s": 379.17702953605203,
+      "scaled_motion_wall_s": 838.5006607715936
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 10.1064327013802,
+      "rotation_rad": 18.796235224789562,
+      "turn_wall_s": 431.1267465390969,
+      "drive_wall_s": 363.89014289939365,
+      "scaled_motion_wall_s": 795.0168894384906
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_3",
+        "ground_4"
+      ],
+      "path_m": 10.736220663433876,
+      "rotation_rad": 20.163274107235985,
+      "turn_wall_s": 462.4823355032251,
+      "drive_wall_s": 386.5661590842867,
+      "scaled_motion_wall_s": 849.0484945875119
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 10.539290096809475,
+      "rotation_rad": 21.73407043403088,
+      "turn_wall_s": 498.51148185874104,
+      "drive_wall_s": 379.4755174951506,
+      "scaled_motion_wall_s": 877.9869993538916
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 10.114722699143716,
+      "rotation_rad": 20.50474453018655,
+      "turn_wall_s": 470.3145971622965,
+      "drive_wall_s": 364.18863085849216,
+      "scaled_motion_wall_s": 834.5032280207886
+    },
+    {
+      "order": [
+        "ground_2",
+        "ground_4",
+        "ground_3"
+      ],
+      "path_m": 10.086220663433876,
+      "rotation_rad": 18.07783035049891,
+      "turn_wall_s": 414.6487895202213,
+      "drive_wall_s": 363.16239240682154,
+      "scaled_motion_wall_s": 777.8111819270429
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 8.47236316895864,
+      "rotation_rad": 18.676378914547147,
+      "turn_wall_s": 428.3776182977753,
+      "drive_wall_s": 305.0541704816264,
+      "scaled_motion_wall_s": 733.4317887794017
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 8.456000099045959,
+      "rotation_rad": 17.94011737189682,
+      "turn_wall_s": 411.49008525253777,
+      "drive_wall_s": 304.46500514260566,
+      "scaled_motion_wall_s": 715.9550903951434
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_0",
+        "ground_4"
+      ],
+      "path_m": 9.102151131012317,
+      "rotation_rad": 20.043417796993566,
+      "turn_wall_s": 459.7332072619034,
+      "drive_wall_s": 327.73018666651944,
+      "scaled_motion_wall_s": 787.4633939284229
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 8.557363168958641,
+      "rotation_rad": 18.676378914547147,
+      "turn_wall_s": 428.3776182977753,
+      "drive_wall_s": 308.11466304714105,
+      "scaled_motion_wall_s": 736.4922813449164
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 8.1164327013802,
+      "rotation_rad": 16.71079146805249,
+      "turn_wall_s": 383.2932005560932,
+      "drive_wall_s": 292.2386110714619,
+      "scaled_motion_wall_s": 675.531811627555
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_1",
+        "ground_4"
+      ],
+      "path_m": 8.762583733346558,
+      "rotation_rad": 18.814091893149236,
+      "turn_wall_s": 431.5363225654589,
+      "drive_wall_s": 315.50379259537567,
+      "scaled_motion_wall_s": 747.0401151608346
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 8.981000099045959,
+      "rotation_rad": 19.905704818391477,
+      "turn_wall_s": 456.5745029942198,
+      "drive_wall_s": 323.3680474590198,
+      "scaled_motion_wall_s": 779.9425504532396
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 8.5564327013802,
+      "rotation_rad": 18.676378914547147,
+      "turn_wall_s": 428.3776182977753,
+      "drive_wall_s": 308.08116082236137,
+      "scaled_motion_wall_s": 736.4587791201367
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_2",
+        "ground_4"
+      ],
+      "path_m": 9.186220663433875,
+      "rotation_rad": 20.043417796993566,
+      "turn_wall_s": 459.7332072619034,
+      "drive_wall_s": 330.7571770072544,
+      "scaled_motion_wall_s": 790.4903842691579
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_0"
+      ],
+      "path_m": 8.527151131012317,
+      "rotation_rad": 18.47262147019867,
+      "turn_wall_s": 423.70406090638744,
+      "drive_wall_s": 307.02685460568495,
+      "scaled_motion_wall_s": 730.7309155120724
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_1"
+      ],
+      "path_m": 8.102583733346558,
+      "rotation_rad": 17.24329556635434,
+      "turn_wall_s": 395.50717620994294,
+      "drive_wall_s": 291.73996796902645,
+      "scaled_motion_wall_s": 687.2471441789694
+    },
+    {
+      "order": [
+        "ground_3",
+        "ground_4",
+        "ground_2"
+      ],
+      "path_m": 9.236220663433876,
+      "rotation_rad": 16.507034023704016,
+      "turn_wall_s": 378.6196431647054,
+      "drive_wall_s": 332.55746675167484,
+      "scaled_motion_wall_s": 711.1771099163802
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_1"
+      ],
+      "path_m": 6.044658661186184,
+      "rotation_rad": 17.62023001769443,
+      "turn_wall_s": 404.1528715697471,
+      "drive_wall_s": 217.64273992510803,
+      "scaled_motion_wall_s": 621.7956114948552
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_2"
+      ],
+      "path_m": 6.028295591273502,
+      "rotation_rad": 16.8839684750441,
+      "turn_wall_s": 387.2653385245095,
+      "drive_wall_s": 217.05357458608734,
+      "scaled_motion_wall_s": 604.3189131105969
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_0",
+        "ground_3"
+      ],
+      "path_m": 5.516156625476344,
+      "rotation_rad": 17.27875959474386,
+      "turn_wall_s": 396.32060991067567,
+      "drive_wall_s": 198.6136040292335,
+      "scaled_motion_wall_s": 594.9342139399091
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_0"
+      ],
+      "path_m": 6.129658661186184,
+      "rotation_rad": 17.62023001769443,
+      "turn_wall_s": 404.1528715697471,
+      "drive_wall_s": 220.7032324906227,
+      "scaled_motion_wall_s": 624.8561040603698
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_2"
+      ],
+      "path_m": 5.6887281936077425,
+      "rotation_rad": 15.654642571199771,
+      "turn_wall_s": 359.068453828065,
+      "drive_wall_s": 204.82718051494356,
+      "scaled_motion_wall_s": 563.8956343430086
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_1",
+        "ground_3"
+      ],
+      "path_m": 5.1765892278105845,
+      "rotation_rad": 16.049433690899534,
+      "turn_wall_s": 368.1237252142312,
+      "drive_wall_s": 186.38720995808973,
+      "scaled_motion_wall_s": 554.5109351723208
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_0"
+      ],
+      "path_m": 8.6032955912735,
+      "rotation_rad": 16.883968475044103,
+      "turn_wall_s": 387.2653385245096,
+      "drive_wall_s": 309.7684964237376,
+      "scaled_motion_wall_s": 697.0338349482472
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_1"
+      ],
+      "path_m": 8.178728193607743,
+      "rotation_rad": 15.654642571199773,
+      "turn_wall_s": 359.06845382806506,
+      "drive_wall_s": 294.4816097870792,
+      "scaled_motion_wall_s": 653.5500636151443
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_2",
+        "ground_3"
+      ],
+      "path_m": 7.650226157897902,
+      "rotation_rad": 15.313172148249205,
+      "turn_wall_s": 351.23619216899357,
+      "drive_wall_s": 275.45247389120465,
+      "scaled_motion_wall_s": 626.6886660601982
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_0"
+      ],
+      "path_m": 6.591156625476343,
+      "rotation_rad": 13.622519511211891,
+      "turn_wall_s": 312.45791757215596,
+      "drive_wall_s": 237.31983353427196,
+      "scaled_motion_wall_s": 549.7777511064279
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_1"
+      ],
+      "path_m": 6.166589227810584,
+      "rotation_rad": 12.39319360736756,
+      "turn_wall_s": 284.2610328757114,
+      "drive_wall_s": 222.03294689761353,
+      "scaled_motion_wall_s": 506.29397977332496
+    },
+    {
+      "order": [
+        "ground_4",
+        "ground_3",
+        "ground_2"
+      ],
+      "path_m": 5.2502261578979015,
+      "rotation_rad": 13.622519511211893,
+      "turn_wall_s": 312.45791757215596,
+      "drive_wall_s": 189.0385661590257,
+      "scaled_motion_wall_s": 501.4964837311817
+    }
+  ],
+  "worst_scaled_motion": {
+    "order": [
+      "ground_2",
+      "ground_0",
+      "ground_4"
+    ],
+    "path_m": 11.114290096809475,
+    "rotation_rad": 23.304866760825774,
+    "turn_wall_s": 534.5406282142569,
+    "drive_wall_s": 400.1788495559851,
+    "scaled_motion_wall_s": 934.7194777702421
+  },
+  "geometry_cap_scenario": {
+    "path_cap_m": 12.5,
+    "rotation_cap_rad": 25.0,
+    "drive_wall_s": 450.07243610509875,
+    "turn_wall_s": 573.4216737861713,
+    "motion_wall_s": 1023.49410989127,
+    "extra_per_operation_settle_reserve_s": 32.0,
+    "three_visual_report_reserve_s": 45.0,
+    "startup_stop_pause_reserve_s": 30.0
+  },
+  "recommended_engineering_caps": {
+    "global_wall_s": 1200.0,
+    "turn_total_wall_s": 700.0,
+    "drive_total_wall_s": 500.0,
+    "single_turn_wall_s": 45.0,
+    "single_drive_wall_s": 190.0,
+    "capture_recognition_report_per_point_wall_s": 15.0,
+    "not_official_limits": true,
+    "shared_global_ledger": true
+  },
+  "official_deadline": "not_found_in_cached_public_rules; platform duration is not a deadline",
+  "limitations": [
+    "Single v25 run; midpoint time association is descriptive, not actuator latency or causal gain identification.",
+    "Integrated odometry and header time are distinct from requested velocity and wall time.",
+    "Scaled rates include v25 state overhead but not a proof for other headings, path lengths, load or tracking errors.",
+    "Extra 32s settle reserve is conservative double-counting allowance, not a measured three-point value.",
+    "No official total deadline found; cannot state calibration is mandatory to meet it.",
+    "Do not extrapolate turn command beyond tested .35-.50 range or relax current scan/freshness/stop gates."
+  ]
+}

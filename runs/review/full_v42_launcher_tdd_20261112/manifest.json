@@ -1,0 +1,81 @@
+{
+  "schema": "full_v42_launcher_tdd_v1",
+  "scope": "new launcher script and tests only; no dist build/upload/simulation/control or vision edits",
+  "files": [
+    {
+      "path": "scripts/run_full_inspection_v42.sh",
+      "bytes": 4902,
+      "sha256": "aa3de78b5c110b06931e214b2c549751623dc1c93268bde31fb09d128e2978c2"
+    },
+    {
+      "path": "tests/test_full_inspection_launcher_v42.py",
+      "bytes": 8501,
+      "sha256": "6eed011891a657848eed93c8b9c6d98a912463d05759d8512e223124ab75368a"
+    }
+  ],
+  "red": {
+    "against": "exact frozen v41 inline sender via INSPECTION_LAUNCHER_TEST_SCRIPT",
+    "failed": 11,
+    "passed": 1,
+    "deselected": 2,
+    "seconds": 0.93,
+    "evidence": "v42_red.txt",
+    "real_shell_baseline_excluded_to_avoid_frozen_remote_endpoint": true
+  },
+  "green": {
+    "failed": 0,
+    "passed": 14,
+    "seconds": 5.4,
+    "evidence": "v42_green.txt"
+  },
+  "related": {
+    "passed": 93,
+    "failed": 2,
+    "errors": 3,
+    "seconds": 19.02,
+    "evidence": "v42_related_green.txt",
+    "classification": "concurrent receiver delivery_log TDD RED, acknowledged by root; root owns final joint rerun",
+    "failures": [
+      "test_delivery_log_is_opt_in_and_may_not_share_accepted_path",
+      "test_accepted_202_response_failure_has_a_separate_failure_record"
+    ],
+    "errors_names": [
+      "test_optional_delivery_ledger_separates_rejections_from_accepted_evidence",
+      "test_delivery_ledger_failure_does_not_change_accepted_post",
+      "test_delivery_ledger_hard_row_bound_keeps_accepted_traffic"
+    ]
+  },
+  "checks": {
+    "bash_n_exit": 0,
+    "v41_76_frozen_source_entries_changed": 0,
+    "v41_script_sha256": "7eeb6f05399bdfd82b538322065fa0fb9a2e4404ac5576ac986716a729b50309",
+    "v41_zip_sha256": "a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d"
+  },
+  "contract": {
+    "started_max_attempts": 3,
+    "exit_max_attempts": 3,
+    "heartbeat_max_attempts_each": 1,
+    "request_timeout_s": 3,
+    "response_body_max_bytes": 4096,
+    "acceptance": "HTTP202 and parsed JSON object accepted is True",
+    "safe_diagnostic_stderr_fields": [
+      "event",
+      "attempt",
+      "exception",
+      "status"
+    ],
+    "real_shell_exit_codes_verified": [
+      0,
+      37
+    ],
+    "runtime_args": [
+      "-u",
+      "-m",
+      "inspection_mission.full_inspection_runtime",
+      "--ground-duration",
+      "1800",
+      "--flight-duration",
+      "900"
+    ]
+  }
+}

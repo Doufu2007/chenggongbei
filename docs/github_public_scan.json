@@ -1,0 +1,6 @@
+{
+  "text_and_archive_entries_scanned": 2526,
+  "finding_count": 0,
+  "findings": [],
+  "not_checked": "Image pixels are not OCR scanned; browser account screenshots were excluded. Known negative test fixtures retained."
+}

@@ -1,0 +1,37 @@
+{
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\evidence\\20261112\\callback_reverse_v30.jsonl",
+  "source_sha256": "33665eb33bf19ce44ab8db6c53018bdb21a47a7dafcc552f3ca9288eef8a103a",
+  "source_bytes": 214475,
+  "event_count": 13,
+  "parts_verified": 3,
+  "session_id": "38862597b73c451ebc0c066586310cbd",
+  "metadata": {
+    "mode": "ground_reverse_response",
+    "section": "ground_direction_evidence_gzip_part",
+    "encoding": "gzip+base64",
+    "session_id": "38862597b73c451ebc0c066586310cbd",
+    "bundle": "ground_direction_response_v1",
+    "uncompressed_sha256": "b560fe98c9f3c3044d784613f1a5f15b211dd1cfcafa0c71b56aea2afdf8f43c",
+    "compressed_sha256": "c4983418bf1d083d9cd3fca912375dbaacbddb1dad45cca831b87cf3ede3c584",
+    "uncompressed_bytes": 475497,
+    "compressed_bytes": 90010,
+    "part_count": 3,
+    "duplicate_parts": 0
+  },
+  "compressed_length_matches": true,
+  "compressed_hash_matches": true,
+  "raw_length_matches": true,
+  "raw_hash_matches": true,
+  "core_matches_recovered": true,
+  "core_count": 1,
+  "platform_id": "e5d26785-01cd-41a6-acb8-02098e088649",
+  "run_id": null,
+  "callback_sources": [
+    "unverified_callback"
+  ],
+  "last_received_at": "2026-11-12T00:04:49.321476+00:00",
+  "launcher_exit_codes": [
+    0
+  ],
+  "source_authenticated_independently": false
+}

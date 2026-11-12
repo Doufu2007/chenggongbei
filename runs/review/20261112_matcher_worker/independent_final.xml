@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.428" timestamp="2026-11-12T05:08:08.679504+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="runs.review.20261112_matcher_worker.review_worker_cases" name="test_changing_epoch_invalidates_already_cached_current_result" time="0.001" /><testcase classname="runs.review.20261112_matcher_worker.review_worker_cases" name="test_rejected_context_does_not_consume_sequence_or_replace_pending" time="0.001"><failure message="ValueError: job lacks original binding fields">def test_rejected_context_does_not_consume_sequence_or_replace_pending():
+        m=module.LatestMailbox();m.set_context('review-session','ground_4',1)
+&gt;       first=job();m.submit(first)
+                    ^^^^^^^^^^^^^^^
+
+runs\review\20261112_matcher_worker\review_worker_cases.py:35: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;review_latest_frame_worker.LatestMailbox object at 0x000002590F2A16D0&gt;
+job = {'job_seq': 1, 'session_id': 'review-session', 'first_ID': 'ground_4', 'stationary_epoch': 1, ...}
+
+    def submit(self,job):
+        required=('job_seq','session_id','first_ID','stationary_epoch','source_jpeg','source_sha256',
+                  'image_stamp_s','frame_id','topic','pose','K','camera_info')
+&gt;       if any(k not in job for k in required):raise ValueError('job lacks original binding fields')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: job lacks original binding fields
+
+runs\analysis\20261112_ground_matcher_worker_dev\latest_frame_worker.py:59: ValueError</failure></testcase><testcase classname="runs.review.20261112_matcher_worker.review_worker_cases" name="test_same_context_never_means_recognition_eligible_or_fresh" time="0.001" /><testcase classname="runs.review.20261112_matcher_worker.review_worker_cases" name="test_bad_exposure_geometry_binding_is_rejected[future_pose]" time="0.001" /><testcase classname="runs.review.20261112_matcher_worker.review_worker_cases" name="test_bad_exposure_geometry_binding_is_rejected[nonzero_distortion]" time="0.001" /></testsuite></testsuites>

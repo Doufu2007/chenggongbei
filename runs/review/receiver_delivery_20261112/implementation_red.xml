@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.654" timestamp="2026-11-12T12:24:12.484815+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_diagnostic_receiver" name="test_delivery_log_is_opt_in_and_may_not_share_accepted_path" time="0.065"><failure message="AssertionError: assert 'missing' is None&#10; +  where 'missing' = getattr(&lt;tools.diagnostic_receiver._Receiver object at 0x000001A1CD576F90&gt;, 'delivery_path', 'missing')">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-864/test_delivery_log_is_opt_in_an0')
+receiver = &lt;tools.diagnostic_receiver._Receiver object at 0x000001A1CD576F90&gt;
+
+    def test_delivery_log_is_opt_in_and_may_not_share_accepted_path(tmp_path, receiver):
+&gt;       assert getattr(receiver, 'delivery_path', 'missing') is None
+E       AssertionError: assert 'missing' is None
+E        +  where 'missing' = getattr(&lt;tools.diagnostic_receiver._Receiver object at 0x000001A1CD576F90&gt;, 'delivery_path', 'missing')
+
+tests\test_diagnostic_receiver.py:389: AssertionError</failure></testcase></testsuite></testsuites>

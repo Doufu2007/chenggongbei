@@ -1,0 +1,73 @@
+{
+  "texture_homography_determinant_sign": "orientation_preserving",
+  "corners_px": [
+    [
+      347.5328674316406,
+      705.2088623046875
+    ],
+    [
+      452.4671325683594,
+      705.2088623046875
+    ],
+    [
+      464.6687927246094,
+      776.1876220703125
+    ],
+    [
+      335.3312072753906,
+      776.1876220703125
+    ]
+  ],
+  "results": [
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "label": "坍塌废墟",
+      "detections": []
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "label": "坍塌废墟",
+      "detections": []
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "label": "受损车辆",
+      "detections": []
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "label": "受损车辆",
+      "detections": []
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "label": "滑坡塌方",
+      "detections": []
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "label": "滑坡塌方",
+      "detections": []
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "label": "救援营地",
+      "detections": []
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "label": "救援营地",
+      "detections": []
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "label": "被困人员",
+      "detections": []
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "label": "被困人员",
+      "detections": []
+    }
+  ]
+}

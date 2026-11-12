@@ -1,0 +1,138 @@
+{
+  "repository": "https://github.com/ranmengjia/ICAN",
+  "commit_sha": "82b041043849a5d86e085390bf0df787366d98cd",
+  "retrieved_at": "2026-11-11T06:27:01.102895+00:00",
+  "license": null,
+  "license_note": "GitHub repository metadata license=null; public visibility is not a license grant. Third-party copy; current official compatibility unverified.",
+  "files": [
+    {
+      "path": "binary_install/share/ican_inspection_navigation/config/nav2_ground_params.yaml",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_navigation/config/nav2_ground_params.yaml",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/34dddad76c402cc76566d808452d96f8368abbc3",
+      "git_blob_sha": "34dddad76c402cc76566d808452d96f8368abbc3",
+      "sha256": "cd580faf4bc8788fd8fa6b44ad5659f5eb7ca0b1212abffe45b8c5db07e35b3e",
+      "size_bytes": 6875
+    },
+    {
+      "path": "binary_install/share/ican_inspection_navigation/docs/地面Nav2导航说明.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_navigation/docs/%E5%9C%B0%E9%9D%A2Nav2%E5%AF%BC%E8%88%AA%E8%AF%B4%E6%98%8E.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/42ecd0e3957a50c08ee9a7d5354d8c5c6c9aea0b",
+      "git_blob_sha": "42ecd0e3957a50c08ee9a7d5354d8c5c6c9aea0b",
+      "sha256": "861a104bc7da719cc87cdaf4c3ef357fb2c191baac5296d5c6bcc24b66930155",
+      "size_bytes": 954
+    },
+    {
+      "path": "binary_install/share/ican_inspection_navigation/launch/nav2_ground.launch.py",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_navigation/launch/nav2_ground.launch.py",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/0955d4a515558818430fac2d87ceee45791173d7",
+      "git_blob_sha": "0955d4a515558818430fac2d87ceee45791173d7",
+      "sha256": "ea9aef72b4edaa9e3156a90d78e72062165939a284c2eef47b9ca3c463b1f896",
+      "size_bytes": 7245
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/docs/接口说明.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/docs/%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/0694e77387674e5768ba102e09738b1338bc2a62",
+      "git_blob_sha": "0694e77387674e5768ba102e09738b1338bc2a62",
+      "sha256": "55a062e2ea805158c21bb5313fe1dbf616a883fe6ec59d5da324ade95f037e62",
+      "size_bytes": 1975
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/docs/窗口目标贴图来源.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/docs/%E7%AA%97%E5%8F%A3%E7%9B%AE%E6%A0%87%E8%B4%B4%E5%9B%BE%E6%9D%A5%E6%BA%90.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/88aeaa1e2aae8cc1960a90b7fbdc549abc680b3e",
+      "git_blob_sha": "88aeaa1e2aae8cc1960a90b7fbdc549abc680b3e",
+      "sha256": "a012595743e2a7739d4f5610a2ab5050dc2f773ac72b35d4a123ce6310b6146a",
+      "size_bytes": 590
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/launch/inspection.launch.py",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/launch/inspection.launch.py",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/a49b4e636d9c439e0c9b82646b083f80ff611b5c",
+      "git_blob_sha": "a49b4e636d9c439e0c9b82646b083f80ff611b5c",
+      "sha256": "9df4a9300d26e107184bc6bedf3d3ca092288ebb6650d3f93102b68011c22e06",
+      "size_bytes": 4381
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/maps/README.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/maps/README.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/26d5bb23c9321e2f08324b101f9ffb2ed070f62b",
+      "git_blob_sha": "26d5bb23c9321e2f08324b101f9ffb2ed070f62b",
+      "sha256": "1430229038bbcf1a4dc8f3bdb56689cd3d48c6096b852a598f38a3414450ae43",
+      "size_bytes": 610
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/maps/inspection_task1_map.pgm",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/maps/inspection_task1_map.pgm",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/0c90e11155302a587b33798176e2265c1f78780d",
+      "git_blob_sha": "0c90e11155302a587b33798176e2265c1f78780d",
+      "sha256": "5dd237aeb009de195ae39bbfe8ca61e4b39022236ad3b17322237964380afd13",
+      "size_bytes": 37327
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/maps/inspection_task1_map.yaml",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/maps/inspection_task1_map.yaml",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/d977d00aed70f586d568e094ff9fc7c089d8e6df",
+      "git_blob_sha": "d977d00aed70f586d568e094ff9fc7c089d8e6df",
+      "sha256": "b21f1bd6c2328dbf53cf4e8e881b80f0d2af77beb7f5476d8545211cafe221b6",
+      "size_bytes": 140
+    },
+    {
+      "path": "docs/README.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/docs/README.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/e91cf1884b1c833720a7cb0863be0b6d445566bb",
+      "git_blob_sha": "e91cf1884b1c833720a7cb0863be0b6d445566bb",
+      "sha256": "600bdd45e39b7a6fc80555a23a69b96b71c9ac75f3ca5f9075eb0692769854ef",
+      "size_bytes": 1817
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/a4a9476d8fb7c3a3ae073a29462f84c50b64d7d9",
+      "git_blob_sha": "a4a9476d8fb7c3a3ae073a29462f84c50b64d7d9",
+      "sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+      "size_bytes": 27189,
+      "purpose": "Static visible scene geometry and public sensor interface inspection; no referee or task assignment read."
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/ican_ground.png",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/materials/textures/ican_ground.png",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/ad7aae3088dd1a8a5aa913cb0cb8031d886c7017",
+      "git_blob_sha": "ad7aae3088dd1a8a5aa913cb0cb8031d886c7017",
+      "sha256": "4d2e07a50ad3778cfc93bb355da9c291465d62da6d41e95fa096e2e0c401ddaa",
+      "size_bytes": 624849,
+      "purpose": "Public static ground/layout illustration, downloaded by root; verified against the existing fixed-commit Git tree. Current official mapping not inferred."
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/ican_layout_reference.png",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/binary_install/share/ican_inspection_sim/materials/textures/ican_layout_reference.png",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/5d9004df564223dbbbf9ddbf9224f27181449850",
+      "git_blob_sha": "5d9004df564223dbbbf9ddbf9224f27181449850",
+      "sha256": "0ed119bd3a185a4cdaff148e1499a93b4c15119ebe1baaf0d2cded3200a63604",
+      "size_bytes": 5161919,
+      "purpose": "Public static ground/layout illustration, downloaded by root; verified against the existing fixed-commit Git tree. Current official mapping not inferred."
+    },
+    {
+      "path": "docs/topic_examples.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/docs/topic_examples.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/9c9f93c2fd7350b1997b1b4590c1303141d67617",
+      "git_blob_sha": "9c9f93c2fd7350b1997b1b4590c1303141d67617",
+      "sha256": "62731de301038241638a167a87a1a7642c601fe1ec0b449b9c7420bff08e8d03",
+      "size_bytes": 510,
+      "purpose": "Public interface documentation only; no teammate task program or referee implementation."
+    },
+    {
+      "path": "docs/仿真环境与接口说明.md",
+      "source_url": "https://github.com/ranmengjia/ICAN/blob/82b041043849a5d86e085390bf0df787366d98cd/docs/%E4%BB%BF%E7%9C%9F%E7%8E%AF%E5%A2%83%E4%B8%8E%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md",
+      "api_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/3986a5a01e30ea1601c16a62d8971c5cd59b164f",
+      "git_blob_sha": "3986a5a01e30ea1601c16a62d8971c5cd59b164f",
+      "sha256": "58b4582861b190482fba2d850c7a44d0b537d4487727e67838aaf953889c3d47",
+      "size_bytes": 3115,
+      "purpose": "Public interface documentation only; no teammate task program or referee implementation."
+    }
+  ],
+  "tree_api_response_sha": "82b041043849a5d86e085390bf0df787366d98cd",
+  "tree_sha": "3ab39d4064d6a2a15517c34bf96fa93edb5d909c",
+  "commit_author_date": "2026-10-24T00:52:29Z",
+  "commit_committer_date": "2026-10-24T00:52:29Z"
+}

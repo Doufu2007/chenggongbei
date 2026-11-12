@@ -1,0 +1,66 @@
+{
+  "source_sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+  "probes": {
+    "actual_callback_tick_xy": {
+      "pass": true,
+      "observed": {
+        "commands": 402,
+        "y_commands": 34,
+        "reason": "direction_response_observed_official_score_unverified"
+      }
+    },
+    "watchdog_zero_without_tick": {
+      "pass": true,
+      "observed": {
+        "reason": "clock_stale",
+        "state": "PAUSE",
+        "commands": [
+          [
+            0.03,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    },
+    "harmless_changed_duplicate": {
+      "pass": true,
+      "observed": {
+        "reason": "direction_scan_duplicate_changed"
+      }
+    },
+    "dangerous_duplicate_odom_vector": {
+      "pass": true,
+      "observed": {
+        "reason": "direction_odom_duplicate_changed"
+      }
+    },
+    "zero_stop_oscillation": {
+      "pass": true,
+      "observed": {
+        "reason": "direction_zero_stop_path_limit",
+        "net_m": 0.004,
+        "path_increment_m": 0.011999999999999999
+      }
+    },
+    "quaternion_scale_cannot_hide_yaw_drift": {
+      "pass": true,
+      "observed": {
+        "reason": "direction_pulse_yaw_drift_limit",
+        "true_yaw_drift_rad": 0.03000999999999976
+      }
+    },
+    "response_scale_and_translation_invariance": {
+      "pass": true,
+      "observed": {
+        "yaw_delta_rad": 0.019999999999999907,
+        "displacement_m": 0.022360679774997422
+      }
+    }
+  }
+}

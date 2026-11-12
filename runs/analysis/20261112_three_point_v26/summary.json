@@ -1,0 +1,79 @@
+{
+  "schema": "ground_three_point_analysis_v1",
+  "source": "C:/Users/USER\\Desktop\\大学生活\\ICAN\\晟功杯\\runs\\evidence\\20261112\\callback_three_point_v26.jsonl",
+  "raw_sha256": "774b734f87b7c8de4194d9535ba9ba9d82641637360e270e369a34315a87fc03",
+  "raw_bytes": 220310,
+  "transport_complete": true,
+  "official_score": null,
+  "full_mission_complete": false,
+  "errors": [],
+  "core_observations": [
+    {
+      "line": 4,
+      "data": {
+        "mode": "ground_three_point",
+        "revision": "ground_three_point_v1",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "partial": true,
+        "session_id": "dadc93c7229d4c378cb3f5a833b44d32",
+        "section": "three_point_core",
+        "state": "FINISHED",
+        "reason": "approach_cross_track_limit",
+        "mission_draw": [
+          "ground_4",
+          "ground_1",
+          "ground_3"
+        ],
+        "point_index": 0,
+        "target_id": "ground_4",
+        "global_origin": [
+          4.371163140615979e-05,
+          7.994866247764717e-06,
+          0.055000067090860166
+        ],
+        "total_path_m": 0.10117074230594228,
+        "accumulated_rotation_rad": 0.26129561447264815,
+        "completed_count": 0,
+        "full_mission_complete": false,
+        "frozen_limits": {
+          "target_distance_m": 0.2,
+          "global_wall_s": 1200.0,
+          "max_path_m": 12.5,
+          "max_origin_displacement_m": 3.0,
+          "max_rotation_rad": 25.0,
+          "local_swept_motion_budget_m": 0.06,
+          "scan_anchor_motion_limit_m": 0.03,
+          "local_stop_reserve_m": 0.03,
+          "linear_command_mps": 0.1,
+          "minimum_yaw_rate": 0.35,
+          "maximum_yaw_rate": 0.5,
+          "max_heading_error_rad": 0.05,
+          "max_reverse_m": 0.005,
+          "max_cross_track_m": 0.02,
+          "max_turn_drift_m": 0.06,
+          "wait_wall_s": 5.0,
+          "turn_wall_s": 45.0,
+          "turn_total_wall_s": 700.0,
+          "drive_wall_s": 500.0,
+          "capture_wall_s": 10.0
+        }
+      }
+    }
+  ],
+  "transport": {
+    "mode": "ground_three_point",
+    "section": "three_ground_evidence_gzip_part",
+    "encoding": "gzip+base64",
+    "session_id": "dadc93c7229d4c378cb3f5a833b44d32",
+    "bundle": "ground_three_point_v1",
+    "uncompressed_sha256": "5a3441023c19943267b1b94c6221eb425862a12d7b00e2045bd0151d17d12df5",
+    "compressed_sha256": "ce8278a3ed2f21a0d3d35c6c382783c24554625da2af30e24ea66276da41a402",
+    "uncompressed_bytes": 138180,
+    "compressed_bytes": 32348,
+    "part_count": 1,
+    "duplicate_parts": 0
+  },
+  "completed_points_observed": 0,
+  "interpretation": "byte transport only; point history and local state are unverified observations"
+}

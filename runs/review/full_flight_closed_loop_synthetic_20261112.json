@@ -1,0 +1,998 @@
+{
+  "kind": "offline_synthetic_control_loop_not_platform_or_sensor_validation",
+  "mission_completed": true,
+  "final_state": "FINISHED",
+  "reason": "flight_actual_landing_complete_official_score_unverified",
+  "synthetic_source_and_wall_elapsed_s": 317.0,
+  "integration_dt_s": 0.1,
+  "z_model": "vz=2*(nonzero_request-.02695);zero=-.0539;home_floor=.055",
+  "visual_input": "synthetic_valid_class_and_analytic_projection;production_localize_floor_pixel_for_original_fix",
+  "actual_python_wall_s": 8.185756799997762,
+  "stages": [
+    {
+      "wall_s": 0.0,
+      "state": "WAIT",
+      "xyz": [
+        0.0,
+        0.0,
+        0.055
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 1.0,
+      "state": "TAKEOFF",
+      "xyz": [
+        0.0,
+        0.0,
+        0.055
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 43.400000000000006,
+      "state": "WINDOW_1_APPROACH",
+      "xyz": [
+        0.0,
+        0.0,
+        1.272034996960742
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 54.7,
+      "state": "WINDOW_1_DECLARE",
+      "xyz": [
+        1.040734819627445,
+        -0.32461014612189365,
+        1.2819697137967105
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 54.900000000000006,
+      "state": "WINDOW_1_RECOGNIZE",
+      "xyz": [
+        1.040734819627445,
+        -0.32461014612189365,
+        1.2819726667015312
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 55.7,
+      "state": "WINDOW_1_DESCEND",
+      "xyz": [
+        1.040734819627445,
+        -0.32461014612189365,
+        1.2819818665313412
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 74.2,
+      "state": "WINDOW_1_CROSS",
+      "xyz": [
+        1.040734819627445,
+        -0.32461014612189365,
+        0.7645154175983594
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 89.80000000000001,
+      "state": "RECOVER_AFTER_WINDOW_1",
+      "xyz": [
+        2.640727798237294,
+        -0.32748334935189716,
+        0.7500048608470931
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 96.30000000000001,
+      "state": "AIR_NAV_1",
+      "xyz": [
+        2.640727798237294,
+        -0.32748334935189716,
+        0.8900358042666778
+      ],
+      "yaw": 0.0
+    },
+    {
+      "wall_s": 114.10000000000001,
+      "state": "AIR_RECOGNIZE_1",
+      "xyz": [
+        3.0778059057139506,
+        -2.1408968212571367,
+        0.8999989204469432
+      ],
+      "yaw": 1.570796321718182
+    },
+    {
+      "wall_s": 114.9,
+      "state": "AIR_MOVE_TO_LIGHT_1",
+      "xyz": [
+        3.0778059057139506,
+        -2.1408968212571367,
+        0.8999992838024455
+      ],
+      "yaw": 1.570796321718182
+    },
+    {
+      "wall_s": 132.20000000000002,
+      "state": "AIR_INSPECT_1",
+      "xyz": [
+        3.0799882216249763,
+        -0.3297749699167129,
+        0.8999999998997193
+      ],
+      "yaw": 1.5707963267948957
+    },
+    {
+      "wall_s": 134.4,
+      "state": "AIR_NAV_2",
+      "xyz": [
+        3.0799882216249763,
+        -0.3297749699167129,
+        0.8999999999675559
+      ],
+      "yaw": 1.5707963267948957
+    },
+    {
+      "wall_s": 150.6,
+      "state": "AIR_RECOGNIZE_2",
+      "xyz": [
+        3.0799999997333853,
+        0.44998234902747497,
+        0.8999999999999921
+      ],
+      "yaw": -1.5468578455471989
+    },
+    {
+      "wall_s": 151.4,
+      "state": "AIR_MOVE_TO_LIGHT_2",
+      "xyz": [
+        3.0799999997333853,
+        0.44998234902747497,
+        0.8999999999999948
+      ],
+      "yaw": -1.5468578455471989
+    },
+    {
+      "wall_s": 168.60000000000002,
+      "state": "AIR_INSPECT_2",
+      "xyz": [
+        3.079999999998596,
+        -1.3454910378221694,
+        0.899999999999999
+      ],
+      "yaw": -1.570796326794876
+    },
+    {
+      "wall_s": 170.8,
+      "state": "WINDOW_2_APPROACH",
+      "xyz": [
+        3.079999999998596,
+        -1.3454910378221694,
+        0.899999999999999
+      ],
+      "yaw": -1.570796326794876
+    },
+    {
+      "wall_s": 185.10000000000002,
+      "state": "WINDOW_2_DECLARE",
+      "xyz": [
+        2.750431341486033,
+        -2.371157601297222,
+        1.2723671637287173
+      ],
+      "yaw": -3.141591154179984
+    },
+    {
+      "wall_s": 185.3,
+      "state": "WINDOW_2_RECOGNIZE",
+      "xyz": [
+        2.750431341486033,
+        -2.371157601297222,
+        1.2733063652651675
+      ],
+      "yaw": -3.141591154179984
+    },
+    {
+      "wall_s": 186.10000000000002,
+      "state": "WINDOW_2_DESCEND",
+      "xyz": [
+        2.750431341486033,
+        -2.371157601297222,
+        1.2762324650947479
+      ],
+      "yaw": -3.141591154179984
+    },
+    {
+      "wall_s": 204.4,
+      "state": "WINDOW_2_CROSS",
+      "xyz": [
+        2.750431341486033,
+        -2.371157601297222,
+        0.7645781534676065
+      ],
+      "yaw": -3.1415926535897922
+    },
+    {
+      "wall_s": 219.5,
+      "state": "RECOVER_AFTER_WINDOW_2",
+      "xyz": [
+        1.2093465488994644,
+        -2.37249190754548,
+        0.7500063090928144
+      ],
+      "yaw": -3.1415926535897922
+    },
+    {
+      "wall_s": 238.8,
+      "state": "RETURN_UAV_VIA_1",
+      "xyz": [
+        1.2093465488994644,
+        -2.37249190754548,
+        1.272368211564202
+      ],
+      "yaw": -3.1415926535897922
+    },
+    {
+      "wall_s": 246.0,
+      "state": "RETURN_UAV_VIA_2",
+      "xyz": [
+        0.6098060857005965,
+        -2.372499869769833,
+        1.2817602235558148
+      ],
+      "yaw": -3.1415926535897922
+    },
+    {
+      "wall_s": 267.90000000000003,
+      "state": "RETURN_UAV",
+      "xyz": [
+        0.6000402934831374,
+        -0.009748668981153853,
+        1.2819999968284173
+      ],
+      "yaw": -2.269736069476797e-06
+    },
+    {
+      "wall_s": 275.0,
+      "state": "LAND_DECLARE",
+      "xyz": [
+        0.00999714179949554,
+        -0.0001624204694574862,
+        1.2819999999168903
+      ],
+      "yaw": -2.601957264624882e-11
+    },
+    {
+      "wall_s": 275.2,
+      "state": "LAND",
+      "xyz": [
+        0.00999714179949554,
+        -0.0001624204694574862,
+        1.2819999999249936
+      ],
+      "yaw": -2.601957264624882e-11
+    },
+    {
+      "wall_s": 316.0,
+      "state": "COMPLETE",
+      "xyz": [
+        0.00999714179949554,
+        -0.0001624204694574862,
+        0.05613097941135442
+      ],
+      "yaw": -4.8843066803401795e-40
+    },
+    {
+      "wall_s": 317.0,
+      "state": "FINISHED",
+      "xyz": [
+        0.00999714179949554,
+        -0.0001624204694574862,
+        0.055
+      ],
+      "yaw": -4.8843066803401795e-40
+    }
+  ],
+  "illumination": [
+    {
+      "wall_s": 132.20000000000002,
+      "state": "AIR_INSPECT_1",
+      "aim": "light_not_ready",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": false,
+      "feedback": {
+        "value": false,
+        "wall": 132.20000000000002,
+        "stamp": 162.2
+      },
+      "dwell_since": null,
+      "light_started": null
+    },
+    {
+      "wall_s": 132.3,
+      "state": "AIR_INSPECT_1",
+      "aim": "light_not_ready",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": false,
+        "wall": 132.3,
+        "stamp": 162.3
+      },
+      "dwell_since": null,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.4,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.4,
+        "stamp": 162.4
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.5,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.5,
+        "stamp": 162.5
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.6,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.6,
+        "stamp": 162.6
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.70000000000002,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.70000000000002,
+        "stamp": 162.7
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.8,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.8,
+        "stamp": 162.8
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 132.9,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 132.9,
+        "stamp": 162.9
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.0,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.0,
+        "stamp": 163.0
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.1,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.1,
+        "stamp": 163.1
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.20000000000002,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.20000000000002,
+        "stamp": 163.2
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.3,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.3,
+        "stamp": 163.3
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.4,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.4,
+        "stamp": 163.4
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.5,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.5,
+        "stamp": 163.5
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.6,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.6,
+        "stamp": 163.6
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.70000000000002,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.70000000000002,
+        "stamp": 163.7
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.8,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.8,
+        "stamp": 163.8
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 133.9,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 133.9,
+        "stamp": 163.9
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 134.0,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 134.0,
+        "stamp": 164.0
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 134.1,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 134.1,
+        "stamp": 164.1
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 134.20000000000002,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 134.20000000000002,
+        "stamp": 164.2
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 134.3,
+      "state": "AIR_INSPECT_1",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 134.3,
+        "stamp": 164.3
+      },
+      "dwell_since": 162.4,
+      "light_started": 162.3
+    },
+    {
+      "wall_s": 168.60000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "light_not_ready",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": false,
+      "feedback": {
+        "value": false,
+        "wall": 168.60000000000002,
+        "stamp": 198.6
+      },
+      "dwell_since": null,
+      "light_started": null
+    },
+    {
+      "wall_s": 168.70000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "light_not_ready",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": false,
+        "wall": 168.70000000000002,
+        "stamp": 198.7
+      },
+      "dwell_since": null,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 168.8,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 168.8,
+        "stamp": 198.8
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 168.9,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 168.9,
+        "stamp": 198.9
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.0,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.0,
+        "stamp": 199.0
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.10000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.10000000000002,
+        "stamp": 199.1
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.20000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.20000000000002,
+        "stamp": 199.2
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.3,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.3,
+        "stamp": 199.3
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.4,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.4,
+        "stamp": 199.4
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.5,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.5,
+        "stamp": 199.5
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.60000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.60000000000002,
+        "stamp": 199.6
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.70000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.70000000000002,
+        "stamp": 199.7
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.8,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.8,
+        "stamp": 199.8
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 169.9,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 169.9,
+        "stamp": 199.9
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.0,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.0,
+        "stamp": 200.0
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.10000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.10000000000002,
+        "stamp": 200.1
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.20000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.20000000000002,
+        "stamp": 200.2
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.3,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.3,
+        "stamp": 200.3
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.4,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.4,
+        "stamp": 200.4
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.5,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.5,
+        "stamp": 200.5
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.60000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.60000000000002,
+        "stamp": 200.6
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    },
+    {
+      "wall_s": 170.70000000000002,
+      "state": "AIR_INSPECT_2",
+      "aim": "ok_horizontal_plane_lateral_error_split",
+      "geometry": "geometry_only_waiting_actual_feedback",
+      "lamp": true,
+      "feedback": {
+        "value": true,
+        "wall": 170.70000000000002,
+        "stamp": 200.7
+      },
+      "dwell_since": 198.8,
+      "light_started": 198.7
+    }
+  ],
+  "path_m": 19.341873082460747,
+  "landing_evidence": {
+    "pose": {
+      "stamp": 347.0,
+      "xyz": [
+        0.00999714179949554,
+        -0.0001624204694574862,
+        0.055
+      ],
+      "q": [
+        0.0,
+        0.0,
+        -2.4421533401700897e-40,
+        1.0
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "angular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed": 0.0,
+      "angular_speed": 0.0,
+      "tilt": 0.0,
+      "wall": 317.0,
+      "message": {
+        "header": {
+          "stamp": {
+            "sec": 347,
+            "nanosec": 0
+          },
+          "frame_id": "odom"
+        },
+        "child_frame_id": "uav/base_link",
+        "pose": {
+          "pose": {
+            "position": {
+              "x": 0.00999714179949554,
+              "y": -0.0001624204694574862,
+              "z": 0.055
+            },
+            "orientation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -2.4421533401700897e-40,
+              "w": 1.0
+            }
+          }
+        },
+        "twist": {
+          "twist": {
+            "linear": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "angular": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        }
+      }
+    },
+    "dwell_wall_s": 1.0,
+    "dwell_source_s": 1.0,
+    "zero_publish_returned": true,
+    "zero_returned_wall_s": 317.0,
+    "lamp_feedback_off": true,
+    "completion_publish_returned": true,
+    "completion_returned_wall_s": 317.0
+  }
+}

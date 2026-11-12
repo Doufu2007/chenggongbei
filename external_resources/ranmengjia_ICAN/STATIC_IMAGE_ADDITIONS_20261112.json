@@ -1,0 +1,62 @@
+{
+  "commit": "82b041043849a5d86e085390bf0df787366d98cd",
+  "kind": "public_static_images_only_not_assignment_results",
+  "files": [
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/aerial_target.jpg",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/9ec38db2d8053ea0278110082323562867194caf",
+      "bytes": 190926,
+      "git_blob_sha": "9ec38db2d8053ea0278110082323562867194caf",
+      "sha256": "14f20bbdab3ea25aa7fc3f64550ca56930a8a2532618d723d6af084a93487a01"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/ican_sticker_large.png",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/a359a242d6354b5f51eabcbc854e56cb5189a456",
+      "bytes": 6050915,
+      "git_blob_sha": "a359a242d6354b5f51eabcbc854e56cb5189a456",
+      "sha256": "369c8654abc349256002611b6ba423ff9936a8e376011e2a28ee2fef4885352f"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/inspection_marker_1.png",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/0b64731ce42279fa5e5a6c3fe6d8ea6dbf2797d2",
+      "bytes": 346793,
+      "git_blob_sha": "0b64731ce42279fa5e5a6c3fe6d8ea6dbf2797d2",
+      "sha256": "2f0f8af5b4f2fa619f66795fcb849e32732d7c73e428b75a946412eef6c4fdab"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/inspection_marker_2.png",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/b220b90d2afb7e3bb077f04d3d52756797afed40",
+      "bytes": 226063,
+      "git_blob_sha": "b220b90d2afb7e3bb077f04d3d52756797afed40",
+      "sha256": "0dddb5c36b6c4b262330760fcc18c1390c8b72881db93cfa54073d2578a45c62"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/inspection_marker_3.png",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/c61b87b5094b38413fc60e454d05e9a43ecb2056",
+      "bytes": 254305,
+      "git_blob_sha": "c61b87b5094b38413fc60e454d05e9a43ecb2056",
+      "sha256": "607fa18f198239717942bca798b77607159b0a15145c3af013c8a097f9a1a521"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/inspection_sticker_small.png",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/96e3b5d143583b21fc42cb119c28172ec0e2565f",
+      "bytes": 4510093,
+      "git_blob_sha": "96e3b5d143583b21fc42cb119c28172ec0e2565f",
+      "sha256": "726510e8880b0441eac3d3f2c77fdf806040f77beeb625ef06cb0bde22f57070"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/window_target_1.jpg",
+      "source_url": "https://api.github.com/repos/ranmengjia/ICAN/git/blobs/cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "bytes": 57883,
+      "git_blob_sha": "cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e"
+    },
+    {
+      "path": "binary_install/share/ican_inspection_sim/materials/textures/window_target_2.jpg",
+      "source_url": "local_already_verified",
+      "bytes": 42160,
+      "git_blob_sha": "a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6"
+    }
+  ]
+}

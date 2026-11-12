@@ -1,0 +1,33 @@
+{
+  "frozen_dependencies_unchanged": true,
+  "frozen_before": {
+    "ground_three_point_recovery_budget.py": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d",
+    "ground_three_point_camera_recovery.py": "2c7addc67afda66e4aab53b1796dc0537756fb6ffd907647eb998a6699b809ee",
+    "ground_three_point_axis.py": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+    "ground_three_point_axis_plan.py": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+    "ground_three_point.py": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+    "ground_three_point_plan.py": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+    "ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "ground_bounded_approach.py": "4290b53179c00cf5c52f37b3f8a91adb86539c3295248e9e93aea013390086a9",
+    "ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+    "bounded_ground_probe.py": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb"
+  },
+  "frozen_after": {
+    "ground_three_point_recovery_budget.py": "f50c7058d8a6727ccac83d03c228d6a2c9e01249c55171aa55758a0b272cdc1d",
+    "ground_three_point_camera_recovery.py": "2c7addc67afda66e4aab53b1796dc0537756fb6ffd907647eb998a6699b809ee",
+    "ground_three_point_axis.py": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+    "ground_three_point_axis_plan.py": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+    "ground_three_point.py": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+    "ground_three_point_plan.py": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+    "ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "ground_bounded_approach.py": "4290b53179c00cf5c52f37b3f8a91adb86539c3295248e9e93aea013390086a9",
+    "ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+    "bounded_ground_probe.py": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb"
+  },
+  "new_files": {
+    "src/inspection_mission/inspection_mission/ground_return_plan.py": "a4f4709b7b2dbcbd752fe9cf15307c9c1f56e74cd119dece7bc6afee79cb9a1d",
+    "src/inspection_mission/inspection_mission/ground_three_point_return.py": "b70cd5dde22054cae748cbb6bfcff7e26c5b40c5ba80f1760c8b2aac355d79dc",
+    "scripts/run_ground_three_point_return.sh": "70e0d537c39a28eba379cb2a08bfbd361391f9fc282d413d2b66d016b3f24520",
+    "tests/test_ground_three_point_return.py": "e75f115d9a948efb41ed4bcb2b4e143abc01d66ebb30f921926489d08d851816"
+  }
+}

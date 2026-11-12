@@ -1,0 +1,345 @@
+{
+  "reviewed_at_utc": "2026-11-12T00:22:22.530637+00:00",
+  "source_sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+  "launcher_sha256": "3b5251e1f4b5dcc8d48d23c59c6ce102b422af1e2c031fa5ae05f0e0032bdfd4",
+  "original_probe_sha256": "2cedc240d441bc2d0d99e0df625389341ee612fcf02a55260b7d13034b08773e",
+  "frozen_files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis.py",
+      "expected_sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76",
+      "actual_sha256": "e033c119790ad8a32a066cd21cd9fd841e5b967092b8d0ac0355fd5d5f602f76"
+    },
+    {
+      "path": "scripts/run_ground_three_point_axis.sh",
+      "expected_sha256": "3b5251e1f4b5dcc8d48d23c59c6ce102b422af1e2c031fa5ae05f0e0032bdfd4",
+      "actual_sha256": "3b5251e1f4b5dcc8d48d23c59c6ce102b422af1e2c031fa5ae05f0e0032bdfd4"
+    },
+    {
+      "path": "tests/test_ground_three_point_axis.py",
+      "expected_sha256": "2d1c411bd75d42811c87ac6a7820f934582d51da8a02f66fcd3e695eaf35f233",
+      "actual_sha256": "2d1c411bd75d42811c87ac6a7820f934582d51da8a02f66fcd3e695eaf35f233"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "expected_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "actual_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis_plan.py",
+      "expected_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+      "actual_sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "expected_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "actual_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "expected_sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "actual_sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "expected_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "actual_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "expected_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "actual_sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+    }
+  ],
+  "scope": "独立本地软件审查；模拟 ROS transport；无平台倒车或官方计分证据",
+  "original_probe_count": 5,
+  "supplemental_probe_count": 6,
+  "pass_count": 11,
+  "probes": {
+    "signed_factory_callback_tick": {
+      "pass": true,
+      "published": [
+        [
+          -0.03,
+          0.0
+        ]
+      ],
+      "progress_m": 0.0009999999999998899,
+      "body_yaw_rad": 1.5707963267948966
+    },
+    "dds_lost_during_later_graph_queries": {
+      "pass": true,
+      "observed": {
+        "actual_match_at_publish": 0,
+        "published": [
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "guard_cached_match": 0,
+        "state": "STOP",
+        "reason": "no_external_matching_cmd_subscriber"
+      },
+      "requirement": "actual loss during graph refresh must be rechecked before nonzero output"
+    },
+    "negative_publish_exception_zero_attempt": {
+      "pass": true,
+      "observed": {
+        "escaped_exception": null,
+        "published_attempts": [
+          [
+            -0.03,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "state": "STOP",
+        "reason": "axis_command_publish_failed:RuntimeError:independent negative publish failure"
+      },
+      "requirement": "negative publish failure must lock stop and independently attempt zero"
+    },
+    "reverse_settle_reaim_and_flag_clear": {
+      "pass": true,
+      "reaim_target_rad": 1.5618078048292405,
+      "forward_request_positive": true
+    },
+    "alternate_order_visual_epoch_and_ledger": {
+      "pass": true,
+      "epochs": [
+        2,
+        5,
+        8
+      ],
+      "ledger_at_points": [
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 2.5489999999999964,
+          "rotation": 4.285135286067586,
+          "turn_wall": 76.0,
+          "drive_wall": 36.05
+        },
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 5.069499999999954,
+          "rotation": 14.714067829305026,
+          "turn_wall": 253.39999999999998,
+          "drive_wall": 70.10000000000001
+        },
+        {
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ],
+          "started": 0.0,
+          "path": 9.943000000000172,
+          "rotation": 25.623762113703528,
+          "turn_wall": 438.4499999999999,
+          "drive_wall": 128.85000000000008
+        }
+      ],
+      "reason": "three_ground_transport_complete_official_score_unverified",
+      "actual_reverse_on_platform": "unverified"
+    },
+    "final_query_wall_stale": {
+      "pass": true,
+      "query_calls": 2,
+      "published": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "PAUSE",
+      "phase": "DRIVE",
+      "reason": "clock_stale",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_global_budget": {
+      "pass": true,
+      "query_calls": 2,
+      "published": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "DRIVE",
+      "reason": "three_ground_global_wall_time_limit",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1199.95
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1199.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1199.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_phase_stop": {
+      "pass": true,
+      "query_calls": 2,
+      "published": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "DRIVE",
+      "reason": "independent_phase_stop_during_final_query",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    },
+    "final_query_source_age": {
+      "pass": true,
+      "query_calls": 2,
+      "published": [
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "PAUSE",
+      "phase": "DRIVE",
+      "reason": "odom_stale_or_invalid",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.4,
+          "wall_age_s": 0.0
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.34999999999999964,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.34999999999999964,
+          "fresh": false
+        }
+      }
+    },
+    "real_watchdog_survives_failed_zero": {
+      "pass": true,
+      "published_attempts": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "attempt_records": [
+        {
+          "wall_elapsed_s": 0.05,
+          "linear_x": 0.0,
+          "angular_z": 0.0,
+          "phase": "DRIVE",
+          "state": "STOP",
+          "returned": false,
+          "error": "axis_command_publish_failed:RuntimeError:independent first watchdog zero failure",
+          "returned_wall_elapsed_s": 0.05
+        },
+        {
+          "wall_elapsed_s": 0.05,
+          "linear_x": 0.0,
+          "angular_z": 0.0,
+          "phase": "DRIVE",
+          "state": "STOP",
+          "returned": true,
+          "error": null,
+          "returned_wall_elapsed_s": 0.05
+        }
+      ],
+      "state": "STOP",
+      "reason": "independent_watchdog_stopped_fixture"
+    },
+    "factory_guard_real_coordinator_dispatch": {
+      "pass": true,
+      "same_factory_guard": true,
+      "contexts": [
+        [
+          "test-current-session",
+          "ground_0",
+          2
+        ]
+      ],
+      "published_strings": [
+        "发现被困人员，地面巡航任务点确认，将巡航信息发送回指挥中心。"
+      ],
+      "phase": "REPORT_WAIT",
+      "attempted": 1,
+      "returned": 1,
+      "other_outputs_silent": true
+    }
+  }
+}

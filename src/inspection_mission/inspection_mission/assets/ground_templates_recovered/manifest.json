@@ -1,0 +1,22 @@
+{
+  "repository": "wbxxmz/ros2-car-first",
+  "commit": "48b3dac26b6f562ff21dd321db03fd6ffc91b492",
+  "templates": [
+    {
+      "file": "collapsed_ruins_01.png",
+      "class_id": "collapsed_ruins",
+      "sha256": "e5ed0aaf0b9b4432c262bec0255da90dbccb30bbf05479b70df1a98dafc169b2",
+      "git_blob_sha": "ec6da6a8bcd3e3428334996b7dce28b34f7ef264",
+      "size_bytes": 3270491,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/collapsed_ruins_01.png"
+    },
+    {
+      "file": "damaged_vehicle_02.jpg",
+      "class_id": "damaged_vehicle",
+      "sha256": "dbb9a48f44f4b63e27ebdba53343af120cae8d4ef27d1cc82a5bf4407d954026",
+      "git_blob_sha": "fd9486e0bfe7d6a8af61d4de8dfa71c640effd9b",
+      "size_bytes": 276074,
+      "source_url": "https://raw.githubusercontent.com/wbxxmz/ros2-car-first/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/damaged_vehicle_02.jpg"
+    }
+  ]
+}

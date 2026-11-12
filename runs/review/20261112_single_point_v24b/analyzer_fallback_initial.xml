@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="5" time="0.944" timestamp="2026-11-12T06:02:36.696029+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_top_fields_are_explicit_observations_without_creating_full_snapshot" time="0.125"><failure message="AssertionError: assert [{'line': 13,...0', ...}, ...] == []&#10;  &#10;  Left contains 8 more items, first extra item: {'line': 13, 'event': 'probe_snapshot', 'payload_timestamp': '2026-11-12T01:00:00+00:00', 'received_at': '2026-11-12T01:00:01+00:00', ...}&#10;  Use -v to get more diff">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-746/test_fallback_survey_top_field0')
+
+    def test_fallback_survey_top_fields_are_explicit_observations_without_creating_full_snapshot(tmp_path):
+        values,_=single_point_payloads()
+        compact_single_point_reference(values)
+        values=[value for value in values if value.get('section')!='ground_motion_full']
+        metadata=next(value['survey']for value in values if value.get('section')=='survey_metadata')
+        fragments=[fallback_fragment(key,value)for key,value in metadata.items()]
+        result=analyze(tmp_path,[*values,*fragments])
+&gt;       assert result['unknown_sections']==[]
+E       AssertionError: assert [{'line': 13,...0', ...}, ...] == []
+E         
+E         Left contains 8 more items, first extra item: {'line': 13, 'event': 'probe_snapshot', 'payload_timestamp': '2026-11-12T01:00:00+00:00', 'received_at': '2026-11-12T01:00:01+00:00', ...}
+E         Use -v to get more diff
+
+tests\test_analyze_ground_single_point_evidence.py:203: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_conflicting_fallback_survey_field_preserves_both_observations" time="0.052"><failure message="AssertionError: assert 'collected' == 'partial'&#10;  &#10;  - partial&#10;  + collected">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-746/test_conflicting_fallback_surv0')
+
+    def test_conflicting_fallback_survey_field_preserves_both_observations(tmp_path):
+        values,_=single_point_payloads()
+        result=analyze(tmp_path,[*values,fallback_fragment('trajectory_dropped',0),fallback_fragment('trajectory_dropped',1)])
+&gt;       assert result['status']=='partial'
+E       AssertionError: assert 'collected' == 'partial'
+E         
+E         - partial
+E         + collected
+
+tests\test_analyze_ground_single_point_evidence.py:213: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation0]" time="0.054"><failure message="AssertionError: assert ('collected' == 'invalid'&#10;  &#10;  - invalid&#10;  + collected)">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-746/test_fallback_survey_fragment_0')
+mutation = {'topic': None}
+
+    @pytest.mark.parametrize('mutation',[{'topic':None},{'partial':False},
+        {'topic':'mode','value':'ground_observation_route'}])
+    def test_fallback_survey_fragment_shape_and_original_mode_are_enforced(tmp_path,mutation):
+        values,_=single_point_payloads();fragment=fallback_fragment('mode',MODE);fragment.update(mutation)
+        result=analyze(tmp_path,[*values,fragment])
+&gt;       assert result['status']=='invalid' and result['parse_errors']
+E       AssertionError: assert ('collected' == 'invalid'
+E         
+E         - invalid
+E         + collected)
+
+tests\test_analyze_ground_single_point_evidence.py:223: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation1]" time="0.059"><failure message="AssertionError: assert ('collected' == 'invalid'&#10;  &#10;  - invalid&#10;  + collected)">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-746/test_fallback_survey_fragment_1')
+mutation = {'partial': False}
+
+    @pytest.mark.parametrize('mutation',[{'topic':None},{'partial':False},
+        {'topic':'mode','value':'ground_observation_route'}])
+    def test_fallback_survey_fragment_shape_and_original_mode_are_enforced(tmp_path,mutation):
+        values,_=single_point_payloads();fragment=fallback_fragment('mode',MODE);fragment.update(mutation)
+        result=analyze(tmp_path,[*values,fragment])
+&gt;       assert result['status']=='invalid' and result['parse_errors']
+E       AssertionError: assert ('collected' == 'invalid'
+E         
+E         - invalid
+E         + collected)
+
+tests\test_analyze_ground_single_point_evidence.py:223: AssertionError</failure></testcase><testcase classname="tests.test_analyze_ground_single_point_evidence" name="test_fallback_survey_fragment_shape_and_original_mode_are_enforced[mutation2]" time="0.058"><failure message="AssertionError: assert ('collected' == 'invalid'&#10;  &#10;  - invalid&#10;  + collected)">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-746/test_fallback_survey_fragment_2')
+mutation = {'topic': 'mode', 'value': 'ground_observation_route'}
+
+    @pytest.mark.parametrize('mutation',[{'topic':None},{'partial':False},
+        {'topic':'mode','value':'ground_observation_route'}])
+    def test_fallback_survey_fragment_shape_and_original_mode_are_enforced(tmp_path,mutation):
+        values,_=single_point_payloads();fragment=fallback_fragment('mode',MODE);fragment.update(mutation)
+        result=analyze(tmp_path,[*values,fragment])
+&gt;       assert result['status']=='invalid' and result['parse_errors']
+E       AssertionError: assert ('collected' == 'invalid'
+E         
+E         - invalid
+E         + collected)
+
+tests\test_analyze_ground_single_point_evidence.py:223: AssertionError</failure></testcase></testsuite></testsuites>

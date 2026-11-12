@@ -1,0 +1,70 @@
+{
+  "mode": "read_only_real_callback_analysis",
+  "platform_id": "7724ce5c-3e6b-469e-a368-2e6aa7025044",
+  "run_id": "run_20261112_073445_70f255cc",
+  "files": [
+    {
+      "path": "runs/analysis/20261112_direction_v28/analyze.py",
+      "bytes": 21167,
+      "sha256": "22b62d1efd8117004267b60ea8a31d4d0cb60d13cf518fc779c5c8c56e69bf19"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/plot.py",
+      "bytes": 1931,
+      "sha256": "5145bdcd4f4d3d6923879e3637692bb0600cc1c1b28ecfe5b87636465c84659c"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/README.md",
+      "bytes": 4293,
+      "sha256": "4276f482c528e9f438893de84ee331e33dce429f1cfd4ef72fe19458e0e6aa25"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/validation.json",
+      "bytes": 1414,
+      "sha256": "670602d58838d8d0e6656beb1063fb2d9e7d166eca8e2630c64e09864f81de39"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/metrics.json",
+      "bytes": 93837,
+      "sha256": "354805aeba2171500c2f31c9e9d3baf9210c5a146b33915fe70009f7089222e8"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/evidence.json",
+      "bytes": 3702927,
+      "sha256": "074eca643d500578b9bd7de09954ef6ce87f049353b9818430853fa7daa852bd"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/evidence.json.gz",
+      "bytes": 891181,
+      "sha256": "4484b3bc7522c6c8fa6c6bbc4b0a2604d983abcc06d809e11b500383f64a1fcc"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/trajectory.csv",
+      "bytes": 524963,
+      "sha256": "5ec827fda37ac4a0608cd54e91319f8373eda2d8bc04be02354d13c29875d595"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/commands.csv",
+      "bytes": 306691,
+      "sha256": "999d7554e8d3ed90eb9408dbccbde9a900a90f196c3ca847274718f55e7f265d"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/finite_differences.csv",
+      "bytes": 278953,
+      "sha256": "849a4c8d33897eb0a9ca6961218013922b89a710436bed8228301dfa159a9f8d"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/response_vectors.png",
+      "bytes": 87512,
+      "sha256": "6a3cca79f151bff8a9da9bc9104eb3a7410a3a8e41913b791e61cb3e3c1ce609"
+    },
+    {
+      "path": "runs/analysis/20261112_direction_v28/response_vectors.svg",
+      "bytes": 75317,
+      "sha256": "537a4af6ea3242a2517a25b184d2ba1b0ab155199ca1f7b5b50118d74c700a70"
+    }
+  ],
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "production_changes": false
+}

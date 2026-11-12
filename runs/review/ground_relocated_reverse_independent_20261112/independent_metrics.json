@@ -1,0 +1,760 @@
+{
+  "reviewed_at_utc": "2026-11-12T00:30:18.121300+00:00",
+  "scope": "独立本地软件 adapter 探针；无平台运动、地图或官方计分证据",
+  "source_sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a",
+  "source_unchanged_during_review": true,
+  "launcher_sha256": "b9305b0771d4be3645237ed9f1daf4d868e90ba52a737070fc3c1762f667256a",
+  "manifest_sha256": "4a4548359bd9675545a7def3a014aac4e4f76f3f34a7913b5bcc0c2efcbe602d",
+  "frozen_files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_relocated_reverse.py",
+      "expected_sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a",
+      "actual_sha256": "ab04e3648637d45981373a82da47b13bdd5c259d3f06a0a9e427a610f950809a"
+    },
+    {
+      "path": "scripts/run_ground_relocated_reverse.sh",
+      "expected_sha256": "b9305b0771d4be3645237ed9f1daf4d868e90ba52a737070fc3c1762f667256a",
+      "actual_sha256": "b9305b0771d4be3645237ed9f1daf4d868e90ba52a737070fc3c1762f667256a"
+    },
+    {
+      "path": "tests/test_ground_relocated_reverse.py",
+      "expected_sha256": "6675765ad30daf951b860e957cb5cd3568b2527ab85c11e9f9f34439be4dce4d",
+      "actual_sha256": "6675765ad30daf951b860e957cb5cd3568b2527ab85c11e9f9f34439be4dce4d"
+    },
+    {
+      "path": "docs/superpowers/specs/2026-11-12-ground-relocated-reverse-design.md",
+      "expected_sha256": "f6dae47a1ab1cf073da1aef4afc5fa28d039ece5a611329dbbe33f880a1f5cbd",
+      "actual_sha256": "f6dae47a1ab1cf073da1aef4afc5fa28d039ece5a611329dbbe33f880a1f5cbd"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-11-12-ground-relocated-reverse.md",
+      "expected_sha256": "296da113f97e0fb2ec60672279805e39b3d2bfce1cf00d8e106a09d7cb30c0b2",
+      "actual_sha256": "296da113f97e0fb2ec60672279805e39b3d2bfce1cf00d8e106a09d7cb30c0b2"
+    },
+    {
+      "path": "docs/ground_relocated_reverse_20261112.md",
+      "expected_sha256": "8d36378e8d90677cef8422806a31f9ac7a42eb1670e949ede74af0b79ce6f34a",
+      "actual_sha256": "8d36378e8d90677cef8422806a31f9ac7a42eb1670e949ede74af0b79ce6f34a"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_direction_response.py",
+      "expected_sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946",
+      "actual_sha256": "aeecaa1a50b585cfdd13218a94d56283f0ea93f03a71151475512e852bb21946"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_reverse_response.py",
+      "expected_sha256": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae",
+      "actual_sha256": "27eccf892ffa33b2af2e7cc53460fd8fa6ad4cf6830bc4572c631175c19e00ae"
+    },
+    {
+      "path": "scripts/run_ground_reverse_response.sh",
+      "expected_sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153",
+      "actual_sha256": "2beedbed0c9d288281c9c746369127e760c3981a8a8cfd0618203c1d23f86153"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "expected_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "actual_sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "expected_sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "actual_sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "expected_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "actual_sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2"
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "expected_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "actual_sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65"
+    }
+  ],
+  "all_manifest_files_match": true,
+  "pass_count": 12,
+  "probe_count": 12,
+  "probes": {
+    "full_factory_callback_sequence": {
+      "pass": true,
+      "same_factory_guard": true,
+      "other_publishers": [],
+      "stages": [
+        {
+          "wall_s": 0.05,
+          "stage": 0,
+          "phase": "WAIT",
+          "path_m": 0.0,
+          "rotation_rad": 0.0,
+          "total_turn_wall_s": 0.0,
+          "origin": null
+        },
+        {
+          "wall_s": 1.05,
+          "stage": 0,
+          "phase": "TURN",
+          "path_m": 0.0,
+          "rotation_rad": 0.0,
+          "total_turn_wall_s": 0.0,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 25.5,
+          "stage": 0,
+          "phase": "TURN_SETTLE",
+          "path_m": 0.0,
+          "rotation_rad": 1.5472718076309089,
+          "total_turn_wall_s": 24.45,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 26.55,
+          "stage": 1,
+          "phase": "PREPOSITION",
+          "path_m": 0.0,
+          "rotation_rad": 1.5472718076309089,
+          "total_turn_wall_s": 25.5,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 51.3,
+          "stage": 1,
+          "phase": "PREPOSITION_SETTLE",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 1.5472718076309089,
+          "total_turn_wall_s": 25.5,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 52.35,
+          "stage": 1,
+          "phase": "TURN",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 1.5472718076309089,
+          "total_turn_wall_s": 25.5,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 76.55,
+          "stage": 1,
+          "phase": "TURN_SETTLE",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 3.0717365268213923,
+          "total_turn_wall_s": 49.699999999999996,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 77.6,
+          "stage": 2,
+          "phase": "TURN",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 3.0717365268213923,
+          "total_turn_wall_s": 50.74999999999999,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 102.4,
+          "stage": 2,
+          "phase": "TURN_SETTLE",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 75.55000000000001,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 103.45,
+          "stage": 3,
+          "phase": "PULSE",
+          "path_m": 0.14820000000000091,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 105.2,
+          "stage": 3,
+          "phase": "PULSE_SETTLE",
+          "path_m": 0.15840000000000073,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 106.25,
+          "stage": 3,
+          "phase": "PULSE",
+          "path_m": 0.15840000000000073,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 106.8,
+          "stage": 3,
+          "phase": "PULSE_SETTLE",
+          "path_m": 0.16840000000000074,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 107.85,
+          "stage": 3,
+          "phase": "PULSE",
+          "path_m": 0.16840000000000074,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        },
+        {
+          "wall_s": 108.4,
+          "stage": 3,
+          "phase": "PULSE_SETTLE",
+          "path_m": 0.17840000000000075,
+          "rotation_rad": 4.641600380861577,
+          "total_turn_wall_s": 76.6,
+          "origin": [
+            0.0,
+            0.0,
+            0.055
+          ]
+        }
+      ],
+      "preposition": {
+        "start_wall_elapsed_s": 26.55,
+        "start_raw_odom": {
+          "header": {
+            "stamp": {
+              "sec": 36,
+              "nanosec": 550000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.055
+              },
+              "orientation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -0.6987408856409373,
+                "w": 0.7153748491062001
+              }
+            }
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        "target_xyz_m": [
+          0.0,
+          -0.15,
+          0.055
+        ],
+        "start_path_m": 0.0,
+        "requested_body_x_mps": 0.03,
+        "measurement": "world south progress from actual segment-start pose; no assumed command gain",
+        "settled": {
+          "wall_elapsed_s": 52.35,
+          "raw_odom": {
+            "header": {
+              "stamp": {
+                "sec": 62,
+                "nanosec": 350000000
+              },
+              "frame_id": "odom"
+            },
+            "child_frame_id": "base_footprint",
+            "pose": {
+              "pose": {
+                "position": {
+                  "x": 0.003486012191074154,
+                  "y": -0.14815899472864963,
+                  "z": 0.055
+                },
+                "orientation": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -0.6987408856409373,
+                  "w": 0.7153748491062001
+                }
+              }
+            },
+            "twist": {
+              "twist": {
+                "linear": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "angular": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              }
+            }
+          },
+          "stable_wall_s": 1.0,
+          "stable_source_s": 1.0,
+          "stop_path_increment_m": 0.0,
+          "endpoint_error_m": 0.0039422812438304625,
+          "south_progress_m": 0.14815899472864963
+        }
+      },
+      "turn_targets_rad": [
+        -1.5707963267948966,
+        0.0,
+        1.5707963267948966
+      ],
+      "pulse_requests": [
+        [
+          -0.03,
+          0.0
+        ],
+        [
+          -0.1,
+          0.0
+        ],
+        [
+          -0.1,
+          0.0
+        ]
+      ],
+      "final_wall_s": 109.45,
+      "path_m": 0.17840000000000075,
+      "rotation_rad": 4.641600380861577,
+      "total_turn_wall_s": 76.6,
+      "reason": "relocated_reverse_response_observed_official_score_unverified"
+    },
+    "preposition_endpoint_geometry": {
+      "pass": true,
+      "target": [
+        0.0,
+        -0.15,
+        0.055
+      ],
+      "progress_m": 0.148,
+      "endpoint_error_m": 0.02005,
+      "reason": "relocated_preposition_endpoint_error"
+    },
+    "negative_publish_failure_and_real_watchdog": {
+      "pass": true,
+      "attempts": [
+        [
+          -0.03,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "command_records": [
+        {
+          "linear_x": -0.03,
+          "linear_y": 0.0,
+          "angular_z": 0.0,
+          "sent": false,
+          "error": "relocated_publish_error:independent first nonzero and zero transport failures"
+        },
+        {
+          "linear_x": 0.0,
+          "linear_y": 0.0,
+          "angular_z": 0.0,
+          "sent": false,
+          "error": "relocated_publish_error:independent first nonzero and zero transport failures"
+        },
+        {
+          "linear_x": 0.0,
+          "linear_y": 0.0,
+          "angular_z": 0.0,
+          "sent": true,
+          "error": null
+        }
+      ]
+    },
+    "final_query_global": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "TURN",
+      "reason": "relocated_global_wall_time_limit",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 179.95
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 179.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 179.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_turn": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "TURN",
+      "reason": "direction_turn_wall_time_limit",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 44.95
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 44.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 44.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_total_turn": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "TURN",
+      "reason": "relocated_total_turn_wall_time_limit",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.05
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.05,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.05,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    },
+    "final_query_preposition": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "PREPOSITION",
+      "reason": "relocated_preposition_wall_time_limit",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 39.95
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 39.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 39.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_pulse": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "PAUSE",
+      "phase": "PULSE_SETTLE",
+      "reason": "clock_stale",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1.95
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 1.95,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_source_age": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "PAUSE",
+      "phase": "TURN",
+      "reason": "odom_stale_or_invalid",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.4,
+          "wall_age_s": 0.0
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.34999999999999964,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.34999999999999964,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_arrival_age": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "PAUSE",
+      "phase": "TURN",
+      "reason": "clock_stale",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.25,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": false
+        }
+      }
+    },
+    "final_query_stop": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "TURN",
+      "reason": "independent_stop_during_dds",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    },
+    "final_query_dds_loss": {
+      "pass": true,
+      "query_count": 2,
+      "published": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "state": "STOP",
+      "phase": "TURN",
+      "reason": "no_external_matching_cmd_subscriber",
+      "timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0
+        },
+        "odom": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 10.05,
+          "wall_age_s": 0.0,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,147 @@
+[
+  {
+    "received_at": "2026-11-11T23:07:42.635859+00:00",
+    "payload": {
+      "event": "launcher_started",
+      "timestamp": "2026-11-11T23:07:37.635286+00:00",
+      "data": {
+        "read_only": false,
+        "mode": "bounded_vertical_response",
+        "revision": "bounded_vertical_response_v1",
+        "official_scoring": "unverified"
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:07:44.381108+00:00",
+    "payload": {
+      "event": "probe_started",
+      "timestamp": "2026-11-11T23:07:39.305986+00:00",
+      "data": {
+        "mode": "bounded_vertical_response",
+        "read_only": false,
+        "limits": {
+          "command_mps": 0.05,
+          "target_rise_m": 0.15,
+          "hard_rise_m": 0.2,
+          "max_horizontal_drift_m": 0.04,
+          "max_tilt_rad": 0.05,
+          "max_speed_mps": 0.15,
+          "max_angular_speed_rps": 0.1,
+          "max_total_path_m": 0.3,
+          "motion_wall_s": 10.0,
+          "global_wall_s": 45.0,
+          "sensor_age_s": 0.2,
+          "clock_sampling_lag_s": 0.12,
+          "stable_s": 1.0,
+          "observe_s": 5.0
+        },
+        "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+        "official_scoring": "unverified",
+        "full_mission_complete": false
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:07:53.448182+00:00",
+    "payload": {
+      "event": "probe_snapshot",
+      "timestamp": "2026-11-11T23:07:48.715822+00:00",
+      "data": {
+        "mode": "bounded_vertical_response",
+        "session_id": "dd830b26c28043e195bee21de05e1642",
+        "state": "FINISHED",
+        "reason": "total_path_limit",
+        "limits": {
+          "command_mps": 0.05,
+          "target_rise_m": 0.15,
+          "hard_rise_m": 0.2,
+          "max_horizontal_drift_m": 0.04,
+          "max_tilt_rad": 0.05,
+          "max_speed_mps": 0.15,
+          "max_angular_speed_rps": 0.1,
+          "max_total_path_m": 0.3,
+          "motion_wall_s": 10.0,
+          "global_wall_s": 45.0,
+          "sensor_age_s": 0.2,
+          "clock_sampling_lag_s": 0.12,
+          "stable_s": 1.0,
+          "observe_s": 5.0
+        },
+        "origin": [
+          0.00022356594723448885,
+          2.8066789222106445e-05,
+          0.05500019513938023
+        ],
+        "target_reached": true,
+        "max_rise_m": 0.15166900121337934,
+        "max_horizontal_drift_m": 5.8400337213638784e-05,
+        "total_path_m": 0.3034919938538383,
+        "dropped": {
+          "trajectory": 0,
+          "commands": 0,
+          "scans": 0,
+          "downscans": 0,
+          "tf_records": 0
+        },
+        "post_stop_faults": [
+          "total_path_limit"
+        ],
+        "assumptions": {
+          "world_source": "ranmengjia/ICAN@82b041043849a5d86e085390bf0df787366d98cd:binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+          "world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+          "static_map_verified_on_platform": false,
+          "space_evidence": "fixed public static candidate departure column plus live horizontal scan consistency",
+          "initial_support_floor": "excluded only as known initial support; positive-Z departure; no descent requested",
+          "unknown_upper_obstacles_sensed": false,
+          "downscan_used_as_upper_clearance": false,
+          "body_world_positive_z_contract": "unverified; limited tilt and displacement measured during experiment"
+        },
+        "section": "bounded_vertical_core",
+        "read_only": false,
+        "official_scoring": "unverified",
+        "full_mission_complete": false
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:07:59.317605+00:00",
+    "payload": {
+      "event": "probe_finished",
+      "timestamp": "2026-11-11T23:07:54.675813+00:00",
+      "data": {
+        "mode": "bounded_vertical_response",
+        "read_only": false,
+        "state": "FINISHED",
+        "reason": "total_path_limit",
+        "publish_counts": {
+          "ground_zero": 191,
+          "uav_zero": 125,
+          "uav_positive_z": 66
+        },
+        "errors": [],
+        "full_mission_complete": false,
+        "official_scoring": "unverified"
+      }
+    },
+    "source": "unverified_callback"
+  },
+  {
+    "received_at": "2026-11-11T23:08:00.293916+00:00",
+    "payload": {
+      "event": "launcher_exit",
+      "timestamp": "2026-11-11T23:07:55.663893+00:00",
+      "data": {
+        "read_only": false,
+        "mode": "bounded_vertical_response",
+        "revision": "bounded_vertical_response_v1",
+        "official_scoring": "unverified",
+        "exit_code": 0
+      }
+    },
+    "source": "unverified_callback"
+  }
+]

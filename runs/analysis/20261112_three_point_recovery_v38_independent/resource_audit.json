@@ -1,0 +1,156 @@
+{
+  "raw": {
+    "max_resumes": 32,
+    "resume_count": 1,
+    "single_pause_wall_limit_s": 5.0,
+    "cumulative_pause_wall_limit_s": 60.0,
+    "completed_pause_wall_s": 1.1043544510030188,
+    "active_pause_wall_s": 0.0,
+    "total_pause_wall_s": 1.1043544510030188,
+    "max_recaptures_per_point": 1,
+    "records": [
+      {
+        "started_wall_s": 35127.306504959,
+        "started_wall_elapsed_s": 2.565560032002395,
+        "phase": "DRIVE",
+        "reason": "scan_stale",
+        "point_index": 0,
+        "target_id": "ground_3",
+        "epoch": 1,
+        "resume_count_before": 0,
+        "outcome": "recovered",
+        "entry_timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 5.9,
+            "wall_age_s": 0.004637999001715798
+          },
+          "odom": {
+            "stamp_s": 5.9,
+            "wall_age_s": 0.004118664997804444,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 5.757,
+            "wall_age_s": 0.20355819899850758,
+            "clock_minus_stamp_s": 0.14300000000000068,
+            "fresh": false
+          }
+        },
+        "ended_wall_s": 35128.41085941,
+        "elapsed_wall_s": 1.1043544510030188,
+        "resume_count_after": 1,
+        "epoch_after": 1,
+        "cumulative_pause_wall_s": 1.1043544510030188,
+        "exit_timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 6.9,
+            "wall_age_s": 0.09157308600697434
+          },
+          "odom": {
+            "stamp_s": 6.98,
+            "wall_age_s": 0.013020786005654372,
+            "clock_minus_stamp_s": -0.08000000000000007,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 6.907,
+            "wall_age_s": 0.08478665700386046,
+            "clock_minus_stamp_s": -0.006999999999999673,
+            "fresh": true
+          }
+        }
+      }
+    ],
+    "records_capacity": 40,
+    "records_dropped": 0,
+    "contract": "predeclared_finite_retry_resources_not_motion_permission",
+    "official_acceptance": false
+  },
+  "independent_pause_checks": [
+    {
+      "phase": "DRIVE",
+      "reason": "scan_stale",
+      "elapsed_wall_s": 1.1043544510030188,
+      "count_before": 0,
+      "count_after": 1,
+      "entry_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 5.9,
+          "wall_age_s": 0.004637999001715798
+        },
+        "odom": {
+          "stamp_s": 5.9,
+          "wall_age_s": 0.004118664997804444,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 5.757,
+          "wall_age_s": 0.20355819899850758,
+          "clock_minus_stamp_s": 0.14300000000000068,
+          "fresh": false
+        }
+      },
+      "exit_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 6.9,
+          "wall_age_s": 0.09157308600697434
+        },
+        "odom": {
+          "stamp_s": 6.98,
+          "wall_age_s": 0.013020786005654372,
+          "clock_minus_stamp_s": -0.08000000000000007,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 6.907,
+          "wall_age_s": 0.08478665700386046,
+          "clock_minus_stamp_s": -0.006999999999999673,
+          "fresh": true
+        }
+      },
+      "start_elapsed_s": 2.565560032002395,
+      "end_elapsed_s": 3.669914483005414
+    }
+  ],
+  "command_boundary": [
+    {
+      "commands_inside_pause": 42,
+      "all_zero": true,
+      "first_command_after_resume": {
+        "wall_elapsed_s": 3.6701134649993037,
+        "clock_stamp_s": 6.9,
+        "linear_x": 0.0,
+        "angular_z": 0.0,
+        "state": "DRIVE"
+      },
+      "first_nonzero_after_resume": {
+        "wall_elapsed_s": 3.72060896900075,
+        "clock_stamp_s": 7.0,
+        "linear_x": 0.03,
+        "angular_z": 0.0,
+        "state": "DRIVE"
+      }
+    }
+  ],
+  "camera": {
+    "pending": false,
+    "events": [],
+    "events_dropped": 0,
+    "camera_max_age_s": 0.5,
+    "max_resumes": 32,
+    "max_recaptures_per_point": 1,
+    "official_acceptance": false
+  },
+  "point_recapture_count": 0,
+  "interpretation": "one successful ordinary scan pause; camera recapture and 32-slot extension not exercised"
+}

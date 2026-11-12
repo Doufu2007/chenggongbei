@@ -1,0 +1,16 @@
+{
+  "source_sha256": "d6d002d2a9a0bfe8e4962ef7b49323327460ea85459f946c37e789ef74016869",
+  "before_uav": [
+    0.0,
+    0.0,
+    0.05,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "stop_state": "STOP",
+  "stop_exception": "RuntimeError:independent injected ground publisher failure",
+  "following_publications": [],
+  "uav_zero_attempt_returned": false,
+  "platform_run": false
+}

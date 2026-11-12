@@ -1,0 +1,7 @@
+{
+  "status": 502,
+  "response": {
+    "success": false,
+    "message": "测评服务器上暂无该次运行的日志（可能已被清理）"
+  }
+}

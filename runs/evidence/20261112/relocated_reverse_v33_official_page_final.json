@@ -1,0 +1,16 @@
+{
+  "source": "logged-in in-app browser accessibility state",
+  "url": "https://www.splenach.com/ros-simulation/evaluation/log/87e16c7f-bc1c-4329-aef2-bfff61a13e85",
+  "id": "87e16c7f-bc1c-4329-aef2-bfff61a13e85",
+  "runId": "run_20261112_083208_b88d3f13",
+  "evaluation_number": "30991200",
+  "status_display": "?????",
+  "displayed_score": 0,
+  "score_extracted": false,
+  "failure": "????????????????????",
+  "duration_display_s": 341.2,
+  "ended_display": "2026/11/12 08:38:10",
+  "source_file": "inspection_relocated_reverse_v33_src.zip",
+  "script_file": "run_relocated_reverse_v33.sh",
+  "scope": "????????????/??/??/??????????????????????????"
+}

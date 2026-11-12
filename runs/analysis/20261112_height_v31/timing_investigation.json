@@ -1,0 +1,682 @@
+{
+  "schema": "height_v31_readonly_timing_investigation_v1",
+  "fault_wall_s": 2.4367965730016294,
+  "source_identity": {
+    "src/inspection_mission/inspection_mission/bounded_vertical_response.py": {
+      "sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78",
+      "archive_matches_current_source": true
+    },
+    "src/inspection_mission/inspection_mission/bounded_height_hold.py": {
+      "sha256": "e925786494c3dc51d7de6c8f47779d5064e97e13513c8daba4df5b3db982e391",
+      "archive_matches_current_source": true
+    },
+    "src/inspection_mission/inspection_mission/bounded_ground_probe.py": {
+      "sha256": "9e3b7c7b87654c976a74b63893d83059b437627d5679d90045c166c8a0d6c8fb",
+      "archive_matches_current_source": true
+    },
+    "src/inspection_mission/inspection_mission/telemetry.py": {
+      "sha256": "47a3080096ec0337cd563c6ffd2810dc0b84d42c9d9908d24a3000d255bbeec5",
+      "archive_matches_current_source": true
+    }
+  },
+  "series": {
+    "trajectory": {
+      "count": 221,
+      "largest_gap": {
+        "gap_s": 0.0663110979985504,
+        "before_wall_s": 2.3721536970006127,
+        "after_wall_s": 2.438464794999163,
+        "before_source_stamp": 5.14,
+        "after_source_stamp": 5.16
+      },
+      "near_fault_entries": [
+        {
+          "wall_s": 2.2077724170012516,
+          "source_stamp": 4.98
+        },
+        {
+          "wall_s": 2.2273044220019074,
+          "source_stamp": 5.0
+        },
+        {
+          "wall_s": 2.2512826820020564,
+          "source_stamp": 5.02
+        },
+        {
+          "wall_s": 2.2704320140001073,
+          "source_stamp": 5.04
+        },
+        {
+          "wall_s": 2.290254477000417,
+          "source_stamp": 5.06
+        },
+        {
+          "wall_s": 2.309522322000703,
+          "source_stamp": 5.08
+        },
+        {
+          "wall_s": 2.3290533710023738,
+          "source_stamp": 5.1
+        },
+        {
+          "wall_s": 2.35243883899966,
+          "source_stamp": 5.12
+        },
+        {
+          "wall_s": 2.3721536970006127,
+          "source_stamp": 5.14
+        },
+        {
+          "wall_s": 2.438464794999163,
+          "source_stamp": 5.16
+        },
+        {
+          "wall_s": 2.450254847000906,
+          "source_stamp": 5.18
+        }
+      ]
+    },
+    "commands": {
+      "count": 95,
+      "largest_gap": {
+        "gap_s": 0.1124780380014272,
+        "before_wall_s": 2.3246932590009237,
+        "after_wall_s": 2.437171297002351,
+        "before_source_stamp": 5.08,
+        "after_source_stamp": 5.14
+      },
+      "near_fault_entries": [
+        {
+          "wall_s": 2.223816980000265,
+          "source_stamp": 4.98
+        },
+        {
+          "wall_s": 2.2742755809995288,
+          "source_stamp": 5.04
+        },
+        {
+          "wall_s": 2.3246932590009237,
+          "source_stamp": 5.08
+        },
+        {
+          "wall_s": 2.437171297002351,
+          "source_stamp": 5.14
+        },
+        {
+          "wall_s": 2.4373443389995373,
+          "source_stamp": 5.14
+        }
+      ]
+    },
+    "scans": {
+      "count": 35,
+      "largest_gap": {
+        "gap_s": 0.20763425800032564,
+        "before_wall_s": 2.2315257219997875,
+        "after_wall_s": 2.439159980000113,
+        "before_source_stamp": 5.004,
+        "after_source_stamp": 5.154
+      },
+      "near_fault_entries": [
+        {
+          "wall_s": 2.2315257219997875,
+          "source_stamp": 5.004
+        },
+        {
+          "wall_s": 2.439159980000113,
+          "source_stamp": 5.154
+        }
+      ]
+    },
+    "downscans": {
+      "count": 87,
+      "largest_gap": {
+        "gap_s": 0.09799570999894058,
+        "before_wall_s": 2.34277049800221,
+        "after_wall_s": 2.4407662080011505,
+        "before_source_stamp": 5.107,
+        "after_source_stamp": 5.154
+      },
+      "near_fault_entries": [
+        {
+          "wall_s": 2.236238220000814,
+          "source_stamp": 5.007
+        },
+        {
+          "wall_s": 2.283450945000368,
+          "source_stamp": 5.054
+        },
+        {
+          "wall_s": 2.34277049800221,
+          "source_stamp": 5.107
+        },
+        {
+          "wall_s": 2.4407662080011505,
+          "source_stamp": 5.154
+        }
+      ]
+    },
+    "tf_records": {
+      "count": 441,
+      "largest_gap": {
+        "gap_s": 0.08372390600197832,
+        "before_wall_s": 2.353072666999651,
+        "after_wall_s": 2.4367965730016294,
+        "before_source_stamp": 5.12,
+        "after_source_stamp": 5.14
+      },
+      "near_fault_entries": [
+        {
+          "wall_s": 2.208163366001827,
+          "source_stamp": 4.98
+        },
+        {
+          "wall_s": 2.208437858000252,
+          "source_stamp": 4.98
+        },
+        {
+          "wall_s": 2.2277981539991742,
+          "source_stamp": 5.0
+        },
+        {
+          "wall_s": 2.2281175980024273,
+          "source_stamp": 5.0
+        },
+        {
+          "wall_s": 2.2508347799994226,
+          "source_stamp": 5.02
+        },
+        {
+          "wall_s": 2.251525498999399,
+          "source_stamp": 5.02
+        },
+        {
+          "wall_s": 2.270802127000934,
+          "source_stamp": 5.04
+        },
+        {
+          "wall_s": 2.2711596910012304,
+          "source_stamp": 5.04
+        },
+        {
+          "wall_s": 2.289795373002562,
+          "source_stamp": 5.06
+        },
+        {
+          "wall_s": 2.2905570290022297,
+          "source_stamp": 5.06
+        },
+        {
+          "wall_s": 2.3099901030000183,
+          "source_stamp": 5.08
+        },
+        {
+          "wall_s": 2.3103000820010493,
+          "source_stamp": 5.08
+        },
+        {
+          "wall_s": 2.3295634870009962,
+          "source_stamp": 5.1
+        },
+        {
+          "wall_s": 2.329865461000736,
+          "source_stamp": 5.1
+        },
+        {
+          "wall_s": 2.3527123170024424,
+          "source_stamp": 5.12
+        },
+        {
+          "wall_s": 2.353072666999651,
+          "source_stamp": 5.12
+        },
+        {
+          "wall_s": 2.4367965730016294,
+          "source_stamp": 5.14
+        },
+        {
+          "wall_s": 2.441024017000018,
+          "source_stamp": 5.14
+        },
+        {
+          "wall_s": 2.441552578999108,
+          "source_stamp": 5.16
+        },
+        {
+          "wall_s": 2.441896757001814,
+          "source_stamp": 5.16
+        },
+        {
+          "wall_s": 2.4497710870018636,
+          "source_stamp": 5.18
+        },
+        {
+          "wall_s": 2.4505620370000543,
+          "source_stamp": 5.18
+        }
+      ]
+    }
+  },
+  "largest_gaps_between_all_retained_entries": [
+    {
+      "gap_s": 0.0646428760010167,
+      "before": [
+        2.3721536970006127,
+        "trajectory"
+      ],
+      "after": [
+        2.4367965730016294,
+        "tf_records"
+      ]
+    },
+    {
+      "gap_s": 0.028194426999107236,
+      "before": [
+        0.008894751001207624,
+        "tf_records"
+      ],
+      "after": [
+        0.03708917800031486,
+        "tf_records"
+      ]
+    },
+    {
+      "gap_s": 0.02306706099989242,
+      "before": [
+        1.2335011940012919,
+        "tf_records"
+      ],
+      "after": [
+        1.2565682550011843,
+        "trajectory"
+      ]
+    },
+    {
+      "gap_s": 0.02192097700026352,
+      "before": [
+        1.3357262520003133,
+        "tf_records"
+      ],
+      "after": [
+        1.3576472290005768,
+        "trajectory"
+      ]
+    },
+    {
+      "gap_s": 0.02101346199924592,
+      "before": [
+        4.020783124000445,
+        "tf_records"
+      ],
+      "after": [
+        4.041796585999691,
+        "trajectory"
+      ]
+    },
+    {
+      "gap_s": 0.02092669199919328,
+      "before": [
+        4.425884791002318,
+        "tf_records"
+      ],
+      "after": [
+        4.446811483001511,
+        "trajectory"
+      ]
+    },
+    {
+      "gap_s": 0.02092361000177334,
+      "before": [
+        0.825389998000901,
+        "tf_records"
+      ],
+      "after": [
+        0.8463136080026743,
+        "trajectory"
+      ]
+    },
+    {
+      "gap_s": 0.02062937799928477,
+      "before": [
+        0.9269454580025922,
+        "tf_records"
+      ],
+      "after": [
+        0.947574836001877,
+        "trajectory"
+      ]
+    }
+  ],
+  "unretained_input_entries": [
+    "/clock",
+    "/odom"
+  ],
+  "v31_does_not_include_callback_timing": true,
+  "old_v17_timing_is_a_different_run_and_adapter": true,
+  "old_v17_selected_spans": {
+    "receive:/scan": {
+      "wall_s": {
+        "count": 699,
+        "total": 0.7156178309869574,
+        "min": 0.0004092599992873147,
+        "max": 0.0020461849999264814,
+        "buckets": [
+          0,
+          452,
+          247,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 699,
+        "total": 0.7156051619999764,
+        "min": 0.000408596999999844,
+        "max": 0.0020484960000000108,
+        "buckets": [
+          0,
+          452,
+          247,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 698,
+        "total": 88.69363454700033,
+        "min": 0.09706090399959066,
+        "max": 0.15762342599919066,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          682,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/odom": {
+      "wall_s": {
+        "count": 2905,
+        "total": 1.1129285579681891,
+        "min": 0.0002644989999680547,
+        "max": 0.012612512999112369,
+        "buckets": [
+          0,
+          2901,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 2905,
+        "total": 1.1115297659999894,
+        "min": 0.0002645549999993335,
+        "max": 0.012583744000000063,
+        "buckets": [
+          0,
+          2901,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 2904,
+        "total": 88.81290617599916,
+        "min": 0.0007865899988246383,
+        "max": 0.19726708700000017,
+        "buckets": [
+          0,
+          30,
+          29,
+          1114,
+          1525,
+          1,
+          205,
+          0,
+          0
+        ]
+      }
+    },
+    "receive:/uav/odom": {
+      "wall_s": {
+        "count": 3076,
+        "total": 0.4599173209990113,
+        "min": 0.00011248699956922792,
+        "max": 0.0006424530001822859,
+        "buckets": [
+          0,
+          3076,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 3076,
+        "total": 0.4589920100000092,
+        "min": 0.000112520999999699,
+        "max": 0.0006420050000004451,
+        "buckets": [
+          0,
+          3076,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 3075,
+        "total": 88.86234079800124,
+        "min": 0.0004630620005627861,
+        "max": 0.22359122300076706,
+        "buckets": [
+          0,
+          29,
+          6,
+          1278,
+          1580,
+          2,
+          179,
+          1,
+          0
+        ]
+      }
+    },
+    "receive:/tf": {
+      "wall_s": {
+        "count": 8662,
+        "total": 0.3834033790953981,
+        "min": 2.773100095510017e-05,
+        "max": 0.0001801170001272112,
+        "buckets": [
+          8627,
+          35,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 8662,
+        "total": 0.38009618100005693,
+        "min": 2.7564999999896145e-05,
+        "max": 0.00017901900000083515,
+        "buckets": [
+          8633,
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 8661,
+        "total": 88.83985857399966,
+        "min": 0.0002701940011320403,
+        "max": 0.09040528799960157,
+        "buckets": [
+          0,
+          4107,
+          189,
+          2707,
+          1655,
+          3,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "spin_once": {
+      "wall_s": {
+        "count": 18938,
+        "total": 88.2019272320922,
+        "min": 3.3216001611435786e-05,
+        "max": 0.032349662000342505,
+        "buckets": [
+          10,
+          11224,
+          2045,
+          5267,
+          392,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 18938,
+        "total": 11.45269820499996,
+        "min": 3.327100000038996e-05,
+        "max": 0.01331305000000027,
+        "buckets": [
+          10,
+          16058,
+          2869,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "tick": {
+      "wall_s": {
+        "count": 1761,
+        "total": 0.3777644759975374,
+        "min": 0.00010913599908235483,
+        "max": 0.001172166999822366,
+        "buckets": [
+          0,
+          1760,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "cpu_s": {
+        "count": 1761,
+        "total": 0.3780924500000129,
+        "min": 0.00010926499999897032,
+        "max": 0.0011736270000000104,
+        "buckets": [
+          0,
+          1760,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "entry_gap_wall_s": {
+        "count": 0,
+        "total": 0.0,
+        "min": null,
+        "max": null,
+        "buckets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "limits": [
+    "entry timestamps are not callback exit or duration measurements",
+    "combined retained-record gap does not prove no unretained callback ran",
+    "no source publication wall timestamp, DDS readiness, executor scheduling or host preemption measurements",
+    "old v17 timing and local pure-guard cost cannot be substituted for v31 measurements"
+  ]
+}

@@ -1,0 +1,2 @@
+{"received_at": "2026-11-11T14:16:02.543278+00:00", "payload": {"event": "heartbeat", "data": {"source": "local_self_test", "read_only": true}}, "source": "unverified_callback"}
+{"received_at": "2026-11-11T14:23:37.630542+00:00", "payload": {"event": "probe_snapshot", "data": {"read_only": true, "official_scoring": "unverified", "selftest": true}}, "source": "unverified_callback"}

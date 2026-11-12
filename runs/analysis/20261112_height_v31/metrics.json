@@ -1,0 +1,146 @@
+{
+  "kind": "independent_height_hold_raw_analysis",
+  "platform_id": "f21b350d-dcba-4121-ae93-9781c554471c",
+  "reported": {
+    "state": "FINISHED",
+    "reason": "return_sensor_lost:horizontal_scan_stale",
+    "phase": "ZERO_RETURN",
+    "hold_verified": false,
+    "descent_verified": false,
+    "protocol_complete": false,
+    "protocol_abort_reason": "height_feedback_interrupted:horizontal_scan_stale",
+    "support_return_verified": false,
+    "official_score": null,
+    "full_mission_complete": false
+  },
+  "motion_start_elapsed_s": 1.1644807260017842,
+  "hold_interval": null,
+  "hold_valid_blocks": [],
+  "independent_hold_3s_source_and_arrival": false,
+  "reported_hold_dwell_audit": {
+    "reported": null,
+    "reconstructed_window": null,
+    "all_frames_inside_band": false,
+    "source_span_ge_3s": false,
+    "arrival_span_ge_3s": false
+  },
+  "descent_transition_audit": {
+    "transition": {
+      "wall_elapsed_s": 2.4367965730016294,
+      "from": "ASCEND_TO_010",
+      "to": "ZERO_RETURN",
+      "reason": "height_feedback_interrupted:horizontal_scan_stale",
+      "odom_stamp": 5.14
+    },
+    "odom": {
+      "wall_elapsed_s": 2.3721536970006127,
+      "stamp": 5.14,
+      "xyz": [
+        3.4468756780550596e-05,
+        3.550191343175999e-05,
+        0.10989871616225919
+      ],
+      "q": [
+        0.0,
+        0.0,
+        4.50151998810997e-06,
+        0.9999999999898682
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        0.04610000000000031
+      ],
+      "angular": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "speed": 0.04610000000000031,
+      "angular_speed": 0.0,
+      "tilt": 0.0,
+      "wall": 30286.935438113
+    },
+    "relative_height_m": 0.05489800793366991,
+    "vz_mps": 0.04610000000000031,
+    "height_le_025": false,
+    "speed_le_020": false,
+    "joint_descent_gate_measured": false
+  },
+  "support_valid_blocks": [
+    {
+      "samples": 48,
+      "start_source_stamp": 6.24,
+      "end_source_stamp": 7.18,
+      "start_arrival_wall_s": 3.4904667560003872,
+      "end_arrival_wall_s": 4.446811483001511,
+      "source_span_s": 0.9399999999999995,
+      "arrival_span_s": 0.9563447270011238,
+      "max_abs_height_error_m": 6.312133775047968e-06,
+      "max_abs_vz_mps": 0.0003221583784830673,
+      "max_speed_mps": 0.0003277484083544475,
+      "max_angular_speed_rps": 0.0002715432220046657,
+      "position_radius_from_first_m": 0.00018088333673087523,
+      "max_source_gap_s": 0.020000000000000462,
+      "max_arrival_gap_s": 0.023068819002219243,
+      "kind": "support"
+    }
+  ],
+  "support_last_block_source_and_arrival_ge_1s": false,
+  "independent_full_local_protocol_observed": false,
+  "command_measurement_or_formula_errors": [],
+  "nonzero_at_or_below_phase_low_cutoff": [],
+  "nonzero_after_hold_deadline": [],
+  "nonzero_after_motion_budget": [],
+  "command_counts": {
+    "positive": 24,
+    "negative": 0,
+    "zero": 71
+  },
+  "reconstructed_path_m": 0.11187226605161962,
+  "reported_path_m": 0.11187226605161958,
+  "max_odom_source_gap_s": 0.020000000000000462,
+  "max_odom_arrival_gap_s": 0.0663110979985504,
+  "rise_m": {
+    "count": 221,
+    "min": -6.312133775047968e-06,
+    "median": 0.0013420079336701404,
+    "max": 0.05582000793366992
+  },
+  "last_odom": {
+    "wall_elapsed_s": 4.466415502000018,
+    "stamp": 7.2,
+    "xyz": [
+      0.0002198602229932476,
+      5.234975061419767e-05,
+      0.055000215938406684
+    ],
+    "q": [
+      0.0,
+      0.0,
+      8.697944188250291e-06,
+      0.9999999999621729
+    ],
+    "linear": [
+      0.00027677304023493974,
+      -2.97553255320457e-06,
+      -2.6388266606558464e-07
+    ],
+    "angular": [
+      0.0,
+      0.0,
+      5.856067490932208e-06
+    ],
+    "speed": 0.00027678916024463136,
+    "angular_speed": 5.856067490932208e-06,
+    "tilt": 0.0,
+    "wall": 30289.029699918
+  },
+  "interpretation_limits": [
+    "sampled observations do not establish behavior between samples",
+    "command time is process publication return time, not actuator application time",
+    "support proximity is not an independent touchdown sensor",
+    "callback byte integrity is not independent source authentication",
+    "no task score or complete inspection mission is inferred"
+  ]
+}

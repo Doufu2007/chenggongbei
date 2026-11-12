@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.809" timestamp="2026-11-12T05:33:46.204711+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_matcher_worker" name="test_unexpected_worker_exit_returns_bound_error_instead_of_waiting_forever" time="0.058"><failure message="assert False is None">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-738/test_unexpected_worker_exit_re0')
+
+    def test_unexpected_worker_exit_returns_bound_error_instead_of_waiting_forever(tmp_path):
+        module=api()
+        from inspection_mission.ground_plane_matcher import TemplateSpec
+        path=tmp_path/'blank.png';ok,raw=cv2.imencode('.png',np.zeros((64,64,3),np.uint8));assert ok;path.write_bytes(raw.tobytes())
+        worker=module.GroundMatcherWorker([TemplateSpec(path,'x','x',{'source':'synthetic crash test'})])
+        try:
+            worker.set_context('session-a','ground_3',1);worker.submit(job());worker.poll()
+            worker._process.terminate();worker._process.join(timeout=1.)  # Simulate independent OS/process failure.
+            result=worker.poll()
+            assert result and 'worker_process_exited' in result[0]['error']
+            assert result[0]['job']['source_sha256']==job()['source_sha256']
+            assert result[0]['job_was_dispatched'] is True
+&gt;           assert result[0]['job_was_executed'] is None
+E           assert False is None
+
+tests\test_ground_matcher_worker.py:137: AssertionError</failure></testcase></testsuite></testsuites>

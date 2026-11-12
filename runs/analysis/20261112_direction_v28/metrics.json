@@ -1,0 +1,3277 @@
+{
+  "schema": "ground_direction_response_analysis_v1",
+  "mode": "ground_direction_response",
+  "session_id": "46bdef9e0e044dbf923fea4c5a4bac15",
+  "state": "FINISHED",
+  "phase": "PULSE_SETTLE",
+  "reason": "direction_response_observed_official_score_unverified",
+  "calibration_three_pulses_observed_complete": true,
+  "not_completed_reason": null,
+  "official_score": null,
+  "official_task_success": false,
+  "full_mission_complete": false,
+  "interface_semantics_confirmed": false,
+  "limits": {
+    "global_wall_s": 120.0,
+    "max_path_m": 0.18,
+    "max_origin_displacement_m": 0.12,
+    "max_rotation_rad": 1.0,
+    "turn_wall_s": 45.0,
+    "maximum_yaw_rate": 0.5,
+    "minimum_yaw_rate": 0.35,
+    "max_turn_drift_m": 0.06,
+    "max_heading_error_rad": 0.05,
+    "local_swept_motion_budget_m": 0.06,
+    "scan_anchor_motion_limit_m": 0.03,
+    "local_stop_reserve_m": 0.03,
+    "pulse_wall_s": 2.0,
+    "pulse_displacement_m": 0.04,
+    "pulse_request_stop_m": 0.01,
+    "max_translation_speed_mps": 0.15,
+    "max_translation_yaw_speed_rps": 0.15,
+    "max_pulse_yaw_drift_rad": 0.03,
+    "stable_s": 1.0,
+    "stable_drift_m": 0.002,
+    "stop_drift_m": 0.01
+  },
+  "dropped": {
+    "raw_odometry": 0,
+    "raw_scans": 0,
+    "direction_commands": 0,
+    "state_records": 0
+  },
+  "resume_count": 0,
+  "pulse_count": 3,
+  "pulses": [
+    {
+      "index": 0,
+      "settled_record_present": true,
+      "motion_end_reason": "pulse_measured_request_stop",
+      "requested_body_xy_mps": [
+        0.03,
+        0.0
+      ],
+      "start": {
+        "source_stamp_s": 23.04,
+        "xyz_m": [
+          -0.0023745229680453947,
+          -0.0057463090539703115,
+          0.055000124115321104
+        ],
+        "raw_quaternion": [
+          -1.3481415234057625e-07,
+          4.9787742565774876e-08,
+          -0.2838765279123574,
+          0.9588608433450623
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.5756691017220958,
+        "linear_feedback_mps": [
+          8.563271588571047e-06,
+          -5.062973624415779e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          5.551115123125783e-15
+        ],
+        "speed_feedback_mps": 8.578225767537445e-06,
+        "angular_speed_feedback_rps": 5.551115123125783e-15
+      },
+      "end": {
+        "source_stamp_s": 25.92,
+        "xyz_m": [
+          0.006746883136326568,
+          -0.010049020076668315,
+          0.05500008539651104
+        ],
+        "raw_quaternion": [
+          -8.906066574378447e-08,
+          5.584341035348502e-08,
+          -0.2839971295412672,
+          0.9588251302569775
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.5759206582968659,
+        "linear_feedback_mps": [
+          8.534956465713587e-06,
+          -1.7328019002422602e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          7.295931636619457e-08
+        ],
+        "speed_feedback_mps": 8.536715287268341e-06,
+        "angular_speed_feedback_rps": 7.295931636619457e-08
+      },
+      "request_count": 38,
+      "failed_publish_count": 0,
+      "first_nonzero_command": {
+        "wall_elapsed_s": 20.717192587999307,
+        "clock_stamp_s": 23.0,
+        "linear_x": 0.03,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 23.0,
+            "wall_age_s": 0.048735238997323904
+          },
+          "odom": {
+            "stamp_s": 23.04,
+            "wall_age_s": 0.007107481997081777,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 23.001,
+            "wall_age_s": 0.046836492998409085,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last_nonzero_command": {
+        "wall_elapsed_s": 22.58531591800056,
+        "clock_stamp_s": 24.8,
+        "linear_x": 0.03,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 24.8,
+            "wall_age_s": 0.08264616499945987
+          },
+          "odom": {
+            "stamp_s": 24.88,
+            "wall_age_s": 0.0019940290003432892,
+            "clock_minus_stamp_s": -0.0799999999999983,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 24.751,
+            "wall_age_s": 0.13272367799800122,
+            "clock_minus_stamp_s": 0.04899999999999949,
+            "fresh": true
+          }
+        }
+      },
+      "first_successful_zero_after_last_nonzero": {
+        "wall_elapsed_s": 22.626701125002,
+        "clock_stamp_s": 24.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 24.9,
+            "wall_age_s": 0.02357244700033334
+          },
+          "odom": {
+            "stamp_s": 24.92,
+            "wall_age_s": 0.0029058229993097484,
+            "clock_minus_stamp_s": -0.020000000000003126,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 24.901,
+            "wall_age_s": 0.021932217001449317,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "reconstructed_response": {
+        "available": true,
+        "source_dt_s": 2.8800000000000026,
+        "delta_world_m": [
+          0.009121406104371963,
+          -0.004302711022698003,
+          -3.871881006090039e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.003167154897351373,
+          -0.0014939968828812497,
+          -1.3444031271145956e-08
+        ],
+        "delta_start_body_xy_m": [
+          0.00999367239055007,
+          0.0013564230962639402
+        ],
+        "horizontal_displacement_m": 0.010085304728451244,
+        "start_yaw_rad": -0.5756691017220958,
+        "yaw_delta_rad": -0.000251556574770051,
+        "displacement_bearing_rad": -0.44076528358399936,
+        "bearing_minus_start_yaw_rad": 0.1349038181380965,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response": {
+        "source_dt_s": 2.8800000000000026,
+        "delta_world_m": [
+          0.009121406104371963,
+          -0.004302711022698003,
+          -3.871881006090039e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.003167154897351373,
+          -0.0014939968828812497,
+          -1.3444031271145956e-08
+        ],
+        "delta_start_body_xy_m": [
+          0.00999367239055007,
+          0.0013564230962639402
+        ],
+        "horizontal_displacement_m": 0.010085304728451244,
+        "start_yaw_rad": -0.5756691017220958,
+        "yaw_delta_rad": -0.000251556574770051,
+        "displacement_bearing_rad": -0.44076528358399936,
+        "bearing_minus_start_yaw_rad": 0.1349038181380965,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response_matches": true,
+      "requested_body_interpretation_world_bearing_rad": -0.5756691017220958,
+      "measured_bearing_error_from_body_request_rad": 0.1349038181380965,
+      "reconstructed_path_m": 0.010104430007940058,
+      "feedback_speed_mps": {
+        "min": 8.095006139773092e-06,
+        "median": 0.00481440419502522,
+        "max": 0.00744765022562339,
+        "count": 145
+      },
+      "source_difference_speed_during_command_arrivals_mps": {
+        "min": 0.002447381515174241,
+        "median": 0.005219267670710456,
+        "max": 0.0074476510921798605,
+        "count": 92
+      },
+      "yaw_range_rad": {
+        "min": -0.5759866124050306,
+        "median": -0.5757857899096257,
+        "max": -0.5754617054601255,
+        "count": 145
+      },
+      "maximum_yaw_deviation_from_start_rad": 0.00031751068293472967,
+      "zero_request_observations": [
+        {
+          "zero_request": {
+            "wall_elapsed_s": 22.62379530200269,
+            "reason": "pulse_measured_request_stop",
+            "path_origin_m": 0.018533269956261474,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 24,
+                  "nanosec": 920000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": 0.006696401480824608,
+                    "y": -0.010021329290421113,
+                    "z": 0.05500012700037578
+                  },
+                  "orientation": {
+                    "x": 2.3328990418500914e-07,
+                    "y": 1.3706192346907549e-06,
+                    "z": -0.2839994898838337,
+                    "w": 0.9588244311362688
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": 0.004685456981790237,
+                    "y": 0.0009471882770490368,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0024862382964507823
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          },
+          "available": true,
+          "observed_until_source_stamp_s": 25.92,
+          "cumulative_3d_path_after_request_m": 6.349828928674028e-05,
+          "net_displacement_after_request_m": 5.757759039842068e-05,
+          "maximum_displacement_after_request_m": 5.757759039842068e-05,
+          "observed_until_settled": true
+        }
+      ],
+      "sample_count": 145,
+      "settled": {
+        "wall_elapsed_s": 23.644912429001124,
+        "raw_odom": {
+          "header": {
+            "stamp": {
+              "sec": 25,
+              "nanosec": 920000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 0.006746883136326568,
+                "y": -0.010049020076668315,
+                "z": 0.05500008539651104
+              },
+              "orientation": {
+                "x": -8.906066574378447e-08,
+                "y": 5.584341035348502e-08,
+                "z": -0.2839971295412672,
+                "w": 0.9588251302569775
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 8.534956465713587e-06,
+                "y": -1.7328019002422602e-07,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 7.295931636619457e-08
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          }
+        },
+        "stable_wall_s": 1.0093182000018714,
+        "stable_source_s": 1.0,
+        "stop_path_increment_m": 6.34982892867425e-05
+      }
+    },
+    {
+      "index": 1,
+      "settled_record_present": true,
+      "motion_end_reason": "pulse_wall_time_reached",
+      "requested_body_xy_mps": [
+        0.0,
+        0.03
+      ],
+      "start": {
+        "source_stamp_s": 25.92,
+        "xyz_m": [
+          0.006746883136326568,
+          -0.010049020076668315,
+          0.05500008539651104
+        ],
+        "raw_quaternion": [
+          -8.906066574378447e-08,
+          5.584341035348502e-08,
+          -0.2839971295412672,
+          0.9588251302569775
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.5759206582968659,
+        "linear_feedback_mps": [
+          8.534956465713587e-06,
+          -1.7328019002422602e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          7.295931636619457e-08
+        ],
+        "speed_feedback_mps": 8.536715287268341e-06,
+        "angular_speed_feedback_rps": 7.295931636619457e-08
+      },
+      "end": {
+        "source_stamp_s": 28.9,
+        "xyz_m": [
+          0.009053587777645079,
+          -0.0042207314653774815,
+          0.05500012474024421
+        ],
+        "raw_quaternion": [
+          -1.4347822271005162e-07,
+          2.0113396929559698e-08,
+          -0.28443432797032286,
+          0.9586955267821218
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.576832666039511,
+        "linear_feedback_mps": [
+          8.845349380449492e-06,
+          -5.170886690751555e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          -3.742834153719343e-07
+        ],
+        "speed_feedback_mps": 8.8604506857103e-06,
+        "angular_speed_feedback_rps": 3.742834153719343e-07
+      },
+      "request_count": 40,
+      "failed_publish_count": 0,
+      "first_nonzero_command": {
+        "wall_elapsed_s": 23.645461251999222,
+        "clock_stamp_s": 25.9,
+        "linear_x": 0.0,
+        "linear_y": 0.03,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 25.9,
+            "wall_age_s": 0.024755742997513153
+          },
+          "odom": {
+            "stamp_s": 25.92,
+            "wall_age_s": 0.004560729998047464,
+            "clock_minus_stamp_s": -0.020000000000003126,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 25.901,
+            "wall_age_s": 0.022877689996676054,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last_nonzero_command": {
+        "wall_elapsed_s": 25.61302652700033,
+        "clock_stamp_s": 27.8,
+        "linear_x": 0.0,
+        "linear_y": 0.03,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 27.8,
+            "wall_age_s": 0.059783943001093576
+          },
+          "odom": {
+            "stamp_s": 27.84,
+            "wall_age_s": 0.019749405000766274,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 27.751,
+            "wall_age_s": 0.11003625499870395,
+            "clock_minus_stamp_s": 0.04899999999999949,
+            "fresh": true
+          }
+        }
+      },
+      "first_successful_zero_after_last_nonzero": {
+        "wall_elapsed_s": 25.658450427999924,
+        "clock_stamp_s": 27.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 27.9,
+            "wall_age_s": 0.003936817000067094
+          },
+          "odom": {
+            "stamp_s": 27.9,
+            "wall_age_s": 0.0033359139997628517,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 27.901,
+            "wall_age_s": 0.0018459109996911138,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "reconstructed_response": {
+        "available": true,
+        "source_dt_s": 2.979999999999997,
+        "delta_world_m": [
+          0.002306704641318511,
+          0.005828288611290833,
+          3.934373316721862e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.0007740619601739978,
+          0.0019558015474130334,
+          1.3202595022556597e-08
+        ],
+        "delta_start_body_xy_m": [
+          -0.001239514739355527,
+          0.006144382609319116
+        ],
+        "horizontal_displacement_m": 0.006268160371176123,
+        "start_yaw_rad": -0.5759206582968659,
+        "yaw_delta_rad": -0.0009120077426451045,
+        "displacement_bearing_rad": 1.1939354543239182,
+        "bearing_minus_start_yaw_rad": 1.7698561126207841,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response": {
+        "source_dt_s": 2.979999999999997,
+        "delta_world_m": [
+          0.002306704641318511,
+          0.005828288611290833,
+          3.934373316721862e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.0007740619601739978,
+          0.0019558015474130334,
+          1.3202595022556597e-08
+        ],
+        "delta_start_body_xy_m": [
+          -0.001239514739355527,
+          0.006144382609319116
+        ],
+        "horizontal_displacement_m": 0.006268160371176123,
+        "start_yaw_rad": -0.5759206582968659,
+        "yaw_delta_rad": -0.0009120077426451045,
+        "displacement_bearing_rad": 1.1939354543239182,
+        "bearing_minus_start_yaw_rad": 1.7698561126207841,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response_matches": true,
+      "requested_body_interpretation_world_bearing_rad": 0.9948756684980307,
+      "measured_bearing_error_from_body_request_rad": 0.19905978582588757,
+      "reconstructed_path_m": 0.006316337599896428,
+      "feedback_speed_mps": {
+        "min": 8.536715287268341e-06,
+        "median": 0.0027224929235742388,
+        "max": 0.004851333899232571,
+        "count": 150
+      },
+      "source_difference_speed_during_command_arrivals_mps": {
+        "min": 0.0011690563355235863,
+        "median": 0.0030973172004184852,
+        "max": 0.004864014981483249,
+        "count": 96
+      },
+      "yaw_range_rad": {
+        "min": -0.576832666039511,
+        "median": -0.5766734695737566,
+        "max": -0.5758377768775237,
+        "count": 150
+      },
+      "maximum_yaw_deviation_from_start_rad": 0.0009120077426451045,
+      "zero_request_observations": [
+        {
+          "zero_request": {
+            "wall_elapsed_s": 25.654513610999857,
+            "reason": "pulse_wall_time_reached",
+            "path_origin_m": 0.02480274194460006,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 27,
+                  "nanosec": 880000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": 0.009008606599841628,
+                    "y": -0.004284899756270494,
+                    "z": 0.05499648236976737
+                  },
+                  "orientation": {
+                    "x": -4.848082418173556e-06,
+                    "y": -2.0095662566512766e-05,
+                    "z": -0.28443000835843874,
+                    "w": 0.958696808129598
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": -0.000487445974362615,
+                    "y": 0.002664360333151439,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.0019635951830965226
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          },
+          "available": true,
+          "observed_until_source_stamp_s": 28.9,
+          "cumulative_3d_path_after_request_m": 0.00011036390084458454,
+          "net_displacement_after_request_m": 7.844834463139722e-05,
+          "maximum_displacement_after_request_m": 8.230269126461125e-05,
+          "observed_until_settled": true
+        }
+      ],
+      "sample_count": 150,
+      "settled": {
+        "wall_elapsed_s": 26.673318655000912,
+        "raw_odom": {
+          "header": {
+            "stamp": {
+              "sec": 28,
+              "nanosec": 900000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 0.009053587777645079,
+                "y": -0.0042207314653774815,
+                "z": 0.05500012474024421
+              },
+              "orientation": {
+                "x": -1.4347822271005162e-07,
+                "y": 2.0113396929559698e-08,
+                "z": -0.28443432797032286,
+                "w": 0.9586955267821218
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 8.845349380449492e-06,
+                "y": -5.170886690751555e-07,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": -3.742834153719343e-07
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          }
+        },
+        "stable_wall_s": 1.0099639449981623,
+        "stable_source_s": 1.0,
+        "stop_path_increment_m": 0.00011036390084459557
+      }
+    },
+    {
+      "index": 2,
+      "settled_record_present": true,
+      "motion_end_reason": "pulse_measured_request_stop",
+      "requested_body_xy_mps": [
+        0.1,
+        0.0
+      ],
+      "start": {
+        "source_stamp_s": 28.9,
+        "xyz_m": [
+          0.009053587777645079,
+          -0.0042207314653774815,
+          0.05500012474024421
+        ],
+        "raw_quaternion": [
+          -1.4347822271005162e-07,
+          2.0113396929559698e-08,
+          -0.28443432797032286,
+          0.9586955267821218
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.576832666039511,
+        "linear_feedback_mps": [
+          8.845349380449492e-06,
+          -5.170886690751555e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          -3.742834153719343e-07
+        ],
+        "speed_feedback_mps": 8.8604506857103e-06,
+        "angular_speed_feedback_rps": 3.742834153719343e-07
+      },
+      "end": {
+        "source_stamp_s": 30.18,
+        "xyz_m": [
+          0.018953324342490793,
+          -0.008516650335692865,
+          0.05500008129619887
+        ],
+        "raw_quaternion": [
+          -8.981441438678455e-08,
+          3.651553343238286e-08,
+          -0.2850978048660392,
+          0.958498430703231
+        ],
+        "quaternion_norm": 1.0,
+        "yaw_rad": -0.5782169325956236,
+        "linear_feedback_mps": [
+          8.79600375929324e-06,
+          -1.4038431424682203e-07,
+          0.0
+        ],
+        "angular_feedback_rps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "speed_feedback_mps": 8.797123955542933e-06,
+        "angular_speed_feedback_rps": 0.0
+      },
+      "request_count": 5,
+      "failed_publish_count": 0,
+      "first_nonzero_command": {
+        "wall_elapsed_s": 26.67384629099979,
+        "clock_stamp_s": 28.9,
+        "linear_x": 0.1,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 28.9,
+            "wall_age_s": 0.0019087029977526981
+          },
+          "odom": {
+            "stamp_s": 28.9,
+            "wall_age_s": 0.0012102119981136639,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 28.751,
+            "wall_age_s": 0.1532098429997859,
+            "clock_minus_stamp_s": 0.14899999999999736,
+            "fresh": true
+          }
+        }
+      },
+      "last_nonzero_command": {
+        "wall_elapsed_s": 26.87656666700059,
+        "clock_stamp_s": 29.1,
+        "linear_x": 0.1,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.0011092429995187558
+          },
+          "odom": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.000635666998277884,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 29.001,
+            "wall_age_s": 0.10069075600040378,
+            "clock_minus_stamp_s": 0.0990000000000002,
+            "fresh": true
+          }
+        }
+      },
+      "first_successful_zero_after_last_nonzero": {
+        "wall_elapsed_s": 26.921616608000477,
+        "clock_stamp_s": 29.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.046159183999407105
+          },
+          "odom": {
+            "stamp_s": 29.14,
+            "wall_age_s": 0.004066937999596121,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 29.001,
+            "wall_age_s": 0.14574069700029213,
+            "clock_minus_stamp_s": 0.0990000000000002,
+            "fresh": true
+          }
+        }
+      },
+      "reconstructed_response": {
+        "available": true,
+        "source_dt_s": 1.2800000000000011,
+        "delta_world_m": [
+          0.009899736564845715,
+          -0.004295918870315383,
+          -4.344404534034618e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.007734169191285708,
+          -0.00335618661743389,
+          -3.394066042214542e-08
+        ],
+        "delta_start_body_xy_m": [
+          0.010640775189654075,
+          0.0017982231109952077
+        ],
+        "horizontal_displacement_m": 0.010791649688239284,
+        "start_yaw_rad": -0.576832666039511,
+        "yaw_delta_rad": -0.0013842665561125678,
+        "displacement_bearing_rad": -0.4094207845168228,
+        "bearing_minus_start_yaw_rad": 0.16741188152268818,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response": {
+        "source_dt_s": 1.2800000000000011,
+        "delta_world_m": [
+          0.009899736564845715,
+          -0.004295918870315383,
+          -4.344404534034618e-08
+        ],
+        "mean_world_velocity_mps": [
+          0.007734169191285708,
+          -0.00335618661743389,
+          -3.394066042214542e-08
+        ],
+        "delta_start_body_xy_m": [
+          0.010640775189654075,
+          0.0017982231109952077
+        ],
+        "horizontal_displacement_m": 0.010791649688239284,
+        "start_yaw_rad": -0.576832666039511,
+        "yaw_delta_rad": -0.0013842665561125678,
+        "displacement_bearing_rad": -0.4094207845168228,
+        "bearing_minus_start_yaw_rad": 0.16741188152268818,
+        "interface_semantics_confirmed": false
+      },
+      "reported_response_matches": true,
+      "requested_body_interpretation_world_bearing_rad": -0.576832666039511,
+      "measured_bearing_error_from_body_request_rad": 0.16741188152268818,
+      "reconstructed_path_m": 0.010795301003310035,
+      "feedback_speed_mps": {
+        "min": 8.64556898633245e-06,
+        "median": 8.803117839980843e-06,
+        "max": 0.049439657749189694,
+        "count": 65
+      },
+      "source_difference_speed_during_command_arrivals_mps": {
+        "min": 0.02320405316338998,
+        "median": 0.04393368199524578,
+        "max": 0.0494396743287978,
+        "count": 10
+      },
+      "yaw_range_rad": {
+        "min": -0.5782169325956236,
+        "median": -0.5782168146073886,
+        "max": -0.5767026031603256,
+        "count": 65
+      },
+      "maximum_yaw_deviation_from_start_rad": 0.0013842665561125678,
+      "zero_request_observations": [
+        {
+          "zero_request": {
+            "wall_elapsed_s": 26.91754967000088,
+            "reason": "pulse_measured_request_stop",
+            "path_origin_m": 0.035219358894077527,
+            "raw_odom": {
+              "header": {
+                "stamp": {
+                  "sec": 29,
+                  "nanosec": 140000000
+                },
+                "frame_id": "odom"
+              },
+              "child_frame_id": "base_footprint",
+              "pose": {
+                "pose": {
+                  "position": {
+                    "x": 0.018509660551457266,
+                    "y": -0.008316813156428605,
+                    "z": 0.055000316661810156
+                  },
+                  "orientation": {
+                    "x": 2.2302086020033317e-06,
+                    "y": 4.807184134341555e-06,
+                    "z": -0.2850817678742421,
+                    "w": 0.9585032006193897
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              },
+              "twist": {
+                "twist": {
+                  "linear": {
+                    "x": 0.04785365651739331,
+                    "y": 0.007716550079492849,
+                    "z": 0.0
+                  },
+                  "angular": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": -0.02450370077821118
+                  }
+                },
+                "covariance": [
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0001,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  1000000000000.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.01
+                ]
+              }
+            },
+            "interpretation": "zero requested; transport and physical stop are separate observations"
+          },
+          "available": true,
+          "observed_until_source_stamp_s": 30.18,
+          "cumulative_3d_path_after_request_m": 0.0004890479546771652,
+          "net_displacement_after_request_m": 0.00048659275897562225,
+          "maximum_displacement_after_request_m": 0.00048659275897562225,
+          "observed_until_settled": true
+        }
+      ],
+      "sample_count": 65,
+      "settled": {
+        "wall_elapsed_s": 27.9875381439997,
+        "raw_odom": {
+          "header": {
+            "stamp": {
+              "sec": 30,
+              "nanosec": 180000000
+            },
+            "frame_id": "odom"
+          },
+          "child_frame_id": "base_footprint",
+          "pose": {
+            "pose": {
+              "position": {
+                "x": 0.018953324342490793,
+                "y": -0.008516650335692865,
+                "z": 0.05500008129619887
+              },
+              "orientation": {
+                "x": -8.981441438678455e-08,
+                "y": 3.651553343238286e-08,
+                "z": -0.2850978048660392,
+                "w": 0.958498430703231
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          },
+          "twist": {
+            "twist": {
+              "linear": {
+                "x": 8.79600375929324e-06,
+                "y": -1.4038431424682203e-07,
+                "z": 0.0
+              },
+              "angular": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "covariance": [
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0001,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1000000000000.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.01
+            ]
+          }
+        },
+        "stable_wall_s": 1.0102322109996749,
+        "stable_source_s": 1.0,
+        "stop_path_increment_m": 0.0004890479546771492
+      }
+    }
+  ],
+  "raw_sample_counts": {
+    "raw_odometry": 1473,
+    "raw_scans": 219,
+    "commands": 727,
+    "state_records": 8,
+    "zero_requests": 4
+  },
+  "first_odom": {
+    "wall_elapsed_s": 0.0583307529996091,
+    "phase_before_callback": "WAIT",
+    "state_before_callback": "WAIT",
+    "pulse_index": -1,
+    "source_stamp_s": 2.74,
+    "xyz_m": [
+      2.548076073045098e-05,
+      8.560998764438935e-06,
+      0.055000244919904503
+    ],
+    "raw_quaternion": [
+      -2.3707560617877872e-07,
+      8.111614951188788e-09,
+      -1.0451651684468097e-05,
+      0.9999999999453534
+    ],
+    "quaternion_norm": 1.0,
+    "yaw_rad": -2.0903303373162308e-05,
+    "linear_feedback_mps": [
+      9.782743644615318e-06,
+      -1.28626677579e-06,
+      0.0
+    ],
+    "angular_feedback_rps": [
+      0.0,
+      0.0,
+      3.703904351263121e-08
+    ],
+    "speed_feedback_mps": 9.866942557589084e-06,
+    "angular_speed_feedback_rps": 3.703904351263121e-08
+  },
+  "last_odom": {
+    "wall_elapsed_s": 30.009447803000512,
+    "phase_before_callback": "PULSE_SETTLE",
+    "state_before_callback": "FINISHED",
+    "pulse_index": 2,
+    "source_stamp_s": 32.18,
+    "xyz_m": [
+      0.01897070721574555,
+      -0.008524346699847361,
+      0.055000155855204895
+    ],
+    "raw_quaternion": [
+      -1.5312171469319052e-07,
+      8.602451065785834e-08,
+      -0.28509929139410034,
+      0.9584979885459077
+    ],
+    "quaternion_norm": 1.0,
+    "yaw_rad": -0.5782200343814272,
+    "linear_feedback_mps": [
+      8.31153012746312e-06,
+      -7.948095118592e-07,
+      0.0
+    ],
+    "angular_feedback_rps": [
+      0.0,
+      0.0,
+      3.250643698660127e-07
+    ],
+    "speed_feedback_mps": 8.349446401999893e-06,
+    "angular_speed_feedback_rps": 3.250643698660127e-07
+  },
+  "source_stamps_strictly_increasing": true,
+  "arrival_times_nondecreasing": true,
+  "max_source_gap_s": 0.020000000000003126,
+  "max_arrival_gap_s": 0.025515017998259282,
+  "global_origin": [
+    3.652299409418337e-05,
+    8.016346458384916e-06,
+    0.055000081086175746
+  ],
+  "reconstruction_start_index": 58,
+  "reported_path_m": 0.035739078422056564,
+  "reconstructed_path_m": 0.035739078422056564,
+  "path_matches": true,
+  "reported_rotation_rad": 0.5851466235240701,
+  "reconstructed_rotation_rad": 0.5851466235240699,
+  "rotation_matches": true,
+  "maximum_feedback_speed_mps": 0.049439657749189694,
+  "command_state_runs": [
+    {
+      "key": [
+        "WAIT",
+        "WAIT",
+        -1,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 0.05926156300120056,
+        "clock_stamp_s": null,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "WAIT",
+        "state": "WAIT",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": null,
+          "odom": {
+            "stamp_s": 2.74,
+            "wall_age_s": 0.0009308100015914533,
+            "clock_minus_stamp_s": null,
+            "fresh": false
+          },
+          "scan": null
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.1692228989995783,
+        "clock_stamp_s": 3.8,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "WAIT",
+        "state": "WAIT",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 3.8,
+            "wall_age_s": 0.05299501099943882
+          },
+          "odom": {
+            "stamp_s": 3.84,
+            "wall_age_s": 0.012944518999574939,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 3.75,
+            "wall_age_s": 0.10410455899909721,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "count": 23
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.35998745691852385,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.2209591480022937,
+        "clock_stamp_s": 3.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35998745691852385,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.004261590001988225
+          },
+          "odom": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.0037265300015860703,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.002273493002576288,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.2209591480022937,
+        "clock_stamp_s": 3.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35998745691852385,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.004261590001988225
+          },
+          "odom": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.0037265300015860703,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.002273493002576288,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.35922620984190995,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.2716230280020682,
+        "clock_stamp_s": 3.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35922620984190995,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.05492547000176273
+          },
+          "odom": {
+            "stamp_s": 3.94,
+            "wall_age_s": 0.014651453002443304,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.052937373002350796,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.2716230280020682,
+        "clock_stamp_s": 3.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35922620984190995,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.05492547000176273
+          },
+          "odom": {
+            "stamp_s": 3.94,
+            "wall_age_s": 0.014651453002443304,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 3.9,
+            "wall_age_s": 0.052937373002350796,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.3577908463238107,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.3218934610013093,
+        "clock_stamp_s": 4.0,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3577908463238107,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.003432100998907117
+          },
+          "odom": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0029269379992911126,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0017259890009881929,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.3218934610013093,
+        "clock_stamp_s": 4.0,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3577908463238107,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.003432100998907117
+          },
+          "odom": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0029269379992911126,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0017259890009881929,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.3568446609506597,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.3723836800018034,
+        "clock_stamp_s": 4.0,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3568446609506597,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.053922319999401225
+          },
+          "odom": {
+            "stamp_s": 4.04,
+            "wall_age_s": 0.011804289002611768,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0522162080014823,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.3723836800018034,
+        "clock_stamp_s": 4.0,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3568446609506597,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.053922319999401225
+          },
+          "odom": {
+            "stamp_s": 4.04,
+            "wall_age_s": 0.011804289002611768,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.0522162080014823,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.3554862659651444,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.4229206980016897,
+        "clock_stamp_s": 4.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3554862659651444,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.0027500280011736322
+          },
+          "odom": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.0022627610014751554,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.1027532260013686,
+            "clock_minus_stamp_s": 0.09999999999999964,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.4229206980016897,
+        "clock_stamp_s": 4.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3554862659651444,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.0027500280011736322
+          },
+          "odom": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.0022627610014751554,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.0,
+            "wall_age_s": 0.1027532260013686,
+            "clock_minus_stamp_s": 0.09999999999999964,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.35455956612174666,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.474093756001821,
+        "clock_stamp_s": 4.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35455956612174666,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.05392308600130491
+          },
+          "odom": {
+            "stamp_s": 4.14,
+            "wall_age_s": 0.012398745002428768,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.15,
+            "wall_age_s": 0.0016179890008061193,
+            "clock_minus_stamp_s": -0.05000000000000071,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.474093756001821,
+        "clock_stamp_s": 4.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35455956612174666,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.1,
+            "wall_age_s": 0.05392308600130491
+          },
+          "odom": {
+            "stamp_s": 4.14,
+            "wall_age_s": 0.012398745002428768,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.15,
+            "wall_age_s": 0.0016179890008061193,
+            "clock_minus_stamp_s": -0.05000000000000071,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.35312805099869543,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.5244790520009701,
+        "clock_stamp_s": 4.2,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35312805099869543,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.002762897998763947
+          },
+          "odom": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.0022449930002039764,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.15,
+            "wall_age_s": 0.05200328499995521,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.5244790520009701,
+        "clock_stamp_s": 4.2,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35312805099869543,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.002762897998763947
+          },
+          "odom": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.0022449930002039764,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.15,
+            "wall_age_s": 0.05200328499995521,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.3521166920148063,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.5751670200006629,
+        "clock_stamp_s": 4.2,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3521166920148063,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.05345086599845672
+          },
+          "odom": {
+            "stamp_s": 4.24,
+            "wall_age_s": 0.012765977000526618,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.25,
+            "wall_age_s": 0.0024653859982208814,
+            "clock_minus_stamp_s": -0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.5751670200006629,
+        "clock_stamp_s": 4.2,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3521166920148063,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.2,
+            "wall_age_s": 0.05345086599845672
+          },
+          "odom": {
+            "stamp_s": 4.24,
+            "wall_age_s": 0.012765977000526618,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.25,
+            "wall_age_s": 0.0024653859982208814,
+            "clock_minus_stamp_s": -0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.3507282409359646,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.6257832470000722,
+        "clock_stamp_s": 4.3,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3507282409359646,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.3,
+            "wall_age_s": 0.002762473999609938
+          },
+          "odom": {
+            "stamp_s": 4.3,
+            "wall_age_s": 0.002274944999953732,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.25,
+            "wall_age_s": 0.053081612997630145,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 1.6257832470000722,
+        "clock_stamp_s": 4.3,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.3507282409359646,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.3,
+            "wall_age_s": 0.002762473999609938
+          },
+          "odom": {
+            "stamp_s": 4.3,
+            "wall_age_s": 0.002274944999953732,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.25,
+            "wall_age_s": 0.053081612997630145,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "count": 1
+    },
+    {
+      "key": [
+        "TURN",
+        "TURN",
+        -1,
+        0.0,
+        0.0,
+        -0.35,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 1.6761666580023302,
+        "clock_stamp_s": 4.3,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 4.3,
+            "wall_age_s": 0.05314588500186801
+          },
+          "odom": {
+            "stamp_s": 4.34,
+            "wall_age_s": 0.013000983999518212,
+            "clock_minus_stamp_s": -0.040000000000000036,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 4.25,
+            "wall_age_s": 0.10346502399988822,
+            "clock_minus_stamp_s": 0.04999999999999982,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 19.605888927002525,
+        "clock_stamp_s": 21.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": -0.35,
+        "sent": true,
+        "error": null,
+        "phase": "TURN",
+        "state": "TURN",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 21.9,
+            "wall_age_s": 0.059355003002565354
+          },
+          "odom": {
+            "stamp_s": 21.94,
+            "wall_age_s": 0.019267871000920422,
+            "clock_minus_stamp_s": -0.0400000000000027,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 21.901,
+            "wall_age_s": 0.05740617999981623,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "count": 356
+    },
+    {
+      "key": [
+        "TURN_SETTLE",
+        "TURN_SETTLE",
+        -1,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 19.60901120100243,
+        "clock_stamp_s": 21.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "TURN_SETTLE",
+        "state": "TURN_SETTLE",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 21.9,
+            "wall_age_s": 0.062477277002471965
+          },
+          "odom": {
+            "stamp_s": 21.96,
+            "wall_age_s": 0.0011208380019525066,
+            "clock_minus_stamp_s": -0.060000000000002274,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 21.901,
+            "wall_age_s": 0.06052845399972284,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 20.672198293999827,
+        "clock_stamp_s": 23.0,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "TURN_SETTLE",
+        "state": "TURN_SETTLE",
+        "pulse_index": -1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 23.0,
+            "wall_age_s": 0.0037409449978440534
+          },
+          "odom": {
+            "stamp_s": 23.0,
+            "wall_age_s": 0.0031565299977955874,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 23.001,
+            "wall_age_s": 0.0018421989989292342,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "count": 43
+    },
+    {
+      "key": [
+        "PULSE",
+        "PULSE",
+        0,
+        0.03,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 20.717192587999307,
+        "clock_stamp_s": 23.0,
+        "linear_x": 0.03,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 23.0,
+            "wall_age_s": 0.048735238997323904
+          },
+          "odom": {
+            "stamp_s": 23.04,
+            "wall_age_s": 0.007107481997081777,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 23.001,
+            "wall_age_s": 0.046836492998409085,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 22.58531591800056,
+        "clock_stamp_s": 24.8,
+        "linear_x": 0.03,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 24.8,
+            "wall_age_s": 0.08264616499945987
+          },
+          "odom": {
+            "stamp_s": 24.88,
+            "wall_age_s": 0.0019940290003432892,
+            "clock_minus_stamp_s": -0.0799999999999983,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 24.751,
+            "wall_age_s": 0.13272367799800122,
+            "clock_minus_stamp_s": 0.04899999999999949,
+            "fresh": true
+          }
+        }
+      },
+      "count": 38
+    },
+    {
+      "key": [
+        "PULSE_SETTLE",
+        "PULSE_SETTLE",
+        0,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 22.626701125002,
+        "clock_stamp_s": 24.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 24.9,
+            "wall_age_s": 0.02357244700033334
+          },
+          "odom": {
+            "stamp_s": 24.92,
+            "wall_age_s": 0.0029058229993097484,
+            "clock_minus_stamp_s": -0.020000000000003126,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 24.901,
+            "wall_age_s": 0.021932217001449317,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 23.63399201300126,
+        "clock_stamp_s": 25.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 0,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 25.9,
+            "wall_age_s": 0.013286503999552224
+          },
+          "odom": {
+            "stamp_s": 25.9,
+            "wall_age_s": 0.012703077001788188,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 25.901,
+            "wall_age_s": 0.011408450998715125,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "count": 41
+    },
+    {
+      "key": [
+        "PULSE",
+        "PULSE",
+        1,
+        0.0,
+        0.03,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 23.645461251999222,
+        "clock_stamp_s": 25.9,
+        "linear_x": 0.0,
+        "linear_y": 0.03,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 25.9,
+            "wall_age_s": 0.024755742997513153
+          },
+          "odom": {
+            "stamp_s": 25.92,
+            "wall_age_s": 0.004560729998047464,
+            "clock_minus_stamp_s": -0.020000000000003126,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 25.901,
+            "wall_age_s": 0.022877689996676054,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 25.61302652700033,
+        "clock_stamp_s": 27.8,
+        "linear_x": 0.0,
+        "linear_y": 0.03,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 27.8,
+            "wall_age_s": 0.059783943001093576
+          },
+          "odom": {
+            "stamp_s": 27.84,
+            "wall_age_s": 0.019749405000766274,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 27.751,
+            "wall_age_s": 0.11003625499870395,
+            "clock_minus_stamp_s": 0.04899999999999949,
+            "fresh": true
+          }
+        }
+      },
+      "count": 40
+    },
+    {
+      "key": [
+        "PULSE_SETTLE",
+        "PULSE_SETTLE",
+        1,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 25.658450427999924,
+        "clock_stamp_s": 27.9,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 27.9,
+            "wall_age_s": 0.003936817000067094
+          },
+          "odom": {
+            "stamp_s": 27.9,
+            "wall_age_s": 0.0033359139997628517,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 27.901,
+            "wall_age_s": 0.0018459109996911138,
+            "clock_minus_stamp_s": -0.0010000000000012221,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 26.67000612999982,
+        "clock_stamp_s": 28.8,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 1,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 28.8,
+            "wall_age_s": 0.09943454200038104
+          },
+          "odom": {
+            "stamp_s": 28.88,
+            "wall_age_s": 0.01808409699879121,
+            "clock_minus_stamp_s": -0.0799999999999983,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 28.751,
+            "wall_age_s": 0.14936968199981493,
+            "clock_minus_stamp_s": 0.04899999999999949,
+            "fresh": true
+          }
+        }
+      },
+      "count": 41
+    },
+    {
+      "key": [
+        "PULSE",
+        "PULSE",
+        2,
+        0.1,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 26.67384629099979,
+        "clock_stamp_s": 28.9,
+        "linear_x": 0.1,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 28.9,
+            "wall_age_s": 0.0019087029977526981
+          },
+          "odom": {
+            "stamp_s": 28.9,
+            "wall_age_s": 0.0012102119981136639,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 28.751,
+            "wall_age_s": 0.1532098429997859,
+            "clock_minus_stamp_s": 0.14899999999999736,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 26.87656666700059,
+        "clock_stamp_s": 29.1,
+        "linear_x": 0.1,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE",
+        "state": "PULSE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.0011092429995187558
+          },
+          "odom": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.000635666998277884,
+            "clock_minus_stamp_s": 0.0,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 29.001,
+            "wall_age_s": 0.10069075600040378,
+            "clock_minus_stamp_s": 0.0990000000000002,
+            "fresh": true
+          }
+        }
+      },
+      "count": 5
+    },
+    {
+      "key": [
+        "PULSE_SETTLE",
+        "PULSE_SETTLE",
+        2,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 26.921616608000477,
+        "clock_stamp_s": 29.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 29.1,
+            "wall_age_s": 0.046159183999407105
+          },
+          "odom": {
+            "stamp_s": 29.14,
+            "wall_age_s": 0.004066937999596121,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 29.001,
+            "wall_age_s": 0.14574069700029213,
+            "clock_minus_stamp_s": 0.0990000000000002,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 27.978218339001614,
+        "clock_stamp_s": 30.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "PULSE_SETTLE",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 30.1,
+            "wall_age_s": 0.08354381100070896
+          },
+          "odom": {
+            "stamp_s": 30.18,
+            "wall_age_s": 0.0016978769999695942,
+            "clock_minus_stamp_s": -0.0799999999999983,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 30.151,
+            "wall_age_s": 0.030250391999288695,
+            "clock_minus_stamp_s": -0.05099999999999838,
+            "fresh": true
+          }
+        }
+      },
+      "count": 43
+    },
+    {
+      "key": [
+        "STOP",
+        "PULSE_SETTLE",
+        2,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 27.987966667002183,
+        "clock_stamp_s": 30.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "STOP",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 30.1,
+            "wall_age_s": 0.09329213900127797
+          },
+          "odom": {
+            "stamp_s": 30.18,
+            "wall_age_s": 0.011446205000538612,
+            "clock_minus_stamp_s": -0.0799999999999983,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 30.151,
+            "wall_age_s": 0.03999871999985771,
+            "clock_minus_stamp_s": -0.05099999999999838,
+            "fresh": true
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 29.98918478500127,
+        "clock_stamp_s": 32.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "STOP",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 32.1,
+            "wall_age_s": 0.0625137770002766
+          },
+          "odom": {
+            "stamp_s": 32.14,
+            "wall_age_s": 0.01979915400079335,
+            "clock_minus_stamp_s": -0.03999999999999915,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 30.151,
+            "wall_age_s": 2.0412168379989453,
+            "clock_minus_stamp_s": 1.9490000000000016,
+            "fresh": false
+          }
+        }
+      },
+      "count": 80
+    },
+    {
+      "key": [
+        "FINISHED",
+        "PULSE_SETTLE",
+        2,
+        0.0,
+        0.0,
+        0.0,
+        true
+      ],
+      "first": {
+        "wall_elapsed_s": 30.005758387000242,
+        "clock_stamp_s": 32.1,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "FINISHED",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 32.1,
+            "wall_age_s": 0.07908737899924745
+          },
+          "odom": {
+            "stamp_s": 32.16,
+            "wall_age_s": 0.01615743900038069,
+            "clock_minus_stamp_s": -0.05999999999999517,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 30.151,
+            "wall_age_s": 2.057790439997916,
+            "clock_minus_stamp_s": 1.9490000000000016,
+            "fresh": false
+          }
+        }
+      },
+      "last": {
+        "wall_elapsed_s": 30.189550375002,
+        "clock_stamp_s": 32.2,
+        "linear_x": 0.0,
+        "linear_y": 0.0,
+        "angular_z": 0.0,
+        "sent": true,
+        "error": null,
+        "phase": "PULSE_SETTLE",
+        "state": "FINISHED",
+        "pulse_index": 2,
+        "timing": {
+          "clock_sampling_lag_s": 0.12,
+          "sensor_age_s": 0.2,
+          "clock": {
+            "stamp_s": 32.2,
+            "wall_age_s": 0.16022353900189046
+          },
+          "odom": {
+            "stamp_s": 32.18,
+            "wall_age_s": 0.18010257200148772,
+            "clock_minus_stamp_s": 0.020000000000003126,
+            "fresh": true
+          },
+          "scan": {
+            "stamp_s": 30.151,
+            "wall_age_s": 2.241582427999674,
+            "clock_minus_stamp_s": 2.049000000000003,
+            "fresh": false
+          }
+        }
+      },
+      "count": 8
+    }
+  ],
+  "sensor_sync": {
+    "incoming_scans": 219,
+    "immediate_promotions": 219,
+    "late_prior_promotions": 0,
+    "deferred_existing_prior_promotions": 0,
+    "expired_pending": 0,
+    "capacity_dropped": 0,
+    "superseded_pending": 0,
+    "promotion_trace_dropped": 207,
+    "pending_count": 0,
+    "pending_capacity": 4,
+    "promotion_trace_capacity": 12,
+    "promotion_trace": [
+      {
+        "scan_stamp_s": 28.751,
+        "scan_arrival_wall_elapsed_s": 26.520636448000005,
+        "latest_odom_stamp_at_scan_arrival_s": 28.74,
+        "prior_odom_stamp_s": 28.74,
+        "prior_odom_arrival_wall_elapsed_s": 26.50949327499984,
+        "scan_minus_odom_s": 0.011000000000002785,
+        "pairing_wall_elapsed_s": 26.520636448000005,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05100000000000193
+      },
+      {
+        "scan_stamp_s": 28.901,
+        "scan_arrival_wall_elapsed_s": 26.674611087000812,
+        "latest_odom_stamp_at_scan_arrival_s": 28.9,
+        "prior_odom_stamp_s": 28.9,
+        "prior_odom_arrival_wall_elapsed_s": 26.672636079001677,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 26.674611087000812,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 29.001,
+        "scan_arrival_wall_elapsed_s": 26.775875911000185,
+        "latest_odom_stamp_at_scan_arrival_s": 29.0,
+        "prior_odom_stamp_s": 29.0,
+        "prior_odom_arrival_wall_elapsed_s": 26.77464413599955,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 26.775875911000185,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 29.151,
+        "scan_arrival_wall_elapsed_s": 26.92853826999999,
+        "latest_odom_stamp_at_scan_arrival_s": 29.14,
+        "prior_odom_stamp_s": 29.14,
+        "prior_odom_arrival_wall_elapsed_s": 26.91754967000088,
+        "scan_minus_odom_s": 0.010999999999999233,
+        "pairing_wall_elapsed_s": 26.92853826999999,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05099999999999838
+      },
+      {
+        "scan_stamp_s": 29.251,
+        "scan_arrival_wall_elapsed_s": 27.02997826000137,
+        "latest_odom_stamp_at_scan_arrival_s": 29.24,
+        "prior_odom_stamp_s": 29.24,
+        "prior_odom_arrival_wall_elapsed_s": 27.018836790000933,
+        "scan_minus_odom_s": 0.011000000000002785,
+        "pairing_wall_elapsed_s": 27.02997826000137,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05100000000000193
+      },
+      {
+        "scan_stamp_s": 29.401,
+        "scan_arrival_wall_elapsed_s": 27.18311408000227,
+        "latest_odom_stamp_at_scan_arrival_s": 29.4,
+        "prior_odom_stamp_s": 29.4,
+        "prior_odom_arrival_wall_elapsed_s": 27.182004395999684,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 27.18311408000227,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 29.501,
+        "scan_arrival_wall_elapsed_s": 27.285075875002804,
+        "latest_odom_stamp_at_scan_arrival_s": 29.5,
+        "prior_odom_stamp_s": 29.5,
+        "prior_odom_arrival_wall_elapsed_s": 27.28391707099945,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 27.285075875002804,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 29.651,
+        "scan_arrival_wall_elapsed_s": 27.43759381900236,
+        "latest_odom_stamp_at_scan_arrival_s": 29.64,
+        "prior_odom_stamp_s": 29.64,
+        "prior_odom_arrival_wall_elapsed_s": 27.42627617800099,
+        "scan_minus_odom_s": 0.010999999999999233,
+        "pairing_wall_elapsed_s": 27.43759381900236,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05099999999999838
+      },
+      {
+        "scan_stamp_s": 29.751,
+        "scan_arrival_wall_elapsed_s": 27.53933071800202,
+        "latest_odom_stamp_at_scan_arrival_s": 29.74,
+        "prior_odom_stamp_s": 29.74,
+        "prior_odom_arrival_wall_elapsed_s": 27.52799973600122,
+        "scan_minus_odom_s": 0.011000000000002785,
+        "pairing_wall_elapsed_s": 27.53933071800202,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05100000000000193
+      },
+      {
+        "scan_stamp_s": 29.901,
+        "scan_arrival_wall_elapsed_s": 27.692577090001578,
+        "latest_odom_stamp_at_scan_arrival_s": 29.9,
+        "prior_odom_stamp_s": 29.9,
+        "prior_odom_arrival_wall_elapsed_s": 27.691194814000482,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 27.692577090001578,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 30.001,
+        "scan_arrival_wall_elapsed_s": 27.795414197000355,
+        "latest_odom_stamp_at_scan_arrival_s": 30.0,
+        "prior_odom_stamp_s": 30.0,
+        "prior_odom_arrival_wall_elapsed_s": 27.79427429200223,
+        "scan_minus_odom_s": 0.0010000000000012221,
+        "pairing_wall_elapsed_s": 27.795414197000355,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.0010000000000012221
+      },
+      {
+        "scan_stamp_s": 30.151,
+        "scan_arrival_wall_elapsed_s": 27.947967947002326,
+        "latest_odom_stamp_at_scan_arrival_s": 30.14,
+        "prior_odom_stamp_s": 30.14,
+        "prior_odom_arrival_wall_elapsed_s": 27.936556791999465,
+        "scan_minus_odom_s": 0.010999999999999233,
+        "pairing_wall_elapsed_s": 27.947967947002326,
+        "late_prior": false,
+        "scan_original_wall_age_s": 0.0,
+        "clock_minus_scan_s": -0.05099999999999838
+      }
+    ],
+    "policy": "original scan stamp/arrival; actual odom stamp <= scan; skew <=0.05s; freshness unchanged"
+  },
+  "assumptions": {
+    "static_initial_region": "public candidate geometry; current platform map not fully verified",
+    "direction_semantics": "to be measured; body XY is request interpretation only",
+    "stopping_distance": "not yet physically established; .04m is observed hard-stop threshold"
+  },
+  "timing_limit": "commands use process wall time; finite differences use odom source stamp; actuator application latency is unobserved",
+  "verification_scope": "internal callback integrity and own public observations, not independent source authentication or referee score",
+  "platform_id": "7724ce5c-3e6b-469e-a368-2e6aa7025044",
+  "run_id": "run_20261112_073445_70f255cc",
+  "input_sha256": "074eca643d500578b9bd7de09954ef6ce87f049353b9818430853fa7daa852bd"
+}

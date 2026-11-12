@@ -1,0 +1,371 @@
+{
+  "mode": "read_only_v27_response_analysis",
+  "platform_id": "997eb6e5-bdda-4abc-88c2-ecb252319b4a",
+  "input_sha256": "1b1c20afeeff67b39763f0a55120725ecccace868f4cb9c95be905447df4b93c",
+  "state": "FINISHED",
+  "reason": "total_path_limit",
+  "target_reached": true,
+  "official_score": null,
+  "full_mission_complete": false,
+  "origin": [
+    0.00022356594723448885,
+    2.8066789222106445e-05,
+    0.05500019513938023
+  ],
+  "motion_start_elapsed_s": 1.1620229740001378,
+  "observe_start_elapsed_s": 4.501463413998863,
+  "command_counts": {
+    "positive_z": 66,
+    "zero": 125
+  },
+  "first_positive_command": {
+    "wall_elapsed_s": 1.1621750960002828,
+    "linear_z": 0.05,
+    "ground_linear_x": 0.0,
+    "ground_angular_z": 0.0,
+    "state": "ASCEND"
+  },
+  "last_positive_command": {
+    "wall_elapsed_s": 4.451248861998465,
+    "linear_z": 0.05,
+    "ground_linear_x": 0.0,
+    "ground_angular_z": 0.0,
+    "state": "ASCEND"
+  },
+  "first_zero_after_ascent": {
+    "wall_elapsed_s": 4.501607513000636,
+    "linear_z": 0.0,
+    "ground_linear_x": 0.0,
+    "ground_angular_z": 0.0,
+    "state": "OBSERVE"
+  },
+  "command_state_runs": [
+    {
+      "index": 0,
+      "wall_elapsed_s": 0.05270207300054608,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "WAIT"
+    },
+    {
+      "index": 22,
+      "wall_elapsed_s": 1.1621750960002828,
+      "linear_z": 0.05,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "ASCEND"
+    },
+    {
+      "index": 88,
+      "wall_elapsed_s": 4.501607513000636,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "OBSERVE"
+    },
+    {
+      "index": 144,
+      "wall_elapsed_s": 7.3215379079993,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "STOP"
+    },
+    {
+      "index": 184,
+      "wall_elapsed_s": 9.34045998000147,
+      "linear_z": 0.0,
+      "ground_linear_x": 0.0,
+      "ground_angular_z": 0.0,
+      "state": "FINISHED"
+    }
+  ],
+  "max_command_gap_s": 0.06511333600064972,
+  "peak": {
+    "wall_elapsed_s": 4.503480120998574,
+    "stamp": 7.34,
+    "xyz": [
+      0.0002263663174151488,
+      2.8026943532530615e-05,
+      0.20666919635275957
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      0.021100000000001673
+    ],
+    "speed": 0.021100000000001673,
+    "tilt": 0.0
+  },
+  "first_sample": {
+    "wall_elapsed_s": 0.05310892199850059,
+    "stamp": 2.94,
+    "xyz": [
+      2.745042523469921e-05,
+      8.352831362094675e-06,
+      0.05500018691156825
+    ],
+    "linear": [
+      9.87823834687158e-06,
+      -8.632518175141658e-07,
+      -2.444382016242308e-07
+    ],
+    "speed": 9.918898455597727e-06,
+    "tilt": 3.804905812383825e-07
+  },
+  "last_sample": {
+    "wall_elapsed_s": 9.353613331000815,
+    "stamp": 12.12,
+    "xyz": [
+      0.00021230060832642562,
+      8.537029283186141e-05,
+      0.0550007082275428
+    ],
+    "linear": [
+      7.028963226187682e-06,
+      2.2103956317667215e-05,
+      -6.349087922075114e-14
+    ],
+    "speed": 2.3194637503708462e-05,
+    "tilt": 0.0
+  },
+  "return_within_1mm_of_origin": {
+    "wall_elapsed_s": 7.343975715000852,
+    "stamp": 10.14,
+    "xyz": [
+      0.0002263663174151488,
+      2.8026943532530615e-05,
+      0.055749196352758074
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      -0.05389999999999978
+    ],
+    "speed": 0.05389999999999978,
+    "tilt": 0.0
+  },
+  "time_from_first_zero_to_return_within_1mm_s": 2.842368202000216,
+  "reconstructed_max_rise_m": 0.15166900121337934,
+  "reconstructed_max_horizontal_drift_m": 5.8400337213638784e-05,
+  "reconstructed_total_path_m": 0.3034919938538383,
+  "reconstructed_vertical_path_m": 0.30342123697012136,
+  "path_from_origin_to_peak_m": 0.15166900529546384,
+  "path_after_peak_m": 0.1518229885583731,
+  "first_total_path_threshold_crossing": {
+    "wall_elapsed_s": 7.3026265730004525,
+    "stamp": 10.1,
+    "xyz": [
+      0.0002263663174151488,
+      2.8026943532530615e-05,
+      0.057905196352758065
+    ],
+    "linear": [
+      0.0,
+      0.0,
+      -0.05389999999999978
+    ],
+    "speed": 0.05389999999999978,
+    "tilt": 0.0,
+    "path_m": 0.30043300529546646
+  },
+  "ascent_plateau_vz_median_mps": 0.046100000000001695,
+  "ascent_plateau_vz_range_mps": [
+    0.046099999999999614,
+    0.046100000000001695
+  ],
+  "descent_plateau_vz_median_mps": -0.05390000000000117,
+  "descent_plateau_vz_range_mps": [
+    -0.05390000000000117,
+    -0.05389999999999978
+  ],
+  "maximum_feedback_speed_mps": 0.05390000000000117,
+  "maximum_tilt_rad": 3.804905812383825e-07,
+  "max_odom_stamp_gap_s": 0.09999999999999964,
+  "max_odom_arrival_gap_s": 0.1966867449991696,
+  "samples_after_zero": [
+    {
+      "requested_after_zero_s": 0.0,
+      "actual_after_zero_s": 0.0018726079979387578,
+      "wall_elapsed_s": 4.503480120998574,
+      "stamp": 7.34,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.20666919635275957
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        0.021100000000001673
+      ],
+      "speed": 0.021100000000001673,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 0.02,
+      "actual_after_zero_s": 0.023327261998929316,
+      "wall_elapsed_s": 4.524934774999565,
+      "stamp": 7.36,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.20559119635275955
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 0.05,
+      "actual_after_zero_s": 0.06295699800102739,
+      "wall_elapsed_s": 4.564564511001663,
+      "stamp": 7.4,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.2034351963527595
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 0.1,
+      "actual_after_zero_s": 0.10349745399798849,
+      "wall_elapsed_s": 4.605104966998624,
+      "stamp": 7.44,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.20127919635275945
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 0.2,
+      "actual_after_zero_s": 0.20672906300023897,
+      "wall_elapsed_s": 4.708336576000875,
+      "stamp": 7.54,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.19588919635275934
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 0.5,
+      "actual_after_zero_s": 0.5093028160008544,
+      "wall_elapsed_s": 5.01091032900149,
+      "stamp": 7.84,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.179719196352759
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 1.0,
+      "actual_after_zero_s": 1.0162992139994458,
+      "wall_elapsed_s": 5.5179067270000814,
+      "stamp": 8.34,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.1527691963527584
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05390000000000117
+      ],
+      "speed": 0.05390000000000117,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 2.0,
+      "actual_after_zero_s": 2.011153204999573,
+      "wall_elapsed_s": 6.512760718000209,
+      "stamp": 9.32,
+      "xyz": [
+        0.0002263663174151488,
+        2.8026943532530615e-05,
+        0.0999471963527579
+      ],
+      "linear": [
+        0.0,
+        0.0,
+        -0.05389999999999978
+      ],
+      "speed": 0.05389999999999978,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 3.0,
+      "actual_after_zero_s": 3.0040919089988165,
+      "wall_elapsed_s": 7.505699421999452,
+      "stamp": 10.3,
+      "xyz": [
+        0.0002251857300155716,
+        3.854486011254148e-05,
+        0.05500025128874766
+      ],
+      "linear": [
+        5.0731127620274414e-05,
+        6.773683418789236e-05,
+        0.0003293218256091718
+      ],
+      "speed": 0.00034002175053660956,
+      "tilt": 0.0
+    },
+    {
+      "requested_after_zero_s": 4.0,
+      "actual_after_zero_s": 4.018049476999295,
+      "wall_elapsed_s": 8.51965698999993,
+      "stamp": 11.3,
+      "xyz": [
+        0.00020653758191489164,
+        6.724512675436198e-05,
+        0.05500070822758217
+      ],
+      "linear": [
+        7.026930732212042e-06,
+        2.2103741980991637e-05,
+        -8.573003418277381e-13
+      ],
+      "speed": 2.319381738907071e-05,
+      "tilt": 0.0
+    }
+  ],
+  "timing_limit": "command timing is process wall arrival; odom has independent simulation stamp; exact actuator application latency is unobserved",
+  "verification_scope": "callback file internal integrity and own public observation consistency; not independent cryptographic source authentication or official scoring"
+}

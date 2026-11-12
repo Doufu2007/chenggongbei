@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="23" skipped="0" tests="23" time="1.632" timestamp="2026-11-12T07:22:26.855614+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_vertical_trim" name="test_fixed_signed_protocol_and_actual_support_return_required_for_normal_finish" time="0.003"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_fixed_signed_protocol_and_actual_support_return_required_for_normal_finish():
+&gt;       g = guard()
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_low_height_immediately_aborts_every_nonzero_trim_stage[1.2]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase_end = 1.2
+
+    @pytest.mark.parametrize("phase_end", [1.2, 2.2, 3.2])
+    def test_low_height_immediately_aborts_every_nonzero_trim_stage(phase_end):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_low_height_immediately_aborts_every_nonzero_trim_stage[2.2]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase_end = 2.2
+
+    @pytest.mark.parametrize("phase_end", [1.2, 2.2, 3.2])
+    def test_low_height_immediately_aborts_every_nonzero_trim_stage(phase_end):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_low_height_immediately_aborts_every_nonzero_trim_stage[3.2]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">phase_end = 3.2
+
+    @pytest.mark.parametrize("phase_end", [1.2, 2.2, 3.2])
+    def test_low_height_immediately_aborts_every_nonzero_trim_stage(phase_end):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:66: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_no_actual_new_odom_cannot_complete_or_advance_a_trim_stage" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_no_actual_new_odom_cannot_complete_or_advance_a_trim_stage():
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_trim_pause_becomes_permanent_zero_return_and_never_retries_nonzero" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_trim_pause_becomes_permanent_zero_return_and_never_retries_nonzero():
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:90: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_ascend_pause_and_zero_return_cannot_reset_the_permanent_motion_budget" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_ascend_pause_and_zero_return_cannot_reset_the_permanent_motion_budget():
+&gt;       g = guard(); ready(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:101: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_inherited_hard_bounds_latch_during_trim_and_never_resume[change0-rise_limit]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'z': 0.206}, reason = 'rise_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit")])
+    def test_inherited_hard_bounds_latch_during_trim_and_never_resume(change, reason):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_inherited_hard_bounds_latch_during_trim_and_never_resume[change1-horizontal_drift]" time="0.003"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'x': 0.041}, reason = 'horizontal_drift'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit")])
+    def test_inherited_hard_bounds_latch_during_trim_and_never_resume(change, reason):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_inherited_hard_bounds_latch_during_trim_and_never_resume[change2-tilt_limit]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'pitch': 0.051}, reason = 'tilt_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit")])
+    def test_inherited_hard_bounds_latch_during_trim_and_never_resume(change, reason):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_inherited_hard_bounds_latch_during_trim_and_never_resume[change3-speed_limit]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">change = {'vz': 0.151}, reason = 'speed_limit'
+
+    @pytest.mark.parametrize("change,reason", [({"z": .206}, "rise_limit"), ({"x": .041}, "horizontal_drift"),
+        ({"pitch": .051}, "tilt_limit"), ({"vz": .151}, "speed_limit")])
+    def test_inherited_hard_bounds_latch_during_trim_and_never_resume(change, reason):
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_total_wall_and_total_path_limits_remain_absorbing" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_total_wall_and_total_path_limits_remain_absorbing():
+&gt;       g = guard()
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_signed_recording_rejects_out_of_phase_and_unbounded_commands" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_signed_recording_rejects_out_of_phase_and_unbounded_commands():
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_signed_evidence_roundtrip_contains_phase_samples_and_transitions" time="0.057"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_signed_evidence_roundtrip_contains_phase_samples_and_transitions():
+        from tools.diagnostic_receiver import validate_event
+        from inspection_mission.telemetry import DiagnosticReporter
+&gt;       g = guard(); enter_trim(g)
+            ^^^^^^^
+
+tests\test_bounded_vertical_trim.py:145: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:25: in guard
+    return api().VerticalTrimGuard(started_wall_s=0.)
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_adapter_keeps_only_two_publishers_and_counts_positive_negative_zero_distinctly" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9E669E0&gt;
+
+    def test_adapter_keeps_only_two_publishers_and_counts_positive_negative_zero_distinctly(monkeypatch):
+&gt;       node, _, published, _ = negative_transport(monkeypatch)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:199: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails[tick]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9E67BB0&gt;
+action = 'tick'
+
+    @pytest.mark.parametrize("action", ["tick", "stop", "low_callback", "watchdog"])
+    def test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails(monkeypatch, action):
+        import threading
+&gt;       node, callbacks, published, wall = negative_transport(monkeypatch)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails[stop]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9F00710&gt;
+action = 'stop'
+
+    @pytest.mark.parametrize("action", ["tick", "stop", "low_callback", "watchdog"])
+    def test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails(monkeypatch, action):
+        import threading
+&gt;       node, callbacks, published, wall = negative_transport(monkeypatch)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails[low_callback]" time="0.002"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9EB8E20&gt;
+action = 'low_callback'
+
+    @pytest.mark.parametrize("action", ["tick", "stop", "low_callback", "watchdog"])
+    def test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails(monkeypatch, action):
+        import threading
+&gt;       node, callbacks, published, wall = negative_transport(monkeypatch)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails[watchdog]" time="0.003"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9EBA360&gt;
+action = 'watchdog'
+
+    @pytest.mark.parametrize("action", ["tick", "stop", "low_callback", "watchdog"])
+    def test_negative_phase_fault_still_independently_attempts_uav_zero_when_ground_publish_fails(monkeypatch, action):
+        import threading
+&gt;       node, callbacks, published, wall = negative_transport(monkeypatch)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_negative_phase_live_dds_loss_sends_zero_and_cannot_rearm" time="0.003"><failure message="AssertionError: bounded signed trim module missing&#10;assert None is not None&#10; +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')&#10; +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000001FFA9F49350&gt;
+
+    def test_negative_phase_live_dds_loss_sends_zero_and_cannot_rearm(monkeypatch):
+&gt;       node, _, published, wall = negative_transport(monkeypatch)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_bounded_vertical_trim.py:237: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_bounded_vertical_trim.py:186: in negative_transport
+    node, callbacks, published = transport(monkeypatch, wall)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_bounded_vertical_trim.py:170: in transport
+    node = api().create_trim_node(wall_clock=lambda: wall[0])
+           ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.bounded_vertical_trim"
+&gt;       assert importlib.util.find_spec(name) is not None, "bounded signed trim module missing"
+E       AssertionError: bounded signed trim module missing
+E       assert None is not None
+E        +  where None = &lt;function find_spec at 0x000001FFA617B1A0&gt;('inspection_mission.bounded_vertical_trim')
+E        +    where &lt;function find_spec at 0x000001FFA617B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_bounded_vertical_trim.py:20: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_trim_launcher_runs_uploaded_source_and_preserves_real_exit[0-0]" time="0.032"><failure message="AssertionError: trim launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-773/test_trim_launcher_runs_upload0')
+child_exit = 0, setup_exit = 0
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0, 0), (17, 0), (0, 29)])
+    def test_trim_launcher_runs_uploaded_source_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded trim workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_vertical_trim.py").write_text(
+            "import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"
+            f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_vertical_trim.sh"
+&gt;       assert source.is_file(), "trim launcher missing"
+E       AssertionError: trim launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file
+
+tests\test_bounded_vertical_trim.py:262: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_trim_launcher_runs_uploaded_source_and_preserves_real_exit[17-0]" time="0.009"><failure message="AssertionError: trim launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-773/test_trim_launcher_runs_upload1')
+child_exit = 17, setup_exit = 0
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0, 0), (17, 0), (0, 29)])
+    def test_trim_launcher_runs_uploaded_source_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded trim workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_vertical_trim.py").write_text(
+            "import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"
+            f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_vertical_trim.sh"
+&gt;       assert source.is_file(), "trim launcher missing"
+E       AssertionError: trim launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file
+
+tests\test_bounded_vertical_trim.py:262: AssertionError</failure></testcase><testcase classname="tests.test_bounded_vertical_trim" name="test_trim_launcher_runs_uploaded_source_and_preserves_real_exit[0-29]" time="0.012"><failure message="AssertionError: trim launcher missing&#10;assert False&#10; +  where False = is_file()&#10; +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file">tmp_path = WindowsPath('C:/Users/USER/AppData/Local/Temp/pytest-of-郑傅韬/pytest-773/test_trim_launcher_runs_upload2')
+child_exit = 0, setup_exit = 29
+
+    @pytest.mark.parametrize("child_exit,setup_exit", [(0, 0), (17, 0), (0, 29)])
+    def test_trim_launcher_runs_uploaded_source_and_preserves_real_exit(tmp_path, child_exit, setup_exit):
+        import os
+        from pathlib import Path
+        import shlex
+        import shutil
+        import subprocess
+        from test_ground_probe_launch import BASH, shell_path
+        if not BASH.is_file(): pytest.skip("bash unavailable")
+        workspace = tmp_path/"uploaded trim workspace"
+        package = workspace/"src/inspection_mission/inspection_mission"
+        package.mkdir(parents=True)
+        (package/"__init__.py").write_text("", encoding="utf-8")
+        (package/"bounded_vertical_trim.py").write_text(
+            "import os,sys\nassert os.environ['FAKE_ROS_READY']=='1'\n"
+            f"sys.exit({child_exit})\n", encoding="utf-8")
+        source = Path(__file__).resolve().parents[1]/"scripts/run_bounded_vertical_trim.sh"
+&gt;       assert source.is_file(), "trim launcher missing"
+E       AssertionError: trim launcher missing
+E       assert False
+E        +  where False = is_file()
+E        +    where is_file = WindowsPath('C:/Users/USER/Desktop/大学生活/ICAN/晟功杯/scripts/run_bounded_vertical_trim.sh').is_file
+
+tests\test_bounded_vertical_trim.py:262: AssertionError</failure></testcase></testsuite></testsuites>

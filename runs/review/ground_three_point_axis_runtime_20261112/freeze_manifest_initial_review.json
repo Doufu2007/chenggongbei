@@ -1,0 +1,82 @@
+{
+  "schema": "ground_three_point_axis_runtime_freeze_v1",
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis.py",
+      "sha256": "5ece68ce5b1460e0bb419bdc87b18b9212be749ebfa6ea35a368003ee7f24454",
+      "bytes": 14378,
+      "crlf": 0
+    },
+    {
+      "path": "scripts/run_ground_three_point_axis.sh",
+      "sha256": "3b5251e1f4b5dcc8d48d23c59c6ce102b422af1e2c031fa5ae05f0e0032bdfd4",
+      "bytes": 2765,
+      "crlf": 0
+    },
+    {
+      "path": "tests/test_ground_three_point_axis.py",
+      "sha256": "94c3c07e7dd1bc7b4f71b10f979f55bd60fa110d7c88f98f3997efddf79a2b44",
+      "bytes": 13167,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point.py",
+      "sha256": "6f7a7bb24f9e5269c72bafc05929085d111599a66a135f2dd3782bef5728abc2",
+      "bytes": 33185,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_axis_plan.py",
+      "sha256": "e1bb65499f24eba7389b645dd29c10539bd7942fa51675d57912d95454deba8e",
+      "bytes": 3682,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_three_point_plan.py",
+      "sha256": "d4d4ade05388de5f7435399f2092824aa291c2f1440c6b3fa3adc0941bfa6c65",
+      "bytes": 11401,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_single_point.py",
+      "sha256": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+      "bytes": 42543,
+      "crlf": 0
+    },
+    {
+      "path": "src/inspection_mission/inspection_mission/ground_observation_route.py",
+      "sha256": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945",
+      "bytes": 22825,
+      "crlf": 0
+    }
+  ],
+  "test_xml": "runs/review/ground_three_point_axis_runtime_affected.xml",
+  "suites": [
+    {
+      "name": "pytest",
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "172",
+      "time": "106.773",
+      "timestamp": "2026-11-12T07:52:18.061761+08:00",
+      "hostname": "DESKTOP-9S2BM4P"
+    }
+  ],
+  "case_counts": {
+    "tests.test_ground_three_point_axis": 20,
+    "tests.test_ground_three_point": 15,
+    "tests.test_ground_three_point_axis_plan": 5,
+    "tests.test_ground_three_point_plan": 17,
+    "tests.test_ground_single_point": 43,
+    "tests.test_diagnostic_receiver": 68,
+    "tests.test_probe_telemetry": 4
+  },
+  "red_xml": "runs/review/ground_three_point_axis_runtime_red.xml",
+  "initial_red_failures": 15,
+  "bash_syntax_exit": 0,
+  "py_compile_exit": 0,
+  "packaged": false,
+  "uploaded": false,
+  "reverse_platform_response": "awaiting independent platform calibration"
+}

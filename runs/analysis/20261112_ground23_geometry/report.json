@@ -1,0 +1,1734 @@
+{
+  "kind": "offline_candidate_ground23_geometry_design",
+  "not_implemented": true,
+  "candidate_world_path": "external_resources\\ranmengjia_ICAN\\binary_install\\share\\ican_inspection_sim\\worlds\\inspection_task1.world",
+  "candidate_world_sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1",
+  "script_sha256": "996fa1ae54a7f998ddfab59b0517c8926e6357f23ab24f42745655dbe4c550e1",
+  "initial_pose_nominal": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "laser_body_xyz_m": [
+    0.08,
+    0.0,
+    0.08
+  ],
+  "laser_plane_world_z_m": 0.135,
+  "fixed_ring_threshold_m": 0.641,
+  "fixed_body_circle_radius_m": 0.447,
+  "plans": {
+    "ground_2_original_axis_to_center": {
+      "first_id": "ground_2",
+      "observation": [
+        0.6,
+        -1.8
+      ],
+      "entry_waypoints": [
+        [
+          0.0,
+          -1.8
+        ],
+        [
+          0.0,
+          -2.7
+        ]
+      ],
+      "final_xy": [
+        0.0,
+        -2.7
+      ],
+      "final_yaw_rad": -1.5707963267948966,
+      "total_path_m": 3.9000000000000004,
+      "path_with_0_30m_reserve": 4.2,
+      "planned_rotation_rad": 4.712388980384691,
+      "rotation_with_0_40rad_reserve": 5.112388980384691,
+      "max_origin_displacement_m": 2.7,
+      "minimum_laser_distance_m": 0.5699999999999998,
+      "minimum_ring_margin_m": -0.07100000000000017,
+      "minimum_body_circle_clearance_lower_bound_m": 0.2029999999999999,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.8
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.8,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -2.158798930342464,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -2.158798930342464,
+          "end_yaw_unwrapped": -3.141592653589794,
+          "angle_rad": 0.98279372324733,
+          "clearance": {
+            "obstacle": "window_2/side_positive",
+            "laser_distance_m": 1.2893760156980183,
+            "ring_margin_m": 0.6483760156980183,
+            "critical_yaw_rad": -2.158798930342464,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "end": [
+            0.0,
+            -1.8
+          ],
+          "heading": 3.141592653589793,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "west_wall/collision",
+            "laser_distance_m": 0.6950000000000001,
+            "ring_margin_m": 0.05400000000000005,
+            "critical_yaw_rad": 3.141592653589793,
+            "body_circle_clearance_lower_bound_m": 0.328
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.328
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_2_turn",
+          "start": [
+            0.0,
+            -1.8
+          ],
+          "start_yaw": 3.141592653589793,
+          "end_yaw_unwrapped": 4.71238898038469,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "west_wall/collision",
+            "laser_distance_m": 0.6950000000000001,
+            "ring_margin_m": 0.05400000000000005,
+            "critical_yaw_rad": 3.141592653589793,
+            "body_circle_clearance_lower_bound_m": 0.328
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.328
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_2",
+          "start": [
+            0.0,
+            -1.8
+          ],
+          "end": [
+            0.0,
+            -2.7
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 0.9000000000000001,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.5699999999999998,
+            "ring_margin_m": -0.07100000000000017,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.2029999999999999
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.2029999999999999
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            -0.11000000000000001,
+            -2.87,
+            0.11000000000000001,
+            -2.5300000000000002
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.165,
+            0.03000000000000025,
+            0.165,
+            0.03000000000000025
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            -0.15750016529475286,
+            -2.875,
+            0.15750016529475286,
+            -2.5250000000000004
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.11749983470524716,
+            0.025000000000000355,
+            0.11749983470524716,
+            0.025000000000000355
+          ],
+          "fully_inside_nominal": true
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            -0.335,
+            -3.0480000514250505,
+            0.335,
+            -2.365
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.06,
+            -0.14800005142505013,
+            -0.06,
+            -0.1349999999999998
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": false
+    },
+    "ground_2_requested_axis": {
+      "first_id": "ground_2",
+      "observation": [
+        0.6,
+        -1.8
+      ],
+      "entry_waypoints": [
+        [
+          0.6,
+          -2.62
+        ],
+        [
+          0.0,
+          -2.62
+        ]
+      ],
+      "final_xy": [
+        0.0,
+        -2.62
+      ],
+      "final_yaw_rad": 3.141592653589793,
+      "total_path_m": 3.8200000000000003,
+      "path_with_0_30m_reserve": 4.12,
+      "planned_rotation_rad": 4.317597860684928,
+      "rotation_with_0_40rad_reserve": 4.717597860684928,
+      "max_origin_displacement_m": 2.687824399026097,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "minimum_ring_margin_m": 0.008999999999999897,
+      "minimum_body_circle_clearance_lower_bound_m": 0.203,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.8
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.8,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -2.158798930342464,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -2.158798930342464,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "end": [
+            0.6,
+            -2.62
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 0.8200000000000001,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_2_turn",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -3.141592653589793,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_2",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "end": [
+            0.0,
+            -2.62
+          ],
+          "heading": 3.141592653589793,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "west_wall/collision",
+            "laser_distance_m": 0.6950000000000001,
+            "ring_margin_m": 0.05400000000000005,
+            "critical_yaw_rad": 3.141592653589793,
+            "body_circle_clearance_lower_bound_m": 0.328
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            -0.17,
+            -2.73,
+            0.17,
+            -2.5100000000000002
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.10500000000000001,
+            0.17000000000000037,
+            0.10500000000000001,
+            0.010000000000000231
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            -0.17500000000000004,
+            -2.777500165294753,
+            0.17500000000000004,
+            -2.4624998347052474
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.09999999999999998,
+            0.1224998347052475,
+            0.09999999999999998,
+            -0.03750016529475264
+          ],
+          "fully_inside_nominal": false
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            -0.3480000514250507,
+            -2.955,
+            0.3350000000000001,
+            -2.285
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.07300005142505067,
+            -0.054999999999999716,
+            -0.06000000000000005,
+            -0.21499999999999986
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": true
+    },
+    "ground_3_existing_axis": {
+      "first_id": "ground_3",
+      "observation": [
+        0.6,
+        -1.025
+      ],
+      "entry_waypoints": [
+        [
+          0.6,
+          -1.925
+        ],
+        [
+          1.115,
+          -1.925
+        ]
+      ],
+      "final_xy": [
+        1.115,
+        -1.925
+      ],
+      "final_yaw_rad": 0.0,
+      "total_path_m": 3.04,
+      "path_with_0_30m_reserve": 3.34,
+      "planned_rotation_rad": 4.197741550442512,
+      "rotation_with_0_40rad_reserve": 4.597741550442512,
+      "max_origin_displacement_m": 2.2246010878357496,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "minimum_ring_margin_m": 0.008999999999999897,
+      "minimum_body_circle_clearance_lower_bound_m": 0.203,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.025
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.025,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -1.0427218783685372,
+          "angle_rad": 0.5280744484263593,
+          "clearance": {
+            "obstacle": "window_1/side_negative",
+            "laser_distance_m": 1.2065299955472482,
+            "ring_margin_m": 0.5655299955472481,
+            "critical_yaw_rad": -1.0427218783685372,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "start_yaw": -1.042721878368537,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 0.5280744484263595,
+          "clearance": {
+            "obstacle": "window_1/side_negative",
+            "laser_distance_m": 1.2065299955472482,
+            "ring_margin_m": 0.5655299955472481,
+            "critical_yaw_rad": -1.042721878368537,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "end": [
+            0.6,
+            -1.925
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 0.9000000000000001,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_2_turn",
+          "start": [
+            0.6,
+            -1.925
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.165,
+            "ring_margin_m": 0.524,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_2",
+          "start": [
+            0.6,
+            -1.925
+          ],
+          "end": [
+            1.115,
+            -1.925
+          ],
+          "heading": 0.0,
+          "length_m": 0.515,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            0.945,
+            -2.035,
+            1.285,
+            -1.815
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.019999999999999907,
+            0.16500000000000004,
+            0.040000000000000036,
+            0.16500000000000004
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            0.94,
+            -2.0825001652947526,
+            1.29,
+            -1.7674998347052473
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.014999999999999902,
+            0.11749983470524761,
+            0.03499999999999992,
+            0.11749983470524739
+          ],
+          "fully_inside_nominal": true
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            0.78,
+            -2.2600000000000002,
+            1.4630000514250507,
+            -1.59
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.14500000000000002,
+            -0.06000000000000005,
+            -0.13800005142505078,
+            -0.05999999999999983
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": true
+    },
+    "ground_2_optional_diagonal": {
+      "first_id": "ground_2",
+      "observation": [
+        0.6,
+        -1.8
+      ],
+      "entry_waypoints": [
+        [
+          0.6,
+          -2.62
+        ],
+        [
+          0.0,
+          -2.68
+        ]
+      ],
+      "final_xy": [
+        0.0,
+        -2.68
+      ],
+      "final_yaw_rad": -3.141592653589793,
+      "total_path_m": 3.8229925372672535,
+      "path_with_0_30m_reserve": 4.122992537267254,
+      "planned_rotation_rad": 4.317597860684928,
+      "rotation_with_0_40rad_reserve": 4.717597860684928,
+      "max_origin_displacement_m": 2.687824399026097,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "minimum_ring_margin_m": 0.008999999999999897,
+      "minimum_body_circle_clearance_lower_bound_m": 0.203,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.8
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.8,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -2.158798930342464,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -2.158798930342464,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "end": [
+            0.6,
+            -2.62
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 0.8200000000000001,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_2_turn",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -3.0419240010986313,
+          "angle_rad": 1.4711276743037347,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_2",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "end": [
+            0.0,
+            -2.68
+          ],
+          "heading": -3.0419240010986313,
+          "length_m": 0.6029925372672534,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.66203970247832,
+            "ring_margin_m": 0.021039702478319988,
+            "critical_yaw_rad": -3.0419240010986313,
+            "body_circle_clearance_lower_bound_m": 0.22299999999999992
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.22299999999999992
+        },
+        {
+          "kind": "turn",
+          "label": "optional_final_alignment",
+          "start": [
+            0.0,
+            -2.68
+          ],
+          "start_yaw": -3.0419240010986313,
+          "end_yaw_unwrapped": -3.141592653589793,
+          "angle_rad": 0.09966865249116186,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.66203970247832,
+            "ring_margin_m": 0.021039702478319988,
+            "critical_yaw_rad": -3.0419240010986313,
+            "body_circle_clearance_lower_bound_m": 0.22299999999999992
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.22299999999999992
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            -0.17,
+            -2.79,
+            0.17,
+            -2.5700000000000003
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.10500000000000001,
+            0.11000000000000032,
+            0.10500000000000001,
+            0.07000000000000028
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            -0.17500000000000004,
+            -2.8375001652947534,
+            0.17500000000000004,
+            -2.522499834705247
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.09999999999999998,
+            0.062499834705247004,
+            0.09999999999999998,
+            0.02249983470524697
+          ],
+          "fully_inside_nominal": true
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            -0.3480000514250507,
+            -3.015,
+            0.3350000000000001,
+            -2.345
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.07300005142505067,
+            -0.11499999999999977,
+            -0.06000000000000005,
+            -0.1549999999999998
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": true
+    },
+    "ground_2_recommended_diagonal": {
+      "first_id": "ground_2",
+      "observation": [
+        0.6,
+        -1.8
+      ],
+      "entry_waypoints": [
+        [
+          0.6,
+          -2.62
+        ],
+        [
+          0.0,
+          -2.69
+        ]
+      ],
+      "final_xy": [
+        0.0,
+        -2.69
+      ],
+      "final_yaw_rad": -3.141592653589793,
+      "total_path_m": 3.824069532421558,
+      "path_with_0_30m_reserve": 4.124069532421558,
+      "planned_rotation_rad": 4.317597860684928,
+      "rotation_with_0_40rad_reserve": 4.717597860684928,
+      "max_origin_displacement_m": 2.69,
+      "minimum_laser_distance_m": 0.6499999999999999,
+      "minimum_ring_margin_m": 0.008999999999999897,
+      "minimum_body_circle_clearance_lower_bound_m": 0.203,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.8
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.8,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -2.158798930342464,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "start_yaw": -2.158798930342464,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 0.5880026035475674,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 1.245,
+            "ring_margin_m": 0.6040000000000001,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.8001091572111882
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.8
+          ],
+          "end": [
+            0.6,
+            -2.62
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 0.8200000000000001,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_2_turn",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -3.025451026709803,
+          "angle_rad": 1.4546546999149066,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6499999999999999,
+            "ring_margin_m": 0.008999999999999897,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_2",
+          "start": [
+            0.6,
+            -2.62
+          ],
+          "end": [
+            0.0,
+            -2.69
+          ],
+          "heading": -3.025451026709803,
+          "length_m": 0.6040695324215583,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6507295440351859,
+            "ring_margin_m": 0.009729544035185889,
+            "critical_yaw_rad": -3.025451026709803,
+            "body_circle_clearance_lower_bound_m": 0.21300000000000013
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.21300000000000013
+        },
+        {
+          "kind": "turn",
+          "label": "optional_final_alignment",
+          "start": [
+            0.0,
+            -2.69
+          ],
+          "start_yaw": -3.025451026709803,
+          "end_yaw_unwrapped": -3.141592653589793,
+          "angle_rad": 0.11614162687998997,
+          "clearance": {
+            "obstacle": "south_wall/collision",
+            "laser_distance_m": 0.6507295440351859,
+            "ring_margin_m": 0.009729544035185889,
+            "critical_yaw_rad": -3.025451026709803,
+            "body_circle_clearance_lower_bound_m": 0.21300000000000013
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.21300000000000013
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            -0.17,
+            -2.8,
+            0.17,
+            -2.58
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.10500000000000001,
+            0.10000000000000053,
+            0.10500000000000001,
+            0.08000000000000007
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            -0.17500000000000004,
+            -2.847500165294753,
+            0.17500000000000004,
+            -2.5324998347052468
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.09999999999999998,
+            0.05249983470524722,
+            0.09999999999999998,
+            0.032499834705246755
+          ],
+          "fully_inside_nominal": true
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            -0.3480000514250507,
+            -3.025,
+            0.3350000000000001,
+            -2.355
+          ],
+          "board_bounds_xyxy_m": [
+            -0.275,
+            -2.9000000000000004,
+            0.275,
+            -2.5
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.07300005142505067,
+            -0.12499999999999956,
+            -0.06000000000000005,
+            -0.14500000000000002
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": true,
+      "wheel_entry_margin_after_2cm_translation_and_0_025rad_yaw_m": 0.008174671889483082
+    },
+    "ground_3_recommended_diagonal": {
+      "first_id": "ground_3",
+      "observation": [
+        0.6,
+        -1.025
+      ],
+      "entry_waypoints": [
+        [
+          1.115,
+          -1.925
+        ]
+      ],
+      "final_xy": [
+        1.115,
+        -1.925
+      ],
+      "final_yaw_rad": -1.5707963267948966,
+      "total_path_m": 2.6619305666244,
+      "path_with_0_30m_reserve": 2.9619305666244,
+      "planned_rotation_rad": 2.626945223647615,
+      "rotation_with_0_40rad_reserve": 3.026945223647615,
+      "max_origin_displacement_m": 2.2246010878357496,
+      "minimum_laser_distance_m": 0.65,
+      "minimum_ring_margin_m": 0.009000000000000008,
+      "minimum_body_circle_clearance_lower_bound_m": 0.203,
+      "phases": [
+        {
+          "kind": "turn",
+          "label": "observation_leg_1_turn",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": 0.0,
+          "angle_rad": 0.0,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_1",
+          "start": [
+            0.0,
+            0.0
+          ],
+          "end": [
+            0.6,
+            0.0
+          ],
+          "heading": 0.0,
+          "length_m": 0.6,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_leg_2_turn",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "start_yaw": 0.0,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 1.5707963267948966,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.65,
+            "ring_margin_m": 0.009000000000000008,
+            "critical_yaw_rad": 0.0,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "drive",
+          "label": "observation_leg_2",
+          "start": [
+            0.6,
+            0.0
+          ],
+          "end": [
+            0.6,
+            -1.025
+          ],
+          "heading": -1.5707963267948966,
+          "length_m": 1.025,
+          "clearance": {
+            "obstacle": "north_wall/collision",
+            "laser_distance_m": 0.73,
+            "ring_margin_m": 0.08899999999999997,
+            "critical_yaw_rad": -1.5707963267948966,
+            "body_circle_clearance_lower_bound_m": 0.203
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.203
+        },
+        {
+          "kind": "turn",
+          "label": "observation_visual_heading",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "start_yaw": -1.5707963267948966,
+          "end_yaw_unwrapped": -1.0427218783685372,
+          "angle_rad": 0.5280744484263593,
+          "clearance": {
+            "obstacle": "window_1/side_negative",
+            "laser_distance_m": 1.2065299955472482,
+            "ring_margin_m": 0.5655299955472481,
+            "critical_yaw_rad": -1.0427218783685372,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "turn",
+          "label": "entry_leg_1_turn",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "start_yaw": -1.042721878368537,
+          "end_yaw_unwrapped": -1.051052126495285,
+          "angle_rad": 0.008330248126747986,
+          "clearance": {
+            "obstacle": "window_1/side_negative",
+            "laser_distance_m": 1.2065299955472482,
+            "ring_margin_m": 0.5655299955472481,
+            "critical_yaw_rad": -1.042721878368537,
+            "body_circle_clearance_lower_bound_m": 0.798
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.798
+        },
+        {
+          "kind": "drive",
+          "label": "entry_leg_1",
+          "start": [
+            0.6,
+            -1.025
+          ],
+          "end": [
+            1.115,
+            -1.925
+          ],
+          "heading": -1.051052126495285,
+          "length_m": 1.0369305666244004,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 0.6902673493037035,
+            "ring_margin_m": 0.04926734930370347,
+            "critical_yaw_rad": -1.051052126495285,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        },
+        {
+          "kind": "turn",
+          "label": "optional_final_alignment",
+          "start": [
+            1.115,
+            -1.925
+          ],
+          "start_yaw": -1.051052126495285,
+          "end_yaw_unwrapped": -1.5707963267948966,
+          "angle_rad": 0.5197442002996115,
+          "clearance": {
+            "obstacle": "window_2/bottom",
+            "laser_distance_m": 0.6902673493037035,
+            "ring_margin_m": 0.04926734930370347,
+            "critical_yaw_rad": -1.051052126495285,
+            "body_circle_clearance_lower_bound_m": 0.283
+          },
+          "minimum_body_circle_clearance_lower_bound_m": 0.283
+        }
+      ],
+      "entry_footprints": {
+        "base_collision_box": {
+          "bounds_xyxy_m": [
+            1.005,
+            -2.095,
+            1.225,
+            -1.7550000000000001
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.07999999999999985,
+            0.10499999999999998,
+            0.09999999999999987,
+            0.1050000000000002
+          ],
+          "fully_inside_nominal": true
+        },
+        "all_ground_collisions": {
+          "bounds_xyxy_m": [
+            0.9574998347052471,
+            -2.1,
+            1.2725001652947527,
+            -1.75
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            0.03249983470524709,
+            0.10000000000000009,
+            0.05249983470524722,
+            0.10000000000000009
+          ],
+          "fully_inside_nominal": true
+        },
+        "full_visible_envelope": {
+          "bounds_xyxy_m": [
+            0.78,
+            -2.2730000514250506,
+            1.45,
+            -1.59
+          ],
+          "board_bounds_xyxy_m": [
+            0.925,
+            -2.2,
+            1.325,
+            -1.65
+          ],
+          "edge_margins_west_south_east_north_m": [
+            -0.14500000000000002,
+            -0.0730000514250504,
+            -0.125,
+            -0.05999999999999983
+          ],
+          "fully_inside_nominal": false
+        }
+      },
+      "passes_nominal_fixed_ring": true,
+      "wheel_entry_margin_after_2cm_translation_and_0_025rad_yaw_m": 0.008174671889483304
+    }
+  },
+  "axis_ground2_infeasibility": {
+    "south_approach_requires_center_y_at_least": -2.629,
+    "west_facing_wheel_entry_requires_center_y_at_most": -2.6575001652947527,
+    "no_intersection": true
+  },
+  "limitations": [
+    "Candidate public geometry, not current official scene certification.",
+    "Continuous nominal lines/arcs computed against all static boxes intersecting the actual candidate laser plane.",
+    "No runtime tracking-error or unknown-obstacle guarantee; original scan/stop/speed/freshness gates remain required.",
+    "Full collision footprint includes the wheels; full visible envelope additionally includes rotors and camera.",
+    "No ROS or referee messages; no code or budget changes have been implemented."
+  ]
+}

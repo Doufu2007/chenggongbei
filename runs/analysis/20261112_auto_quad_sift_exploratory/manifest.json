@@ -1,0 +1,60 @@
+{
+  "kind": "frozen_offline_exploratory_manifest",
+  "created_at": "2026-11-11T20:19:44.923705+00:00",
+  "manifest_excludes_itself": true,
+  "source_checks": [
+    {
+      "path": "runs/analysis/20261112_approach_v16b/native_L000020_a672e7739804717c.jpg",
+      "sha256": "a672e7739804717cb0633a2d26dda3b94e4c058384a86d7c9cd3e4355bfe3ac1",
+      "matches": true
+    },
+    {
+      "path": "runs/analysis/20261112_approach_v17/native_L000017_46381698801c0842.jpg",
+      "sha256": "46381698801c0842ae13784f842bf5d774a94483efcd63f64863d3ccca88a2a3",
+      "matches": true
+    }
+  ],
+  "report_sha256": "960fbf3d2cdfe6a108c5e38b986893a178fcd74bc6550afb9a685014eaef9686",
+  "files": [
+    {
+      "path": "experiment.py",
+      "size_bytes": 15597,
+      "sha256": "2406321bb17d34aca4df93f8a7907f738ae0290d928b276001a9b7d6bfa403af"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 1714,
+      "sha256": "2f9e586f83b3b6db4d2698c3db43f18ee47c4228e7907fd426bac12bb1331041"
+    },
+    {
+      "path": "report.json",
+      "size_bytes": 108312,
+      "sha256": "960fbf3d2cdfe6a108c5e38b986893a178fcd74bc6550afb9a685014eaef9686"
+    },
+    {
+      "path": "scores.csv",
+      "size_bytes": 236,
+      "sha256": "2a772add9f95afcf0a358db884bbfa59a336574c680ed81781dd100536d59629"
+    },
+    {
+      "path": "v16b_all_quad_overlay.png",
+      "size_bytes": 211036,
+      "sha256": "d90ec7ee0dc6024440a61168e084f07b15ce53c572c74afc2db494c7dc5f5889"
+    },
+    {
+      "path": "v16b_canny.png",
+      "size_bytes": 6149,
+      "sha256": "7ce2770bfb0a1f8f94af92fa1334560a470dab65772073226449dc6e9637d7d8"
+    },
+    {
+      "path": "v17_all_quad_overlay.png",
+      "size_bytes": 221525,
+      "sha256": "725ed658e9b2e49499fed42649a154c15c0f89943acd580254c510255ee7e283"
+    },
+    {
+      "path": "v17_canny.png",
+      "size_bytes": 6732,
+      "sha256": "7e00bb56e369c61ee698493ad73c62231d0e8376de9dbc830faa1bd164b3ccd7"
+    }
+  ]
+}

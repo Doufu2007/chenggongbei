@@ -1,0 +1,7 @@
+{
+  "mode": "ground_reverse_response",
+  "pulses": [],
+  "actual_reverse_motion_established_by_pose": false,
+  "all_three_pulses_observed": false,
+  "warning": "Negative publication alone does not establish reverse motion; signs here derive from actual source poses."
+}

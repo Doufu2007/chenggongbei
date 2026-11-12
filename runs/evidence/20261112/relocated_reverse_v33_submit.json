@@ -1,0 +1,13 @@
+{
+  "source": "logged-in browser practice upload",
+  "submitted_at": "2026-11-12T08:31:56+08:00",
+  "id": "87e16c7f-bc1c-4329-aef2-bfff61a13e85",
+  "url": "https://www.splenach.com/ros-simulation/evaluation/log/87e16c7f-bc1c-4329-aef2-bfff61a13e85",
+  "source_file": "inspection_relocated_reverse_v33_src.zip",
+  "script_file": "run_relocated_reverse_v33.sh",
+  "status": "submitted",
+  "full_mission_complete": false,
+  "software_review": "docs/control_review_ground_relocated_reverse_20261112.md",
+  "runId": "run_20261112_083208_b88d3f13",
+  "evaluation_number": "30991200"
+}

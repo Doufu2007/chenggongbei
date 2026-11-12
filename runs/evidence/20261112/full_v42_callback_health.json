@@ -1,0 +1,8 @@
+{
+  "checked_at": "2026-11-12T04:35:25.559208+00:00",
+  "public_get_status": 405,
+  "ready": true,
+  "accepted_evidence_polluted": false,
+  "invalid_post_rejected": false,
+  "post_exception_type": "JSONDecodeError"
+}

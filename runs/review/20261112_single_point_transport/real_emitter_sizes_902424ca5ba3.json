@@ -1,0 +1,45 @@
+{
+  "sizes": [
+    {
+      "section": "single_point_core",
+      "bytes": 47259
+    },
+    {
+      "section": "survey_metadata",
+      "bytes": 25290
+    },
+    {
+      "section": "survey_motion_series",
+      "bytes": 21902
+    },
+    {
+      "section": "survey_motion_series",
+      "bytes": 376
+    },
+    {
+      "section": "survey_image_part",
+      "bytes": 14682
+    },
+    {
+      "section": "survey_image_part",
+      "bytes": 14683
+    },
+    {
+      "section": "survey_image_part",
+      "bytes": 14682
+    },
+    {
+      "section": "survey_image_part",
+      "bytes": 1356
+    },
+    {
+      "section": "survey_image_part",
+      "bytes": 1347
+    },
+    {
+      "section": "survey_image_errors",
+      "bytes": 272
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,12 @@
+﻿
+
+Algorithm : SHA256
+Hash      : 73F7E51481880309F9EC416CA7CF60009AB37E3D91770E8D40C42A7262C5C902
+Path      : C:/Users/USER\Desktop\大学生活\ICAN\晟功杯\src\inspection_mission\inspection_mission\cruise_cloud_capture.py
+
+Algorithm : SHA256
+Hash      : 9090204CD71B905F7BDEEE3F92AB163973C6A781D3B3582DDF0B64ADD726F375
+Path      : C:/Users/USER\Desktop\大学生活\ICAN\晟功杯\tests\test_cruise_cloud_capture.py
+
+
+

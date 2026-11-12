@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="15" skipped="0" tests="15" time="0.843" timestamp="2026-11-12T07:46:33.838467+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_axis" name="test_axis_limits_new_rotation_contract_and_old_caps_unchanged" time="0.056"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_axis_limits_new_rotation_contract_and_old_caps_unchanged():
+        from inspection_mission.ground_three_point import ThreePointLimits
+        assert ThreePointLimits().max_rotation_rad == 25.
+&gt;       limits = api().AxisThreePointLimits()
+                 ^^^^^
+
+tests\test_ground_three_point_axis.py:48: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_first_ground4_real_runtime_plan_has_two_axes" time="0.012"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_first_ground4_real_runtime_plan_has_two_axes():
+&gt;       run=AxisRun(("ground_4","ground_0","ground_2")).until(lambda r:r.guard.point_plan is not None)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:24: in __init__
+    self.guard = api().GroundThreePointAxisGuard(started_wall_s=0., session_id="axis-test",
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_positive_progress_body_heading_and_negative_request" time="0.010"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_reverse_positive_progress_body_heading_and_negative_request():
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[wrong_direction-approach_reverse_limit]" time="0.002"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">fault = 'wrong_direction', reason = 'approach_reverse_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[cross-approach_cross_track_limit]" time="0.002"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">fault = 'cross', reason = 'approach_cross_track_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[heading-approach_heading_limit]" time="0.002"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">fault = 'heading', reason = 'approach_heading_limit'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[dds-no_external_matching_cmd_subscriber]" time="0.002"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">fault = 'dds', reason = 'no_external_matching_cmd_subscriber'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_keeps_original_actual_feedback_and_matching_stops[danger-scan_invalid]" time="0.002"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">fault = 'danger', reason = 'scan_invalid'
+
+    @pytest.mark.parametrize("fault,reason",[("wrong_direction","approach_reverse_limit"),
+        ("cross","approach_cross_track_limit"),("heading","approach_heading_limit"),
+        ("dds","no_external_matching_cmd_subscriber"),("danger","scan_invalid")])
+    def test_reverse_keeps_original_actual_feedback_and_matching_stops(fault,reason):
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:78: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_flag_clears_before_any_next_operation" time="0.001"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_reverse_flag_clears_before_any_next_operation():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_reverse_turn_and_settle_aim_at_body_north_not_destination_south" time="0.001"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_reverse_turn_and_settle_aim_at_body_north_not_destination_south():
+        from inspection_mission.ground_three_point_plan import GroundOperation
+&gt;       g=reverse_guard()
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:107: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw0]" time="0.013"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">draw = ('ground_2', 'ground_0', 'ground_4')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+&gt;       run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+            ^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:119: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:24: in __init__
+    self.guard = api().GroundThreePointAxisGuard(started_wall_s=0., session_id="axis-test",
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs[draw1]" time="0.012"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">draw = ('ground_4', 'ground_3', 'ground_2')
+
+    @pytest.mark.parametrize("draw",[("ground_2","ground_0","ground_4"),
+                                     ("ground_4","ground_3","ground_2")])
+    def test_axis_entry_and_handoff_really_use_new_planner_and_keep_visual_epochs(draw):
+&gt;       run=AxisRun(draw);epochs=[];sent=[];saw_negative=False
+            ^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:119: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:24: in __init__
+    self.guard = api().GroundThreePointAxisGuard(started_wall_s=0., session_id="axis-test",
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_handoff_cannot_expand_or_reset_fixed_rotation_budget" time="0.012"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_handoff_cannot_expand_or_reset_fixed_rotation_budget():
+&gt;       run=AxisRun();run.recognise();run.declare()
+            ^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:24: in __init__
+    self.guard = api().GroundThreePointAxisGuard(started_wall_s=0., session_id="axis-test",
+                 ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_entry_without_current_visual_still_locks_stop" time="0.001"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">def test_entry_without_current_visual_still_locks_stop():
+&gt;       g=reverse_guard();g._begin_entry(.01)
+          ^^^^^^^^^^^^^^^
+
+tests\test_ground_three_point_axis.py:156: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+tests\test_ground_three_point_axis.py:33: in reverse_guard
+    g = g or api().GroundThreePointAxisGuard(started_wall_s=0.)
+             ^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase><testcase classname="tests.test_ground_three_point_axis" name="test_actual_adapter_tick_publishes_signed_negative_and_rebinds_coordinator" time="0.001"><failure message="AssertionError: independent axis three-point runtime missing&#10;assert None&#10; +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')&#10; +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec&#10; +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002B5ECC3E060&gt;
+
+    def test_actual_adapter_tick_publishes_signed_negative_and_rebinds_coordinator(monkeypatch):
+        install_ros_transport(monkeypatch)
+        class Worker:
+            def cancel_context(self):pass
+            def poll(self):return []
+        wall=[0.]
+&gt;       node=api().create_axis_three_point_node(wall_clock=lambda:wall[0],worker=Worker())
+             ^^^^^
+
+tests\test_ground_three_point_axis.py:166: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def api():
+        name = "inspection_mission.ground_three_point_axis"
+&gt;       assert importlib.util.find_spec(name), "independent axis three-point runtime missing"
+E       AssertionError: independent axis three-point runtime missing
+E       assert None
+E        +  where None = &lt;function find_spec at 0x000002B5E8D3B1A0&gt;('inspection_mission.ground_three_point_axis')
+E        +    where &lt;function find_spec at 0x000002B5E8D3B1A0&gt; = &lt;module 'importlib.util' (frozen)&gt;.find_spec
+E        +      where &lt;module 'importlib.util' (frozen)&gt; = importlib.util
+
+tests\test_ground_three_point_axis.py:17: AssertionError</failure></testcase></testsuite></testsuites>

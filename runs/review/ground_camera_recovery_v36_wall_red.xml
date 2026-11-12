@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.542" timestamp="2026-11-12T09:12:26.003526+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_ground_three_point_camera_recovery" name="test_camera_pause_step_keeps_wall_clock_monotonic_without_new_callbacks" time="0.087"><failure message="AssertionError: assert ('PAUSE' == 'STOP'&#10;  &#10;  - STOP&#10;  + PAUSE)">def test_camera_pause_step_keeps_wall_clock_monotonic_without_new_callbacks():
+        run = StationaryRun(); g = run.guard
+        camera_gap(run)
+        g.step(wall_s=run.wall+.10)
+        g.step(wall_s=run.wall+.05)
+&gt;       assert g.state == "STOP" and g.reason == "wall_clock_reversed_or_invalid"
+E       AssertionError: assert ('PAUSE' == 'STOP'
+E         
+E         - STOP
+E         + PAUSE)
+
+tests\test_ground_three_point_camera_recovery.py:268: AssertionError</failure></testcase></testsuite></testsuites>

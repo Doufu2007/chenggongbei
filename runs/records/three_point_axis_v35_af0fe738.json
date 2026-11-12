@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "record_id": "af0fe738-c09b-4f4c-a2ed-fe51b0e0b298",
+  "runId": "run_20261112_084355_23ba4d48",
+  "evaluation_number": "92599511",
+  "kind": "ground_three_point_practice",
+  "evaluation_mode": "practice",
+  "variant": "ground-three-point-axis-v35",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_three_point_axis_v35_src.zip",
+    "sha256": "69c4ae666508cc16b3e4bec6236234d10d8123bf9858e86fde737e31f1b7d608"
+  },
+  "script": {
+    "path": "dist/run_three_point_axis_v35.sh",
+    "sha256": "9a8fb53306cf69ef34de1346a72d05a377cbab93aeb56d9265c4dc56fe8e1d18"
+  },
+  "draw_order": ["ground_1", "ground_3", "ground_2"],
+  "scores": {
+    "ground_points": {"ground_0": null, "ground_1": null, "ground_2": null, "ground_3": null, "ground_4": null},
+    "total": null,
+    "manual": null,
+    "platform_display_total": 0,
+    "extraction_status": "no_score_extracted"
+  },
+  "duration_s": 184.1,
+  "duration_source": "official_page_rounded_to_one_decimal",
+  "failure_reason": "single_point_uav_image_stale",
+  "measured_outcome": {
+    "completed_point_count": 0,
+    "recognition_or_declaration_attempts": 0,
+    "image_wall_age_s_at_check": 0.530038013,
+    "camera_max_age_s": 0.5,
+    "ground_odom_path_ledger_m": 1.11376565298,
+    "ground_odom_absolute_rotation_ledger_rad": 2.16932133864,
+    "interpretation": "Validated team callback evidence; official page reported no extracted score."
+  },
+  "evidence_paths": [
+    "runs/evidence/20261112/callback_three_point_axis_v35.jsonl",
+    "runs/evidence/20261112/three_point_axis_v35_official_page_final.json",
+    "runs/evidence/20261112/three_point_axis_v35_final.jpg",
+    "runs/analysis/20261112_three_point_axis_v35/diagnosis_callback.json",
+    "docs/ground_three_point_axis_v35_platform_analysis_20261112.md"
+  ]
+}

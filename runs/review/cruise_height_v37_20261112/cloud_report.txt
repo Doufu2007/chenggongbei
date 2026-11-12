@@ -1,0 +1,55 @@
+v37 完整原始前向点云 collector 专项交付
+日期：2026-11-12
+
+修改范围
+- 仅新增 src/inspection_mission/inspection_mission/cruise_cloud_capture.py
+- 仅新增 tests/test_cruise_cloud_capture.py
+- 仅新增本目录 cloud_*.txt 证据与报告。
+- 未修改父层源码，未启动ROS/仿真/控制，未上传、联网或提交。
+
+接口
+- CruiseCloudCapture.capture(msg, *, phase, wall_s, trajectory, tf_records) -> bool
+- snapshot(encode=False) -> 独立元数据副本，无原始bytes展开、hash或base64。
+- snapshot(encode=True) -> 每帧增加完整data_b64/data_sha256/data_encoding；hash和base64在collector锁外执行。调用者必须在试验终止、零输出后调用该显式编码接口。
+- 输出顶层：schema=cruise_cloud_capture_v37、encoded、frame_count、raw_bytes、missing_slots、counters、errors、errors_dropped、clouds。
+- 每帧保留source=/uav/lidar/points、原始header/stamp、arrival_wall_s、所有PointCloud2布局、真实prior pose原始message、实际TF记录source/arrival/header/parent/child/translation/quaternion。
+
+容量与拒绝语义
+- WAIT/ASCEND_CRUISE/HOLD_CRUISE/DESCEND_SUPPORT各一个slot；成功后同slot不覆盖。
+- 每帧2MiB，总8MiB。data长度必须严格等于row_step*height，含行padding，整帧复制；无前缀截取。
+- 只接受一维连续字节buffer，支持ROS array('B')、bytes、bytearray、memoryview；拒绝list展开路径。
+- 验证有限合法stamp、width/height/point_step/row_step、所有fields边界/datatype/count和布尔标志。payload是原始不可解释bytes，未逐点扫描或改写；其中is_dense=False允许的无效点仍原样保留。
+- 真实raw odom stamp优先于衍生stamp，只选odom_stamp<=cloud_stamp且skew<=0.05秒的最近有效先前样本；缺失、过期和raw_odom缺失如实标识。
+- raw odom验证原始frame/child、位置/四元数/速度有限性与四元数范数；坏的较新odom不会替代可用真实prior。
+- TF保存实际记录，不插入候选外参。合法真实多跳链可识别，缺失标missing_transform_chain；非法TF记录不参与链判定。
+- TF最多128条记录/128个transform，优先保留真实source=/tf_static的记录，再保留最近动态记录；输出保持输入记录顺序。所有省略均记录omitted计数与tf_snapshot_truncated。
+- 轨迹检查最多最近8192行；TF选择检查最多最近8192条输入；字段最多128个；每条元数据复制元素预算1024、深度10、单容器128/64、单字符串256；错误明细最多32条，其余计errors_dropped。计数器名称固定，不因输入增长。
+- capture捕获常规异常并计数，不抛入主控制；缺pose/TF仍可保存原始cloud，并不影响任何控制放行条件。
+
+TDD证据
+- cloud_red.txt：34 failed，失败原因为模块尚不存在（预期RED）。
+- cloud_green_initial.txt：34 passed，初版GREEN。
+- cloud_boundaries_red.txt：5 failed、34 passed，证明source、staticTF容量、幻影链、坏TF旋转及极端arrival新测试能捕获缺陷。
+- cloud_pose_validation_red.txt：3 failed、39 passed，证明非法较新raw odom不会被错误关联的新测试能捕获缺陷。
+- cloud_green.txt：最终42 passed in 0.24s。
+- python -m py_compile 对新模块与新测试通过。
+- 按主代理明确分工，本子任务仅运行collector边界专项；height/vertical/watchdog相关回归由主代理统一执行，未将专项结果冒充全仓通过。
+
+覆盖重点
+- 带行padding的完整24字节payload及尾哨兵TAIL。
+- 输入data/header/fields/odom/TF变更后已保存证据不变；snapshot副本也不污染内部状态。
+- 完整8MiB上限、2MiB+1整帧拒绝、拒绝不消耗slot、四阶段一次性容量。
+- 回调和metadata-only快照不调用hash/base64。
+- 无未来pose、50ms边界、原始stamp权威、缺失/过期原因。
+- 实际多跳TF、缺链原始记录保存、缺source不伪造、staticTF保留、无效记录不生成虚假链。
+- metadata/error溢出与采集对象抛异常有界记录。
+
+固定SHA256（与cloud_sha256.txt一致）
+src/inspection_mission/inspection_mission/cruise_cloud_capture.py
+73F7E51481880309F9EC416CA7CF60009AB37E3D91770E8D40C42A7262C5C902
+tests/test_cruise_cloud_capture.py
+9090204CD71B905F7BDEEE3F92AB163973C6A781D3B3582DDF0B64ADD726F375
+
+证据边界
+- 所有测试为离线合成PointCloud2结构，证明采集/布局/容量/关联/编码契约。
+- 本报告不声称真实订阅已收到任何点云，也不声称本轮已取得四帧、通过仿真、取得分数或完成任务。

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "record_id": "e5d26785-01cd-41a6-acb8-02098e088649",
+  "runId": "run_20261112_080340_fad7c927",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "reverse_v30",
+  "status": "failed",
+  "full_mission_completed": false,
+  "source": {
+    "path": "dist/inspection_reverse_v30_src.zip",
+    "sha256": "22a1dc284ede916d3579ae74bcd4701acc1ae4d83e43a135cc898de8ddd33330"
+  },
+  "script": {
+    "path": "dist/run_reverse_v30.sh",
+    "sha256": "ad46102cc79d0a895a5bed7a1946b6ab902fcfd4dafd8d14b49e04fab695dc76"
+  },
+  "draw_order": null,
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "ground_points": {
+      "ground_0": null,
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "ground_4": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 38.644,
+  "failure_reason": "Platform extracted no score. Direction experiment stopped during positive initial turn due to scan_too_close; no negative-X pulse was sent and reverse response remains untested. Preserve unchanged clearance gate and diagnose initial-position geometry.",
+  "evidence_paths": [
+    "runs/evidence/20261112/reverse_v30_submit.json",
+    "runs/evidence/20261112/reverse_v30_artifacts.json",
+    "runs/evidence/20261112/reverse_v30_list_settled_check.json",
+    "runs/evidence/20261112/callback_reverse_v30.jsonl",
+    "runs/analysis/20261112_reverse_v30/validation.json",
+    "runs/analysis/20261112_reverse_v30/metrics.json",
+    "runs/analysis/20261112_reverse_v30/evidence.json"
+  ]
+}

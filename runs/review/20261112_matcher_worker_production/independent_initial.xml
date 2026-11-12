@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="1" failures="0" skipped="0" tests="1" time="0.984" timestamp="2026-11-12T05:26:54.528150+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="" name="runs.review.20261112_matcher_worker_production.review_production_cases" time="0.000"><error message="collection failure">ImportError while importing test module 'C:/Users/USER\Desktop\大学生活\ICAN\晟功杯\runs\review\20261112_matcher_worker_production\review_production_cases.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+C:\Program Files\Python313\Lib\importlib\__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+runs\review\20261112_matcher_worker_production\review_production_cases.py:11: in &lt;module&gt;
+    from inspection_mission.ground_matcher_worker import GroundMatcherWorker, LatestFrameMailbox
+E   ModuleNotFoundError: No module named 'inspection_mission'</error></testcase></testsuite></testsuites>

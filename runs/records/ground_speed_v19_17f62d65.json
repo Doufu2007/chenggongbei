@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "record_id": "17f62d65-e85d-46ed-bd78-be604d0b0de3",
+  "runId": "run_20261112_043048_33aebe21",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-speed-v19",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_speed_v19_src.zip",
+    "sha256": "57106a6b23a5ce21b1c6b5e6c3b37a14b15ad09147a04cc87f0b1fa14bf3761a"
+  },
+  "script": {
+    "path": "dist/run_ground_speed_v19.sh",
+    "sha256": "7856a1282d8f5b8caf00113477f983b00c21cf5c30a69ba632129e264f86dc3c"
+  },
+  "draw_order": [
+    "ground_2",
+    "ground_1",
+    "ground_3"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 146.274,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/speed_v19_submit.json",
+    "runs/evidence/20261112/speed_v19_artifacts.json",
+    "runs/evidence/20261112/speed_v19_list_after_callback.json",
+    "runs/evidence/20261112/callback_speed_v19.jsonl",
+    "runs/analysis/20261112_speed_v19/summary.json",
+    "runs/review/20261112_speed_v19/independent_real_metrics.json"
+  ]
+}

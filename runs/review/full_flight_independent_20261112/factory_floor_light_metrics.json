@@ -1,0 +1,203 @@
+{
+  "full_flight_source_sha256": "619d3dab44c0c47251d8a603946dbc84aa8f60367d1ea0b6e38b4898222209cd",
+  "state": "AIR_NAV_2",
+  "reason": "waiting_actual_flight_sources",
+  "stop_wall": null,
+  "reached_move": true,
+  "genuine_fix_error_m": 0.05639512098081544,
+  "genuine_fix_stamp_s": 31.2,
+  "fix_unchanged_after_light": true,
+  "recognition_reports": [
+    "发现空中巡航任务点，识别目标为坍塌废墟，执行灯光提示，将巡航信息发送回指挥中心。"
+  ],
+  "on_command_count": 21,
+  "rows": [
+    {
+      "stamp": 30.0,
+      "state": "AIR_RECOGNIZE_1",
+      "detected_count": 1
+    },
+    {
+      "stamp": 30.3,
+      "state": "AIR_RECOGNIZE_1",
+      "detected_count": 1
+    },
+    {
+      "stamp": 30.6,
+      "state": "AIR_RECOGNIZE_1",
+      "detected_count": 1
+    },
+    {
+      "stamp": 30.9,
+      "state": "AIR_RECOGNIZE_1",
+      "detected_count": 1
+    },
+    {
+      "stamp": 31.2,
+      "state": "AIR_MOVE_TO_LIGHT_1",
+      "detected_count": 1
+    },
+    {
+      "stamp": 31.3,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": false,
+      "aim_allowed": false,
+      "aim_reason": "light_not_ready"
+    },
+    {
+      "stamp": 31.4,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": false,
+      "aim_allowed": false,
+      "aim_reason": "light_not_ready"
+    },
+    {
+      "stamp": 31.5,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 31.6,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 31.7,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 31.8,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 31.9,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.0,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.1,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.2,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.3,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.4,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.5,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.6,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.7,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.8,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 32.9,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.0,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.1,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.2,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.3,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.4,
+      "state": "AIR_INSPECT_1",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    },
+    {
+      "stamp": 33.5,
+      "state": "AIR_NAV_2",
+      "light_feedback": true,
+      "aim_allowed": true,
+      "aim_reason": "ok_horizontal_plane_lateral_error_split"
+    }
+  ],
+  "errors": []
+}

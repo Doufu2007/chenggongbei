@@ -1,0 +1,174 @@
+"""One official-platform attempt: actual three-point return, then all flight tasks.
+
+This supervisor never turns a diagnostic stop into a completed competition.
+The ground and flight executors own their live evidence and control gates.
+"""
+from __future__ import annotations
+
+import argparse
+import copy
+import json
+import os
+import time
+
+
+def _dispose(node, ros, reason):
+    errors = []
+    try:
+        try:
+            node.stop(reason)
+        except Exception as exc:
+            errors.append(exc)
+        for _ in range(5):
+            try:
+                attempts = getattr(node, 'axis_publish_attempts', None)
+                previous = attempts[-1] if attempts else None
+                if node.publish_zero() is not True:
+                    raise RuntimeError('zero_publish_not_confirmed')
+                if attempts is not None:
+                    current = attempts[-1] if attempts else None
+                    if (current is None or current is previous or current.get('returned') is not True
+                            or current.get('error') is not None or current.get('linear_x') != 0.
+                            or current.get('angular_z') != 0.):
+                        raise RuntimeError('zero_publish_attempt_not_current')
+                ros.spin_once(node, timeout_sec=.02)
+            except Exception as exc:
+                errors.append(exc)
+        try:
+            node.report_final()
+        except Exception as exc:
+            errors.append(exc)
+    finally:
+        try:
+            node.close_watchdog()
+        finally:
+            node.destroy_node()
+    if errors:
+        raise errors[0]
+
+
+def _spin_with_progress(node, ros, reporter, stage, spin, *, duration_s, wall_clock):
+    original = getattr(node, 'tick', None)
+    if reporter is None or not callable(original):
+        return spin(node, ros, duration_s=duration_s, wall_clock=wall_clock)
+    started = wall_clock()
+    last = -float('inf')
+    def tick():
+        nonlocal last
+        decision = original()
+        now = wall_clock()
+        if now-last >= 5.:
+            last = now
+            try:
+                guard = node.guard
+                odom = getattr(guard, 'odom', None)
+                reporter.emit('heartbeat', {'mode': 'full_inspection', 'stage': stage,
+                    'session_id': guard.session_id, 'elapsed_wall_s': now-started,
+                    'state': str(decision.state), 'reason': str(decision.reason),
+                    'phase': str(getattr(guard, 'phase', '')),
+                    'xyz': list(odom['xyz']) if isinstance(odom, dict) and 'xyz' in odom else None,
+                    'official_score': None})
+            except Exception:
+                pass
+        return decision
+    node.tick = tick
+    try:
+        return spin(node, ros, duration_s=duration_s, wall_clock=wall_clock)
+    finally:
+        node.tick = original
+
+
+def run_ground_and_flight(ros, reporter, *, worker, ground_factory=None, flight_factory=None,
+                          spin=None, wall_clock=time.monotonic,
+                          ground_duration=1800., flight_duration=900.):
+    """Hand off only original successful ground-return evidence, after zeroing.
+
+    Dependency injection supports transport-free integration tests. It never
+    changes a controller's success state or creates a referee acknowledgement.
+    """
+    if ground_factory is None:
+        from .ground_three_point_return import create_return_three_point_node
+        ground_factory = create_return_three_point_node
+    if spin is None:
+        from .bounded_ground_probe import spin_control_loop
+        spin = spin_control_loop
+    ground = ground_factory(reporter, wall_clock=wall_clock, worker=worker)
+    result = {'completed': False, 'failed_stage': 'GROUND', 'official_score': None,
+              'session_id': ground.guard.session_id, 'ground_return_completed': False,
+              'flight_completed': False}
+    proof = None
+    try:
+        ground.report_started(ground_duration)
+        ground.arm_watchdog()
+        _spin_with_progress(ground, ros, reporter, 'GROUND', spin,
+                            duration_s=ground_duration, wall_clock=wall_clock)
+        if ground.guard.return_completed:
+            proof = copy.deepcopy(ground.guard.return_completion)
+            result['ground_return_completed'] = isinstance(proof, dict) and bool(proof)
+    finally:
+        _dispose(ground, ros, 'full_pipeline_ground_stage_exit')
+    if not result['ground_return_completed']:
+        return result
+    # Lazy import also makes an incomplete ground attempt incapable of creating
+    # UAV publishers as an accidental side effect of flight initialization.
+    if flight_factory is None:
+        from .full_flight_inspection import create_flight_inspection_node
+        flight_factory = create_flight_inspection_node
+    result['failed_stage'] = 'FLIGHT'
+    flight = flight_factory(reporter, session_id=result['session_id'],
+                            ground_return_evidence=proof, wall_clock=wall_clock)
+    try:
+        flight.report_started(flight_duration)
+        flight.arm_watchdog()
+        _spin_with_progress(flight, ros, reporter, 'FLIGHT', spin,
+                            duration_s=flight_duration, wall_clock=wall_clock)
+        result['flight_completed'] = flight.mission_completed is True
+    finally:
+        _dispose(flight, ros, 'full_pipeline_flight_stage_exit')
+    result['completed'] = result['flight_completed']
+    result['failed_stage'] = None if result['completed'] else 'FLIGHT'
+    return result
+
+
+def main(args=None):
+    import rclpy
+    from .ground_matcher_worker import GroundMatcherWorker
+    from .ground_match_result_recorder import GroundMatchResultRecorder
+    from .ground_template_catalog import load_complete_ground_templates
+    from .telemetry import DiagnosticReporter
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--ground-duration', type=float, default=1800.)
+    parser.add_argument('--flight-duration', type=float, default=900.)
+    parser.add_argument('--report-url', default=os.environ.get('INSPECTION_DIAGNOSTIC_URL', ''))
+    parsed, ros_args = parser.parse_known_args(args)
+    if not 30 <= parsed.ground_duration <= 1800 or not 30 <= parsed.flight_duration <= 900:
+        parser.error('ground duration must be 30..1800s and flight duration 30..900s')
+    # Both execution components must exist and compile before the attempt begins.
+    from .full_flight_inspection import create_flight_inspection_node
+    reporter = DiagnosticReporter(parsed.report_url)
+    worker = GroundMatchResultRecorder(GroundMatcherWorker(load_complete_ground_templates()), reporter)
+    rclpy.init(args=ros_args)
+    try:
+        result = run_ground_and_flight(rclpy, reporter, worker=worker,
+            flight_factory=create_flight_inspection_node, ground_duration=parsed.ground_duration,
+            flight_duration=parsed.flight_duration)
+        print('FULL_INSPECTION_RESULT ' + json.dumps(result, ensure_ascii=False), flush=True)
+        reporter.send_now('probe_snapshot', {'mode': 'full_inspection',
+            'section': 'full_inspection_result', **result}, timeout_s=5.)
+        return 0 if result['completed'] else 1
+    except Exception as exc:
+        detail = {'mode': 'full_inspection', 'section': 'full_inspection_exception',
+                  'completed': False, 'official_score': None,
+                  'error': type(exc).__name__ + ': ' + str(exc)[:500]}
+        print('FULL_INSPECTION_EXCEPTION ' + json.dumps(detail, ensure_ascii=False), flush=True)
+        reporter.send_now('probe_snapshot', detail, timeout_s=5.)
+        return 1
+    finally:
+        worker.close(timeout_s=.5)
+        if rclpy.ok():
+            rclpy.shutdown()
+        reporter.close()
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

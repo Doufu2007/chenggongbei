@@ -1,0 +1,38 @@
+{
+  "repository": "wbxxmz/ros2-car-first",
+  "commit": "48b3dac26b6f562ff21dd321db03fd6ffc91b492",
+  "templates": [
+    {
+      "file": "window_bird_01.jpg",
+      "class_id": "window_bird",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_01.jpg",
+      "git_blob_sha": "a4db6edd86eb182c2381632855a0a23958d757d4",
+      "sha256": "38d846afea165c47ab763b8d2d8438911d0ed41dabb015de2ef3e9247e29aaaf",
+      "size_bytes": 34614
+    },
+    {
+      "file": "window_bird_02.jpg",
+      "class_id": "window_bird",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_bird_02.jpg",
+      "git_blob_sha": "b5c0310278917445eb169795a3e5679713c72e30",
+      "sha256": "8eb1b2ac13851cecaaada1602f4c20e7c993849db05b29aea612a1b4cbcb76f2",
+      "size_bytes": 24606
+    },
+    {
+      "file": "window_target_1.jpg",
+      "class_id": "window_target",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_1.jpg",
+      "git_blob_sha": "cab402593f56bcfe6402d4462d7d5c9848a46b48",
+      "sha256": "8c4ae0fbce7eff2812068acde1e7414bb2578594d0693db1ce3f290bb19fe42e",
+      "size_bytes": 57883
+    },
+    {
+      "file": "window_target_2.jpg",
+      "class_id": "window_target",
+      "source_url": "https://github.com/wbxxmz/ros2-car-first/blob/48b3dac26b6f562ff21dd321db03fd6ffc91b492/src/ican_inspection_examples/ican_inspection_examples/templates/window_target_2.jpg",
+      "git_blob_sha": "a59c339873a1c190c8f1ddbc604409c5ea0506a5",
+      "sha256": "aa9454848f219097403fa26d5c5165c0108dfb9d143ad18ed37687bdd863c5e6",
+      "size_bytes": 42160
+    }
+  ]
+}

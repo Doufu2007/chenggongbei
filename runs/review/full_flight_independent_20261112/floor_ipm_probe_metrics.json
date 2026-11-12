@@ -1,0 +1,1098 @@
+[
+  {
+    "reference": "collapsed_ruins_02.jpg",
+    "passed": [
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 35,
+        "inliers": 34,
+        "distinct": 31,
+        "coverage": 0.3809547473612326,
+        "area": 0.10212450200033685,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 42,
+        "inliers": 39,
+        "distinct": 32,
+        "coverage": 0.4410672345344889,
+        "area": 0.10376181932529435,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 54,
+        "inliers": 40,
+        "distinct": 34,
+        "coverage": 0.42385881382553675,
+        "area": 0.10398540933882404,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 54,
+        "inliers": 40,
+        "distinct": 34,
+        "coverage": 0.42385881382553675,
+        "area": 0.10398540933882404,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 42,
+        "inliers": 39,
+        "distinct": 32,
+        "coverage": 0.4410672345344889,
+        "area": 0.10376181932529435,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 35,
+        "inliers": 34,
+        "distinct": 31,
+        "coverage": 0.3809547473612326,
+        "area": 0.10212450200033685,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 14,
+        "inliers": 6,
+        "distinct": 4,
+        "coverage": 0.3525735356474947,
+        "area": 1.6946361007706108,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "query_hull_over_projection_below_0_10",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "damaged_vehicle_01.png",
+    "passed": [
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 47,
+        "inliers": 47,
+        "distinct": 42,
+        "coverage": 0.6203433750386232,
+        "area": 0.1027876392434765,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 55,
+        "inliers": 54,
+        "distinct": 48,
+        "coverage": 0.6112427949470739,
+        "area": 0.10375227176066384,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 64,
+        "inliers": 52,
+        "distinct": 46,
+        "coverage": 0.6145127733646977,
+        "area": 0.10467931683438106,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 55,
+        "inliers": 54,
+        "distinct": 48,
+        "coverage": 0.6112427949470739,
+        "area": 0.10375227176066384,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 64,
+        "inliers": 52,
+        "distinct": 46,
+        "coverage": 0.6145127733646977,
+        "area": 0.10467931683438106,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 47,
+        "inliers": 47,
+        "distinct": 42,
+        "coverage": 0.6203433750386232,
+        "area": 0.1027876392434765,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 32,
+        "inliers": 13,
+        "distinct": 2,
+        "coverage": 0.11327070281329027,
+        "area": 9.633354894402954e-06,
+        "reasons": [
+          "query_distinct_xy_below_12",
+          "template_hull_coverage_below_0_15",
+          "projection_nonconvex_or_degenerate",
+          "query_hull_over_projection_below_0_10",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "landslide_01.jpg",
+    "passed": [
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 24,
+        "inliers": 22,
+        "distinct": 21,
+        "coverage": 0.41712671512145805,
+        "area": 0.10337624253731531,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 24,
+        "inliers": 19,
+        "distinct": 19,
+        "coverage": 0.44633874829953224,
+        "area": 0.1038467506371335,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 28,
+        "inliers": 19,
+        "distinct": 19,
+        "coverage": 0.47521437149331697,
+        "area": 0.10471310517055811,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 24,
+        "inliers": 22,
+        "distinct": 21,
+        "coverage": 0.41712671512145805,
+        "area": 0.10337624253731531,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 24,
+        "inliers": 19,
+        "distinct": 19,
+        "coverage": 0.44633874829953224,
+        "area": 0.1038467506371335,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_01.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 28,
+        "inliers": 19,
+        "distinct": 19,
+        "coverage": 0.47521437149331697,
+        "area": 0.10471310517055811,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 17,
+        "inliers": 7,
+        "distinct": 5,
+        "coverage": 0.3603228970172442,
+        "area": 0.1697765824497367,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "landslide_02.jpg",
+    "passed": [
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 19,
+        "inliers": 19,
+        "distinct": 18,
+        "coverage": 0.4559614093767041,
+        "area": 0.10323491186125515,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 22,
+        "inliers": 18,
+        "distinct": 17,
+        "coverage": 0.4979748302570392,
+        "area": 0.10529722146921171,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 31,
+        "inliers": 23,
+        "distinct": 21,
+        "coverage": 0.5852002698967508,
+        "area": 0.10523492888295506,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 31,
+        "inliers": 23,
+        "distinct": 21,
+        "coverage": 0.5852002698967508,
+        "area": 0.10523492888295506,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 19,
+        "inliers": 19,
+        "distinct": 18,
+        "coverage": 0.4559614093767041,
+        "area": 0.10323491186125515,
+        "reasons": []
+      },
+      {
+        "reference": "landslide_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 22,
+        "inliers": 18,
+        "distinct": 17,
+        "coverage": 0.4979748302570392,
+        "area": 0.10529722146921171,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 22,
+        "inliers": 10,
+        "distinct": 4,
+        "coverage": 0.17263259644379148,
+        "area": 1.0816408497177891e-05,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "rescue_camp_01.png",
+    "passed": [
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 44,
+        "inliers": 43,
+        "distinct": 41,
+        "coverage": 0.4874107859845682,
+        "area": 0.10356672118824078,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 51,
+        "inliers": 44,
+        "distinct": 40,
+        "coverage": 0.48976791837432687,
+        "area": 0.10367629742493026,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 56,
+        "inliers": 41,
+        "distinct": 40,
+        "coverage": 0.4149901232482477,
+        "area": 0.10420504889763478,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 51,
+        "inliers": 44,
+        "distinct": 40,
+        "coverage": 0.48976791837432687,
+        "area": 0.10367629742493026,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 44,
+        "inliers": 43,
+        "distinct": 41,
+        "coverage": 0.4874107859845682,
+        "area": 0.10356672118824078,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 56,
+        "inliers": 41,
+        "distinct": 40,
+        "coverage": 0.4149901232482477,
+        "area": 0.10420504889763478,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 17,
+        "inliers": 7,
+        "distinct": 6,
+        "coverage": 0.21826553011564664,
+        "area": 0.08852479009376321,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "rescue_camp_02.jpg",
+    "passed": [
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 57,
+        "inliers": 55,
+        "distinct": 48,
+        "coverage": 0.47620213976770615,
+        "area": 0.10186326484372323,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 61,
+        "inliers": 49,
+        "distinct": 45,
+        "coverage": 0.5487992026247308,
+        "area": 0.1041018061130256,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 69,
+        "inliers": 53,
+        "distinct": 49,
+        "coverage": 0.4709191660415876,
+        "area": 0.10499394000031365,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 57,
+        "inliers": 55,
+        "distinct": 48,
+        "coverage": 0.47620213976770615,
+        "area": 0.10186326484372323,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 69,
+        "inliers": 53,
+        "distinct": 49,
+        "coverage": 0.4709191660415876,
+        "area": 0.10499394000031365,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 61,
+        "inliers": 49,
+        "distinct": 45,
+        "coverage": 0.5487992026247308,
+        "area": 0.1041018061130256,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 15,
+        "inliers": 6,
+        "distinct": 6,
+        "coverage": 0.18193831316522638,
+        "area": 0.634434776506842,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "trapped_people_01.png",
+    "passed": [
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 70,
+        "inliers": 69,
+        "distinct": 63,
+        "coverage": 0.693522992833778,
+        "area": 0.10323610953599628,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 73,
+        "inliers": 68,
+        "distinct": 66,
+        "coverage": 0.6903390825549777,
+        "area": 0.1040502774085746,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 87,
+        "inliers": 73,
+        "distinct": 68,
+        "coverage": 0.6941020794530861,
+        "area": 0.10470920773613163,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 87,
+        "inliers": 73,
+        "distinct": 68,
+        "coverage": 0.6941020794530861,
+        "area": 0.10470920773613163,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 70,
+        "inliers": 69,
+        "distinct": 63,
+        "coverage": 0.693522992833778,
+        "area": 0.10323610953599628,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 73,
+        "inliers": 68,
+        "distinct": 66,
+        "coverage": 0.6903390825549777,
+        "area": 0.1040502774085746,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 34,
+        "inliers": 19,
+        "distinct": 3,
+        "coverage": 0.40253881010045317,
+        "area": 2.988481687174903e-08,
+        "reasons": [
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "trapped_people_02.jpg",
+    "passed": [
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 61,
+        "inliers": 61,
+        "distinct": 58,
+        "coverage": 0.6055671406368408,
+        "area": 0.10357107030017715,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 66,
+        "inliers": 65,
+        "distinct": 62,
+        "coverage": 0.6320677676294129,
+        "area": 0.10434698175399357,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 98,
+        "inliers": 75,
+        "distinct": 67,
+        "coverage": 0.6555581576935814,
+        "area": 0.10493075692280092,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 98,
+        "inliers": 75,
+        "distinct": 67,
+        "coverage": 0.6555581576935814,
+        "area": 0.10493075692280092,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 66,
+        "inliers": 65,
+        "distinct": 62,
+        "coverage": 0.6320677676294129,
+        "area": 0.10434698175399357,
+        "reasons": []
+      },
+      {
+        "reference": "trapped_people_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 61,
+        "inliers": 61,
+        "distinct": 58,
+        "coverage": 0.6055671406368408,
+        "area": 0.10357107030017715,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 19,
+        "inliers": 10,
+        "distinct": 4,
+        "coverage": 0.386376547767961,
+        "area": 1.3030375043551127e-05,
+        "reasons": [
+          "template_distinct_xy_below_12",
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "collapsed_ruins_01.png",
+    "passed": [
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 41,
+        "inliers": 41,
+        "distinct": 38,
+        "coverage": 0.4765718735706374,
+        "area": 0.10285385088726567,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 45,
+        "inliers": 44,
+        "distinct": 40,
+        "coverage": 0.4540749982435963,
+        "area": 0.10326505064798208,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 59,
+        "inliers": 49,
+        "distinct": 43,
+        "coverage": 0.5197797578974271,
+        "area": 0.10394684040765795,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 59,
+        "inliers": 49,
+        "distinct": 43,
+        "coverage": 0.5197797578974271,
+        "area": 0.10394684040765795,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 45,
+        "inliers": 44,
+        "distinct": 40,
+        "coverage": 0.4540749982435963,
+        "area": 0.10326505064798208,
+        "reasons": []
+      },
+      {
+        "reference": "collapsed_ruins_01.png",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 41,
+        "inliers": 41,
+        "distinct": 38,
+        "coverage": 0.4765718735706374,
+        "area": 0.10285385088726567,
+        "reasons": []
+      },
+      {
+        "reference": "rescue_camp_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 24,
+        "inliers": 12,
+        "distinct": 3,
+        "coverage": 0.23497300813509914,
+        "area": 6.68740262173944e-08,
+        "reasons": [
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  },
+  {
+    "reference": "damaged_vehicle_02.jpg",
+    "passed": [
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 38,
+        "inliers": 37,
+        "distinct": 37,
+        "coverage": 0.5932393751608502,
+        "area": 0.10333268641890545,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 53,
+        "inliers": 51,
+        "distinct": 49,
+        "coverage": 0.6270388330654112,
+        "area": 0.1041417722273411,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 75,
+        "inliers": 53,
+        "distinct": 50,
+        "coverage": 0.6201918115670079,
+        "area": 0.10494690192064995,
+        "reasons": []
+      }
+    ],
+    "best": [
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": true,
+        "good": 75,
+        "inliers": 53,
+        "distinct": 50,
+        "coverage": 0.6201918115670079,
+        "area": 0.10494690192064995,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          210,
+          180
+        ],
+        "flipped": true,
+        "good": 53,
+        "inliers": 51,
+        "distinct": 49,
+        "coverage": 0.6270388330654112,
+        "area": 0.1041417722273411,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_02.jpg",
+        "size": [
+          105,
+          90
+        ],
+        "flipped": true,
+        "good": 38,
+        "inliers": 37,
+        "distinct": 37,
+        "coverage": 0.5932393751608502,
+        "area": 0.10333268641890545,
+        "reasons": []
+      },
+      {
+        "reference": "damaged_vehicle_01.png",
+        "size": [
+          420,
+          360
+        ],
+        "flipped": false,
+        "good": 34,
+        "inliers": 16,
+        "distinct": 4,
+        "coverage": 0.2021794132923487,
+        "area": 8.424294595089223e-06,
+        "reasons": [
+          "query_distinct_xy_below_12",
+          "projection_nonconvex_or_degenerate",
+          "small_board_area"
+        ]
+      }
+    ]
+  }
+]

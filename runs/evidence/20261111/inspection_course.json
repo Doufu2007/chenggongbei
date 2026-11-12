@@ -1,0 +1,75 @@
+{
+  "success": true,
+  "data": {
+    "id": "43296edb-1673-4643-8922-f13a7523f892",
+    "title": "城市应急全域巡检环境配置",
+    "cover": "assignments/1785652657127_ql3sntt93gq_d0777327.jpg",
+    "chaptersCount": 1,
+    "category": "ICAN特训营",
+    "phase": "城市应急全域巡检任务",
+    "isPaid": true,
+    "description": null,
+    "createdAt": "2026-09-01 18:17:26.351618+08",
+    "updatedAt": "2026-10-10 02:22:22.357+08",
+    "documentKey": null,
+    "documentContent": null,
+    "documentFileName": null,
+    "type": "video",
+    "price": "6000.00",
+    "originalPrice": "6000.00",
+    "validityDays": 186,
+    "assistantId": null,
+    "assistantName": null,
+    "enableOnlinePayment": true,
+    "enableAssistantPayment": true,
+    "enableNormalPayment": true,
+    "enableContactPayment": true,
+    "enableWechatPayment": true,
+    "enableAlipayPayment": true,
+    "parsedSections": null,
+    "isVisible": true,
+    "coverUrl": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/assignments/1785652657127_ql3sntt93gq_d0777327.jpg",
+    "chapters": [
+      {
+        "id": "43ae7211-9aa1-4706-b95b-3c020deb9d14",
+        "courseId": "43296edb-1673-4643-8922-f13a7523f892",
+        "title": "环境配置",
+        "order": 1,
+        "videoUrl": null,
+        "duration": null,
+        "createdAt": "2026-10-10 02:22:22.506794+08",
+        "updatedAt": null,
+        "lessonsCount": 0,
+        "lessons": [
+          {
+            "id": "1343a3f6-7a9c-46d7-b3e8-be13607e82f3",
+            "chapterId": "43ae7211-9aa1-4706-b95b-3c020deb9d14",
+            "title": "城市应急全域巡检环境配置",
+            "order": 1,
+            "videoUrl": null,
+            "duration": null,
+            "isFree": false,
+            "createdAt": "2026-10-10 02:22:22.506794+08",
+            "updatedAt": null,
+            "content": null,
+            "videos": [
+              {
+                "id": "video-1791570018226",
+                "key": "videos/城市应急全域巡检环境配置/环境配置/城市应急全域巡检环境配置和规则简介_g6ik2ca0_fs.mp4",
+                "url": "https://coze-coding-project.tos.coze.site/coze_storage_7597639919024193571/videos/%E5%9F%8E%E5%B8%82%E5%BA%94%E6%80%A5%E5%85%A8%E5%9F%9F%E5%B7%A1%E6%A3%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/%E5%9F%8E%E5%B8%82%E5%BA%94%E6%80%A5%E5%85%A8%E5%9F%9F%E5%B7%A1%E6%A3%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE%E5%92%8C%E8%A7%84%E5%88%99%E7%AE%80%E4%BB%8B_g6ik2ca0_fs.mp4",
+                "fileName": "城市应急全域巡检环境配置和规则简介.mp4",
+                "fileSize": 97195462,
+                "faststart": true,
+                "uploadedAt": 1791570018226,
+                "optimizedAt": "2026-10-28T08:09:14.020Z",
+                "originalKey": "videos/城市应急全域巡检环境配置/环境配置/城市应急全域巡检环境配置和规则简介_g6ik2ca0.mp4"
+              }
+            ],
+            "transcript": null,
+            "transcriptStatus": "none"
+          }
+        ]
+      }
+    ]
+  }
+}

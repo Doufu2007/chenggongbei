@@ -1,0 +1,53 @@
+{
+  "kind": "bounded_vertical_response_local_implementation",
+  "verified_on_platform": false,
+  "packaged": false,
+  "uploaded": false,
+  "new_tests_passed": 49,
+  "affected_and_receiver_passed": 117,
+  "telemetry_passed": 4,
+  "frozen_ground_sources_unchanged": {
+    "src/inspection_mission/inspection_mission/ground_single_point.py": "902424ca5ba3ec208a0028645d377f4ce92ff77e5ee56205c87fac95a9b349cb",
+    "src/inspection_mission/inspection_mission/ground_observation_route.py": "5ab108c4128db8b32c18cee084fce636e8ce80700f18dd37e468006a2a58b945"
+  },
+  "files": [
+    {
+      "path": "src/inspection_mission/inspection_mission/bounded_vertical_response.py",
+      "bytes": 33793,
+      "sha256": "1ee83ca7f52a5e1e60de63f778e7caae939b9d4645f510d064bfc57f3016fd78"
+    },
+    {
+      "path": "scripts/run_bounded_vertical_response.sh",
+      "bytes": 2763,
+      "sha256": "e161324e54bd411e6d14e0051c28bb1d4f4a8454270d63fb64cd4adf262e3baf"
+    },
+    {
+      "path": "tests/test_bounded_vertical_response.py",
+      "bytes": 21082,
+      "sha256": "d0af7d1adebc194529fef11ab39792e062a3c192977719d38f2d9032437e420e"
+    },
+    {
+      "path": "docs/bounded_vertical_runtime_20261112.md",
+      "bytes": 7621,
+      "sha256": "651b6fe03168676b6ba692feb7fdb456498b2d2af9298c79d0e3edab8780b449"
+    }
+  ],
+  "covering_tests_passed": 121,
+  "review_fix": {
+    "original_source_sha256": "d6d002d2a9a0bfe8e4962ef7b49323327460ea85459f946c37e789ef74016869",
+    "new_regressions": 20,
+    "red": {
+      "failed": 15,
+      "passed": 5,
+      "junit": "review_fix_red.xml"
+    },
+    "green": {
+      "passed": 20,
+      "junit": "review_fix_green.xml"
+    },
+    "covering_junit": "review_fix_affected.xml",
+    "independent_recheck": "pending",
+    "original_artifact_snapshot": "before_review_fix/",
+    "source_frozen_for_review": true
+  }
+}

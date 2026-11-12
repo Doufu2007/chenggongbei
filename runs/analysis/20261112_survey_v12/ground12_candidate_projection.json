@@ -1,0 +1,629 @@
+{
+  "kind": "offline_candidate_ground12_projection_v12",
+  "official_scoring": "unverified",
+  "mapping_status": "candidate_unverified",
+  "camera_extrinsic_status": "candidate_unverified",
+  "source_image": {
+    "path": "runs/analysis/20261112_survey_v12/native_L000009_cb6cec12ad73d25a.jpg",
+    "sha256": "cb6cec12ad73d25a0601f75dfd4eaebe41a93ee226a01dea07cab49b2840c136"
+  },
+  "source_summary": {
+    "path": "runs/analysis/20261112_survey_v12/summary.json",
+    "sha256": "a236c70ae7ddb6cfcd555926061b98fc4ea886b86f5ffefd74f7b9e5a4ec860b"
+  },
+  "candidate_world": {
+    "path": "external_resources/ranmengjia_ICAN/binary_install/share/ican_inspection_sim/worlds/inspection_task1.world",
+    "sha256": "595cbb95a395a2ca8923b79a0a5d3523e9198711059307d8b8cde6d47f35c9c1"
+  },
+  "exposure": {
+    "topic": "/uav/camera/image",
+    "stamp_s": 30.218,
+    "frame_id": "uav/camera_link",
+    "wall_elapsed_s": 28.048390830000244,
+    "odom": {
+      "stamp_s": 30.2,
+      "wall_elapsed_s": 28.014037358000678,
+      "source_topic": "/uav/odom",
+      "frame_id": "odom",
+      "child_frame_id": "uav/base_link",
+      "position": [
+        -0.003284886781971477,
+        -0.0028213424778061017,
+        0.05500022037898893
+      ],
+      "quaternion": [
+        -5.821710865715057e-08,
+        3.0410888344700016e-07,
+        -0.5389746628196255,
+        0.8423219769413446
+      ],
+      "yaw_rad": -1.1384387200517072,
+      "linear_speed": 1.1865423339827983e-05,
+      "angular_speed": 2.0100065944994583e-06,
+      "association": "prior_uav_odom",
+      "image_minus_odom_s": 0.018000000000000682
+    },
+    "association_error": null,
+    "phase": "last_associated"
+  },
+  "camera_info_first": {
+    "header": {
+      "stamp": {
+        "sec": 2,
+        "nanosec": 885000000
+      },
+      "frame_id": "uav/camera_link"
+    },
+    "height": 800,
+    "width": 800,
+    "distortion_model": "plumb_bob",
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "k": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      -33.36921585209936,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "binning_x": 0,
+    "binning_y": 0,
+    "roi": {
+      "x_offset": 0,
+      "y_offset": 0,
+      "height": 0,
+      "width": 0,
+      "do_rectify": false
+    }
+  },
+  "camera_info_last": {
+    "header": {
+      "stamp": {
+        "sec": 30,
+        "nanosec": 218000000
+      },
+      "frame_id": "uav/camera_link"
+    },
+    "height": 800,
+    "width": 800,
+    "distortion_model": "plumb_bob",
+    "d": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "k": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "r": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      476.7030836014194,
+      0.0,
+      400.5,
+      -33.36921585209936,
+      0.0,
+      476.7030836014194,
+      400.5,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    "binning_x": 0,
+    "binning_y": 0,
+    "roi": {
+      "x_offset": 0,
+      "y_offset": 0,
+      "height": 0,
+      "width": 0,
+      "do_rectify": false
+    }
+  },
+  "camera_info_last_minus_image_stamp_s": 0.0,
+  "intrinsics_note": "Observed K/D agree; last CameraInfo header and image exposure stamp coincide in this run. Camera extrinsic remains candidate.",
+  "camera_pose_body_xyz_rpy": [
+    0.39,
+    0.0,
+    0.13,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "projection_convention": "Camera forward body +X, image right -body Y, down -body Z; use K, not stereo P.",
+  "corner_order": [
+    "world_x_minus_y_minus",
+    "world_x_plus_y_minus",
+    "world_x_plus_y_plus",
+    "world_x_minus_y_plus"
+  ],
+  "points": {
+    "ground_0": {
+      "world_corners_m": [
+        [
+          0.85,
+          -1.55,
+          0.012
+        ],
+        [
+          1.4,
+          -1.55,
+          0.012
+        ],
+        [
+          1.4,
+          -1.1500000000000001,
+          0.012
+        ],
+        [
+          0.85,
+          -1.1500000000000001,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          356.5659100111378,
+          460.59373088348104
+        ],
+        [
+          214.3552906245658,
+          451.95313257080534
+        ],
+        [
+          95.36289633206582,
+          467.02837445289566
+        ],
+        [
+          261.5809369497447,
+          482.2213908731121
+        ]
+      ],
+      "all_corners_in_frame": true,
+      "source_polygon_area_px2": 4105.023584331153,
+      "visible_polygon_area_px2": 4105.0234375,
+      "visible_area_fraction": 0.9999999642313497,
+      "bbox_extent_px": [
+        261.203013679072,
+        30.268258302306776
+      ],
+      "edge_lengths_px": [
+        142.47287533251185,
+        119.94354012311507,
+        166.91094863646694,
+        97.416121787416
+      ],
+      "visible_pixel_polygon_xy": [
+        [
+          261.5809326171875,
+          482.2214050292969
+        ],
+        [
+          95.36289978027344,
+          467.02838134765625
+        ],
+        [
+          214.35528564453125,
+          451.953125
+        ],
+        [
+          356.56591796875,
+          460.5937194824219
+        ]
+      ]
+    },
+    "ground_1": {
+      "world_corners_m": [
+        [
+          -0.275,
+          -1.55,
+          0.012
+        ],
+        [
+          0.275,
+          -1.55,
+          0.012
+        ],
+        [
+          0.275,
+          -1.1500000000000001,
+          0.012
+        ],
+        [
+          -0.275,
+          -1.1500000000000001,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          874.0514556956894,
+          492.0357199006405
+        ],
+        [
+          567.1841461163958,
+          473.39071878325865
+        ],
+        [
+          541.9837445277337,
+          507.8513672822677
+        ],
+        [
+          1045.3020123734264,
+          553.8567387783938
+        ]
+      ],
+      "all_corners_in_frame": false,
+      "source_polygon_area_px2": 17140.962979058735,
+      "visible_polygon_area_px2": 9809.14453125,
+      "visible_area_fraction": 0.5722633286842704,
+      "bbox_extent_px": [
+        503.3182678456926,
+        80.46601999513518
+      ],
+      "edge_lengths_px": [
+        307.4332151136262,
+        42.691879031053396,
+        505.41643518358694,
+        182.06754663453435
+      ],
+      "visible_pixel_polygon_xy": [
+        [
+          799.0,
+          531.34375
+        ],
+        [
+          541.9837646484375,
+          507.85137939453125
+        ],
+        [
+          567.1841430664062,
+          473.3907165527344
+        ],
+        [
+          799.0,
+          487.47564697265625
+        ]
+      ],
+      "crop_box_ltrb": [
+        541,
+        473,
+        800,
+        555
+      ],
+      "bbox_crop_file": "ground1_visible_fragment_bbox.png"
+    },
+    "ground_2": {
+      "world_corners_m": [
+        [
+          -0.275,
+          -2.9000000000000004,
+          0.012
+        ],
+        [
+          0.275,
+          -2.9000000000000004,
+          0.012
+        ],
+        [
+          0.275,
+          -2.5,
+          0.012
+        ],
+        [
+          -0.275,
+          -2.5,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          727.9061010829978,
+          439.27761562534084
+        ],
+        [
+          594.9028739383093,
+          435.4863491663709
+        ],
+        [
+          590.2427580379876,
+          441.8588911054594
+        ],
+        [
+          750.0283928994097,
+          447.2637071542296
+        ]
+      ],
+      "all_corners_in_frame": true,
+      "source_polygon_area_px2": 1010.8647929951549,
+      "visible_polygon_area_px2": 1010.8648071289062,
+      "visible_area_fraction": 1.0000000139818417,
+      "bbox_extent_px": [
+        159.78563486142207,
+        11.777357987858693
+      ],
+      "edge_lengths_px": [
+        133.05725133289243,
+        7.894679915605977,
+        159.87701881317633,
+        23.519639731897993
+      ],
+      "visible_pixel_polygon_xy": [
+        [
+          750.0283813476562,
+          447.2637023925781
+        ],
+        [
+          590.2427368164062,
+          441.85888671875
+        ],
+        [
+          594.9028930664062,
+          435.4863586425781
+        ],
+        [
+          727.9061279296875,
+          439.2776184082031
+        ]
+      ],
+      "crop_box_ltrb": [
+        590,
+        435,
+        752,
+        449
+      ],
+      "bbox_crop_file": "ground2_candidate_bbox.png"
+    },
+    "ground_3": {
+      "world_corners_m": [
+        [
+          0.925,
+          -2.2,
+          0.012
+        ],
+        [
+          1.325,
+          -2.2,
+          0.012
+        ],
+        [
+          1.325,
+          -1.65,
+          0.012
+        ],
+        [
+          0.925,
+          -1.65,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          419.0954170606691,
+          441.85956317936837
+        ],
+        [
+          337.5565107582277,
+          438.65254110069867
+        ],
+        [
+          252.55167540932948,
+          450.11525614513494
+        ],
+        [
+          351.8029860614664,
+          455.6793196641023
+        ]
+      ],
+      "all_corners_in_frame": true,
+      "source_polygon_area_px2": 1476.660369839985,
+      "visible_polygon_area_px2": 1476.660400390625,
+      "visible_area_fraction": 1.0000000206890092,
+      "bbox_extent_px": [
+        166.54374165133962,
+        17.02677856340364
+      ],
+      "edge_lengths_px": [
+        81.60194992530135,
+        85.77421447546602,
+        99.40714998937499,
+        68.69684810149444
+      ],
+      "visible_pixel_polygon_xy": [
+        [
+          351.802978515625,
+          455.6793212890625
+        ],
+        [
+          252.5516815185547,
+          450.1152648925781
+        ],
+        [
+          337.5565185546875,
+          438.65252685546875
+        ],
+        [
+          419.0954284667969,
+          441.85955810546875
+        ]
+      ]
+    },
+    "ground_4": {
+      "world_corners_m": [
+        [
+          0.925,
+          -1.05,
+          0.012
+        ],
+        [
+          1.325,
+          -1.05,
+          0.012
+        ],
+        [
+          1.325,
+          -0.5,
+          0.012
+        ],
+        [
+          0.925,
+          -0.5,
+          0.012
+        ]
+      ],
+      "pixel_corners_xy": [
+        [
+          197.6870832179759,
+          487.3298963500181
+        ],
+        [
+          73.1621901749167,
+          474.30553358959116
+        ],
+        [
+          -369.1193599720473,
+          533.9462276505542
+        ],
+        [
+          -271.1096863620876,
+          583.606061443581
+        ]
+      ],
+      "all_corners_in_frame": false,
+      "source_polygon_area_px2": 22951.778138529975,
+      "visible_polygon_area_px2": 5415.84326171875,
+      "visible_area_fraction": 0.2359661734716309,
+      "bbox_extent_px": [
+        566.8064431900232,
+        109.30052785398982
+      ],
+      "edge_lengths_px": [
+        125.20416531689561,
+        446.284642339925,
+        109.8726317764432,
+        478.58072582776055
+      ],
+      "visible_pixel_polygon_xy": [
+        [
+          0.0,
+          527.9286499023438
+        ],
+        [
+          0.0,
+          484.1712951660156
+        ],
+        [
+          73.16219329833984,
+          474.3055419921875
+        ],
+        [
+          197.6870880126953,
+          487.32989501953125
+        ]
+      ]
+    }
+  },
+  "rectification": {
+    "target": "ground_2",
+    "size_wh": [
+      352,
+      256
+    ],
+    "homography_source_pixel_to_output_pixel": [
+      [
+        0.2503012068674156,
+        -0.6933594412453118,
+        122.38150174409485
+      ],
+      [
+        0.115386619357686,
+        -4.0479404164437485,
+        1694.1789982821701
+      ],
+      [
+        4.5975558297788565e-10,
+        -0.0024968791719009674,
+        1.0
+      ]
+    ],
+    "orientation": "world +X output right / world +Y output down; semantic upright unknown",
+    "warning": "Ground_2 minimum source edge is about 7.9 pixels and bbox height about 11.8 pixels. Upsampling adds no detail. Ground_1 is truncated and was not rectified."
+  },
+  "products": [
+    {
+      "path": "runs/analysis/20261112_survey_v12/ground12_candidate_projection_overlay.png",
+      "sha256": "549b956ff4af0f4eac643cc4436b17546b9a8f96b802476d574bd139304a7a18"
+    },
+    {
+      "path": "runs/analysis/20261112_survey_v12/ground1_visible_fragment_bbox.png",
+      "sha256": "3dbb12ac5b7fcca5095a2489d3f6322a2eff53252544c4987b9d3a027f641bab"
+    },
+    {
+      "path": "runs/analysis/20261112_survey_v12/ground2_candidate_bbox.png",
+      "sha256": "489ba6950926939384205e52b50f97b1cd17ecdcb7b879ccab4acccf37a5a9db"
+    },
+    {
+      "path": "runs/analysis/20261112_survey_v12/ground2_candidate_rectified_world_axes.png",
+      "sha256": "cd8f04fc1f5339a7e803cc7a95a42c367e258bbf84103c12e259e7a635ff30ab"
+    }
+  ],
+  "limitations": [
+    "Predicted corners have not been independently measured.",
+    "No category, task progress or score evidence is inferred.",
+    "This script sends no network request, ROS command or report."
+  ]
+}

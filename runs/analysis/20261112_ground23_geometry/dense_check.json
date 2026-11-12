@@ -1,0 +1,397 @@
+{
+  "kind": "independent_numerical_crosscheck_of_continuous_extrema",
+  "phase_count": 55,
+  "samples_per_phase": 25001,
+  "largest_dense_minus_analytic_m": 0.0,
+  "input_report_sha256": "2eac2f9bcf0daff311b09f134852648ba66abcbd8b0c86ab0b5715ad7593f41d",
+  "script_sha256": "f29415450d1f0dc03d69e8c9c581955c7c1b70867eacfa7dbd4bdf16b90c4e60",
+  "all_extrema_agree_within_1e_8m": true,
+  "rows": [
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.2893760156980183,
+      "dense_m": 1.2893760156980183,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "entry_leg_1",
+      "analytic_m": 0.6950000000000001,
+      "dense_m": 0.6950000000000001,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "entry_leg_2_turn",
+      "analytic_m": 0.6950000000000001,
+      "dense_m": 0.6950000000000001,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_original_axis_to_center",
+      "phase": "entry_leg_2",
+      "analytic_m": 0.5699999999999998,
+      "dense_m": 0.5699999999999998,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "entry_leg_1",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "entry_leg_2_turn",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_requested_axis",
+      "phase": "entry_leg_2",
+      "analytic_m": 0.6950000000000001,
+      "dense_m": 0.6950000000000001,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.2065299955472482,
+      "dense_m": 1.206529995547248,
+      "gap_m": -2.220446049250313e-16
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.2065299955472482,
+      "dense_m": 1.206529995547248,
+      "gap_m": -2.220446049250313e-16
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "entry_leg_1",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "entry_leg_2_turn",
+      "analytic_m": 1.165,
+      "dense_m": 1.165,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_existing_axis",
+      "phase": "entry_leg_2",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "entry_leg_1",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "entry_leg_2_turn",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "entry_leg_2",
+      "analytic_m": 0.66203970247832,
+      "dense_m": 0.66203970247832,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_optional_diagonal",
+      "phase": "optional_final_alignment",
+      "analytic_m": 0.66203970247832,
+      "dense_m": 0.66203970247832,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.245,
+      "dense_m": 1.245,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "entry_leg_1",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "entry_leg_2_turn",
+      "analytic_m": 0.6499999999999999,
+      "dense_m": 0.6499999999999999,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "entry_leg_2",
+      "analytic_m": 0.6507295440351859,
+      "dense_m": 0.6507295440351859,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_2_recommended_diagonal",
+      "phase": "optional_final_alignment",
+      "analytic_m": 0.6507295440351859,
+      "dense_m": 0.6507295440351859,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "observation_leg_1_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "observation_leg_1",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "observation_leg_2_turn",
+      "analytic_m": 0.65,
+      "dense_m": 0.65,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "observation_leg_2",
+      "analytic_m": 0.73,
+      "dense_m": 0.73,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "observation_visual_heading",
+      "analytic_m": 1.2065299955472482,
+      "dense_m": 1.206529995547248,
+      "gap_m": -2.220446049250313e-16
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "entry_leg_1_turn",
+      "analytic_m": 1.2065299955472482,
+      "dense_m": 1.206529995547248,
+      "gap_m": -2.220446049250313e-16
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "entry_leg_1",
+      "analytic_m": 0.6902673493037035,
+      "dense_m": 0.6902673493037035,
+      "gap_m": 0.0
+    },
+    {
+      "plan": "ground_3_recommended_diagonal",
+      "phase": "optional_final_alignment",
+      "analytic_m": 0.6902673493037035,
+      "dense_m": 0.6902673493037035,
+      "gap_m": 0.0
+    }
+  ],
+  "note": "Numerical cross-check of a candidate design, not sensor validation or official acceptance."
+}

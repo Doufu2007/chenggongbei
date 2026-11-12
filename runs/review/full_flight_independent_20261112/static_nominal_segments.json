@@ -1,0 +1,366 @@
+[
+  {
+    "state": "TAKEOFF",
+    "from": [
+      0,
+      0,
+      0.055
+    ],
+    "to": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_1_APPROACH",
+    "from": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "to": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_1_DECLARE",
+    "from": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "to": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_1_RECOGNIZE",
+    "from": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "to": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_1_DESCEND",
+    "from": [
+      1.05,
+      -0.3275,
+      1.282
+    ],
+    "to": [
+      1.05,
+      -0.3275,
+      0.75
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_1_CROSS",
+    "from": [
+      1.05,
+      -0.3275,
+      0.75
+    ],
+    "to": [
+      2.65,
+      -0.3275,
+      0.75
+    ],
+    "clear": true
+  },
+  {
+    "state": "RECOVER_AFTER_WINDOW_1",
+    "from": [
+      2.65,
+      -0.3275,
+      0.75
+    ],
+    "to": [
+      2.65,
+      -0.3275,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_NAV_1",
+    "from": [
+      2.65,
+      -0.3275,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -2.15,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_RECOGNIZE_1",
+    "from": [
+      3.08,
+      -2.15,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -2.15,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_MOVE_TO_LIGHT_1",
+    "from": [
+      3.08,
+      -2.15,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -0.32,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_INSPECT_1",
+    "from": [
+      3.08,
+      -0.32,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -0.32,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_NAV_2",
+    "from": [
+      3.08,
+      -0.32,
+      0.9
+    ],
+    "to": [
+      3.08,
+      0.45,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_RECOGNIZE_2",
+    "from": [
+      3.08,
+      0.45,
+      0.9
+    ],
+    "to": [
+      3.08,
+      0.45,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_MOVE_TO_LIGHT_2",
+    "from": [
+      3.08,
+      0.45,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -1.355,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "AIR_INSPECT_2",
+    "from": [
+      3.08,
+      -1.355,
+      0.9
+    ],
+    "to": [
+      3.08,
+      -1.355,
+      0.9
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_2_APPROACH",
+    "from": [
+      3.08,
+      -1.355,
+      0.9
+    ],
+    "to": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_2_DECLARE",
+    "from": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "to": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_2_RECOGNIZE",
+    "from": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "to": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_2_DESCEND",
+    "from": [
+      2.75,
+      -2.3725,
+      1.282
+    ],
+    "to": [
+      2.75,
+      -2.3725,
+      0.75
+    ],
+    "clear": true
+  },
+  {
+    "state": "WINDOW_2_CROSS",
+    "from": [
+      2.75,
+      -2.3725,
+      0.75
+    ],
+    "to": [
+      1.2,
+      -2.3725,
+      0.75
+    ],
+    "clear": true
+  },
+  {
+    "state": "RECOVER_AFTER_WINDOW_2",
+    "from": [
+      1.2,
+      -2.3725,
+      0.75
+    ],
+    "to": [
+      1.2,
+      -2.3725,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "RETURN_UAV_VIA_1",
+    "from": [
+      1.2,
+      -2.3725,
+      1.282
+    ],
+    "to": [
+      0.6,
+      -2.3725,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "RETURN_UAV_VIA_2",
+    "from": [
+      0.6,
+      -2.3725,
+      1.282
+    ],
+    "to": [
+      0.6,
+      0.0,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "RETURN_UAV",
+    "from": [
+      0.6,
+      0.0,
+      1.282
+    ],
+    "to": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "LAND_DECLARE",
+    "from": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "to": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "clear": true
+  },
+  {
+    "state": "LAND",
+    "from": [
+      0.0,
+      0.0,
+      1.282
+    ],
+    "to": [
+      0.0,
+      0.0,
+      0.055
+    ],
+    "clear": true
+  }
+]

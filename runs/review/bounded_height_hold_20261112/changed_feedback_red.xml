@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.506" timestamp="2026-11-12T08:02:14.447246+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="tests.test_bounded_height_hold" name="test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent[feedback_changed]" time="0.021"><failure message="AssertionError: assert (0.02695 == 0.0)&#10; +  where 0.02695 = VerticalDecision(linear_z=0.02695, state='ASCEND', reason='bounded_local_height_feedback').linear_z">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x00000247F1B248A0&gt;
+fault = 'feedback_changed'
+
+    @pytest.mark.parametrize("fault", ["sensor_age", "motion_budget", "hold_deadline", "dds_match", "dds_query_failure", "dds_query_delay", "ground_failure", "feedback_changed"])
+    def test_blocking_ground_or_match_fault_cannot_send_stale_nonzero_and_zero_is_independent(monkeypatch, fault):
+        node, _, outputs, wall = transport(monkeypatch)
+        before = len(outputs)
+        original = node.publisher_by_topic["/cmd_vel"].publish
+        send_wall = {"sensor_age":1.51,"motion_budget":26.11,"hold_deadline":9.31,
+                     "dds_match":1.32,"dds_query_failure":1.32,"dds_query_delay":1.51,"ground_failure":1.32,"feedback_changed":1.32}[fault]
+        wall[0] = 1.31
+        def delayed(m):
+            original(m)
+            wall[0] = 1.32 if fault == "dds_query_delay" else send_wall
+            if fault == "dds_match": node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = lambda:0
+            elif fault == "dds_query_failure":
+                def bad(): raise RuntimeError("DDS query failed")
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = bad
+            elif fault == "dds_query_delay":
+                def slow(): wall[0] = send_wall; return 1
+                node.publisher_by_topic["/uav/cmd_vel"].get_subscription_count = slow
+            elif fault == "ground_failure": raise RuntimeError("ground failed")
+            elif fault == "feedback_changed": node.guard.update_odom(odom(11.32,z=.156),wall_s=1.32)
+        node.publisher_by_topic["/cmd_vel"].publish = delayed
+        d = node.tick()
+        following = [v for t,v in outputs[before:] if t == "/uav/cmd_vel"]
+        assert following and all(v == (0.,)*6 for v in following)
+&gt;       assert d.linear_z == 0. and node.guard.commands[-1]["linear_z"] == 0.
+E       AssertionError: assert (0.02695 == 0.0)
+E        +  where 0.02695 = VerticalDecision(linear_z=0.02695, state='ASCEND', reason='bounded_local_height_feedback').linear_z
+
+tests\test_bounded_height_hold.py:272: AssertionError</failure></testcase></testsuite></testsuites>

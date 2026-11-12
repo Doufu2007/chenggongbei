@@ -1,0 +1,1291 @@
+{
+  "homography_source_to_bev": [
+    [
+      -1.5270004223236444,
+      -0.6000002097158712,
+      850.8002691213508
+    ],
+    [
+      7.795490515692542e-16,
+      -2.760000321540234,
+      1831.92326029419
+    ],
+    [
+      2.102656232090438e-18,
+      -0.0025000002448558856,
+      1.0
+    ]
+  ],
+  "results": [
+    {
+      "reference": "collapsed_ruins_02.jpg",
+      "label": "坍塌废墟",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 167,
+              "confidence": 0.9277777777777778
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 168,
+              "confidence": 0.9438202247191011
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 167,
+              "confidence": 0.9766081871345029
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 169,
+              "confidence": 0.9712643678160919
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 75,
+              "confidence": 0.8823529411764706
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 81,
+              "confidence": 0.9418604651162791
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 76,
+              "confidence": 0.8539325842696629
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 80,
+              "confidence": 0.898876404494382
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 73,
+              "confidence": 0.9012345679012346
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 74,
+              "confidence": 0.9487179487179487
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 79,
+              "confidence": 0.9518072289156626
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 79,
+              "confidence": 0.9404761904761905
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 49,
+              "confidence": 0.9245283018867925
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 45,
+              "confidence": 0.8823529411764706
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 39,
+              "confidence": 0.9285714285714286
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 43,
+              "confidence": 0.9347826086956522
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "collapsed_ruins_01.png",
+      "label": "坍塌废墟",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 118,
+              "confidence": 0.8489208633093526
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 127,
+              "confidence": 0.900709219858156
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 132,
+              "confidence": 0.9428571428571428
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 124,
+              "confidence": 0.8985507246376812
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 90,
+              "confidence": 0.8181818181818182
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 84,
+              "confidence": 0.7850467289719626
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 86,
+              "confidence": 0.86
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 87,
+              "confidence": 0.7767857142857143
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 63,
+              "confidence": 0.875
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 68,
+              "confidence": 0.9577464788732394
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 66,
+              "confidence": 0.9705882352941176
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 71,
+              "confidence": 0.8987341772151899
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 66,
+              "confidence": 0.8571428571428571
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 64,
+              "confidence": 0.810126582278481
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 75,
+              "confidence": 0.9146341463414634
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "坍塌废墟",
+              "inliers": 74,
+              "confidence": 0.8809523809523809
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "damaged_vehicle_01.png",
+      "label": "受损车辆",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 193,
+              "confidence": 0.8539823008849557
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 209,
+              "confidence": 0.9126637554585153
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 208,
+              "confidence": 0.9162995594713657
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 200,
+              "confidence": 0.8583690987124464
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 116,
+              "confidence": 0.7891156462585034
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 132,
+              "confidence": 0.8979591836734694
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 134,
+              "confidence": 0.8874172185430463
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 137,
+              "confidence": 0.9133333333333333
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 115,
+              "confidence": 0.9583333333333334
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 115,
+              "confidence": 0.9426229508196722
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 109,
+              "confidence": 0.956140350877193
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 115,
+              "confidence": 0.9583333333333334
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 99,
+              "confidence": 0.8319327731092437
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 88,
+              "confidence": 0.822429906542056
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 102,
+              "confidence": 0.864406779661017
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 107,
+              "confidence": 0.8991596638655462
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "damaged_vehicle_02.jpg",
+      "label": "受损车辆",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 206,
+              "confidence": 0.9074889867841409
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 207,
+              "confidence": 0.915929203539823
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 215,
+              "confidence": 0.9598214285714286
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 212,
+              "confidence": 0.9506726457399103
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 99,
+              "confidence": 0.9
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 101,
+              "confidence": 0.9017857142857143
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 104,
+              "confidence": 0.9043478260869565
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 110,
+              "confidence": 0.9322033898305084
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 97,
+              "confidence": 0.9603960396039604
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 96,
+              "confidence": 0.96
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 87,
+              "confidence": 0.9456521739130435
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 90,
+              "confidence": 0.9473684210526315
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 69,
+              "confidence": 0.8961038961038961
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 70,
+              "confidence": 0.9210526315789473
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 73,
+              "confidence": 0.948051948051948
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "受损车辆",
+              "inliers": 73,
+              "confidence": 0.948051948051948
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "landslide_01.jpg",
+      "label": "滑坡塌方",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 56,
+              "confidence": 0.8888888888888888
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 59,
+              "confidence": 0.9516129032258065
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 63,
+              "confidence": 0.9402985074626866
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 57,
+              "confidence": 0.8507462686567164
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 41,
+              "confidence": 0.8723404255319149
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 49,
+              "confidence": 0.8909090909090909
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 51,
+              "confidence": 0.9272727272727272
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 45,
+              "confidence": 0.9375
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 17,
+              "confidence": 0.8095238095238095
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 20,
+              "confidence": 0.9523809523809523
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 19,
+              "confidence": 0.9047619047619048
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 17,
+              "confidence": 0.9444444444444444
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 27,
+              "confidence": 0.9310344827586207
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 30,
+              "confidence": 0.967741935483871
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 31,
+              "confidence": 0.96875
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 28,
+              "confidence": 1.0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "landslide_02.jpg",
+      "label": "滑坡塌方",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 104,
+              "confidence": 0.8666666666666667
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 105,
+              "confidence": 0.9210526315789473
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 111,
+              "confidence": 0.9487179487179487
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 114,
+              "confidence": 0.9344262295081968
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 49,
+              "confidence": 0.8448275862068966
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 43,
+              "confidence": 0.7678571428571429
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 48,
+              "confidence": 0.8135593220338984
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 45,
+              "confidence": 0.8823529411764706
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 66,
+              "confidence": 0.8918918918918919
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 72,
+              "confidence": 0.9230769230769231
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 70,
+              "confidence": 0.9859154929577465
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 68,
+              "confidence": 0.918918918918919
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 35,
+              "confidence": 0.8974358974358975
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 30,
+              "confidence": 0.8108108108108109
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 36,
+              "confidence": 0.9230769230769231
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "滑坡塌方",
+              "inliers": 39,
+              "confidence": 0.9285714285714286
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "rescue_camp_01.png",
+      "label": "救援营地",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 106,
+              "confidence": 0.8688524590163934
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 112,
+              "confidence": 0.8818897637795275
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 122,
+              "confidence": 0.9312977099236641
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 109,
+              "confidence": 0.8582677165354331
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 61,
+              "confidence": 0.8714285714285714
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 63,
+              "confidence": 0.875
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 59,
+              "confidence": 0.9365079365079365
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 54,
+              "confidence": 0.8709677419354839
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 73,
+              "confidence": 0.8588235294117647
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 73,
+              "confidence": 0.9358974358974359
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 77,
+              "confidence": 0.9058823529411765
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 83,
+              "confidence": 0.9325842696629213
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 48,
+              "confidence": 0.8727272727272727
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 48,
+              "confidence": 0.8727272727272727
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 50,
+              "confidence": 0.8620689655172413
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 50,
+              "confidence": 0.8771929824561403
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "rescue_camp_02.jpg",
+      "label": "救援营地",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 275,
+              "confidence": 0.9105960264900662
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 291,
+              "confidence": 0.9297124600638977
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 288,
+              "confidence": 0.9473684210526315
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 279,
+              "confidence": 0.9457627118644067
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 154,
+              "confidence": 0.9625
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 160,
+              "confidence": 0.963855421686747
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 162,
+              "confidence": 0.9642857142857143
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 160,
+              "confidence": 0.9696969696969697
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 135,
+              "confidence": 0.9246575342465754
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 132,
+              "confidence": 0.9361702127659575
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 132,
+              "confidence": 0.9361702127659575
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 137,
+              "confidence": 0.9319727891156463
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "救援营地",
+              "inliers": 71,
+              "confidence": 0.8987341772151899
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "救援营地",
+              "inliers": 70,
+              "confidence": 0.813953488372093
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "救援营地",
+              "inliers": 69,
+              "confidence": 0.8961038961038961
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "救援营地",
+              "inliers": 64,
+              "confidence": 0.927536231884058
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "trapped_people_01.png",
+      "label": "被困人员",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 268,
+              "confidence": 0.9337979094076655
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 271,
+              "confidence": 0.9508771929824561
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 266,
+              "confidence": 0.9743589743589743
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 267,
+              "confidence": 0.9501779359430605
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 170,
+              "confidence": 0.8333333333333334
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 194,
+              "confidence": 0.9463414634146341
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 193,
+              "confidence": 0.9414634146341463
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 185,
+              "confidence": 0.9113300492610837
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 149,
+              "confidence": 0.9254658385093167
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 159,
+              "confidence": 0.9464285714285714
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 150,
+              "confidence": 0.9493670886075949
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 149,
+              "confidence": 0.9490445859872612
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 135,
+              "confidence": 0.9375
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 128,
+              "confidence": 0.9343065693430657
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 135,
+              "confidence": 0.9782608695652174
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 130,
+              "confidence": 0.948905109489051
+            }
+          ]
+        }
+      }
+    },
+    {
+      "reference": "trapped_people_02.jpg",
+      "label": "被困人员",
+      "matches": {
+        "original": {},
+        "physical_aspect_210x180": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 243,
+              "confidence": 0.9604743083003953
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 246,
+              "confidence": 0.9761904761904762
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 244,
+              "confidence": 0.9838709677419355
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 242,
+              "confidence": 0.968
+            }
+          ]
+        },
+        "physical_aspect_140x120": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 148,
+              "confidence": 0.9079754601226994
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 137,
+              "confidence": 0.8782051282051282
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 145,
+              "confidence": 0.9177215189873418
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 140,
+              "confidence": 0.8860759493670886
+            }
+          ]
+        },
+        "proportional_300": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 151,
+              "confidence": 0.9263803680981595
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 143,
+              "confidence": 0.934640522875817
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 146,
+              "confidence": 0.9605263157894737
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 149,
+              "confidence": 0.9551282051282052
+            }
+          ]
+        },
+        "proportional_150": {
+          "mirror_True_rot_0": [
+            {
+              "target_id": "被困人员",
+              "inliers": 112,
+              "confidence": 0.9333333333333333
+            }
+          ],
+          "mirror_True_rot_1": [
+            {
+              "target_id": "被困人员",
+              "inliers": 113,
+              "confidence": 0.9186991869918699
+            }
+          ],
+          "mirror_True_rot_2": [
+            {
+              "target_id": "被困人员",
+              "inliers": 110,
+              "confidence": 0.9243697478991597
+            }
+          ],
+          "mirror_True_rot_3": [
+            {
+              "target_id": "被困人员",
+              "inliers": 102,
+              "confidence": 0.8429752066115702
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

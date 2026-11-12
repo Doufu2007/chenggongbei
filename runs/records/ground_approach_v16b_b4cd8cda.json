@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "record_id": "b4cd8cda-f442-41dc-8dd6-2a2a4c5c5484",
+  "runId": "run_20261112_032806_33175195",
+  "kind": "interface_probe",
+  "evaluation_mode": "practice",
+  "condition_id": null,
+  "variant": "ground-bounded-approach-v16b",
+  "status": "failed",
+  "full_mission_completed": null,
+  "source": {
+    "path": "dist/inspection_ground_approach_v16b_src.zip",
+    "sha256": "38c337af70dd5185c3dcebdd3e0a3534a06ee1addd91987dc5c2c60c3ceecc47"
+  },
+  "script": {
+    "path": "dist/run_ground_approach_v16b.sh",
+    "sha256": "67d45c70c1e8fa57bfccc6dfeaa36e7110274e7225e624501892dc6acaae0131"
+  },
+  "draw_order": [
+    "ground_1",
+    "ground_0",
+    "ground_3"
+  ],
+  "scores": {
+    "items": {
+      "ground_1": null,
+      "ground_2": null,
+      "ground_3": null,
+      "window_1": null,
+      "aerial_1": null,
+      "aerial_2": null,
+      "window_2": null,
+      "landing": null
+    },
+    "total": null,
+    "manual": null
+  },
+  "duration_s": 167.614,
+  "failure_reason": "流程未检测到完整结束标志（未提取到成绩）",
+  "evidence_paths": [
+    "runs/evidence/20261112/approach_v16b_artifacts.json",
+    "runs/evidence/20261112/approach_v16b_list_settled.json",
+    "runs/evidence/20261112/approach_v16b_submit_retry.json",
+    "runs/evidence/20261112/callback_approach_v16b.jsonl",
+    "runs/analysis/20261112_approach_v16b/summary.json",
+    "runs/analysis/20261112_approach_v16b/native_L000017_b4fb1bf1c8ce141a.jpg",
+    "runs/analysis/20261112_approach_v16b/native_L000019_5514907183cfdd93.jpg",
+    "runs/analysis/20261112_approach_v16b/native_L000020_a672e7739804717c.jpg",
+    "runs/analysis/20261112_approach_v16b/native_L000022_5514907183cfdd93.jpg",
+    "runs/analysis/20261112_approach_v16b/native_L000023_0fe2de202b023378.jpg",
+    "runs/analysis/20261112_approach_v16b/native_L000025_69bbc2a1c81d95c0.jpg"
+  ]
+}

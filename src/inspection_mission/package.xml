@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>inspection_mission</name>
+  <version>0.2.0</version>
+  <description>Configurable ground and aerial inspection mission for ROS2 Humble.</description>
+  <maintainer email="team@example.invalid">inspection team</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_python</buildtool_depend>
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>rosidl_runtime_py</exec_depend>
+  <exec_depend>sensor_msgs_py</exec_depend>
+  <exec_depend>python3-opencv</exec_depend>
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

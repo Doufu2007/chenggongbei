@@ -1,0 +1,26 @@
+Public GitHub snapshot verification — 2026-11-12
+
+Scope: local implementation and fixture tests in the sanitized public snapshot.
+These results do not establish official platform task completion or competition scores.
+
+Full test suite
+Command: python -m pytest tests -q --disable-warnings --tb=short
+Exit code: 0
+Final output: 1811 passed in 269.10s (0:04:29)
+
+Post-suite archival correction
+34 historical dist/run_*.sh launchers had their redacted diagnostic placeholder
+changed to an optional caller-provided INSPECTION_DIAGNOSTIC_URL with an empty
+default, disabling external diagnostic requests by default. No competition
+controller/source ZIP bytes were changed by this correction. Original source
+hashes remain in PUBLIC_SNAPSHOT_MANIFEST.json alongside the updated public hashes.
+
+Targeted test after the correction
+Command: python -m pytest tests/test_full_inspection_launcher_v42.py -q --disable-warnings --tb=short
+Exit code: 0
+Final output: 14 passed in 5.77s
+
+Archive integrity
+All 2115 manifest file entries matched their published SHA256 after the correction.
+The v41 source ZIP retains its original SHA256:
+a2eaafc89bbfc8a185496e5df0f707f365652790d0747b548aa29cd8d9c6663d

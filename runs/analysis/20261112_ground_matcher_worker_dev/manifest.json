@@ -1,0 +1,66 @@
+{
+  "kind": "read_only_latest_frame_worker_prototype_delivery",
+  "created_at": "2026-11-11T21:10:18.487308+00:00",
+  "prototype_only": true,
+  "production_modified": false,
+  "matcher_sha256": "1b9c9b3cd658f5192307161dbbe21954968e9680c98424250d2d0836e1dc710d",
+  "local_tests_passed": 13,
+  "independent_tests_passed": 8,
+  "benchmark_source_matches": true,
+  "files": [
+    {
+      "path": "benchmark_20hz.py",
+      "size_bytes": 6863,
+      "sha256": "2311a89c02c3ef35fcb40dd0670af9da0ad40a228640d5a9b4c0be738c1291b8"
+    },
+    {
+      "path": "benchmark_report.json",
+      "size_bytes": 565020,
+      "sha256": "95648c167769e07a4edc8a5eda8de861ca593d37cf582d7ab85752ef18f53d26"
+    },
+    {
+      "path": "benchmark_report_final.json",
+      "size_bytes": 565391,
+      "sha256": "cd3b5939612887da83fde3e168aafb19f3c017c664853f5daf136ce74982d150"
+    },
+    {
+      "path": "heartbeat_ticks.csv",
+      "size_bytes": 20831,
+      "sha256": "0e2d3224b8831464d24f60369b1b6306c858be483497acb895dea674989edb0c"
+    },
+    {
+      "path": "heartbeat_ticks_final.csv",
+      "size_bytes": 21807,
+      "sha256": "e0f0a5da8e8db49bca0941b71db0b90fcdfda5c60767cabf55d203e4171ddde7"
+    },
+    {
+      "path": "latest_frame_worker.py",
+      "size_bytes": 9516,
+      "sha256": "c31e007852bad751f9ec2c9393c56835b0d1da904f3c818fc538c9ccc5335da5"
+    },
+    {
+      "path": "prototype_tests.xml",
+      "size_bytes": 1833,
+      "sha256": "44890a2574e66bedc3cf7d7ad27621bcc2d681b24318554215777702d1ecbc43"
+    },
+    {
+      "path": "prototype_tests_final.xml",
+      "size_bytes": 2312,
+      "sha256": "b9aa3185607e06243d7b1ff53b58b1d886cfea52409594652c327f59924c6d3c"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3423,
+      "sha256": "7aa75021985e572b337253abcb4bb11514d9a5b29bd07763891dd502b7705ae2"
+    },
+    {
+      "path": "worker_cases.py",
+      "size_bytes": 4439,
+      "sha256": "592783fa3dddc6134f2239dbedb7c4456a96c9da64739f0d5fa93b7387f524f3"
+    }
+  ],
+  "excludes": [
+    "manifest.json",
+    "__pycache__"
+  ]
+}

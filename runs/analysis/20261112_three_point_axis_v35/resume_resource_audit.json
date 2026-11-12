@@ -1,0 +1,180 @@
+{
+  "schema": "v35_resume_resource_audit_v1",
+  "source_bundle_sha256": "196d4f6abcc9f8979b9d5a46b98ecf45cb0b5a0d47250ec7759fa7c83bd99200",
+  "resume_count": 3,
+  "max_resumes": 3,
+  "successful_resume_records": [
+    {
+      "resume_number": 1,
+      "source_reason": "odom_stale_or_invalid",
+      "pause_elapsed_s": 7.873487996999756,
+      "resume_elapsed_s": 9.038541366997379,
+      "pause_state_log_duration_s": 1.1650533699976222,
+      "trigger_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 11.0,
+          "wall_age_s": 0.14509619700038456
+        },
+        "odom": {
+          "stamp_s": 11.14,
+          "wall_age_s": 0.0005592390007223003,
+          "clock_minus_stamp_s": -0.14000000000000057,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 11.0,
+          "wall_age_s": 0.1438771290013392,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        }
+      },
+      "first_logged_stability_elapsed_s": 7.974679231996561,
+      "stable_to_resume_wall_span_s": 1.063862135000818,
+      "stable_to_resume_odom_span_s": 1.0399999999999991,
+      "resume_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 12.2,
+          "wall_age_s": 0.0843226639990462
+        },
+        "odom": {
+          "stamp_s": 12.28,
+          "wall_age_s": 0.0026275579984940123,
+          "clock_minus_stamp_s": -0.08000000000000007,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 12.25,
+          "wall_age_s": 0.03370914100014488,
+          "clock_minus_stamp_s": -0.05000000000000071,
+          "fresh": true
+        }
+      },
+      "resumed_phase": "DRIVE",
+      "sampled_pause_path_lower_bound_m": 2.0275103794588414e-05
+    },
+    {
+      "resume_number": 2,
+      "source_reason": "odom_stale_or_invalid",
+      "pause_elapsed_s": 74.1234044849989,
+      "resume_elapsed_s": 75.1846229929979,
+      "pause_state_log_duration_s": 1.0612185079990013,
+      "trigger_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 76.0,
+          "wall_age_s": 0.16360039400024107
+        },
+        "odom": {
+          "stamp_s": 76.16,
+          "wall_age_s": 0.0005390939986682497,
+          "clock_minus_stamp_s": -0.1599999999999966,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 76.003,
+          "wall_age_s": 0.16029377200175077,
+          "clock_minus_stamp_s": -0.0030000000000001137,
+          "fresh": true
+        }
+      },
+      "first_logged_stability_elapsed_s": 74.17384751299687,
+      "stable_to_resume_wall_span_s": 1.0107754800010298,
+      "stable_to_resume_odom_span_s": 1.0,
+      "resume_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 77.2,
+          "wall_age_s": 0.005505103999894345
+        },
+        "odom": {
+          "stamp_s": 77.2,
+          "wall_age_s": 0.004993344999093097,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 77.153,
+          "wall_age_s": 0.05194669100092142,
+          "clock_minus_stamp_s": 0.046999999999997044,
+          "fresh": true
+        }
+      },
+      "resumed_phase": "DRIVE_SETTLE",
+      "sampled_pause_path_lower_bound_m": 8.76708994203736e-06
+    },
+    {
+      "resume_number": 3,
+      "source_reason": "odom_stale_or_invalid",
+      "pause_elapsed_s": 83.28080105399931,
+      "resume_elapsed_s": 84.34588316399822,
+      "pause_state_log_duration_s": 1.0650821099989116,
+      "trigger_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 85.0,
+          "wall_age_s": 0.15795342700221227
+        },
+        "odom": {
+          "stamp_s": 85.14,
+          "wall_age_s": 0.01205106600173167,
+          "clock_minus_stamp_s": -0.14000000000000057,
+          "fresh": false
+        },
+        "scan": {
+          "stamp_s": 85.003,
+          "wall_age_s": 0.15474060700216796,
+          "clock_minus_stamp_s": -0.0030000000000001137,
+          "fresh": true
+        }
+      },
+      "first_logged_stability_elapsed_s": 83.33130368799902,
+      "stable_to_resume_wall_span_s": 1.0145794759991986,
+      "stable_to_resume_odom_span_s": 1.0,
+      "resume_timing": {
+        "clock_sampling_lag_s": 0.12,
+        "sensor_age_s": 0.2,
+        "clock": {
+          "stamp_s": 86.2,
+          "wall_age_s": 0.0023702910002612043
+        },
+        "odom": {
+          "stamp_s": 86.2,
+          "wall_age_s": 0.0016411920005339198,
+          "clock_minus_stamp_s": 0.0,
+          "fresh": true
+        },
+        "scan": {
+          "stamp_s": 86.153,
+          "wall_age_s": 0.049108412000350654,
+          "clock_minus_stamp_s": 0.046999999999997044,
+          "fresh": true
+        }
+      },
+      "resumed_phase": "TURN",
+      "sampled_pause_path_lower_bound_m": 1.0430502282809427e-05
+    }
+  ],
+  "cumulative_pause_state_log_s": 3.291353987995535,
+  "clock_note": "PAUSE entry/exit times come from state log snapshots, not dedicated exact pause anchors; sub-millisecond logging delay is not reconstructed.",
+  "proposal_only_not_implemented": {
+    "new_version_required": true,
+    "max_resumes": 32,
+    "max_single_pause_wall_s": 5.0,
+    "max_cumulative_pause_wall_s": 60.0,
+    "global_wall_s": 1200.0,
+    "visual_recapture_max_per_point": 1,
+    "sensor_age_s": 0.2,
+    "current_camera_liveness_s": 0.5,
+    "prior_pose_max_skew_s": 0.05,
+    "clock_min_delta_s": -0.12,
+    "freeze_before_upload": true,
+    "no_freshness_or_clearance_relaxation": true
+  }
+}

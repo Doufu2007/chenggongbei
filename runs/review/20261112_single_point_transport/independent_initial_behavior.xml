@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="8" time="5.356" timestamp="2026-11-12T05:43:47.721608+08:00" hostname="DESKTOP-9S2BM4P"><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_all_real_hook_events_fit_bounded_emitter_with_full_public_provenance_and_status" time="0.732"><failure message="AssertionError: assert not [{'section': 'survey_metadata', 'error': 'Diagnostic event exceeds 64 KB'}]">def test_all_real_hook_events_fit_bounded_emitter_with_full_public_provenance_and_status():
+        run, jobs, results = actual_source_results()
+        for result in results:
+            assert run.guard.accept_match_result(result, wall_s=run.wall)
+        for index in range(20):
+            run.guard.observe_public("/referee/recognition_status",
+                {"data": str(index)+"中"*10000}, wall_s=run.wall)
+        events = run.guard.additional_events()
+        failures = []
+        sizes = []
+        for event, data in events:
+            try:
+                payload = DiagnosticReporter._encode(event, data)
+                sizes.append({"section": data.get("section"), "bytes": len(payload)})
+            except ValueError as error:
+                failures.append({"section": data.get("section"), "error": str(error)})
+        output = Path(__file__).with_name("real_emitter_sizes.json")
+        output.write_text(json.dumps({"sizes": sizes, "failures": failures}, ensure_ascii=False, indent=2), encoding="utf-8")
+&gt;       assert not failures
+E       AssertionError: assert not [{'section': 'survey_metadata', 'error': 'Diagnostic event exceeds 64 KB'}]
+
+runs\review\20261112_single_point_transport\review_transport_cases.py:62: AssertionError</failure></testcase><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_original_source_metadata_is_unchanged_in_submitted_job[bgr8-0]" time="0.516" /><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_original_source_metadata_is_unchanged_in_submitted_job[rgb8-8]" time="0.614" /><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_original_source_metadata_is_unchanged_in_submitted_job[mono8-8]" time="0.575" /><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_emitted_success_evidence_retains_original_job_metadata_for_independent_rebinding" time="0.603"><failure message="assert 'f6ad2e45314d3b68237e378bd23907d4b8ab513c02baea235b7ac982a78858cd' in '{&quot;mode&quot;: &quot;ground_single_point&quot;, &quot;revision&quot;: &quot;ground_single_point_v1&quot;, &quot;read_only&quot;: false, &quot;official_scoring&quot;: &quot;unveri...], &quot;official_acceptance&quot;: false, &quot;body_fully_inside&quot;: &quot;not_claimed_center_entry_only&quot;, &quot;full_mission_complete&quot;: false}'">def test_emitted_success_evidence_retains_original_job_metadata_for_independent_rebinding():
+        run, jobs, results = actual_source_results()
+        for result in results:
+            assert run.guard.accept_match_result(result, wall_s=run.wall)
+        core = run.guard.additional_events()[0][1]
+        serialized = json.dumps(core, ensure_ascii=False)
+        # These are factual source fields already supplied to the real worker.
+        # A durable record must retain them, not only the derived JPEG SHA.
+        for job in jobs:
+&gt;           assert job["source_ros_sha256"] in serialized
+E           assert 'f6ad2e45314d3b68237e378bd23907d4b8ab513c02baea235b7ac982a78858cd' in '{"mode": "ground_single_point", "revision": "ground_single_point_v1", "read_only": false, "official_scoring": "unveri...], "official_acceptance": false, "body_fully_inside": "not_claimed_center_entry_only", "full_mission_complete": false}'
+
+runs\review\20261112_single_point_transport\review_transport_cases.py:89: AssertionError</failure></testcase><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_no_subscriber_preflight_is_not_labeled_as_actual_publisher_invocation" time="0.608"><failure message="assert 1 == 0&#10; +  where 0 = len([])">monkeypatch = &lt;_pytest.monkeypatch.MonkeyPatch object at 0x000002799E50C8A0&gt;
+
+    def test_no_subscriber_preflight_is_not_labeled_as_actual_publisher_invocation(monkeypatch):
+        node, run, wall = node_at_ready_state(monkeypatch)
+        calls = []
+        node.publisher_by_topic["/inspection/detections"] = SimpleNamespace(
+            get_subscription_count=lambda: 0, publish=lambda message: calls.append(message.data))
+        node.tick()
+        endpoint = node.command_endpoints["/inspection/detections"]
+        assert calls == [] and run.guard.attempts["recognition"]["attempted"] is True
+        assert run.guard.attempts["recognition"]["sent"] is False
+&gt;       assert endpoint["actual_publish_attempt_count"] == len(calls)
+E       assert 1 == 0
+E        +  where 0 = len([])
+
+runs\review\20261112_single_point_transport\review_transport_cases.py:114: AssertionError</failure></testcase><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_successful_ros_string_transport_is_exactly_once_and_counted" time="0.505" /><testcase classname="runs.review.20261112_single_point_transport.review_transport_cases" name="test_matched_context_worker_failure_remains_bound_in_final_evidence" time="0.527"><failure message="assert 'b967954b5571a878a155111b69d9b8e52bb5afcd750ef303abeaa285a45d2ecd' in '{&quot;mode&quot;: &quot;ground_single_point&quot;, &quot;revision&quot;: &quot;ground_single_point_v1&quot;, &quot;read_only&quot;: false, &quot;official_scoring&quot;: &quot;unveri...], &quot;official_acceptance&quot;: false, &quot;body_fully_inside&quot;: &quot;not_claimed_center_entry_only&quot;, &quot;full_mission_complete&quot;: false}'">def test_matched_context_worker_failure_remains_bound_in_final_evidence():
+        run, jobs, _ = actual_source_results()
+        original = {key: deepcopy(value) for key, value in jobs[0].items() if key != "source_jpeg"}
+        result = {"matches_current_context": True, "job": original, "job_was_dispatched": True,
+            "job_was_executed": None, "error": "worker_process_exited: -1"}
+        class Worker:
+            def cancel_context(self): pass
+            def set_context(self, *args): pass
+            def poll(self): return [deepcopy(result)]
+        coordinator = production.GroundSinglePointCoordinator(run.guard, Worker(), prepare=lambda *args, **kwargs: [])
+        coordinator.poll_once(run.wall)
+        assert run.guard.state == "STOP" and "single_point_matcher_failed:" in run.guard.reason
+        core = run.guard.additional_events()[0][1]
+        serialized = json.dumps(core, ensure_ascii=False)
+&gt;       assert original["source_sha256"] in serialized
+E       assert 'b967954b5571a878a155111b69d9b8e52bb5afcd750ef303abeaa285a45d2ecd' in '{"mode": "ground_single_point", "revision": "ground_single_point_v1", "read_only": false, "official_scoring": "unveri...], "official_acceptance": false, "body_fully_inside": "not_claimed_center_entry_only", "full_mission_complete": false}'
+
+runs\review\20261112_single_point_transport\review_transport_cases.py:146: AssertionError</failure></testcase></testsuite></testsuites>
