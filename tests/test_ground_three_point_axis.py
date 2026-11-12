@@ -59,6 +59,26 @@ def test_first_ground4_real_runtime_plan_has_two_axes():
     assert [o.target_xy_m for o in run.guard.operations if o.kind.startswith("DRIVE")]==[(.35,0.),(.35,-.1)]
 
 
+def test_actual_v43_entry_turn_reaches_the_first_executable_drive_with_original_deadline():
+    from inspection_mission.ground_three_point_axis_plan import plan_ground_entry, plan_ground_leg
+    run = AxisRun(("ground_2", "ground_1", "ground_4"))
+    run.x, run.y, run.yaw = (.5888341895790857, -1.7953274616929733, -2.1343145342713865)
+    g = run.guard
+    refresh(g, 0., x=run.x, y=run.y, yaw=run.yaw)
+    g.global_origin = g.pulse_origin = (0., 0., .055)
+    g.previous_path_xyz, g.previous_yaw = g.odom["xyz"], run.yaw
+    g.target_id = "ground_2"
+    g.point_plan = plan_ground_leg(None, "ground_2", (0., 0., 0.))
+    g._load_operations(plan_ground_entry("ground_2", (run.x, run.y, run.yaw)), "entry", 0.)
+    run.last = g.step(wall_s=0.)
+    assert run.last.angular_z < 0.  # West directly, instead of chasing the 4.67mm south point.
+    run.until(lambda r: r.guard.state == "DRIVE", cap=900)
+    assert run.wall < 45.
+    assert g.leg_target_xy == (0., -1.7953274616929733)
+    assert g.approach_limits.turn_wall_s == 45.
+    assert g.scan["required_range_m"] == pytest.approx(.641)
+
+
 def test_reverse_positive_progress_body_heading_and_negative_request():
     g=reverse_guard()
     assert g.reverse_segment and g.drive_yaw==pytest.approx(math.pi/2)

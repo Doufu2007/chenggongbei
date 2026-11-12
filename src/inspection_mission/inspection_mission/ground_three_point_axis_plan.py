@@ -16,9 +16,19 @@ from .ground_three_point_plan import (
 class _AxisBuilder(_Builder):
     def axis_to(self, target, label, *, x_first=True):
         """Move each axis independently, preserving the real current anchor."""
-        intermediate = (target[0], self.position[1]) if x_first else (self.position[0], target[1])
-        self.drive(intermediate, label+"_axis_1")
-        self.drive(target, label+"_axis_2")
+        for stage, axis in enumerate((0, 1) if x_first else (1, 0), 1):
+            # The executor refuses drives <=20mm. Aiming at such a nearby
+            # point instead lets millimetre-scale turn drift move its bearing
+            # repeatedly (observed in v43). Keep the real coordinate when
+            # omitting it; the next axis and its clearance use that anchor.
+            if abs(target[axis]-self.position[axis]) <= .02:
+                continue
+            destination = list(self.position)
+            destination[axis] = target[axis]
+            self.drive(tuple(destination), label+"_axis_"+str(stage))
+        # Component-wise omission cannot enlarge the existing radial gate.
+        if math.dist(self.position, target) > .02+1e-9:
+            raise ValueError("axis residual exceeds waypoint gate")
 
     def reverse_axis(self, target, label):
         delta = (target[0]-self.position[0], target[1]-self.position[1])

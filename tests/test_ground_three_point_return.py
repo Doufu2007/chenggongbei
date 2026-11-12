@@ -259,7 +259,7 @@ def test_synthetic_three_points_really_drive_home_without_fourth_declaration():
     assert evidence['complete'] is True and evidence['official_acceptance'] is False
 
 
-def test_actual_synthetic_turn_ledger_can_exhaust_40rad_before_return():
+def test_short_axis_residuals_return_without_resetting_the_actual_40rad_ledger():
     run = ReturnRun(('ground_0', 'ground_3', 'ground_2'))
     for i in range(3):
         run.recognise()
@@ -267,15 +267,19 @@ def test_actual_synthetic_turn_ledger_can_exhaust_40rad_before_return():
         if i < 2:
             run.until(lambda r: r.guard.point_index == i + 1)
     before_path, before_angle = run.guard.total_path_m, run.guard.accumulated_rotation_rad
-    assert before_angle > 27.7  # Actual feedback, never replaced by nominal geometry.
-    for _ in range(45):
-        run.tick()
-        if run.guard.state == 'STOP':
-            break
-    assert run.guard.state == 'STOP' and not run.guard.return_started
-    assert run.guard.reason == 'three_ground_remaining_rotation_budget_insufficient'
+    # Removing unexecutable millimetre axes saves real rotations; the previous
+    # expectation of exhaustion depended on those extra turns. Continue using
+    # actual odometry on the same ledger throughout the return.
+    assert before_angle > 0.
+    run.until(lambda r: r.guard.return_ready, cap=30000)
+    assert run.guard.return_started and not run.guard.return_completed
     assert len(run.guard.completed_points) == 3
-    assert run.guard.total_path_m >= before_path and run.guard.accumulated_rotation_rad >= before_angle
+    assert run.guard.return_start_ledger['total_path_m'] >= before_path
+    assert run.guard.return_start_ledger['accumulated_rotation_rad'] >= before_angle
+    assert run.guard.total_path_m > run.guard.return_start_ledger['total_path_m']
+    assert run.guard.accumulated_rotation_rad > run.guard.return_start_ledger['accumulated_rotation_rad']
+    assert run.guard.accumulated_rotation_rad <= 40.
+    assert math.hypot(run.x, run.y) <= .02
     assert run.guard.frozen_limits.max_rotation_rad == 40.
 
 

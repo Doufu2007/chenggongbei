@@ -48,6 +48,39 @@ def test_ground2_reverse_keeps_sensor_on_north_side_of_south_wall():
     assert op.minimum_laser_distance_m >= .74-1e-12
 
 
+def test_ground2_actual_v43_entry_keeps_real_row_without_a_millimetre_aim_point():
+    # v43 reached this real observation pose. A 4.67mm Y correction cannot
+    # be executed by the existing >20mm drive gate and its bearing moves
+    # substantially under the observed millimetre-scale turn drift.
+    pose = (.5888341895790857, -1.7953274616929733, -2.1343145342713865)
+    operations = module().plan_ground_entry("ground_2", pose)
+    drives = [op for op in operations if op.target_xy_m is not None]
+    assert drives[0].anchor_xy_m == pose[:2]
+    assert drives[0].target_xy_m == (0., pose[1])
+    assert drives[0].length_m == pytest.approx(pose[0])
+    assert all(op.length_m > .02 for op in drives)
+    assert drives[-1].target_xy_m == (0., -2.69)
+    assert drives[-1].kind == "DRIVE_REVERSE_TO_XY"
+    for op in drives:
+        dx, dy = [op.target_xy_m[i]-op.anchor_xy_m[i] for i in (0, 1)]
+        assert min(abs(dx), abs(dy)) < 1e-12
+        assert op.minimum_laser_distance_m >= .641
+
+
+def test_entry_keeps_an_executable_axis_correction_outside_the_waypoint_gate():
+    operations = module().plan_ground_entry("ground_2", (.5888, -1.779, -2.1343))
+    first_drive = next(op for op in operations if op.target_xy_m is not None)
+    assert first_drive.target_xy_m == (.5888, -1.8)
+    assert first_drive.length_m == pytest.approx(.021)
+
+
+def test_omitting_two_short_axes_cannot_expand_the_radial_waypoint_gate():
+    # Each 15mm component is below the executable-drive floor, but the
+    # combined 21.2mm error is outside the unchanged 20mm waypoint gate.
+    with pytest.raises(ValueError, match="axis residual exceeds waypoint gate"):
+        module().plan_ground_entry("ground_4", (1.100, -.760, -math.pi/2))
+
+
 def test_actual_pose_is_preserved_and_unsafe_south_departure_rejected():
     m = module()
     p = m.plan_ground_leg("ground_0", "ground_4", (1.113, -1.346, .006))

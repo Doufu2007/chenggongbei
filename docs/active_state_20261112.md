@@ -1,4 +1,21 @@
-## 12:50 最新接续：官方仍离线，备用隧道又断连
+## 21:50 最新接续：完整 v44 已上传，等待真实运行
+
+本文件保留历史接续；其中认证详情 JSON、原始回传和未公开的分析路径仅在本机归档。公开仓库未包含这些文件；原始记录中的 SHA 指本机原件，公开副本哈希见总清单。
+
+- 占位地面 v43 已结束，官方 failed、score=null、182088ms。未取消或覆盖它。
+- v44 在21:50:14上传成功，POST201，ID `9142b55c-dcc7-4919-87d1-c8041a551108`；初始 submitted、runId空，尚无新得分。源码及脚本与下方原始冻结SHA一致；公开脚本已脱敏，双SHA见 PUBLIC_SNAPSHOT_MANIFEST.json。
+
+## 21:45 历史接续：完整 v44 已修复，1823 项通过，提交被其他测评占位
+
+- 完整 v42 已官方结算 **10 分**，只有 `ground_4` 计分。旧回传通道在排队期间断开，不能确定该局停止分支。官方证据 `runs/evidence/20261112/full_v42_detail_final.json`。
+- 完整 v43（冻结 v41 同源码，仅恢复回传）ID `b07f927e-cd6c-46f5-bdac-eb10f97e8ab6` / `run_20261112_211323_9aa9f2e8` 已官方 failed，未提取成绩，397993ms。本队程序在地面约179秒后停止，exit1，draw g2→g1→g4，completed0，返航和飞行均未开始。双 SHA 回传包解在 `runs/analysis/20261112_full_inspection_v43/ground/`。确定根因是 entry 规划出4.6725mm微轴，定稳后不断追逐漂移的近场方位，耗尽45秒。不是跨操作计时未重置或物理无响应。
+- v44 已修复并冻结，完整测试 **1823 passed / 249.26s**，报告 `runs/review/full_v44_regression_20261112.xml`。仅两个生产模块变化：axis_plan省去原执行器不接受的≤20mm微轴并保留真实坐标和最终径向门；总桥将大诊断延迟到全部控制结束，任意安全清理错误仍阻止飞行。原45秒、15米、40弧度、传感器时效、净空、视觉判定未放宽。总桥独立9类故障注入与规划1471姿态/约12万采样均通过。
+- 新包 `dist/inspection_full_mission_v44_src.zip`，13378987B，SHA `eb1cf9eb5263f89fda0614cf5fe5302d307818337d8920d4f59bbc0a8de804bf`；脚本 `dist/run_full_mission_v44.sh` SHA `022d908fd0f9b6cfbcf50bf1af8552aba7ce59d6cca57245bebe3cf6fc44e03c`。76个源码文件与ZIP逐字节相同，bash-n通过。**尚未成功提交**：POST返回409 `EVAL_IN_FLIGHT_LIMIT`，不能说已排队。
+- 占位是账号内另一条 `ground_v43_src.zip / run_ground_v43.sh`，ID `0c8def80-8378-4679-865a-2d25c6f2a9e7`，21:34创建，run `run_20261112_213557_0e082881`，最新 running。不是本轮代理提交；没有取消或覆盖。已异步询问用户是否另一个任务发起，等终态后提交完整v44。只读下载比较：其原76源与冻结v41一致，仅加ground_practice.py观察入口，无微轴修复、无飞行；因此不代替完整v44。
+- 平台会话PTY14846仍认证，凭据只在内存。v44 receiver PTY30654/port53915/max10800秒，callback `runs/evidence/20261112/callback_full_inspection_v44.jsonl`，delivery独立；v43 receiver已停止，cloudflared52902仍绑定同端口。v44新随机路径已GET405/POST202实际验证，自测独立存 `callback_full_v44_selftest.jsonl`。能力URL仅在dist启动脚本，不进文档/GitHub。
+- 不再重复全套测试。后续依据平台真实断点继续修，不能把本地通过称作完整得分；真实完整演示视频尚未产生。具体诊断文档 `docs/full_mission_v44_ground_fix_20261112.md`。
+
+## 12:50 历史状态：官方仍离线，备用隧道又断连
 
 - v42仍为submitted、runId空、serverStatus=down、pendingResubmit=true、成绩null，无accepted callback。已排队的唯一完整任务ID保持 `69f58da5-1669-4433-a15b-3adb4e3f2392`，不要把此状态写成已启动或运行失败。
 - 12:35公网GET405曾真实成功；约12:47补做invalid POST验证时返回非JSON且没有抵达receiver账本。检查 **PTY77290已退出1，`client_loop: send disconnect: Connection reset`**。目前v42已上传脚本中的临时回传地址**不可依赖**，不要沿用下方“通道可用”历史状态。尚无本局运行号，故无法恢复本局任何运行证据；不能把未来无回传认定为算法没启动。

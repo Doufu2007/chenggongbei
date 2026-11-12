@@ -12,7 +12,31 @@ import os
 import time
 
 
-def _dispose(node, ros, reason):
+def _prepare_retired_report(node, stage, diagnostic_errors):
+    """Keep reporting on retired Python state, without a destroyed ROS lookup.
+
+    Called after control/watchdog cleanup. No sensor stamp or success evidence
+    is changed. The retired ground clock excludes the later flight's duration.
+    """
+    try:
+        get_logger = getattr(node, 'get_logger', None)
+        logger = get_logger() if callable(get_logger) else None
+        clock = getattr(node, 'wall_clock', None)
+        retired_wall = clock() if callable(clock) else None
+        report = node.report_final
+        if logger is not None:
+            node.get_logger = lambda: logger
+        if callable(clock):
+            node.wall_clock = lambda: retired_wall
+        return report
+    except Exception as exc:
+        diagnostic_errors.append({'stage': stage, 'operation': 'prepare_report',
+                                  'error_type': type(exc).__name__})
+        return None
+
+
+def _dispose(node, ros, reason, *, stage, pending_reports, diagnostic_errors):
+    """Finish all safety cleanup now; diagnostics run after all control ends."""
     errors = []
     try:
         try:
@@ -34,15 +58,20 @@ def _dispose(node, ros, reason):
                 ros.spin_once(node, timeout_sec=.02)
             except Exception as exc:
                 errors.append(exc)
-        try:
-            node.report_final()
-        except Exception as exc:
-            errors.append(exc)
     finally:
         try:
-            node.close_watchdog()
+            try:
+                node.close_watchdog()
+            except Exception as exc:
+                errors.append(exc)
         finally:
-            node.destroy_node()
+            report = _prepare_retired_report(node, stage, diagnostic_errors)
+            if report is not None:
+                pending_reports.append((stage, report))
+            try:
+                node.destroy_node()
+            except Exception as exc:
+                errors.append(exc)
     if errors:
         raise errors[0]
 
@@ -62,12 +91,18 @@ def _spin_with_progress(node, ros, reporter, stage, spin, *, duration_s, wall_cl
             try:
                 guard = node.guard
                 odom = getattr(guard, 'odom', None)
-                reporter.emit('heartbeat', {'mode': 'full_inspection', 'stage': stage,
+                progress = {'mode': 'full_inspection', 'stage': stage,
                     'session_id': guard.session_id, 'elapsed_wall_s': now-started,
                     'state': str(decision.state), 'reason': str(decision.reason),
                     'phase': str(getattr(guard, 'phase', '')),
                     'xyz': list(odom['xyz']) if isinstance(odom, dict) and 'xyz' in odom else None,
-                    'official_score': None})
+                    'official_score': None}
+                if stage == 'GROUND':
+                    completed = getattr(guard, 'completed_points', ())
+                    progress.update(target_id=getattr(guard, 'target_id', None),
+                                    point_index=getattr(guard, 'point_index', None),
+                                    completed_count=len(completed))
+                reporter.emit('heartbeat', progress)
             except Exception:
                 pass
         return decision
@@ -93,41 +128,53 @@ def run_ground_and_flight(ros, reporter, *, worker, ground_factory=None, flight_
         from .bounded_ground_probe import spin_control_loop
         spin = spin_control_loop
     ground = ground_factory(reporter, wall_clock=wall_clock, worker=worker)
+    pending_reports, diagnostic_errors = [], []
     result = {'completed': False, 'failed_stage': 'GROUND', 'official_score': None,
               'session_id': ground.guard.session_id, 'ground_return_completed': False,
-              'flight_completed': False}
+              'flight_completed': False, 'diagnostic_errors': diagnostic_errors}
     proof = None
     try:
-        ground.report_started(ground_duration)
-        ground.arm_watchdog()
-        _spin_with_progress(ground, ros, reporter, 'GROUND', spin,
-                            duration_s=ground_duration, wall_clock=wall_clock)
-        if ground.guard.return_completed:
-            proof = copy.deepcopy(ground.guard.return_completion)
-            result['ground_return_completed'] = isinstance(proof, dict) and bool(proof)
-    finally:
-        _dispose(ground, ros, 'full_pipeline_ground_stage_exit')
-    if not result['ground_return_completed']:
+        try:
+            ground.report_started(ground_duration)
+            ground.arm_watchdog()
+            _spin_with_progress(ground, ros, reporter, 'GROUND', spin,
+                                duration_s=ground_duration, wall_clock=wall_clock)
+            if ground.guard.return_completed:
+                proof = copy.deepcopy(ground.guard.return_completion)
+                result['ground_return_completed'] = isinstance(proof, dict) and bool(proof)
+        finally:
+            _dispose(ground, ros, 'full_pipeline_ground_stage_exit', stage='GROUND',
+                     pending_reports=pending_reports, diagnostic_errors=diagnostic_errors)
+        if not result['ground_return_completed']:
+            return result
+        # The old ground publishers/watchdog are gone before flight creation.
+        if flight_factory is None:
+            from .full_flight_inspection import create_flight_inspection_node
+            flight_factory = create_flight_inspection_node
+        result['failed_stage'] = 'FLIGHT'
+        flight = flight_factory(reporter, session_id=result['session_id'],
+                                ground_return_evidence=proof, wall_clock=wall_clock)
+        try:
+            flight.report_started(flight_duration)
+            flight.arm_watchdog()
+            _spin_with_progress(flight, ros, reporter, 'FLIGHT', spin,
+                                duration_s=flight_duration, wall_clock=wall_clock)
+            result['flight_completed'] = flight.mission_completed is True
+        finally:
+            _dispose(flight, ros, 'full_pipeline_flight_stage_exit', stage='FLIGHT',
+                     pending_reports=pending_reports, diagnostic_errors=diagnostic_errors)
+        result['completed'] = result['flight_completed']
+        result['failed_stage'] = None if result['completed'] else 'FLIGHT'
         return result
-    # Lazy import also makes an incomplete ground attempt incapable of creating
-    # UAV publishers as an accidental side effect of flight initialization.
-    if flight_factory is None:
-        from .full_flight_inspection import create_flight_inspection_node
-        flight_factory = create_flight_inspection_node
-    result['failed_stage'] = 'FLIGHT'
-    flight = flight_factory(reporter, session_id=result['session_id'],
-                            ground_return_evidence=proof, wall_clock=wall_clock)
-    try:
-        flight.report_started(flight_duration)
-        flight.arm_watchdog()
-        _spin_with_progress(flight, ros, reporter, 'FLIGHT', spin,
-                            duration_s=flight_duration, wall_clock=wall_clock)
-        result['flight_completed'] = flight.mission_completed is True
     finally:
-        _dispose(flight, ros, 'full_pipeline_flight_stage_exit')
-    result['completed'] = result['flight_completed']
-    result['failed_stage'] = None if result['completed'] else 'FLIGHT'
-    return result
+        # Final reports are observation only, never a referee or score source.
+        # Flight is reported first so a large ground bundle cannot delay it.
+        for stage, report in reversed(pending_reports):
+            try:
+                report()
+            except Exception as exc:
+                diagnostic_errors.append({'stage': stage, 'operation': 'report_final',
+                                          'error_type': type(exc).__name__})
 
 
 def main(args=None):
